@@ -15,6 +15,8 @@ export const usd2 = (n: number) =>
 export const int = (n: number) =>
   new Intl.NumberFormat("en-US").format(Math.round(n || 0));
 
+export const pct = (n: number) => `${((n || 0) * 100).toFixed(1)}%`;
+
 export const monthLabel = (ym: string) => {
   const [y, m] = ym.split("-");
   const d = new Date(Number(y), Number(m) - 1, 1);

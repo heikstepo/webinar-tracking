@@ -1,67 +1,60 @@
-// Shared, source-agnostic schema. Every connector normalizes its data into
-// these shapes so the dashboard never needs to know where a number came from.
+// Shared, source-agnostic schema for the App Accelerator webinar funnel.
+// Every connector normalizes into these shapes so the dashboard never needs
+// to know which tool a number came from.
 
-export type FunnelStage =
-  | "spend"
-  | "impressions"
-  | "clicks"
-  | "registrations"
-  | "attended"
-  | "calls"
-  | "shows"
-  | "offers"
-  | "closes"
-  | "revenue";
-
-// A single normalized sale (one payment / deal).
-export interface Sale {
+// One webinar registration (UTM Tracking).
+export interface Registration {
   id: string;
-  date: string; // ISO
-  customer: string;
-  email: string;
-  product: string; // normalized product family
-  rawProduct: string; // original label
-  amount: number;
-  closer: string;
-  setter: string;
-  paymentMethod: string;
-  isRefund: boolean;
-}
-
-// A daily funnel snapshot from any source (ads, webinar, sales EOD...).
-export interface DailyFunnel {
-  date: string; // YYYY-MM-DD
-  source: string; // e.g. "airtable:Ad Level"
-  spend?: number;
-  impressions?: number;
-  clicks?: number;
-  registrations?: number;
-  attended?: number;
-  calls?: number;
-  shows?: number;
-  offers?: number;
-  closes?: number;
-  revenue?: number;
-}
-
-// Top-of-funnel attribution row (UTM).
-export interface AttributionRow {
-  date: string;
+  date: string; // date of entry, ISO/YYYY-MM-DD
   name: string;
   email: string;
-  source: string;
-  medium: string;
-  campaign: string;
-  content: string;
+  phone: string;
+  webinar: string; // webinar label/date the person registered for
+  source: string; // UTM Source
+  medium: string; // UTM Medium
+  campaign: string; // UTM Campaign
+  content: string; // UTM Content
+  adset: string; // UTM Adset
 }
 
-// What a connector returns. Any section may be empty if that source has no
-// data yet — the dashboard renders only the sections that have data.
+// One day of paid-ad performance (Ad Level).
+export interface AdDay {
+  date: string; // YYYY-MM-DD
+  spend: number;
+  impressions: number;
+  ctr: number;
+  cpm: number;
+  cpc: number;
+  costPerRegistration: number;
+  registrations: number;
+  purchases: number;
+  costPerPurchase: number;
+}
+
+// One closer's end-of-day report (Closer EOD).
+export interface SalesDay {
+  id: string;
+  date: string; // YYYY-MM-DD
+  closer: string;
+  scheduledCalls: number;
+  callsTaken: number;
+  noShows: number;
+  cancelled: number;
+  rescheduled: number;
+  offersMade: number;
+  oneCallCloses: number;
+  followUpCloses: number;
+  cashCollected: number;
+  revenue: number;
+}
+
+// What a connector returns. Any array may be empty if that source has no data
+// yet — the dashboard renders only the sections that have data.
 export interface ConnectorResult {
-  connector: string; // "airtable"
+  connector: string;
   fetchedAt: string;
-  sales: Sale[];
-  daily: DailyFunnel[];
-  attribution: AttributionRow[];
-  notes: string[]; // human-readable status, e.g. "Ad Level table empty"
+  registrations: Registration[];
+  ads: AdDay[];
+  sales: SalesDay[];
+  notes: string[];
 }

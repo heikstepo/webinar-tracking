@@ -1,153 +1,116 @@
 import { listRecords, num, str, AirtableRecord } from "./airtableClient";
-import {
-  ConnectorResult,
-  Sale,
-  DailyFunnel,
-  AttributionRow,
-} from "./types";
+import { ConnectorResult, Registration, AdDay, SalesDay } from "./types";
 
-const BASE_APP = process.env.AIRTABLE_BASE_APP || "appEzSNgcfbsBGteb";
-const BASE_BACKUP = process.env.AIRTABLE_BASE_BACKUP || "appNMg1z6iAvqM1KW";
+// App Accelerator base — the live webinar-funnel system.
+const BASE = process.env.AIRTABLE_BASE_APP || "appEzSNgcfbsBGteb";
 
-// Collapse the many free-text product labels into a few families.
-export function normalizeProduct(raw: string): string {
-  const s = raw.toLowerCase();
-  if (s.includes("refund")) return "Refund";
-  if (s.includes("deposit")) return "Deposit";
-  if (s.includes("diy")) return "Faceless Launchpad DIY";
-  if (s.includes("consulting")) return "Consulting";
-  if (s.includes("faceless")) return "Faceless Launchpad";
-  return raw.trim() || "Other";
-}
+const TABLE_UTM = "UTM Tracking";
+const TABLE_ADS = "Ad Level";
+const TABLE_EOD = "Closer EOD";
 
 function dayKey(iso: string): string {
   return iso ? iso.slice(0, 10) : "";
 }
 
-function mapCommissionTracking(recs: AirtableRecord[]): Sale[] {
-  return recs
-    .map((r): Sale | null => {
-      const f = r.fields;
-      const rawProduct = str(f["Product"]);
-      if (!rawProduct && !f["Total Amount"]) return null;
-      const amount = num(f["Total Amount"]);
-      return {
-        id: r.id,
-        date: str(f["Sale Date"]) || r.createdTime,
-        customer: str(f["Customer Name"]),
-        email: str(f["Customer Email"]),
-        product: normalizeProduct(rawProduct),
-        rawProduct,
-        amount,
-        closer: str(f["Assigned Closer"]) || "Unknown",
-        setter: str(f["Assigned Setter"]) || "Unknown",
-        paymentMethod: str(f["Payment Method"]) || "Unknown",
-        isRefund: /refund/i.test(rawProduct) || amount < 0,
-      };
-    })
-    .filter((x): x is Sale => x !== null);
+function hasData(r: AirtableRecord): boolean {
+  return Object.values(r.fields).some(
+    (v) => v !== null && v !== "" && !(Array.isArray(v) && v.length === 0),
+  );
 }
 
-function mapAdLevel(recs: AirtableRecord[]): DailyFunnel[] {
-  return recs
-    .filter((r) => Object.keys(r.fields).length > 0)
-    .map((r) => {
-      const f = r.fields;
-      return {
-        date: dayKey(str(f["Date"]) || r.createdTime),
-        source: "airtable:Ad Level",
-        spend: num(f["Total Ad Spend"]),
-        registrations: num(f["Registrations"]),
-        closes: num(f["Purchases"]),
-      } as DailyFunnel;
-    })
-    .filter((d) => d.spend || d.registrations || d.closes);
+function mapRegistrations(recs: AirtableRecord[]): Registration[] {
+  return recs.filter(hasData).map((r) => {
+    const f = r.fields;
+    return {
+      id: r.id,
+      date: dayKey(str(f["Date of Entry"]) || r.createdTime),
+      name: str(f["Name"]),
+      email: str(f["Email"]),
+      phone: str(f["Phone"]),
+      webinar: str(f["Webinar Date"]),
+      source: str(f["UTM Source"]) || "(unknown)",
+      medium: str(f["UTM Medium"]),
+      campaign: str(f["UTM Campaign"]) || "(none)",
+      content: str(f["UTM Content"]),
+      adset: str(f["UTM Adset"]) || "(none)",
+    };
+  });
 }
 
-function mapCloserEod(recs: AirtableRecord[]): DailyFunnel[] {
-  return recs
-    .filter((r) => Object.keys(r.fields).length > 0)
-    .map((r) => {
-      const f = r.fields;
-      return {
-        date: dayKey(str(f["Date of EOD"]) || r.createdTime),
-        source: "airtable:Closer EOD",
-        calls: num(f["Calls taken"]),
-        shows: num(f["Calls taken"]) - num(f["No Shows"]),
-        offers: num(f["Offers Made"]),
-        closes: num(f["One Call Closes"]) + num(f["Follow Up Closes"]),
-        revenue: num(f["Revenue Generated"]),
-      } as DailyFunnel;
-    })
-    .filter((d) => d.calls || d.offers || d.closes || d.revenue);
+function mapAds(recs: AirtableRecord[]): AdDay[] {
+  return recs.filter(hasData).map((r) => {
+    const f = r.fields;
+    return {
+      date: dayKey(str(f["Date"]) || r.createdTime),
+      spend: num(f["Total Ad Spend"]),
+      impressions: num(f["Impressions"]),
+      ctr: num(f["CTR"]),
+      cpm: num(f["CPM"]),
+      cpc: num(f["CPC"]),
+      costPerRegistration: num(f["Cost per Registration"]),
+      registrations: num(f["Registrations"]),
+      purchases: num(f["Purchases"]),
+      costPerPurchase: num(f["Cost per Purchase"]),
+    };
+  });
 }
 
-function mapUtm(recs: AirtableRecord[]): AttributionRow[] {
-  return recs
-    .filter((r) => Object.keys(r.fields).length > 0)
-    .map((r) => {
-      const f = r.fields;
-      return {
-        date: dayKey(str(f["Date of Entry"]) || str(f["Webinar Date"]) || r.createdTime),
-        name: str(f["Name"]),
-        email: str(f["Email"]),
-        source: str(f["UTM Source"]),
-        medium: str(f["UTM Medium"]),
-        campaign: str(f["UTM Campaign"]),
-        content: str(f["UTM Content"]),
-      };
-    })
-    .filter((a) => a.source || a.campaign || a.email);
+function mapSales(recs: AirtableRecord[]): SalesDay[] {
+  return recs.filter(hasData).map((r) => {
+    const f = r.fields;
+    return {
+      id: r.id,
+      date: dayKey(str(f["Date of EOD"]) || r.createdTime),
+      closer: str(f["Closer"]) || "Unknown",
+      scheduledCalls: num(f["Scheduled Calls on Calendar"]),
+      callsTaken: num(f["Calls taken"]),
+      noShows: num(f["No Shows"]),
+      cancelled: num(f["Cancelled Calls"]),
+      rescheduled: num(f["Rescheduled Calls"]),
+      offersMade: num(f["Offers Made"]),
+      oneCallCloses: num(f["One Call Closes"]),
+      followUpCloses: num(f["Follow Up Closes"]),
+      cashCollected: num(f["Cash Collected"]),
+      revenue: num(f["Revenue Generated"]),
+    };
+  });
 }
 
 export async function fetchAirtable(): Promise<ConnectorResult> {
   const notes: string[] = [];
-  const safe = async <T>(label: string, fn: () => Promise<T>, fallback: T): Promise<T> => {
+  const safe = async (
+    label: string,
+    fn: () => Promise<AirtableRecord[]>,
+  ): Promise<AirtableRecord[]> => {
     try {
       return await fn();
     } catch (e) {
       notes.push(`${label}: ${(e as Error).message}`);
-      return fallback;
+      return [];
     }
   };
 
-  const commission = await safe(
-    "Commission Tracking",
-    () => listRecords(BASE_BACKUP, "Commission Tracking"),
-    [] as AirtableRecord[],
-  );
-  const adLevel = await safe(
-    "Ad Level",
-    () => listRecords(BASE_APP, "Ad Level"),
-    [] as AirtableRecord[],
-  );
-  const closerEod = await safe(
-    "Closer EOD",
-    () => listRecords(BASE_APP, "Closer EOD"),
-    [] as AirtableRecord[],
-  );
-  const utm = await safe(
-    "UTM Tracking",
-    () => listRecords(BASE_APP, "UTM Tracking"),
-    [] as AirtableRecord[],
-  );
+  const [utm, ads, eod] = await Promise.all([
+    safe(TABLE_UTM, () => listRecords(BASE, TABLE_UTM)),
+    safe(TABLE_ADS, () => listRecords(BASE, TABLE_ADS)),
+    safe(TABLE_EOD, () => listRecords(BASE, TABLE_EOD)),
+  ]);
 
-  const sales = mapCommissionTracking(commission);
-  const adDaily = mapAdLevel(adLevel);
-  const eodDaily = mapCloserEod(closerEod);
-  const attribution = mapUtm(utm);
+  const registrations = mapRegistrations(utm);
+  const adDays = mapAds(ads);
+  const sales = mapSales(eod);
 
-  if (!sales.length) notes.push("No sales found in Commission Tracking.");
-  if (!adDaily.length) notes.push("Ad Level table has no populated rows yet.");
-  if (!eodDaily.length) notes.push("Closer EOD table has no populated rows yet.");
-  if (!attribution.length) notes.push("UTM Tracking table has no populated rows yet.");
+  if (!registrations.length)
+    notes.push("UTM Tracking has no registrations yet.");
+  if (!adDays.length) notes.push("Ad Level has no populated rows yet.");
+  if (!sales.length) notes.push("Closer EOD has no populated rows yet.");
 
   return {
     connector: "airtable",
     fetchedAt: new Date().toISOString(),
+    registrations,
+    ads: adDays,
     sales,
-    daily: [...adDaily, ...eodDaily],
-    attribution,
     notes,
   };
 }

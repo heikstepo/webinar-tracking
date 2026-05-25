@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import type { DashboardData } from "@/lib/metrics";
-import { usd, usd2, int } from "@/components/format";
+import { usd, usd2, int, pct } from "@/components/format";
 import { StatCard, Card, BarList } from "@/components/Panels";
-import RevenueChart from "@/components/RevenueChart";
+import TimelineChart from "@/components/RevenueChart";
 
 export default function Page() {
   const [data, setData] = useState<DashboardData | null>(null);
@@ -31,10 +31,11 @@ export default function Page() {
       <header className="mb-6 flex items-end justify-between">
         <div>
           <h1 className="text-xl font-semibold text-slate-50">
-            Sol Twenty — Tracking Dashboard
+            App Accelerator — Webinar Funnel
           </h1>
           <p className="text-sm text-slate-500">
-            Unified funnel & revenue across all sources · Connector 1: Airtable
+            Sol Twenty · live from Airtable · Ad Spend → Registrations → Calls →
+            Closes
           </p>
         </div>
         <button
@@ -58,103 +59,145 @@ export default function Page() {
       {data && (
         <div className="space-y-6">
           {/* KPI row */}
-          <section className="grid grid-cols-2 gap-4 md:grid-cols-5">
+          <section className="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7">
+            <StatCard label="Ad Spend" value={usd(data.totals.spend)} />
             <StatCard
-              label="Net Revenue"
-              value={usd(data.totals.revenue)}
-              sub={`${usd(data.totals.refunds)} refunded`}
+              label="Registrations"
+              value={int(data.totals.registrations)}
+              sub={`${usd2(data.totals.costPerRegistration)} / reg`}
             />
-            <StatCard label="Sales" value={int(data.totals.sales)} />
-            <StatCard label="Avg Deal" value={usd(data.totals.avgDeal)} />
-            <StatCard label="Customers" value={int(data.totals.customers)} />
             <StatCard
-              label="Gross Revenue"
-              value={usd(data.totals.grossRevenue)}
+              label="Calls Taken"
+              value={int(data.totals.callsTaken)}
+              sub={`${pct(data.totals.showRate)} show rate`}
+            />
+            <StatCard label="Offers" value={int(data.totals.offers)} />
+            <StatCard
+              label="Closes"
+              value={int(data.totals.closes)}
+              sub={`${pct(data.totals.closeRate)} close rate`}
+            />
+            <StatCard
+              label="Cash Collected"
+              value={usd(data.totals.cashCollected)}
+            />
+            <StatCard
+              label="Revenue / ROAS"
+              value={usd(data.totals.revenue)}
+              sub={data.totals.spend ? `${data.totals.roas.toFixed(2)}x ROAS` : "—"}
             />
           </section>
 
-          {/* Revenue over time */}
-          <Card title="Revenue by Month">
-            <RevenueChart data={data.revenueByMonth} />
+          {/* Timeline */}
+          <Card title="Daily Activity">
+            <TimelineChart data={data.timeline} />
           </Card>
 
-          {/* Breakdowns */}
-          <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Card title="Revenue by Closer">
-              <BarList rows={data.byCloser} />
+          {/* Funnel */}
+          <Card title="Funnel">
+            <Funnel stages={data.funnel} />
+          </Card>
+
+          {/* Attribution */}
+          <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <Card title="Registrations by Source">
+              <BarList rows={data.bySource} />
             </Card>
-            <Card title="Revenue by Setter">
-              <BarList rows={data.bySetter} />
+            <Card title="Registrations by Campaign">
+              <BarList rows={data.byCampaign} />
             </Card>
-            <Card title="Revenue by Product">
-              <BarList rows={data.byProduct} />
+            <Card title="Registrations by Adset">
+              <BarList rows={data.byAdset} />
             </Card>
-            <Card title="Revenue by Payment Method">
-              <BarList rows={data.byPaymentMethod} />
+            <Card title="Registrations by Webinar">
+              <BarList rows={data.byWebinar} />
             </Card>
           </section>
 
-          {/* Funnel (lights up when ad / EOD / UTM tables fill) */}
+          {/* Closer performance */}
           <Card
-            title="Acquisition Funnel"
+            title="Closer Performance"
             right={
               <span className="text-xs text-slate-500">
-                {data.funnel.hasData
-                  ? "live"
-                  : "waiting on Ad Level / Closer EOD / UTM data"}
+                {data.counts.salesDays
+                  ? `${data.counts.salesDays} EOD reports`
+                  : "waiting on Closer EOD data"}
               </span>
             }
           >
-            <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-7">
-              <FunnelStat label="Ad Spend" value={usd(data.funnel.spend)} />
-              <FunnelStat
-                label="Registrations"
-                value={int(data.funnel.registrations)}
-              />
-              <FunnelStat label="Calls" value={int(data.funnel.calls)} />
-              <FunnelStat label="Shows" value={int(data.funnel.shows)} />
-              <FunnelStat label="Offers" value={int(data.funnel.offers)} />
-              <FunnelStat label="Closes" value={int(data.funnel.closes)} />
-              <FunnelStat
-                label="Attribution rows"
-                value={int(data.attributionCount)}
-              />
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm">
+                <thead className="text-xs uppercase text-slate-500">
+                  <tr className="border-b border-edge">
+                    <th className="py-2 pr-3">Closer</th>
+                    <th className="py-2 pr-3 text-right">Scheduled</th>
+                    <th className="py-2 pr-3 text-right">Taken</th>
+                    <th className="py-2 pr-3 text-right">No-Shows</th>
+                    <th className="py-2 pr-3 text-right">Offers</th>
+                    <th className="py-2 pr-3 text-right">Closes</th>
+                    <th className="py-2 pr-3 text-right">Close %</th>
+                    <th className="py-2 pr-3 text-right">Cash</th>
+                    <th className="py-2 pr-3 text-right">Revenue</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.closers.map((c) => (
+                    <tr key={c.name} className="border-b border-edge/50">
+                      <td className="py-2 pr-3 text-slate-200">{c.name}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.scheduled)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.callsTaken)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.noShows)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.offers)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-200">{int(c.closes)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{pct(c.closeRate)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-400">{usd(c.cashCollected)}</td>
+                      <td className="py-2 pr-3 text-right text-slate-200">{usd(c.revenue)}</td>
+                    </tr>
+                  ))}
+                  {!data.closers.length && (
+                    <tr>
+                      <td colSpan={9} className="py-3 text-slate-500">
+                        No Closer EOD reports yet.
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
           </Card>
 
-          {/* Recent sales */}
-          <Card title="Recent Sales">
+          {/* Recent registrations */}
+          <Card title="Recent Registrations">
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead className="text-xs uppercase text-slate-500">
                   <tr className="border-b border-edge">
                     <th className="py-2 pr-3">Date</th>
-                    <th className="py-2 pr-3">Customer</th>
-                    <th className="py-2 pr-3">Product</th>
-                    <th className="py-2 pr-3">Closer</th>
-                    <th className="py-2 pr-3">Setter</th>
-                    <th className="py-2 pr-3 text-right">Amount</th>
+                    <th className="py-2 pr-3">Name</th>
+                    <th className="py-2 pr-3">Webinar</th>
+                    <th className="py-2 pr-3">Source</th>
+                    <th className="py-2 pr-3">Campaign</th>
+                    <th className="py-2 pr-3">Adset</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {data.recentSales.map((s) => (
-                    <tr key={s.id} className="border-b border-edge/50">
-                      <td className="py-2 pr-3 text-slate-400">
-                        {s.date.slice(0, 10)}
-                      </td>
-                      <td className="py-2 pr-3 text-slate-200">{s.customer}</td>
-                      <td className="py-2 pr-3 text-slate-400">{s.product}</td>
-                      <td className="py-2 pr-3 text-slate-400">{s.closer}</td>
-                      <td className="py-2 pr-3 text-slate-400">{s.setter}</td>
-                      <td
-                        className={`py-2 pr-3 text-right ${
-                          s.isRefund ? "text-red-400" : "text-slate-200"
-                        }`}
-                      >
-                        {usd2(s.amount)}
-                      </td>
+                  {data.recentRegistrations.map((r) => (
+                    <tr key={r.id} className="border-b border-edge/50">
+                      <td className="py-2 pr-3 text-slate-400">{r.date}</td>
+                      <td className="py-2 pr-3 text-slate-200">{r.name}</td>
+                      <td className="py-2 pr-3 text-slate-400">{r.webinar}</td>
+                      <td className="py-2 pr-3 text-slate-400">{r.source}</td>
+                      <td className="py-2 pr-3 text-slate-400">{r.campaign}</td>
+                      <td className="py-2 pr-3 text-slate-400">{r.adset}</td>
                     </tr>
                   ))}
+                  {!data.recentRegistrations.length && (
+                    <tr>
+                      <td colSpan={6} className="py-3 text-slate-500">
+                        No registrations yet.
+                      </td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>
@@ -171,7 +214,9 @@ export default function Page() {
           )}
 
           <footer className="pt-2 text-xs text-slate-600">
-            Last fetched {new Date(data.fetchedAt).toLocaleString()}
+            Last fetched {new Date(data.fetchedAt).toLocaleString()} ·{" "}
+            {data.counts.registrations} regs · {data.counts.adDays} ad days ·{" "}
+            {data.counts.salesDays} EOD reports
           </footer>
         </div>
       )}
@@ -179,13 +224,37 @@ export default function Page() {
   );
 }
 
-function FunnelStat({ label, value }: { label: string; value: string }) {
+function Funnel({
+  stages,
+}: {
+  stages: { stage: string; value: number; sub: string }[];
+}) {
+  const max = Math.max(1, ...stages.map((s) => s.value));
   return (
-    <div className="rounded-lg border border-edge bg-ink p-3">
-      <div className="text-[11px] uppercase tracking-wide text-slate-500">
-        {label}
-      </div>
-      <div className="mt-0.5 text-lg font-semibold text-slate-100">{value}</div>
+    <div className="space-y-2">
+      {stages.map((s, i) => {
+        const prev = i > 0 ? stages[i - 1].value : 0;
+        const conv = i > 0 && prev ? (s.value / prev) * 100 : null;
+        return (
+          <div key={s.stage} className="flex items-center gap-3">
+            <div className="w-36 shrink-0 text-sm text-slate-300">
+              {s.stage}
+              <div className="text-[11px] text-slate-600">{s.sub}</div>
+            </div>
+            <div className="h-7 flex-1 rounded bg-ink">
+              <div
+                className="flex h-7 items-center rounded bg-accent/80 px-2 text-xs font-medium text-white"
+                style={{ width: `${Math.max((s.value / max) * 100, 6)}%` }}
+              >
+                {int(s.value)}
+              </div>
+            </div>
+            <div className="w-16 shrink-0 text-right text-xs text-slate-500">
+              {conv != null ? `${conv.toFixed(0)}%` : ""}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
