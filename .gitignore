@@ -8,3 +8,6 @@ out
 .DS_Store
 next-env.d.ts
 .cache
+
+# static draft artifact
+dashboard-draft.html
