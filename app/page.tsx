@@ -59,7 +59,7 @@ export default function Page() {
       {data && (
         <div className="space-y-6">
           {/* KPI row */}
-          <section className="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7">
+          <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <StatCard label="Ad Spend" value={usd(data.totals.spend)} />
             <StatCard
               label="Registrations"
@@ -67,13 +67,17 @@ export default function Page() {
               sub={`${usd2(data.totals.costPerRegistration)} / reg`}
             />
             <StatCard
+              label="Booked Calls"
+              value={int(data.totals.scheduledCalls)}
+            />
+            <StatCard
               label="Calls Taken"
               value={int(data.totals.callsTaken)}
               sub={`${pct(data.totals.showRate)} show rate`}
             />
-            <StatCard label="Offers" value={int(data.totals.offers)} />
+            <StatCard label="Offers Made" value={int(data.totals.offers)} />
             <StatCard
-              label="Closes"
+              label="Closed Deals"
               value={int(data.totals.closes)}
               sub={`${pct(data.totals.closeRate)} close rate`}
             />
@@ -82,7 +86,7 @@ export default function Page() {
               value={usd(data.totals.cashCollected)}
             />
             <StatCard
-              label="Revenue / ROAS"
+              label="Revenue"
               value={usd(data.totals.revenue)}
               sub={data.totals.spend ? `${data.totals.roas.toFixed(2)}x ROAS` : "—"}
             />
