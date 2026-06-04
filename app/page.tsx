@@ -3,15 +3,16 @@
 import { useEffect, useState } from "react";
 import type { DashboardData } from "@/lib/metrics";
 import { usd, usd2, int, pct } from "@/components/format";
-import { StatCard, Card, BarList } from "@/components/Panels";
+import { StatCard, Card, BarList, BuyerBarList } from "@/components/Panels";
 import TimelineChart from "@/components/RevenueChart";
 import { DailyLine, CashByCloserChart } from "@/components/SalesCharts";
 
-type Tab = "overview" | "sales";
+type Tab = "overview" | "sales" | "buyers";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "overview", label: "Overview" },
   { id: "sales", label: "Sales Detail" },
+  { id: "buyers", label: "Buyer Attribution" },
 ];
 
 const PRESETS: { label: string; days: number | null }[] = [
@@ -159,6 +160,7 @@ export default function Page() {
 
       {data && tab === "overview" && <Overview data={data} />}
       {data && tab === "sales" && <SalesDetail data={data} />}
+      {data && tab === "buyers" && <BuyerAttribution data={data} />}
 
       {data && (
         <footer className="pt-6 text-xs text-slate-600">
@@ -498,6 +500,164 @@ function SalesDetail({ data }: { data: DashboardData }) {
           </table>
         </div>
       </Card>
+    </div>
+  );
+}
+
+function BuyerAttribution({ data }: { data: DashboardData }) {
+  const s = data.buyerSummary;
+  const logBadge = {
+    stripe: "bg-violet-500/15 text-violet-300 border-violet-500/30",
+    whop: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
+    oto: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+  } as const;
+
+  return (
+    <div className="space-y-6">
+      <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <StatCard
+          label="Total Buyers"
+          value={int(s.totalBuyers)}
+          sub={`${int(s.totalRows)} payments`}
+        />
+        <StatCard label="Total Cash" value={usd(s.totalCash)} />
+        <StatCard
+          label="Attributed to UTM"
+          value={pct(s.attributionRate)}
+          sub={`${int(s.attributedBuyers)} of ${int(s.totalBuyers)} buyers`}
+        />
+        <StatCard
+          label="Unattributed Cash"
+          value={usd(s.unattributedCash)}
+          sub={`${int(s.unattributedBuyers)} buyers w/o UTM`}
+        />
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <StatCard
+          label="Stripe Log"
+          value={usd(s.byLog.stripe.cash)}
+          sub={`${int(s.byLog.stripe.rows)} payments`}
+        />
+        <StatCard
+          label="Whop Log"
+          value={usd(s.byLog.whop.cash)}
+          sub={`${int(s.byLog.whop.rows)} payments`}
+        />
+        <StatCard
+          label="OTO Log"
+          value={usd(s.byLog.oto.cash)}
+          sub={`${int(s.byLog.oto.rows)} payments`}
+        />
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <Card title="Buyers by Source">
+          <BuyerBarList rows={data.buyersBySource} />
+        </Card>
+        <Card title="Buyers by Campaign">
+          <BuyerBarList rows={data.buyersByCampaign} />
+        </Card>
+        <Card title="Buyers by Adset">
+          <BuyerBarList rows={data.buyersByAdset} />
+        </Card>
+        <Card title="Buyers by Webinar">
+          <BuyerBarList rows={data.buyersByWebinar} />
+        </Card>
+      </section>
+
+      <Card title="Buyers by UTM Content (ad creative)">
+        <BuyerBarList rows={data.buyersByContent} />
+      </Card>
+
+      <Card
+        title="Recent Buyers"
+        right={
+          <span className="text-xs text-slate-500">
+            {int(data.recentBuyers.length)} of {int(s.totalRows)}
+          </span>
+        }
+      >
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm">
+            <thead className="text-xs uppercase text-slate-500">
+              <tr className="border-b border-edge">
+                <th className="py-2 pr-3">Date</th>
+                <th className="py-2 pr-3">Buyer</th>
+                <th className="py-2 pr-3">Log</th>
+                <th className="py-2 pr-3 text-right">Amount</th>
+                <th className="py-2 pr-3">Source</th>
+                <th className="py-2 pr-3">Campaign</th>
+                <th className="py-2 pr-3">Adset</th>
+                <th className="py-2 pr-3">Webinar</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.recentBuyers.map((b) => (
+                <tr key={b.id} className="border-b border-edge/50">
+                  <td className="py-2 pr-3 text-slate-400">{b.date}</td>
+                  <td className="py-2 pr-3 text-slate-200">
+                    {b.name || b.email}
+                    {b.name && (
+                      <div className="text-[11px] text-slate-500">
+                        {b.email}
+                      </div>
+                    )}
+                  </td>
+                  <td className="py-2 pr-3">
+                    <span
+                      className={`rounded border px-1.5 py-0.5 text-[10px] uppercase ${logBadge[b.logSource]}`}
+                    >
+                      {b.logSource}
+                    </span>
+                  </td>
+                  <td className="py-2 pr-3 text-right text-slate-200">
+                    {usd(b.amount)}
+                  </td>
+                  <td className="py-2 pr-3 text-slate-400">
+                    {b.attributed ? (
+                      b.utmSource || "—"
+                    ) : (
+                      <span className="text-slate-600">(unattributed)</span>
+                    )}
+                  </td>
+                  <td className="py-2 pr-3 text-slate-400">
+                    {b.attributed ? b.utmCampaign || "—" : ""}
+                  </td>
+                  <td className="py-2 pr-3 text-slate-400">
+                    {b.attributed ? b.utmAdset || "—" : ""}
+                  </td>
+                  <td className="py-2 pr-3 text-slate-400">
+                    {b.attributed ? b.webinar || "—" : ""}
+                  </td>
+                </tr>
+              ))}
+              {!data.recentBuyers.length && (
+                <tr>
+                  <td colSpan={8} className="py-3 text-slate-500">
+                    No buyer logs yet.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+
+      {s.unattributedBuyers > 0 && (
+        <Card title="Attribution gap">
+          <p className="text-sm text-slate-400">
+            <span className="text-slate-200">
+              {int(s.unattributedBuyers)} of {int(s.totalBuyers)} buyers
+            </span>{" "}
+            ({usd(s.unattributedCash)}) couldn&apos;t be matched to a UTM
+            registration by email. This usually means the registration form
+            wasn&apos;t hit with UTMs (direct traffic, manual outreach,
+            different email at checkout vs. registration). The Stripe / Whop
+            high-ticket logs have the lowest match rate — worth investigating.
+          </p>
+        </Card>
+      )}
     </div>
   );
 }

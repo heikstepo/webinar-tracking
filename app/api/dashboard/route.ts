@@ -43,6 +43,7 @@ function dateBounds(r: ConnectorResult): { min: string | null; max: string | nul
   for (const x of r.registrations) if (x.date) dates.push(x.date.slice(0, 10));
   for (const x of r.ads) if (x.date) dates.push(x.date.slice(0, 10));
   for (const x of r.sales) if (x.date) dates.push(x.date.slice(0, 10));
+  for (const x of r.buyers) if (x.date) dates.push(x.date.slice(0, 10));
   if (!dates.length) return { min: null, max: null };
   dates.sort();
   return { min: dates[0], max: dates[dates.length - 1] };

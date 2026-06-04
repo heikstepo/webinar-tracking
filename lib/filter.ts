@@ -19,5 +19,6 @@ export function filterByRange(
     registrations: r.registrations.filter((x) => inRange(x.date)),
     ads: r.ads.filter((x) => inRange(x.date)),
     sales: r.sales.filter((x) => inRange(x.date)),
+    buyers: r.buyers.filter((x) => inRange(x.date)),
   };
 }

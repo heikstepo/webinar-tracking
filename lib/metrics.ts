@@ -1,8 +1,19 @@
-import { ConnectorResult, Registration, SalesDay } from "./connectors/types";
+import {
+  ConnectorResult,
+  Registration,
+  SalesDay,
+  Buyer,
+} from "./connectors/types";
 
 export interface NamedCount {
   name: string;
   count: number;
+}
+
+export interface NamedTotal {
+  name: string;
+  buyers: number;
+  cash: number;
 }
 
 export interface CloserStat {
@@ -73,9 +84,51 @@ export interface DashboardData {
   cashByCloser: { name: string; value: number }[];
   recentRegistrations: Registration[];
   recentSales: RecentSale[];
-  counts: { registrations: number; adDays: number; salesDays: number };
+  buyerSummary: {
+    totalBuyers: number; // unique emails
+    totalRows: number; // payment rows
+    totalCash: number;
+    attributedBuyers: number;
+    unattributedBuyers: number;
+    attributionRate: number; // attributed / totalBuyers
+    attributedCash: number;
+    unattributedCash: number;
+    byLog: { stripe: BuyerLogSummary; whop: BuyerLogSummary; oto: BuyerLogSummary };
+  };
+  buyersBySource: NamedTotal[];
+  buyersByCampaign: NamedTotal[];
+  buyersByAdset: NamedTotal[];
+  buyersByContent: NamedTotal[];
+  buyersByWebinar: NamedTotal[];
+  recentBuyers: Buyer[];
+  counts: { registrations: number; adDays: number; salesDays: number; buyers: number };
   range?: { from: string | null; to: string | null };
   available?: { min: string | null; max: string | null };
+}
+
+export interface BuyerLogSummary {
+  rows: number;
+  cash: number;
+}
+
+function buyerTally(
+  buyers: Buyer[],
+  key: (b: Buyer) => string,
+): NamedTotal[] {
+  const m = new Map<string, { name: string; emails: Set<string>; cash: number }>();
+  for (const b of buyers) {
+    const k = key(b) || "(unattributed)";
+    let cur = m.get(k);
+    if (!cur) {
+      cur = { name: k, emails: new Set(), cash: 0 };
+      m.set(k, cur);
+    }
+    if (b.email) cur.emails.add(b.email);
+    cur.cash += b.amount;
+  }
+  return [...m.values()]
+    .map((v) => ({ name: v.name, buyers: v.emails.size, cash: v.cash }))
+    .sort((a, b) => b.cash - a.cash);
 }
 
 function tally(items: string[]): NamedCount[] {
@@ -181,6 +234,26 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
 
   const closers = closerStats(r.sales);
 
+  // Buyer attribution
+  const buyers = r.buyers;
+  const uniqueEmails = new Set(buyers.map((b) => b.email).filter(Boolean));
+  const attributedBuyersSet = new Set(
+    buyers.filter((b) => b.attributed && b.email).map((b) => b.email),
+  );
+  const totalCash = buyers.reduce((a, b) => a + b.amount, 0);
+  const attributedCash = buyers
+    .filter((b) => b.attributed)
+    .reduce((a, b) => a + b.amount, 0);
+  const totalBuyers = uniqueEmails.size;
+  const attributedBuyers = attributedBuyersSet.size;
+  const byLog = (src: Buyer["logSource"]): BuyerLogSummary => {
+    const rows = buyers.filter((b) => b.logSource === src);
+    return {
+      rows: rows.length,
+      cash: rows.reduce((a, b) => a + b.amount, 0),
+    };
+  };
+
   return {
     fetchedAt: r.fetchedAt,
     notes: r.notes,
@@ -236,10 +309,34 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
         cashCollected: s.cashCollected,
         revenue: s.revenue,
       })),
+    buyerSummary: {
+      totalBuyers,
+      totalRows: buyers.length,
+      totalCash,
+      attributedBuyers,
+      unattributedBuyers: totalBuyers - attributedBuyers,
+      attributionRate: div(attributedBuyers, totalBuyers),
+      attributedCash,
+      unattributedCash: totalCash - attributedCash,
+      byLog: {
+        stripe: byLog("stripe"),
+        whop: byLog("whop"),
+        oto: byLog("oto"),
+      },
+    },
+    buyersBySource: buyerTally(buyers, (b) => b.utmSource),
+    buyersByCampaign: buyerTally(buyers, (b) => b.utmCampaign),
+    buyersByAdset: buyerTally(buyers, (b) => b.utmAdset),
+    buyersByContent: buyerTally(buyers, (b) => b.utmContent),
+    buyersByWebinar: buyerTally(buyers, (b) => b.webinar),
+    recentBuyers: [...buyers]
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .slice(0, 30),
     counts: {
       registrations: r.registrations.length,
       adDays: r.ads.length,
       salesDays: r.sales.length,
+      buyers: buyers.length,
     },
   };
 }

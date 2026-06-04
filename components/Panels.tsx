@@ -1,5 +1,5 @@
-import { int } from "./format";
-import type { NamedCount } from "@/lib/metrics";
+import { int, usd } from "./format";
+import type { NamedCount, NamedTotal } from "@/lib/metrics";
 
 export function StatCard({
   label,
@@ -61,6 +61,34 @@ export function BarList({ rows }: { rows: NamedCount[] }) {
       ))}
       {!rows.length && (
         <div className="text-sm text-slate-500">No registrations yet.</div>
+      )}
+    </div>
+  );
+}
+
+export function BuyerBarList({ rows }: { rows: NamedTotal[] }) {
+  const max = Math.max(1, ...rows.map((r) => r.cash));
+  return (
+    <div className="space-y-2">
+      {rows.slice(0, 10).map((r) => (
+        <div key={r.name}>
+          <div className="flex justify-between text-sm">
+            <span className="truncate pr-2 text-slate-300">{r.name}</span>
+            <span className="text-slate-400">
+              {usd(r.cash)}{" "}
+              <span className="text-slate-600">· {int(r.buyers)}</span>
+            </span>
+          </div>
+          <div className="mt-1 h-1.5 w-full rounded bg-ink">
+            <div
+              className="h-1.5 rounded bg-accent"
+              style={{ width: `${(r.cash / max) * 100}%` }}
+            />
+          </div>
+        </div>
+      ))}
+      {!rows.length && (
+        <div className="text-sm text-slate-500">No buyer data yet.</div>
       )}
     </div>
   );

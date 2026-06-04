@@ -48,6 +48,25 @@ export interface SalesDay {
   revenue: number;
 }
 
+// One paying customer payment row from a billing log (Stripe / Whop / OTO).
+// utm* fields are filled in by joining to UTM Tracking on email.
+export interface Buyer {
+  id: string;
+  date: string; // YYYY-MM-DD
+  name: string;
+  email: string;
+  amount: number;
+  status: string;
+  logSource: "stripe" | "whop" | "oto";
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmAdset: string;
+  utmContent: string;
+  webinar: string;
+  attributed: boolean; // matched a UTM Tracking row by email
+}
+
 // What a connector returns. Any array may be empty if that source has no data
 // yet — the dashboard renders only the sections that have data.
 export interface ConnectorResult {
@@ -56,5 +75,6 @@ export interface ConnectorResult {
   registrations: Registration[];
   ads: AdDay[];
   sales: SalesDay[];
+  buyers: Buyer[];
   notes: string[];
 }
