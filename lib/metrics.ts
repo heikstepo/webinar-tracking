@@ -15,12 +15,28 @@ export interface CloserStat {
   cashCollected: number;
   revenue: number;
   closeRate: number; // closes / callsTaken
+  offerCloseRate: number; // closes / offers
 }
 
 export interface TimePoint {
   date: string;
   spend: number;
   registrations: number;
+  revenue: number;
+  closes: number;
+  scheduledCalls: number;
+  callsTaken: number;
+  cashCollected: number;
+}
+
+export interface RecentSale {
+  id: string;
+  date: string;
+  closer: string;
+  scheduledCalls: number;
+  callsTaken: number;
+  oneCallCloses: number;
+  cashCollected: number;
   revenue: number;
 }
 
@@ -41,6 +57,11 @@ export interface DashboardData {
     showRate: number; // callsTaken / scheduledCalls
     closeRate: number; // closes / callsTaken
     costPerClose: number; // spend / closes
+    avgOrderValue: number; // revenue / closes
+    cashPerCall: number; // cashCollected / callsTaken
+    qualifiedCallsRate: number; // offers / callsTaken
+    avgCallsPerDay: number; // callsTaken / distinct sale dates
+    offerCloseRate: number; // closes / offers
   };
   funnel: { stage: string; value: number; sub: string }[];
   timeline: TimePoint[];
@@ -49,7 +70,9 @@ export interface DashboardData {
   byAdset: NamedCount[];
   byWebinar: NamedCount[];
   closers: CloserStat[];
+  cashByCloser: { name: string; value: number }[];
   recentRegistrations: Registration[];
+  recentSales: RecentSale[];
   counts: { registrations: number; adDays: number; salesDays: number };
 }
 
@@ -83,6 +106,7 @@ function closerStats(sales: SalesDay[]): CloserStat[] {
         cashCollected: 0,
         revenue: 0,
         closeRate: 0,
+        offerCloseRate: 0,
       } as CloserStat);
     cur.scheduled += s.scheduledCalls;
     cur.callsTaken += s.callsTaken;
@@ -94,7 +118,10 @@ function closerStats(sales: SalesDay[]): CloserStat[] {
     m.set(s.closer, cur);
   }
   const out = [...m.values()];
-  out.forEach((c) => (c.closeRate = div(c.closes, c.callsTaken)));
+  out.forEach((c) => {
+    c.closeRate = div(c.closes, c.callsTaken);
+    c.offerCloseRate = div(c.closes, c.offers);
+  });
   return out.sort((a, b) => b.revenue - a.revenue);
 }
 
@@ -112,12 +139,21 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
   const cashCollected = r.sales.reduce((a, s) => a + s.cashCollected, 0);
   const revenue = r.sales.reduce((a, s) => a + s.revenue, 0);
 
-  // Merge spend / registrations / revenue onto a shared date axis.
+  // Merge daily series (ads, registrations, sales) onto a shared date axis.
   const tl = new Map<string, TimePoint>();
   const point = (d: string): TimePoint => {
     let p = tl.get(d);
     if (!p) {
-      p = { date: d, spend: 0, registrations: 0, revenue: 0 };
+      p = {
+        date: d,
+        spend: 0,
+        registrations: 0,
+        revenue: 0,
+        closes: 0,
+        scheduledCalls: 0,
+        callsTaken: 0,
+        cashCollected: 0,
+      };
       tl.set(d, p);
     }
     return p;
@@ -125,10 +161,23 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
   for (const a of r.ads) if (a.date) point(a.date).spend += a.spend;
   for (const reg of r.registrations)
     if (reg.date) point(reg.date).registrations += 1;
-  for (const s of r.sales) if (s.date) point(s.date).revenue += s.revenue;
+  for (const s of r.sales) {
+    if (!s.date) continue;
+    const p = point(s.date);
+    p.revenue += s.revenue;
+    p.closes += s.oneCallCloses + s.followUpCloses;
+    p.scheduledCalls += s.scheduledCalls;
+    p.callsTaken += s.callsTaken;
+    p.cashCollected += s.cashCollected;
+  }
   const timeline = [...tl.values()].sort((a, b) =>
     a.date.localeCompare(b.date),
   );
+
+  const distinctSaleDates = new Set(r.sales.map((s) => s.date).filter(Boolean))
+    .size;
+
+  const closers = closerStats(r.sales);
 
   return {
     fetchedAt: r.fetchedAt,
@@ -147,6 +196,11 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
       showRate: div(callsTaken, scheduledCalls),
       closeRate: div(closes, callsTaken),
       costPerClose: div(spend, closes),
+      avgOrderValue: div(revenue, closes),
+      cashPerCall: div(cashCollected, callsTaken),
+      qualifiedCallsRate: div(offers, callsTaken),
+      avgCallsPerDay: div(callsTaken, distinctSaleDates),
+      offerCloseRate: div(closes, offers),
     },
     funnel: [
       { stage: "Registrations", value: registrations, sub: "UTM Tracking" },
@@ -160,10 +214,26 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
     byCampaign: tally(r.registrations.map((x) => x.campaign)),
     byAdset: tally(r.registrations.map((x) => x.adset)),
     byWebinar: tally(r.registrations.map((x) => x.webinar || "(unspecified)")),
-    closers: closerStats(r.sales),
+    closers,
+    cashByCloser: closers
+      .map((c) => ({ name: c.name, value: c.cashCollected }))
+      .sort((a, b) => b.value - a.value),
     recentRegistrations: [...r.registrations]
       .sort((a, b) => b.date.localeCompare(a.date))
       .slice(0, 25),
+    recentSales: [...r.sales]
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .slice(0, 15)
+      .map((s) => ({
+        id: s.id,
+        date: s.date,
+        closer: s.closer,
+        scheduledCalls: s.scheduledCalls,
+        callsTaken: s.callsTaken,
+        oneCallCloses: s.oneCallCloses,
+        cashCollected: s.cashCollected,
+        revenue: s.revenue,
+      })),
     counts: {
       registrations: r.registrations.length,
       adDays: r.ads.length,

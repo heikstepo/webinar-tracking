@@ -5,11 +5,20 @@ import type { DashboardData } from "@/lib/metrics";
 import { usd, usd2, int, pct } from "@/components/format";
 import { StatCard, Card, BarList } from "@/components/Panels";
 import TimelineChart from "@/components/RevenueChart";
+import { DailyLine, CashByCloserChart } from "@/components/SalesCharts";
+
+type Tab = "overview" | "sales";
+
+const TABS: { id: Tab; label: string }[] = [
+  { id: "overview", label: "Overview" },
+  { id: "sales", label: "Sales Detail" },
+];
 
 export default function Page() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [tab, setTab] = useState<Tab>("overview");
 
   const load = () => {
     setLoading(true);
@@ -28,7 +37,7 @@ export default function Page() {
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-8">
-      <header className="mb-6 flex items-end justify-between">
+      <header className="mb-4 flex items-end justify-between">
         <div>
           <h1 className="text-xl font-semibold text-slate-50">
             App Accelerator — Webinar Funnel
@@ -46,6 +55,22 @@ export default function Page() {
         </button>
       </header>
 
+      <nav className="mb-6 flex gap-1 border-b border-edge">
+        {TABS.map((t) => (
+          <button
+            key={t.id}
+            onClick={() => setTab(t.id)}
+            className={`-mb-px border-b-2 px-4 py-2 text-sm transition-colors ${
+              tab === t.id
+                ? "border-accent text-slate-100"
+                : "border-transparent text-slate-500 hover:text-slate-300"
+            }`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </nav>
+
       {error && (
         <div className="mb-6 rounded-lg border border-red-900 bg-red-950/40 p-4 text-sm text-red-300">
           Failed to load: {error}
@@ -56,175 +81,348 @@ export default function Page() {
         <div className="text-sm text-slate-500">Loading data from Airtable…</div>
       )}
 
+      {data && tab === "overview" && <Overview data={data} />}
+      {data && tab === "sales" && <SalesDetail data={data} />}
+
       {data && (
-        <div className="space-y-6">
-          {/* KPI row */}
-          <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            <StatCard label="Ad Spend" value={usd(data.totals.spend)} />
-            <StatCard
-              label="Registrations"
-              value={int(data.totals.registrations)}
-              sub={`${usd2(data.totals.costPerRegistration)} / reg`}
-            />
-            <StatCard
-              label="Booked Calls"
-              value={int(data.totals.scheduledCalls)}
-            />
-            <StatCard
-              label="Calls Taken"
-              value={int(data.totals.callsTaken)}
-              sub={`${pct(data.totals.showRate)} show rate`}
-            />
-            <StatCard label="Offers Made" value={int(data.totals.offers)} />
-            <StatCard
-              label="Closed Deals"
-              value={int(data.totals.closes)}
-              sub={`${pct(data.totals.closeRate)} close rate`}
-            />
-            <StatCard
-              label="Cash Collected"
-              value={usd(data.totals.cashCollected)}
-            />
-            <StatCard
-              label="Revenue"
-              value={usd(data.totals.revenue)}
-              sub={data.totals.spend ? `${data.totals.roas.toFixed(2)}x ROAS` : "—"}
-            />
-          </section>
-
-          {/* Timeline */}
-          <Card title="Daily Activity">
-            <TimelineChart data={data.timeline} />
-          </Card>
-
-          {/* Funnel */}
-          <Card title="Funnel">
-            <Funnel stages={data.funnel} />
-          </Card>
-
-          {/* Attribution */}
-          <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <Card title="Registrations by Source">
-              <BarList rows={data.bySource} />
-            </Card>
-            <Card title="Registrations by Campaign">
-              <BarList rows={data.byCampaign} />
-            </Card>
-            <Card title="Registrations by Adset">
-              <BarList rows={data.byAdset} />
-            </Card>
-            <Card title="Registrations by Webinar">
-              <BarList rows={data.byWebinar} />
-            </Card>
-          </section>
-
-          {/* Closer performance */}
-          <Card
-            title="Closer Performance"
-            right={
-              <span className="text-xs text-slate-500">
-                {data.counts.salesDays
-                  ? `${data.counts.salesDays} EOD reports`
-                  : "waiting on Closer EOD data"}
-              </span>
-            }
-          >
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
-                <thead className="text-xs uppercase text-slate-500">
-                  <tr className="border-b border-edge">
-                    <th className="py-2 pr-3">Closer</th>
-                    <th className="py-2 pr-3 text-right">Scheduled</th>
-                    <th className="py-2 pr-3 text-right">Taken</th>
-                    <th className="py-2 pr-3 text-right">No-Shows</th>
-                    <th className="py-2 pr-3 text-right">Offers</th>
-                    <th className="py-2 pr-3 text-right">Closes</th>
-                    <th className="py-2 pr-3 text-right">Close %</th>
-                    <th className="py-2 pr-3 text-right">Cash</th>
-                    <th className="py-2 pr-3 text-right">Revenue</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.closers.map((c) => (
-                    <tr key={c.name} className="border-b border-edge/50">
-                      <td className="py-2 pr-3 text-slate-200">{c.name}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.scheduled)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.callsTaken)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.noShows)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{int(c.offers)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-200">{int(c.closes)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{pct(c.closeRate)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-400">{usd(c.cashCollected)}</td>
-                      <td className="py-2 pr-3 text-right text-slate-200">{usd(c.revenue)}</td>
-                    </tr>
-                  ))}
-                  {!data.closers.length && (
-                    <tr>
-                      <td colSpan={9} className="py-3 text-slate-500">
-                        No Closer EOD reports yet.
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </Card>
-
-          {/* Recent registrations */}
-          <Card title="Recent Registrations">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
-                <thead className="text-xs uppercase text-slate-500">
-                  <tr className="border-b border-edge">
-                    <th className="py-2 pr-3">Date</th>
-                    <th className="py-2 pr-3">Name</th>
-                    <th className="py-2 pr-3">Webinar</th>
-                    <th className="py-2 pr-3">Source</th>
-                    <th className="py-2 pr-3">Campaign</th>
-                    <th className="py-2 pr-3">Adset</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.recentRegistrations.map((r) => (
-                    <tr key={r.id} className="border-b border-edge/50">
-                      <td className="py-2 pr-3 text-slate-400">{r.date}</td>
-                      <td className="py-2 pr-3 text-slate-200">{r.name}</td>
-                      <td className="py-2 pr-3 text-slate-400">{r.webinar}</td>
-                      <td className="py-2 pr-3 text-slate-400">{r.source}</td>
-                      <td className="py-2 pr-3 text-slate-400">{r.campaign}</td>
-                      <td className="py-2 pr-3 text-slate-400">{r.adset}</td>
-                    </tr>
-                  ))}
-                  {!data.recentRegistrations.length && (
-                    <tr>
-                      <td colSpan={6} className="py-3 text-slate-500">
-                        No registrations yet.
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </Card>
-
-          {data.notes.length > 0 && (
-            <Card title="Connector Notes">
-              <ul className="list-disc space-y-1 pl-5 text-sm text-slate-400">
-                {data.notes.map((n, i) => (
-                  <li key={i}>{n}</li>
-                ))}
-              </ul>
-            </Card>
-          )}
-
-          <footer className="pt-2 text-xs text-slate-600">
-            Last fetched {new Date(data.fetchedAt).toLocaleString()} ·{" "}
-            {data.counts.registrations} regs · {data.counts.adDays} ad days ·{" "}
-            {data.counts.salesDays} EOD reports
-          </footer>
-        </div>
+        <footer className="pt-6 text-xs text-slate-600">
+          Last fetched {new Date(data.fetchedAt).toLocaleString()} ·{" "}
+          {data.counts.registrations} regs · {data.counts.adDays} ad days ·{" "}
+          {data.counts.salesDays} EOD reports
+        </footer>
       )}
     </main>
+  );
+}
+
+function Overview({ data }: { data: DashboardData }) {
+  return (
+    <div className="space-y-6">
+      <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <StatCard label="Ad Spend" value={usd(data.totals.spend)} />
+        <StatCard
+          label="Registrations"
+          value={int(data.totals.registrations)}
+          sub={`${usd2(data.totals.costPerRegistration)} / reg`}
+        />
+        <StatCard label="Booked Calls" value={int(data.totals.scheduledCalls)} />
+        <StatCard
+          label="Calls Taken"
+          value={int(data.totals.callsTaken)}
+          sub={`${pct(data.totals.showRate)} show rate`}
+        />
+        <StatCard label="Offers Made" value={int(data.totals.offers)} />
+        <StatCard
+          label="Closed Deals"
+          value={int(data.totals.closes)}
+          sub={`${pct(data.totals.closeRate)} close rate`}
+        />
+        <StatCard label="Cash Collected" value={usd(data.totals.cashCollected)} />
+        <StatCard
+          label="Revenue"
+          value={usd(data.totals.revenue)}
+          sub={data.totals.spend ? `${data.totals.roas.toFixed(2)}x ROAS` : "—"}
+        />
+      </section>
+
+      <Card title="Daily Activity">
+        <TimelineChart data={data.timeline} />
+      </Card>
+
+      <Card title="Funnel">
+        <Funnel stages={data.funnel} />
+      </Card>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <Card title="Registrations by Source">
+          <BarList rows={data.bySource} />
+        </Card>
+        <Card title="Registrations by Campaign">
+          <BarList rows={data.byCampaign} />
+        </Card>
+        <Card title="Registrations by Adset">
+          <BarList rows={data.byAdset} />
+        </Card>
+        <Card title="Registrations by Webinar">
+          <BarList rows={data.byWebinar} />
+        </Card>
+      </section>
+
+      <Card
+        title="Closer Performance"
+        right={
+          <span className="text-xs text-slate-500">
+            {data.counts.salesDays
+              ? `${data.counts.salesDays} EOD reports`
+              : "waiting on Closer EOD data"}
+          </span>
+        }
+      >
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm">
+            <thead className="text-xs uppercase text-slate-500">
+              <tr className="border-b border-edge">
+                <th className="py-2 pr-3">Closer</th>
+                <th className="py-2 pr-3 text-right">Scheduled</th>
+                <th className="py-2 pr-3 text-right">Taken</th>
+                <th className="py-2 pr-3 text-right">No-Shows</th>
+                <th className="py-2 pr-3 text-right">Offers</th>
+                <th className="py-2 pr-3 text-right">Closes</th>
+                <th className="py-2 pr-3 text-right">Close %</th>
+                <th className="py-2 pr-3 text-right">Cash</th>
+                <th className="py-2 pr-3 text-right">Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.closers.map((c) => (
+                <tr key={c.name} className="border-b border-edge/50">
+                  <td className="py-2 pr-3 text-slate-200">{c.name}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{int(c.scheduled)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{int(c.callsTaken)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{int(c.noShows)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{int(c.offers)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-200">{int(c.closes)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{pct(c.closeRate)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">{usd(c.cashCollected)}</td>
+                  <td className="py-2 pr-3 text-right text-slate-200">{usd(c.revenue)}</td>
+                </tr>
+              ))}
+              {!data.closers.length && (
+                <tr>
+                  <td colSpan={9} className="py-3 text-slate-500">
+                    No Closer EOD reports yet.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+
+      <Card title="Recent Registrations">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm">
+            <thead className="text-xs uppercase text-slate-500">
+              <tr className="border-b border-edge">
+                <th className="py-2 pr-3">Date</th>
+                <th className="py-2 pr-3">Name</th>
+                <th className="py-2 pr-3">Webinar</th>
+                <th className="py-2 pr-3">Source</th>
+                <th className="py-2 pr-3">Campaign</th>
+                <th className="py-2 pr-3">Adset</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.recentRegistrations.map((r) => (
+                <tr key={r.id} className="border-b border-edge/50">
+                  <td className="py-2 pr-3 text-slate-400">{r.date}</td>
+                  <td className="py-2 pr-3 text-slate-200">{r.name}</td>
+                  <td className="py-2 pr-3 text-slate-400">{r.webinar}</td>
+                  <td className="py-2 pr-3 text-slate-400">{r.source}</td>
+                  <td className="py-2 pr-3 text-slate-400">{r.campaign}</td>
+                  <td className="py-2 pr-3 text-slate-400">{r.adset}</td>
+                </tr>
+              ))}
+              {!data.recentRegistrations.length && (
+                <tr>
+                  <td colSpan={6} className="py-3 text-slate-500">
+                    No registrations yet.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+
+      {data.notes.length > 0 && (
+        <Card title="Connector Notes">
+          <ul className="list-disc space-y-1 pl-5 text-sm text-slate-400">
+            {data.notes.map((n, i) => (
+              <li key={i}>{n}</li>
+            ))}
+          </ul>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+function SalesDetail({ data }: { data: DashboardData }) {
+  const t = data.totals;
+  return (
+    <div className="space-y-6">
+      <section>
+        <h2 className="mb-3 text-sm font-medium text-slate-400">
+          Financial Metrics
+        </h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <StatCard
+            label="Cash Collected"
+            value={usd(t.cashCollected)}
+            sub="total collected"
+          />
+          <StatCard
+            label="Revenue Generated"
+            value={usd(t.revenue)}
+            sub="total revenue"
+          />
+          <StatCard
+            label="Avg Order Value"
+            value={usd(t.avgOrderValue)}
+            sub="per closed deal"
+          />
+          <StatCard
+            label="Cash Per Call"
+            value={usd(t.cashPerCall)}
+            sub="average per call"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-sm font-medium text-slate-400">
+          Performance Metrics
+        </h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <StatCard
+            label="Close Rate"
+            value={pct(t.closeRate)}
+            sub="calls to closed deals"
+          />
+          <StatCard
+            label="Show Rate"
+            value={pct(t.showRate)}
+            sub="scheduled to taken"
+          />
+          <StatCard
+            label="Qualified Calls"
+            value={pct(t.qualifiedCallsRate)}
+            sub="calls to offers"
+          />
+          <StatCard
+            label="Avg Calls/Day"
+            value={t.avgCallsPerDay.toFixed(1)}
+            sub="daily average"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-sm font-medium text-slate-400">
+          Volume Metrics
+        </h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-2">
+          <StatCard
+            label="Calls on Calendar"
+            value={int(t.scheduledCalls)}
+            sub="total scheduled"
+          />
+          <StatCard
+            label="Offer Close Rate"
+            value={pct(t.offerCloseRate)}
+            sub="offers to closed deals"
+          />
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <Card title="Closed Deals Over Time">
+          <DailyLine
+            data={data.timeline}
+            dataKey="closes"
+            color="#34d399"
+            name="Closes"
+          />
+        </Card>
+        <Card title="Calls on Calendar Over Time">
+          <DailyLine
+            data={data.timeline}
+            dataKey="scheduledCalls"
+            color="#8b5cf6"
+            name="Scheduled Calls"
+          />
+        </Card>
+      </section>
+
+      <Card title="Cash Collected by Closer">
+        <CashByCloserChart data={data.cashByCloser} />
+      </Card>
+
+      <Card title="Closer Performance Summary">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+          {data.closers.map((c) => (
+            <div
+              key={c.name}
+              className="rounded-lg border border-edge bg-ink p-3"
+            >
+              <div className="text-sm font-medium text-slate-100">{c.name}</div>
+              <div className="mt-2 text-xs text-slate-400">
+                Close Rate:{" "}
+                <span className="text-slate-200">{pct(c.closeRate)}</span>
+              </div>
+              <div className="text-xs text-slate-400">
+                Offer Close Rate:{" "}
+                <span className="text-slate-200">{pct(c.offerCloseRate)}</span>
+              </div>
+            </div>
+          ))}
+          {!data.closers.length && (
+            <div className="text-sm text-slate-500">
+              No closers reporting yet.
+            </div>
+          )}
+        </div>
+      </Card>
+
+      <Card title="Recent EOD Reports">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm">
+            <thead className="text-xs uppercase text-slate-500">
+              <tr className="border-b border-edge">
+                <th className="py-2 pr-3">Date</th>
+                <th className="py-2 pr-3">Closer</th>
+                <th className="py-2 pr-3 text-right">Scheduled</th>
+                <th className="py-2 pr-3 text-right">Taken</th>
+                <th className="py-2 pr-3 text-right">1-Call Closes</th>
+                <th className="py-2 pr-3 text-right">Cash</th>
+                <th className="py-2 pr-3 text-right">Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.recentSales.map((s) => (
+                <tr key={s.id} className="border-b border-edge/50">
+                  <td className="py-2 pr-3 text-slate-400">{s.date}</td>
+                  <td className="py-2 pr-3 text-slate-200">{s.closer}</td>
+                  <td className="py-2 pr-3 text-right text-slate-400">
+                    {int(s.scheduledCalls)}
+                  </td>
+                  <td className="py-2 pr-3 text-right text-slate-400">
+                    {int(s.callsTaken)}
+                  </td>
+                  <td className="py-2 pr-3 text-right text-slate-200">
+                    {int(s.oneCallCloses)}
+                  </td>
+                  <td className="py-2 pr-3 text-right text-slate-400">
+                    {usd(s.cashCollected)}
+                  </td>
+                  <td className="py-2 pr-3 text-right text-slate-200">
+                    {usd(s.revenue)}
+                  </td>
+                </tr>
+              ))}
+              {!data.recentSales.length && (
+                <tr>
+                  <td colSpan={7} className="py-3 text-slate-500">
+                    No EOD reports yet.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+    </div>
   );
 }
 
