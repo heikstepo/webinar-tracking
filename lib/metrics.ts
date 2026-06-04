@@ -189,12 +189,27 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
   const scheduledCalls = r.sales.reduce((a, s) => a + s.scheduledCalls, 0);
   const callsTaken = r.sales.reduce((a, s) => a + s.callsTaken, 0);
   const offers = r.sales.reduce((a, s) => a + s.offersMade, 0);
-  const closes = r.sales.reduce(
-    (a, s) => a + s.oneCallCloses + s.followUpCloses,
-    0,
-  );
-  const cashCollected = r.sales.reduce((a, s) => a + s.cashCollected, 0);
-  const revenue = r.sales.reduce((a, s) => a + s.revenue, 0);
+
+  // Money + closes prefer Closer EOD self-reports when EOD has data
+  // (All Webinars view). When EOD is empty — e.g. scoped to a single
+  // webinar where EOD isn't webinar-tagged — fall back to the payment-log
+  // totals derived from cross-referencing buyers via UTM Tracking.
+  const buyers = r.buyers;
+  const buyerEmails = new Set(buyers.map((b) => b.email).filter(Boolean));
+  const buyerCash = buyers.reduce((a, b) => a + b.amount, 0);
+  const eodHasData = r.sales.length > 0;
+  const closes = eodHasData
+    ? r.sales.reduce(
+        (a, s) => a + s.oneCallCloses + s.followUpCloses,
+        0,
+      )
+    : buyerEmails.size;
+  const cashCollected = eodHasData
+    ? r.sales.reduce((a, s) => a + s.cashCollected, 0)
+    : buyerCash;
+  const revenue = eodHasData
+    ? r.sales.reduce((a, s) => a + s.revenue, 0)
+    : buyerCash;
 
   // Merge daily series (ads, registrations, sales) onto a shared date axis.
   const tl = new Map<string, TimePoint>();
@@ -227,6 +242,26 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
     p.callsTaken += s.callsTaken;
     p.cashCollected += s.cashCollected;
   }
+  // When EOD is empty (per-webinar mode), drive the per-day closes / cash /
+  // revenue from the payment-log buyer rows so the timeline isn't blank.
+  if (!eodHasData) {
+    const buyerEmailsByDay = new Map<string, Set<string>>();
+    for (const b of buyers) {
+      if (!b.date) continue;
+      const p = point(b.date);
+      p.cashCollected += b.amount;
+      p.revenue += b.amount;
+      let set = buyerEmailsByDay.get(b.date);
+      if (!set) {
+        set = new Set();
+        buyerEmailsByDay.set(b.date, set);
+      }
+      if (b.email) set.add(b.email);
+    }
+    for (const [d, emails] of buyerEmailsByDay) {
+      point(d).closes = emails.size;
+    }
+  }
   const timeline = [...tl.values()].sort((a, b) =>
     a.date.localeCompare(b.date),
   );
@@ -236,17 +271,14 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
 
   const closers = closerStats(r.sales);
 
-  // Buyer attribution
-  const buyers = r.buyers;
-  const uniqueEmails = new Set(buyers.map((b) => b.email).filter(Boolean));
   const attributedBuyersSet = new Set(
     buyers.filter((b) => b.attributed && b.email).map((b) => b.email),
   );
-  const totalCash = buyers.reduce((a, b) => a + b.amount, 0);
+  const totalCash = buyerCash;
   const attributedCash = buyers
     .filter((b) => b.attributed)
     .reduce((a, b) => a + b.amount, 0);
-  const totalBuyers = uniqueEmails.size;
+  const totalBuyers = buyerEmails.size;
   const attributedBuyers = attributedBuyersSet.size;
   const byLog = (src: Buyer["logSource"]): BuyerLogSummary => {
     const rows = buyers.filter((b) => b.logSource === src);

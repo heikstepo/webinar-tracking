@@ -169,12 +169,16 @@ export default function Page() {
         ))}
       </nav>
 
-      {webinar && (
+      {webinar && data && (
         <div className="mb-6 rounded-lg border border-edge bg-panel/60 p-3 text-xs text-slate-400">
-          Scoped to webinar <span className="text-slate-200">{webinar}</span> —
-          ad spend and Closer EOD aren&apos;t tagged with a webinar at the
-          source, so those panels are hidden until per-webinar tagging is added.
-          Pick <span className="text-slate-200">All Webinars</span> to see them.
+          Scoped to webinar <span className="text-slate-200">{webinar}</span> ·
+          buyers are cross-referenced to UTM Tracking by email (then full name)
+          and only those whose registration carries this webinar tag are
+          counted. Cash and closes come from the payment logs (Stripe / Whop /
+          OTO). Ad spend and Closer EOD aren&apos;t webinar-tagged at the
+          source, so those panels stay blank in this view — pick{" "}
+          <span className="text-slate-200">All Webinars</span> for the full
+          operational picture.
         </div>
       )}
 
