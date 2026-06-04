@@ -172,13 +172,12 @@ export default function Page() {
       {webinar && data && (
         <div className="mb-6 rounded-lg border border-edge bg-panel/60 p-3 text-xs text-slate-400">
           Scoped to webinar <span className="text-slate-200">{webinar}</span> ·
-          buyers are cross-referenced to UTM Tracking by email (then full name)
-          and only those whose registration carries this webinar tag are
-          counted. Cash and closes come from the payment logs (Stripe / Whop /
-          OTO). Ad spend and Closer EOD aren&apos;t webinar-tagged at the
-          source, so those panels stay blank in this view — pick{" "}
-          <span className="text-slate-200">All Webinars</span> for the full
-          operational picture.
+          registrations / buyers matched by UTM Webinar Date (email or name).
+          <span className="text-slate-300"> Ad spend</span> in the 4 days{" "}
+          <em>before</em> and <span className="text-slate-300">Closer EOD</span>{" "}
+          in the 4 days <em>after</em> this webinar are attributed to it (each
+          day goes to the closest webinar so adjacent webinars don&apos;t
+          double-count).
         </div>
       )}
 
