@@ -184,21 +184,17 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
   const spend = r.ads.reduce((a, d) => a + d.spend, 0);
   const registrations = r.registrations.length;
 
-  // Operational metrics still come from Closer EOD (calendar / call activity).
   const scheduledCalls = r.sales.reduce((a, s) => a + s.scheduledCalls, 0);
   const callsTaken = r.sales.reduce((a, s) => a + s.callsTaken, 0);
   const offers = r.sales.reduce((a, s) => a + s.offersMade, 0);
+  const closes = r.sales.reduce(
+    (a, s) => a + s.oneCallCloses + s.followUpCloses,
+    0,
+  );
+  const cashCollected = r.sales.reduce((a, s) => a + s.cashCollected, 0);
+  const revenue = r.sales.reduce((a, s) => a + s.revenue, 0);
 
-  // Money + closes are ground truth from the payment logs (Stripe + Whop + OTO).
-  // Closer EOD self-reports are kept only for per-closer attribution.
-  const buyers = r.buyers;
-  const uniqueEmails = new Set(buyers.map((b) => b.email).filter(Boolean));
-  const closes = uniqueEmails.size;
-  const cashCollected = buyers.reduce((a, b) => a + b.amount, 0);
-  const revenue = cashCollected;
-
-  // Merge daily series (ads, registrations, calls, payments) onto a shared
-  // date axis. Money + closes per day come from the payment logs.
+  // Merge daily series (ads, registrations, sales) onto a shared date axis.
   const tl = new Map<string, TimePoint>();
   const point = (d: string): TimePoint => {
     let p = tl.get(d);
@@ -223,24 +219,11 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
   for (const s of r.sales) {
     if (!s.date) continue;
     const p = point(s.date);
+    p.revenue += s.revenue;
+    p.closes += s.oneCallCloses + s.followUpCloses;
     p.scheduledCalls += s.scheduledCalls;
     p.callsTaken += s.callsTaken;
-  }
-  const buyerEmailsByDay = new Map<string, Set<string>>();
-  for (const b of buyers) {
-    if (!b.date) continue;
-    const p = point(b.date);
-    p.cashCollected += b.amount;
-    p.revenue += b.amount;
-    let set = buyerEmailsByDay.get(b.date);
-    if (!set) {
-      set = new Set();
-      buyerEmailsByDay.set(b.date, set);
-    }
-    if (b.email) set.add(b.email);
-  }
-  for (const [date, emails] of buyerEmailsByDay) {
-    point(date).closes = emails.size;
+    p.cashCollected += s.cashCollected;
   }
   const timeline = [...tl.values()].sort((a, b) =>
     a.date.localeCompare(b.date),
@@ -251,14 +234,17 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
 
   const closers = closerStats(r.sales);
 
+  // Buyer attribution
+  const buyers = r.buyers;
+  const uniqueEmails = new Set(buyers.map((b) => b.email).filter(Boolean));
   const attributedBuyersSet = new Set(
     buyers.filter((b) => b.attributed && b.email).map((b) => b.email),
   );
+  const totalCash = buyers.reduce((a, b) => a + b.amount, 0);
   const attributedCash = buyers
     .filter((b) => b.attributed)
     .reduce((a, b) => a + b.amount, 0);
   const totalBuyers = uniqueEmails.size;
-  const totalCash = cashCollected;
   const attributedBuyers = attributedBuyersSet.size;
   const byLog = (src: Buyer["logSource"]): BuyerLogSummary => {
     const rows = buyers.filter((b) => b.logSource === src);
