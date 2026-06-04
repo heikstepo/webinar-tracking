@@ -74,6 +74,8 @@ export interface DashboardData {
   recentRegistrations: Registration[];
   recentSales: RecentSale[];
   counts: { registrations: number; adDays: number; salesDays: number };
+  range?: { from: string | null; to: string | null };
+  available?: { min: string | null; max: string | null };
 }
 
 function tally(items: string[]): NamedCount[] {

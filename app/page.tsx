@@ -14,16 +14,34 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "sales", label: "Sales Detail" },
 ];
 
+const PRESETS: { label: string; days: number | null }[] = [
+  { label: "All time", days: null },
+  { label: "Last 7d", days: 7 },
+  { label: "Last 30d", days: 30 },
+  { label: "Last 90d", days: 90 },
+];
+
+function ymd(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
 export default function Page() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<Tab>("overview");
+  const [from, setFrom] = useState<string>("");
+  const [to, setTo] = useState<string>("");
 
-  const load = () => {
+  const load = (opts?: { refresh?: boolean }) => {
     setLoading(true);
     setError(null);
-    fetch("/api/dashboard")
+    const q = new URLSearchParams();
+    if (from) q.set("from", from);
+    if (to) q.set("to", to);
+    if (opts?.refresh) q.set("refresh", "1");
+    const qs = q.toString();
+    fetch("/api/dashboard" + (qs ? "?" + qs : ""))
       .then(async (r) => {
         if (!r.ok) throw new Error((await r.json()).error || r.statusText);
         return r.json();
@@ -33,11 +51,26 @@ export default function Page() {
       .finally(() => setLoading(false));
   };
 
-  useEffect(load, []);
+  // Refetch whenever the range changes.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => load(), [from, to]);
+
+  const applyPreset = (days: number | null) => {
+    if (days == null) {
+      setFrom("");
+      setTo("");
+      return;
+    }
+    const end = new Date();
+    const start = new Date();
+    start.setDate(end.getDate() - (days - 1));
+    setFrom(ymd(start));
+    setTo(ymd(end));
+  };
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-8">
-      <header className="mb-4 flex items-end justify-between">
+      <header className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-xl font-semibold text-slate-50">
             App Accelerator — Webinar Funnel
@@ -48,12 +81,55 @@ export default function Page() {
           </p>
         </div>
         <button
-          onClick={load}
+          onClick={() => load({ refresh: true })}
           className="rounded-lg border border-edge bg-panel px-3 py-1.5 text-sm text-slate-300 hover:border-accent"
         >
           {loading ? "Refreshing…" : "Refresh"}
         </button>
       </header>
+
+      <section className="mb-4 flex flex-wrap items-center gap-2 rounded-xl border border-edge bg-panel p-3">
+        <span className="text-xs uppercase tracking-wide text-slate-500">
+          Date range
+        </span>
+        <input
+          type="date"
+          value={from}
+          min={data?.available?.min || undefined}
+          max={to || data?.available?.max || undefined}
+          onChange={(e) => setFrom(e.target.value)}
+          className="rounded-md border border-edge bg-ink px-2 py-1 text-sm text-slate-200 [color-scheme:dark]"
+        />
+        <span className="text-slate-500">→</span>
+        <input
+          type="date"
+          value={to}
+          min={from || data?.available?.min || undefined}
+          max={data?.available?.max || undefined}
+          onChange={(e) => setTo(e.target.value)}
+          className="rounded-md border border-edge bg-ink px-2 py-1 text-sm text-slate-200 [color-scheme:dark]"
+        />
+        <div className="ml-auto flex flex-wrap gap-1">
+          {PRESETS.map((p) => (
+            <button
+              key={p.label}
+              onClick={() => applyPreset(p.days)}
+              className="rounded-md border border-edge bg-ink px-2.5 py-1 text-xs text-slate-300 hover:border-accent hover:text-slate-100"
+            >
+              {p.label}
+            </button>
+          ))}
+        </div>
+        {(from || to) && (
+          <button
+            onClick={() => applyPreset(null)}
+            className="rounded-md border border-edge px-2 py-1 text-xs text-slate-400 hover:text-slate-200"
+            title="Clear range"
+          >
+            ✕
+          </button>
+        )}
+      </section>
 
       <nav className="mb-6 flex gap-1 border-b border-edge">
         {TABS.map((t) => (
