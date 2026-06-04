@@ -64,7 +64,8 @@ export interface Buyer {
   utmAdset: string;
   utmContent: string;
   webinar: string;
-  attributed: boolean; // matched a UTM Tracking row by email
+  attributed: boolean; // matched a UTM Tracking row
+  matchedBy: "email" | "name" | "none"; // how the join landed
 }
 
 // What a connector returns. Any array may be empty if that source has no data

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { fetchAirtable } from "@/lib/connectors/airtable";
 import { buildDashboard } from "@/lib/metrics";
-import { filterByRange } from "@/lib/filter";
+import { filterByRange, filterByWebinar, listWebinars } from "@/lib/filter";
 import { ConnectorResult } from "@/lib/connectors/types";
 
 export const dynamic = "force-dynamic";
@@ -24,13 +24,16 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const from = searchParams.get("from");
     const to = searchParams.get("to");
+    const webinar = searchParams.get("webinar");
     const refresh = searchParams.get("refresh");
     if (refresh) cache = null;
     const result = await getResult();
-    const filtered = filterByRange(result, from, to);
+    const filtered = filterByWebinar(filterByRange(result, from, to), webinar);
     return NextResponse.json({
       ...buildDashboard(filtered),
       range: { from, to },
+      webinar,
+      availableWebinars: listWebinars(result),
       available: dateBounds(result),
     });
   } catch (e) {

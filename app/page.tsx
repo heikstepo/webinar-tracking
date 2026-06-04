@@ -33,6 +33,7 @@ export default function Page() {
   const [tab, setTab] = useState<Tab>("overview");
   const [from, setFrom] = useState<string>("");
   const [to, setTo] = useState<string>("");
+  const [webinar, setWebinar] = useState<string>(""); // "" = All
 
   const load = (opts?: { refresh?: boolean }) => {
     setLoading(true);
@@ -40,6 +41,7 @@ export default function Page() {
     const q = new URLSearchParams();
     if (from) q.set("from", from);
     if (to) q.set("to", to);
+    if (webinar) q.set("webinar", webinar);
     if (opts?.refresh) q.set("refresh", "1");
     const qs = q.toString();
     fetch("/api/dashboard" + (qs ? "?" + qs : ""))
@@ -52,9 +54,9 @@ export default function Page() {
       .finally(() => setLoading(false));
   };
 
-  // Refetch whenever the range changes.
+  // Refetch whenever the scope changes.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => load(), [from, to]);
+  useEffect(() => load(), [from, to, webinar]);
 
   const applyPreset = (days: number | null) => {
     if (days == null) {
@@ -132,6 +134,25 @@ export default function Page() {
         )}
       </section>
 
+      {data?.availableWebinars && data.availableWebinars.length > 0 && (
+        <nav className="mb-3 flex flex-wrap gap-1.5">
+          <WebinarTab
+            label="All Webinars"
+            sub={`${(data.availableWebinars?.length ?? 0)} total`}
+            active={!webinar}
+            onClick={() => setWebinar("")}
+          />
+          {data.availableWebinars.map((w) => (
+            <WebinarTab
+              key={w}
+              label={w}
+              active={webinar === w}
+              onClick={() => setWebinar(w)}
+            />
+          ))}
+        </nav>
+      )}
+
       <nav className="mb-6 flex gap-1 border-b border-edge">
         {TABS.map((t) => (
           <button
@@ -147,6 +168,15 @@ export default function Page() {
           </button>
         ))}
       </nav>
+
+      {webinar && (
+        <div className="mb-6 rounded-lg border border-edge bg-panel/60 p-3 text-xs text-slate-400">
+          Scoped to webinar <span className="text-slate-200">{webinar}</span> —
+          ad spend and Closer EOD aren&apos;t tagged with a webinar at the
+          source, so those panels are hidden until per-webinar tagging is added.
+          Pick <span className="text-slate-200">All Webinars</span> to see them.
+        </div>
+      )}
 
       {error && (
         <div className="mb-6 rounded-lg border border-red-900 bg-red-950/40 p-4 text-sm text-red-300">
@@ -616,7 +646,23 @@ function BuyerAttribution({ data }: { data: DashboardData }) {
                   </td>
                   <td className="py-2 pr-3 text-slate-400">
                     {b.attributed ? (
-                      b.utmSource || "—"
+                      <span className="inline-flex items-center gap-1.5">
+                        {b.utmSource || "—"}
+                        <span
+                          className={`rounded px-1 py-0.5 text-[9px] uppercase ${
+                            b.matchedBy === "email"
+                              ? "bg-slate-700/40 text-slate-400"
+                              : "bg-amber-500/15 text-amber-300"
+                          }`}
+                          title={
+                            b.matchedBy === "email"
+                              ? "matched by email"
+                              : "matched by name (email differed)"
+                          }
+                        >
+                          {b.matchedBy}
+                        </span>
+                      </span>
                     ) : (
                       <span className="text-slate-600">(unattributed)</span>
                     )}
@@ -659,6 +705,32 @@ function BuyerAttribution({ data }: { data: DashboardData }) {
         </Card>
       )}
     </div>
+  );
+}
+
+function WebinarTab({
+  label,
+  sub,
+  active,
+  onClick,
+}: {
+  label: string;
+  sub?: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded-md border px-3 py-1.5 text-xs transition-colors ${
+        active
+          ? "border-accent bg-accent/15 text-slate-100"
+          : "border-edge bg-panel text-slate-400 hover:border-accent/60 hover:text-slate-200"
+      }`}
+    >
+      {label}
+      {sub && <span className="ml-1.5 text-[10px] text-slate-500">{sub}</span>}
+    </button>
   );
 }
 

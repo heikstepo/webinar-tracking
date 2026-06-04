@@ -104,6 +104,8 @@ export interface DashboardData {
   counts: { registrations: number; adDays: number; salesDays: number; buyers: number };
   range?: { from: string | null; to: string | null };
   available?: { min: string | null; max: string | null };
+  webinar?: string | null;
+  availableWebinars?: string[];
 }
 
 export interface BuyerLogSummary {

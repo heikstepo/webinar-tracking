@@ -85,19 +85,59 @@ function mapSales(recs: AirtableRecord[]): SalesDay[] {
   });
 }
 
+// Normalize an email so trivial variants collide: lowercase, trim, strip
+// "+tag" suffixes, and remove dots in the local part for gmail/googlemail
+// (which Google treats as identical inboxes).
+function normalizeEmail(raw: string): string {
+  const e = raw.trim().toLowerCase();
+  if (!e || !e.includes("@")) return "";
+  const [local, domain] = e.split("@");
+  const local0 = local.split("+")[0];
+  const isGoogle = domain === "gmail.com" || domain === "googlemail.com";
+  return `${isGoogle ? local0.replace(/\./g, "") : local0}@${
+    isGoogle ? "gmail.com" : domain
+  }`;
+}
+
+// Normalize a person name for fallback matching: lowercase, collapse
+// whitespace, drop punctuation (initials with periods, commas, etc.).
+function normalizeName(raw: string): string {
+  return raw
+    .toLowerCase()
+    .replace(/[.,_-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function mapBuyers(
   recs: AirtableRecord[],
   logSource: Buyer["logSource"],
   utmByEmail: Map<string, Registration>,
+  utmByName: Map<string, Registration>,
 ): Buyer[] {
   return recs.filter(hasData).map((r) => {
     const f = r.fields;
-    const email = str(f["Email"]).toLowerCase();
-    const utm = email ? utmByEmail.get(email) : undefined;
+    const rawEmail = str(f["Email"]);
+    const email = rawEmail.toLowerCase();
+    const name = str(f["Name"]);
+    const normEmail = normalizeEmail(rawEmail);
+    const normName = normalizeName(name);
+
+    // 1) exact normalized-email match  2) name fallback
+    let utm = normEmail ? utmByEmail.get(normEmail) : undefined;
+    let matchedBy: Buyer["matchedBy"] = utm ? "email" : "none";
+    if (!utm && normName) {
+      const byName = utmByName.get(normName);
+      if (byName) {
+        utm = byName;
+        matchedBy = "name";
+      }
+    }
+
     return {
       id: r.id,
       date: dayKey(str(f["Date"]) || r.createdTime),
-      name: str(f["Name"]),
+      name,
       email,
       amount: num(f["Cash Collected"]),
       status: str(f["Status"]),
@@ -109,6 +149,7 @@ function mapBuyers(
       utmContent: utm?.content || "",
       webinar: utm?.webinar || "",
       attributed: Boolean(utm),
+      matchedBy,
     };
   });
 }
@@ -140,20 +181,24 @@ export async function fetchAirtable(): Promise<ConnectorResult> {
   const adDays = mapAds(ads);
   const sales = mapSales(eod);
 
-  // Index registrations by lowercased email for the buyer join. Latest entry
-  // wins so we get the most recent UTM attribution if a person registered
-  // multiple times.
+  // Index registrations by normalized email AND normalized name for the
+  // buyer join. Latest entry wins so we get the most recent UTM attribution
+  // if a person registered multiple times.
   const utmByEmail = new Map<string, Registration>();
+  const utmByName = new Map<string, Registration>();
   for (const r of [...registrations].sort((a, b) =>
     a.date.localeCompare(b.date),
   )) {
-    if (r.email) utmByEmail.set(r.email.toLowerCase(), r);
+    const ne = normalizeEmail(r.email);
+    if (ne) utmByEmail.set(ne, r);
+    const nn = normalizeName(r.name);
+    if (nn) utmByName.set(nn, r);
   }
 
   const buyers: Buyer[] = [
-    ...mapBuyers(stripe, "stripe", utmByEmail),
-    ...mapBuyers(whop, "whop", utmByEmail),
-    ...mapBuyers(oto, "oto", utmByEmail),
+    ...mapBuyers(stripe, "stripe", utmByEmail, utmByName),
+    ...mapBuyers(whop, "whop", utmByEmail, utmByName),
+    ...mapBuyers(oto, "oto", utmByEmail, utmByName),
   ];
 
   if (!registrations.length)
