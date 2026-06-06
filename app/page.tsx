@@ -209,7 +209,7 @@ export default function Page() {
 function Overview({ data }: { data: DashboardData }) {
   return (
     <div className="space-y-6">
-      <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <section className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5">
         <StatCard label="Ad Spend" value={usd(data.totals.spend)} />
         <StatCard
           label="Registrations"
@@ -217,16 +217,18 @@ function Overview({ data }: { data: DashboardData }) {
           sub={`${usd2(data.totals.costPerRegistration)} / reg`}
         />
         <StatCard label="Booked Calls" value={int(data.totals.scheduledCalls)} />
+        <StatCard label="Calls Taken" value={int(data.totals.callsTaken)} />
         <StatCard
-          label="Calls Taken"
-          value={int(data.totals.callsTaken)}
-          sub={`${pct(data.totals.showRate)} show rate`}
+          label="Show Rate"
+          value={pct(data.totals.showRate)}
+          sub="calls taken / booked"
         />
         <StatCard label="Offers Made" value={int(data.totals.offers)} />
+        <StatCard label="Closed Deals" value={int(data.totals.closes)} />
         <StatCard
-          label="Closed Deals"
-          value={int(data.totals.closes)}
-          sub={`${pct(data.totals.closeRate)} close rate`}
+          label="Close Rate"
+          value={pct(data.totals.closeRate)}
+          sub="closes / calls taken"
         />
         <StatCard label="Cash Collected" value={usd(data.totals.cashCollected)} />
         <StatCard
