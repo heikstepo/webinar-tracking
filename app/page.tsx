@@ -172,12 +172,10 @@ export default function Page() {
       {webinar && data && (
         <div className="mb-6 rounded-lg border border-edge bg-panel/60 p-3 text-xs text-slate-400">
           Scoped to webinar <span className="text-slate-200">{webinar}</span> ·
-          registrations / buyers matched by UTM Webinar Date (email or name).
-          <span className="text-slate-300"> Ad spend</span> in the 4 days{" "}
-          <em>before</em> and <span className="text-slate-300">Closer EOD</span>{" "}
-          in the 4 days <em>after</em> this webinar are attributed to it (each
-          day goes to the closest webinar so adjacent webinars don&apos;t
-          double-count).
+          registrations / buyers / attendees joined by UTM Webinar Date tag
+          (email or name). Ad Spend and Closer EOD use the explicit Webinar
+          Date column on each Airtable row; untagged rows fall back to a
+          4-day window around the webinar.
         </div>
       )}
 
@@ -236,6 +234,45 @@ function Overview({ data }: { data: DashboardData }) {
           value={usd(data.totals.revenue)}
           sub={data.totals.spend ? `${data.totals.roas.toFixed(2)}x ROAS` : "—"}
         />
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-sm font-medium text-slate-400">
+          Webinar Performance{" "}
+          <span className="text-xs text-slate-600">
+            · live from WebinarJam
+          </span>
+        </h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+          <StatCard
+            label="Webinar Registrants"
+            value={int(data.totals.webinarRegistrants)}
+          />
+          <StatCard
+            label="Webinar Attendees"
+            value={int(data.totals.webinarAttendees)}
+          />
+          <StatCard
+            label="Attendance Rate"
+            value={pct(data.totals.webinarAttendanceRate)}
+            sub="attended / registered"
+          />
+          <StatCard
+            label="70%+ Retention"
+            value={pct(data.totals.retention70Rate)}
+            sub={`${int(data.totals.retention70Count)} stayed`}
+          />
+          <StatCard
+            label="Application Rate"
+            value={pct(data.totals.applicationRate)}
+            sub="attendees → Typeform"
+          />
+          <StatCard
+            label="Qualified Call Rate"
+            value={pct(data.totals.qualifiedCallRate)}
+            sub="attendees → Calendly"
+          />
+        </div>
       </section>
 
       <Card title="Daily Activity">

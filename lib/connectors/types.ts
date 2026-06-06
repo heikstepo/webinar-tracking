@@ -20,6 +20,7 @@ export interface Registration {
 // One day of paid-ad performance (Ad Level).
 export interface AdDay {
   date: string; // YYYY-MM-DD
+  webinar: string; // UTM label (e.g. "JUNE 3") — direct tag from Airtable
   spend: number;
   impressions: number;
   ctr: number;
@@ -35,6 +36,7 @@ export interface AdDay {
 export interface SalesDay {
   id: string;
   date: string; // YYYY-MM-DD
+  webinar: string; // UTM label — direct tag from Airtable
   closer: string;
   scheduledCalls: number;
   callsTaken: number;
@@ -68,6 +70,44 @@ export interface Buyer {
   matchedBy: "email" | "name" | "none"; // how the join landed
 }
 
+// One Typeform application submission (Typeform Log).
+export interface Applicant {
+  id: string;
+  date: string;
+  name: string;
+  email: string;
+  status: string;
+}
+
+// One Calendly call booking (Calendly Log).
+export interface Booking {
+  id: string;
+  date: string;
+  name: string;
+  email: string;
+  closer: string;
+  status: string;
+}
+
+// One WebinarJam registrant — already includes attendance + watch time, so
+// the same row represents both "registered" and "attended" (with flags).
+export interface Attendee {
+  id: string;
+  email: string;
+  name: string;
+  webinar: string; // normalized to UTM label format (e.g. "JUNE 3")
+  signupDate: string; // YYYY-MM-DD
+  scheduleDate: string; // YYYY-MM-DD — when the session ran
+  attendedLive: boolean;
+  attendedReplay: boolean;
+  liveWatchSeconds: number;
+  replayWatchSeconds: number;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmContent: string;
+}
+
 // What a connector returns. Any array may be empty if that source has no data
 // yet — the dashboard renders only the sections that have data.
 export interface ConnectorResult {
@@ -77,5 +117,8 @@ export interface ConnectorResult {
   ads: AdDay[];
   sales: SalesDay[];
   buyers: Buyer[];
+  applicants: Applicant[];
+  bookings: Booking[];
+  attendees: Attendee[];
   notes: string[];
 }

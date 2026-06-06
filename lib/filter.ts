@@ -138,11 +138,19 @@ export function filterByWebinar(
     ...r,
     registrations: r.registrations.filter((x) => match(x.webinar)),
     buyers: r.buyers.filter((b) => b.attributed && match(b.webinar)),
+    attendees: r.attendees.filter((a) => match(a.webinar)),
+    // Applicants/bookings have no direct webinar tag; cross-reference filtering
+    // happens in metrics (against the in-scope attendees).
+    // Prefer the explicit Webinar Date tag when the row has one (added by
+    // your team in Airtable). Fall back to the 4-day time-window heuristic
+    // for older rows that don't carry the tag yet.
     ads: r.ads.filter((a) => {
+      if (a.webinar) return match(a.webinar);
       const tag = attributeAdSpend(a.date, webinars);
       return tag !== null && match(tag);
     }),
     sales: r.sales.filter((s) => {
+      if (s.webinar) return match(s.webinar);
       const tag = attributeCall(s.date, webinars);
       return tag !== null && match(tag);
     }),
@@ -169,5 +177,8 @@ export function filterByRange(
     ads: r.ads.filter((x) => inRange(x.date)),
     sales: r.sales.filter((x) => inRange(x.date)),
     buyers: r.buyers.filter((x) => inRange(x.date)),
+    attendees: r.attendees.filter((x) => inRange(x.scheduleDate || x.signupDate)),
+    applicants: r.applicants.filter((x) => inRange(x.date)),
+    bookings: r.bookings.filter((x) => inRange(x.date)),
   };
 }

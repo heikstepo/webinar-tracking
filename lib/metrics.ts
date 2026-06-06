@@ -73,6 +73,14 @@ export interface DashboardData {
     qualifiedCallsRate: number; // offers / callsTaken
     avgCallsPerDay: number; // callsTaken / distinct sale dates
     offerCloseRate: number; // closes / offers
+    // Webinar-funnel metrics (WebinarJam-sourced)
+    webinarRegistrants: number;
+    webinarAttendees: number;
+    webinarAttendanceRate: number; // attendees / registrants
+    retention70Count: number;
+    retention70Rate: number; // attendees with >=70% watch time / attendees
+    applicationRate: number; // attendees who submitted Typeform / attendees
+    qualifiedCallRate: number; // attendees who booked Calendly / attendees
   };
   funnel: { stage: string; value: number; sub: string }[];
   timeline: TimePoint[];
@@ -101,7 +109,15 @@ export interface DashboardData {
   buyersByContent: NamedTotal[];
   buyersByWebinar: NamedTotal[];
   recentBuyers: Buyer[];
-  counts: { registrations: number; adDays: number; salesDays: number; buyers: number };
+  counts: {
+    registrations: number;
+    adDays: number;
+    salesDays: number;
+    buyers: number;
+    attendees: number;
+    applicants: number;
+    bookings: number;
+  };
   range?: { from: string | null; to: string | null };
   available?: { min: string | null; max: string | null };
   webinar?: string | null;
@@ -146,6 +162,61 @@ function tally(items: string[]): NamedCount[] {
 
 function div(a: number, b: number): number {
   return b ? a / b : 0;
+}
+
+// Webinar-funnel rollup. The webinar's effective duration is approximated as
+// the 95th percentile of live watch time (the people who stayed the whole
+// way through), so retention isn't skewed by extreme outliers. Conversion
+// rates are computed by joining attendee emails to the Typeform / Calendly
+// log emails.
+function computeWebinarFunnel(r: ConnectorResult) {
+  const attendees = r.attendees;
+  const liveAttended = attendees.filter((a) => a.attendedLive);
+  const registrants = attendees.length;
+  const attended = liveAttended.length;
+
+  // Effective webinar duration per webinar label, using the 95th percentile
+  // of live watch time across that webinar's attendees.
+  const byWebinar = new Map<string, number[]>();
+  for (const a of liveAttended) {
+    const w = a.webinar || "(unknown)";
+    if (!byWebinar.has(w)) byWebinar.set(w, []);
+    byWebinar.get(w)!.push(a.liveWatchSeconds);
+  }
+  const durationByWebinar = new Map<string, number>();
+  for (const [w, times] of byWebinar) {
+    const sorted = [...times].sort((a, b) => a - b);
+    const p95 = sorted[Math.floor(sorted.length * 0.95)] ?? 0;
+    durationByWebinar.set(w, p95);
+  }
+
+  const retention70Count = liveAttended.filter((a) => {
+    const dur = durationByWebinar.get(a.webinar || "(unknown)") || 0;
+    return dur > 0 && a.liveWatchSeconds >= 0.7 * dur;
+  }).length;
+
+  const applicantEmails = new Set(
+    r.applicants.map((a) => a.email).filter(Boolean),
+  );
+  const bookingEmails = new Set(
+    r.bookings.map((b) => b.email).filter(Boolean),
+  );
+  const attendeesWhoApplied = liveAttended.filter(
+    (a) => a.email && applicantEmails.has(a.email),
+  ).length;
+  const attendeesWhoBooked = liveAttended.filter(
+    (a) => a.email && bookingEmails.has(a.email),
+  ).length;
+
+  return {
+    registrants,
+    attendees: attended,
+    attendanceRate: div(attended, registrants),
+    retention70Count,
+    retention70Rate: div(retention70Count, attended),
+    applicationRate: div(attendeesWhoApplied, attended),
+    qualifiedCallRate: div(attendeesWhoBooked, attended),
+  };
 }
 
 function closerStats(sales: SalesDay[]): CloserStat[] {
@@ -271,6 +342,9 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
 
   const closers = closerStats(r.sales);
 
+  // ---- Webinar funnel (WebinarJam + cross-references) ------------------
+  const webinar = computeWebinarFunnel(r);
+
   const attributedBuyersSet = new Set(
     buyers.filter((b) => b.attributed && b.email).map((b) => b.email),
   );
@@ -310,6 +384,13 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
       qualifiedCallsRate: div(offers, callsTaken),
       avgCallsPerDay: div(callsTaken, distinctSaleDates),
       offerCloseRate: div(closes, offers),
+      webinarRegistrants: webinar.registrants,
+      webinarAttendees: webinar.attendees,
+      webinarAttendanceRate: webinar.attendanceRate,
+      retention70Count: webinar.retention70Count,
+      retention70Rate: webinar.retention70Rate,
+      applicationRate: webinar.applicationRate,
+      qualifiedCallRate: webinar.qualifiedCallRate,
     },
     funnel: [
       { stage: "Registrations", value: registrations, sub: "UTM Tracking" },
@@ -371,6 +452,9 @@ export function buildDashboard(r: ConnectorResult): DashboardData {
       adDays: r.ads.length,
       salesDays: r.sales.length,
       buyers: buyers.length,
+      attendees: r.attendees.length,
+      applicants: r.applicants.length,
+      bookings: r.bookings.length,
     },
   };
 }

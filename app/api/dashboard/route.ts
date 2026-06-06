@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { fetchAirtable } from "@/lib/connectors/airtable";
+import { fetchWebinarJam } from "@/lib/connectors/webinarjam";
 import { buildDashboard } from "@/lib/metrics";
 import { filterByRange, filterByWebinar, listWebinars } from "@/lib/filter";
 import { ConnectorResult } from "@/lib/connectors/types";
@@ -14,7 +15,12 @@ const TTL_MS = 60_000;
 
 async function getResult(): Promise<ConnectorResult> {
   if (cache && Date.now() - cache.at < TTL_MS) return cache.data;
-  const data = await fetchAirtable();
+  const [airtable, wj] = await Promise.all([fetchAirtable(), fetchWebinarJam()]);
+  const data: ConnectorResult = {
+    ...airtable,
+    attendees: wj.attendees,
+    notes: [...airtable.notes, ...wj.notes],
+  };
   cache = { at: Date.now(), data };
   return data;
 }

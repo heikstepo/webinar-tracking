@@ -5,6 +5,8 @@ import {
   AdDay,
   SalesDay,
   Buyer,
+  Applicant,
+  Booking,
 } from "./types";
 
 // App Accelerator base — the live webinar-funnel system.
@@ -16,9 +18,40 @@ const TABLE_EOD = "Closer EOD";
 const TABLE_STRIPE = "Stripe Log";
 const TABLE_WHOP = "Whop Log";
 const TABLE_OTO = "OTO Log";
+const TABLE_TYPEFORM = "Typeform Log";
+const TABLE_CALENDLY = "Calendly Log";
 
 function dayKey(iso: string): string {
   return iso ? iso.slice(0, 10) : "";
+}
+
+// Normalize any webinar tag to the "MAY 27" / "JUNE 3" UTM label format so
+// Ad Level (stores it as an ISO date column) joins with UTM Tracking (stores
+// it as a multi-select string) on the dashboard side.
+const MONTHS_LONG = [
+  "JANUARY",
+  "FEBRUARY",
+  "MARCH",
+  "APRIL",
+  "MAY",
+  "JUNE",
+  "JULY",
+  "AUGUST",
+  "SEPTEMBER",
+  "OCTOBER",
+  "NOVEMBER",
+  "DECEMBER",
+];
+function normalizeWebinarTag(raw: string): string {
+  const v = (raw || "").trim();
+  if (!v) return "";
+  const iso = v.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) {
+    const month = MONTHS_LONG[parseInt(iso[2], 10) - 1];
+    const day = parseInt(iso[3], 10);
+    return month ? `${month} ${day}` : v;
+  }
+  return v;
 }
 
 function hasData(r: AirtableRecord): boolean {
@@ -51,6 +84,9 @@ function mapAds(recs: AirtableRecord[]): AdDay[] {
     const f = r.fields;
     return {
       date: dayKey(str(f["Date"]) || r.createdTime),
+      webinar: normalizeWebinarTag(
+        str(f["Webinar Date"]) || str(f["Webinar"]),
+      ),
       spend: num(f["Total Ad Spend"]),
       impressions: num(f["Impressions"]),
       ctr: num(f["CTR"]),
@@ -70,6 +106,9 @@ function mapSales(recs: AirtableRecord[]): SalesDay[] {
     return {
       id: r.id,
       date: dayKey(str(f["Date of EOD"]) || r.createdTime),
+      webinar: normalizeWebinarTag(
+        str(f["Webinar Date"]) || str(f["Webinar"]),
+      ),
       closer: str(f["Closer"]) || "Unknown",
       scheduledCalls: num(f["Scheduled Calls on Calendar"]),
       callsTaken: num(f["Calls taken"]),
@@ -107,6 +146,33 @@ function normalizeName(raw: string): string {
     .replace(/[.,_-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function mapApplicants(recs: AirtableRecord[]): Applicant[] {
+  return recs.filter(hasData).map((r) => {
+    const f = r.fields;
+    return {
+      id: r.id,
+      date: dayKey(str(f["Date"]) || r.createdTime),
+      name: str(f["Name"]),
+      email: str(f["Email"]).toLowerCase(),
+      status: str(f["Status"]),
+    };
+  });
+}
+
+function mapBookings(recs: AirtableRecord[]): Booking[] {
+  return recs.filter(hasData).map((r) => {
+    const f = r.fields;
+    return {
+      id: r.id,
+      date: dayKey(str(f["Date"]) || r.createdTime),
+      name: str(f["Name"]),
+      email: str(f["Email"]).toLowerCase(),
+      closer: str(f["Closer"]),
+      status: str(f["Status"]),
+    };
+  });
 }
 
 function mapBuyers(
@@ -168,14 +234,17 @@ export async function fetchAirtable(): Promise<ConnectorResult> {
     }
   };
 
-  const [utm, ads, eod, stripe, whop, oto] = await Promise.all([
-    safe(TABLE_UTM, () => listRecords(BASE, TABLE_UTM)),
-    safe(TABLE_ADS, () => listRecords(BASE, TABLE_ADS)),
-    safe(TABLE_EOD, () => listRecords(BASE, TABLE_EOD)),
-    safe(TABLE_STRIPE, () => listRecords(BASE, TABLE_STRIPE)),
-    safe(TABLE_WHOP, () => listRecords(BASE, TABLE_WHOP)),
-    safe(TABLE_OTO, () => listRecords(BASE, TABLE_OTO)),
-  ]);
+  const [utm, ads, eod, stripe, whop, oto, typeform, calendly] =
+    await Promise.all([
+      safe(TABLE_UTM, () => listRecords(BASE, TABLE_UTM)),
+      safe(TABLE_ADS, () => listRecords(BASE, TABLE_ADS)),
+      safe(TABLE_EOD, () => listRecords(BASE, TABLE_EOD)),
+      safe(TABLE_STRIPE, () => listRecords(BASE, TABLE_STRIPE)),
+      safe(TABLE_WHOP, () => listRecords(BASE, TABLE_WHOP)),
+      safe(TABLE_OTO, () => listRecords(BASE, TABLE_OTO)),
+      safe(TABLE_TYPEFORM, () => listRecords(BASE, TABLE_TYPEFORM)),
+      safe(TABLE_CALENDLY, () => listRecords(BASE, TABLE_CALENDLY)),
+    ]);
 
   const registrations = mapRegistrations(utm);
   const adDays = mapAds(ads);
@@ -200,6 +269,8 @@ export async function fetchAirtable(): Promise<ConnectorResult> {
     ...mapBuyers(whop, "whop", utmByEmail, utmByName),
     ...mapBuyers(oto, "oto", utmByEmail, utmByName),
   ];
+  const applicants = mapApplicants(typeform);
+  const bookings = mapBookings(calendly);
 
   if (!registrations.length)
     notes.push("UTM Tracking has no registrations yet.");
@@ -214,6 +285,9 @@ export async function fetchAirtable(): Promise<ConnectorResult> {
     ads: adDays,
     sales,
     buyers,
+    applicants,
+    bookings,
+    attendees: [],
     notes,
   };
 }
