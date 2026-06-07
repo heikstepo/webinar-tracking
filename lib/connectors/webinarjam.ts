@@ -1,3 +1,4 @@
+import { unstable_cache } from "next/cache";
 import { Attendee } from "./types";
 
 // WebinarJam API base. WJ uses POST + form-encoded body with api_key.
@@ -226,7 +227,7 @@ function mapRegistrant(r: WjRegistrant): Attendee {
   };
 }
 
-export async function fetchWebinarJam(): Promise<{
+async function fetchWebinarJamUncached(): Promise<{
   attendees: Attendee[];
   notes: string[];
 }> {
@@ -291,3 +292,12 @@ export async function fetchWebinarJam(): Promise<{
 
   return { attendees, notes };
 }
+
+// Cache the entire WJ result in Vercel's Data Cache so it's shared across
+// all serverless instances. 10-minute TTL — webinars don't churn that fast,
+// and this dodges WJ's per-connection rate limit on cold starts.
+export const fetchWebinarJam = unstable_cache(
+  fetchWebinarJamUncached,
+  ["webinarjam-attendees-v1"],
+  { revalidate: 600, tags: ["webinarjam"] },
+);
