@@ -115,8 +115,54 @@ async function postForm(
   return await res.json();
 }
 
+// WJ rate-limits aggressively ("Too many connections!" 429s). Retry with
+// exponential backoff when we hit that.
+async function postFormWithRetry(
+  endpoint: string,
+  body: Record<string, string>,
+  attempts = 4,
+): Promise<unknown> {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await postForm(endpoint, body);
+    } catch (e) {
+      const msg = (e as Error).message;
+      const retriable = /429|Too many connections|503/i.test(msg);
+      if (i < attempts - 1 && retriable) {
+        await new Promise((r) => setTimeout(r, 600 * (i + 1) + Math.random() * 200));
+        continue;
+      }
+      throw e;
+    }
+  }
+  throw new Error("unreachable");
+}
+
+// Run async fn over items with bounded concurrency so we don't trip WJ's
+// connection cap.
+async function mapWithLimit<T, R>(
+  items: T[],
+  limit: number,
+  fn: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let next = 0;
+  const workers = Array.from(
+    { length: Math.min(limit, items.length) },
+    async () => {
+      while (true) {
+        const i = next++;
+        if (i >= items.length) return;
+        results[i] = await fn(items[i], i);
+      }
+    },
+  );
+  await Promise.all(workers);
+  return results;
+}
+
 async function listWebinars(apiKey: string): Promise<WjWebinar[]> {
-  const data = (await postForm("webinars", { api_key: apiKey })) as {
+  const data = (await postFormWithRetry("webinars", { api_key: apiKey })) as {
     status: string;
     webinars: WjWebinar[];
   };
@@ -128,9 +174,9 @@ async function listRegistrants(
   apiKey: string,
   webinarId: string,
 ): Promise<WjRegistrant[]> {
-  // Fetch page 1 first to learn last_page, then pull the remaining pages
-  // in parallel.
-  const first = (await postForm("registrants", {
+  // Fetch page 1 to learn last_page, then pull remaining pages with a small
+  // concurrency cap (WJ's connection limit is tight).
+  const first = (await postFormWithRetry("registrants", {
     api_key: apiKey,
     webinar_id: webinarId,
     page: "1",
@@ -139,15 +185,13 @@ async function listRegistrants(
   const rows: WjRegistrant[] = first.registrants?.data || [];
   const lastPage = Math.max(1, Math.min(first.registrants?.last_page || 1, 100));
   if (lastPage <= 1) return rows;
-  const pages = await Promise.all(
-    Array.from({ length: lastPage - 1 }, (_, i) => i + 2).map(
-      (page) =>
-        postForm("registrants", {
-          api_key: apiKey,
-          webinar_id: webinarId,
-          page: String(page),
-        }) as Promise<WjListPage>,
-    ),
+  const remainingPages = Array.from({ length: lastPage - 1 }, (_, i) => i + 2);
+  const pages = await mapWithLimit(remainingPages, 3, (page) =>
+    postFormWithRetry("registrants", {
+      api_key: apiKey,
+      webinar_id: webinarId,
+      page: String(page),
+    }) as Promise<WjListPage>,
   );
   for (const p of pages) {
     if (p.status === "success") rows.push(...(p.registrants?.data || []));
@@ -202,13 +246,12 @@ export async function fetchWebinarJam(): Promise<{
   // Filter out the demo "WebinarJam Example" webinar.
   webinars = webinars.filter((w) => !/example/i.test(w.name));
 
-  // All webinars + all their pages fetched in parallel.
-  const results = await Promise.all(
-    webinars.map((w) =>
-      listRegistrants(apiKey, w.webinar_id)
-        .then((rows) => ({ ok: true as const, w, rows }))
-        .catch((e) => ({ ok: false as const, w, error: e as Error })),
-    ),
+  // Bounded concurrency across webinars + bounded pagination per webinar so
+  // we don't trip WJ's "Too many connections" rate limit.
+  const results = await mapWithLimit(webinars, 2, (w) =>
+    listRegistrants(apiKey, w.webinar_id)
+      .then((rows) => ({ ok: true as const, w, rows }))
+      .catch((e) => ({ ok: false as const, w, error: e as Error })),
   );
   const attendees: Attendee[] = [];
   for (const r of results) {
