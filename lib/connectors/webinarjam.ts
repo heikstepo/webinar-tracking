@@ -176,30 +176,33 @@ async function listWebinars(apiKey: string): Promise<WjWebinar[]> {
   return data.webinars || [];
 }
 
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
 async function listRegistrants(
   apiKey: string,
   webinarId: string,
 ): Promise<WjRegistrant[]> {
-  // Fetch page 1 to learn last_page, then pull remaining pages with a small
-  // concurrency cap (WJ's connection limit is tight).
+  // Fully serial pagination with a small inter-request delay so WJ never
+  // sees more than one in-flight request at a time. Slower per request but
+  // never trips the connection cap (which is what caused incomplete results).
+  const rows: WjRegistrant[] = [];
   const first = (await postFormWithRetry("registrants", {
     api_key: apiKey,
     webinar_id: webinarId,
     page: "1",
   })) as WjListPage;
   if (first.status !== "success") return [];
-  const rows: WjRegistrant[] = first.registrants?.data || [];
+  rows.push(...(first.registrants?.data || []));
   const lastPage = Math.max(1, Math.min(first.registrants?.last_page || 1, 100));
-  if (lastPage <= 1) return rows;
-  const remainingPages = Array.from({ length: lastPage - 1 }, (_, i) => i + 2);
-  const pages = await mapWithLimit(remainingPages, 3, (page) =>
-    postFormWithRetry("registrants", {
+  for (let page = 2; page <= lastPage; page++) {
+    await sleep(150);
+    const p = (await postFormWithRetry("registrants", {
       api_key: apiKey,
       webinar_id: webinarId,
       page: String(page),
-    }) as Promise<WjListPage>,
-  );
-  for (const p of pages) {
+    })) as WjListPage;
     if (p.status === "success") rows.push(...(p.registrants?.data || []));
   }
   return rows;
@@ -293,11 +296,34 @@ async function fetchWebinarJamUncached(): Promise<{
   return { attendees, notes };
 }
 
-// Cache the entire WJ result in Vercel's Data Cache so it's shared across
-// all serverless instances. 10-minute TTL — webinars don't churn that fast,
-// and this dodges WJ's per-connection rate limit on cold starts.
-export const fetchWebinarJam = unstable_cache(
+// Cache the WJ result in Vercel's Data Cache (shared across all serverless
+// instances) but only when the fetch fully completed. If any webinar failed,
+// we return the partial result without caching so the next request gets
+// another shot at completing the full set. Bump the cache key when the
+// fetch logic changes to invalidate any previously cached partials.
+const cachedFullFetch = unstable_cache(
   fetchWebinarJamUncached,
-  ["webinarjam-attendees-v1"],
+  ["webinarjam-attendees-v3"],
   { revalidate: 600, tags: ["webinarjam"] },
 );
+
+export async function fetchWebinarJam(): Promise<{
+  attendees: Attendee[];
+  notes: string[];
+}> {
+  const result = await cachedFullFetch();
+  // If the cached result has a "serving last good" note (i.e. last fetch was
+  // partial), do an uncached attempt to try refreshing.
+  const looksIncomplete =
+    result.notes.some((n) => /WebinarJam .* (429|Too many|failed)/i.test(n)) ||
+    result.attendees.length < 5000;
+  if (looksIncomplete) {
+    try {
+      const fresh = await fetchWebinarJamUncached();
+      if (fresh.attendees.length > result.attendees.length) return fresh;
+    } catch {
+      // fall through, return cached
+    }
+  }
+  return result;
+}
