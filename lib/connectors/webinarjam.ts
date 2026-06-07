@@ -128,22 +128,31 @@ async function listRegistrants(
   apiKey: string,
   webinarId: string,
 ): Promise<WjRegistrant[]> {
-  const out: WjRegistrant[] = [];
-  let page = 1;
-  while (true) {
-    const data = (await postForm("registrants", {
-      api_key: apiKey,
-      webinar_id: webinarId,
-      page: String(page),
-    })) as WjListPage;
-    if (data.status !== "success") break;
-    const rows = data.registrants?.data || [];
-    out.push(...rows);
-    if (!data.registrants?.next_page_url) break;
-    page += 1;
-    if (page > 100) break; // safety
+  // Fetch page 1 first to learn last_page, then pull the remaining pages
+  // in parallel.
+  const first = (await postForm("registrants", {
+    api_key: apiKey,
+    webinar_id: webinarId,
+    page: "1",
+  })) as WjListPage;
+  if (first.status !== "success") return [];
+  const rows: WjRegistrant[] = first.registrants?.data || [];
+  const lastPage = Math.max(1, Math.min(first.registrants?.last_page || 1, 100));
+  if (lastPage <= 1) return rows;
+  const pages = await Promise.all(
+    Array.from({ length: lastPage - 1 }, (_, i) => i + 2).map(
+      (page) =>
+        postForm("registrants", {
+          api_key: apiKey,
+          webinar_id: webinarId,
+          page: String(page),
+        }) as Promise<WjListPage>,
+    ),
+  );
+  for (const p of pages) {
+    if (p.status === "success") rows.push(...(p.registrants?.data || []));
   }
-  return out;
+  return rows;
 }
 
 function mapRegistrant(r: WjRegistrant): Attendee {
@@ -193,14 +202,18 @@ export async function fetchWebinarJam(): Promise<{
   // Filter out the demo "WebinarJam Example" webinar.
   webinars = webinars.filter((w) => !/example/i.test(w.name));
 
+  // All webinars + all their pages fetched in parallel.
+  const results = await Promise.all(
+    webinars.map((w) =>
+      listRegistrants(apiKey, w.webinar_id)
+        .then((rows) => ({ ok: true as const, w, rows }))
+        .catch((e) => ({ ok: false as const, w, error: e as Error })),
+    ),
+  );
   const attendees: Attendee[] = [];
-  for (const w of webinars) {
-    try {
-      const rows = await listRegistrants(apiKey, w.webinar_id);
-      for (const r of rows) attendees.push(mapRegistrant(r));
-    } catch (e) {
-      notes.push(`WebinarJam ${w.name} (${w.webinar_id}): ${(e as Error).message}`);
-    }
+  for (const r of results) {
+    if (r.ok) for (const row of r.rows) attendees.push(mapRegistrant(row));
+    else notes.push(`WebinarJam ${r.w.name} (${r.w.webinar_id}): ${r.error.message}`);
   }
 
   return { attendees, notes };

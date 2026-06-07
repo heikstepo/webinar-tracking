@@ -8,10 +8,11 @@ import { ConnectorResult } from "@/lib/connectors/types";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-// Cache the raw Airtable fetch briefly so date-range changes don't re-hit
-// Airtable every time the user slides the picker.
+// Cache the raw upstream fetch so filter changes (date range, webinar tab)
+// reuse the same data instead of re-hitting Airtable + WebinarJam each time.
+// 5 minutes is well within how fresh you need the dashboard to be.
 let cache: { at: number; data: ConnectorResult } | null = null;
-const TTL_MS = 60_000;
+const TTL_MS = 5 * 60_000;
 
 async function getResult(): Promise<ConnectorResult> {
   if (cache && Date.now() - cache.at < TTL_MS) return cache.data;
