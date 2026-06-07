@@ -116,7 +116,12 @@ async function postForm(
     cache: "no-store",
   });
   if (!res.ok) {
-    throw new Error(`WJ ${endpoint} -> ${res.status} ${await res.text()}`);
+    const text = await res.text();
+    // Cloudflare etc. respond with full HTML pages; keep only a one-line
+    // summary so notes stay human-readable.
+    const oneLine =
+      /<title>([^<]+)<\/title>/i.exec(text)?.[1] || text.slice(0, 120);
+    throw new Error(`WJ ${endpoint} -> ${res.status} ${oneLine.trim()}`);
   }
   return await res.json();
 }
@@ -250,8 +255,17 @@ async function fetchWebinarJamUncached(): Promise<{
       notes: [`WebinarJam list-webinars failed: ${(e as Error).message}`],
     };
   }
-  // Filter out the demo "WebinarJam Example" webinar.
   webinars = webinars.filter((w) => !/example/i.test(w.name));
+  // Optional allow-list: set WEBINARJAM_WEBINAR_IDS in Vercel to a
+  // comma-separated list of IDs (e.g. "12,13") to only fetch those. Keeps
+  // the cold-load WJ fetch small enough to always finish inside our budget.
+  const allow = (process.env.WEBINARJAM_WEBINAR_IDS || "")
+    .split(",")
+    .map((x) => x.trim())
+    .filter(Boolean);
+  if (allow.length) {
+    webinars = webinars.filter((w) => allow.includes(w.webinar_id));
+  }
 
   // Serialize webinars (one at a time) so WJ doesn't 429. Pages within a
   // webinar still go in parallel with their own small concurrency cap.
