@@ -7,6 +7,9 @@ import { ConnectorResult } from "@/lib/connectors/types";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
+// WJ pagination across 9 webinars can take 30-40s on cold start; Vercel's
+// default function timeout (10s) cuts it short and silently drops webinars.
+export const maxDuration = 60;
 
 // Cache the raw upstream fetch so filter changes (date range, webinar tab)
 // reuse the same data instead of re-hitting Airtable + WebinarJam each time.

@@ -3,6 +3,11 @@ import { Attendee } from "./types";
 // WebinarJam API base. WJ uses POST + form-encoded body with api_key.
 const API = "https://api.webinarjam.com/webinarjam";
 
+// Module-level last-good snapshot of the WJ attendees, used as a fallback if
+// a later fetch loses data (e.g. WJ rate-limits one webinar). Survives
+// across requests served by the same warm function instance.
+let lastGood: { at: number; attendees: Attendee[] } | null = null;
+
 interface WjRegistrant {
   id: string;
   email?: string;
@@ -246,17 +251,42 @@ export async function fetchWebinarJam(): Promise<{
   // Filter out the demo "WebinarJam Example" webinar.
   webinars = webinars.filter((w) => !/example/i.test(w.name));
 
-  // Bounded concurrency across webinars + bounded pagination per webinar so
-  // we don't trip WJ's "Too many connections" rate limit.
-  const results = await mapWithLimit(webinars, 2, (w) =>
+  // Serialize webinars (one at a time) so WJ doesn't 429. Pages within a
+  // webinar still go in parallel with their own small concurrency cap.
+  const results = await mapWithLimit(webinars, 1, (w) =>
     listRegistrants(apiKey, w.webinar_id)
       .then((rows) => ({ ok: true as const, w, rows }))
       .catch((e) => ({ ok: false as const, w, error: e as Error })),
   );
   const attendees: Attendee[] = [];
+  let anyFailed = false;
   for (const r of results) {
     if (r.ok) for (const row of r.rows) attendees.push(mapRegistrant(row));
-    else notes.push(`WebinarJam ${r.w.name} (${r.w.webinar_id}): ${r.error.message}`);
+    else {
+      anyFailed = true;
+      notes.push(
+        `WebinarJam ${r.w.name} (${r.w.webinar_id}): ${r.error.message}`,
+      );
+    }
+  }
+
+  // Fallback: if this fetch lost data vs. the last good one (any webinar
+  // failed, or the total dropped sharply), return the cached snapshot so
+  // the dashboard doesn't suddenly show fewer attendees.
+  if (
+    lastGood &&
+    (anyFailed || attendees.length < lastGood.attendees.length * 0.9)
+  ) {
+    return {
+      attendees: lastGood.attendees,
+      notes: [
+        ...notes,
+        `WebinarJam: serving last good snapshot from ${new Date(lastGood.at).toISOString()} (${lastGood.attendees.length} attendees)`,
+      ],
+    };
+  }
+  if (attendees.length > 0) {
+    lastGood = { at: Date.now(), attendees };
   }
 
   return { attendees, notes };
