@@ -176,17 +176,12 @@ async function listWebinars(apiKey: string): Promise<WjWebinar[]> {
   return data.webinars || [];
 }
 
-function sleep(ms: number): Promise<void> {
-  return new Promise((r) => setTimeout(r, ms));
-}
-
 async function listRegistrants(
   apiKey: string,
   webinarId: string,
 ): Promise<WjRegistrant[]> {
-  // Fully serial pagination with a small inter-request delay so WJ never
-  // sees more than one in-flight request at a time. Slower per request but
-  // never trips the connection cap (which is what caused incomplete results).
+  // Fetch page 1 to learn last_page, then pull the rest with concurrency=2
+  // — enough to be fast, low enough to dodge WJ's connection cap.
   const rows: WjRegistrant[] = [];
   const first = (await postFormWithRetry("registrants", {
     api_key: apiKey,
@@ -196,13 +191,16 @@ async function listRegistrants(
   if (first.status !== "success") return [];
   rows.push(...(first.registrants?.data || []));
   const lastPage = Math.max(1, Math.min(first.registrants?.last_page || 1, 100));
-  for (let page = 2; page <= lastPage; page++) {
-    await sleep(150);
-    const p = (await postFormWithRetry("registrants", {
+  if (lastPage <= 1) return rows;
+  const remainingPages = Array.from({ length: lastPage - 1 }, (_, i) => i + 2);
+  const pages = await mapWithLimit(remainingPages, 2, (page) =>
+    postFormWithRetry("registrants", {
       api_key: apiKey,
       webinar_id: webinarId,
       page: String(page),
-    })) as WjListPage;
+    }) as Promise<WjListPage>,
+  );
+  for (const p of pages) {
     if (p.status === "success") rows.push(...(p.registrants?.data || []));
   }
   return rows;
@@ -307,23 +305,48 @@ const cachedFullFetch = unstable_cache(
   { revalidate: 600, tags: ["webinarjam"] },
 );
 
+// Hard upper bound on time spent fetching WJ during a single dashboard
+// request. The dashboard must return promptly; WJ pagination across 9
+// webinars takes 30-50s, so we time-box it. Whatever's in the cache (even
+// if incomplete) is served, and the next call will try again.
+const WJ_BUDGET_MS = 25_000;
+
+function withTimeout<T>(p: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return new Promise((resolve) => {
+    const t = setTimeout(() => resolve(fallback), ms);
+    p.then((v) => {
+      clearTimeout(t);
+      resolve(v);
+    }).catch(() => {
+      clearTimeout(t);
+      resolve(fallback);
+    });
+  });
+}
+
 export async function fetchWebinarJam(): Promise<{
   attendees: Attendee[];
   notes: string[];
 }> {
-  const result = await cachedFullFetch();
-  // If the cached result has a "serving last good" note (i.e. last fetch was
-  // partial), do an uncached attempt to try refreshing.
-  const looksIncomplete =
-    result.notes.some((n) => /WebinarJam .* (429|Too many|failed)/i.test(n)) ||
-    result.attendees.length < 5000;
-  if (looksIncomplete) {
-    try {
-      const fresh = await fetchWebinarJamUncached();
-      if (fresh.attendees.length > result.attendees.length) return fresh;
-    } catch {
-      // fall through, return cached
-    }
-  }
-  return result;
+  // Try the cached version first — it's instant when warm.
+  const cached = await withTimeout(
+    cachedFullFetch().catch(() => null),
+    WJ_BUDGET_MS,
+    null,
+  );
+  if (cached && cached.attendees.length > 0) return cached;
+  // Cache miss / empty: try a single live fetch within the remaining budget.
+  return withTimeout(
+    fetchWebinarJamUncached().catch((e: Error) => ({
+      attendees: [],
+      notes: [`WebinarJam fetch failed: ${e.message}`],
+    })),
+    WJ_BUDGET_MS,
+    {
+      attendees: [],
+      notes: [
+        "WebinarJam: fetch timed out — dashboard will retry on the next request",
+      ],
+    },
+  );
 }
