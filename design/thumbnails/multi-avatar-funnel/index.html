@@ -251,6 +251,25 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
   padding:2px 1px 3px;line-height:1.1;color:var(--body)}
 
 .mark{font-family:Marker,cursive;line-height:1;user-select:none}
+
+/* ═══════ presenter frame (bottom-left, sits above the board) ═══════
+   Swap assets/img/presenter.png for the real photo — nothing else needs to change.
+   --pflip: -1 un-mirrors a selfie-mode shot, 1 leaves it as-is.
+   --px/--py: which part of the photo is kept (object-position).
+   --pzoom: >1 pushes in on the face.                                        */
+#presenter{
+  left:0;bottom:0;width:500px;height:368px;z-index:59;overflow:hidden;
+  border-top:3px solid #fff;border-right:3px solid #fff;border-top-right-radius:10px;
+  box-shadow:0 -2px 14px rgba(16,24,40,.16),6px -6px 26px rgba(16,24,40,.10);
+  background:#e8eaee;
+}
+#presenter img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  object-position:var(--px,50%) var(--py,42%);
+  transform:scaleX(var(--pflip,-1)) scale(var(--pzoom,1));
+  transform-origin:center;
+}
+
 </style>
 
 <!--SPRITE:START-->
@@ -657,5 +676,10 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
     <path style="stroke:var(--green);stroke-width:3" d="M2 3 H286"/>
   </svg>
   <div class="abs" style="left:616px;top:684px;font-weight:500;font-size:10.5px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase">not cheap leads</div>
+
+  <!-- ═══════ presenter ═══════ -->
+  <div class="abs" id="presenter" style="--pflip:-1;--px:50%;--py:40%;--pzoom:1">
+    <img src="assets/img/presenter.png" alt="">
+  </div>
 
 </div>
