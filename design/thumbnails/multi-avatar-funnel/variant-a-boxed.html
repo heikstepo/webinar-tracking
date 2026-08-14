@@ -1,0 +1,619 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Multi-Avatar Ad Funnel — Thumbnail</title>
+<style>
+@font-face{font-family:Marker;src:url(assets/fonts/permanent-marker-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Hand;src:url(assets/fonts/caveat-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+@font-face{font-family:Hand;src:url(assets/fonts/caveat-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Note;src:url(assets/fonts/patrick-hand-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Scratch;src:url(assets/fonts/architects-daughter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:UI;src:url(assets/fonts/inter-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:block}
+@font-face{font-family:UI;src:url(assets/fonts/inter-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#3a3a3a}
+
+:root{
+  --ink:#17150f;        /* marker black */
+  --ink2:#3d3831;       /* softer pen */
+  --red:#cf2a20;        /* marker red */
+  --paper:#f6f4ee;
+  --card:#fffefb;
+  --yellow:#ffe89a;
+  --blue:#2c6fd4;
+  --green:#1f7a4d;
+}
+
+/* ---------- canvas ---------- */
+#board{
+  position:relative;width:1280px;height:720px;overflow:hidden;
+  background:
+    radial-gradient(115% 95% at 52% 40%, #fdfcf8 0%, #f4f1ea 58%, #e8e4d9 100%);
+  font-family:UI,sans-serif;color:var(--ink);
+}
+/* graph-paper grid */
+#board::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(70,80,95,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(70,80,95,.055) 1px, transparent 1px),
+    linear-gradient(rgba(70,80,95,.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(70,80,95,.10) 1px, transparent 1px);
+  background-size:16px 16px,16px 16px,96px 96px,96px 96px;
+}
+/* paper grain + corner shading */
+#board::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:60;
+  background:
+    radial-gradient(120% 80% at 50% 0%, transparent 55%, rgba(60,50,35,.10) 100%),
+    radial-gradient(90% 70% at 8% 100%, rgba(60,50,35,.09), transparent 60%);
+  mix-blend-mode:multiply;
+}
+
+/* ---------- primitives ---------- */
+.abs{position:absolute}
+.hand{                     /* irregular radius = drawn-by-hand box */
+  background:var(--card);border:2.4px solid var(--ink);
+  border-radius:14px 9px 16px 8px / 9px 16px 7px 14px;
+  box-shadow:2px 3px 0 rgba(23,21,15,.13);
+}
+.hand-s{
+  background:var(--card);border:1.7px solid var(--ink);
+  border-radius:8px 5px 9px 5px / 5px 9px 4px 8px;
+  box-shadow:1.5px 2px 0 rgba(23,21,15,.10);
+}
+.hdr{                      /* section heading, handwritten */
+  font-family:Hand,cursive;font-weight:700;color:var(--ink);
+  text-transform:uppercase;letter-spacing:.04em;line-height:1;
+}
+.chip{
+  font-family:UI;font-weight:700;font-size:8.5px;letter-spacing:.07em;
+  text-transform:uppercase;color:#fff;background:var(--ink);
+  padding:3.5px 7px;border-radius:4px 3px 5px 3px;display:inline-block;
+}
+.note{font-family:Note,cursive}
+.scratch{font-family:Scratch,cursive}
+svg.pen{position:absolute;overflow:visible;pointer-events:none}
+.pen path,.pen line,.pen ellipse,.pen polyline{
+  fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.pen .red{stroke:var(--red)}
+.pen .thin{stroke-width:1.4}
+
+/* ================= ZONE A · interest spectrum funnel ================= */
+#funnel{left:14px;top:8px;width:266px;height:298px}
+#funnel .cap{font-size:20px;text-align:center;margin-bottom:2px}
+#funnel .band{position:relative;height:60px;margin:0 auto;padding-top:5px}
+#funnel .bl{
+  font-family:UI;font-weight:700;font-size:9px;letter-spacing:.13em;
+  text-align:center;text-transform:uppercase;color:var(--ink);
+}
+#funnel .icons{display:flex;justify-content:center;gap:9px;margin-top:6px}
+#funnel .ic{width:44px;text-align:center}
+#funnel .ic svg{width:15px;height:15px;stroke:var(--ink2);stroke-width:1.6;fill:none}
+#funnel .ic span{
+  display:block;font-family:UI;font-weight:600;font-size:6.2px;
+  letter-spacing:.02em;color:#4a443b;margin-top:2.5px;line-height:1.15;
+}
+#funnel .rule{position:absolute;left:50%;transform:translateX(-50%);height:1.4px;background:rgba(23,21,15,.5)}
+
+/* ================= ZONE B · ad set anatomy ================= */
+#adset{left:292px;top:14px;width:392px;height:120px;padding:16px 10px 8px}
+#adset .cap{
+  position:absolute;left:50%;top:-9px;transform:translateX(-50%);
+  background:var(--ink);color:#fff;font-family:UI;font-weight:700;
+  font-size:8.5px;letter-spacing:.1em;padding:3px 9px;border-radius:3px;white-space:nowrap;
+}
+#adset .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px 6px}
+.adcard{
+  background:#fff;border:1.4px solid var(--ink);border-radius:4px;
+  padding:3px 3px 4px;text-align:center;box-shadow:1px 1.5px 0 rgba(23,21,15,.10);
+}
+.adcard .win{height:16px;border:1.2px solid #2a2722;border-radius:2px;margin-bottom:2.5px;
+  display:flex;align-items:center;justify-content:center;font-family:UI;font-weight:700;font-size:7px}
+.adcard .lb{font-family:UI;font-weight:700;font-size:6.7px;letter-spacing:0;line-height:1.15;color:#241f19}
+.adcard.k1 .win{color:var(--red);border-color:var(--red)}
+.adcard.k2 .win{color:var(--blue);border-color:var(--blue)}
+.adcard.k3 .win{color:var(--green);border-color:var(--green)}
+
+/* ================= ZONE B2 · red circled stat ================= */
+#stat{left:700px;top:18px;width:212px;height:112px}
+#stat .txt{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-3deg);
+  font-family:Marker,cursive;color:var(--red);font-size:23px;line-height:.98;
+  text-align:center;letter-spacing:-.01em;white-space:nowrap;
+}
+#stat .sub{
+  position:absolute;left:50%;bottom:-3px;transform:translateX(-50%);
+  font-family:Note,cursive;font-size:11.5px;color:var(--ink2);white-space:nowrap;
+}
+
+/* ================= ZONE C · checklist ================= */
+#unlock{left:948px;top:10px;width:322px;height:136px;padding:9px 12px 6px}
+#unlock .cap{font-size:17px;margin-bottom:5px}
+#unlock .row{display:flex;align-items:center;gap:8px;height:19px}
+#unlock .box{width:12px;height:12px;flex:0 0 12px;position:relative;
+  border:1.7px solid var(--ink);border-radius:2.5px}
+#unlock .box svg{position:absolute;left:-1px;top:-3px;width:15px;height:15px;
+  stroke:var(--red);stroke-width:2.4;fill:none}
+#unlock .t{font-family:Hand,cursive;font-weight:700;font-size:17.5px;line-height:1;color:#1b1812}
+
+/* ================= ZONE F · traffic sources ================= */
+#traffic{left:292px;top:150px;width:164px;height:120px}
+#traffic .cap{font-size:16px;margin-bottom:5px;text-align:center}
+#traffic .grid{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;width:119px;margin:0 auto}
+.dot{
+  width:35px;height:35px;border-radius:50%;background:var(--red);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:1.5px 2px 0 rgba(23,21,15,.16);
+}
+.dot img{width:17px;height:17px;filter:brightness(0) invert(1)}
+.dot span{font-family:UI;font-weight:700;font-size:8px;color:#fff;letter-spacing:.02em}
+
+/* ================= ZONE G · big meta mark ================= */
+#metamark{left:296px;top:274px;width:156px;text-align:center}
+#metamark img{width:56px;height:56px;opacity:.9}
+#metamark .t{font-family:Marker,cursive;font-size:15px;color:#2b2721;margin-top:-4px;letter-spacing:.02em}
+
+/* ================= ZONE D · title ================= */
+#title{left:462px;top:146px;width:486px;transform:rotate(-1.1deg)}
+#title .l1{font-family:Marker,cursive;font-size:33px;letter-spacing:.005em;line-height:1;color:#14120d}
+#title .l2{font-family:Marker,cursive;font-size:63px;line-height:.95;letter-spacing:-.012em;color:#14120d;margin-top:1px}
+#title .bar{
+  margin-top:11px;background:#14120d;color:#fff;display:inline-block;
+  font-family:UI;font-weight:700;font-size:12.5px;letter-spacing:.11em;
+  padding:6px 12px;border-radius:3px 2px 4px 2px;
+}
+
+/* ================= ZONE E · stickies ================= */
+#stickies{left:466px;top:296px;width:478px;display:flex;gap:8px}
+.sticky{
+  width:114px;height:60px;background:var(--yellow);
+  padding:6px 7px;box-shadow:2px 3px 0 rgba(23,21,15,.16);
+  border-radius:2px;position:relative;
+}
+.sticky .st{
+  font-family:Hand,cursive;font-weight:700;font-size:14.5px;line-height:1.05;color:#2a2410;
+}
+.sticky .ss{font-family:Note,cursive;font-size:10.5px;line-height:1.1;color:#5b5024;margin-top:2px}
+.sticky svg{position:absolute;right:6px;top:5px;width:11px;height:11px;stroke:#7d6a1e;stroke-width:1.7;fill:none}
+.sticky:nth-child(1){transform:rotate(-1.6deg)}
+.sticky:nth-child(2){background:#ffe89a}
+.sticky:nth-child(3){transform:rotate(-.8deg)}
+.sticky:nth-child(4){transform:rotate(1.7deg)}
+
+/* ================= ZONE H · funnel flow wireframes ================= */
+#flow{left:948px;top:156px;width:322px;height:146px}
+#flow .cap{font-size:16px;margin-bottom:4px}
+#flow .row{display:flex;align-items:flex-start;gap:6px}
+.wire{width:57px}
+.wire .frame{
+  height:74px;background:#fff;border:1.6px solid var(--ink);border-radius:3px;
+  padding:3px;box-shadow:1.5px 2px 0 rgba(23,21,15,.11);
+}
+.wire .lb{font-family:UI;font-weight:700;font-size:6.2px;letter-spacing:.04em;
+  text-transform:uppercase;text-align:center;margin-top:3px;color:#332e27;line-height:1.2}
+.wl{background:#d9d5cc;border-radius:1px;height:3px;margin-bottom:2.5px}
+.wl.dk{background:#8f887c}
+.wl.w70{width:70%}.wl.w50{width:50%}.wl.w85{width:85%}
+.wbtn{background:var(--red);height:7px;border-radius:1.5px;margin-top:3px}
+.wvid{background:#26221c;height:26px;border-radius:1.5px;margin-bottom:3px;
+  display:flex;align-items:center;justify-content:center}
+.wvid svg{width:9px;height:9px;fill:#fff}
+.wcal{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;margin-top:2px}
+.wcal i{display:block;height:4.5px;background:#d9d5cc;border-radius:.5px}
+.wcal i.on{background:var(--red)}
+.wform i{display:block;height:5px;border:1px solid #c8c2b6;border-radius:1px;margin-bottom:2px}
+
+/* ================= ZONE I · post-booking flow ================= */
+#post{left:948px;top:310px;width:322px;height:74px;padding:7px 10px}
+#post .cap{font-size:14.5px;margin-bottom:4px}
+#post .row{display:flex;align-items:center;gap:5px}
+.pill{
+  flex:1;background:#fff;border:1.5px solid var(--ink);border-radius:3px;
+  padding:3px 2px;text-align:center;box-shadow:1px 1.5px 0 rgba(23,21,15,.09);
+}
+.pill svg{width:11px;height:11px;stroke:var(--ink2);stroke-width:1.7;fill:none;display:block;margin:0 auto 1.5px}
+.pill span{font-family:UI;font-weight:700;font-size:6px;letter-spacing:.04em;color:#332e27;display:block;line-height:1.15}
+.arw{font-family:UI;font-weight:700;font-size:10px;color:var(--ink);flex:0 0 auto}
+
+/* ================= ZONE J · proof strip ================= */
+#proof{left:948px;top:392px;width:322px;height:318px}
+#proof .cap{font-size:15px;margin-bottom:4px}
+.shot{overflow:hidden;background:#fff;border:1.8px solid var(--ink);border-radius:4px;
+  box-shadow:2px 3px 0 rgba(23,21,15,.14)}
+.shot img{position:absolute;width:100%;height:auto;left:0}
+.shot .tag{
+  position:absolute;left:0;bottom:0;right:0;background:rgba(20,18,13,.86);color:#fff;
+  font-family:UI;font-weight:700;font-size:6.2px;letter-spacing:.06em;padding:2.5px 4px;text-transform:uppercase;
+}
+/* heatmap */
+#heat{width:150px}
+#heat .hh{font-family:UI;font-weight:700;font-size:6.4px;letter-spacing:.05em;color:#332e27;margin-bottom:3px}
+#heat table{border-collapse:collapse;width:100%}
+#heat td,#heat th{border:.8px solid #fff;height:11.5px;font-family:UI;font-weight:700;font-size:6px;text-align:center;color:#fff}
+#heat th{color:#3a352d;background:none;font-size:6px;height:9px}
+#heat td.l{color:#3a352d;background:none;text-align:left;padding-left:1px}
+
+/* ================= ZONE K · the build ================= */
+#tree{left:352px;top:364px;width:588px;height:348px}
+#tree .cols{display:flex;gap:8px}
+.col{width:139px}
+.col>.chip{margin-bottom:5px;font-size:7.6px;padding:3px 5px}
+.col .chip.c1{background:#b23a2f}.col .chip.c2{background:#1f4f96}
+.col .chip.c3{background:#1f6b45}.col .chip.c4{background:#14120d}
+.tc{
+  background:#fffefb;border:1.4px solid var(--ink);border-radius:4px;
+  padding:3.5px 5px;margin-bottom:4.5px;box-shadow:1.2px 1.6px 0 rgba(23,21,15,.10);
+}
+.tc .h{font-family:UI;font-weight:700;font-size:7.4px;letter-spacing:.02em;color:#1b1812;line-height:1.2}
+.tc .d{font-family:UI;font-weight:600;font-size:6.1px;color:#5d564c;line-height:1.3;margin-top:1.5px}
+.tc .d b{color:var(--red);font-weight:700}
+.tc.hot{border-color:var(--red);border-width:1.8px}
+.tc.dark{background:#14120d}
+.tc.dark .h{color:#fff}.tc.dark .d{color:#bdb6a8}
+
+/* decorative wordmarks in the reserved presenter zone */
+.mark{font-family:Marker,cursive;color:#d8d3c7;letter-spacing:.01em;user-select:none}
+</style>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-scroll" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 8v7m0 0l-2.5-2.5M12 15l2.5-2.5"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="M10.5 9l5 3-5 3V9z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17.1 6.4 20l1.2-6.2L3 9.5l6.3-.8L12 3z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M9 11h6M9 15h6"/></symbol>
+  <symbol id="i-form" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v7l-4 2v-9L3 4z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 7 10-7"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 11l7-4v10l-7-4"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 014 0v6m0-4a2 2 0 014 0v5m0-3a2 2 0 014 0v6a7 7 0 01-7 7h-2a7 7 0 01-7-7v-3a2 2 0 014 0"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 13l5 5L21 5"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-8 8H8l-5 3 1.5-5A8 8 0 1121 12z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
+  <symbol id="i-pintack" viewBox="0 0 24 24"><path d="M12 3v9M8 7h8"/><circle cx="12" cy="16" r="3"/></symbol>
+  <symbol id="f-play" viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<div id="board">
+
+  <!-- decorative wordmarks (presenter overlays these) -->
+  <div class="abs mark" style="left:16px;top:352px;font-size:47px;transform:rotate(-2deg)">HIGH</div>
+  <div class="abs mark" style="left:16px;top:398px;font-size:47px;transform:rotate(-2deg)">TICKET</div>
+  <div class="abs mark" style="left:20px;top:466px;font-size:29px;transform:rotate(-1.4deg)">COLD TRAFFIC</div>
+  <div class="abs scratch" style="left:26px;top:508px;font-size:20px;color:#cfc9bb;transform:rotate(-1deg)">$40k+ offers</div>
+
+  <!-- ══════════ ZONE A · interest spectrum ══════════ -->
+  <div class="abs hand" id="funnel">
+    <div class="hdr cap">Interest Spectrum</div>
+
+    <div class="band" style="width:250px">
+      <div class="rule" style="top:0;width:250px"></div>
+      <div class="bl">Curious</div>
+      <div class="icons">
+        <div class="ic"><svg><use href="#i-scroll"/></svg><span>Scroll<br>Stopper</span></div>
+        <div class="ic"><svg><use href="#i-bolt"/></svg><span>Hook<br>Angle</span></div>
+        <div class="ic"><svg><use href="#i-eye"/></svg><span>Pattern<br>Break</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:212px">
+      <div class="rule" style="top:0;width:212px"></div>
+      <div class="bl">Active Interest</div>
+      <div class="icons">
+        <div class="ic"><svg><use href="#i-play"/></svg><span>VSL /<br>Lander</span></div>
+        <div class="ic"><svg><use href="#i-star"/></svg><span>Proof<br>Stack</span></div>
+        <div class="ic"><svg><use href="#i-doc"/></svg><span>Case<br>Study</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:174px">
+      <div class="rule" style="top:0;width:174px"></div>
+      <div class="bl">Strong Intent</div>
+      <div class="icons">
+        <div class="ic"><svg><use href="#i-form"/></svg><span>Apply /<br>Form</span></div>
+        <div class="ic"><svg><use href="#i-filter"/></svg><span>Qualify</span></div>
+        <div class="ic"><svg><use href="#i-cal"/></svg><span>Calendar</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:136px;height:58px">
+      <div class="rule" style="top:0;width:136px"></div>
+      <div class="bl">Convicted</div>
+      <div class="icons" style="gap:4px">
+        <div class="ic" style="width:40px"><svg><use href="#i-phone"/></svg><span>Setter</span></div>
+        <div class="ic" style="width:40px"><svg><use href="#i-mail"/></svg><span>15 Emails</span></div>
+        <div class="ic" style="width:40px"><svg><use href="#i-hand"/></svg><span>Close</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- funnel outline -->
+  <svg class="pen" style="left:14px;top:8px;width:266px;height:298px">
+    <path class="thin" d="M9 34 C 9 33.4, 256 33.8, 257 34 L 200 292 C 199 292.6, 68 292.2, 66.5 292 Z" style="stroke:rgba(23,21,15,.42)"/>
+  </svg>
+
+  <!-- ══════════ ZONE B · ad set anatomy ══════════ -->
+  <div class="abs hand" id="adset">
+    <div class="cap">ONE AD SET · 8 DISTINCT JOBS</div>
+    <div class="grid">
+      <div class="adcard k1"><div class="win">Ad</div><div class="lb">HOOK /<br>SOFT CTA</div></div>
+      <div class="adcard k2"><div class="win">Ad</div><div class="lb">HOOK ANGLE 1<br>+ HARD CTA</div></div>
+      <div class="adcard k2"><div class="win">Ad</div><div class="lb">HOOK ANGLE 2<br>+ HARD CTA</div></div>
+      <div class="adcard k2"><div class="win">Ad</div><div class="lb">HOOK ANGLE 3<br>+ HARD CTA</div></div>
+      <div class="adcard k3"><div class="win">Ad</div><div class="lb">STRAIGHT<br>OFFER</div></div>
+      <div class="adcard k3"><div class="win">Ad</div><div class="lb">PROOF-LED<br>DIRECT</div></div>
+      <div class="adcard"><div class="win">Ad</div><div class="lb">OBJECTION<br>HANDLING 1</div></div>
+      <div class="adcard"><div class="win">Ad</div><div class="lb">OBJECTION<br>HANDLING 2</div></div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE B2 · red circled stat ══════════ -->
+  <div class="abs" id="stat">
+    <svg class="pen" style="left:0;top:0;width:212px;height:112px">
+      <path class="red" style="stroke-width:2.8" d="M40 14 C 96 4, 176 10, 196 40 C 210 66, 176 100, 112 104 C 52 108, 10 92, 8 60 C 6.5 38, 18 22, 40 14"/>
+      <path class="red thin" style="stroke-width:2" d="M44 19 C 100 10, 172 17, 190 43 C 202 66, 172 96, 112 99"/>
+    </svg>
+    <div class="txt">5&ndash;12 ADS<br>1 AD SET</div>
+    <div class="sub">Meta picks the sequence</div>
+  </div>
+
+  <!-- arrow: ad set → stat -->
+  <svg class="pen" style="left:678px;top:66px;width:34px;height:22px">
+    <path d="M0 11 C 10 5, 18 16, 28 10"/><path d="M21 4 L 29 10 L 21 16"/>
+  </svg>
+
+  <!-- ══════════ ZONE C · checklist ══════════ -->
+  <div class="abs hand" id="unlock">
+    <div class="hdr cap">What it unlocks</div>
+    <div class="row"><div class="box"><svg><use href="#i-check"/></svg></div><div class="t">Lower Cost Per Call</div></div>
+    <div class="row"><div class="box"><svg><use href="#i-check"/></svg></div><div class="t">Higher Lead Quality</div></div>
+    <div class="row"><div class="box"><svg><use href="#i-check"/></svg></div><div class="t">Minimized Friction</div></div>
+    <div class="row"><div class="box"><svg><use href="#i-check"/></svg></div><div class="t">Counterpositioning</div></div>
+    <div class="row"><div class="box"><svg><use href="#i-check"/></svg></div><div class="t">Predictable Booked Calls</div></div>
+  </div>
+
+  <!-- ══════════ ZONE F · traffic ══════════ -->
+  <div class="abs" id="traffic">
+    <div class="hdr cap">Traffic</div>
+    <div class="grid">
+      <div class="dot"><img src="assets/img/meta.svg" alt=""></div>
+      <div class="dot"><img src="assets/img/tiktok.svg" alt=""></div>
+      <div class="dot"><img src="assets/img/youtube.svg" alt=""></div>
+      <div class="dot"><img src="assets/img/google.svg" alt=""></div>
+      <div class="dot"><img src="assets/img/instagram.svg" alt=""></div>
+      <div class="dot"><span>SMS</span></div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE G · meta mark ══════════ -->
+  <div class="abs" id="metamark">
+    <img src="assets/img/meta.svg" alt="">
+    <div class="t">ANDROMEDA</div>
+  </div>
+
+  <!-- ══════════ ZONE D · title ══════════ -->
+  <div class="abs" id="title">
+    <div class="l1">THE MULTI-AVATAR</div>
+    <div class="l2">AD FUNNEL</div>
+    <svg class="pen" style="left:-4px;top:100px;width:330px;height:20px">
+      <path class="red" style="stroke-width:4" d="M2 6 C 70 1, 176 2, 322 5"/>
+      <path class="red" style="stroke-width:2.6" d="M8 14 C 78 9, 190 12, 300 12"/>
+    </svg>
+    <div class="bar">1 AVATAR PER CAMPAIGN. 8 ADS. EVERY BOOKED CALL.</div>
+  </div>
+
+  <!-- ══════════ ZONE E · stickies ══════════ -->
+  <div class="abs" id="stickies">
+    <div class="sticky">
+      <svg><use href="#i-target"/></svg>
+      <div class="st">Cold-traffic<br>friendly offer</div>
+      <div class="ss">or none of it works</div>
+    </div>
+    <div class="sticky">
+      <svg><use href="#i-bolt"/></svg>
+      <div class="st">Speed to lead</div>
+      <div class="ss">call back in 5&ndash;15 min</div>
+    </div>
+    <div class="sticky">
+      <svg><use href="#i-doc"/></svg>
+      <div class="st">Each ad stands<br>alone</div>
+      <div class="ss">assume they saw no others</div>
+    </div>
+    <div class="sticky">
+      <svg><use href="#i-eye"/></svg>
+      <div class="st">Describe their<br>problem better</div>
+      <div class="ss">than they can &rarr; convert</div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE H · funnel flow ══════════ -->
+  <div class="abs" id="flow">
+    <div class="hdr cap">Funnel Flow</div>
+    <div class="row">
+      <div class="wire">
+        <div class="frame">
+          <div class="wvid"><svg><use href="#f-play"/></svg></div>
+          <div class="wl w85"></div><div class="wl dk w70"></div><div class="wl w50"></div>
+          <div class="wbtn"></div>
+        </div>
+        <div class="lb">Hook / Ad</div>
+      </div>
+      <div class="arw">&rarr;</div>
+      <div class="wire">
+        <div class="frame">
+          <div class="wl dk w85"></div><div class="wl w70"></div>
+          <div class="wvid" style="height:20px"><svg><use href="#f-play"/></svg></div>
+          <div class="wl w85"></div><div class="wl w50"></div><div class="wbtn"></div>
+        </div>
+        <div class="lb">VSL / Lander</div>
+      </div>
+      <div class="arw">&rarr;</div>
+      <div class="wire">
+        <div class="frame">
+          <div class="wl dk w70"></div>
+          <div class="wform" style="margin-top:3px">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="wbtn"></div>
+        </div>
+        <div class="lb">Application</div>
+      </div>
+      <div class="arw">&rarr;</div>
+      <div class="wire">
+        <div class="frame">
+          <div class="wl dk w70"></div><div class="wl w50"></div>
+          <div class="wcal">
+            <i></i><i></i><i class="on"></i><i></i>
+            <i></i><i class="on"></i><i></i><i></i>
+            <i class="on"></i><i></i><i></i><i class="on"></i>
+          </div>
+          <div class="wbtn" style="margin-top:5px"></div>
+        </div>
+        <div class="lb">Calendar</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE I · post-booking ══════════ -->
+  <div class="abs hand" id="post">
+    <div class="hdr cap">Post-Booking &rarr; Education Window</div>
+    <div class="row">
+      <div class="pill"><svg><use href="#i-doc"/></svg><span>PRE-FRAME<br>TY PAGE</span></div>
+      <div class="arw">&rarr;</div>
+      <div class="pill"><svg><use href="#i-sms"/></svg><span>SETTER<br>5&ndash;15 MIN</span></div>
+      <div class="arw">&rarr;</div>
+      <div class="pill"><svg><use href="#i-mail"/></svg><span>15 EMAILS<br>/ 3 DAYS</span></div>
+      <div class="arw">&rarr;</div>
+      <div class="pill"><svg><use href="#i-video"/></svg><span>VIDEO<br>ASSETS</span></div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE J · proof ══════════ -->
+  <div class="abs" id="proof">
+    <div class="hdr cap">Live Assets</div>
+    <div class="abs shot" style="left:0;top:22px;width:150px;height:132px">
+      <img src="assets/img/lander.png" style="top:0">
+      <div class="tag">Application funnel &mdash; qualified only</div>
+    </div>
+    <div class="abs shot" style="left:158px;top:22px;width:164px;height:132px">
+      <img src="assets/img/proof.png" style="top:-14px">
+      <div class="tag">Proof-led page</div>
+    </div>
+
+    <div class="abs hand-s" id="heat" style="left:0;top:154px;width:150px;padding:6px 7px 7px">
+      <div class="hh">CPL &mdash; AVATAR &times; ANGLE</div>
+      <table>
+        <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
+        <tr><td class="l">SaaS</td><td style="background:#1b4f9c">42</td><td style="background:#3d78c4">61</td><td style="background:#8fb4dd">88</td><td style="background:#2c62ae">51</td></tr>
+        <tr><td class="l">Ecom</td><td style="background:#6b9bd2">74</td><td style="background:#153f80">39</td><td style="background:#8fb4dd">91</td><td style="background:#3d78c4">63</td></tr>
+        <tr><td class="l">Agency</td><td style="background:#153f80">36</td><td style="background:#2c62ae">49</td><td style="background:#6b9bd2">72</td><td style="background:#1b4f9c">44</td></tr>
+        <tr><td class="l">Info</td><td style="background:#3d78c4">58</td><td style="background:#153f80">33</td><td style="background:#2c62ae">47</td><td style="background:#6b9bd2">69</td></tr>
+      </table>
+    </div>
+
+    <div class="abs hand-s" style="left:158px;top:154px;width:164px;padding:6px 7px">
+      <div style="font-family:UI;font-weight:700;font-size:6.4px;letter-spacing:.05em;color:#332e27">MARKET AWARENESS</div>
+      <div style="margin-top:4px">
+        <div style="height:11px;background:#14120d;color:#fff;font-family:UI;font-weight:700;font-size:5.8px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">UNAWARE</div>
+        <div style="height:11px;width:84%;margin:1.5px auto 0;background:#33302a;color:#fff;font-family:UI;font-weight:700;font-size:5.8px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">PROBLEM AWARE</div>
+        <div style="height:11px;width:68%;margin:1.5px auto 0;background:#5b564c;color:#fff;font-family:UI;font-weight:700;font-size:5.8px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">SOLUTION AWARE</div>
+        <div style="height:11px;width:52%;margin:1.5px auto 0;background:#8a8377;color:#fff;font-family:UI;font-weight:700;font-size:5.8px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">PRODUCT AWARE</div>
+        <div style="height:11px;width:36%;margin:1.5px auto 0;background:var(--red);color:#fff;font-family:UI;font-weight:700;font-size:5.8px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">MOST AWARE</div>
+      </div>
+      <div class="note" style="font-size:10px;color:#5b544a;margin-top:3px;line-height:1">1 angle per level &rarr; 1 ad each</div>
+    </div>
+    <div class="abs hand-s" style="left:0;top:262px;width:322px;height:56px;padding:5px 8px">
+      <div style="font-family:UI;font-weight:700;font-size:6.4px;letter-spacing:.05em;color:#332e27">HOW THE ANGLES GET FOUND</div>
+      <div style="display:flex;align-items:center;gap:4px;margin-top:4px">
+        <div class="pill" style="border-width:1.3px"><svg><use href="#i-phone"/></svg><span>SALES CALL<br>TRANSCRIPTS</span></div>
+        <div class="arw" style="font-size:9px">&rarr;</div>
+        <div class="pill" style="border-width:1.3px"><svg><use href="#i-doc"/></svg><span>MARKET<br>RESEARCH</span></div>
+        <div class="arw" style="font-size:9px">&rarr;</div>
+        <div class="pill" style="border-width:1.3px"><svg><use href="#i-eye"/></svg><span>REDDIT<br>MINING</span></div>
+        <div class="arw" style="font-size:9px">&rarr;</div>
+        <div class="pill" style="border-width:1.3px;background:#14120d"><svg style="stroke:#fff"><use href="#i-target"/></svg><span style="color:#fff">AVATAR<br>+ ANGLE</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE K · the build ══════════ -->
+  <div class="abs" id="tree">
+    <div class="cols">
+
+      <div class="col">
+        <div class="chip c1">1 &middot; Pick the avatars</div>
+        <div class="tc"><div class="h">SaaS Founders</div><div class="d">CAC too high &middot; churn</div></div>
+        <div class="tc"><div class="h">Ecom Owners</div><div class="d">Blended ROAS stuck</div></div>
+        <div class="tc"><div class="h">Agency Owners</div><div class="d">Referral-dependent</div></div>
+        <div class="tc"><div class="h">Info / Coaches</div><div class="d">Launch-to-launch cash</div></div>
+        <div class="tc hot"><div class="h">1 avatar = 1 campaign</div><div class="d"><b>Never</b> mix avatars in one ad set</div></div>
+      </div>
+
+      <div class="col">
+        <div class="chip c2">2 &middot; Angle per ad</div>
+        <div class="tc"><div class="h">Current beliefs</div><div class="d">what they hold as true now</div></div>
+        <div class="tc"><div class="h">Problem lived in</div><div class="d">the daily, specific version</div></div>
+        <div class="tc"><div class="h">Failed attempts</div><div class="d">what they already tried</div></div>
+        <div class="tc"><div class="h">Frustrations</div><div class="d">the part nobody names</div></div>
+        <div class="tc dark"><div class="h">Angle = big idea</div><div class="d">Avatar &times; Angle = one ad</div></div>
+      </div>
+
+      <div class="col">
+        <div class="chip c3">3 &middot; Education window</div>
+        <div class="tc"><div class="h">Pre-Frame TY Page</div><div class="d">objections &middot; student interviews</div></div>
+        <div class="tc"><div class="h">Retargeting Ads</div><div class="d">mechanism &middot; long-form nurture</div></div>
+        <div class="tc hot"><div class="h">Setters &mdash; SPEED TO LEAD</div><div class="d"><b>5&ndash;15 min</b> &middot; pre-qualify &middot; find pains</div></div>
+        <div class="tc"><div class="h">15 Long-Form Emails</div><div class="d">3 days &middot; 50&ndash;60% open rates</div></div>
+        <div class="tc"><div class="h">Video Sales Assets</div><div class="d">personalized, per objection</div></div>
+      </div>
+
+      <div class="col">
+        <div class="chip c4">4 &middot; The call</div>
+        <div class="tc"><div class="h">Education Call</div><div class="d">setter talks first &middot; frames it</div></div>
+        <div class="tc dark"><div class="h">Closing Call</div><div class="d">warm, informed, pre-sold</div></div>
+        <div class="tc"><div class="h">Why it works</div><div class="d">Most who book aren&rsquo;t sold yet &middot; they forget fast &middot; trust gets built <b>before</b> the call</div></div>
+        <div class="tc" style="border-width:1.8px"><div class="h">Closer&rsquo;s job gets easy</div><div class="d">warm leads show up &mdash; and buy</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════ ZONE L · offer positioning + the contrast ══════════ -->
+  <div class="abs hand" style="left:352px;top:556px;width:296px;height:154px;padding:9px 12px">
+    <div class="chip" style="background:var(--red);font-size:7.6px;padding:3px 6px">Offer positioning</div>
+    <div style="font-family:Hand,cursive;font-weight:700;font-size:25px;line-height:1.02;color:#191610;margin-top:7px">
+      If the offer isn&rsquo;t cold-traffic<br>friendly, none of this works.
+    </div>
+    <svg class="pen" style="left:11px;top:80px;width:250px;height:12px">
+      <path class="red" style="stroke-width:3.4" d="M2 5 C 62 1, 158 3, 246 6"/>
+    </svg>
+    <div class="note" style="font-size:13px;color:#4e473d;line-height:1.12;margin-top:22px">
+      &ldquo;If you want to work with me, check this out&rdquo;<br>
+      converts on warm. On cold traffic it dies.
+    </div>
+  </div>
+
+  <div class="abs" style="left:658px;top:556px;width:282px;height:154px">
+    <div class="hand-s" style="height:70px;padding:7px 9px;border-color:#a8362c">
+      <div style="display:flex;align-items:center;gap:6px">
+        <svg style="width:13px;height:13px;stroke:#cf2a20;stroke-width:2.6;fill:none"><path d="M4 4 L14 14 M14 4 L4 14"/></svg>
+        <div style="font-family:UI;font-weight:700;font-size:9px;letter-spacing:.06em;color:#a8362c">THE OLD WAY</div>
+      </div>
+      <div style="font-family:UI;font-weight:700;font-size:7.4px;color:#241f19;margin-top:4px">Broad ad set &middot; 1 message &middot; 1 angle</div>
+      <div class="note" style="font-size:12px;color:#5d564c;line-height:1;margin-top:3px">cheap leads &rarr; nobody books &rarr; blame the ads</div>
+    </div>
+    <div class="hand-s" style="height:76px;padding:7px 9px;margin-top:8px;border-color:#14120d;border-width:2.2px">
+      <div style="display:flex;align-items:center;gap:6px">
+        <svg style="width:13px;height:13px;stroke:#1f7a4d;stroke-width:2.6;fill:none"><path d="M3 8.5 L7 12.5 L15 3.5"/></svg>
+        <div style="font-family:UI;font-weight:700;font-size:9px;letter-spacing:.06em;color:#1f7a4d">THE MULTI-AVATAR WAY</div>
+      </div>
+      <div style="font-family:UI;font-weight:700;font-size:7.4px;color:#241f19;margin-top:4px">1 avatar &middot; 8 angles &middot; 1 ad set</div>
+      <div class="note" style="font-size:12px;color:#5d564c;line-height:1;margin-top:3px">fewer leads &rarr; better leads &rarr; calls that close</div>
+    </div>
+  </div>
+
+</div>
