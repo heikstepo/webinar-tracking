@@ -148,15 +148,15 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
 #anchor .mads i{font-style:normal;color:#0081fb}
 
 /* ═══════ F · title ═══════ */
-#ttl{left:660px;top:138px;width:340px}
-#ttl .l0{font-weight:700;font-size:22px;letter-spacing:.15em;line-height:1;
-  color:var(--red);white-space:nowrap}
-#ttl .l1{font-weight:700;font-size:40px;letter-spacing:-.015em;line-height:1;
-  margin-top:5px;white-space:nowrap}
-#ttl .l2{font-weight:700;font-size:29px;letter-spacing:-.008em;line-height:1.02;
+/* two flush lines of near-equal width — no staircase, no dead wedge */
+#ttl{left:660px;top:132px;width:320px}
+#ttl .r1{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+#ttl .l0{font-weight:700;font-size:20px;letter-spacing:.14em;line-height:1;color:var(--red)}
+#ttl .l1{font-weight:700;font-size:51px;letter-spacing:-.02em;line-height:.95}
+#ttl .l2{font-weight:700;font-size:31.9px;letter-spacing:-.008em;line-height:1;
   margin-top:2px;white-space:nowrap}
-#ttl .bar{margin-top:13px;display:inline-block;background:#12141a;color:#fff;
-  font-weight:600;font-size:11px;letter-spacing:.11em;padding:7px 12px;border-radius:6px}
+#ttl .bar{margin-top:18px;display:block;text-align:center;white-space:nowrap;background:#12141a;color:#fff;
+  font-weight:600;font-size:12px;letter-spacing:.1em;padding:7px 10px;border-radius:6px}
 
 /* ═══════ G · stickies ═══════ */
 #stk{left:589px;top:290px;width:359px;display:flex;gap:5px}
@@ -461,12 +461,11 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
 
   <!-- ═══════ F · title ═══════ -->
   <div class="abs" id="ttl">
-    <div class="l0">*NEW*</div>
-    <div class="l1">7-FIGURE</div>
+    <div class="r1"><span class="l0">*NEW*</span><span class="l1">7-FIGURE</span></div>
     <div class="l2">HIGH TICKET FUNNEL</div>
-    <svg class="pen" style="left:0;top:102px;width:330px;height:15px">
-      <path style="stroke:var(--red);stroke-width:4.4" d="M1 5 H326"/>
-      <path style="stroke:var(--amber);stroke-width:2.6" d="M7 13 H268"/>
+    <svg class="pen" style="left:0;top:88px;width:320px;height:15px">
+      <path style="stroke:var(--red);stroke-width:4.4" d="M1 5 H318"/>
+      <path style="stroke:var(--amber);stroke-width:2.6" d="M7 13 H258"/>
     </svg>
     <div class="bar">8 ANGLES. 1 AVATAR. EVERY BOOKED CALL.</div>
   </div>

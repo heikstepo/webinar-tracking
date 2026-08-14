@@ -64,7 +64,7 @@ stay visible, move it right rather than clearing space.
 | C | 954,6 – 1272,142 | What it unlocks — checklist with coloured checkboxes |
 | D | 254,136 – 490,280 | Tool-stack discs, then Objection Handling fanning into three assets |
 | E | 482,98 – 652,276 | Meta Ads lockup — oversized anchor mark + wordmark |
-| F | 660,138 – 1000,282 | `*NEW*` / `7-FIGURE` / `HIGH TICKET FUNNEL`, red + amber underline, black subtitle bar |
+| F | 660,132 – 980,264 | `*NEW* 7-FIGURE` / `HIGH TICKET FUNNEL`, red + amber underline, black subtitle bar. All four rows are sized to the same 320px measure so the block is flush on both edges. |
 | — | 256,286 – 520,340 | `$40K OFFERS` / `on cold traffic` wordmark |
 | G | 589,290 – 948,352 | Four sticky notes — the non-negotiables |
 | H | 1002,148 – 1272,262 | Funnel flow wireframes: Hook/Ad → VSL → Application → Calendar |
@@ -87,6 +87,12 @@ stay visible, move it right rather than clearing space.
   for labels, 600 for headings and chips. Permanent Marker survives only on the three
   annotation-style bits: the circled `5-12 ADS` stat, `$40K OFFERS`, and
   `BOOKED CALLS` / `SAME OFFER`.
+- Title line sizes are derived from measured advances rather than guessed:
+  `*NEW*` 4.10em (tracking included), `7-FIGURE` 4.45em, `HIGH TICKET FUNNEL` 10.03em
+  at weight 700. If the copy changes, re-measure and resize so both rows still fill
+  the 320px measure — a ragged right edge is what made the earlier version look
+  lopsided. The subtitle bar carries `white-space:nowrap` so it can never wrap to a
+  second line.
 - Section headings use `.sec` plus a `u-*` class, which draws the coloured underline:
   `u-blue`, `u-red`, `u-green`, `u-amber`, `u-violet`, `u-teal`, `u-pink`.
 - Background is `#ffffff` with a 14px grey dot grid
