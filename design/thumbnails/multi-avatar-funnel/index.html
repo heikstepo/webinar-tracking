@@ -2,7 +2,6 @@
 <meta charset="utf-8">
 <title>7-Figure High Ticket Funnel — Thumbnail</title>
 <style>
-@font-face{font-family:Marker;src:url(assets/fonts/permanent-marker-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-300-normal.woff2) format('woff2');font-weight:300;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:block}
@@ -12,62 +11,59 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:#2f3136}
 
+/* Palette is deliberately narrow: ink + red + sticky yellow.
+   Every other colour on the board comes from a real brand mark. */
 :root{
-  --ink:#12141a;
-  --body:#4b5262;
-  --mute:#7d8598;
-  --line:#dfe3e9;
-  --blue:#2563eb;
-  --red:#dc2626;
-  --green:#16a34a;
-  --amber:#f59e0b;
-  --violet:#7c3aed;
-  --teal:#0d9488;
-  --pink:#db2777;
+  --paper:#f6f4ef;
+  --card:#fffdfa;
+  --ink:#1e1c18;
+  --ink2:#4b463d;
+  --mute:#8b8479;
+  --edge:#26241f;
+  --hair:#c8c2b5;
+  --red:#c62b1e;
+  --red-soft:#f7dbd5;
+  --red-ink:#8f2a1b;
+  --yellow:#ffeba6;
 }
 
 #board{
   position:relative;width:1280px;height:720px;overflow:hidden;
-  background:#ffffff;
-  background-image:radial-gradient(circle at 1px 1px,#d3d7de 1.05px,transparent 1.05px);
-  background-size:14px 14px;
+  background:var(--paper);
+  background-image:radial-gradient(circle at 1px 1px,rgba(38,36,31,.13) 1px,transparent 1px);
+  background-size:15px 15px;
   font-family:Poppins,sans-serif;color:var(--ink);
   -webkit-font-smoothing:antialiased;
 }
 
 /* ---------- primitives ---------- */
 .abs{position:absolute}
-.card{
-  background:#fff;border:1.2px solid var(--line);border-radius:8px;
-  box-shadow:0 1px 2px rgba(16,24,40,.05),0 5px 14px rgba(16,24,40,.06);
-}
-.card-s{
-  background:#fff;border:1px solid var(--line);border-radius:6px;
-  box-shadow:0 1px 2px rgba(16,24,40,.05),0 3px 8px rgba(16,24,40,.05);
-}
-/* section heading + coloured underline */
-.sec{
-  display:inline-block;position:relative;font-weight:600;font-size:9.5px;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--ink);
-  padding-bottom:5px;line-height:1;
-}
-.sec::after{
-  content:"";position:absolute;left:0;bottom:0;height:2.6px;width:100%;
-  border-radius:2px;background:var(--u,var(--blue));
-}
-.u-blue{--u:var(--blue)}.u-red{--u:var(--red)}.u-green{--u:var(--green)}
-.u-amber{--u:var(--amber)}.u-violet{--u:var(--violet)}.u-teal{--u:var(--teal)}
-.u-pink{--u:var(--pink)}
+.card{background:var(--card);border:1.3px solid var(--edge);border-radius:9px;
+  box-shadow:0 2px 7px rgba(38,36,31,.10)}
+.card-s{background:var(--card);border:1.1px solid var(--edge);border-radius:6px;
+  box-shadow:0 1px 4px rgba(38,36,31,.08)}
 
-.mini{font-weight:300;font-size:7.4px;letter-spacing:.01em;color:var(--mute);line-height:1.3}
-.chip{
-  display:inline-block;font-weight:600;font-size:8px;letter-spacing:.09em;
-  text-transform:uppercase;color:#fff;padding:3.5px 7px;border-radius:5px;
-}
-svg.pen{position:absolute;overflow:visible;pointer-events:none}
-.pen path{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.pen .red{stroke:var(--red)}
-.pen .hair{stroke-width:1.5;stroke:#bcc3cf}
+/* one heading style, one underline colour */
+.sec{display:inline-block;position:relative;font-weight:600;font-size:9.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink);
+  padding-bottom:5px;line-height:1}
+.sec::after{content:"";position:absolute;left:0;bottom:0;height:2.4px;width:100%;
+  border-radius:2px;background:var(--red)}
+
+.body{font-weight:400;font-size:7.4px;line-height:1.3;color:var(--ink2)}
+.micro{font-weight:300;font-size:6.9px;line-height:1.32;color:var(--mute)}
+.em{font-weight:600;color:var(--red)}
+.chip{display:inline-block;font-weight:600;font-size:7.6px;letter-spacing:.09em;
+  text-transform:uppercase;background:var(--red-soft);color:var(--red-ink);
+  padding:4px 7px;border-radius:5px}
+.chip-dk{background:var(--ink);color:#fff}
+
+/* ink strokes: connectors, arrows, the circled stat */
+svg.ink{position:absolute;overflow:visible;pointer-events:none}
+.ink path{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ink .thin{stroke-width:1.15}
+.ink .red{stroke:var(--red)}
+.ink .soft{stroke:var(--hair);stroke-width:1.15}
 
 /* ---------- logos ---------- */
 .lg{display:inline-block;color:var(--ink);vertical-align:middle;line-height:0}
@@ -75,210 +71,177 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
 .lg-meta{color:#0081fb}.lg-instagram{color:#e4405f}.lg-tiktok{color:#111}
 .lg-youtube{color:#f00}.lg-googleads{color:#4285f4}.lg-linkedin{color:#0a66c2}
 .lg-calendly{color:#006bff}.lg-hubspot{color:#ff7a59}.lg-twilio{color:#f22f46}
-.lg-gmail{color:#ea4335}.lg-zapier{color:#ff4f00}.lg-stripe{color:#635bff}
-.lg-reddit{color:#ff4500}.lg-zoom{color:#0b5cff}.lg-slack{color:#611f69}
-.lg-notion{color:#111}.lg-whatsapp{color:#25d366}.lg-snapchat{color:#c9a800}
-.lg-googlesheets{color:#0f9d58}.lg-x{color:#111}
+.lg-gmail{color:#ea4335}.lg-stripe{color:#635bff}.lg-reddit{color:#ff4500}
+.lg-whatsapp{color:#25d366}.lg-zapier{color:#ff4f00}
 .lg-white{color:#fff !important}
 
-/* typographic wordmarks — recreations, not official logo files */
 .wm{font-weight:700;letter-spacing:-.01em;line-height:1;white-space:nowrap}
-.wm-hyros{font-size:19px;letter-spacing:.14em;color:#0b0d12}
+.wm-vc i{font-style:normal;color:#e07b1e}
+.wm-vc b{color:var(--ink)}
 .wm-hyros i{font-style:normal;color:var(--red)}
-.wm-vc{font-size:15px;letter-spacing:.02em}
-.wm-vc i{font-style:normal;color:#f0932b}
-.wm-vc b{color:#11131a}
 
-/* ═══════ A · funnel ═══════ */
-#fn{left:14px;top:34px;width:238px}
-#fn .band{position:relative;margin:0 auto;padding-top:7px;height:53px}
-#fn .bl{font-weight:600;font-size:8.6px;letter-spacing:.15em;text-align:center;text-transform:uppercase}
-#fn .rule{position:absolute;left:50%;transform:translateX(-50%);height:2px;border-radius:2px}
-#fn .items{display:flex;justify-content:center;gap:8px;margin-top:5px}
+/* display type */
+.disp{font-weight:700;letter-spacing:-.025em;line-height:.95;color:var(--ink)}
+
+/* ═════ A · funnel ═════ */
+#fn{left:14px;top:32px;width:238px}
+#fn .band{position:relative;margin:0 auto;padding-top:7px;height:54px}
+#fn .bl{font-weight:600;font-size:8.4px;letter-spacing:.16em;text-align:center;
+  text-transform:uppercase;color:var(--ink)}
+#fn .rule{position:absolute;left:50%;transform:translateX(-50%);height:1.3px;background:var(--hair)}
+#fn .items{display:flex;justify-content:center;gap:8px;margin-top:6px}
 #fn .it{text-align:center;width:46px}
 #fn .it .gl{height:16px;display:flex;align-items:center;justify-content:center}
-#fn .it svg.ic{width:14px;height:14px;stroke:var(--body);stroke-width:1.6;fill:none}
+#fn .it svg.ic{width:14px;height:14px;stroke:var(--ink2);stroke-width:1.6;fill:none}
 #fn .it .lg{width:13px;height:13px}
-#fn .it span{display:block;font-weight:400;font-size:7px;line-height:1.15;color:var(--mute);margin-top:2px}
+#fn .it span{display:block;font-weight:400;font-size:6.9px;line-height:1.15;
+  color:var(--mute);margin-top:2px}
 
-/* ═══════ B · platforms ═══════ */
-#plat{left:300px;top:22px;width:468px;height:98px;padding:8px}
+/* ═════ B · platforms ═════ */
+#plat{left:300px;top:22px;width:468px;height:100px;padding:8px}
 #plat .grid{display:flex;gap:6px}
 .pcard{width:70px;text-align:center}
-.pcard .nm{font-weight:500;font-size:7.6px;letter-spacing:.02em;color:var(--body)}
-.pcard .lgw{height:26px;display:flex;align-items:center;justify-content:center;margin:3px 0 2px}
+.pcard .nm{font-weight:500;font-size:7.4px;color:var(--ink2)}
+.pcard .lgw{height:26px;display:flex;align-items:center;justify-content:center;margin:3px 0 3px}
 .pcard .lgw .lg{width:22px;height:22px}
-.pcard .mock{height:34px;border:1px solid var(--line);border-radius:4px;padding:2.5px;background:#fbfcfd}
-.pcard .mock .im{height:15px;border-radius:2px;margin-bottom:2px}
-.pcard .mock .ln{height:2.4px;background:#dfe3e9;border-radius:2px;margin-bottom:1.8px}
-.pcard .mock .bt{height:5px;border-radius:2px}
+.pcard .mock{height:34px;border:1.1px solid var(--edge);border-radius:4px;padding:2.5px;background:#fff}
+.pcard .mock .im{height:15px;border-radius:2px;margin-bottom:2px;background:#3d3931}
+.pcard .mock .ln{height:2.2px;background:#ded8cb;border-radius:2px;margin-bottom:1.8px}
+.pcard .mock .bt{height:5px;border-radius:2px;background:var(--red)}
+.w85{width:85%}.w65{width:65%}.w45{width:45%}
 
-/* ═══════ B2 · circled stat ═══════ */
-#circ{left:800px;top:18px;width:126px;height:96px}
-#circ .t1{position:absolute;left:50%;top:26px;transform:translate(-50%,0) rotate(-2deg);
-  font-family:Marker,cursive;font-size:23px;color:var(--red);line-height:.9;white-space:nowrap}
-#circ .t2{position:absolute;left:50%;top:56px;transform:translate(-50%,0);
-  font-weight:600;font-size:9px;letter-spacing:.14em;color:var(--red);text-transform:uppercase;white-space:nowrap}
+/* ═════ B2 · circled stat ═════ */
+#circ{left:800px;top:20px;width:126px;height:94px}
+#circ .t1{position:absolute;left:50%;top:26px;transform:translate(-50%,0);
+  font-weight:700;font-size:21px;letter-spacing:-.02em;color:var(--red);line-height:1;white-space:nowrap}
+#circ .t2{position:absolute;left:50%;top:52px;transform:translate(-50%,0);
+  font-weight:600;font-size:9px;letter-spacing:.16em;color:var(--red);
+  text-transform:uppercase;white-space:nowrap}
 
-/* ═══════ C · checklist ═══════ */
-#chk{left:954px;top:6px;width:318px;height:136px;padding:11px 14px}
-#chk .row{display:flex;align-items:center;gap:9px;height:22.5px}
-#chk .cb{width:13px;height:13px;flex:0 0 13px;border-radius:3.5px;
+/* ═════ C · checklist ═════ */
+#chk{left:954px;top:8px;width:318px;height:134px;padding:11px 14px}
+#chk .row{display:flex;align-items:center;gap:9px;height:22px}
+#chk .cb{width:13px;height:13px;flex:0 0 13px;border-radius:3.5px;background:var(--red);
   display:flex;align-items:center;justify-content:center}
 #chk .cb svg{width:8px;height:8px;stroke:#fff;stroke-width:3;fill:none}
-#chk .t{font-weight:500;font-size:12.5px;letter-spacing:.005em;line-height:1;color:#1b1f2a}
+#chk .t{font-weight:500;font-size:12.5px;line-height:1;color:var(--ink)}
 
-/* ═══════ D · stack + fan ═══════ */
-#stack{left:254px;top:136px;width:228px}
-#stack .row{display:flex;gap:9px;margin-top:6px}
-.disc{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 6px rgba(16,24,40,.14)}
+/* ═════ D · stack + fan ═════ */
+#stack{left:266px;top:136px;width:204px}
+#stack .row{display:flex;gap:9px;margin-top:7px}
+.disc{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;background:var(--red);box-shadow:0 2px 5px rgba(38,36,31,.16)}
 .disc .lg{width:18px;height:18px}
-.rpill{
-  border:1.2px solid #f3c7c7;background:#fff5f5;border-radius:20px;text-align:center;
-  font-weight:500;font-size:8px;letter-spacing:.03em;color:#b1201f;padding:4px 6px;line-height:1;
-}
+.rpill{border:1.2px solid #e8b7b0;background:#fff7f5;border-radius:20px;text-align:center;
+  font-weight:500;font-size:7.6px;color:var(--red-ink);padding:4px 5px;line-height:1}
 
-/* ═══════ E · anchor ═══════ */
-#anchor{left:482px;top:98px;width:170px;text-align:center}
+/* ═════ E · Meta Ads lockup ═════ */
+#anchor{left:482px;top:100px;width:170px;text-align:center}
 #anchor .lg{width:170px;height:170px;display:block;margin:0 auto;
-  filter:drop-shadow(0 10px 22px rgba(0,129,251,.30))}
+  filter:drop-shadow(0 9px 18px rgba(0,129,251,.26))}
 #anchor .mads{margin-top:-20px;font-weight:700;font-size:28px;letter-spacing:-.015em;
-  line-height:1;color:#12141a;white-space:nowrap}
+  line-height:1;color:var(--ink);white-space:nowrap}
 #anchor .mads i{font-style:normal;color:#0081fb}
 
-/* ═══════ F · title ═══════ */
-/* two flush lines of near-equal width — no staircase, no dead wedge */
-#ttl{left:660px;top:132px;width:320px}
+/* ═════ F · title ═════ */
+#ttl{left:660px;top:134px;width:320px}
 #ttl .r1{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
 #ttl .l0{font-weight:700;font-size:20px;letter-spacing:.14em;line-height:1;color:var(--red)}
-#ttl .l1{font-weight:700;font-size:51px;letter-spacing:-.02em;line-height:.95}
-#ttl .l2{font-weight:700;font-size:31.9px;letter-spacing:-.008em;line-height:1;
+#ttl .l1{font-weight:700;font-size:51px;letter-spacing:-.025em;line-height:.95}
+#ttl .l2{font-weight:700;font-size:31.9px;letter-spacing:-.01em;line-height:1;
   margin-top:2px;white-space:nowrap}
-#ttl .bar{margin-top:18px;display:block;text-align:center;white-space:nowrap;background:#12141a;color:#fff;
-  font-weight:600;font-size:12px;letter-spacing:.1em;padding:7px 10px;border-radius:6px}
+#ttl .bar{margin-top:17px;display:block;text-align:center;white-space:nowrap;
+  background:var(--ink);color:#fff;font-weight:600;font-size:12px;letter-spacing:.1em;
+  padding:7px 10px;border-radius:6px}
 
-/* ═══════ G · stickies ═══════ */
-#stk{left:589px;top:290px;width:359px;display:flex;gap:5px}
-.note{width:86px;height:62px;overflow:hidden;padding:6px 7px;border-radius:6px;position:relative;
-  box-shadow:0 2px 6px rgba(16,24,40,.10)}
-.note .ni{position:absolute;right:6px;top:5px;width:10px;height:10px;stroke-width:1.8;fill:none}
-.note .nt{font-weight:500;font-size:8.2px;line-height:1.28;letter-spacing:.005em}
+/* ═════ G · stickies ═════ */
+#stk{left:600px;top:290px;width:381px;display:flex;gap:7px}
+.note{width:90px;height:62px;overflow:hidden;padding:7px 8px;border-radius:3px;
+  position:relative;background:var(--yellow);box-shadow:0 2px 6px rgba(38,36,31,.16)}
+.note .ni{position:absolute;right:6px;top:6px;width:10px;height:10px;
+  stroke:#9a7f22;stroke-width:1.8;fill:none}
+.note .nt{font-weight:500;font-size:8.4px;line-height:1.3;color:#3f3411}
 
-/* ═══════ H/I · flows ═══════ */
+/* ═════ H/I · flows ═════ */
 #flow{left:1002px;top:148px;width:270px}
-#flow .row,#post .row{display:flex;align-items:flex-start;gap:0;margin-top:6px}
+#flow .row,#post .row{display:flex;align-items:flex-start;margin-top:7px}
 .wire{width:58px}
-.wire .fr{height:64px;background:#fff;border:1px solid var(--line);border-radius:5px;padding:3px;
-  box-shadow:0 2px 6px rgba(16,24,40,.06)}
-.wire .nm{font-weight:500;font-size:7.4px;text-align:center;margin-top:4px;line-height:1.1;color:var(--body)}
-.wl{height:2.6px;background:#e3e7ed;border-radius:2px;margin-bottom:2.2px}
-.wl.dk{background:#aeb6c4}
-.w85{width:85%}.w65{width:65%}.w45{width:45%}
-.wv{height:19px;border-radius:3px;margin-bottom:2.5px;display:flex;align-items:center;justify-content:center}
+.wire .fr{height:64px;background:#fff;border:1.1px solid var(--edge);border-radius:5px;padding:3px}
+.wire .nm{font-weight:500;font-size:7.2px;text-align:center;margin-top:4px;
+  line-height:1.1;color:var(--ink2)}
+.wl{height:2.5px;background:#ded8cb;border-radius:2px;margin-bottom:2.2px}
+.wl.dk{background:#8f887b}
+.wv{height:19px;border-radius:3px;margin-bottom:2.5px;background:#2b2822;
+  display:flex;align-items:center;justify-content:center}
 .wv svg{width:8px;height:8px;fill:#fff}
-.wb{height:6px;border-radius:2px;margin-top:2.5px}
-.wf i{display:block;height:4.4px;border:1px solid #e3e7ed;border-radius:2px;margin-bottom:1.8px}
+.wb{height:6px;border-radius:2px;margin-top:2.5px;background:var(--red)}
+.wf i{display:block;height:4.4px;border:1px solid #ded8cb;border-radius:2px;margin-bottom:1.8px}
 .wc{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4px}
-.wc i{display:block;height:4.4px;background:#e3e7ed;border-radius:1px}
+.wc i{display:block;height:4.4px;background:#ded8cb;border-radius:1px}
+.wc i.on{background:var(--red)}
 .gap{width:12px;display:flex;align-items:center;justify-content:center;height:64px}
-.gap svg,.gap2 svg{stroke:#aeb6c4;stroke-width:2;fill:none}
+.gap svg,.gap2 svg{stroke:var(--ink);stroke-width:2;fill:none}
 .gap svg{width:9px;height:9px}
-#post{left:1002px;top:268px;width:270px}
+#post{left:1002px;top:272px;width:270px}
 .step{width:60px;text-align:center}
 .step .ic{height:20px;display:flex;align-items:center;justify-content:center}
-.step .ic svg.ic2{width:15px;height:15px;stroke:var(--body);stroke-width:1.6;fill:none}
+.step .ic svg.ic2{width:15px;height:15px;stroke:var(--ink2);stroke-width:1.6;fill:none}
 .step .ic .lg{width:15px;height:15px}
-.step .nm{font-weight:500;font-size:7.4px;line-height:1.15;color:var(--body);margin-top:2px}
+.step .nm{font-weight:500;font-size:7.2px;line-height:1.15;color:var(--ink2);margin-top:2px}
 .gap2{width:10px;display:flex;align-items:center;justify-content:center;height:20px}
 .gap2 svg{width:8px;height:8px}
 
-/* ═══════ J · avatars ═══════ */
-#avs{left:954px;top:344px;width:318px}
-#avs .row{display:flex;gap:5px}
-.av{width:75px;padding:0 0 7px;overflow:hidden}
-.av .top{height:3px}
-.av .nm{font-weight:600;font-size:9px;letter-spacing:.09em;text-align:center;padding:6px 4px 5px}
-.av .li{font-weight:400;font-size:7.2px;line-height:1.28;color:var(--body);margin:0 6px 3px}
-.av .li b{font-weight:600}
-
-/* ═══════ K · shots ═══════ */
-#shots{left:954px;top:566px;width:318px}
-.shot{overflow:hidden;background:#fff;border:1.2px solid var(--line);border-radius:6px;
-  box-shadow:0 3px 10px rgba(16,24,40,.10)}
-.shot img{position:absolute;width:100%;left:0}
-#heat{padding:7px 8px}
-#heat table{border-collapse:collapse;width:100%;margin-top:5px}
-#heat td,#heat th{border:1px solid #fff;height:12px;font-weight:600;font-size:6.2px;text-align:center;color:#fff;border-radius:2px}
-#heat th{color:var(--mute);font-size:6.2px;height:10px}
-#heat td.l{color:var(--body);text-align:left;font-weight:500;font-size:7px}
-
-/* ═══════ M · sources ═══════ */
-#src{left:470px;top:356px;width:80px}
-#src .r{display:flex;align-items:center;gap:5px;height:16px}
-#src .r .lg{width:11px;height:11px;flex:0 0 11px}
-#src .r svg.ic{width:11px;height:11px;flex:0 0 11px;stroke:var(--body);stroke-width:1.7;fill:none}
-#src .r span{font-weight:400;font-size:7.6px;color:var(--body);line-height:1}
-
-/* ═══════ N · tree ═══════ */
-#tree{left:556px;top:356px;width:389px}
-#tree .cols{display:flex;gap:8px}
-#tree .col{width:124px}
-#tree .col>.chip{margin-bottom:6px;display:block;text-align:center;font-size:7.6px;padding:4px 4px}
-.tc{padding:5px 7px 6px;margin-bottom:5px;border-left-width:2.5px;border-left-style:solid}
-.tc .th{font-weight:600;font-size:8.2px;letter-spacing:.01em;line-height:1.15;color:var(--ink)}
-.tc .td{font-weight:400;font-size:7.2px;line-height:1.25;color:var(--body);margin-top:2px}
-.tc .td b{font-weight:600}
-.tc.dk{background:#12141a;border-left-color:#12141a}
-.tc.dk .th{color:#fff}.tc.dk .td{color:#a6adbb}
-
-/* ═══════ bottom-left panels ═══════ */
-.pnl{padding:10px 12px}
-#aw .band{height:15px;border-radius:4px;display:flex;align-items:center;padding:0 7px;margin-bottom:4px;
-  font-weight:600;font-size:7.4px;letter-spacing:.09em;color:#fff;text-transform:uppercase}
-#aw .rt{margin-left:auto;font-weight:500;font-size:6.6px;letter-spacing:.02em;opacity:.92}
-#cs .stat{display:flex;align-items:baseline;gap:5px;margin-top:6px}
-#cs .stat .v{font-weight:700;font-size:19px;letter-spacing:-.02em;line-height:1}
-#cs .stat .k{font-weight:400;font-size:7.4px;color:var(--mute);line-height:1.2}
-#hy .chain{display:flex;align-items:center;gap:0;margin-top:8px}
+/* ═════ lower-left column ═════ */
+.pnl{padding:11px 13px}
+#aw .band{height:16px;border-radius:4px;display:flex;align-items:center;padding:0 8px;
+  margin-bottom:5px;font-weight:600;font-size:7.4px;letter-spacing:.09em;color:#fff;
+  text-transform:uppercase}
+#aw .rt{margin-left:auto;font-weight:500;font-size:6.6px;opacity:.9}
+#hy .chain{display:flex;align-items:center;margin-top:10px}
 #hy .n{flex:1;text-align:center}
-#hy .n .d{width:22px;height:22px;border-radius:7px;margin:0 auto 3px;display:flex;align-items:center;justify-content:center}
+#hy .n .d{width:23px;height:23px;border-radius:7px;margin:0 auto 4px;background:var(--ink);
+  display:flex;align-items:center;justify-content:center}
+#hy .n .d.on{background:var(--red)}
 #hy .n .d svg{width:11px;height:11px;stroke:#fff;stroke-width:2;fill:none}
-#hy .n span{display:block;font-weight:500;font-size:6.6px;color:var(--body);line-height:1.15}
-#hy .bars{display:flex;align-items:flex-end;gap:4px;height:32px;margin-top:9px}
-#hy .bars i{flex:1;border-radius:3px 3px 0 0}
-#mx .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}
-#mx .m{border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff;
-  box-shadow:0 1px 3px rgba(16,24,40,.05)}
-#mx .m .tb{height:3px}
-#mx .m .bd{padding:3px}
-#mx .m .im{height:13px;border-radius:2px;margin-bottom:2.5px}
-#mx .m .ln{height:2px;background:#e3e7ed;border-radius:2px;margin-bottom:1.8px}
-#mx .m .cta{height:4.5px;border-radius:2px}
-#mx .m .cp{font-weight:500;font-size:5.8px;letter-spacing:.02em;text-align:center;
-  padding:2px 1px 3px;line-height:1.1;color:var(--body)}
+#hy .n span{display:block;font-weight:500;font-size:6.6px;color:var(--ink2);line-height:1.15}
+#hy .bars{display:flex;align-items:flex-end;gap:5px;height:36px;margin-top:11px}
+#hy .bars i{flex:1;border-radius:3px 3px 0 0;background:#d8d2c5}
+#hy .bars i.on{background:var(--red)}
 
-.mark{font-family:Marker,cursive;line-height:1;user-select:none}
+#cs .stat{display:flex;align-items:baseline;gap:6px;margin-top:7px}
+#cs .stat .v{font-weight:700;font-size:21px;letter-spacing:-.025em;line-height:1;color:var(--red)}
+#cs .stat .k{font-weight:400;font-size:7.2px;color:var(--mute);line-height:1.2}
+#cs .shot{margin-top:10px;height:214px;overflow:hidden;position:relative;background:#fff;
+  border:1.1px solid var(--edge);border-radius:5px}
+#cs .shot img{position:absolute;width:100%;left:0;top:0}
 
-/* ═══════ presenter frame (bottom-left, sits above the board) ═══════
-   Swap assets/img/presenter.png for the real photo — nothing else needs to change.
-   --pflip: -1 un-mirrors a selfie-mode shot, 1 leaves it as-is.
-   --px/--py: which part of the photo is kept (object-position).
-   --pzoom: >1 pushes in on the face.                                        */
-#presenter{
-  display:none;   /* flip to block once assets/img/presenter.png is the real photo */
-  left:0;bottom:0;width:500px;height:368px;z-index:59;overflow:hidden;
-  border-top:3px solid #fff;border-right:3px solid #fff;border-top-right-radius:10px;
-  box-shadow:0 -2px 14px rgba(16,24,40,.16),6px -6px 26px rgba(16,24,40,.10);
-  background:#e8eaee;
-}
-#presenter img{
-  width:100%;height:100%;object-fit:cover;display:block;
-  object-position:var(--px,50%) var(--py,42%);
-  transform:scaleX(var(--pflip,-1)) scale(var(--pzoom,1));
-  transform-origin:center;
-}
+/* ═════ tree ═════ */
+#tree{left:482px;top:360px;width:468px}
+#tree .cols{display:flex;gap:10px}
+#tree .col{width:149px}
+#tree .col>.chip{display:block;text-align:center;margin-bottom:7px}
+.tc{padding:6px 8px 7px;margin-bottom:6px}
+.tc .th{font-weight:600;font-size:8.6px;line-height:1.15;color:var(--ink)}
+.tc .td{font-weight:400;font-size:7.4px;line-height:1.28;color:var(--ink2);margin-top:2px}
+.tc.dk{background:var(--ink);border-color:var(--ink)}
+.tc.dk .th{color:#fff}.tc.dk .td{color:#b3ab9c}
+.tc.hot{border-color:var(--red);border-width:1.5px}
 
+/* ═════ avatars ═════ */
+#avs{left:962px;top:360px;width:310px}
+#avs .row{display:flex;gap:6px}
+.av{width:73px;padding:7px 7px 8px}
+.av .nm{font-weight:600;font-size:9px;letter-spacing:.08em;text-align:center;
+  padding-bottom:5px;border-bottom:1.1px solid var(--hair);margin-bottom:5px;color:var(--ink)}
+.av .li{font-weight:400;font-size:7.2px;line-height:1.28;color:var(--ink2);margin-bottom:3px}
+
+/* ═════ heatmap ═════ */
+#heat{padding:8px 9px}
+#heat table{border-collapse:collapse;width:100%;margin-top:6px}
+#heat td,#heat th{border:1px solid var(--card);height:13px;font-weight:600;font-size:6.4px;
+  text-align:center;color:#fff;border-radius:2px}
+#heat th{color:var(--mute);height:10px}
+#heat td.l{color:var(--ink2);text-align:left;font-weight:500;font-size:7.2px}
 </style>
 
 <!--SPRITE:START-->
@@ -316,12 +279,10 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
   <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v7l-4 2v-9L3 4z"/></symbol>
   <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 7 10-7"/></symbol>
   <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 11l7-4v10l-7-4"/></symbol>
   <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 014 0v6m0-4a2 2 0 014 0v5m0-3a2 2 0 014 0v6a7 7 0 01-7 7h-2a7 7 0 01-7-7v-3a2 2 0 014 0"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 13l5 5L21 5"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
-  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
   <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6L10 20 5 3z"/></symbol>
   <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></symbol>
@@ -330,15 +291,15 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
 
 <div id="board">
 
-  <!-- ═══════ A · funnel ═══════ -->
-  <div class="abs" style="left:14px;top:12px"><span class="sec u-blue">Cold Traffic Funnel</span></div>
-  <svg class="pen" style="left:14px;top:46px;width:238px;height:290px">
-    <path class="hair" style="fill:#f7f9fc" d="M4 22 L234 22 L170 285 L68.5 285 Z"/>
+  <!-- ═════ A · funnel ═════ -->
+  <div class="abs" style="left:14px;top:10px"><span class="sec">Cold Traffic Funnel</span></div>
+  <svg class="ink" style="left:14px;top:44px;width:238px;height:292px">
+    <path style="fill:#fffdfa;stroke:var(--edge);stroke-width:1.3" d="M4 20 L234 20 L170 288 L68.5 288 Z"/>
   </svg>
   <div class="abs" id="fn">
     <div class="band" style="width:232px">
-      <div class="rule" style="top:0;width:232px;background:var(--blue)"></div>
-      <div class="bl" style="color:var(--blue)">Awareness</div>
+      <div class="rule" style="top:0;width:232px"></div>
+      <div class="bl">Awareness</div>
       <div class="items">
         <div class="it"><div class="gl"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div><span>Meta Ads</span></div>
         <div class="it"><div class="gl"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div><span>TikTok</span></div>
@@ -347,8 +308,8 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
       </div>
     </div>
     <div class="band" style="width:198px">
-      <div class="rule" style="top:0;width:198px;background:var(--violet)"></div>
-      <div class="bl" style="color:var(--violet)">Interest</div>
+      <div class="rule" style="top:0;width:198px"></div>
+      <div class="bl">Interest</div>
       <div class="items">
         <div class="it"><div class="gl"><svg class="ic"><use href="#i-bolt"/></svg></div><span>Hook</span></div>
         <div class="it"><div class="gl"><svg class="ic"><use href="#i-eye"/></svg></div><span>Angle</span></div>
@@ -357,8 +318,8 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
       </div>
     </div>
     <div class="band" style="width:164px">
-      <div class="rule" style="top:0;width:164px;background:var(--teal)"></div>
-      <div class="bl" style="color:var(--teal)">Intent</div>
+      <div class="rule" style="top:0;width:164px"></div>
+      <div class="bl">Intent</div>
       <div class="items">
         <div class="it"><div class="gl"><svg class="ic"><use href="#i-form"/></svg></div><span>Apply</span></div>
         <div class="it"><div class="gl"><svg class="ic"><use href="#i-filter"/></svg></div><span>Qualify</span></div>
@@ -366,157 +327,169 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
       </div>
     </div>
     <div class="band" style="width:130px">
-      <div class="rule" style="top:0;width:130px;background:var(--amber)"></div>
-      <div class="bl" style="color:#b4770a">Education</div>
+      <div class="rule" style="top:0;width:130px"></div>
+      <div class="bl">Education</div>
       <div class="items" style="gap:5px">
         <div class="it" style="width:40px"><div class="gl"><svg class="ic"><use href="#i-phone"/></svg></div><span>Setter</span></div>
-        <div class="it" style="width:40px"><div class="gl"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><span>15 Emails</span></div>
+        <div class="it" style="width:40px"><div class="gl"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><span>Emails</span></div>
         <div class="it" style="width:40px"><div class="gl"><svg class="ic"><use href="#i-video"/></svg></div><span>Videos</span></div>
       </div>
     </div>
     <div class="band" style="width:96px">
-      <div class="rule" style="top:0;width:96px;background:var(--green)"></div>
-      <div class="bl" style="color:var(--green)">Close</div>
+      <div class="rule" style="top:0;width:96px"></div>
+      <div class="bl">Close</div>
       <div class="items" style="gap:4px">
-        <div class="it" style="width:36px"><div class="gl"><svg class="ic"><use href="#i-video"/></svg></div><span>Call</span></div>
+        <div class="it" style="width:36px"><div class="gl"><svg class="ic"><use href="#i-hand"/></svg></div><span>Call</span></div>
         <div class="it" style="width:36px"><div class="gl"><span class="lg lg-stripe"><svg><use href="#lg-stripe"/></svg></span></div><span>Cash</span></div>
       </div>
     </div>
   </div>
 
-  <!-- ═══════ B · platforms ═══════ -->
+  <!-- ═════ B · platforms ═════ -->
   <div class="abs" style="left:300px;top:4px;width:468px;text-align:center">
-    <span class="sec u-blue">Where the traffic comes from</span></div>
+    <span class="sec">Where the traffic comes from</span></div>
   <div class="abs card" id="plat">
     <div class="grid">
       <div class="pcard"><div class="nm">Meta</div><div class="lgw"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#0081fb"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt" style="background:#0081fb"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
       <div class="pcard"><div class="nm">Instagram</div><div class="lgw"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#e4405f"></div><div class="ln w65"></div><div class="ln w45"></div><div class="bt" style="background:#e4405f"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w45"></div><div class="bt"></div></div></div>
       <div class="pcard"><div class="nm">TikTok</div><div class="lgw"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#17181c"></div><div class="ln w85"></div><div class="ln w45"></div><div class="bt" style="background:#25f4ee"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w45"></div><div class="bt"></div></div></div>
       <div class="pcard"><div class="nm">YouTube</div><div class="lgw"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#f00"></div><div class="ln w65"></div><div class="ln w85"></div><div class="bt" style="background:#f00"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w85"></div><div class="bt"></div></div></div>
       <div class="pcard"><div class="nm">Google Ads</div><div class="lgw"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#4285f4"></div><div class="ln w45"></div><div class="ln w65"></div><div class="bt" style="background:#fbbc05"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w45"></div><div class="ln w65"></div><div class="bt"></div></div></div>
       <div class="pcard"><div class="nm">LinkedIn</div><div class="lgw"><span class="lg lg-linkedin"><svg><use href="#lg-linkedin"/></svg></span></div>
-        <div class="mock"><div class="im" style="background:#0a66c2"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt" style="background:#0a66c2"></div></div></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
     </div>
   </div>
 
-  <svg class="pen" style="left:772px;top:58px;width:26px;height:18px">
-    <path style="stroke:#aeb6c4" d="M0 9 H20"/><path style="stroke:#aeb6c4" d="M15 4 L21 9 L15 14"/>
+  <!-- six platform cards converge on the Meta mark, the way the brand row
+       converges on the Shopify bag in the reference -->
+  <svg class="ink" style="left:300px;top:122px;width:340px;height:70px">
+    <path class="thin" d="M35 0 C 38 26, 180 34, 250 44"/>
+    <path class="thin" d="M111 0 C 114 22, 200 36, 254 46"/>
+    <path class="thin" d="M187 0 C 189 20, 232 38, 258 47"/>
+    <path class="thin" d="M263 0 C 264 18, 266 36, 264 47"/>
+    <path class="thin" d="M339 0 C 336 20, 300 38, 270 47"/>
+    <path class="thin" d="M415 0 C 408 22, 320 40, 274 48"/>
   </svg>
 
-  <!-- ═══════ B2 · circled stat ═══════ -->
+  <svg class="ink" style="left:774px;top:58px;width:24px;height:18px">
+    <path d="M0 9 H18"/><path d="M13 4 L19 9 L13 14"/>
+  </svg>
+
+  <!-- ═════ B2 · circled stat ═════ -->
   <div class="abs" id="circ">
-    <svg class="pen" style="left:0;top:0;width:126px;height:96px">
-      <path class="red" style="stroke-width:2.6" d="M26 11 C 66 2, 112 9, 120 36 C 127 62, 96 90, 58 90 C 24 90, 4 74, 5 48 C 6 27, 12 16, 26 11"/>
-      <path class="red" style="stroke-width:1.7" d="M30 16 C 68 8, 108 15, 114 39 C 120 62, 92 85, 58 85"/>
+    <svg class="ink" style="left:0;top:0;width:126px;height:94px">
+      <path class="red" style="stroke-width:2.4" d="M26 10 C 66 1, 112 8, 120 35 C 127 61, 96 89, 58 89 C 24 89, 4 73, 5 47 C 6 26, 12 15, 26 10"/>
+      <path class="red" style="stroke-width:1.6" d="M31 15 C 68 7, 108 14, 114 38 C 120 61, 92 84, 58 84"/>
     </svg>
     <div class="t1">5&ndash;12 ADS</div>
     <div class="t2">1 Ad Set</div>
   </div>
 
-  <svg class="pen" style="left:930px;top:58px;width:22px;height:18px">
-    <path style="stroke:#aeb6c4" d="M0 9 H16"/><path style="stroke:#aeb6c4" d="M11 4 L17 9 L11 14"/>
+  <svg class="ink" style="left:930px;top:58px;width:20px;height:18px">
+    <path d="M0 9 H14"/><path d="M9 4 L15 9 L9 14"/>
   </svg>
 
-  <!-- ═══════ C · checklist ═══════ -->
+  <!-- ═════ C · checklist ═════ -->
   <div class="abs card" id="chk">
-    <div class="row"><div class="cb" style="background:var(--green)"><svg><use href="#i-check"/></svg></div><div class="t">Lower Cost Per Call</div></div>
-    <div class="row"><div class="cb" style="background:var(--blue)"><svg><use href="#i-check"/></svg></div><div class="t">Better Lead Quality</div></div>
-    <div class="row"><div class="cb" style="background:var(--violet)"><svg><use href="#i-check"/></svg></div><div class="t">Minimized Friction</div></div>
-    <div class="row"><div class="cb" style="background:var(--amber)"><svg><use href="#i-check"/></svg></div><div class="t">Counterpositioned</div></div>
-    <div class="row"><div class="cb" style="background:var(--red)"><svg><use href="#i-check"/></svg></div><div class="t">Predictable Calls</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="t">Lower Cost Per Call</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="t">Better Lead Quality</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="t">Minimized Friction</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="t">Counterpositioned</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="t">Predictable Calls</div></div>
   </div>
 
-  <!-- ═══════ D · stack + fan ═══════ -->
+  <!-- ═════ D · stack + fan ═════ -->
   <div class="abs" id="stack">
-    <span class="sec u-violet">The stack behind it</span>
+    <span class="sec">The stack behind it</span>
     <div class="row">
-      <div class="disc" style="background:#006bff"><span class="lg lg-calendly lg-white"><svg><use href="#lg-calendly"/></svg></span></div>
-      <div class="disc" style="background:#ff7a59"><span class="lg lg-hubspot lg-white"><svg><use href="#lg-hubspot"/></svg></span></div>
-      <div class="disc" style="background:#f22f46"><span class="lg lg-twilio lg-white"><svg><use href="#lg-twilio"/></svg></span></div>
-      <div class="disc" style="background:#ea4335"><span class="lg lg-gmail lg-white"><svg><use href="#lg-gmail"/></svg></span></div>
-      <div class="disc" style="background:#635bff"><span class="lg lg-stripe lg-white"><svg><use href="#lg-stripe"/></svg></span></div>
+      <div class="disc"><span class="lg lg-calendly lg-white"><svg><use href="#lg-calendly"/></svg></span></div>
+      <div class="disc"><span class="lg lg-hubspot lg-white"><svg><use href="#lg-hubspot"/></svg></span></div>
+      <div class="disc"><span class="lg lg-twilio lg-white"><svg><use href="#lg-twilio"/></svg></span></div>
+      <div class="disc"><span class="lg lg-gmail lg-white"><svg><use href="#lg-gmail"/></svg></span></div>
+      <div class="disc"><span class="lg lg-stripe lg-white"><svg><use href="#lg-stripe"/></svg></span></div>
     </div>
   </div>
 
-  <div class="abs rpill" style="left:290px;top:206px;width:130px">Objection Handling</div>
-  <svg class="pen" style="left:254px;top:224px;width:236px;height:32px">
-    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M101 0 C 101 12, 40 14, 38 30"/>
-    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M104 0 C 104 14, 112 16, 112 30"/>
-    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M107 0 C 107 12, 186 14, 190 30"/>
+  <div class="abs rpill" style="left:296px;top:214px;width:132px">Objection Handling</div>
+  <svg class="ink" style="left:266px;top:232px;width:204px;height:30px">
+    <path class="thin" style="stroke:#e0b3ac" d="M96 0 C 96 12, 40 14, 38 28"/>
+    <path class="thin" style="stroke:#e0b3ac" d="M99 0 C 99 14, 102 16, 102 28"/>
+    <path class="thin" style="stroke:#e0b3ac" d="M102 0 C 102 12, 162 14, 166 28"/>
   </svg>
-  <div class="abs rpill" style="left:254px;top:256px;width:74px">Pre-frame page</div>
-  <div class="abs rpill" style="left:334px;top:256px;width:74px">15 emails</div>
-  <div class="abs rpill" style="left:414px;top:256px;width:74px">Retarget ads</div>
+  <div class="abs rpill" style="left:266px;top:262px;width:66px">Pre-frame</div>
+  <div class="abs rpill" style="left:338px;top:262px;width:66px">15 emails</div>
+  <div class="abs rpill" style="left:410px;top:262px;width:66px">Retarget</div>
 
-  <!-- ═══════ E · anchor ═══════ -->
+  <!-- ═════ E · Meta Ads lockup ═════ -->
   <div class="abs" id="anchor">
     <span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span>
     <div class="mads"><i>Meta</i> Ads</div>
   </div>
 
-  <!-- ═══════ F · title ═══════ -->
+  <!-- ═════ F · title ═════ -->
   <div class="abs" id="ttl">
     <div class="r1"><span class="l0">*NEW*</span><span class="l1">7-FIGURE</span></div>
     <div class="l2">HIGH TICKET FUNNEL</div>
-    <svg class="pen" style="left:0;top:88px;width:320px;height:15px">
-      <path style="stroke:var(--red);stroke-width:4.4" d="M1 5 H318"/>
-      <path style="stroke:var(--amber);stroke-width:2.6" d="M7 13 H258"/>
+    <svg class="ink" style="left:0;top:88px;width:320px;height:15px">
+      <path style="stroke:var(--red);stroke-width:4.2" d="M1 5 H318"/>
+      <path style="stroke:#e8a49c;stroke-width:2.4" d="M7 13 H258"/>
     </svg>
     <div class="bar">8 ANGLES. 1 AVATAR. EVERY BOOKED CALL.</div>
   </div>
 
-  <!-- ═══════ wordmark ═══════ -->
-  <div class="abs mark" style="left:256px;top:286px;font-size:38px;color:#12141a">$40K OFFERS</div>
-  <div class="abs" style="left:260px;top:328px;font-weight:500;font-size:10px;letter-spacing:.28em;color:var(--mute);text-transform:uppercase">on cold traffic</div>
+  <!-- ═════ wordmark ═════ -->
+  <div class="abs disp" style="left:266px;top:300px;font-size:40px">$40K OFFERS</div>
+  <div class="abs" style="left:270px;top:344px;font-weight:500;font-size:10px;
+    letter-spacing:.28em;color:var(--mute);text-transform:uppercase">on cold traffic</div>
 
-  <!-- ═══════ G · stickies ═══════ -->
+  <!-- ═════ G · stickies ═════ -->
   <div class="abs" id="stk">
-    <div class="note" style="background:#fff3c4"><svg class="ni" style="stroke:#a1791a"><use href="#i-target"/></svg>
-      <div class="nt" style="color:#5a4208">Cold-traffic<br>offer, or<br>nothing works</div></div>
-    <div class="note" style="background:#dbeafe"><svg class="ni" style="stroke:#2563eb"><use href="#i-bolt"/></svg>
-      <div class="nt" style="color:#173a80">Speed to lead:<br>call back in<br>5&ndash;15 min</div></div>
-    <div class="note" style="background:#dcfce7"><svg class="ni" style="stroke:#16a34a"><use href="#i-doc"/></svg>
-      <div class="nt" style="color:#14532d">Every ad must<br>stand on<br>its own</div></div>
-    <div class="note" style="background:#fce7f3"><svg class="ni" style="stroke:#db2777"><use href="#i-eye"/></svg>
-      <div class="nt" style="color:#701a45">Describe their<br>problem better<br>than they can</div></div>
+    <div class="note"><svg class="ni"><use href="#i-target"/></svg>
+      <div class="nt">Cold-traffic offer, or nothing works</div></div>
+    <div class="note"><svg class="ni"><use href="#i-bolt"/></svg>
+      <div class="nt">Speed to lead &mdash; call in 5&ndash;15 min</div></div>
+    <div class="note"><svg class="ni"><use href="#i-doc"/></svg>
+      <div class="nt">Every ad must stand on its own</div></div>
+    <div class="note"><svg class="ni"><use href="#i-eye"/></svg>
+      <div class="nt">Describe their problem better than they can</div></div>
   </div>
 
-  <!-- ═══════ H · funnel flow ═══════ -->
+  <!-- ═════ H · funnel flow ═════ -->
   <div class="abs" id="flow">
-    <span class="sec u-teal">Funnel flow</span>
+    <span class="sec">Funnel flow</span>
     <div class="row">
       <div class="wire"><div class="fr">
-        <div class="wv" style="background:#0081fb"><svg><use href="#f-play"/></svg></div>
-        <div class="wl w85"></div><div class="wl dk w65"></div><div class="wl w45"></div><div class="wb" style="background:#0081fb"></div>
+        <div class="wv"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wl dk w65"></div><div class="wl w45"></div><div class="wb"></div>
       </div><div class="nm">Hook / Ad</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w85"></div><div class="wl w65"></div>
-        <div class="wv" style="height:17px;background:#7c3aed"><svg><use href="#f-play"/></svg></div>
-        <div class="wl w85"></div><div class="wb" style="background:#7c3aed"></div>
+        <div class="wv" style="height:17px"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wb"></div>
       </div><div class="nm">VSL / Lander</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w65"></div>
-        <div class="wf" style="margin-top:3px"><i></i><i></i><i></i><i></i></div><div class="wb" style="background:#0d9488"></div>
+        <div class="wf" style="margin-top:3px"><i></i><i></i><i></i><i></i></div><div class="wb"></div>
       </div><div class="nm">Application</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w65"></div><div class="wl w45"></div>
-        <div class="wc" style="margin-top:2px"><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i></div>
-        <div class="wb" style="background:#16a34a;margin-top:4px"></div>
+        <div class="wc" style="margin-top:2px"><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div>
+        <div class="wb" style="margin-top:4px"></div>
       </div><div class="nm">Calendar</div></div>
     </div>
   </div>
 
-  <!-- ═══════ I · education window ═══════ -->
+  <!-- ═════ I · education window ═════ -->
   <div class="abs" id="post">
-    <span class="sec u-amber">Education window</span>
+    <span class="sec">Education window</span>
     <div class="row">
       <div class="step"><div class="ic"><svg class="ic2"><use href="#i-doc"/></svg></div><div class="nm">Pre-frame<br>page</div></div>
       <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
@@ -528,170 +501,139 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
     </div>
   </div>
 
-  <!-- ═══════ P1 · market awareness ═══════ -->
-  <div class="abs card pnl" id="aw" style="left:14px;top:352px;width:218px;height:176px">
-    <span class="sec u-violet">Market awareness</span>
-    <div style="margin-top:9px">
-      <div class="band" style="background:#12141a">Unaware<span class="rt">Hook ad</span></div>
-      <div class="band" style="background:#3b3f4d">Problem aware<span class="rt">Angle 1</span></div>
-      <div class="band" style="background:#7c3aed">Solution aware<span class="rt">Angle 2</span></div>
-      <div class="band" style="background:#2563eb">Product aware<span class="rt">Proof ad</span></div>
-      <div class="band" style="background:#dc2626">Most aware<span class="rt">Straight offer</span></div>
+  <!-- ═════ P1 · market awareness ═════ -->
+  <div class="abs card pnl" id="aw" style="left:14px;top:360px;width:238px;height:150px">
+    <span class="sec">Market awareness</span>
+    <div style="margin-top:10px">
+      <div class="band" style="background:#1e1c18">Unaware<span class="rt">Hook ad</span></div>
+      <div class="band" style="background:#4a453c">Problem aware<span class="rt">Angle 1</span></div>
+      <div class="band" style="background:#7c7364">Solution aware<span class="rt">Angle 2</span></div>
+      <div class="band" style="background:#a8592f">Product aware<span class="rt">Proof ad</span></div>
+      <div class="band" style="background:#c62b1e">Most aware<span class="rt">Straight offer</span></div>
     </div>
-    <div class="mini" style="margin-top:7px">One angle per level &mdash; that is where the 8 ads come from.</div>
   </div>
 
-  <!-- ═══════ P2 · case study ═══════ -->
-  <div class="abs card pnl" id="cs" style="left:240px;top:352px;width:222px;height:176px">
-    <span class="sec u-amber">Live case study</span>
-    <div class="wm wm-vc" style="margin-top:9px"><i>VIRAL</i> <b>COACH</b></div>
-    <div class="mini" style="margin-top:3px">Medical professionals &middot; guaranteed offer</div>
-    <div class="stat"><div class="v" style="color:#f0932b">15.5M</div><div class="k">avg client views<br>after 3 months</div></div>
-    <div class="stat"><div class="v" style="color:var(--blue)">1M+</div><div class="k">leads generated<br>for clients</div></div>
-    <div class="mini" style="margin-top:8px">Application funnel &rarr; qualified calls only.</div>
-  </div>
-
-  <!-- ═══════ P3 · attribution ═══════ -->
-  <div class="abs card pnl" id="hy" style="left:14px;top:536px;width:218px;height:176px">
-    <span class="sec u-red">Attribution</span>
-    <div class="wm wm-hyros" style="margin-top:9px">HYR<i>O</i>S</div>
-    <div class="mini" style="margin-top:3px">Track calls and cash &mdash; not clicks.</div>
+  <!-- ═════ P2 · attribution ═════ -->
+  <div class="abs card pnl" id="hy" style="left:14px;top:522px;width:238px;height:190px">
+    <span class="sec">Attribution</span>
+    <div class="wm wm-hyros" style="margin-top:10px;font-size:21px;letter-spacing:.14em">HYR<i>O</i>S</div>
+    <div class="micro" style="margin-top:4px">Track calls and cash &mdash; not clicks.</div>
     <div class="chain">
-      <div class="n"><div class="d" style="background:#0081fb"><svg><use href="#i-cursor"/></svg></div><span>Ad click</span></div>
-      <div class="n"><div class="d" style="background:#7c3aed"><svg><use href="#i-cal"/></svg></div><span>Booked</span></div>
-      <div class="n"><div class="d" style="background:#f59e0b"><svg><use href="#i-phone"/></svg></div><span>Showed</span></div>
-      <div class="n"><div class="d" style="background:#16a34a"><svg><use href="#i-cash"/></svg></div><span>Closed</span></div>
+      <div class="n"><div class="d"><svg><use href="#i-cursor"/></svg></div><span>Ad click</span></div>
+      <div class="n"><div class="d"><svg><use href="#i-cal"/></svg></div><span>Booked</span></div>
+      <div class="n"><div class="d"><svg><use href="#i-phone"/></svg></div><span>Showed</span></div>
+      <div class="n"><div class="d on"><svg><use href="#i-cash"/></svg></div><span>Closed</span></div>
     </div>
     <div class="bars">
-      <i style="height:38%;background:#c7d2fe"></i><i style="height:56%;background:#a5b4fc"></i>
-      <i style="height:44%;background:#93c5fd"></i><i style="height:72%;background:#60a5fa"></i>
-      <i style="height:61%;background:#3b82f6"></i><i style="height:88%;background:#2563eb"></i>
-      <i style="height:100%;background:#16a34a"></i>
+      <i style="height:36%"></i><i style="height:54%"></i><i style="height:44%"></i>
+      <i style="height:70%"></i><i style="height:60%"></i><i style="height:86%"></i>
+      <i class="on" style="height:100%"></i>
     </div>
   </div>
 
-  <!-- ═══════ P4 · ad matrix ═══════ -->
-  <div class="abs card pnl" id="mx" style="left:240px;top:536px;width:222px;height:176px">
-    <span class="sec u-green">The 8 ads &middot; one ad set</span>
-    <div class="grid">
-      <div class="m"><div class="tb" style="background:#f59e0b"></div><div class="bd"><div class="im" style="background:#fde68a"></div><div class="ln"></div><div class="cta" style="background:#f59e0b"></div></div><div class="cp">Hook</div></div>
-      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 1</div></div>
-      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 2</div></div>
-      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 3</div></div>
-      <div class="m"><div class="tb" style="background:#16a34a"></div><div class="bd"><div class="im" style="background:#bbf7d0"></div><div class="ln"></div><div class="cta" style="background:#16a34a"></div></div><div class="cp">Offer</div></div>
-      <div class="m"><div class="tb" style="background:#0d9488"></div><div class="bd"><div class="im" style="background:#99f6e4"></div><div class="ln"></div><div class="cta" style="background:#0d9488"></div></div><div class="cp">Proof</div></div>
-      <div class="m"><div class="tb" style="background:#7c3aed"></div><div class="bd"><div class="im" style="background:#ddd6fe"></div><div class="ln"></div><div class="cta" style="background:#7c3aed"></div></div><div class="cp">Objection</div></div>
-      <div class="m"><div class="tb" style="background:#db2777"></div><div class="bd"><div class="im" style="background:#fbcfe8"></div><div class="ln"></div><div class="cta" style="background:#db2777"></div></div><div class="cp">Objection</div></div>
-    </div>
-    <div class="mini" style="margin-top:7px">Meta finds the sequence &mdash; each ad still converts alone.</div>
+  <!-- ═════ P3 · case study ═════ -->
+  <div class="abs card pnl" id="cs" style="left:264px;top:360px;width:206px;height:352px">
+    <span class="sec">Live case study</span>
+    <div class="wm wm-vc" style="margin-top:10px;font-size:16px"><i>VIRAL</i> <b>COACH</b></div>
+    <div class="micro" style="margin-top:3px">Medical professionals &middot; guaranteed offer</div>
+    <div class="stat"><div class="v">15.5M</div><div class="k">avg client views<br>after 3 months</div></div>
+    <div class="shot"><img src="assets/img/lander.png"></div>
   </div>
 
-  <!-- ═══════ M · ad sources ═══════ -->
-  <div class="abs" id="src">
-    <span class="sec u-pink" style="font-size:8.4px">Ad sources</span>
-    <div style="margin-top:7px">
-      <div class="r"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span><span>Meta Ads</span></div>
-      <div class="r"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span><span>TikTok</span></div>
-      <div class="r"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span><span>YouTube</span></div>
-      <div class="r"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span><span>Google</span></div>
-      <div class="r"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span><span>Email</span></div>
-      <div class="r"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span><span>Creators</span></div>
-      <div class="r"><span class="lg lg-reddit"><svg><use href="#lg-reddit"/></svg></span><span>Reddit</span></div>
-      <div class="r"><span class="lg lg-whatsapp"><svg><use href="#lg-whatsapp"/></svg></span><span>DMs</span></div>
-      <div class="r"><svg class="ic"><use href="#i-globe"/></svg><span>Organic</span></div>
-    </div>
-  </div>
-
-  <!-- ═══════ N · tree ═══════ -->
+  <!-- ═════ tree ═════ -->
   <div class="abs" id="tree">
     <div class="cols">
       <div class="col">
-        <div class="chip" style="background:#dc2626">1 &middot; Avatar &amp; angle</div>
-        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Current beliefs</div><div class="td">what they hold as true today</div></div>
-        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Problem lived in</div><div class="td">the daily, specific version</div></div>
-        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Failed attempts</div><div class="td">what they already tried</div></div>
+        <div class="chip">1 &middot; Avatar &amp; angle</div>
+        <div class="tc card-s"><div class="th">Current beliefs</div><div class="td">what they hold as true today</div></div>
+        <div class="tc card-s"><div class="th">Problem lived in</div><div class="td">the daily, specific version</div></div>
+        <div class="tc card-s"><div class="th">Failed attempts</div><div class="td">what they already tried</div></div>
         <div class="tc card-s dk"><div class="th">Angle = big idea</div><div class="td">Avatar &times; Angle = one ad</div></div>
       </div>
       <div class="col">
-        <div class="chip" style="background:#2563eb">2 &middot; Ad roles</div>
-        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">Hook / soft CTA</div><div class="td">prospecting, wide net</div></div>
-        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">3 &times; hook angle</div><div class="td">hard CTA on each</div></div>
-        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">Offer + proof-led</div><div class="td">straight direct response</div></div>
-        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">2 &times; objection</div><div class="td">handled inside the ad</div></div>
+        <div class="chip">2 &middot; Ad roles</div>
+        <div class="tc card-s"><div class="th">Hook / soft CTA</div><div class="td">prospecting, wide net</div></div>
+        <div class="tc card-s"><div class="th">3 &times; hook angle</div><div class="td">hard CTA on each</div></div>
+        <div class="tc card-s"><div class="th">Offer + proof-led</div><div class="td">straight direct response</div></div>
+        <div class="tc card-s"><div class="th">2 &times; objection</div><div class="td">handled inside the ad</div></div>
       </div>
       <div class="col">
-        <div class="chip" style="background:#16a34a">3 &middot; Education window</div>
-        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">Pre-frame TY page</div><div class="td">objections &middot; student interviews</div></div>
-        <div class="tc card-s" style="border-left-color:#f59e0b"><div class="th">Setters &mdash; speed to lead</div><div class="td"><b style="color:#dc2626">5&ndash;15 min</b> &middot; pre-qualify</div></div>
-        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">15 long-form emails</div><div class="td">3 days &middot; <b style="color:#16a34a">50&ndash;60%</b> open rates</div></div>
-        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">Video sales assets</div><div class="td">personalized, per objection</div></div>
+        <div class="chip">3 &middot; Education window</div>
+        <div class="tc card-s"><div class="th">Pre-frame TY page</div><div class="td">objections &middot; student interviews</div></div>
+        <div class="tc card-s hot"><div class="th">Setters &mdash; speed to lead</div><div class="td"><span class="em">5&ndash;15 min</span> &middot; pre-qualify</div></div>
+        <div class="tc card-s"><div class="th">15 long-form emails</div><div class="td">3 days &middot; <span class="em">50&ndash;60%</span> open rates</div></div>
+        <div class="tc card-s"><div class="th">Video sales assets</div><div class="td">personalized, per objection</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ═══════ J · avatars ═══════ -->
+  <!-- Meta mark feeds the build below -->
+  <svg class="ink" style="left:470px;top:280px;width:120px;height:82px">
+    <path class="thin" d="M97 0 C 96 30, 40 40, 22 62"/>
+    <path class="thin" d="M15 54 L20 66 L30 61"/>
+  </svg>
+
+  <!-- ═════ offer strip ═════ -->
+  <div class="abs card" style="left:482px;top:572px;width:468px;height:64px;
+    padding:9px 13px;display:flex;align-items:center;gap:12px">
+    <div class="chip" style="flex:0 0 auto">Offer positioning</div>
+    <div style="flex:1">
+      <div style="font-weight:600;font-size:13px;line-height:1.2">If the offer isn&rsquo;t cold-traffic friendly, none of this works.</div>
+      <div class="micro" style="margin-top:3px">&ldquo;Work with me&rdquo; converts on warm traffic. On cold it dies.</div>
+    </div>
+  </div>
+
+  <!-- ═════ booked calls ═════ -->
+  <div class="abs disp" style="left:482px;top:652px;font-size:38px;color:var(--red)">$ $ $</div>
+  <div class="abs disp" style="left:588px;top:652px;font-size:38px">BOOKED CALLS</div>
+  <svg class="ink" style="left:588px;top:694px;width:340px;height:6px">
+    <path style="stroke:var(--red);stroke-width:3" d="M2 3 H330"/>
+  </svg>
+  <div class="abs" style="left:590px;top:704px;font-weight:500;font-size:9.5px;
+    letter-spacing:.22em;color:var(--mute);text-transform:uppercase">not cheap leads</div>
+
+  <!-- ═════ avatars ═════ -->
   <div class="abs" id="avs">
     <div class="row">
-      <div class="av card-s"><div class="top" style="background:#2563eb"></div><div class="nm" style="color:#2563eb">SAAS</div>
-        <div class="li">CAC too high</div><div class="li"><b style="color:#2563eb">Angle:</b> paid can&rsquo;t outrun churn</div></div>
-      <div class="av card-s"><div class="top" style="background:#7c3aed"></div><div class="nm" style="color:#7c3aed">ECOM</div>
-        <div class="li">Blended ROAS stuck</div><div class="li"><b style="color:#7c3aed">Angle:</b> creative, not bidding</div></div>
-      <div class="av card-s"><div class="top" style="background:#0d9488"></div><div class="nm" style="color:#0d9488">AGENCY</div>
-        <div class="li">Referral-dependent</div><div class="li"><b style="color:#0d9488">Angle:</b> own your lead flow</div></div>
-      <div class="av card-s"><div class="top" style="background:#db2777"></div><div class="nm" style="color:#db2777">INFO</div>
-        <div class="li">Launch-to-launch cash</div><div class="li"><b style="color:#db2777">Angle:</b> evergreen &gt; launches</div></div>
+      <div class="av card-s"><div class="nm">SAAS</div>
+        <div class="li">CAC too high</div><div class="li"><span class="em">Angle:</span> paid can&rsquo;t outrun churn</div></div>
+      <div class="av card-s"><div class="nm">ECOM</div>
+        <div class="li">Blended ROAS stuck</div><div class="li"><span class="em">Angle:</span> creative, not bidding</div></div>
+      <div class="av card-s"><div class="nm">AGENCY</div>
+        <div class="li">Referral-dependent</div><div class="li"><span class="em">Angle:</span> own your lead flow</div></div>
+      <div class="av card-s"><div class="nm">INFO</div>
+        <div class="li">Launch-to-launch</div><div class="li"><span class="em">Angle:</span> evergreen wins</div></div>
     </div>
-    <div style="display:flex;gap:5px;margin-top:6px">
-      <div class="chip" style="flex:1;text-align:center;background:#12141a">One avatar per campaign</div>
-      <div class="chip" style="flex:1;text-align:center;background:#12141a">Angles do the targeting</div>
-    </div>
+    <div class="chip chip-dk" style="display:block;text-align:center;margin-top:7px">One avatar per campaign &middot; angles do the targeting</div>
   </div>
 
-  <!-- ═══════ J2 · callout ═══════ -->
-  <div class="abs mark" style="left:958px;top:484px;font-size:21px;color:var(--red)">SAME OFFER.</div>
-  <div class="abs mark" style="left:958px;top:511px;font-size:21px;color:#12141a">8 DIFFERENT DOORS.</div>
-  <svg class="pen" style="left:958px;top:540px;width:300px;height:12px">
-    <path style="stroke:var(--amber);stroke-width:3" d="M2 5 H278"/>
+  <!-- the build feeds the four avatars -->
+  <svg class="ink" style="left:950px;top:392px;width:14px;height:60px">
+    <path class="thin" d="M0 30 C 6 30, 6 8, 12 8"/>
+    <path class="thin" d="M0 30 C 6 30, 6 52, 12 52"/>
   </svg>
 
-  <!-- ═══════ K · shots ═══════ -->
-  <div class="abs" id="shots">
-    <div class="abs shot" style="left:0;top:0;width:100px;height:146px"><img src="assets/img/lander.png" style="top:0"></div>
-    <div class="abs shot" style="left:104px;top:0;width:100px;height:146px"><img src="assets/img/proof.png" style="top:-10px"></div>
-    <div class="abs card-s" id="heat" style="left:208px;top:0;width:110px">
-      <span class="sec u-blue" style="font-size:7.4px">CPL by angle</span>
-      <table>
-        <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
-        <tr><td class="l">SaaS</td><td style="background:#1d4ed8">42</td><td style="background:#3b82f6">61</td><td style="background:#93c5fd">88</td><td style="background:#2563eb">51</td></tr>
-        <tr><td class="l">Ecom</td><td style="background:#60a5fa">74</td><td style="background:#1e40af">39</td><td style="background:#93c5fd">91</td><td style="background:#3b82f6">63</td></tr>
-        <tr><td class="l">Agency</td><td style="background:#1e3a8a">36</td><td style="background:#2563eb">49</td><td style="background:#60a5fa">72</td><td style="background:#1d4ed8">44</td></tr>
-        <tr><td class="l">Info</td><td style="background:#3b82f6">58</td><td style="background:#1e40af">33</td><td style="background:#2563eb">47</td><td style="background:#60a5fa">69</td></tr>
-      </table>
-      <div class="mini" style="margin-top:5px">Kill the pale ones.</div>
-    </div>
-  </div>
-
-  <!-- ═══════ Q · offer positioning strip ═══════ -->
-  <div class="abs card" style="left:470px;top:552px;width:475px;height:66px;padding:9px 13px;display:flex;align-items:center;gap:13px">
-    <div class="chip" style="background:#dc2626;flex:0 0 auto">Offer positioning</div>
-    <div style="flex:1">
-      <div style="font-weight:600;font-size:13.5px;letter-spacing:-.005em;line-height:1.2;color:#12141a">
-        If the offer isn&rsquo;t cold-traffic friendly, none of this works.</div>
-      <div class="mini" style="margin-top:3px">&ldquo;If you want to work with me, check this out&rdquo; converts on warm traffic. On cold it dies.</div>
-    </div>
-  </div>
-
-  <!-- ═══════ O · bottom line ═══════ -->
-  <div class="abs mark" style="left:494px;top:628px;font-size:40px;color:var(--green);letter-spacing:.06em">$ $ $</div>
-  <div class="abs mark" style="left:614px;top:630px;font-size:36px;color:#12141a">BOOKED CALLS</div>
-  <svg class="pen" style="left:614px;top:672px;width:300px;height:6px">
-    <path style="stroke:var(--green);stroke-width:3" d="M2 3 H286"/>
+  <!-- ═════ callout ═════ -->
+  <div class="abs disp" style="left:962px;top:506px;font-size:21px;color:var(--red)">SAME OFFER.</div>
+  <div class="abs disp" style="left:962px;top:531px;font-size:21px">8 DIFFERENT DOORS.</div>
+  <svg class="ink" style="left:962px;top:558px;width:300px;height:6px">
+    <path style="stroke:#e8a49c;stroke-width:2.6" d="M2 3 H262"/>
   </svg>
-  <div class="abs" style="left:616px;top:684px;font-weight:500;font-size:10.5px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase">not cheap leads</div>
 
-  <!-- ═══════ presenter ═══════ -->
-  <div class="abs" id="presenter" style="--pflip:-1;--px:50%;--py:40%;--pzoom:1">
-    <img src="assets/img/presenter.png" alt="">
+  <!-- ═════ proof + heatmap ═════ -->
+  <div class="abs card-s" style="left:962px;top:576px;width:136px;height:136px;overflow:hidden">
+    <img src="assets/img/proof.png" style="position:absolute;width:100%;left:0;top:-8px">
+  </div>
+  <div class="abs card-s" id="heat" style="left:1106px;top:576px;width:166px;height:136px">
+    <span class="sec" style="font-size:8px">CPL by angle</span>
+    <table>
+      <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
+      <tr><td class="l">SaaS</td><td style="background:#1d4ed8">42</td><td style="background:#3b82f6">61</td><td style="background:#a8c6ef">88</td><td style="background:#2563eb">51</td></tr>
+      <tr><td class="l">Ecom</td><td style="background:#6da2e0">74</td><td style="background:#1e40af">39</td><td style="background:#a8c6ef">91</td><td style="background:#3b82f6">63</td></tr>
+      <tr><td class="l">Agency</td><td style="background:#1e3a8a">36</td><td style="background:#2563eb">49</td><td style="background:#6da2e0">72</td><td style="background:#1d4ed8">44</td></tr>
+      <tr><td class="l">Info</td><td style="background:#3b82f6">58</td><td style="background:#1e40af">33</td><td style="background:#2563eb">47</td><td style="background:#6da2e0">69</td></tr>
+    </table>
+    <div class="micro" style="margin-top:5px">Kill the pale ones.</div>
   </div>
 
 </div>
