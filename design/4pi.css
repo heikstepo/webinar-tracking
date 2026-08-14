@@ -564,6 +564,368 @@ html, body {
 }
 
 /* ============================================================================
+   TREE  —  account-structure diagram. Tiers stack down the centre, joined by
+   hairline drops; the last tier fans out over a horizontal bus.
+
+   Hierarchy is carried by value, not size: ink root, tinted middle, white
+   leaves. Set --n on .tree to the number of leaf tiles; the bus computes its
+   own inset so it starts and ends at the centre of the outer tiles.
+   ========================================================================= */
+
+.tree {
+  --n: 8;
+  --gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.node {
+  width: 660px;
+  padding: 20px 34px 22px;
+  border-radius: var(--r-card);
+  text-align: center;
+}
+
+.node--root {
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 10px 10px 0 rgba(27, 29, 32, 0.16);
+}
+
+.node--set {
+  background: var(--blue-tint);
+  border: 1px solid var(--blue-line);
+  box-shadow: 10px 10px 0 var(--ink);
+}
+
+.node__label {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.node--root .node__label { color: rgba(255, 255, 255, 0.60); }
+.node--set  .node__label { color: var(--blue); }
+
+.node__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.012em;
+  line-height: 1.15;
+}
+
+.node__meta {
+  margin: 6px 0 0;
+  font-size: 23px;
+  font-weight: 500;
+}
+.node--root .node__meta { color: rgba(255, 255, 255, 0.64); }
+.node--set  .node__meta { color: var(--ink-2); }
+
+/* Vertical connector between tiers. */
+.drop {
+  width: 2px;
+  height: 26px;
+  background: var(--hairline);
+}
+
+/* Leaf row. */
+.ads {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--n), 1fr);
+  gap: var(--gap);
+}
+
+/* Bus: inset by half a tile at each end so it meets the outer stubs. */
+.ads::before {
+  content: '';
+  position: absolute;
+  top: -26px;
+  height: 2px;
+  background: var(--hairline);
+  left: calc((100% - (var(--n) - 1) * var(--gap)) / var(--n) / 2);
+  right: calc((100% - (var(--n) - 1) * var(--gap)) / var(--n) / 2);
+}
+
+.ad {
+  position: relative;
+  padding: 22px 6px 24px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Stub joining each tile up to the bus. */
+.ad::before {
+  content: '';
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  width: 2px;
+  height: 26px;
+  background: var(--hairline);
+}
+
+/* Ghost tile — the optional end of a range. */
+.ad--ghost {
+  background: transparent;
+  border-style: dashed;
+  border-color: #CDD2D9;
+  color: #A6ACB4;
+}
+
+/* Handwritten notes aligned to leaf groups. Use grid-column: span N. */
+.ads__notes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--n), 1fr);
+  gap: var(--gap);
+  margin-top: 16px;
+}
+.ads__notes span { text-align: center; }
+
+/* ============================================================================
+   FUNNEL  —  three tapering bands, ads sitting inside each stage, traffic
+   arriving at the mouth and a conversion falling out of the neck.
+
+   The taper is one continuous line cut into three segments: each band's
+   clip-path picks up exactly where the one above left off, so the silhouette
+   reads as a single funnel rather than three stacked shapes. Depth is carried
+   by one blue at rising opacity — the only other color on the slide is the
+   green at the conversion, which is the whole point of the picture.
+   ========================================================================= */
+
+.funnel-wrap {
+  position: relative;
+  width: var(--fw, 820px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- intake: arrows converging into the mouth --------------------------- */
+.funnel__intake {
+  width: 100%;
+  height: var(--fih, 66px);
+  display: block;
+}
+
+/* Handwritten aside, parked beside the arrows so it costs no vertical room. */
+.funnel__note {
+  position: absolute;
+  top: 8px;
+  left: -170px;
+  color: var(--ink-3);
+  transform: rotate(-6deg);
+}
+.funnel__note--right {
+  left: auto;
+  right: -180px;
+}
+
+/* --- the funnel itself --------------------------------------------------- */
+.funnel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.funnel__band {
+  width: 100%;
+  height: var(--fbh, 104px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: rgba(24, 119, 242, var(--fill, 0.10));
+}
+
+/* Continuous taper: 0% inset at the mouth to 34% at the neck. */
+.funnel__band--1 {
+  --fill: 0.09;
+  clip-path: polygon(0% 0%, 100% 0%, 88.44% 100%, 11.56% 100%);
+}
+.funnel__band--2 {
+  --fill: 0.15;
+  clip-path: polygon(12.22% 0%, 87.78% 0%, 76.22% 100%, 23.78% 100%);
+  margin-top: 6px;
+}
+.funnel__band--3 {
+  --fill: 0.23;
+  clip-path: polygon(24.44% 0%, 75.56% 0%, 64% 100%, 36% 100%);
+  margin-top: 6px;
+}
+
+/* The neck. Without it the three bands read as a wedge, not a funnel —
+   its width is exactly the cone's bottom opening so the silhouette closes. */
+.funnel__neck {
+  width: 28%;
+  height: 36px;
+  margin-top: -1px;
+  background: rgba(24, 119, 242, 0.26);
+}
+
+.funnel__stage {
+  margin: 0;
+  font-size: var(--fsz, 20px);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7A8592;
+}
+
+.funnel__ads { display: flex; gap: 10px; }
+
+/* Ad sitting inside a stage. */
+.pill-ad {
+  padding: 0.32em 1em 0.36em;   /* em-based so the pill scales with the funnel */
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  border: 1px solid #D3DEEC;
+  font-size: var(--fpz, 22px);
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* The one ad being singled out. */
+.pill-ad--hot {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+/* --- exit: stem and conversion ------------------------------------------ */
+.funnel__stem {
+  width: 2px;
+  height: 20px;
+  background: #C9D8EC;
+}
+
+.conversion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.conversion__mark {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--green-tint);
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 1;
+  color: #2E8B1C;
+}
+
+.conversion__label {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2E8B1C;
+}
+
+/* ============================================================================
+   ABSOLUTE STAGE  —  a fixed-size canvas for compositions where a connector
+   has to be drawn between two elements. Children are positioned in the
+   stage's own coordinate space, which is also the SVG overlay's viewBox, so
+   a curve can be authored against real coordinates instead of guessed ones.
+   ========================================================================= */
+
+.stage-abs {
+  position: relative;
+  width: 1240px;
+  height: 470px;
+  flex: none;
+}
+
+.branch {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.branch__note {
+  position: absolute;
+  left: 468px;
+  top: 434px;
+  color: var(--blue);
+  transform: rotate(-3deg);
+}
+
+/* ============================================================================
+   COLD POOL  —  an audience that has never seen you. Deliberately drawn in
+   grey: it is the one group on the slide with no relationship yet.
+   ========================================================================= */
+
+.cold {
+  position: absolute;
+  right: 60px;
+  top: 6px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.cold__label {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7A8592;
+}
+
+.cold__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 26px;
+}
+
+.person {
+  width: 46px;
+  height: 46px;
+  display: block;
+  fill: none;
+  stroke: #AEB6C0;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.cold__note {
+  margin: 0;
+  font-family: var(--hand);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
    TABLE  —  Ads Manager mock. macOS window chrome sells it as a screenshot
    without needing one. Numbers are tabular-lining so columns align.
    ========================================================================= */

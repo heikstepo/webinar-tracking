@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>4PI · The funnel</title>
+<link rel="stylesheet" href="../4pi.css">
+</head>
+<body>
+
+<section class="slide slide--top slide--mid">
+  <div class="eyebrow eyebrow--blue">The funnel</div>
+
+  <h2 class="h3--sm h3" style="margin-top:44px">Every ad has a place in the funnel.</h2>
+
+  <div class="funnel-wrap" style="margin-top:26px">
+
+    <span class="hand hand--md funnel__note">new people</span>
+
+    <!-- Traffic arriving: five arrows converging on the mouth. -->
+    <svg class="funnel__intake" viewBox="0 0 820 66" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="tip" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5.5" markerHeight="5.5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#A9C7F5"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g stroke="#A9C7F5" stroke-width="3" stroke-linecap="round" marker-end="url(#tip)">
+        <path d="M30 5 L130 50"/>
+        <path d="M220 5 L285 50"/>
+        <path d="M410 5 L410 50"/>
+        <path d="M600 5 L535 50"/>
+        <path d="M790 5 L690 50"/>
+      </g>
+    </svg>
+
+    <div class="funnel">
+      <div class="funnel__band funnel__band--1">
+        <p class="funnel__stage">Top of funnel</p>
+        <div class="funnel__ads">
+          <span class="pill-ad">Ad</span>
+          <span class="pill-ad">Ad</span>
+          <span class="pill-ad">Ad</span>
+        </div>
+      </div>
+
+      <div class="funnel__band funnel__band--2">
+        <p class="funnel__stage">Middle of funnel</p>
+        <div class="funnel__ads">
+          <span class="pill-ad">Ad</span>
+          <span class="pill-ad">Ad</span>
+        </div>
+      </div>
+
+      <div class="funnel__band funnel__band--3">
+        <p class="funnel__stage">Bottom of funnel</p>
+        <div class="funnel__ads">
+          <span class="pill-ad">Ad</span>
+        </div>
+      </div>
+      <div class="funnel__neck"></div>
+    </div>
+
+    <div class="funnel__stem"></div>
+
+    <div class="conversion">
+      <div class="conversion__mark">✓</div>
+      <p class="conversion__label">Conversion</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

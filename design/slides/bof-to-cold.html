@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>4PI · Bottom-funnel ad to cold</title>
+<link rel="stylesheet" href="../4pi.css">
+</head>
+<body>
+
+<section class="slide slide--top slide--mid">
+  <div class="eyebrow eyebrow--blue">Proven creative</div>
+
+  <h2 class="h3--sm h3" style="margin-top:44px">The ad that closes at the bottom<br>can <span class="mark">open at the top</span>.</h2>
+
+  <!-- Fixed-size stage so the curve can be drawn in known coordinates. -->
+  <div class="stage-abs" style="margin-top:30px">
+
+    <!-- Left: the funnel, with the bottom ad singled out. -->
+    <div class="funnel-wrap" style="--fw:520px; --fbh:78px; --fsz:16px; --fpz:18px;
+                                    position:absolute; left:30px; top:0">
+      <div class="funnel">
+        <div class="funnel__band funnel__band--1">
+          <p class="funnel__stage">Top of funnel</p>
+          <div class="funnel__ads"><span class="pill-ad">Ad</span><span class="pill-ad">Ad</span></div>
+        </div>
+        <div class="funnel__band funnel__band--2">
+          <p class="funnel__stage">Middle of funnel</p>
+          <div class="funnel__ads"><span class="pill-ad">Ad</span></div>
+        </div>
+        <div class="funnel__band funnel__band--3">
+          <p class="funnel__stage">Bottom of funnel</p>
+          <div class="funnel__ads"><span class="pill-ad pill-ad--hot">Ad</span></div>
+        </div>
+        <div class="funnel__neck"></div>
+      </div>
+    </div>
+
+    <!-- Right: the cold pool it gets pushed back out to. -->
+    <div class="cold">
+      <p class="cold__label">Cold · unaware</p>
+      <div class="cold__grid">
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+        <svg class="person" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2"/></svg>
+      </div>
+      <p class="cold__note">Never heard of you</p>
+    </div>
+
+    <!-- The branch: out of the neck, around, and back up into the cold pool. -->
+    <svg class="branch" viewBox="0 0 1240 470" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="bt" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#1877F2"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <path d="M290 276 C 290 372, 420 424, 600 420 C 762 416, 828 300, 842 146"
+            stroke="#1877F2" stroke-width="3.5" stroke-linecap="round"
+            marker-end="url(#bt)"/>
+    </svg>
+
+    <span class="hand hand--md branch__note">same ad, new people</span>
+  </div>
+</section>
+
+</body>
+</html>

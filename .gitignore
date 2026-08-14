@@ -11,3 +11,6 @@ next-env.d.ts
 
 # static draft artifact
 dashboard-draft.html
+
+# rendered slide exports are build output
+design/exports/

@@ -9,7 +9,14 @@ design/
   elements.html         live reference: the read, tokens, type scale, all elements
   slide-template.html   blank starter, four layouts
   build-standalone.py   folds CSS + font into one portable file
+  render.sh             slide file -> PDF + 2x PNG, via Chrome's print path
+  slides/               one file per slide
   fonts/caveat.woff2    handwriting face
+```
+
+```
+./render.sh slides/funnel.html        # -> exports/funnel.pdf + funnel.png (2x)
+./render.sh slides/funnel.html 3      # 3x PNG
 ```
 
 Open `elements.html` in a browser to see everything rendered at slide scale.
@@ -103,6 +110,15 @@ one line paints over the descenders of the line above it.
 | `.anno` | handwritten note + curved red arrow |
 | `.chip` | outlined pill |
 | `.panel` | hairline container for a short question list |
+| `.tree` + `.node` + `.ads` | campaign → ad set → ads hierarchy, with a fan-out bus |
+| `.funnel-wrap` + `.funnel__band` | three-stage funnel; `--fw` / `--fbh` scale it |
+| `.funnel__neck` + `.conversion` | the neck and the conversion falling out of it |
+| `.cold` + `.person` | a cold, unaware audience pool |
+| `.stage-abs` + `.branch` | fixed canvas for drawing a curve between two elements |
+
+Set `--n` on `.tree` to the number of ad tiles; the fan-out bus computes its own
+inset so it meets the outer tiles. Set `--fw`, `--fbh`, `--fsz`, `--fpz` on
+`.funnel-wrap` to resize a funnel — the taper and the ad pills scale with it.
 
 Layout helpers: `.grid-2` `.grid-3` `.grid-4` `.stack` `.stack-24` `.stack-40`,
 and slide modifiers `.slide--center` `.slide--top` `.slide--bottom` `.slide--mid`.
