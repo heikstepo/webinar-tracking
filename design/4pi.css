@@ -1,0 +1,728 @@
+/* ============================================================================
+   4PI SLIDE SYSTEM
+   Apple structural discipline + marker-highlighter teaching language.
+
+   Canvas: 1440 x 810 (16:9). Authored in CSS px, printed 1:1 to PDF via
+   Chrome "Save as PDF" at 100% scale, no margins.
+
+   Type: SF Pro via -apple-system (real SF Pro Display on macOS, with the
+   optical-size axis engaging automatically above 20px). Caveat is embedded
+   below as base64 so a slide file is self-contained — it renders identically
+   from file://, from a server, or inside a sandboxed page.
+   ========================================================================= */
+
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: block;
+  src: url('fonts/caveat.woff2') format('woff2');
+}
+
+:root {
+  /* ---- Canvas ------------------------------------------------------------ */
+  --w: 1440px;
+  --h: 810px;
+  --pad-x: 100px;          /* left/right safe margin  */
+  --pad-y: 64px;           /* top/bottom safe margin  */
+
+  /* ---- Ground -----------------------------------------------------------
+     Never pure white. The deck sits on a cool near-white with a faint wash,
+     which is what keeps white cards and white table rows readable as objects. */
+  --ground: #F5F6F7;
+  --ground-hi: #FCFCFD;
+  --surface: #FFFFFF;
+
+  /* ---- Ink --------------------------------------------------------------- */
+  --ink: #1B1D20;          /* headlines, table figures            */
+  --ink-2: #5A5E66;        /* body copy, lede                     */
+  --ink-3: #8A9099;        /* eyebrows, footers, captions, muted  */
+  --hairline: #E3E5E8;     /* 1px rules, table borders, outlines  */
+
+  /* ---- Accents ----------------------------------------------------------
+     Four roles, one per slide. Blue = structural/neutral. Yellow = the idea
+     worth remembering. Red = the problem. Green = the good outcome. */
+  --blue: #1877F2;
+  --yellow: #F6B827;
+  --red: #E31D3E;
+  --green: #42B72A;
+
+  /* Tints — card fills. Same hue, ~92% lightness. */
+  --blue-tint: #DCE8FB;
+  --yellow-tint: #FDF3D9;
+  --red-tint: #FCE5E9;
+  --green-tint: #DCF1D6;
+
+  /* Tint borders — one step darker than the fill. */
+  --blue-line: #BFD6F7;
+  --yellow-line: #F2DFA8;
+  --red-line: #F7C9D2;
+  --green-line: #BFE3B4;
+
+  /* Deep text on tint (labels inside tinted cards) */
+  --yellow-deep: #B07D06;
+
+  /* ---- Radii ------------------------------------------------------------- */
+  --r-mark: 10px;          /* highlighter block   */
+  --r-card: 20px;          /* cards, panels       */
+  --r-tile: 24px;          /* flow tiles          */
+  --r-pill: 980px;         /* Apple's pill radius */
+
+  /* ---- Type stacks ------------------------------------------------------- */
+  --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+          'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --hand: 'Caveat', 'Bradley Hand', 'Segoe Print', cursive;
+}
+
+/* ============================================================================
+   CANVAS
+   ========================================================================= */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #9AA0A6;     /* workbench gray, so slide edges read while editing */
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.slide {
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+  margin: 24px auto;
+  padding: var(--pad-y) var(--pad-x);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(120% 100% at 50% 0%, var(--ground-hi) 0%, var(--ground) 62%);
+  color: var(--ink);
+}
+
+/* Vertical placement of the slide's content block. */
+.slide--center  { justify-content: center; }
+.slide--top     { justify-content: flex-start; }
+.slide--bottom  { justify-content: flex-end; }
+
+/* Horizontal alignment of text within the slide. */
+.slide--mid  { text-align: center; align-items: center; }
+.slide--mid .lede,
+.slide--mid .body { margin-left: auto; margin-right: auto; }
+
+/* ============================================================================
+   EYEBROW  —  colored dot + wide-tracked uppercase label, pinned top-left.
+   The dot carries the slide's accent; it is the quietest possible way to
+   color-code a section.
+   ========================================================================= */
+
+.eyebrow {
+  position: absolute;
+  top: var(--pad-y);
+  left: var(--pad-x);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--eyebrow-dot, var(--blue));
+  flex: none;
+}
+
+.eyebrow--blue   { --eyebrow-dot: var(--blue); }
+.eyebrow--yellow { --eyebrow-dot: var(--yellow); }
+.eyebrow--red    { --eyebrow-dot: var(--red); }
+.eyebrow--green  { --eyebrow-dot: var(--green); }
+
+/* Centered variant used on the cover — no dot, accent-colored text. */
+.eyebrow--cover {
+  position: static;
+  justify-content: center;
+  color: var(--blue);
+  margin-bottom: 34px;
+}
+.eyebrow--cover::before { display: none; }
+
+/* ============================================================================
+   FOOTER  —  bottom-right, uppercase, very muted. Section wayfinding.
+   ========================================================================= */
+
+.footer {
+  position: absolute;
+  right: var(--pad-x);
+  bottom: var(--pad-y);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C6CAD0;
+}
+
+/* Centered "DIAGNOSE · ONE MOVE · OBSERVE" strip on the cover. */
+.footer--cover {
+  position: static;
+  text-align: center;
+  color: var(--ink-3);
+  margin-top: 56px;
+}
+
+/* ============================================================================
+   TYPE
+   Sizes are the deck's real optical sizes: 96 / 88 / 72 / 60 / 46 / 38 / 34.
+   Headlines run weight 900 with negative tracking — this is where the system
+   departs from Apple (who caps at 600). The poster weight is the teaching
+   voice; the restraint everywhere else is what keeps it from shouting.
+   ========================================================================= */
+
+.h1, .h2, .h3 {
+  margin: 0;
+  font-weight: 900;
+  /* 1.06 is the floor: any tighter and a .mark block on one line paints over
+     the descenders and commas of the line above it. */
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+.h1 { font-size: 96px; }   /* cover statement            */
+.h2 { font-size: 72px; }   /* section / part headline    */
+.h3 { font-size: 60px; }   /* in-section headline        */
+
+.h1--sm { font-size: 88px; }
+.h2--sm { font-size: 64px; }
+.h3--sm { font-size: 46px; }
+
+/* Lede — the sentence under a headline. Weight 500, generous leading. */
+.lede {
+  margin: 30px 0 0;
+  max-width: 1000px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.42;
+  letter-spacing: -0.01em;
+  color: var(--ink-2);
+}
+
+.lede--lg { font-size: 40px; max-width: 1080px; }
+.lede--sm { font-size: 30px; }
+
+.body {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+.body strong { font-weight: 700; color: var(--ink); }
+
+/* Handwriting — asides, tile captions, annotations. Caveat runs small on the
+   body, so it is set ~1.15x the size of the sans text it sits beside. */
+.hand {
+  font-family: var(--hand);
+  font-weight: 700;
+  color: var(--ink-2);
+  letter-spacing: 0.01em;
+}
+
+.hand--lg { font-size: 38px; }
+.hand--md { font-size: 30px; }
+.hand--sm { font-size: 26px; }
+
+/* ============================================================================
+   MARK  —  the highlighter. The single most important device in the system.
+
+   A solid rounded block sits behind the phrase that carries the slide's claim.
+   Yellow keeps ink text (it is a highlighter). Blue / red / green invert to
+   white (they are labels). Never more than one marked phrase per headline.
+
+   box-decoration-break keeps the block intact across a line wrap.
+   ========================================================================= */
+
+.mark {
+  padding: 0.06em 0.16em 0.10em;
+  border-radius: var(--r-mark);
+  background: var(--yellow);
+  color: var(--ink);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mark--blue  { background: var(--blue);  color: #fff; }
+.mark--red   { background: var(--red);   color: #fff; }
+.mark--green { background: var(--green); color: #fff; }
+.mark--ink   { background: var(--ink);   color: #fff; }
+
+/* Soft mark — pale wash for emphasis inside body copy, where a solid block
+   would out-shout the headline. */
+.mark--soft {
+  background: var(--yellow-tint);
+  color: var(--ink);
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/* Hand-drawn underline that sags under a marked phrase (cover slide). */
+.squiggle {
+  position: relative;
+  display: inline-block;
+}
+.squiggle::after {
+  content: '';
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  bottom: -0.20em;
+  height: 18px;
+  background: no-repeat center/100% 100%
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 16'><path d='M4 11 C 60 3, 110 3, 150 7 S 250 13, 296 5' fill='none' stroke='%231877F2' stroke-width='5' stroke-linecap='round'/></svg>");
+}
+
+/* ============================================================================
+   ACCENT RULE  —  short thick underline that closes a part-opener.
+   ========================================================================= */
+
+.rule {
+  width: 168px;
+  height: 9px;
+  border-radius: 6px;
+  background: var(--blue);
+  margin-top: 52px;
+}
+
+.rule--yellow { background: var(--yellow); }
+.rule--red    { background: var(--red); }
+.rule--green  { background: var(--green); }
+
+/* ============================================================================
+   PART OPENER  —  giant outlined hand-drawn numeral on the left, headline
+   block on the right. Caveat + text-stroke gives the drawn-by-hand outline.
+   ========================================================================= */
+
+.opener {
+  display: grid;
+  grid-template-columns: 470px 1fr;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.numeral {
+  font-family: var(--hand);
+  font-weight: 400;
+  font-size: 300px;
+  line-height: 1;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 4px var(--ink);
+  transform: rotate(-4deg);
+  user-select: none;
+}
+
+.opener__body { padding-right: 40px; }
+
+/* ============================================================================
+   CARDS
+   Two families:
+   1. .card--tint    soft fill + matching hairline. For paired comparisons.
+   2. .card--hard    surface + solid offset ink shadow. For the object that
+                     must feel physical (the question box, the flow tiles).
+   ========================================================================= */
+
+.card {
+  padding: 44px 46px;
+  border-radius: var(--r-card);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+}
+
+.card--tint  { border-width: 1px; }
+.card--red   { background: var(--red-tint);    border-color: var(--red-line); }
+.card--yellow{ background: var(--yellow-tint); border-color: var(--yellow-line); }
+.card--green { background: var(--green-tint);  border-color: var(--green-line); }
+.card--blue  { background: var(--blue-tint);   border-color: var(--blue-line); }
+
+.card--hard {
+  border: none;
+  box-shadow: 10px 10px 0 var(--ink);
+}
+.card--hard.card--red   { box-shadow: 10px 10px 0 var(--ink); }
+
+/* Card label — small uppercase tracked line at the top of a card. */
+.card__label {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: var(--ink-3);
+}
+.card__label--red    { color: var(--red); }
+.card__label--yellow { color: var(--yellow-deep); }
+.card__label--green  { color: #2E8B1C; }
+.card__label--blue   { color: var(--blue); }
+
+.card__title {
+  margin: 0 0 22px;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+
+.card__title--lg { font-size: 40px; line-height: 1.15; }
+
+.card__note {
+  margin: 22px 0 0;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
+   VERDICT CARD  —  green/red pair with a ✓ / ✕ glyph header.
+   ========================================================================= */
+
+.verdict {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+.verdict__icon { font-size: 40px; line-height: 1; }
+.verdict--yes .verdict__icon { color: var(--green); }
+.verdict--no  .verdict__icon { color: var(--red); }
+
+/* ============================================================================
+   ARROW LIST  —  "→" bullets. The arrow takes the card's accent color.
+   ========================================================================= */
+
+.arrows { margin: 0; padding: 0; list-style: none; }
+
+.arrows li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 24px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.arrows li:last-child { margin-bottom: 0; }
+
+.arrows li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-weight: 700;
+  color: var(--arrow, var(--ink-3));
+}
+
+.arrows--red    { --arrow: var(--red); }
+.arrows--yellow { --arrow: var(--yellow); }
+.arrows--green  { --arrow: var(--green); }
+.arrows--blue   { --arrow: var(--blue); }
+
+/* De-emphasised span inside an arrow item — carries the nuance without
+   competing with the claim. */
+.arrows .soft { font-weight: 500; color: var(--ink-3); }
+
+/* Up / down arrow variants for trend questions. */
+.arrows--trend li::before { content: '↑'; font-size: 30px; }
+.arrows--trend li.down::before { content: '↓'; color: var(--green); }
+.arrows--trend li.up::before   { color: var(--red); }
+
+/* ============================================================================
+   GRIDS
+   ========================================================================= */
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 76px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; }
+
+.stack   { display: flex; flex-direction: column; }
+.stack-24 > * + * { margin-top: 24px; }
+.stack-40 > * + * { margin-top: 40px; }
+
+/* ============================================================================
+   QUESTION BOX  —  the ink pill that poses the branching question, with a
+   connector line dropping to the two answers below.
+   ========================================================================= */
+
+.question {
+  align-self: center;
+  padding: 30px 56px;
+  border-radius: var(--r-card);
+  background: var(--ink);
+  color: #fff;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.012em;
+  box-shadow: 10px 10px 0 rgba(27, 29, 32, 0.18);
+}
+
+.connector {
+  align-self: center;
+  width: 2px;
+  height: 54px;
+  background: var(--hairline);
+}
+
+/* ============================================================================
+   FLOW  —  the left-to-right read: 4 tinted tiles joined by arrows, with a
+   gradient spectrum rail underneath labelling the two ends.
+   ========================================================================= */
+
+.flow {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 26px;
+}
+
+.flow__tile {
+  flex: 1;
+  padding: 34px 26px;
+  border-radius: var(--r-tile);
+  text-align: center;
+  box-shadow: 10px 10px 0 var(--ink);
+}
+
+.flow__step {
+  font-family: var(--hand);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink-3);
+  margin-bottom: 18px;
+}
+
+.flow__icon {
+  font-size: 46px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.flow__name {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.012em;
+  margin-bottom: 14px;
+}
+
+.flow__desc {
+  font-family: var(--hand);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink-2);
+}
+
+.flow__arrow {
+  align-self: center;
+  font-size: 34px;
+  color: var(--ink-2);
+  flex: none;
+}
+
+.spectrum {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 34px;
+}
+.spectrum__rail {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--green), var(--yellow), var(--red));
+}
+.spectrum__label {
+  font-family: var(--hand);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+/* ============================================================================
+   TABLE  —  Ads Manager mock. macOS window chrome sells it as a screenshot
+   without needing one. Numbers are tabular-lining so columns align.
+   ========================================================================= */
+
+.window {
+  border-radius: var(--r-card);
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.window__bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 28px;
+  background: #F7F8F9;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.window__dots { display: flex; gap: 9px; margin-right: 10px; }
+.window__dots i {
+  width: 15px; height: 15px; border-radius: 50%; display: block;
+}
+.window__dots i:nth-child(1) { background: #EC6A5E; }
+.window__dots i:nth-child(2) { background: #F4BF4F; }
+.window__dots i:nth-child(3) { background: #61C554; }
+
+.tbl { width: 100%; border-collapse: collapse; }
+
+.tbl th {
+  padding: 22px 30px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  text-align: right;
+  border-bottom: 1px solid var(--hairline);
+}
+.tbl th:first-child { text-align: left; }
+
+.tbl td {
+  padding: 26px 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  text-align: right;
+  border-bottom: 1px solid var(--hairline);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.tbl td:first-child { text-align: left; }
+.tbl tr:last-child td { border-bottom: none; }
+
+/* Group caption row — handwritten, sets the comparison context. */
+.tbl .group td {
+  font-family: var(--hand);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink-2);
+  background: #F1F2F4;
+  padding: 16px 30px;
+}
+
+/* The outlier row. */
+.tbl .flag td { background: var(--red-tint); }
+.tbl .flag td.hot { font-weight: 800; }
+
+/* ============================================================================
+   ANNOTATION  —  handwritten note + curved arrow, in red, pointing at the
+   thing that matters. Absolutely positioned; set --x / --y per slide.
+   ========================================================================= */
+
+.anno {
+  position: absolute;
+  left: var(--x, 60%);
+  top: var(--y, 70%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--hand);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--red);
+  transform: rotate(-6deg);
+}
+
+.anno__arrow {
+  width: 118px;
+  height: 44px;
+  flex: none;
+  background: no-repeat center/contain
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 44'><path d='M114 10 C 80 4, 40 14, 12 30' fill='none' stroke='%23E31D3E' stroke-width='4' stroke-linecap='round'/><path d='M8 32 L 26 26 M8 32 L 20 42' fill='none' stroke='%23E31D3E' stroke-width='4' stroke-linecap='round'/></svg>");
+}
+
+/* Arrow pointing right instead of left. */
+.anno--right .anno__arrow { transform: scaleX(-1); }
+
+/* ============================================================================
+   CHIP  —  outlined pill for a list of downstream places to look.
+   ========================================================================= */
+
+.chip {
+  padding: 30px 24px;
+  border-radius: 18px;
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* ============================================================================
+   PANEL  —  hairline container holding a short list of questions.
+   ========================================================================= */
+
+.panel {
+  padding: 42px 48px;
+  border-radius: var(--r-card);
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================================================
+   UTILITIES
+   ========================================================================= */
+
+.mt-0  { margin-top: 0 !important; }
+.mt-24 { margin-top: 24px; }
+.mt-40 { margin-top: 40px; }
+.mt-56 { margin-top: 56px; }
+.mt-72 { margin-top: 72px; }
+.muted { color: var(--ink-3); }
+.center { text-align: center; }
+.nowrap { white-space: nowrap; }
+
+/* ============================================================================
+   PRINT  —  Chrome "Save as PDF", 100% scale, no margins, background graphics
+   ON. Each .slide becomes exactly one 1440x810 page.
+   ========================================================================= */
+
+@page {
+  size: 1440px 810px;
+  margin: 0;
+}
+
+@media print {
+  html, body { background: none; }
+  .slide {
+    margin: 0;
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+}
