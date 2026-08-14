@@ -3,240 +3,257 @@
 <title>The High-Ticket Ad Playbook — Thumbnail</title>
 <style>
 @font-face{font-family:Marker;src:url(assets/fonts/permanent-marker-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
-@font-face{font-family:Draft;src:url(assets/fonts/architects-daughter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
-@font-face{font-family:Hand;src:url(assets/fonts/caveat-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
-@font-face{font-family:UI;src:url(assets/fonts/inter-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-300-normal.woff2) format('woff2');font-weight:300;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
 
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{background:#3a3a3a}
+html,body{background:#2f3136}
 
 :root{
-  --ink:#191712;
-  --pen:#413b33;
-  --red:#c8261d;
-  --card:#fffefb;
+  --ink:#12141a;
+  --body:#4b5262;
+  --mute:#7d8598;
+  --line:#dfe3e9;
+  --blue:#2563eb;
+  --red:#dc2626;
+  --green:#16a34a;
+  --amber:#f59e0b;
+  --violet:#7c3aed;
+  --teal:#0d9488;
+  --pink:#db2777;
 }
 
 #board{
   position:relative;width:1280px;height:720px;overflow:hidden;
-  background:radial-gradient(118% 96% at 50% 38%, #fdfcf9 0%, #f5f2ec 60%, #e9e5db 100%);
-  /* every piece of lettering on this board is hand-drawn; UI font is display-only */
-  font-family:Draft,cursive;color:var(--ink);
-}
-#board::before{                       /* graph paper */
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background-image:
-    linear-gradient(rgba(66,76,92,.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(66,76,92,.05) 1px,transparent 1px),
-    linear-gradient(rgba(66,76,92,.09) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(66,76,92,.09) 1px,transparent 1px);
-  background-size:16px 16px,16px 16px,96px 96px,96px 96px;
-}
-#board::after{                        /* paper shading */
-  content:"";position:absolute;inset:0;pointer-events:none;z-index:60;
-  background:
-    radial-gradient(125% 82% at 50% 0%,transparent 56%,rgba(58,48,34,.10) 100%),
-    radial-gradient(92% 72% at 6% 100%,rgba(58,48,34,.09),transparent 62%);
-  mix-blend-mode:multiply;
+  background:#ffffff;
+  background-image:radial-gradient(circle at 1px 1px,#d3d7de 1.05px,transparent 1.05px);
+  background-size:14px 14px;
+  font-family:Poppins,sans-serif;color:var(--ink);
+  -webkit-font-smoothing:antialiased;
 }
 
 /* ---------- primitives ---------- */
 .abs{position:absolute}
-.box{                                  /* the only kind of container on the board */
-  background:var(--card);border:2.3px solid var(--ink);
-  border-radius:13px 9px 15px 8px / 9px 15px 8px 13px;
-  box-shadow:2px 3px 0 rgba(25,23,18,.13);
+.card{
+  background:#fff;border:1.2px solid var(--line);border-radius:8px;
+  box-shadow:0 1px 2px rgba(16,24,40,.05),0 5px 14px rgba(16,24,40,.06);
 }
-.box-s{
-  background:var(--card);border:1.6px solid var(--ink);
-  border-radius:7px 5px 8px 4px / 5px 8px 4px 7px;
-  box-shadow:1.4px 1.8px 0 rgba(25,23,18,.10);
+.card-s{
+  background:#fff;border:1px solid var(--line);border-radius:6px;
+  box-shadow:0 1px 2px rgba(16,24,40,.05),0 3px 8px rgba(16,24,40,.05);
 }
-.h{                                    /* hand-drawn section heading */
-  font-family:Draft,cursive;text-transform:uppercase;
-  letter-spacing:.08em;line-height:1;color:var(--ink);
+/* section heading + coloured underline */
+.sec{
+  display:inline-block;position:relative;font-weight:600;font-size:9.5px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink);
+  padding-bottom:5px;line-height:1;
 }
-.hr{font-family:Draft,cursive;text-transform:uppercase;letter-spacing:.08em;line-height:1;color:var(--red)}
-svg.pen{position:absolute;overflow:visible;pointer-events:none}
-.pen path,.pen ellipse{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.pen .red{stroke:var(--red)}
-.pen .thin{stroke-width:1.5}
-.pen .hair{stroke-width:1.2;stroke:rgba(25,23,18,.5)}
+.sec::after{
+  content:"";position:absolute;left:0;bottom:0;height:2.6px;width:100%;
+  border-radius:2px;background:var(--u,var(--blue));
+}
+.u-blue{--u:var(--blue)}.u-red{--u:var(--red)}.u-green{--u:var(--green)}
+.u-amber{--u:var(--amber)}.u-violet{--u:var(--violet)}.u-teal{--u:var(--teal)}
+.u-pink{--u:var(--pink)}
 
-/* ---------- logos (inline sprite; CSS mask-image is blocked on file:// SVGs) ---------- */
+.mini{font-weight:300;font-size:7.4px;letter-spacing:.01em;color:var(--mute);line-height:1.3}
+.chip{
+  display:inline-block;font-weight:600;font-size:8px;letter-spacing:.09em;
+  text-transform:uppercase;color:#fff;padding:3.5px 7px;border-radius:5px;
+}
+svg.pen{position:absolute;overflow:visible;pointer-events:none}
+.pen path{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pen .red{stroke:var(--red)}
+.pen .hair{stroke-width:1.5;stroke:#bcc3cf}
+
+/* ---------- logos ---------- */
 .lg{display:inline-block;color:var(--ink);vertical-align:middle;line-height:0}
 .lg svg{width:100%;height:100%;display:block;fill:currentColor}
-.lg-meta{color:#0081fb}
-.lg-instagram{color:#e4405f}
-.lg-tiktok{color:#141414}
-.lg-youtube{color:#ff0000}
-.lg-googleads{color:#4285f4}
-.lg-linkedin{color:#0a66c2}
-.lg-calendly{color:#006bff}
-.lg-hubspot{color:#ff7a59}
-.lg-twilio{color:#f22f46}
-.lg-gmail{color:#ea4335}
-.lg-zapier{color:#ff4f00}
-.lg-stripe{color:#635bff}
-.lg-reddit{color:#ff4500}
-.lg-zoom{color:#0b5cff}
+.lg-meta{color:#0081fb}.lg-instagram{color:#e4405f}.lg-tiktok{color:#111}
+.lg-youtube{color:#f00}.lg-googleads{color:#4285f4}.lg-linkedin{color:#0a66c2}
+.lg-calendly{color:#006bff}.lg-hubspot{color:#ff7a59}.lg-twilio{color:#f22f46}
+.lg-gmail{color:#ea4335}.lg-zapier{color:#ff4f00}.lg-stripe{color:#635bff}
+.lg-reddit{color:#ff4500}.lg-zoom{color:#0b5cff}.lg-slack{color:#611f69}
+.lg-notion{color:#111}.lg-whatsapp{color:#25d366}.lg-snapchat{color:#c9a800}
+.lg-googlesheets{color:#0f9d58}.lg-x{color:#111}
 .lg-white{color:#fff !important}
 
-/* ═══════════ A · funnel (no container — drawn straight on the paper) ═══════════ */
-#fn{left:14px;top:12px;width:238px}
-#fn .cap{font-size:15px;text-align:center;letter-spacing:.1em}
-#fn .band{position:relative;margin:0 auto;padding-top:7px;height:56px}
-#fn .bl{font-size:11.5px;text-align:center;letter-spacing:.14em}
-#fn .rule{position:absolute;left:50%;transform:translateX(-50%);height:1.3px;background:rgba(25,23,18,.42)}
+/* typographic wordmarks — recreations, not official logo files */
+.wm{font-weight:700;letter-spacing:-.01em;line-height:1;white-space:nowrap}
+.wm-hyros{font-size:19px;letter-spacing:.14em;color:#0b0d12}
+.wm-hyros i{font-style:normal;color:var(--red)}
+.wm-vc{font-size:15px;letter-spacing:.02em}
+.wm-vc i{font-style:normal;color:#f0932b}
+.wm-vc b{color:#11131a}
+
+/* ═══════ A · funnel ═══════ */
+#fn{left:14px;top:34px;width:238px}
+#fn .band{position:relative;margin:0 auto;padding-top:7px;height:53px}
+#fn .bl{font-weight:600;font-size:8.6px;letter-spacing:.15em;text-align:center;text-transform:uppercase}
+#fn .rule{position:absolute;left:50%;transform:translateX(-50%);height:2px;border-radius:2px}
 #fn .items{display:flex;justify-content:center;gap:8px;margin-top:5px}
 #fn .it{text-align:center;width:46px}
 #fn .it .gl{height:16px;display:flex;align-items:center;justify-content:center}
-#fn .it svg{width:14px;height:14px;stroke:var(--pen);stroke-width:1.7;fill:none}
+#fn .it svg.ic{width:14px;height:14px;stroke:var(--body);stroke-width:1.6;fill:none}
 #fn .it .lg{width:13px;height:13px}
-#fn .it span{display:block;font-size:8.6px;line-height:1.1;color:#4c463c;margin-top:2px;letter-spacing:.01em}
+#fn .it span{display:block;font-weight:400;font-size:7px;line-height:1.15;color:var(--mute);margin-top:2px}
 
-/* ═══════════ B · ad platforms ═══════════ */
+/* ═══════ B · platforms ═══════ */
 #plat{left:300px;top:22px;width:468px;height:98px;padding:8px}
 #plat .grid{display:flex;gap:6px}
 .pcard{width:70px;text-align:center}
-.pcard .nm{font-size:10px;letter-spacing:.02em;line-height:1;color:#211e18}
-.pcard .lgw{height:28px;display:flex;align-items:center;justify-content:center;margin:3px 0 2px}
-.pcard .lgw .lg{width:23px;height:23px}
-.pcard .mock{height:34px;border:1.3px solid #2a2620;border-radius:2.5px;background:#fff;padding:2.5px}
-.pcard .mock .im{height:16px;background:#26221c;border-radius:1.5px;margin-bottom:2px}
-.pcard .mock .ln{height:2.4px;background:#d7d2c8;border-radius:1px;margin-bottom:1.6px}
-.pcard .mock .bt{height:5px;background:var(--red);border-radius:1.2px}
+.pcard .nm{font-weight:500;font-size:7.6px;letter-spacing:.02em;color:var(--body)}
+.pcard .lgw{height:26px;display:flex;align-items:center;justify-content:center;margin:3px 0 2px}
+.pcard .lgw .lg{width:22px;height:22px}
+.pcard .mock{height:34px;border:1px solid var(--line);border-radius:4px;padding:2.5px;background:#fbfcfd}
+.pcard .mock .im{height:15px;border-radius:2px;margin-bottom:2px}
+.pcard .mock .ln{height:2.4px;background:#dfe3e9;border-radius:2px;margin-bottom:1.8px}
+.pcard .mock .bt{height:5px;border-radius:2px}
 
-/* ═══════════ B2 · red circled outcome ═══════════ */
+/* ═══════ B2 · circled stat ═══════ */
 #circ{left:800px;top:18px;width:126px;height:96px}
 #circ .t1{position:absolute;left:50%;top:26px;transform:translate(-50%,0) rotate(-2deg);
   font-family:Marker,cursive;font-size:23px;color:var(--red);line-height:.9;white-space:nowrap}
-#circ .t2{position:absolute;left:50%;top:54px;transform:translate(-50%,0);
-  font-size:13px;color:var(--red);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+#circ .t2{position:absolute;left:50%;top:56px;transform:translate(-50%,0);
+  font-weight:600;font-size:9px;letter-spacing:.14em;color:var(--red);text-transform:uppercase;white-space:nowrap}
 
-/* ═══════════ C · checklist ═══════════ */
-#chk{left:954px;top:6px;width:318px;height:136px;padding:10px 14px}
-#chk .row{display:flex;align-items:center;gap:9px;height:23px}
-#chk .cb{width:13px;height:13px;flex:0 0 13px;position:relative;border:1.7px solid var(--ink);border-radius:2.5px}
-#chk .cb svg{position:absolute;left:-1px;top:-3.5px;width:16px;height:16px;stroke:var(--red);stroke-width:2.5;fill:none}
-#chk .t{font-size:17px;letter-spacing:.01em;line-height:1;text-transform:none}
+/* ═══════ C · checklist ═══════ */
+#chk{left:954px;top:6px;width:318px;height:136px;padding:11px 14px}
+#chk .row{display:flex;align-items:center;gap:9px;height:22.5px}
+#chk .cb{width:13px;height:13px;flex:0 0 13px;border-radius:3.5px;
+  display:flex;align-items:center;justify-content:center}
+#chk .cb svg{width:8px;height:8px;stroke:#fff;stroke-width:3;fill:none}
+#chk .t{font-weight:500;font-size:12.5px;letter-spacing:.005em;line-height:1;color:#1b1f2a}
 
-/* ═══════════ D · the stack (red discs) + fan ═══════════ */
+/* ═══════ D · stack + fan ═══════ */
 #stack{left:254px;top:136px;width:228px}
-#stack .cap{font-size:11.5px;letter-spacing:.12em;margin-bottom:5px}
-#stack .row{display:flex;gap:9px}
-.disc{width:38px;height:38px;border-radius:50%;background:var(--red);
-  display:flex;align-items:center;justify-content:center;box-shadow:1.5px 2px 0 rgba(25,23,18,.17)}
+#stack .row{display:flex;gap:9px;margin-top:6px}
+.disc{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 6px rgba(16,24,40,.14)}
 .disc .lg{width:18px;height:18px}
 .rpill{
-  border:1.6px solid var(--red);border-radius:9px;background:#fff;
-  text-align:center;font-size:10px;letter-spacing:.02em;color:#8c1f18;
-  padding:3px 6px;line-height:1;box-shadow:1.2px 1.6px 0 rgba(25,23,18,.09);
+  border:1.2px solid #f3c7c7;background:#fff5f5;border-radius:20px;text-align:center;
+  font-weight:500;font-size:8px;letter-spacing:.03em;color:#b1201f;padding:4px 6px;line-height:1;
 }
 
-/* ═══════════ E · anchor logo ═══════════ */
+/* ═══════ E · anchor ═══════ */
 #anchor{left:504px;top:130px;width:92px;height:92px}
-#anchor .lg{width:92px;height:92px;filter:drop-shadow(3px 4px 0 rgba(25,23,18,.16))}
+#anchor .lg{width:92px;height:92px;filter:drop-shadow(0 6px 14px rgba(0,129,251,.28))}
 
-/* ═══════════ F · title ═══════════ */
-#ttl{left:628px;top:132px;width:392px;transform:rotate(-.8deg)}
-#ttl .l1{font-family:Marker,cursive;font-size:31px;line-height:1;letter-spacing:.005em;white-space:nowrap}
+/* ═══════ F · title ═══════ */
+#ttl{left:628px;top:132px;width:392px}
+#ttl .l1{font-family:Marker,cursive;font-size:31px;line-height:1;white-space:nowrap}
 #ttl .l2{font-family:Marker,cursive;font-size:47px;line-height:.98;letter-spacing:-.01em;margin-top:2px;white-space:nowrap}
-#ttl .bar{margin-top:9px;display:inline-block;background:#14120d;color:#fff;
-  font-family:UI,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.1em;
-  padding:6px 11px;border-radius:3px 2px 4px 2px}
+#ttl .bar{margin-top:11px;display:inline-block;background:#12141a;color:#fff;
+  font-weight:600;font-size:11px;letter-spacing:.11em;padding:7px 12px;border-radius:6px}
 
-/* ═══════════ G · stickies ═══════════ */
-#stk{left:589px;top:290px;width:359px;display:flex;gap:6px}
-.note{width:86px;height:62px;overflow:hidden;background:#ffe795;padding:5px 6px;position:relative;
-  box-shadow:2px 3px 0 rgba(25,23,18,.16);border-radius:2px}
-.note .ni{position:absolute;right:5px;top:4px;width:10px;height:10px;stroke:#7d6a1e;stroke-width:1.8;fill:none}
-.note .nt{font-size:10.2px;line-height:1.16;color:#2b2510;letter-spacing:.01em}
-.note:nth-child(1){transform:rotate(-1.7deg)}
-.note:nth-child(2){transform:rotate(1.2deg)}
-.note:nth-child(3){transform:rotate(-.7deg)}
-.note:nth-child(4){transform:rotate(1.8deg)}
+/* ═══════ G · stickies ═══════ */
+#stk{left:589px;top:290px;width:359px;display:flex;gap:5px}
+.note{width:86px;height:62px;overflow:hidden;padding:6px 7px;border-radius:6px;position:relative;
+  box-shadow:0 2px 6px rgba(16,24,40,.10)}
+.note .ni{position:absolute;right:6px;top:5px;width:10px;height:10px;stroke-width:1.8;fill:none}
+.note .nt{font-weight:500;font-size:8.2px;line-height:1.28;letter-spacing:.005em}
 
-/* ═══════════ H/I · flows (labels only, no container) ═══════════ */
+/* ═══════ H/I · flows ═══════ */
 #flow{left:1002px;top:148px;width:270px}
-#flow .cap{font-size:12px;letter-spacing:.1em;margin-bottom:4px}
-#flow .row{display:flex;align-items:flex-start;gap:0}
+#flow .row,#post .row{display:flex;align-items:flex-start;gap:0;margin-top:6px}
 .wire{width:58px}
-.wire .fr{height:66px;background:#fff;border:1.5px solid var(--ink);border-radius:3px;padding:3px;
-  box-shadow:1.4px 1.8px 0 rgba(25,23,18,.11)}
-.wire .nm{font-size:9px;text-align:center;margin-top:3px;line-height:1.05;color:#332e26;letter-spacing:.02em}
-.wl{height:2.6px;background:#d9d4ca;border-radius:1px;margin-bottom:2.2px}
-.wl.dk{background:#8e8779}
+.wire .fr{height:64px;background:#fff;border:1px solid var(--line);border-radius:5px;padding:3px;
+  box-shadow:0 2px 6px rgba(16,24,40,.06)}
+.wire .nm{font-weight:500;font-size:7.4px;text-align:center;margin-top:4px;line-height:1.1;color:var(--body)}
+.wl{height:2.6px;background:#e3e7ed;border-radius:2px;margin-bottom:2.2px}
+.wl.dk{background:#aeb6c4}
 .w85{width:85%}.w65{width:65%}.w45{width:45%}
-.wv{background:#26221c;height:20px;border-radius:1.5px;margin-bottom:2.5px;display:flex;align-items:center;justify-content:center}
+.wv{height:19px;border-radius:3px;margin-bottom:2.5px;display:flex;align-items:center;justify-content:center}
 .wv svg{width:8px;height:8px;fill:#fff}
-.wb{height:6px;background:var(--red);border-radius:1.2px;margin-top:2.5px}
-.wf i{display:block;height:4.6px;border:1px solid #cac4b8;border-radius:1px;margin-bottom:1.8px}
+.wb{height:6px;border-radius:2px;margin-top:2.5px}
+.wf i{display:block;height:4.4px;border:1px solid #e3e7ed;border-radius:2px;margin-bottom:1.8px}
 .wc{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4px}
-.wc i{display:block;height:4.4px;background:#d9d4ca;border-radius:.5px}
-.wc i.on{background:var(--red)}
-.gap{width:12px;display:flex;align-items:center;justify-content:center;height:66px}
-.gap svg{width:10px;height:10px;stroke:var(--ink);stroke-width:1.8;fill:none}
-
+.wc i{display:block;height:4.4px;background:#e3e7ed;border-radius:1px}
+.gap{width:12px;display:flex;align-items:center;justify-content:center;height:64px}
+.gap svg,.gap2 svg{stroke:#aeb6c4;stroke-width:2;fill:none}
+.gap svg{width:9px;height:9px}
 #post{left:1002px;top:268px;width:270px}
-#post .cap{font-size:12px;letter-spacing:.1em;margin-bottom:4px}
-#post .row{display:flex;align-items:center;gap:0}
 .step{width:60px;text-align:center}
 .step .ic{height:20px;display:flex;align-items:center;justify-content:center}
-.step .ic svg{width:15px;height:15px;stroke:var(--pen);stroke-width:1.7;fill:none}
+.step .ic svg.ic2{width:15px;height:15px;stroke:var(--body);stroke-width:1.6;fill:none}
 .step .ic .lg{width:15px;height:15px}
-.step .nm{font-size:9px;line-height:1.05;color:#332e26;letter-spacing:.02em;margin-top:1px}
+.step .nm{font-weight:500;font-size:7.4px;line-height:1.15;color:var(--body);margin-top:2px}
 .gap2{width:10px;display:flex;align-items:center;justify-content:center;height:20px}
-.gap2 svg{width:9px;height:9px;stroke:var(--ink);stroke-width:1.8;fill:none}
+.gap2 svg{width:8px;height:8px}
 
-/* ═══════════ J · avatar offer cards ═══════════ */
+/* ═══════ J · avatars ═══════ */
 #avs{left:954px;top:344px;width:318px}
 #avs .row{display:flex;gap:5px}
-.av{width:75px;padding:6px 6px 7px}
-.av .nm{font-size:11px;letter-spacing:.06em;text-align:center;line-height:1;
-  padding-bottom:4px;border-bottom:1.3px solid rgba(25,23,18,.25);margin-bottom:4px}
-.av .li{font-size:9px;line-height:1.18;color:#4c463c;margin-bottom:3px;letter-spacing:.01em}
-.av .li b{color:var(--red)}
-.chip{display:block;text-align:center;background:#14120d;color:#fff;
-  font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 5px;border-radius:3px}
+.av{width:75px;padding:0 0 7px;overflow:hidden}
+.av .top{height:3px}
+.av .nm{font-weight:600;font-size:9px;letter-spacing:.09em;text-align:center;padding:6px 4px 5px}
+.av .li{font-weight:400;font-size:7.2px;line-height:1.28;color:var(--body);margin:0 6px 3px}
+.av .li b{font-weight:600}
 
-/* ═══════════ K · screenshots ═══════════ */
+/* ═══════ K · shots ═══════ */
 #shots{left:954px;top:566px;width:318px}
-.shot{overflow:hidden;background:#fff;border:1.7px solid var(--ink);border-radius:3px;
-  box-shadow:2px 3px 0 rgba(25,23,18,.14)}
+.shot{overflow:hidden;background:#fff;border:1.2px solid var(--line);border-radius:6px;
+  box-shadow:0 3px 10px rgba(16,24,40,.10)}
 .shot img{position:absolute;width:100%;left:0}
-#heat{padding:5px 6px}
-#heat .hh{font-size:9px;letter-spacing:.05em;color:#332e26;margin-bottom:3px}
-#heat table{border-collapse:collapse;width:100%}
-#heat td,#heat th{border:.8px solid #fff;height:12px;font-family:UI;font-weight:700;font-size:6.4px;text-align:center;color:#fff}
-#heat th{color:#3a352d;font-size:6.4px;height:10px}
-#heat td.l{color:#3a352d;text-align:left;font-family:Draft;font-size:8.4px}
+#heat{padding:7px 8px}
+#heat table{border-collapse:collapse;width:100%;margin-top:5px}
+#heat td,#heat th{border:1px solid #fff;height:12px;font-weight:600;font-size:6.2px;text-align:center;color:#fff;border-radius:2px}
+#heat th{color:var(--mute);font-size:6.2px;height:10px}
+#heat td.l{color:var(--body);text-align:left;font-weight:500;font-size:7px}
 
-/* ═══════════ M · ad sources ═══════════ */
+/* ═══════ M · sources ═══════ */
 #src{left:470px;top:356px;width:80px}
-#src .cap{font-size:11px;letter-spacing:.08em;margin-bottom:5px}
-#src .r{display:flex;align-items:center;gap:5px;height:17px}
+#src .r{display:flex;align-items:center;gap:5px;height:16px}
 #src .r .lg{width:11px;height:11px;flex:0 0 11px}
-#src .r svg{width:11px;height:11px;flex:0 0 11px;stroke:var(--pen);stroke-width:1.8;fill:none}
-#src .r span{font-size:9.6px;color:#413b33;letter-spacing:.01em;line-height:1}
+#src .r svg.ic{width:11px;height:11px;flex:0 0 11px;stroke:var(--body);stroke-width:1.7;fill:none}
+#src .r span{font-weight:400;font-size:7.6px;color:var(--body);line-height:1}
 
-/* ═══════════ N · tree ═══════════ */
+/* ═══════ N · tree ═══════ */
 #tree{left:556px;top:356px;width:389px}
 #tree .cols{display:flex;gap:8px}
 #tree .col{width:124px}
-#tree .col>.chip{margin-bottom:6px;font-size:9px;padding:3.5px 4px}
-.chip.c1{background:#a83128}.chip.c2{background:#1c4a8f}.chip.c3{background:#1c6440}
-.tc{padding:4px 6px 5px;margin-bottom:5px}
-.tc .th{font-size:10.5px;letter-spacing:.02em;line-height:1.05;color:#1e1b15}
-.tc .td{font-size:8.8px;line-height:1.16;color:#514a40;margin-top:2px;letter-spacing:.01em}
-.tc .td b{color:var(--red)}
-.tc.hot{border-color:var(--red);border-width:1.9px}
-.tc.dk{background:#14120d}
-.tc.dk .th{color:#fff}.tc.dk .td{color:#bcb5a7}
+#tree .col>.chip{margin-bottom:6px;display:block;text-align:center;font-size:7.6px;padding:4px 4px}
+.tc{padding:5px 7px 6px;margin-bottom:5px;border-left-width:2.5px;border-left-style:solid}
+.tc .th{font-weight:600;font-size:8.2px;letter-spacing:.01em;line-height:1.15;color:var(--ink)}
+.tc .td{font-weight:400;font-size:7.2px;line-height:1.25;color:var(--body);margin-top:2px}
+.tc .td b{font-weight:600}
+.tc.dk{background:#12141a;border-left-color:#12141a}
+.tc.dk .th{color:#fff}.tc.dk .td{color:#a6adbb}
 
-.mark{font-family:Marker,cursive;letter-spacing:.01em;user-select:none}
+/* ═══════ bottom-left panels ═══════ */
+.pnl{padding:10px 12px}
+#aw .band{height:15px;border-radius:4px;display:flex;align-items:center;padding:0 7px;margin-bottom:4px;
+  font-weight:600;font-size:7.4px;letter-spacing:.09em;color:#fff;text-transform:uppercase}
+#aw .rt{margin-left:auto;font-weight:500;font-size:6.6px;letter-spacing:.02em;opacity:.92}
+#cs .stat{display:flex;align-items:baseline;gap:5px;margin-top:6px}
+#cs .stat .v{font-weight:700;font-size:19px;letter-spacing:-.02em;line-height:1}
+#cs .stat .k{font-weight:400;font-size:7.4px;color:var(--mute);line-height:1.2}
+#hy .chain{display:flex;align-items:center;gap:0;margin-top:8px}
+#hy .n{flex:1;text-align:center}
+#hy .n .d{width:22px;height:22px;border-radius:7px;margin:0 auto 3px;display:flex;align-items:center;justify-content:center}
+#hy .n .d svg{width:11px;height:11px;stroke:#fff;stroke-width:2;fill:none}
+#hy .n span{display:block;font-weight:500;font-size:6.6px;color:var(--body);line-height:1.15}
+#hy .bars{display:flex;align-items:flex-end;gap:4px;height:32px;margin-top:9px}
+#hy .bars i{flex:1;border-radius:3px 3px 0 0}
+#mx .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}
+#mx .m{border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff;
+  box-shadow:0 1px 3px rgba(16,24,40,.05)}
+#mx .m .tb{height:3px}
+#mx .m .bd{padding:3px}
+#mx .m .im{height:13px;border-radius:2px;margin-bottom:2.5px}
+#mx .m .ln{height:2px;background:#e3e7ed;border-radius:2px;margin-bottom:1.8px}
+#mx .m .cta{height:4.5px;border-radius:2px}
+#mx .m .cp{font-weight:500;font-size:5.8px;letter-spacing:.02em;text-align:center;
+  padding:2px 1px 3px;line-height:1.1;color:var(--body)}
+
+.mark{font-family:Marker,cursive;line-height:1;user-select:none}
 </style>
 
+<!--SPRITE:START-->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="lg-meta" viewBox="0 0 24 24" fill="currentColor"><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></symbol>
   <symbol id="lg-instagram" viewBox="0 0 24 24" fill="currentColor"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol>
@@ -252,7 +269,14 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
   <symbol id="lg-stripe" viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></symbol>
   <symbol id="lg-reddit" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z"/></symbol>
   <symbol id="lg-zoom" viewBox="0 0 24 24" fill="currentColor"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"/></symbol>
+  <symbol id="lg-slack" viewBox="0 0 24 24" fill="currentColor"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></symbol>
+  <symbol id="lg-notion" viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></symbol>
+  <symbol id="lg-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="lg-snapchat" viewBox="0 0 24 24" fill="currentColor"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></symbol>
+  <symbol id="lg-googlesheets" viewBox="0 0 24 24" fill="currentColor"><path d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></symbol>
+  <symbol id="lg-x" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
 </svg>
+<!--SPRITE:END-->
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"/></symbol>
@@ -268,23 +292,25 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
   <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 11l7-4v10l-7-4"/></symbol>
   <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 014 0v6m0-4a2 2 0 014 0v5m0-3a2 2 0 014 0v6a7 7 0 01-7 7h-2a7 7 0 01-7-7v-3a2 2 0 014 0"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 13l5 5L21 5"/></symbol>
-  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-8 8H8l-5 3 1.5-5A8 8 0 1121 12z"/></symbol>
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
-  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4"/><path d="M2.5 21a6.5 6.5 0 0113 0M16 5.5a3.4 3.4 0 010 6.6M18 21a6.4 6.4 0 00-2-4.4"/></symbol>
   <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6L10 20 5 3z"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></symbol>
   <symbol id="f-play" viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z" fill="currentColor" stroke="none"/></symbol>
 </svg>
 
 <div id="board">
 
-  <!-- ═══════ A · funnel, drawn straight on the paper ═══════ -->
+  <!-- ═══════ A · funnel ═══════ -->
+  <div class="abs" style="left:14px;top:12px"><span class="sec u-blue">Cold Traffic Funnel</span></div>
+  <svg class="pen" style="left:14px;top:46px;width:238px;height:290px">
+    <path class="hair" style="fill:#f7f9fc" d="M4 22 L234 22 L170 285 L68.5 285 Z"/>
+  </svg>
   <div class="abs" id="fn">
-    <div class="h cap">Cold Traffic Funnel</div>
-
     <div class="band" style="width:232px">
-      <div class="rule" style="top:0;width:232px"></div>
-      <div class="h bl">Awareness</div>
+      <div class="rule" style="top:0;width:232px;background:var(--blue)"></div>
+      <div class="bl" style="color:var(--blue)">Awareness</div>
       <div class="items">
         <div class="it"><div class="gl"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div><span>Meta Ads</span></div>
         <div class="it"><div class="gl"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div><span>TikTok</span></div>
@@ -292,297 +318,344 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
         <div class="it"><div class="gl"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span></div><span>Reels</span></div>
       </div>
     </div>
-
     <div class="band" style="width:198px">
-      <div class="rule" style="top:0;width:198px"></div>
-      <div class="h bl">Interest</div>
+      <div class="rule" style="top:0;width:198px;background:var(--violet)"></div>
+      <div class="bl" style="color:var(--violet)">Interest</div>
       <div class="items">
-        <div class="it"><div class="gl"><svg><use href="#i-bolt"/></svg></div><span>Hook</span></div>
-        <div class="it"><div class="gl"><svg><use href="#i-eye"/></svg></div><span>Angle</span></div>
-        <div class="it"><div class="gl"><svg><use href="#i-play"/></svg></div><span>VSL</span></div>
-        <div class="it"><div class="gl"><svg><use href="#i-star"/></svg></div><span>Proof</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-bolt"/></svg></div><span>Hook</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-eye"/></svg></div><span>Angle</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-play"/></svg></div><span>VSL</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-star"/></svg></div><span>Proof</span></div>
       </div>
     </div>
-
     <div class="band" style="width:164px">
-      <div class="rule" style="top:0;width:164px"></div>
-      <div class="h bl">Intent</div>
+      <div class="rule" style="top:0;width:164px;background:var(--teal)"></div>
+      <div class="bl" style="color:var(--teal)">Intent</div>
       <div class="items">
-        <div class="it"><div class="gl"><svg><use href="#i-form"/></svg></div><span>Apply</span></div>
-        <div class="it"><div class="gl"><svg><use href="#i-filter"/></svg></div><span>Qualify</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-form"/></svg></div><span>Apply</span></div>
+        <div class="it"><div class="gl"><svg class="ic"><use href="#i-filter"/></svg></div><span>Qualify</span></div>
         <div class="it"><div class="gl"><span class="lg lg-calendly"><svg><use href="#lg-calendly"/></svg></span></div><span>Book</span></div>
       </div>
     </div>
-
     <div class="band" style="width:130px">
-      <div class="rule" style="top:0;width:130px"></div>
-      <div class="h bl">Education</div>
+      <div class="rule" style="top:0;width:130px;background:var(--amber)"></div>
+      <div class="bl" style="color:#b4770a">Education</div>
       <div class="items" style="gap:5px">
-        <div class="it" style="width:40px"><div class="gl"><svg><use href="#i-phone"/></svg></div><span>Setter</span></div>
+        <div class="it" style="width:40px"><div class="gl"><svg class="ic"><use href="#i-phone"/></svg></div><span>Setter</span></div>
         <div class="it" style="width:40px"><div class="gl"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><span>15 Emails</span></div>
-        <div class="it" style="width:40px"><div class="gl"><svg><use href="#i-video"/></svg></div><span>Videos</span></div>
+        <div class="it" style="width:40px"><div class="gl"><svg class="ic"><use href="#i-video"/></svg></div><span>Videos</span></div>
       </div>
     </div>
-
     <div class="band" style="width:96px">
-      <div class="rule" style="top:0;width:96px"></div>
-      <div class="h bl">Close</div>
+      <div class="rule" style="top:0;width:96px;background:var(--green)"></div>
+      <div class="bl" style="color:var(--green)">Close</div>
       <div class="items" style="gap:4px">
-        <div class="it" style="width:36px"><div class="gl"><svg><use href="#i-video"/></svg></div><span>Call</span></div>
+        <div class="it" style="width:36px"><div class="gl"><svg class="ic"><use href="#i-video"/></svg></div><span>Call</span></div>
         <div class="it" style="width:36px"><div class="gl"><span class="lg lg-stripe"><svg><use href="#lg-stripe"/></svg></span></div><span>Cash</span></div>
       </div>
     </div>
   </div>
-  <svg class="pen" style="left:14px;top:12px;width:238px;height:308px">
-    <path class="hair" d="M4 24 C 4 23.5, 233 23.8, 234 24 L 170 301 C 169 301.5, 70 301.2, 68.5 301 Z"/>
-  </svg>
 
-  <!-- ═══════ B · ad platforms ═══════ -->
-  <div class="abs h" style="left:300px;top:6px;width:468px;text-align:center;font-size:13px;letter-spacing:.14em">Where the traffic comes from</div>
-  <div class="abs box" id="plat">
+  <!-- ═══════ B · platforms ═══════ -->
+  <div class="abs" style="left:300px;top:4px;width:468px;text-align:center">
+    <span class="sec u-blue">Where the traffic comes from</span></div>
+  <div class="abs card" id="plat">
     <div class="grid">
       <div class="pcard"><div class="nm">Meta</div><div class="lgw"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#0081fb"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt" style="background:#0081fb"></div></div></div>
       <div class="pcard"><div class="nm">Instagram</div><div class="lgw"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w45"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#e4405f"></div><div class="ln w65"></div><div class="ln w45"></div><div class="bt" style="background:#e4405f"></div></div></div>
       <div class="pcard"><div class="nm">TikTok</div><div class="lgw"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w45"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#17181c"></div><div class="ln w85"></div><div class="ln w45"></div><div class="bt" style="background:#25f4ee"></div></div></div>
       <div class="pcard"><div class="nm">YouTube</div><div class="lgw"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w85"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#f00"></div><div class="ln w65"></div><div class="ln w85"></div><div class="bt" style="background:#f00"></div></div></div>
       <div class="pcard"><div class="nm">Google Ads</div><div class="lgw"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w45"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#4285f4"></div><div class="ln w45"></div><div class="ln w65"></div><div class="bt" style="background:#fbbc05"></div></div></div>
       <div class="pcard"><div class="nm">LinkedIn</div><div class="lgw"><span class="lg lg-linkedin"><svg><use href="#lg-linkedin"/></svg></span></div>
-        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+        <div class="mock"><div class="im" style="background:#0a66c2"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt" style="background:#0a66c2"></div></div></div>
     </div>
   </div>
 
-  <!-- arrow → circle -->
   <svg class="pen" style="left:772px;top:58px;width:26px;height:18px">
-    <path d="M0 9 C 8 4, 14 14, 22 8"/><path d="M15 3 L23 8 L15 14"/>
+    <path style="stroke:#aeb6c4" d="M0 9 H20"/><path style="stroke:#aeb6c4" d="M15 4 L21 9 L15 14"/>
   </svg>
 
-  <!-- ═══════ B2 · red circled outcome ═══════ -->
+  <!-- ═══════ B2 · circled stat ═══════ -->
   <div class="abs" id="circ">
     <svg class="pen" style="left:0;top:0;width:126px;height:96px">
-      <path class="red" style="stroke-width:2.8" d="M26 11 C 66 2, 112 9, 120 36 C 127 62, 96 90, 58 90 C 24 90, 4 74, 5 48 C 6 27, 12 16, 26 11"/>
-      <path class="red thin" style="stroke-width:1.9" d="M30 16 C 68 8, 108 15, 114 39 C 120 62, 92 85, 58 85"/>
+      <path class="red" style="stroke-width:2.6" d="M26 11 C 66 2, 112 9, 120 36 C 127 62, 96 90, 58 90 C 24 90, 4 74, 5 48 C 6 27, 12 16, 26 11"/>
+      <path class="red" style="stroke-width:1.7" d="M30 16 C 68 8, 108 15, 114 39 C 120 62, 92 85, 58 85"/>
     </svg>
     <div class="t1">5&ndash;12 ADS</div>
     <div class="t2">1 Ad Set</div>
   </div>
 
-  <!-- arrow → checklist -->
   <svg class="pen" style="left:930px;top:58px;width:22px;height:18px">
-    <path d="M0 9 C 7 4, 12 14, 19 8"/><path d="M12 3 L20 8 L12 14"/>
+    <path style="stroke:#aeb6c4" d="M0 9 H16"/><path style="stroke:#aeb6c4" d="M11 4 L17 9 L11 14"/>
   </svg>
 
   <!-- ═══════ C · checklist ═══════ -->
-  <div class="abs box" id="chk">
-    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Lower Cost Per Call</div></div>
-    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Better Lead Quality</div></div>
-    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Minimized Friction</div></div>
-    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Counterpositioned</div></div>
-    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Predictable Calls</div></div>
+  <div class="abs card" id="chk">
+    <div class="row"><div class="cb" style="background:var(--green)"><svg><use href="#i-check"/></svg></div><div class="t">Lower Cost Per Call</div></div>
+    <div class="row"><div class="cb" style="background:var(--blue)"><svg><use href="#i-check"/></svg></div><div class="t">Better Lead Quality</div></div>
+    <div class="row"><div class="cb" style="background:var(--violet)"><svg><use href="#i-check"/></svg></div><div class="t">Minimized Friction</div></div>
+    <div class="row"><div class="cb" style="background:var(--amber)"><svg><use href="#i-check"/></svg></div><div class="t">Counterpositioned</div></div>
+    <div class="row"><div class="cb" style="background:var(--red)"><svg><use href="#i-check"/></svg></div><div class="t">Predictable Calls</div></div>
   </div>
 
-  <!-- ═══════ D · the stack ═══════ -->
+  <!-- ═══════ D · stack + fan ═══════ -->
   <div class="abs" id="stack">
-    <div class="h cap">The stack behind it</div>
+    <span class="sec u-violet">The stack behind it</span>
     <div class="row">
-      <div class="disc"><span class="lg lg-calendly lg-white"><svg><use href="#lg-calendly"/></svg></span></div>
-      <div class="disc"><span class="lg lg-hubspot lg-white"><svg><use href="#lg-hubspot"/></svg></span></div>
-      <div class="disc"><span class="lg lg-twilio lg-white"><svg><use href="#lg-twilio"/></svg></span></div>
-      <div class="disc"><span class="lg lg-gmail lg-white"><svg><use href="#lg-gmail"/></svg></span></div>
-      <div class="disc"><span class="lg lg-stripe lg-white"><svg><use href="#lg-stripe"/></svg></span></div>
+      <div class="disc" style="background:#006bff"><span class="lg lg-calendly lg-white"><svg><use href="#lg-calendly"/></svg></span></div>
+      <div class="disc" style="background:#ff7a59"><span class="lg lg-hubspot lg-white"><svg><use href="#lg-hubspot"/></svg></span></div>
+      <div class="disc" style="background:#f22f46"><span class="lg lg-twilio lg-white"><svg><use href="#lg-twilio"/></svg></span></div>
+      <div class="disc" style="background:#ea4335"><span class="lg lg-gmail lg-white"><svg><use href="#lg-gmail"/></svg></span></div>
+      <div class="disc" style="background:#635bff"><span class="lg lg-stripe lg-white"><svg><use href="#lg-stripe"/></svg></span></div>
     </div>
   </div>
 
-  <!-- fan: objection handling → three assets -->
   <div class="abs rpill" style="left:290px;top:206px;width:130px">Objection Handling</div>
-  <svg class="pen" style="left:254px;top:224px;width:236px;height:32">
-    <path class="thin" style="stroke:var(--red)" d="M101 0 C 101 12, 40 14, 38 30"/>
-    <path class="thin" style="stroke:var(--red)" d="M104 0 C 104 14, 112 16, 112 30"/>
-    <path class="thin" style="stroke:var(--red)" d="M107 0 C 107 12, 186 14, 190 30"/>
+  <svg class="pen" style="left:254px;top:224px;width:236px;height:32px">
+    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M101 0 C 101 12, 40 14, 38 30"/>
+    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M104 0 C 104 14, 112 16, 112 30"/>
+    <path style="stroke:#e6b3b3;stroke-width:1.3" d="M107 0 C 107 12, 186 14, 190 30"/>
   </svg>
   <div class="abs rpill" style="left:254px;top:256px;width:74px">Pre-frame page</div>
   <div class="abs rpill" style="left:334px;top:256px;width:74px">15 emails</div>
   <div class="abs rpill" style="left:414px;top:256px;width:74px">Retarget ads</div>
 
-  <!-- ═══════ E · anchor logo ═══════ -->
+  <!-- ═══════ E · anchor ═══════ -->
   <div class="abs" id="anchor"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
-
-  <!-- converging strokes: platforms → anchor → title -->
-  <svg class="pen" style="left:330px;top:120px;width:340px;height:120px">
-    <path class="hair" d="M28 2 C 40 40, 150 52, 196 44"/>
-    <path class="hair" d="M108 2 C 116 34, 168 46, 200 46"/>
-    <path class="hair" d="M188 2 C 190 22, 200 34, 202 44"/>
-    <path class="hair" d="M268 2 C 262 26, 232 38, 208 46"/>
-    <path class="hair" d="M336 2 C 322 30, 244 42, 210 48"/>
-    <path class="hair" d="M212 62 C 240 78, 278 74, 306 62"/>
-  </svg>
 
   <!-- ═══════ F · title ═══════ -->
   <div class="abs" id="ttl">
     <div class="l1">THE HIGH-TICKET</div>
     <div class="l2">AD PLAYBOOK</div>
-    <svg class="pen" style="left:-3px;top:84px;width:326px;height:16px">
-      <path class="red" style="stroke-width:4.2" d="M2 6 C 72 1, 186 3, 320 6"/>
-      <path class="red" style="stroke-width:2.6" d="M9 14 C 82 9, 194 12, 300 13"/>
+    <svg class="pen" style="left:-2px;top:84px;width:326px;height:15px">
+      <path style="stroke:var(--red);stroke-width:4.4" d="M2 5 H318"/>
+      <path style="stroke:var(--amber);stroke-width:2.6" d="M8 13 H262"/>
     </svg>
     <div class="bar">8 ANGLES. 1 AVATAR. EVERY BOOKED CALL.</div>
   </div>
 
-  <!-- ═══════ L · wordmarks (presenter overlaps these) ═══════ -->
-  <div class="abs mark" style="left:254px;top:284px;font-size:41px;color:#1d1a14;transform:rotate(-1.2deg)">$40K OFFERS</div>
-  <div class="abs h" style="left:262px;top:330px;font-size:19px;color:#8d867a;letter-spacing:.22em">on cold traffic</div>
+  <!-- ═══════ wordmark ═══════ -->
+  <div class="abs mark" style="left:256px;top:286px;font-size:38px;color:#12141a">$40K OFFERS</div>
+  <div class="abs" style="left:260px;top:328px;font-weight:500;font-size:10px;letter-spacing:.28em;color:var(--mute);text-transform:uppercase">on cold traffic</div>
 
   <!-- ═══════ G · stickies ═══════ -->
   <div class="abs" id="stk">
-    <div class="note"><svg class="ni"><use href="#i-target"/></svg><div class="nt">Cold-traffic<br>offer, or<br>nothing works</div></div>
-    <div class="note"><svg class="ni"><use href="#i-bolt"/></svg><div class="nt">Speed to lead:<br>call back in<br>5&ndash;15 min</div></div>
-    <div class="note"><svg class="ni"><use href="#i-doc"/></svg><div class="nt">Every ad must<br>stand on<br>its own</div></div>
-    <div class="note"><svg class="ni"><use href="#i-eye"/></svg><div class="nt">Describe their<br>problem better<br>than they can</div></div>
+    <div class="note" style="background:#fff3c4"><svg class="ni" style="stroke:#a1791a"><use href="#i-target"/></svg>
+      <div class="nt" style="color:#5a4208">Cold-traffic<br>offer, or<br>nothing works</div></div>
+    <div class="note" style="background:#dbeafe"><svg class="ni" style="stroke:#2563eb"><use href="#i-bolt"/></svg>
+      <div class="nt" style="color:#173a80">Speed to lead:<br>call back in<br>5&ndash;15 min</div></div>
+    <div class="note" style="background:#dcfce7"><svg class="ni" style="stroke:#16a34a"><use href="#i-doc"/></svg>
+      <div class="nt" style="color:#14532d">Every ad must<br>stand on<br>its own</div></div>
+    <div class="note" style="background:#fce7f3"><svg class="ni" style="stroke:#db2777"><use href="#i-eye"/></svg>
+      <div class="nt" style="color:#701a45">Describe their<br>problem better<br>than they can</div></div>
   </div>
 
   <!-- ═══════ H · funnel flow ═══════ -->
   <div class="abs" id="flow">
-    <div class="hr cap">4. Funnel flow</div>
+    <span class="sec u-teal">Funnel flow</span>
     <div class="row">
       <div class="wire"><div class="fr">
-        <div class="wv"><svg><use href="#f-play"/></svg></div>
-        <div class="wl w85"></div><div class="wl dk w65"></div><div class="wl w45"></div><div class="wb"></div>
-      </div><div class="h nm">Hook / Ad</div></div>
+        <div class="wv" style="background:#0081fb"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wl dk w65"></div><div class="wl w45"></div><div class="wb" style="background:#0081fb"></div>
+      </div><div class="nm">Hook / Ad</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w85"></div><div class="wl w65"></div>
-        <div class="wv" style="height:17px"><svg><use href="#f-play"/></svg></div>
-        <div class="wl w85"></div><div class="wb"></div>
-      </div><div class="h nm">VSL / Lander</div></div>
+        <div class="wv" style="height:17px;background:#7c3aed"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wb" style="background:#7c3aed"></div>
+      </div><div class="nm">VSL / Lander</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w65"></div>
-        <div class="wf" style="margin-top:3px"><i></i><i></i><i></i><i></i></div><div class="wb"></div>
-      </div><div class="h nm">Application</div></div>
+        <div class="wf" style="margin-top:3px"><i></i><i></i><i></i><i></i></div><div class="wb" style="background:#0d9488"></div>
+      </div><div class="nm">Application</div></div>
       <div class="gap"><svg><use href="#i-arrow"/></svg></div>
       <div class="wire"><div class="fr">
         <div class="wl dk w65"></div><div class="wl w45"></div>
-        <div class="wc" style="margin-top:2px"><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div>
-        <div class="wb" style="margin-top:4px"></div>
-      </div><div class="h nm">Calendar</div></div>
+        <div class="wc" style="margin-top:2px"><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i><i></i><i></i><i style="background:#16a34a"></i></div>
+        <div class="wb" style="background:#16a34a;margin-top:4px"></div>
+      </div><div class="nm">Calendar</div></div>
     </div>
   </div>
 
-  <!-- ═══════ I · post-booking ═══════ -->
+  <!-- ═══════ I · education window ═══════ -->
   <div class="abs" id="post">
-    <div class="hr cap">5. Education window</div>
+    <span class="sec u-amber">Education window</span>
     <div class="row">
-      <div class="step"><div class="ic"><svg><use href="#i-doc"/></svg></div><div class="h nm">Pre-frame<br>page</div></div>
+      <div class="step"><div class="ic"><svg class="ic2"><use href="#i-doc"/></svg></div><div class="nm">Pre-frame<br>page</div></div>
       <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
-      <div class="step"><div class="ic"><span class="lg lg-twilio"><svg><use href="#lg-twilio"/></svg></span></div><div class="h nm">Setter<br>5&ndash;15 min</div></div>
+      <div class="step"><div class="ic"><span class="lg lg-twilio"><svg><use href="#lg-twilio"/></svg></span></div><div class="nm">Setter<br>5&ndash;15 min</div></div>
       <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
-      <div class="step"><div class="ic"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><div class="h nm">15 emails<br>/ 3 days</div></div>
+      <div class="step"><div class="ic"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><div class="nm">15 emails<br>/ 3 days</div></div>
       <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
-      <div class="step"><div class="ic"><svg><use href="#i-hand"/></svg></div><div class="h nm">Closing<br>call</div></div>
+      <div class="step"><div class="ic"><svg class="ic2"><use href="#i-hand"/></svg></div><div class="nm">Closing<br>call</div></div>
     </div>
   </div>
 
-  <!-- ═══════ J · avatar cards ═══════ -->
-  <div class="abs" id="avs">
-    <div class="row">
-      <div class="av box-s"><div class="h nm">SaaS</div>
-        <div class="li">CAC too high</div><div class="li"><b>Angle:</b> paid can&rsquo;t outrun churn</div></div>
-      <div class="av box-s"><div class="h nm">Ecom</div>
-        <div class="li">Blended ROAS stuck</div><div class="li"><b>Angle:</b> creative, not bidding</div></div>
-      <div class="av box-s"><div class="h nm">Agency</div>
-        <div class="li">Referral-dependent</div><div class="li"><b>Angle:</b> own your lead flow</div></div>
-      <div class="av box-s"><div class="h nm">Info</div>
-        <div class="li">Launch-to-launch cash</div><div class="li"><b>Angle:</b> evergreen &gt; launches</div></div>
+  <!-- ═══════ P1 · market awareness ═══════ -->
+  <div class="abs card pnl" id="aw" style="left:14px;top:352px;width:218px;height:176px">
+    <span class="sec u-violet">Market awareness</span>
+    <div style="margin-top:9px">
+      <div class="band" style="background:#12141a">Unaware<span class="rt">Hook ad</span></div>
+      <div class="band" style="background:#3b3f4d">Problem aware<span class="rt">Angle 1</span></div>
+      <div class="band" style="background:#7c3aed">Solution aware<span class="rt">Angle 2</span></div>
+      <div class="band" style="background:#2563eb">Product aware<span class="rt">Proof ad</span></div>
+      <div class="band" style="background:#dc2626">Most aware<span class="rt">Straight offer</span></div>
     </div>
-    <div style="display:flex;gap:5px;margin-top:6px">
-      <div class="chip" style="flex:1">One avatar per campaign</div>
-      <div class="chip" style="flex:1">Angles do the targeting</div>
+    <div class="mini" style="margin-top:7px">One angle per level &mdash; that is where the 8 ads come from.</div>
+  </div>
+
+  <!-- ═══════ P2 · case study ═══════ -->
+  <div class="abs card pnl" id="cs" style="left:240px;top:352px;width:222px;height:176px">
+    <span class="sec u-amber">Live case study</span>
+    <div class="wm wm-vc" style="margin-top:9px"><i>VIRAL</i> <b>COACH</b></div>
+    <div class="mini" style="margin-top:3px">Medical professionals &middot; guaranteed offer</div>
+    <div class="stat"><div class="v" style="color:#f0932b">15.5M</div><div class="k">avg client views<br>after 3 months</div></div>
+    <div class="stat"><div class="v" style="color:var(--blue)">1M+</div><div class="k">leads generated<br>for clients</div></div>
+    <div class="mini" style="margin-top:8px">Application funnel &rarr; qualified calls only.</div>
+  </div>
+
+  <!-- ═══════ P3 · attribution ═══════ -->
+  <div class="abs card pnl" id="hy" style="left:14px;top:536px;width:218px;height:176px">
+    <span class="sec u-red">Attribution</span>
+    <div class="wm wm-hyros" style="margin-top:9px">HYR<i>O</i>S</div>
+    <div class="mini" style="margin-top:3px">Track calls and cash &mdash; not clicks.</div>
+    <div class="chain">
+      <div class="n"><div class="d" style="background:#0081fb"><svg><use href="#i-cursor"/></svg></div><span>Ad click</span></div>
+      <div class="n"><div class="d" style="background:#7c3aed"><svg><use href="#i-cal"/></svg></div><span>Booked</span></div>
+      <div class="n"><div class="d" style="background:#f59e0b"><svg><use href="#i-phone"/></svg></div><span>Showed</span></div>
+      <div class="n"><div class="d" style="background:#16a34a"><svg><use href="#i-cash"/></svg></div><span>Closed</span></div>
+    </div>
+    <div class="bars">
+      <i style="height:38%;background:#c7d2fe"></i><i style="height:56%;background:#a5b4fc"></i>
+      <i style="height:44%;background:#93c5fd"></i><i style="height:72%;background:#60a5fa"></i>
+      <i style="height:61%;background:#3b82f6"></i><i style="height:88%;background:#2563eb"></i>
+      <i style="height:100%;background:#16a34a"></i>
     </div>
   </div>
 
-  <!-- ═══════ J2 · marker callout (no box) ═══════ -->
-  <div class="abs mark" style="left:958px;top:484px;font-size:22px;color:var(--red);letter-spacing:.01em">SAME OFFER.</div>
-  <div class="abs mark" style="left:958px;top:512px;font-size:22px;color:#1d1a14;letter-spacing:.01em">8 DIFFERENT DOORS.</div>
-  <svg class="pen" style="left:958px;top:540px;width:300px;height:14px">
-    <path class="red thin" style="stroke-width:2.6" d="M2 5 C 70 1, 190 3, 282 6"/>
-  </svg>
-
-  <!-- ═══════ K · screenshots ═══════ -->
-  <div class="abs" id="shots">
-    <div class="abs shot" style="left:0;top:0;width:100px;height:146px"><img src="assets/img/lander.png" style="top:0"></div>
-    <div class="abs shot" style="left:104px;top:0;width:100px;height:146px"><img src="assets/img/proof.png" style="top:-10px"></div>
-    <div class="abs box-s" id="heat" style="left:208px;top:0;width:110px">
-      <div class="h hh">CPL &mdash; avatar &times; angle</div>
-      <table>
-        <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
-        <tr><td class="l">SaaS</td><td style="background:#1b4f9c">42</td><td style="background:#3d78c4">61</td><td style="background:#8fb4dd">88</td><td style="background:#2c62ae">51</td></tr>
-        <tr><td class="l">Ecom</td><td style="background:#6b9bd2">74</td><td style="background:#153f80">39</td><td style="background:#8fb4dd">91</td><td style="background:#3d78c4">63</td></tr>
-        <tr><td class="l">Agency</td><td style="background:#153f80">36</td><td style="background:#2c62ae">49</td><td style="background:#6b9bd2">72</td><td style="background:#1b4f9c">44</td></tr>
-        <tr><td class="l">Info</td><td style="background:#3d78c4">58</td><td style="background:#153f80">33</td><td style="background:#2c62ae">47</td><td style="background:#6b9bd2">69</td></tr>
-      </table>
-      <div class="h" style="font-size:8.4px;color:#514a40;margin-top:3px;letter-spacing:.02em">Kill the pale ones</div>
+  <!-- ═══════ P4 · ad matrix ═══════ -->
+  <div class="abs card pnl" id="mx" style="left:240px;top:536px;width:222px;height:176px">
+    <span class="sec u-green">The 8 ads &middot; one ad set</span>
+    <div class="grid">
+      <div class="m"><div class="tb" style="background:#f59e0b"></div><div class="bd"><div class="im" style="background:#fde68a"></div><div class="ln"></div><div class="cta" style="background:#f59e0b"></div></div><div class="cp">Hook</div></div>
+      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 1</div></div>
+      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 2</div></div>
+      <div class="m"><div class="tb" style="background:#2563eb"></div><div class="bd"><div class="im" style="background:#bfdbfe"></div><div class="ln"></div><div class="cta" style="background:#2563eb"></div></div><div class="cp">Angle 3</div></div>
+      <div class="m"><div class="tb" style="background:#16a34a"></div><div class="bd"><div class="im" style="background:#bbf7d0"></div><div class="ln"></div><div class="cta" style="background:#16a34a"></div></div><div class="cp">Offer</div></div>
+      <div class="m"><div class="tb" style="background:#0d9488"></div><div class="bd"><div class="im" style="background:#99f6e4"></div><div class="ln"></div><div class="cta" style="background:#0d9488"></div></div><div class="cp">Proof</div></div>
+      <div class="m"><div class="tb" style="background:#7c3aed"></div><div class="bd"><div class="im" style="background:#ddd6fe"></div><div class="ln"></div><div class="cta" style="background:#7c3aed"></div></div><div class="cp">Objection</div></div>
+      <div class="m"><div class="tb" style="background:#db2777"></div><div class="bd"><div class="im" style="background:#fbcfe8"></div><div class="ln"></div><div class="cta" style="background:#db2777"></div></div><div class="cp">Objection</div></div>
     </div>
+    <div class="mini" style="margin-top:7px">Meta finds the sequence &mdash; each ad still converts alone.</div>
   </div>
 
   <!-- ═══════ M · ad sources ═══════ -->
   <div class="abs" id="src">
-    <div class="h cap">Ad sources</div>
-    <div class="r"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span><span>Meta Ads</span></div>
-    <div class="r"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span><span>TikTok</span></div>
-    <div class="r"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span><span>YouTube</span></div>
-    <div class="r"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span><span>Google</span></div>
-    <div class="r"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span><span>Email</span></div>
-    <div class="r"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span><span>Creators</span></div>
-    <div class="r"><span class="lg lg-reddit"><svg><use href="#lg-reddit"/></svg></span><span>Reddit</span></div>
-    <div class="r"><svg><use href="#i-globe"/></svg><span>Organic</span></div>
+    <span class="sec u-pink" style="font-size:8.4px">Ad sources</span>
+    <div style="margin-top:7px">
+      <div class="r"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span><span>Meta Ads</span></div>
+      <div class="r"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span><span>TikTok</span></div>
+      <div class="r"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span><span>YouTube</span></div>
+      <div class="r"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span><span>Google</span></div>
+      <div class="r"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span><span>Email</span></div>
+      <div class="r"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span><span>Creators</span></div>
+      <div class="r"><span class="lg lg-reddit"><svg><use href="#lg-reddit"/></svg></span><span>Reddit</span></div>
+      <div class="r"><span class="lg lg-whatsapp"><svg><use href="#lg-whatsapp"/></svg></span><span>DMs</span></div>
+      <div class="r"><svg class="ic"><use href="#i-globe"/></svg><span>Organic</span></div>
+    </div>
   </div>
-  <svg class="pen" style="left:548px;top:400px;width:14px;height:60px">
-    <path class="hair" d="M1 6 C 9 14, 9 40, 2 52"/>
-  </svg>
 
   <!-- ═══════ N · tree ═══════ -->
   <div class="abs" id="tree">
     <div class="cols">
       <div class="col">
-        <div class="chip c1">1. Avatar &amp; angle</div>
-        <div class="tc box-s"><div class="th">Current beliefs</div><div class="td">what they hold as true today</div></div>
-        <div class="tc box-s"><div class="th">Problem lived in</div><div class="td">the daily, specific version</div></div>
-        <div class="tc box-s"><div class="th">Failed attempts</div><div class="td">what they already tried</div></div>
-        <div class="tc box-s dk"><div class="th">Angle = big idea</div><div class="td">Avatar &times; Angle = one ad</div></div>
+        <div class="chip" style="background:#dc2626">1 &middot; Avatar &amp; angle</div>
+        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Current beliefs</div><div class="td">what they hold as true today</div></div>
+        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Problem lived in</div><div class="td">the daily, specific version</div></div>
+        <div class="tc card-s" style="border-left-color:#dc2626"><div class="th">Failed attempts</div><div class="td">what they already tried</div></div>
+        <div class="tc card-s dk"><div class="th">Angle = big idea</div><div class="td">Avatar &times; Angle = one ad</div></div>
       </div>
       <div class="col">
-        <div class="chip c2">2. Ad roles</div>
-        <div class="tc box-s"><div class="th">Hook / soft CTA</div><div class="td">prospecting, wide net</div></div>
-        <div class="tc box-s"><div class="th">3 &times; hook angle</div><div class="td">hard CTA on each</div></div>
-        <div class="tc box-s"><div class="th">Offer + proof-led</div><div class="td">straight direct response</div></div>
-        <div class="tc box-s"><div class="th">2 &times; objection</div><div class="td">handled inside the ad</div></div>
+        <div class="chip" style="background:#2563eb">2 &middot; Ad roles</div>
+        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">Hook / soft CTA</div><div class="td">prospecting, wide net</div></div>
+        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">3 &times; hook angle</div><div class="td">hard CTA on each</div></div>
+        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">Offer + proof-led</div><div class="td">straight direct response</div></div>
+        <div class="tc card-s" style="border-left-color:#2563eb"><div class="th">2 &times; objection</div><div class="td">handled inside the ad</div></div>
       </div>
       <div class="col">
-        <div class="chip c3">3. Education window</div>
-        <div class="tc box-s"><div class="th">Pre-frame TY page</div><div class="td">objections &middot; student interviews</div></div>
-        <div class="tc box-s hot"><div class="th">Setters &mdash; speed to lead</div><div class="td"><b>5&ndash;15 min</b> &middot; pre-qualify</div></div>
-        <div class="tc box-s"><div class="th">15 long-form emails</div><div class="td">3 days &middot; <b>50&ndash;60%</b> open rates</div></div>
-        <div class="tc box-s"><div class="th">Video sales assets</div><div class="td">personalized, per objection</div></div>
+        <div class="chip" style="background:#16a34a">3 &middot; Education window</div>
+        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">Pre-frame TY page</div><div class="td">objections &middot; student interviews</div></div>
+        <div class="tc card-s" style="border-left-color:#f59e0b"><div class="th">Setters &mdash; speed to lead</div><div class="td"><b style="color:#dc2626">5&ndash;15 min</b> &middot; pre-qualify</div></div>
+        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">15 long-form emails</div><div class="td">3 days &middot; <b style="color:#16a34a">50&ndash;60%</b> open rates</div></div>
+        <div class="tc card-s" style="border-left-color:#16a34a"><div class="th">Video sales assets</div><div class="td">personalized, per objection</div></div>
       </div>
     </div>
   </div>
-  <svg class="pen" style="left:556px;top:356px;width:389px;height:256px">
-    <path class="hair" d="M124 66 C 132 64, 127 104, 133 102"/>
-    <path class="hair" d="M124 150 C 133 148, 128 186, 134 184"/>
-    <path class="hair" d="M256 102 C 264 100, 259 64, 265 62"/>
-    <path class="hair" d="M256 190 C 265 188, 260 150, 266 148"/>
+
+  <!-- ═══════ J · avatars ═══════ -->
+  <div class="abs" id="avs">
+    <div class="row">
+      <div class="av card-s"><div class="top" style="background:#2563eb"></div><div class="nm" style="color:#2563eb">SAAS</div>
+        <div class="li">CAC too high</div><div class="li"><b style="color:#2563eb">Angle:</b> paid can&rsquo;t outrun churn</div></div>
+      <div class="av card-s"><div class="top" style="background:#7c3aed"></div><div class="nm" style="color:#7c3aed">ECOM</div>
+        <div class="li">Blended ROAS stuck</div><div class="li"><b style="color:#7c3aed">Angle:</b> creative, not bidding</div></div>
+      <div class="av card-s"><div class="top" style="background:#0d9488"></div><div class="nm" style="color:#0d9488">AGENCY</div>
+        <div class="li">Referral-dependent</div><div class="li"><b style="color:#0d9488">Angle:</b> own your lead flow</div></div>
+      <div class="av card-s"><div class="top" style="background:#db2777"></div><div class="nm" style="color:#db2777">INFO</div>
+        <div class="li">Launch-to-launch cash</div><div class="li"><b style="color:#db2777">Angle:</b> evergreen &gt; launches</div></div>
+    </div>
+    <div style="display:flex;gap:5px;margin-top:6px">
+      <div class="chip" style="flex:1;text-align:center;background:#12141a">One avatar per campaign</div>
+      <div class="chip" style="flex:1;text-align:center;background:#12141a">Angles do the targeting</div>
+    </div>
+  </div>
+
+  <!-- ═══════ J2 · callout ═══════ -->
+  <div class="abs mark" style="left:958px;top:484px;font-size:21px;color:var(--red)">SAME OFFER.</div>
+  <div class="abs mark" style="left:958px;top:511px;font-size:21px;color:#12141a">8 DIFFERENT DOORS.</div>
+  <svg class="pen" style="left:958px;top:540px;width:300px;height:12px">
+    <path style="stroke:var(--amber);stroke-width:3" d="M2 5 H278"/>
   </svg>
 
-  <!-- ═══════ O · bottom marker line ═══════ -->
-  <div class="abs mark" style="left:494px;top:632px;font-size:44px;color:var(--red);letter-spacing:.08em">$ $ $</div>
-  <div class="abs mark" style="left:626px;top:636px;font-size:38px;color:#1d1a14;transform:rotate(-.8deg)">BOOKED CALLS</div>
-  <div class="abs h" style="left:632px;top:684px;font-size:15px;color:#8d867a;letter-spacing:.16em">not cheap leads</div>
-  <svg class="pen" style="left:478px;top:612px;width:466px;height:26px">
-    <path class="hair" d="M4 20 C 120 6, 320 4, 462 14"/>
+  <!-- ═══════ K · shots ═══════ -->
+  <div class="abs" id="shots">
+    <div class="abs shot" style="left:0;top:0;width:100px;height:146px"><img src="assets/img/lander.png" style="top:0"></div>
+    <div class="abs shot" style="left:104px;top:0;width:100px;height:146px"><img src="assets/img/proof.png" style="top:-10px"></div>
+    <div class="abs card-s" id="heat" style="left:208px;top:0;width:110px">
+      <span class="sec u-blue" style="font-size:7.4px">CPL by angle</span>
+      <table>
+        <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
+        <tr><td class="l">SaaS</td><td style="background:#1d4ed8">42</td><td style="background:#3b82f6">61</td><td style="background:#93c5fd">88</td><td style="background:#2563eb">51</td></tr>
+        <tr><td class="l">Ecom</td><td style="background:#60a5fa">74</td><td style="background:#1e40af">39</td><td style="background:#93c5fd">91</td><td style="background:#3b82f6">63</td></tr>
+        <tr><td class="l">Agency</td><td style="background:#1e3a8a">36</td><td style="background:#2563eb">49</td><td style="background:#60a5fa">72</td><td style="background:#1d4ed8">44</td></tr>
+        <tr><td class="l">Info</td><td style="background:#3b82f6">58</td><td style="background:#1e40af">33</td><td style="background:#2563eb">47</td><td style="background:#60a5fa">69</td></tr>
+      </table>
+      <div class="mini" style="margin-top:5px">Kill the pale ones.</div>
+    </div>
+  </div>
+
+  <!-- ═══════ Q · offer positioning strip ═══════ -->
+  <div class="abs card" style="left:470px;top:552px;width:475px;height:66px;padding:9px 13px;display:flex;align-items:center;gap:13px">
+    <div class="chip" style="background:#dc2626;flex:0 0 auto">Offer positioning</div>
+    <div style="flex:1">
+      <div style="font-weight:600;font-size:13.5px;letter-spacing:-.005em;line-height:1.2;color:#12141a">
+        If the offer isn&rsquo;t cold-traffic friendly, none of this works.</div>
+      <div class="mini" style="margin-top:3px">&ldquo;If you want to work with me, check this out&rdquo; converts on warm traffic. On cold it dies.</div>
+    </div>
+  </div>
+
+  <!-- ═══════ O · bottom line ═══════ -->
+  <div class="abs mark" style="left:494px;top:628px;font-size:40px;color:var(--green);letter-spacing:.06em">$ $ $</div>
+  <div class="abs mark" style="left:614px;top:630px;font-size:36px;color:#12141a">BOOKED CALLS</div>
+  <svg class="pen" style="left:614px;top:672px;width:300px;height:6px">
+    <path style="stroke:var(--green);stroke-width:3" d="M2 3 H286"/>
   </svg>
+  <div class="abs" style="left:616px;top:684px;font-weight:500;font-size:10.5px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase">not cheap leads</div>
 
 </div>

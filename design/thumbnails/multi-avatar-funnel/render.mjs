@@ -24,8 +24,11 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const W = 1280, H = 720;
 
+// 3x lands exactly on 3840x2160 (4K UHD); 4x is 5120x2880 for print/crops.
+const SCALES = [1, 2, 3, 4];
+
 const browser = await chromium.launch();
-for (const scale of [1, 2]) {
+for (const scale of SCALES) {
   const ctx = await browser.newContext({
     viewport: { width: W, height: H },
     deviceScaleFactor: scale,
@@ -35,7 +38,7 @@ for (const scale of [1, 2]) {
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(350);
   const el = await page.locator('#board');
-  const out = path.join(outDir, scale === 1 ? 'thumbnail-1280x720.png' : 'thumbnail-2560x1440.png');
+  const out = path.join(outDir, `thumbnail-${W * scale}x${H * scale}.png`);
   await el.screenshot({ path: out });
   console.log('wrote', out);
   await ctx.close();

@@ -1,0 +1,588 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>The High-Ticket Ad Playbook — Thumbnail</title>
+<style>
+@font-face{font-family:Marker;src:url(assets/fonts/permanent-marker-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Draft;src:url(assets/fonts/architects-daughter-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Hand;src:url(assets/fonts/caveat-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+@font-face{font-family:UI;src:url(assets/fonts/inter-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#3a3a3a}
+
+:root{
+  --ink:#191712;
+  --pen:#413b33;
+  --red:#c8261d;
+  --card:#fffefb;
+}
+
+#board{
+  position:relative;width:1280px;height:720px;overflow:hidden;
+  background:radial-gradient(118% 96% at 50% 38%, #fdfcf9 0%, #f5f2ec 60%, #e9e5db 100%);
+  /* every piece of lettering on this board is hand-drawn; UI font is display-only */
+  font-family:Draft,cursive;color:var(--ink);
+}
+#board::before{                       /* graph paper */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(66,76,92,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(66,76,92,.05) 1px,transparent 1px),
+    linear-gradient(rgba(66,76,92,.09) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(66,76,92,.09) 1px,transparent 1px);
+  background-size:16px 16px,16px 16px,96px 96px,96px 96px;
+}
+#board::after{                        /* paper shading */
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:60;
+  background:
+    radial-gradient(125% 82% at 50% 0%,transparent 56%,rgba(58,48,34,.10) 100%),
+    radial-gradient(92% 72% at 6% 100%,rgba(58,48,34,.09),transparent 62%);
+  mix-blend-mode:multiply;
+}
+
+/* ---------- primitives ---------- */
+.abs{position:absolute}
+.box{                                  /* the only kind of container on the board */
+  background:var(--card);border:2.3px solid var(--ink);
+  border-radius:13px 9px 15px 8px / 9px 15px 8px 13px;
+  box-shadow:2px 3px 0 rgba(25,23,18,.13);
+}
+.box-s{
+  background:var(--card);border:1.6px solid var(--ink);
+  border-radius:7px 5px 8px 4px / 5px 8px 4px 7px;
+  box-shadow:1.4px 1.8px 0 rgba(25,23,18,.10);
+}
+.h{                                    /* hand-drawn section heading */
+  font-family:Draft,cursive;text-transform:uppercase;
+  letter-spacing:.08em;line-height:1;color:var(--ink);
+}
+.hr{font-family:Draft,cursive;text-transform:uppercase;letter-spacing:.08em;line-height:1;color:var(--red)}
+svg.pen{position:absolute;overflow:visible;pointer-events:none}
+.pen path,.pen ellipse{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pen .red{stroke:var(--red)}
+.pen .thin{stroke-width:1.5}
+.pen .hair{stroke-width:1.2;stroke:rgba(25,23,18,.5)}
+
+/* ---------- logos (inline sprite; CSS mask-image is blocked on file:// SVGs) ---------- */
+.lg{display:inline-block;color:var(--ink);vertical-align:middle;line-height:0}
+.lg svg{width:100%;height:100%;display:block;fill:currentColor}
+.lg-meta{color:#0081fb}
+.lg-instagram{color:#e4405f}
+.lg-tiktok{color:#141414}
+.lg-youtube{color:#ff0000}
+.lg-googleads{color:#4285f4}
+.lg-linkedin{color:#0a66c2}
+.lg-calendly{color:#006bff}
+.lg-hubspot{color:#ff7a59}
+.lg-twilio{color:#f22f46}
+.lg-gmail{color:#ea4335}
+.lg-zapier{color:#ff4f00}
+.lg-stripe{color:#635bff}
+.lg-reddit{color:#ff4500}
+.lg-zoom{color:#0b5cff}
+.lg-white{color:#fff !important}
+
+/* ═══════════ A · funnel (no container — drawn straight on the paper) ═══════════ */
+#fn{left:14px;top:12px;width:238px}
+#fn .cap{font-size:15px;text-align:center;letter-spacing:.1em}
+#fn .band{position:relative;margin:0 auto;padding-top:7px;height:56px}
+#fn .bl{font-size:11.5px;text-align:center;letter-spacing:.14em}
+#fn .rule{position:absolute;left:50%;transform:translateX(-50%);height:1.3px;background:rgba(25,23,18,.42)}
+#fn .items{display:flex;justify-content:center;gap:8px;margin-top:5px}
+#fn .it{text-align:center;width:46px}
+#fn .it .gl{height:16px;display:flex;align-items:center;justify-content:center}
+#fn .it svg{width:14px;height:14px;stroke:var(--pen);stroke-width:1.7;fill:none}
+#fn .it .lg{width:13px;height:13px}
+#fn .it span{display:block;font-size:8.6px;line-height:1.1;color:#4c463c;margin-top:2px;letter-spacing:.01em}
+
+/* ═══════════ B · ad platforms ═══════════ */
+#plat{left:300px;top:22px;width:468px;height:98px;padding:8px}
+#plat .grid{display:flex;gap:6px}
+.pcard{width:70px;text-align:center}
+.pcard .nm{font-size:10px;letter-spacing:.02em;line-height:1;color:#211e18}
+.pcard .lgw{height:28px;display:flex;align-items:center;justify-content:center;margin:3px 0 2px}
+.pcard .lgw .lg{width:23px;height:23px}
+.pcard .mock{height:34px;border:1.3px solid #2a2620;border-radius:2.5px;background:#fff;padding:2.5px}
+.pcard .mock .im{height:16px;background:#26221c;border-radius:1.5px;margin-bottom:2px}
+.pcard .mock .ln{height:2.4px;background:#d7d2c8;border-radius:1px;margin-bottom:1.6px}
+.pcard .mock .bt{height:5px;background:var(--red);border-radius:1.2px}
+
+/* ═══════════ B2 · red circled outcome ═══════════ */
+#circ{left:800px;top:18px;width:126px;height:96px}
+#circ .t1{position:absolute;left:50%;top:26px;transform:translate(-50%,0) rotate(-2deg);
+  font-family:Marker,cursive;font-size:23px;color:var(--red);line-height:.9;white-space:nowrap}
+#circ .t2{position:absolute;left:50%;top:54px;transform:translate(-50%,0);
+  font-size:13px;color:var(--red);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+
+/* ═══════════ C · checklist ═══════════ */
+#chk{left:954px;top:6px;width:318px;height:136px;padding:10px 14px}
+#chk .row{display:flex;align-items:center;gap:9px;height:23px}
+#chk .cb{width:13px;height:13px;flex:0 0 13px;position:relative;border:1.7px solid var(--ink);border-radius:2.5px}
+#chk .cb svg{position:absolute;left:-1px;top:-3.5px;width:16px;height:16px;stroke:var(--red);stroke-width:2.5;fill:none}
+#chk .t{font-size:17px;letter-spacing:.01em;line-height:1;text-transform:none}
+
+/* ═══════════ D · the stack (red discs) + fan ═══════════ */
+#stack{left:254px;top:136px;width:228px}
+#stack .cap{font-size:11.5px;letter-spacing:.12em;margin-bottom:5px}
+#stack .row{display:flex;gap:9px}
+.disc{width:38px;height:38px;border-radius:50%;background:var(--red);
+  display:flex;align-items:center;justify-content:center;box-shadow:1.5px 2px 0 rgba(25,23,18,.17)}
+.disc .lg{width:18px;height:18px}
+.rpill{
+  border:1.6px solid var(--red);border-radius:9px;background:#fff;
+  text-align:center;font-size:10px;letter-spacing:.02em;color:#8c1f18;
+  padding:3px 6px;line-height:1;box-shadow:1.2px 1.6px 0 rgba(25,23,18,.09);
+}
+
+/* ═══════════ E · anchor logo ═══════════ */
+#anchor{left:504px;top:130px;width:92px;height:92px}
+#anchor .lg{width:92px;height:92px;filter:drop-shadow(3px 4px 0 rgba(25,23,18,.16))}
+
+/* ═══════════ F · title ═══════════ */
+#ttl{left:628px;top:132px;width:392px;transform:rotate(-.8deg)}
+#ttl .l1{font-family:Marker,cursive;font-size:31px;line-height:1;letter-spacing:.005em;white-space:nowrap}
+#ttl .l2{font-family:Marker,cursive;font-size:47px;line-height:.98;letter-spacing:-.01em;margin-top:2px;white-space:nowrap}
+#ttl .bar{margin-top:9px;display:inline-block;background:#14120d;color:#fff;
+  font-family:UI,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.1em;
+  padding:6px 11px;border-radius:3px 2px 4px 2px}
+
+/* ═══════════ G · stickies ═══════════ */
+#stk{left:589px;top:290px;width:359px;display:flex;gap:6px}
+.note{width:86px;height:62px;overflow:hidden;background:#ffe795;padding:5px 6px;position:relative;
+  box-shadow:2px 3px 0 rgba(25,23,18,.16);border-radius:2px}
+.note .ni{position:absolute;right:5px;top:4px;width:10px;height:10px;stroke:#7d6a1e;stroke-width:1.8;fill:none}
+.note .nt{font-size:10.2px;line-height:1.16;color:#2b2510;letter-spacing:.01em}
+.note:nth-child(1){transform:rotate(-1.7deg)}
+.note:nth-child(2){transform:rotate(1.2deg)}
+.note:nth-child(3){transform:rotate(-.7deg)}
+.note:nth-child(4){transform:rotate(1.8deg)}
+
+/* ═══════════ H/I · flows (labels only, no container) ═══════════ */
+#flow{left:1002px;top:148px;width:270px}
+#flow .cap{font-size:12px;letter-spacing:.1em;margin-bottom:4px}
+#flow .row{display:flex;align-items:flex-start;gap:0}
+.wire{width:58px}
+.wire .fr{height:66px;background:#fff;border:1.5px solid var(--ink);border-radius:3px;padding:3px;
+  box-shadow:1.4px 1.8px 0 rgba(25,23,18,.11)}
+.wire .nm{font-size:9px;text-align:center;margin-top:3px;line-height:1.05;color:#332e26;letter-spacing:.02em}
+.wl{height:2.6px;background:#d9d4ca;border-radius:1px;margin-bottom:2.2px}
+.wl.dk{background:#8e8779}
+.w85{width:85%}.w65{width:65%}.w45{width:45%}
+.wv{background:#26221c;height:20px;border-radius:1.5px;margin-bottom:2.5px;display:flex;align-items:center;justify-content:center}
+.wv svg{width:8px;height:8px;fill:#fff}
+.wb{height:6px;background:var(--red);border-radius:1.2px;margin-top:2.5px}
+.wf i{display:block;height:4.6px;border:1px solid #cac4b8;border-radius:1px;margin-bottom:1.8px}
+.wc{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4px}
+.wc i{display:block;height:4.4px;background:#d9d4ca;border-radius:.5px}
+.wc i.on{background:var(--red)}
+.gap{width:12px;display:flex;align-items:center;justify-content:center;height:66px}
+.gap svg{width:10px;height:10px;stroke:var(--ink);stroke-width:1.8;fill:none}
+
+#post{left:1002px;top:268px;width:270px}
+#post .cap{font-size:12px;letter-spacing:.1em;margin-bottom:4px}
+#post .row{display:flex;align-items:center;gap:0}
+.step{width:60px;text-align:center}
+.step .ic{height:20px;display:flex;align-items:center;justify-content:center}
+.step .ic svg{width:15px;height:15px;stroke:var(--pen);stroke-width:1.7;fill:none}
+.step .ic .lg{width:15px;height:15px}
+.step .nm{font-size:9px;line-height:1.05;color:#332e26;letter-spacing:.02em;margin-top:1px}
+.gap2{width:10px;display:flex;align-items:center;justify-content:center;height:20px}
+.gap2 svg{width:9px;height:9px;stroke:var(--ink);stroke-width:1.8;fill:none}
+
+/* ═══════════ J · avatar offer cards ═══════════ */
+#avs{left:954px;top:344px;width:318px}
+#avs .row{display:flex;gap:5px}
+.av{width:75px;padding:6px 6px 7px}
+.av .nm{font-size:11px;letter-spacing:.06em;text-align:center;line-height:1;
+  padding-bottom:4px;border-bottom:1.3px solid rgba(25,23,18,.25);margin-bottom:4px}
+.av .li{font-size:9px;line-height:1.18;color:#4c463c;margin-bottom:3px;letter-spacing:.01em}
+.av .li b{color:var(--red)}
+.chip{display:block;text-align:center;background:#14120d;color:#fff;
+  font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 5px;border-radius:3px}
+
+/* ═══════════ K · screenshots ═══════════ */
+#shots{left:954px;top:566px;width:318px}
+.shot{overflow:hidden;background:#fff;border:1.7px solid var(--ink);border-radius:3px;
+  box-shadow:2px 3px 0 rgba(25,23,18,.14)}
+.shot img{position:absolute;width:100%;left:0}
+#heat{padding:5px 6px}
+#heat .hh{font-size:9px;letter-spacing:.05em;color:#332e26;margin-bottom:3px}
+#heat table{border-collapse:collapse;width:100%}
+#heat td,#heat th{border:.8px solid #fff;height:12px;font-family:UI;font-weight:700;font-size:6.4px;text-align:center;color:#fff}
+#heat th{color:#3a352d;font-size:6.4px;height:10px}
+#heat td.l{color:#3a352d;text-align:left;font-family:Draft;font-size:8.4px}
+
+/* ═══════════ M · ad sources ═══════════ */
+#src{left:470px;top:356px;width:80px}
+#src .cap{font-size:11px;letter-spacing:.08em;margin-bottom:5px}
+#src .r{display:flex;align-items:center;gap:5px;height:17px}
+#src .r .lg{width:11px;height:11px;flex:0 0 11px}
+#src .r svg{width:11px;height:11px;flex:0 0 11px;stroke:var(--pen);stroke-width:1.8;fill:none}
+#src .r span{font-size:9.6px;color:#413b33;letter-spacing:.01em;line-height:1}
+
+/* ═══════════ N · tree ═══════════ */
+#tree{left:556px;top:356px;width:389px}
+#tree .cols{display:flex;gap:8px}
+#tree .col{width:124px}
+#tree .col>.chip{margin-bottom:6px;font-size:9px;padding:3.5px 4px}
+.chip.c1{background:#a83128}.chip.c2{background:#1c4a8f}.chip.c3{background:#1c6440}
+.tc{padding:4px 6px 5px;margin-bottom:5px}
+.tc .th{font-size:10.5px;letter-spacing:.02em;line-height:1.05;color:#1e1b15}
+.tc .td{font-size:8.8px;line-height:1.16;color:#514a40;margin-top:2px;letter-spacing:.01em}
+.tc .td b{color:var(--red)}
+.tc.hot{border-color:var(--red);border-width:1.9px}
+.tc.dk{background:#14120d}
+.tc.dk .th{color:#fff}.tc.dk .td{color:#bcb5a7}
+
+.mark{font-family:Marker,cursive;letter-spacing:.01em;user-select:none}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="lg-meta" viewBox="0 0 24 24" fill="currentColor"><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></symbol>
+  <symbol id="lg-instagram" viewBox="0 0 24 24" fill="currentColor"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol>
+  <symbol id="lg-tiktok" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+  <symbol id="lg-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+  <symbol id="lg-googleads" viewBox="0 0 24 24" fill="currentColor"><path d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"/></symbol>
+  <symbol id="lg-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="lg-calendly" viewBox="0 0 24 24" fill="currentColor"><path d="M19.655 14.262c.281 0 .557.023.828.064 0 .005-.005.01-.005.014-.105.267-.234.534-.381.786l-1.219 2.106c-1.112 1.936-3.177 3.127-5.411 3.127h-2.432c-2.23 0-4.294-1.191-5.412-3.127l-1.218-2.106a6.251 6.251 0 0 1 0-6.252l1.218-2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c.147.252.271.519.381.786 0 .004.005.009.005.014-.267.041-.543.064-.828.064-1.816 0-2.501-.607-3.291-1.306-.764-.676-1.711-1.517-3.44-1.517h-1.029c-1.251 0-2.387.455-3.2 1.278-.796.805-1.233 1.904-1.233 3.099v1.411c0 1.196.437 2.295 1.233 3.099.813.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676-.841 3.439-1.517.791-.703 1.471-1.306 3.287-1.301Zm.005-3.237c.399 0 .794-.036 1.179-.11-.002-.004-.002-.01-.002-.014-.073-.414-.193-.823-.349-1.218.731-.12 1.407-.396 1.986-.819 0-.004-.005-.013-.005-.018-.331-1.085-.832-2.101-1.489-3.03-.649-.915-1.435-1.719-2.331-2.395-1.867-1.398-4.088-2.138-6.428-2.138-1.448 0-2.855.28-4.175.841-1.273.543-2.423 1.315-3.407 2.299S2.878 6.552 2.341 7.83c-.557 1.324-.842 2.726-.842 4.175 0 1.448.281 2.855.842 4.174.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324.556 2.727.841 4.175.841 2.34 0 4.561-.74 6.428-2.137a10.815 10.815 0 0 0 2.331-2.396c.652-.929 1.158-1.949 1.489-3.03 0-.004.005-.014.005-.018-.579-.423-1.255-.699-1.986-.819.161-.395.276-.804.349-1.218.005-.009.005-.014.005-.023.869.166 1.692.506 2.404 1.035.685.505.552 1.075.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0-12-5.375-12-12s5.37-12 12-12c5.398 0 9.963 3.563 11.471 8.464.106.341.239.915-.446 1.421-.717.529-1.535.873-2.404 1.034.128.716.128 1.45 0 2.166-.387-.074-.782-.11-1.182-.11-4.184 0-3.968 2.823-6.736 2.823h-1.029c-1.899 0-3.15-1.357-3.15-3.095v-1.411c0-1.738 1.251-3.094 3.15-3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z"/></symbol>
+  <symbol id="lg-hubspot" viewBox="0 0 24 24" fill="currentColor"><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></symbol>
+  <symbol id="lg-twilio" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.381-.008.008 5.352 0 11.971V12c0 6.64 5.359 12 12 12 6.64 0 12-5.36 12-12 0-6.641-5.36-12-12-12zm0 20.801c-4.846.015-8.786-3.904-8.801-8.75V12c-.014-4.846 3.904-8.786 8.75-8.801H12c4.847-.014 8.786 3.904 8.801 8.75V12c.015 4.847-3.904 8.786-8.75 8.801H12zm5.44-11.76c0 1.359-1.12 2.479-2.481 2.479-1.366-.007-2.472-1.113-2.479-2.479 0-1.361 1.12-2.481 2.479-2.481 1.361 0 2.481 1.12 2.481 2.481zm0 5.919c0 1.36-1.12 2.48-2.481 2.48-1.367-.008-2.473-1.114-2.479-2.48 0-1.359 1.12-2.479 2.479-2.479 1.361-.001 2.481 1.12 2.481 2.479zm-5.919 0c0 1.36-1.12 2.48-2.479 2.48-1.368-.007-2.475-1.113-2.481-2.48 0-1.359 1.12-2.479 2.481-2.479 1.358-.001 2.479 1.12 2.479 2.479zm0-5.919c0 1.359-1.12 2.479-2.479 2.479-1.367-.007-2.475-1.112-2.481-2.479 0-1.361 1.12-2.481 2.481-2.481 1.358 0 2.479 1.12 2.479 2.481z"/></symbol>
+  <symbol id="lg-gmail" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></symbol>
+  <symbol id="lg-zapier" viewBox="0 0 24 24" fill="currentColor"><path d="M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z"/></symbol>
+  <symbol id="lg-stripe" viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></symbol>
+  <symbol id="lg-reddit" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z"/></symbol>
+  <symbol id="lg-zoom" viewBox="0 0 24 24" fill="currentColor"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"/></symbol>
+</svg>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="M10.5 9l5 3-5 3V9z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17.1 6.4 20l1.2-6.2L3 9.5l6.3-.8L12 3z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M9 11h6M9 15h6"/></symbol>
+  <symbol id="i-form" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v7l-4 2v-9L3 4z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 7 10-7"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 11l7-4v10l-7-4"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 014 0v6m0-4a2 2 0 014 0v5m0-3a2 2 0 014 0v6a7 7 0 01-7 7h-2a7 7 0 01-7-7v-3a2 2 0 014 0"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 13l5 5L21 5"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-8 8H8l-5 3 1.5-5A8 8 0 1121 12z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4"/><path d="M2.5 21a6.5 6.5 0 0113 0M16 5.5a3.4 3.4 0 010 6.6M18 21a6.4 6.4 0 00-2-4.4"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
+  <symbol id="f-play" viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<div id="board">
+
+  <!-- ═══════ A · funnel, drawn straight on the paper ═══════ -->
+  <div class="abs" id="fn">
+    <div class="h cap">Cold Traffic Funnel</div>
+
+    <div class="band" style="width:232px">
+      <div class="rule" style="top:0;width:232px"></div>
+      <div class="h bl">Awareness</div>
+      <div class="items">
+        <div class="it"><div class="gl"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div><span>Meta Ads</span></div>
+        <div class="it"><div class="gl"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div><span>TikTok</span></div>
+        <div class="it"><div class="gl"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span></div><span>YouTube</span></div>
+        <div class="it"><div class="gl"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span></div><span>Reels</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:198px">
+      <div class="rule" style="top:0;width:198px"></div>
+      <div class="h bl">Interest</div>
+      <div class="items">
+        <div class="it"><div class="gl"><svg><use href="#i-bolt"/></svg></div><span>Hook</span></div>
+        <div class="it"><div class="gl"><svg><use href="#i-eye"/></svg></div><span>Angle</span></div>
+        <div class="it"><div class="gl"><svg><use href="#i-play"/></svg></div><span>VSL</span></div>
+        <div class="it"><div class="gl"><svg><use href="#i-star"/></svg></div><span>Proof</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:164px">
+      <div class="rule" style="top:0;width:164px"></div>
+      <div class="h bl">Intent</div>
+      <div class="items">
+        <div class="it"><div class="gl"><svg><use href="#i-form"/></svg></div><span>Apply</span></div>
+        <div class="it"><div class="gl"><svg><use href="#i-filter"/></svg></div><span>Qualify</span></div>
+        <div class="it"><div class="gl"><span class="lg lg-calendly"><svg><use href="#lg-calendly"/></svg></span></div><span>Book</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:130px">
+      <div class="rule" style="top:0;width:130px"></div>
+      <div class="h bl">Education</div>
+      <div class="items" style="gap:5px">
+        <div class="it" style="width:40px"><div class="gl"><svg><use href="#i-phone"/></svg></div><span>Setter</span></div>
+        <div class="it" style="width:40px"><div class="gl"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><span>15 Emails</span></div>
+        <div class="it" style="width:40px"><div class="gl"><svg><use href="#i-video"/></svg></div><span>Videos</span></div>
+      </div>
+    </div>
+
+    <div class="band" style="width:96px">
+      <div class="rule" style="top:0;width:96px"></div>
+      <div class="h bl">Close</div>
+      <div class="items" style="gap:4px">
+        <div class="it" style="width:36px"><div class="gl"><svg><use href="#i-video"/></svg></div><span>Call</span></div>
+        <div class="it" style="width:36px"><div class="gl"><span class="lg lg-stripe"><svg><use href="#lg-stripe"/></svg></span></div><span>Cash</span></div>
+      </div>
+    </div>
+  </div>
+  <svg class="pen" style="left:14px;top:12px;width:238px;height:308px">
+    <path class="hair" d="M4 24 C 4 23.5, 233 23.8, 234 24 L 170 301 C 169 301.5, 70 301.2, 68.5 301 Z"/>
+  </svg>
+
+  <!-- ═══════ B · ad platforms ═══════ -->
+  <div class="abs h" style="left:300px;top:6px;width:468px;text-align:center;font-size:13px;letter-spacing:.14em">Where the traffic comes from</div>
+  <div class="abs box" id="plat">
+    <div class="grid">
+      <div class="pcard"><div class="nm">Meta</div><div class="lgw"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+      <div class="pcard"><div class="nm">Instagram</div><div class="lgw"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w45"></div><div class="bt"></div></div></div>
+      <div class="pcard"><div class="nm">TikTok</div><div class="lgw"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w45"></div><div class="bt"></div></div></div>
+      <div class="pcard"><div class="nm">YouTube</div><div class="lgw"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w65"></div><div class="ln w85"></div><div class="bt"></div></div></div>
+      <div class="pcard"><div class="nm">Google Ads</div><div class="lgw"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w45"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+      <div class="pcard"><div class="nm">LinkedIn</div><div class="lgw"><span class="lg lg-linkedin"><svg><use href="#lg-linkedin"/></svg></span></div>
+        <div class="mock"><div class="im"></div><div class="ln w85"></div><div class="ln w65"></div><div class="bt"></div></div></div>
+    </div>
+  </div>
+
+  <!-- arrow → circle -->
+  <svg class="pen" style="left:772px;top:58px;width:26px;height:18px">
+    <path d="M0 9 C 8 4, 14 14, 22 8"/><path d="M15 3 L23 8 L15 14"/>
+  </svg>
+
+  <!-- ═══════ B2 · red circled outcome ═══════ -->
+  <div class="abs" id="circ">
+    <svg class="pen" style="left:0;top:0;width:126px;height:96px">
+      <path class="red" style="stroke-width:2.8" d="M26 11 C 66 2, 112 9, 120 36 C 127 62, 96 90, 58 90 C 24 90, 4 74, 5 48 C 6 27, 12 16, 26 11"/>
+      <path class="red thin" style="stroke-width:1.9" d="M30 16 C 68 8, 108 15, 114 39 C 120 62, 92 85, 58 85"/>
+    </svg>
+    <div class="t1">5&ndash;12 ADS</div>
+    <div class="t2">1 Ad Set</div>
+  </div>
+
+  <!-- arrow → checklist -->
+  <svg class="pen" style="left:930px;top:58px;width:22px;height:18px">
+    <path d="M0 9 C 7 4, 12 14, 19 8"/><path d="M12 3 L20 8 L12 14"/>
+  </svg>
+
+  <!-- ═══════ C · checklist ═══════ -->
+  <div class="abs box" id="chk">
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Lower Cost Per Call</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Better Lead Quality</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Minimized Friction</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Counterpositioned</div></div>
+    <div class="row"><div class="cb"><svg><use href="#i-check"/></svg></div><div class="h t">Predictable Calls</div></div>
+  </div>
+
+  <!-- ═══════ D · the stack ═══════ -->
+  <div class="abs" id="stack">
+    <div class="h cap">The stack behind it</div>
+    <div class="row">
+      <div class="disc"><span class="lg lg-calendly lg-white"><svg><use href="#lg-calendly"/></svg></span></div>
+      <div class="disc"><span class="lg lg-hubspot lg-white"><svg><use href="#lg-hubspot"/></svg></span></div>
+      <div class="disc"><span class="lg lg-twilio lg-white"><svg><use href="#lg-twilio"/></svg></span></div>
+      <div class="disc"><span class="lg lg-gmail lg-white"><svg><use href="#lg-gmail"/></svg></span></div>
+      <div class="disc"><span class="lg lg-stripe lg-white"><svg><use href="#lg-stripe"/></svg></span></div>
+    </div>
+  </div>
+
+  <!-- fan: objection handling → three assets -->
+  <div class="abs rpill" style="left:290px;top:206px;width:130px">Objection Handling</div>
+  <svg class="pen" style="left:254px;top:224px;width:236px;height:32">
+    <path class="thin" style="stroke:var(--red)" d="M101 0 C 101 12, 40 14, 38 30"/>
+    <path class="thin" style="stroke:var(--red)" d="M104 0 C 104 14, 112 16, 112 30"/>
+    <path class="thin" style="stroke:var(--red)" d="M107 0 C 107 12, 186 14, 190 30"/>
+  </svg>
+  <div class="abs rpill" style="left:254px;top:256px;width:74px">Pre-frame page</div>
+  <div class="abs rpill" style="left:334px;top:256px;width:74px">15 emails</div>
+  <div class="abs rpill" style="left:414px;top:256px;width:74px">Retarget ads</div>
+
+  <!-- ═══════ E · anchor logo ═══════ -->
+  <div class="abs" id="anchor"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
+
+  <!-- converging strokes: platforms → anchor → title -->
+  <svg class="pen" style="left:330px;top:120px;width:340px;height:120px">
+    <path class="hair" d="M28 2 C 40 40, 150 52, 196 44"/>
+    <path class="hair" d="M108 2 C 116 34, 168 46, 200 46"/>
+    <path class="hair" d="M188 2 C 190 22, 200 34, 202 44"/>
+    <path class="hair" d="M268 2 C 262 26, 232 38, 208 46"/>
+    <path class="hair" d="M336 2 C 322 30, 244 42, 210 48"/>
+    <path class="hair" d="M212 62 C 240 78, 278 74, 306 62"/>
+  </svg>
+
+  <!-- ═══════ F · title ═══════ -->
+  <div class="abs" id="ttl">
+    <div class="l1">THE HIGH-TICKET</div>
+    <div class="l2">AD PLAYBOOK</div>
+    <svg class="pen" style="left:-3px;top:84px;width:326px;height:16px">
+      <path class="red" style="stroke-width:4.2" d="M2 6 C 72 1, 186 3, 320 6"/>
+      <path class="red" style="stroke-width:2.6" d="M9 14 C 82 9, 194 12, 300 13"/>
+    </svg>
+    <div class="bar">8 ANGLES. 1 AVATAR. EVERY BOOKED CALL.</div>
+  </div>
+
+  <!-- ═══════ L · wordmarks (presenter overlaps these) ═══════ -->
+  <div class="abs mark" style="left:254px;top:284px;font-size:41px;color:#1d1a14;transform:rotate(-1.2deg)">$40K OFFERS</div>
+  <div class="abs h" style="left:262px;top:330px;font-size:19px;color:#8d867a;letter-spacing:.22em">on cold traffic</div>
+
+  <!-- ═══════ G · stickies ═══════ -->
+  <div class="abs" id="stk">
+    <div class="note"><svg class="ni"><use href="#i-target"/></svg><div class="nt">Cold-traffic<br>offer, or<br>nothing works</div></div>
+    <div class="note"><svg class="ni"><use href="#i-bolt"/></svg><div class="nt">Speed to lead:<br>call back in<br>5&ndash;15 min</div></div>
+    <div class="note"><svg class="ni"><use href="#i-doc"/></svg><div class="nt">Every ad must<br>stand on<br>its own</div></div>
+    <div class="note"><svg class="ni"><use href="#i-eye"/></svg><div class="nt">Describe their<br>problem better<br>than they can</div></div>
+  </div>
+
+  <!-- ═══════ H · funnel flow ═══════ -->
+  <div class="abs" id="flow">
+    <div class="hr cap">4. Funnel flow</div>
+    <div class="row">
+      <div class="wire"><div class="fr">
+        <div class="wv"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wl dk w65"></div><div class="wl w45"></div><div class="wb"></div>
+      </div><div class="h nm">Hook / Ad</div></div>
+      <div class="gap"><svg><use href="#i-arrow"/></svg></div>
+      <div class="wire"><div class="fr">
+        <div class="wl dk w85"></div><div class="wl w65"></div>
+        <div class="wv" style="height:17px"><svg><use href="#f-play"/></svg></div>
+        <div class="wl w85"></div><div class="wb"></div>
+      </div><div class="h nm">VSL / Lander</div></div>
+      <div class="gap"><svg><use href="#i-arrow"/></svg></div>
+      <div class="wire"><div class="fr">
+        <div class="wl dk w65"></div>
+        <div class="wf" style="margin-top:3px"><i></i><i></i><i></i><i></i></div><div class="wb"></div>
+      </div><div class="h nm">Application</div></div>
+      <div class="gap"><svg><use href="#i-arrow"/></svg></div>
+      <div class="wire"><div class="fr">
+        <div class="wl dk w65"></div><div class="wl w45"></div>
+        <div class="wc" style="margin-top:2px"><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div>
+        <div class="wb" style="margin-top:4px"></div>
+      </div><div class="h nm">Calendar</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ I · post-booking ═══════ -->
+  <div class="abs" id="post">
+    <div class="hr cap">5. Education window</div>
+    <div class="row">
+      <div class="step"><div class="ic"><svg><use href="#i-doc"/></svg></div><div class="h nm">Pre-frame<br>page</div></div>
+      <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
+      <div class="step"><div class="ic"><span class="lg lg-twilio"><svg><use href="#lg-twilio"/></svg></span></div><div class="h nm">Setter<br>5&ndash;15 min</div></div>
+      <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
+      <div class="step"><div class="ic"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span></div><div class="h nm">15 emails<br>/ 3 days</div></div>
+      <div class="gap2"><svg><use href="#i-arrow"/></svg></div>
+      <div class="step"><div class="ic"><svg><use href="#i-hand"/></svg></div><div class="h nm">Closing<br>call</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ J · avatar cards ═══════ -->
+  <div class="abs" id="avs">
+    <div class="row">
+      <div class="av box-s"><div class="h nm">SaaS</div>
+        <div class="li">CAC too high</div><div class="li"><b>Angle:</b> paid can&rsquo;t outrun churn</div></div>
+      <div class="av box-s"><div class="h nm">Ecom</div>
+        <div class="li">Blended ROAS stuck</div><div class="li"><b>Angle:</b> creative, not bidding</div></div>
+      <div class="av box-s"><div class="h nm">Agency</div>
+        <div class="li">Referral-dependent</div><div class="li"><b>Angle:</b> own your lead flow</div></div>
+      <div class="av box-s"><div class="h nm">Info</div>
+        <div class="li">Launch-to-launch cash</div><div class="li"><b>Angle:</b> evergreen &gt; launches</div></div>
+    </div>
+    <div style="display:flex;gap:5px;margin-top:6px">
+      <div class="chip" style="flex:1">One avatar per campaign</div>
+      <div class="chip" style="flex:1">Angles do the targeting</div>
+    </div>
+  </div>
+
+  <!-- ═══════ J2 · marker callout (no box) ═══════ -->
+  <div class="abs mark" style="left:958px;top:484px;font-size:22px;color:var(--red);letter-spacing:.01em">SAME OFFER.</div>
+  <div class="abs mark" style="left:958px;top:512px;font-size:22px;color:#1d1a14;letter-spacing:.01em">8 DIFFERENT DOORS.</div>
+  <svg class="pen" style="left:958px;top:540px;width:300px;height:14px">
+    <path class="red thin" style="stroke-width:2.6" d="M2 5 C 70 1, 190 3, 282 6"/>
+  </svg>
+
+  <!-- ═══════ K · screenshots ═══════ -->
+  <div class="abs" id="shots">
+    <div class="abs shot" style="left:0;top:0;width:100px;height:146px"><img src="assets/img/lander.png" style="top:0"></div>
+    <div class="abs shot" style="left:104px;top:0;width:100px;height:146px"><img src="assets/img/proof.png" style="top:-10px"></div>
+    <div class="abs box-s" id="heat" style="left:208px;top:0;width:110px">
+      <div class="h hh">CPL &mdash; avatar &times; angle</div>
+      <table>
+        <tr><th></th><th>A1</th><th>A2</th><th>A3</th><th>OF</th></tr>
+        <tr><td class="l">SaaS</td><td style="background:#1b4f9c">42</td><td style="background:#3d78c4">61</td><td style="background:#8fb4dd">88</td><td style="background:#2c62ae">51</td></tr>
+        <tr><td class="l">Ecom</td><td style="background:#6b9bd2">74</td><td style="background:#153f80">39</td><td style="background:#8fb4dd">91</td><td style="background:#3d78c4">63</td></tr>
+        <tr><td class="l">Agency</td><td style="background:#153f80">36</td><td style="background:#2c62ae">49</td><td style="background:#6b9bd2">72</td><td style="background:#1b4f9c">44</td></tr>
+        <tr><td class="l">Info</td><td style="background:#3d78c4">58</td><td style="background:#153f80">33</td><td style="background:#2c62ae">47</td><td style="background:#6b9bd2">69</td></tr>
+      </table>
+      <div class="h" style="font-size:8.4px;color:#514a40;margin-top:3px;letter-spacing:.02em">Kill the pale ones</div>
+    </div>
+  </div>
+
+  <!-- ═══════ M · ad sources ═══════ -->
+  <div class="abs" id="src">
+    <div class="h cap">Ad sources</div>
+    <div class="r"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span><span>Meta Ads</span></div>
+    <div class="r"><span class="lg lg-tiktok"><svg><use href="#lg-tiktok"/></svg></span><span>TikTok</span></div>
+    <div class="r"><span class="lg lg-youtube"><svg><use href="#lg-youtube"/></svg></span><span>YouTube</span></div>
+    <div class="r"><span class="lg lg-googleads"><svg><use href="#lg-googleads"/></svg></span><span>Google</span></div>
+    <div class="r"><span class="lg lg-gmail"><svg><use href="#lg-gmail"/></svg></span><span>Email</span></div>
+    <div class="r"><span class="lg lg-instagram"><svg><use href="#lg-instagram"/></svg></span><span>Creators</span></div>
+    <div class="r"><span class="lg lg-reddit"><svg><use href="#lg-reddit"/></svg></span><span>Reddit</span></div>
+    <div class="r"><svg><use href="#i-globe"/></svg><span>Organic</span></div>
+  </div>
+  <svg class="pen" style="left:548px;top:400px;width:14px;height:60px">
+    <path class="hair" d="M1 6 C 9 14, 9 40, 2 52"/>
+  </svg>
+
+  <!-- ═══════ N · tree ═══════ -->
+  <div class="abs" id="tree">
+    <div class="cols">
+      <div class="col">
+        <div class="chip c1">1. Avatar &amp; angle</div>
+        <div class="tc box-s"><div class="th">Current beliefs</div><div class="td">what they hold as true today</div></div>
+        <div class="tc box-s"><div class="th">Problem lived in</div><div class="td">the daily, specific version</div></div>
+        <div class="tc box-s"><div class="th">Failed attempts</div><div class="td">what they already tried</div></div>
+        <div class="tc box-s dk"><div class="th">Angle = big idea</div><div class="td">Avatar &times; Angle = one ad</div></div>
+      </div>
+      <div class="col">
+        <div class="chip c2">2. Ad roles</div>
+        <div class="tc box-s"><div class="th">Hook / soft CTA</div><div class="td">prospecting, wide net</div></div>
+        <div class="tc box-s"><div class="th">3 &times; hook angle</div><div class="td">hard CTA on each</div></div>
+        <div class="tc box-s"><div class="th">Offer + proof-led</div><div class="td">straight direct response</div></div>
+        <div class="tc box-s"><div class="th">2 &times; objection</div><div class="td">handled inside the ad</div></div>
+      </div>
+      <div class="col">
+        <div class="chip c3">3. Education window</div>
+        <div class="tc box-s"><div class="th">Pre-frame TY page</div><div class="td">objections &middot; student interviews</div></div>
+        <div class="tc box-s hot"><div class="th">Setters &mdash; speed to lead</div><div class="td"><b>5&ndash;15 min</b> &middot; pre-qualify</div></div>
+        <div class="tc box-s"><div class="th">15 long-form emails</div><div class="td">3 days &middot; <b>50&ndash;60%</b> open rates</div></div>
+        <div class="tc box-s"><div class="th">Video sales assets</div><div class="td">personalized, per objection</div></div>
+      </div>
+    </div>
+  </div>
+  <svg class="pen" style="left:556px;top:356px;width:389px;height:256px">
+    <path class="hair" d="M124 66 C 132 64, 127 104, 133 102"/>
+    <path class="hair" d="M124 150 C 133 148, 128 186, 134 184"/>
+    <path class="hair" d="M256 102 C 264 100, 259 64, 265 62"/>
+    <path class="hair" d="M256 190 C 265 188, 260 150, 266 148"/>
+  </svg>
+
+  <!-- ═══════ O · bottom marker line ═══════ -->
+  <div class="abs mark" style="left:494px;top:632px;font-size:44px;color:var(--red);letter-spacing:.08em">$ $ $</div>
+  <div class="abs mark" style="left:626px;top:636px;font-size:38px;color:#1d1a14;transform:rotate(-.8deg)">BOOKED CALLS</div>
+  <div class="abs h" style="left:632px;top:684px;font-size:15px;color:#8d867a;letter-spacing:.16em">not cheap leads</div>
+  <svg class="pen" style="left:478px;top:612px;width:466px;height:26px">
+    <path class="hair" d="M4 20 C 120 6, 320 4, 462 14"/>
+  </svg>
+
+</div>
