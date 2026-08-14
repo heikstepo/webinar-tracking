@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>The High-Ticket Ad Playbook — Thumbnail</title>
+<title>7-Figure High Ticket Funnel — Thumbnail</title>
 <style>
 @font-face{font-family:Marker;src:url(assets/fonts/permanent-marker-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-300-normal.woff2) format('woff2');font-weight:300;font-display:block}
@@ -140,14 +140,22 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
 }
 
 /* ═══════ E · anchor ═══════ */
-#anchor{left:504px;top:130px;width:92px;height:92px}
-#anchor .lg{width:92px;height:92px;filter:drop-shadow(0 6px 14px rgba(0,129,251,.28))}
+#anchor{left:482px;top:98px;width:170px;text-align:center}
+#anchor .lg{width:170px;height:170px;display:block;margin:0 auto;
+  filter:drop-shadow(0 10px 22px rgba(0,129,251,.30))}
+#anchor .mads{margin-top:-20px;font-weight:700;font-size:28px;letter-spacing:-.015em;
+  line-height:1;color:#12141a;white-space:nowrap}
+#anchor .mads i{font-style:normal;color:#0081fb}
 
 /* ═══════ F · title ═══════ */
-#ttl{left:628px;top:132px;width:392px}
-#ttl .l1{font-family:Marker,cursive;font-size:31px;line-height:1;white-space:nowrap}
-#ttl .l2{font-family:Marker,cursive;font-size:47px;line-height:.98;letter-spacing:-.01em;margin-top:2px;white-space:nowrap}
-#ttl .bar{margin-top:11px;display:inline-block;background:#12141a;color:#fff;
+#ttl{left:660px;top:138px;width:340px}
+#ttl .l0{font-weight:700;font-size:22px;letter-spacing:.15em;line-height:1;
+  color:var(--red);white-space:nowrap}
+#ttl .l1{font-weight:700;font-size:40px;letter-spacing:-.015em;line-height:1;
+  margin-top:5px;white-space:nowrap}
+#ttl .l2{font-weight:700;font-size:29px;letter-spacing:-.008em;line-height:1.02;
+  margin-top:2px;white-space:nowrap}
+#ttl .bar{margin-top:13px;display:inline-block;background:#12141a;color:#fff;
   font-weight:600;font-size:11px;letter-spacing:.11em;padding:7px 12px;border-radius:6px}
 
 /* ═══════ G · stickies ═══════ */
@@ -258,6 +266,7 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
    --px/--py: which part of the photo is kept (object-position).
    --pzoom: >1 pushes in on the face.                                        */
 #presenter{
+  display:none;   /* flip to block once assets/img/presenter.png is the real photo */
   left:0;bottom:0;width:500px;height:368px;z-index:59;overflow:hidden;
   border-top:3px solid #fff;border-right:3px solid #fff;border-top-right-radius:10px;
   box-shadow:0 -2px 14px rgba(16,24,40,.16),6px -6px 26px rgba(16,24,40,.10);
@@ -445,15 +454,19 @@ svg.pen{position:absolute;overflow:visible;pointer-events:none}
   <div class="abs rpill" style="left:414px;top:256px;width:74px">Retarget ads</div>
 
   <!-- ═══════ E · anchor ═══════ -->
-  <div class="abs" id="anchor"><span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span></div>
+  <div class="abs" id="anchor">
+    <span class="lg lg-meta"><svg><use href="#lg-meta"/></svg></span>
+    <div class="mads"><i>Meta</i> Ads</div>
+  </div>
 
   <!-- ═══════ F · title ═══════ -->
   <div class="abs" id="ttl">
-    <div class="l1">THE HIGH-TICKET</div>
-    <div class="l2">AD PLAYBOOK</div>
-    <svg class="pen" style="left:-2px;top:84px;width:326px;height:15px">
-      <path style="stroke:var(--red);stroke-width:4.4" d="M2 5 H318"/>
-      <path style="stroke:var(--amber);stroke-width:2.6" d="M8 13 H262"/>
+    <div class="l0">*NEW*</div>
+    <div class="l1">7-FIGURE</div>
+    <div class="l2">HIGH TICKET FUNNEL</div>
+    <svg class="pen" style="left:0;top:102px;width:330px;height:15px">
+      <path style="stroke:var(--red);stroke-width:4.4" d="M1 5 H326"/>
+      <path style="stroke:var(--amber);stroke-width:2.6" d="M7 13 H268"/>
     </svg>
     <div class="bar">8 ANGLES. 1 AVATAR. EVERY BOOKED CALL.</div>
   </div>

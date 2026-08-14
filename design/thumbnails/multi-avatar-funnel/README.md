@@ -1,4 +1,4 @@
-# Thumbnail — "The High-Ticket Ad Playbook"
+# Thumbnail — "7-Figure High Ticket Funnel"
 
 YouTube thumbnail background built from the content of the Miro boards *New Paid Ads
 Funnel for High Ticket Products* and its more developed copy (Sol Twenty team).
@@ -34,16 +34,25 @@ and 602px wide at source against a 100px display box, so they hold up past 4K to
 Requires Playwright + Chromium. The script resolves `playwright` from the project
 first, then falls back to a global install.
 
-## Presenter cutout
+## Presenter frame
 
-The canvas is now filled edge to edge — there is no reserved empty zone. A cutout
-placed bottom-left will cover part of the Market Awareness / Attribution / case-study
-column, which is the intended behaviour: the reference thumbnail runs its wordmarks
-and left-hand lists behind the presenter the same way. If you want a specific panel
-to stay fully visible, swap it with one further right rather than clearing space.
+`#presenter` is a 500x368 frame flush to the bottom-left corner, sized like the
+reference thumbnail. It is currently **`display:none`** — set it back to `block` once
+`assets/img/presenter.png` is the real photo rather than the placeholder.
 
-Add the cutout as the last child of `#board` with
-`position:absolute; left:0; bottom:0;`.
+Framing is driven by custom properties on the element, so no cropping is needed
+up front:
+
+| Property | Effect |
+|---|---|
+| `--pflip` | `-1` un-mirrors a selfie-mode shot, `1` leaves it as filmed |
+| `--px` / `--py` | `object-position` — which part of the frame is kept |
+| `--pzoom` | `>1` pushes in on the face |
+
+The canvas is filled edge to edge, so enabling the frame covers the Market Awareness,
+case-study, Attribution and ad-matrix panels. That matches the reference, which runs
+its wordmarks and left-hand list behind the presenter. If a specific panel needs to
+stay visible, move it right rather than clearing space.
 
 ## Layout map (1280×720)
 
@@ -54,8 +63,8 @@ Add the cutout as the last child of `#board` with
 | B2 | 800,18 – 926,114 | Red-circled `5–12 ADS / 1 AD SET` |
 | C | 954,6 – 1272,142 | What it unlocks — checklist with coloured checkboxes |
 | D | 254,136 – 490,280 | Tool-stack discs, then Objection Handling fanning into three assets |
-| E | 504,130 – 596,222 | Meta anchor mark |
-| F | 628,132 – 1020,290 | Title, red + amber underline, black subtitle bar |
+| E | 482,98 – 652,276 | Meta Ads lockup — oversized anchor mark + wordmark |
+| F | 660,138 – 1000,282 | `*NEW*` / `7-FIGURE` / `HIGH TICKET FUNNEL`, red + amber underline, black subtitle bar |
 | — | 256,286 – 520,340 | `$40K OFFERS` / `on cold traffic` wordmark |
 | G | 589,290 – 948,352 | Four sticky notes — the non-negotiables |
 | H | 1002,148 – 1272,262 | Funnel flow wireframes: Hook/Ad → VSL → Application → Calendar |
@@ -74,9 +83,10 @@ Add the cutout as the last child of `#board` with
 
 ## Type and colour
 
-- **Poppins** for everything except the display lines. 300/400 for body copy, 500 for
-  labels, 600 for headings and chips. Permanent Marker is kept only for the title,
-  the circled stat, and the three big wordmarks.
+- **Poppins** for everything, including the title (700). 300/400 for body copy, 500
+  for labels, 600 for headings and chips. Permanent Marker survives only on the three
+  annotation-style bits: the circled `5-12 ADS` stat, `$40K OFFERS`, and
+  `BOOKED CALLS` / `SAME OFFER`.
 - Section headings use `.sec` plus a `u-*` class, which draws the coloured underline:
   `u-blue`, `u-red`, `u-green`, `u-amber`, `u-violet`, `u-teal`, `u-pink`.
 - Background is `#ffffff` with a 14px grey dot grid
