@@ -671,3 +671,80 @@
   border: 1px dashed #C9CDD4;
 }
 .converge__box--ghost .converge__label { color: var(--ink-3); }
+
+/* ============================================================================
+   METRIC CARD  —  a named metric with its definition and a few readings.
+   ========================================================================= */
+
+.metric {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 24px 30px 26px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric__num {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.metric__name {
+  margin: 2px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  color: var(--ink);
+}
+
+.metric__def {
+  margin: 5px 0 11px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.metric__list { margin: 0; padding: 0; list-style: none; }
+
+.metric__list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.42;
+  color: var(--ink-2);
+}
+.metric__list li:last-child { margin-bottom: 0; }
+
+.metric__list li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #B4B4BA;
+}
+
+/* Directional readings keep the arrow from the notes instead of a dot. */
+.metric__list li.up::before,
+.metric__list li.down::before {
+  content: '\2191';
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+.metric__list li.down::before { content: '\2193'; }
+
+.metric__list li b { font-weight: 600; color: var(--ink); }
