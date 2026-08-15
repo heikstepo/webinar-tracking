@@ -981,6 +981,34 @@ html, body {
   color: var(--ink-2);
 }
 
+/* A creative slot that is available but not required — the open end of a
+   range like "five to eight". */
+.dot--ghost {
+  background: transparent;
+  border-style: dashed;
+  border-color: #CDD2D9;
+}
+
+/* Verdict badge, for the setup that is right. Sits on the corner rather than
+   across the box, because a tick drawn over the diagram would obscure it
+   without adding meaning — unlike the cross, which is the point. */
+.nest__ok {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--green-tint);
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1;
+  color: #248A13;
+}
+
 /* Struck through: thin enough to read everything underneath it. */
 .nest__cross {
   position: absolute;

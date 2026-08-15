@@ -497,3 +497,8 @@
   border-radius: 50%;
   background: #B4B4BA;
 }
+
+/* Correct-setup counterparts. */
+.nest__ok { background: #E7F5E3; border-color: #34A518; color: #248A13; }
+.dot--ghost { border-color: #C9CDD4; }
+.points li b { font-weight: 600; color: var(--ink); }
