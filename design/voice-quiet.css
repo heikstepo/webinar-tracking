@@ -425,3 +425,75 @@
 .nest__inner { background: #E6F0FD; }
 .dot { border-color: #D3E1F6; }
 .nest__caption { font-size: 22px; font-weight: 400; color: var(--ink-2); }
+
+/* ============================================================================
+   SPLIT  —  evidence on one side, reasons on the other, divided by a rule
+   that fades out at both ends so it reads as a seam rather than a border.
+   ========================================================================= */
+
+.split {
+  display: grid;
+  grid-template-columns: var(--split-l, 540px) 1px 1fr;
+  gap: 60px;
+  align-items: stretch;
+  width: 100%;
+  text-align: left;
+}
+
+.split__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.split__rule {
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--hairline) 14%,
+    var(--hairline) 86%,
+    transparent 100%
+  );
+}
+
+/* ---- reason list ------------------------------------------------------- */
+
+.points__label {
+  margin: 0 0 28px;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.points li {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 24px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.34;
+  letter-spacing: -0.004em;
+  color: var(--ink);
+}
+.points li:last-child { margin-bottom: 0; }
+
+/* Grey, not red: the strike-through already carries "wrong", and repeating
+   the alarm seven times only dilutes it. */
+.points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.50em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #B4B4BA;
+}

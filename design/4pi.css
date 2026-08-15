@@ -935,9 +935,10 @@ html, body {
 
 .nest {
   position: relative;
-  width: 900px;
-  padding: 30px;
+  width: var(--nest-w, 900px);
+  padding: var(--nest-pad, 30px);
   border-radius: 30px;
+  text-align: center;   /* labels stay centred even inside a left-aligned column */
   background: var(--surface);
   border: 1px solid var(--hairline);
 }
@@ -954,20 +955,20 @@ html, body {
 .nest__inner {
   border-radius: 22px;
   background: var(--blue-tint);
-  padding: 26px 30px 26px;
+  padding: var(--nest-pad, 26px) var(--nest-pad, 30px);
 }
 
 .dots {
   display: grid;
   grid-template-columns: repeat(var(--cols, 10), 1fr);
-  gap: 20px;
+  gap: var(--dot-gap, 20px);
   justify-items: center;
   margin: 20px 0 0;
 }
 
 .dot {
-  width: 56px;
-  height: 56px;
+  width: var(--dot, 56px);
+  height: var(--dot, 56px);
   border-radius: 50%;
   background: var(--surface);
   border: 1px solid #D6E2F2;
