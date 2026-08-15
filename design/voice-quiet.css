@@ -596,6 +596,11 @@
   border-radius: 20px;
   background: var(--surface);
   text-align: left;   /* multi-line descriptions need a straight left edge */
+  /* Boxes are a uniform height so the connector lines meet their centres;
+     centring the content keeps short entries from sitting top-heavy. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .converge__label {
@@ -658,3 +663,11 @@
   height: 100%;
   pointer-events: none;
 }
+
+/* An open slot — the concept exists but is deliberately left unfilled.
+   Same dashed language as .dot--ghost. */
+.converge__box--ghost {
+  background: transparent;
+  border: 1px dashed #C9CDD4;
+}
+.converge__box--ghost .converge__label { color: var(--ink-3); }
