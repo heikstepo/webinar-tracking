@@ -1,0 +1,427 @@
+/* ============================================================================
+   QUIET VOICE
+   A typographic layer. Load it AFTER 4pi.css:
+
+       <link rel="stylesheet" href="../4pi.css">
+       <link rel="stylesheet" href="../voice-quiet.css">
+
+   4pi.css keeps doing the structural work — canvas, grids, funnel, tree,
+   table, cards. Everything below replaces the parts that carried the source
+   deck's identity, so the slides read as their own thing:
+
+     weight 900 headlines        -> weight 600, larger, Apple's own tracking
+     solid highlighter blocks    -> the words themselves take the color
+     uppercase 0.18em eyebrows   -> sentence case, sitting above the headline
+     handwritten asides          -> plain captions
+     offset ink shadows          -> flat surfaces, or a soft ambient shadow
+     radial ground wash          -> one flat neutral
+
+   The result is quieter on purpose. Emphasis now comes from size, space and
+   color — never from a box drawn behind the text.
+   ========================================================================= */
+
+:root {
+  /* Apple's own neutrals, which are warmer and lighter than the source's. */
+  --ground: #F5F5F7;
+  --ground-hi: #F5F5F7;
+  --surface: #FFFFFF;
+
+  --ink: #1D1D1F;
+  --ink-2: #6E6E73;
+  --ink-3: #86868B;
+  --hairline: #D2D2D7;
+
+  /* Emphasis colors, tuned for text rather than for blocks behind text.
+     Yellow is gone as a text color — it cannot hold contrast on a light
+     ground — and returns only as a rule under a phrase. */
+  --accent: #0071E3;      /* Apple's blue, for the emphasized phrase */
+  --amber: #A9740A;       /* the warm alternative, dark enough to read  */
+
+  --r-card: 28px;         /* Apple's tiles are rounder than the source's */
+  --r-tile: 28px;
+}
+
+/* Flat ground. No wash, no vignette. */
+.slide {
+  background: var(--ground);
+}
+
+/* ============================================================================
+   HEADLINES
+   Weight 600 — Apple's ceiling — with tracking that goes more negative as the
+   size grows, which is what keeps large text from looking loose. Bigger and
+   lighter reads calmer than smaller and heavier at the same measure.
+   ========================================================================= */
+
+.h1, .h2, .h3 {
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+}
+
+.h1 { font-size: 96px; letter-spacing: -0.019em; line-height: 1.04; }
+.h2 { font-size: 76px; letter-spacing: -0.015em; }
+.h3 { font-size: 60px; letter-spacing: -0.010em; }
+
+.h1--sm { font-size: 84px; letter-spacing: -0.017em; }
+.h2--sm { font-size: 64px; letter-spacing: -0.011em; }
+.h3--sm { font-size: 48px; letter-spacing: -0.005em; }
+
+/* Lede and body: weight 400, the secondary ink, roomy leading. */
+.lede {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.40;
+  letter-spacing: -0.003em;
+  color: var(--ink-2);
+  max-width: 960px;
+}
+.lede--lg { font-size: 38px; letter-spacing: -0.006em; max-width: 1040px; }
+.lede--sm { font-size: 27px; letter-spacing: 0; }
+
+.body {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.body strong { font-weight: 600; color: var(--ink); }
+
+/* ============================================================================
+   EMPHASIS
+   The phrase takes the color. Nothing is drawn behind it.
+   ========================================================================= */
+
+.mark,
+.mark--blue,
+.mark--red,
+.mark--green,
+.mark--ink,
+.mark--soft {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--accent);
+}
+
+.mark--red   { color: var(--red); }
+.mark--green { color: #248A13; }
+.mark--ink   { color: var(--ink); }
+.mark--warn  { color: var(--amber); }
+
+/* In body copy, emphasis is weight plus the primary ink — not a wash. */
+.mark--soft {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* The one surviving way to point at a phrase: a thin rule beneath it.
+   Use sparingly — once per slide at most. */
+.mark--rule {
+  color: inherit;
+  padding-bottom: 0.10em;
+  border-bottom: 4px solid var(--accent);
+}
+
+/* The hand-drawn underline belongs to the old voice. */
+.squiggle::after { display: none; }
+
+/* ============================================================================
+   EYEBROW
+   Sentence case, no dot, no tracking, and in the flow directly above the
+   headline rather than pinned to the corner. This is Apple's pattern: the
+   eyebrow is part of the headline block, not page furniture.
+   ========================================================================= */
+
+.eyebrow {
+  position: static;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--accent);
+}
+
+.eyebrow::before { display: none; }
+
+.eyebrow--blue   { color: var(--accent); }
+.eyebrow--yellow { color: var(--amber); }
+.eyebrow--red    { color: var(--red); }
+.eyebrow--green  { color: #248A13; }
+
+.eyebrow--cover { margin-bottom: 22px; }
+
+/* Footer, if a slide still wants one: a quiet caption, bottom left. */
+.footer {
+  left: var(--pad-x);
+  right: auto;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-3);
+}
+.footer--cover {
+  position: static;
+  margin-top: 40px;
+  font-size: 21px;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
+   CAPTIONS  (what the handwriting used to do)
+   ========================================================================= */
+
+.hand {
+  font-family: var(--sans);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ink-3);
+}
+.hand--lg { font-size: 24px; }
+.hand--md { font-size: 21px; }
+.hand--sm { font-size: 19px; }
+
+/* ============================================================================
+   SURFACES
+   Apple tiles sit flat on the ground or float on a soft ambient shadow.
+   The offset ink shadow is gone.
+   ========================================================================= */
+
+.card {
+  padding: 46px 48px;
+  border: none;
+  background: var(--surface);
+}
+
+.card--hard,
+.card--hard.card--red,
+.card--hard.card--green,
+.card--hard.card--yellow,
+.card--hard.card--blue {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 14px 36px rgba(0, 0, 0, 0.07);
+}
+
+/* Tints keep their meaning but lose their outlines. */
+.card--red    { background: #FDECEF; border: none; }
+.card--yellow { background: #FCF3E0; border: none; }
+.card--green  { background: #E7F5E3; border: none; }
+.card--blue   { background: #E6F0FD; border: none; }
+
+.card__label {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 14px;
+  color: var(--ink-3);
+}
+.card__label--red    { color: var(--red); }
+.card__label--yellow { color: var(--amber); }
+.card__label--green  { color: #248A13; }
+.card__label--blue   { color: var(--accent); }
+
+.card__title {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+}
+.card__title--lg { font-size: 40px; letter-spacing: -0.008em; }
+
+.card__note {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.verdict {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.arrows li {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--ink-2);
+}
+.arrows li strong,
+.arrows li b { font-weight: 600; color: var(--ink); }
+.arrows .soft { color: var(--ink-3); font-weight: 400; }
+
+.chip {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.003em;
+  border: none;
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 32px 24px;
+}
+
+.panel {
+  border: none;
+  background: var(--surface);
+}
+
+/* The ink question box loses its drop shadow and softens its type. */
+.question {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  box-shadow: none;
+}
+
+/* ============================================================================
+   PART NUMERALS
+   No outline, no rotation, no handwriting — a large, very light figure that
+   sits behind the content rather than competing with it.
+   ========================================================================= */
+
+.numeral {
+  font-family: var(--sans);
+  font-size: 220px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #DCDCE1;
+  -webkit-text-stroke: 0;
+  transform: none;
+}
+
+.rule { height: 4px; width: 120px; background: var(--accent); }
+.rule--yellow { background: var(--amber); }
+.rule--red    { background: var(--red); }
+.rule--green  { background: #248A13; }
+
+/* ============================================================================
+   DIAGRAM TYPE
+   The shapes stay; their labels join the new voice.
+   ========================================================================= */
+
+.node--root { box-shadow: none; }
+.node--set  { box-shadow: none; border: none; background: #E6F0FD; }
+
+.node__label {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.node--root .node__label { color: rgba(255, 255, 255, 0.66); }
+.node--set  .node__label { color: var(--accent); }
+
+.node__title { font-size: 32px; font-weight: 600; letter-spacing: -0.005em; }
+.node__meta  { font-size: 22px; font-weight: 400; }
+
+.ad { font-size: 25px; font-weight: 500; letter-spacing: -0.003em; border-color: var(--hairline); }
+
+.flow__tile { box-shadow: none; }
+.flow__step,
+.flow__desc {
+  font-family: var(--sans);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ink-3);
+}
+.flow__step { font-size: 19px; }
+.flow__desc { font-size: 21px; }
+.flow__name { font-size: 32px; font-weight: 600; letter-spacing: -0.005em; }
+
+.spectrum__label {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.funnel__stage {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #7C8794;
+}
+
+.pill-ad { font-weight: 500; border-color: #D6E2F2; }
+
+.conversion__label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.cold__label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.cold__note {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.branch__note,
+.funnel__note {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  transform: none;
+}
+
+/* Table: sentence-case headers, lighter figures. */
+.window { border-color: var(--hairline); }
+.window__bar { background: #FAFAFC; border-color: var(--hairline); font-size: 23px; }
+
+.tbl th {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-3);
+  border-color: var(--hairline);
+}
+.tbl td {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  border-color: var(--hairline);
+}
+.tbl .group td {
+  font-family: var(--sans);
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--ink-3);
+  background: #FAFAFC;
+}
+.tbl .flag td { background: #FDECEF; }
+.tbl .flag td.hot { font-weight: 600; }
+
+/* The pointing annotation survives, but drawn rather than written. */
+.anno {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  transform: none;
+  color: var(--red);
+}
+
+/* Nest labels join the quiet voice. */
+.nest { border-color: var(--hairline); border-radius: 30px; }
+.nest__label {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-3);
+}
+.nest__inner { background: #E6F0FD; }
+.dot { border-color: #D3E1F6; }
+.nest__caption { font-size: 22px; font-weight: 400; color: var(--ink-2); }
