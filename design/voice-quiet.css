@@ -859,3 +859,39 @@
 }
 
 .cycle__ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* ============================================================================
+   LADDER  —  stage label paired with the thought at that stage. The fixed
+   label column aligns every quote on the same left edge.
+   ========================================================================= */
+
+.ladder {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 28px 24px;
+  text-align: left;
+}
+
+.ladder__label {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  color: var(--accent);
+}
+
+.ladder__quote {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  color: var(--ink);
+}
+
+.ladder__alt {
+  grid-column: 2;
+  margin: -12px 0 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--ink-3);
+}
