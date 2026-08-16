@@ -828,3 +828,34 @@
 }
 
 .seq__path { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* ============================================================================
+   CYCLE  —  eight steps around a ring, arrows running clockwise and closing
+   back on the first. Arc segments use SVG's elliptical-arc command so they
+   sit on the same ellipse the cards are placed on.
+   ========================================================================= */
+
+.cycle { position: relative; width: 1240px; height: 576px; flex: none; }
+
+.cycle__node {
+  position: absolute;
+  /* left/top are the node's centre on the ellipse, so cards of different
+     heights stay centred on the ring instead of hanging below it. */
+  transform: translate(-50%, -50%);
+  width: 240px;
+  min-height: 100px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.002em;
+  color: var(--ink);
+}
+
+.cycle__ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
