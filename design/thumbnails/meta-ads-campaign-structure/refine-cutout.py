@@ -18,8 +18,9 @@ import numpy as np
 from PIL import Image, ImageFilter
 from scipy import ndimage
 
-# Only refine the head region — the wall behind the shoulders is already handled
-# by the matte, and the sweater's cool shadows would otherwise get nibbled.
+# Only refine down to the neck. Below that the clothing starts, and a white or
+# grey top is neutral and unwarm — exactly what the spill test looks for — so it
+# would get eaten. Pass the neck row as argv[3] for a new shot.
 HEAD_ROWS = 1150
 CHROMA_MAX = 19.0      # wall ~3, sweater ~16
 WARMTH_MAX = 9.0       # (R-B); wall ~ -3, blown wall ~ +6, sweater ~ +16
@@ -27,7 +28,7 @@ LUM_RANGE = (48, 252)
 EDGE_PX = 34           # spill only happens within this far of the matte edge
 
 
-def refine(src: str, dst: str):
+def refine(src: str, dst: str, head_rows: int = HEAD_ROWS):
     im = Image.open(src).convert("RGBA")
     arr = np.array(im).astype(np.float32)
     rgb, alpha = arr[:, :, :3], arr[:, :, 3]
@@ -52,8 +53,10 @@ def refine(src: str, dst: str):
     spill *= np.clip((EDGE_PX - dist) / EDGE_PX, 0, 1)
 
     region = np.zeros_like(spill)
-    region[:HEAD_ROWS] = 1.0
-    region[HEAD_ROWS:HEAD_ROWS + 120] = np.linspace(1, 0, 120)[:, None]
+    region[:head_rows] = 1.0
+    fade = min(120, max(0, region.shape[0] - head_rows))
+    if fade:
+        region[head_rows:head_rows + fade] = np.linspace(1, 0, fade)[:, None]
     spill *= region
 
     removed = float((spill > 0.5).sum())
@@ -78,4 +81,5 @@ def refine(src: str, dst: str):
 
 if __name__ == "__main__":
     refine(sys.argv[1] if len(sys.argv) > 1 else "assets/face.png",
-           sys.argv[2] if len(sys.argv) > 2 else "assets/face-clean.png")
+           sys.argv[2] if len(sys.argv) > 2 else "assets/face-clean.png",
+           int(sys.argv[3]) if len(sys.argv) > 3 else HEAD_ROWS)

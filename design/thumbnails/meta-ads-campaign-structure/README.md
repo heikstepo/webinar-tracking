@@ -78,6 +78,9 @@ model in the loop. `grade-face.py` is colour work only: an S-curve, a split-tone
 a saturation lift and an unsharp pass. It makes the face read on a dark field; it
 cannot change the expression.
 
+The grade is deliberately light (S-curve 0.11, saturation 1.10, unsharp 70%). An
+earlier pass at roughly double those values visibly degraded the skin.
+
 `assets/face.png` is produced with:
 
 ```python
@@ -96,9 +99,22 @@ crunchy. Two notes for anyone regenerating it:
   it. It is handled compositionally instead: `#face` is sized and positioned so
   everything below roughly 82% of the cutout height falls past the bottom edge.
   If you resize the face, re-check that the chair stays off-canvas.
-- **The source photo is mirrored** (shot in selfie view). With the background gone
-  there is no text to give it away, so it is left as-is. Set `--fflip:-1` on
-  `#face` to un-mirror.
+- **The shot is chosen for gesture direction.** Of the eight in the Drive folder,
+  `s4` has a smirk, direct eye contact and a clear pointing finger. `s2` has a
+  stronger expression but the gaze is averted, which costs more than the drama is
+  worth in a thumbnail.
+- **The flip happens in the pipeline, not in CSS.** The source is mirrored (selfie
+  view), so he points off-canvas as shot; flipped, he points straight at the
+  winning card. It has to be flipped on the file rather than with
+  `transform:scaleX(-1)`, because a CSS transform also mirrors the rim-light
+  `drop-shadow` offsets onto the wrong edge.
+- **Despill must stop at the neck.** `refine-cutout.py` takes the neck row as
+  argv[3] (980 for this shot). A white or grey top is neutral and unwarm —
+  exactly what the spill test looks for — so letting the mask run past the neck
+  eats the clothing.
+- **The plate must not contain his face.** Blurring a crop that includes him
+  leaves a ghost head floating in the background. This plate is built from the
+  wall-and-plant strip beside him in the same shot.
 - **Matte spill is invisible on light and glaring on dark.** rembg keeps the wall
   showing through the gaps between hair strands. `refine-cutout.py` handles it by
   scoring each pixel on chroma, warmth and luminance, gating that score on

@@ -39,12 +39,12 @@ def grade(src: str, dst: str):
     alpha = im.getchannel("A")
     rgb = im.convert("RGB")
 
-    lut = s_curve(0.20)
+    lut = s_curve(0.11)
     rgb = rgb.point(lut * 3)
     rgb = split_tone(rgb)
-    rgb = ImageEnhance.Color(rgb).enhance(1.26)      # saturation
-    rgb = ImageEnhance.Brightness(rgb).enhance(1.04)
-    rgb = rgb.filter(ImageFilter.UnsharpMask(radius=2.2, percent=115, threshold=3))
+    rgb = ImageEnhance.Color(rgb).enhance(1.10)      # saturation
+    rgb = ImageEnhance.Brightness(rgb).enhance(1.02)
+    rgb = rgb.filter(ImageFilter.UnsharpMask(radius=1.8, percent=70, threshold=3))
 
     out = rgb.convert("RGBA")
     out.putalpha(alpha)
