@@ -1,0 +1,88 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Meta Ads Campaign Structure — Thumbnail (no hook)</title>
+<style>
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:block}
+@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#2f3136}
+
+/* palette sampled straight out of the deck */
+:root{
+  --paper:#f5f5f7;
+  --ink:#1d1d1f;
+  --red:#e31d3e;
+  --gold:#f6b827;
+  --dead:#a2a6ae;
+}
+
+#board{
+  position:relative;width:1280px;height:720px;overflow:hidden;
+  background:var(--paper);
+  font-family:Poppins,sans-serif;color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+#board::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at 1px 1px,rgba(29,29,31,.07) 1px,transparent 1px);
+  background-size:22px 22px;
+}
+
+/* NOTE: nothing that sits on .abs may declare its own position —
+   it wins on source order and drops back into normal flow. */
+.abs{position:absolute}
+
+/* ── presenter ───────────────────────────────────────────────
+   Sized so the head reads ~320px tall and the office chair still
+   attached to his shoulders falls below the bottom edge.        */
+#face{left:-30px;top:40px;width:631px;z-index:3}
+#face img{
+  width:100%;height:auto;display:block;
+  transform:scaleX(var(--fflip,1));
+  filter:drop-shadow(12px 4px 30px rgba(29,29,31,.18));
+}
+
+/* ── statements ──────────────────────────────────────────── */
+.num{font-weight:700;letter-spacing:-.04em;line-height:.9;white-space:nowrap}
+.qual{font-weight:600;font-size:19px;letter-spacing:.18em;text-transform:uppercase}
+
+.dead .num{font-size:100px;color:var(--dead)}
+.dead .qual{color:var(--dead)}
+.strike{height:10px;background:var(--red);border-radius:5px;
+  transform:rotate(-2.2deg);box-shadow:0 2px 7px rgba(227,29,62,.32)}
+
+.live .num{font-size:116px;color:var(--ink)}
+.live .qual{color:#5f636b}
+.hl{background:var(--gold);border-radius:7px}
+
+#head{
+  background:var(--ink);color:#fff;font-weight:700;font-size:31px;
+  letter-spacing:-.015em;padding:13px 20px;border-radius:10px;white-space:nowrap;
+  box-shadow:0 7px 22px rgba(29,29,31,.24);
+}
+</style>
+
+<div id="board">
+
+  <div class="abs" id="face" style="--fflip:1">
+    <img src="assets/face.png" alt="">
+  </div>
+
+  <!-- ── what they run now ── -->
+  <div class="abs dead" style="left:648px;top:150px;z-index:4">
+    <div class="num">30 ADS</div>
+    <div class="qual" style="margin-top:8px">per ad set</div>
+  </div>
+  <div class="abs strike" style="left:634px;top:208px;width:404px;z-index:5"></div>
+
+  <!-- ── what they should run ── -->
+  <div class="abs hl" style="left:640px;top:414px;width:470px;height:52px;z-index:4"></div>
+  <div class="abs live" style="left:648px;top:380px;z-index:5">
+    <div class="num">5&ndash;8 ADS</div>
+    <div class="qual" style="margin-top:10px">per ad set</div>
+  </div>
+
+
+</div>
