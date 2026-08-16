@@ -7,20 +7,38 @@ control ad set of 5–8 unique ads where spend is earned.
 
 | File | Renders to | Look |
 |---|---|---|
-| `index.html` | `render/bold-*.png` | Dark, outlined yellow display type, red X badge, yellow arrow, graded and glowing cutout. Built to compete in a feed. |
-| `variant-quiet.html` | `render/hook-*.png` | Light, deck-accurate, flat. Reads as a slide, not a thumbnail — kept for reference. |
+| `index.html` | `render/jl-*.png` | Current. Justin Lalonde's system — see below. |
+| `variant-b-bold.html` | `render/bold-*.png` | Dan James style: outlined yellow type, red X badge, gradient-blob background. |
+| `variant-a-deck.html` | `render/hook-*.png` | Light, deck-accurate, flat. Reads as a slide, not a thumbnail. |
 
-The hook line `IT'S NOT AD FATIGUE` was dropped from the bold version on purpose:
-it dies at sidebar size (see Legibility), and the claim belongs in the video
-title, where it has room. Thumbnail carries the visual, title carries the claim.
+## The Lalonde system
+
+Pulled from twelve of his thumbnails (`i.ytimg.com/vi/<id>/maxresdefault.jpg`),
+because guessing at a style from memory produced the gradient-blob background in
+`variant-b-bold.html` — the single clearest "AI-made" tell.
+
+What he actually does:
+
+1. **A real room, blurred.** Genuine depth of field, never gradient blobs. Ours is
+   built from the shelf/plant half of the source headshot, so the plate is
+   literally the same room the video is shot in.
+2. **A cyan rim light** down the leading edge of every cutout. Non-negotiable —
+   it is the thing that makes his cutouts read as composited rather than pasted.
+3. **Clean white grotesque type.** No heavy outlines. Inter here; Poppins is
+   geometric and reads wrong against his neutral grotesque.
+4. **The blue Meta mark used literally**, at size, in brand blue.
+5. **White iOS-widget cards** as evidence panels, with a coloured status pip.
+6. **Red reserved** for strikes, arrows and handwritten annotations — never
+   for body copy.
 
 ## Render
 
 ```bash
-python3 refine-cutout.py assets/face.png assets/face-clean.png    # despill
+python3 refine-cutout.py assets/face.png assets/face-clean.png     # despill
 python3 grade-face.py assets/face-clean.png assets/face-graded.png # colour grade
-node render.mjs index.html bold
-node render.mjs variant-quiet.html hook
+node render.mjs index.html jl
+node render.mjs variant-b-bold.html bold
+node render.mjs variant-a-deck.html hook
 ```
 
 Each run emits 1280×720, 2560×1440, 3840×2160 and 5120×2880.
@@ -51,6 +69,7 @@ Three stages, each a committed script so the whole thing is reproducible:
 | Stage | Script | Output |
 |---|---|---|
 | Matte | rembg (below) | `assets/face.png` |
+| Plate | inline in this README | `assets/bg-room.jpg` |
 | Despill | `refine-cutout.py` | `assets/face-clean.png` |
 | Grade | `grade-face.py` | `assets/face-graded.png` |
 
@@ -95,10 +114,13 @@ crunchy. Two notes for anyone regenerating it:
 serves — 360px on the home feed, 168px in the sidebar. Regenerate it after any
 change and check before shipping.
 
-Current state at 168px, bold variant: `5–8 ADS` in yellow carries the frame, the
-struck `30 ADS` and the red X badge both read, and the face reads. `PER AD SET`
-does not — by design, it exists to stop "5–8 ads" being misread as a per-account
-total, and that only matters at sizes where it is legible.
+At 168px the Lalonde version holds: `It's not ad fatigue.` reads, both cards read
+as shapes with `30` struck and `5–8` in blue, and the face reads. The red
+handwritten note does not — his don't either, it is a 360px-and-up flourish.
 
-This is why the hook line was cut. At nineteen characters no bar survives the
-sidebar; it read fine at 360px and turned to mush at 168px.
+**Honest trade-off worth knowing.** The Lalonde system is lower-contrast than the
+Dan James one. Side by side at 168px, `variant-b-bold.html` punches harder —
+huge yellow on near-black is simply louder than white cards on a blurred room.
+What the Lalonde version buys instead is looking expensive rather than shouty,
+which suits a consulting offer. If raw sidebar CTR is the only goal, test the
+bold variant against it rather than assuming.
