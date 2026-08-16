@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ads shown in sequence, circles</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+</head>
+<body>
+
+<section class="slide slide--top slide--mid">
+
+  <h2 class="h3" style="margin-top:10px">Ads Are Shown in Sequence</h2>
+
+  <p class="lede lede--sm" style="margin-top:18px">One person, from the first ad they see to the one that closes.</p>
+
+  <div class="seq" style="margin-top:26px">
+
+    <!-- The funnel shape. Bands are empty; everything else is placed on top. -->
+    <div class="seq__funnel">
+      <div class="funnel" style="--fw:900px; --fbh:104px">
+        <div class="funnel__band funnel__band--1"></div>
+        <div class="funnel__band funnel__band--2"></div>
+        <div class="funnel__band funnel__band--3"></div>
+        <div class="funnel__neck"></div>
+      </div>
+    </div>
+
+    <p class="seq__stage" style="left:0; top:107px">Top of funnel</p>
+    <p class="seq__stage" style="left:0; top:217px">Middle of funnel</p>
+    <p class="seq__stage" style="left:0; top:327px">Bottom of funnel</p>
+
+
+
+    <div class="dot" style="--dot:52px; position:absolute; left:374px; top:91px"></div>
+    <div class="dot" style="--dot:52px; position:absolute; left:594px; top:91px"></div>
+    <div class="dot" style="--dot:52px; position:absolute; left:814px; top:91px"></div>
+    <div class="dot" style="--dot:52px; position:absolute; left:594px; top:201px"></div>
+    <div class="dot" style="--dot:52px; position:absolute; left:594px; top:311px"></div>
+
+    <div class="seq__conv" style="left:590px; top:432px">&#10003;</div>
+    <p class="seq__conv-label" style="left:470px; top:502px">Conversion</p>
+
+    <svg class="seq__path" viewBox="0 0 1240 522" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="sq" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g stroke="#0071E3" stroke-width="3" stroke-linecap="round" marker-end="url(#sq)">
+        <path d="M620 6 L620 50"/>
+        <path d="M1015 125 C 1098 152, 1086 206, 914 222"/>
+        <path d="M902 250 C 986 274, 970 322, 804 336"/>
+        <path d="M792 352 C 872 384, 832 450, 664 462"/>
+      </g>
+    </svg>
+
+  </div>
+
+</section>
+
+</body>
+</html>
