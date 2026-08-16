@@ -41,7 +41,8 @@ for (const scale of SCALES) {
   await page.waitForTimeout(350);
   const el = await page.locator('#board');
   const out = path.join(outDir, `${prefix}-${W * scale}x${H * scale}.png`);
-  await el.screenshot({ path: out });
+  // 4x with layered drop-shadow filters blows past Playwright's 30s default
+  await el.screenshot({ path: out, timeout: 180000 });
   console.log('wrote', out);
   await ctx.close();
 }

@@ -34,8 +34,10 @@ What he actually does:
 ## Render
 
 ```bash
-python3 refine-cutout.py assets/face.png assets/face-clean.png     # despill
-python3 grade-face.py assets/face-clean.png assets/face-graded.png # colour grade
+python3 strip-prop.py    assets/face.png           assets/face-noprop.png
+python3 refine-cutout.py assets/face-noprop.png    assets/face-clean.png 980
+python3 retouch-face.py  assets/face-clean.png     assets/face-retouched.png
+python3 grade-face.py    assets/face-retouched.png assets/face-graded.png
 node render.mjs index.html jl
 node render.mjs variant-b-bold.html bold
 node render.mjs variant-a-deck.html hook
@@ -69,9 +71,11 @@ Three stages, each a committed script so the whole thing is reproducible:
 | Stage | Script | Output |
 |---|---|---|
 | Matte | rembg (below) | `assets/face.png` |
-| Plate | inline in this README | `assets/bg-room.jpg` |
+| Strip prop | `strip-prop.py` | `assets/face-noprop.png` |
 | Despill | `refine-cutout.py` | `assets/face-clean.png` |
+| Retouch | `retouch-face.py` | `assets/face-retouched.png` |
 | Grade | `grade-face.py` | `assets/face-graded.png` |
+| Plate | inline in this README | `assets/bg-room.jpg` |
 
 **No generative retouching happens anywhere in this pipeline** — there is no image
 model in the loop. `grade-face.py` is colour work only: an S-curve, a split-tone,
@@ -80,6 +84,18 @@ cannot change the expression.
 
 The grade is deliberately light (S-curve 0.11, saturation 1.10, unsharp 70%). An
 earlier pass at roughly double those values visibly degraded the skin.
+
+`retouch-face.py` does frequency-separation skin work, a shadow lift and a soft
+key light. **It cannot remove a beard** — that needs inpainting, which needs a
+generative model. `NECK_STRENGTH` reduces the *appearance* of neck stubble by
+pulling dark low-contrast pixels toward the surrounding skin tone, and it is
+capped at 0.34 deliberately: the first pass ran every constant at roughly double
+these values and the result was plastic, with smeared eyes and a waxy forehead.
+Subtlety is the whole point — anything stronger looks obviously retouched, which
+costs more trust than the blemishes do.
+
+Eyes, brows, lashes and lips are excluded from the skin mask (`lum > 95` and
+`chroma < 82`) so they stay sharp while the cheeks and forehead are calmed.
 
 `assets/face.png` is produced with:
 
