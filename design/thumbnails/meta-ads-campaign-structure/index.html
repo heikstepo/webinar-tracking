@@ -2,89 +2,134 @@
 <meta charset="utf-8">
 <title>Meta Ads Campaign Structure — Thumbnail</title>
 <style>
-@font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:block}
 @font-face{font-family:Poppins;src:url(assets/fonts/poppins-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:block}
 
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{background:#2f3136}
+html,body{background:#0a0b0d}
 
-/* palette sampled straight out of the deck */
 :root{
-  --paper:#f5f5f7;
-  --ink:#1d1d1f;
-  --red:#e31d3e;
-  --gold:#f6b827;
-  --dead:#a2a6ae;
+  --yellow:#ffe019;
+  --red:#f5162f;
+  --ink:#0a0b0d;
 }
 
 #board{
   position:relative;width:1280px;height:720px;overflow:hidden;
-  background:var(--paper);
-  font-family:Poppins,sans-serif;color:var(--ink);
+  background:#14161b;
+  font-family:Poppins,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-#board::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background-image:radial-gradient(circle at 1px 1px,rgba(29,29,31,.07) 1px,transparent 1px);
-  background-size:22px 22px;
-}
 
-/* NOTE: nothing that sits on .abs may declare its own position —
-   it wins on source order and drops back into normal flow. */
+/* faked depth: warm pool behind him, cool pool behind the type, hard vignette */
+#board::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(46% 62% at 22% 46%, rgba(255,196,64,.20), transparent 62%),
+    radial-gradient(52% 66% at 82% 30%, rgba(64,132,255,.16), transparent 64%),
+    radial-gradient(70% 90% at 50% 100%, rgba(0,0,0,.55), transparent 60%),
+    linear-gradient(160deg,#1c1f26 0%,#111318 55%,#0a0b0e 100%);
+}
+/* blurred "room" blobs so the field is not a flat wash */
+#board::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:8;
+  background:radial-gradient(120% 100% at 50% 50%, transparent 45%, rgba(0,0,0,.62) 100%);
+}
+.bokeh{position:absolute;border-radius:50%;filter:blur(46px);opacity:.5;z-index:1}
+
 .abs{position:absolute}
 
-/* ── presenter ───────────────────────────────────────────────
-   Sized so the head reads ~320px tall and the office chair still
-   attached to his shoulders falls below the bottom edge.        */
-#face{left:-30px;top:40px;width:631px;z-index:3}
+/* ── presenter ─────────────────────────────────────────────── */
+#face{left:-44px;top:30px;width:660px;z-index:5}
 #face img{
   width:100%;height:auto;display:block;
   transform:scaleX(var(--fflip,1));
-  filter:drop-shadow(12px 4px 30px rgba(29,29,31,.18));
+  filter:
+    drop-shadow(0 0 26px rgba(255,206,80,.50))
+    drop-shadow(0 0 70px rgba(255,176,40,.30))
+    drop-shadow(22px 18px 34px rgba(0,0,0,.62));
 }
 
-/* ── statements ──────────────────────────────────────────── */
-.num{font-weight:700;letter-spacing:-.04em;line-height:.9;white-space:nowrap}
-.qual{font-weight:600;font-size:19px;letter-spacing:.18em;text-transform:uppercase}
+/* ── outlined display type ─────────────────────────────────── */
+.big{position:relative;display:inline-block;font-weight:700;letter-spacing:-.045em;
+  line-height:.9;white-space:nowrap}
+.big .b,.big .f{display:block}
+.big .b{position:absolute;left:0;top:0;color:#000;
+  -webkit-text-stroke:var(--stroke,16px) #000;z-index:1}
+.big .f{position:relative;z-index:2}
 
-.dead .num{font-size:100px;color:var(--dead)}
-.dead .qual{color:var(--dead)}
-.strike{height:10px;background:var(--red);border-radius:5px;
-  transform:rotate(-2.2deg);box-shadow:0 2px 7px rgba(227,29,62,.32)}
+#dead{left:646px;top:74px;z-index:6}
+#dead .big{font-size:96px;--stroke:11px}
+#dead .big .f{color:#eef1f7}
+#dead .strike{position:absolute;left:-16px;top:52px;width:428px;height:15px;
+  background:var(--red);border-radius:8px;transform:rotate(-3deg);z-index:3;
+  box-shadow:0 0 18px rgba(245,22,47,.75),0 4px 10px rgba(0,0,0,.5)}
+#dead .qual{margin-top:14px;font-weight:700;font-size:22px;letter-spacing:.2em;
+  color:#a7aebc;text-shadow:0 2px 6px rgba(0,0,0,.8);text-transform:uppercase}
 
-.live .num{font-size:116px;color:var(--ink)}
-.live .qual{color:#5f636b}
-.hl{background:var(--gold);border-radius:7px}
+#live{left:646px;top:372px;z-index:6}
+#live .big{font-size:126px;--stroke:17px}
+#live .big .f{color:var(--yellow)}
+#live .qual{margin-top:16px;font-weight:700;font-size:24px;letter-spacing:.2em;
+  color:#fff;text-transform:uppercase;
+  text-shadow:0 3px 8px rgba(0,0,0,.8)}
+#live .glow{position:absolute;left:-26px;top:8px;width:560px;height:120px;z-index:0;
+  background:radial-gradient(closest-side,rgba(255,224,25,.38),transparent 72%);
+  filter:blur(10px)}
 
-#head{
-  background:var(--ink);color:#fff;font-weight:700;font-size:31px;
-  letter-spacing:-.015em;padding:13px 20px;border-radius:10px;white-space:nowrap;
-  box-shadow:0 7px 22px rgba(29,29,31,.24);
-}
+/* ── red X badge ───────────────────────────────────────────── */
+#xbadge{right:44px;top:56px;width:112px;height:112px;border-radius:50%;
+  background:linear-gradient(160deg,#ff3446,#d1000f);z-index:7;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.60),0 0 32px rgba(245,22,47,.55),
+             inset 0 -6px 14px rgba(0,0,0,.28),inset 0 6px 12px rgba(255,255,255,.22);
+  border:5px solid #fff}
+#xbadge svg{width:52px;height:52px;stroke:#fff;stroke-width:8;stroke-linecap:round;fill:none}
 </style>
 
 <div id="board">
 
+  <div class="bokeh" style="left:-90px;top:-70px;width:340px;height:340px;background:#3a4658"></div>
+  <div class="bokeh" style="right:120px;bottom:-90px;width:400px;height:400px;background:#2a3550"></div>
+  <div class="bokeh" style="right:-60px;top:180px;width:260px;height:260px;background:#4a3a2a"></div>
+
   <div class="abs" id="face" style="--fflip:1">
-    <img src="assets/face.png" alt="">
+    <img src="assets/face-graded.png" alt="">
   </div>
 
-  <!-- ── what they run now ── -->
-  <div class="abs dead" style="left:648px;top:96px;z-index:4">
-    <div class="num">30 ADS</div>
-    <div class="qual" style="margin-top:8px">per ad set</div>
-  </div>
-  <div class="abs strike" style="left:634px;top:154px;width:404px;z-index:5"></div>
-
-  <!-- ── what they should run ── -->
-  <div class="abs hl" style="left:640px;top:340px;width:470px;height:52px;z-index:4"></div>
-  <div class="abs live" style="left:648px;top:306px;z-index:5">
-    <div class="num">5&ndash;8 ADS</div>
-    <div class="qual" style="margin-top:10px">per ad set</div>
+  <!-- what they run now -->
+  <div class="abs" id="dead">
+    <div class="big"><span class="b">30 ADS</span><span class="f">30 ADS</span></div>
+    <div class="strike"></div>
+    <div class="qual">per ad set</div>
   </div>
 
-  <!-- ── the hook ── -->
-  <div class="abs" id="head" style="left:640px;top:545px;z-index:6">IT&rsquo;S NOT AD FATIGUE</div>
+  <div class="abs" id="xbadge">
+    <svg viewBox="0 0 24 24"><path d="M5 5 L19 19 M19 5 L5 19"/></svg>
+  </div>
+
+  <!-- the turn -->
+  <svg class="abs" style="left:690px;top:238px;width:190px;height:132px;z-index:6;overflow:visible">
+    <defs><filter id="ds" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity=".65"/>
+    </filter></defs>
+    <g filter="url(#ds)">
+      <path d="M18 4 C 4 46, 10 86, 62 108" fill="none" stroke="#000"
+            stroke-width="30" stroke-linecap="round"/>
+      <path d="M18 4 C 4 46, 10 86, 62 108" fill="none" stroke="#ffe019"
+            stroke-width="17" stroke-linecap="round"/>
+      <path d="M34 100 L66 110 L46 84" fill="#000" stroke="#000"
+            stroke-width="26" stroke-linejoin="round"/>
+      <path d="M34 100 L66 110 L46 84" fill="#ffe019" stroke="#ffe019"
+            stroke-width="12" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+  <!-- what they should run -->
+  <div class="abs" id="live">
+    <div class="glow"></div>
+    <div class="big"><span class="b">5&ndash;8 ADS</span><span class="f">5&ndash;8 ADS</span></div>
+    <div class="qual">per ad set</div>
+  </div>
 
 </div>
