@@ -954,6 +954,11 @@
 .build--hero li { font-size: 68px; margin-bottom: 52px; letter-spacing: -0.014em; }
 .build--hero li.numbered { gap: 30px; }
 
+/* A numbered index of sections. Setting one width on the marker turns the
+   numbers into a column: left to itself, a proportional '1' is narrower than
+   a '4' and drags its label in with it, so nothing below lines up. */
+.build--index .build__n { width: 0.62em; }
+
 /* Longer lists: a step down in size and spacing so seven points still clear
    the bottom margin without shrinking the whole family. */
 .build--dense { margin-top: 70px; }
