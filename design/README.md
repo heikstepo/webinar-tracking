@@ -6,10 +6,17 @@ the same visual world instead of merely near it.
 ```
 design/
   4pi.css               tokens + every element class
+  voice-quiet.css       the typographic layer, loaded after 4pi.css
   elements.html         live reference: the read, tokens, type scale, all elements
   slide-template.html   blank starter, four layouts
   build-standalone.py   folds CSS + font into one portable file
   render.sh             slide file -> PDF + 2x PNG, via Chrome's print path
+  deck-order.txt        which slides go into the deck, in order
+  measure.sh/.js        read each slide's real laid-out geometry out of Chrome
+  build-deck.js         -> five-pillars.pptx, native editable text
+  finish-deck.py        the two patches pptxgenjs cannot write itself
+  build-deck-images.js  -> the same deck as full-bleed PNGs, not editable
+  proof.js              rebuild the pptx layout in HTML, in Arial, to look at it
   slides/               one file per slide
   fonts/caveat.woff2    handwriting face
 ```
@@ -134,6 +141,31 @@ and slide modifiers `.slide--center` `.slide--top` `.slide--bottom` `.slide--mid
 3. Optional: `python3 build-standalone.py deck.html` folds the stylesheet and
    font into a single file with no external requests — portable to email, a
    sandboxed viewer, or anywhere offline.
+
+### Exporting to PowerPoint
+
+```
+./measure.sh              # Chrome lays out every slide in deck-order.txt
+node build-deck.js        # -> exports/five-pillars.pptx
+python3 finish-deck.py exports/five-pillars.pptx
+```
+
+The pptx carries live text, so wording can be fixed in PowerPoint, Keynote or
+Google Slides without coming back here. Positions are not guessed from the CSS —
+`measure.sh` injects `measure.js` into each slide and reads the boxes back out
+of Chrome with `--dump-dom`, so a heading lands where the browser actually put
+it.
+
+Two things pptxgenjs will not write, so `finish-deck.py` patches them: it emits
+one `<a:pPr>` per run where the schema allows one per paragraph, and it has no
+option for bullet colour, which the design needs because the bullet is accent
+blue while its text is near-black.
+
+Fonts do not survive the trip — SF Pro is not on most machines, so the deck asks
+for Helvetica Neue and falls back to Arial off macOS. That is the one real
+difference from the HTML, and `node proof.js && ./render.sh proof.html 1`
+rebuilds the pptx's own layout in Arial so the effect can be seen before
+shipping. `build-deck-images.js` is the alternative: pixel-exact, uneditable.
 
 ```html
 <section class="slide slide--center">
