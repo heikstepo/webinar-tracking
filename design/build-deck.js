@@ -128,7 +128,20 @@ for (const name of order) {
   /* The build list. One box holding every item as its own paragraph, rather
      than a box per item, so that editing a line reflows the ones under it and
      a wrapped line pushes rather than overlaps. */
-  if (m.list) {
+  /* A numbered index sets its markers in a fixed-width column so the labels
+     line up. Runs cannot hold that column together — the gap would be one
+     space wide in whatever face PowerPoint substitutes, and a narrow '1'
+     would pull its label left again — so each row ships as two boxes pinned
+     to the two measured columns. */
+  if (m.list && /\bbuild--index\b/.test(m.list.classes)) {
+    for (const item of m.list.items) {
+      slide.addText(item.num.text, boxOpts(item.num, { wrap: false, align: 'left' }));
+      slide.addText(item.label.text, boxOpts(
+        { ...item.label, w: 1440 - item.label.x - 100 },
+        { wrap: false, align: 'left' }
+      ));
+    }
+  } else if (m.list) {
     const items = m.list.items;
     const first = items[0];
     const gapAfter = items.length > 1

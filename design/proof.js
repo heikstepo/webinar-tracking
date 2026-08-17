@@ -52,7 +52,13 @@ const pages = order.map(name => {
     parts.push(`<div class="box" style="${boxCss(m.head, 100, 1240)};${typeCss(m.head.type)};text-align:${align}">${numbered(m.head.num, m.head.label, gap)}</div>`);
   }
 
-  if (m.list) {
+  if (m.list && /\bbuild--index\b/.test(m.list.classes)) {
+    /* Mirrors build-deck.js: two pinned columns rather than runs. */
+    for (const item of m.list.items) {
+      parts.push(`<div class="box" style="left:${item.num.x}px;top:${item.num.y}px;${typeCss(item.num.type)};white-space:nowrap">${esc(item.num.text)}</div>`);
+      parts.push(`<div class="box" style="left:${item.label.x}px;top:${item.label.y}px;${typeCss(item.label.type)};white-space:nowrap">${esc(item.label.text)}</div>`);
+    }
+  } else if (m.list) {
     const items = m.list.items;
     const gapAfter = items.length > 1 ? items[1].y - (items[0].y + items[0].h) : 0;
     const lis = items.map((item, i) => {
