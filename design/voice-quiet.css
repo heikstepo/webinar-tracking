@@ -953,3 +953,8 @@
 .build--hero { margin-top: 118px; }
 .build--hero li { font-size: 68px; margin-bottom: 52px; letter-spacing: -0.014em; }
 .build--hero li.numbered { gap: 30px; }
+
+/* Longer lists: a step down in size and spacing so seven points still clear
+   the bottom margin without shrinking the whole family. */
+.build--dense { margin-top: 70px; }
+.build--dense li { font-size: 42px; margin-bottom: 27px; }
