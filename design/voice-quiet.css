@@ -905,25 +905,25 @@
 .pillar-head {
   display: flex;
   align-items: baseline;
-  gap: 20px;
-  font-size: 40px;
+  gap: 22px;
+  font-size: 46px;
   font-weight: 600;
-  letter-spacing: -0.008em;
+  letter-spacing: -0.010em;
   color: var(--ink);
 }
 .pillar-head__num { color: var(--accent); }
 
 .build {
-  margin: 150px 0 0;
+  margin: 120px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .build li {
   position: relative;
-  padding-left: 46px;
-  margin-bottom: 40px;
-  font-size: 40px;
+  padding-left: 52px;
+  margin-bottom: 44px;
+  font-size: 46px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.010em;
@@ -936,8 +936,8 @@
   position: absolute;
   left: 0;
   top: 0.46em;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: var(--accent);
 }
@@ -946,3 +946,10 @@
 .build li.numbered { padding-left: 0; display: flex; gap: 22px; }
 .build li.numbered::before { display: none; }
 .build__n { color: var(--accent); font-weight: 600; flex: none; }
+
+/* Section overview: header centred, sub-sections set large beneath it. */
+.pillar-head--mid { justify-content: center; font-size: 52px; }
+
+.build--hero { margin-top: 118px; }
+.build--hero li { font-size: 68px; margin-bottom: 52px; letter-spacing: -0.014em; }
+.build--hero li.numbered { gap: 30px; }
