@@ -941,3 +941,8 @@
   border-radius: 50%;
   background: var(--accent);
 }
+
+/* Overview list: the section number replaces the dot as the marker. */
+.build li.numbered { padding-left: 0; display: flex; gap: 22px; }
+.build li.numbered::before { display: none; }
+.build__n { color: var(--accent); font-weight: 600; flex: none; }
