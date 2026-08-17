@@ -895,3 +895,49 @@
   font-weight: 400;
   color: var(--ink-3);
 }
+
+/* ============================================================================
+   BUILD  —  a pillar's points revealed one slide at a time. The list is
+   anchored at a fixed offset so each added point appears below the last
+   without shifting the ones already on screen.
+   ========================================================================= */
+
+.pillar-head {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  color: var(--ink);
+}
+.pillar-head__num { color: var(--accent); }
+
+.build {
+  margin: 150px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.build li {
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.010em;
+  color: var(--ink);
+}
+.build li:last-child { margin-bottom: 0; }
+
+.build li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.46em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
