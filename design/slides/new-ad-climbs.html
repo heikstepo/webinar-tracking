@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A new ad climbs the funnel</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="seq" style="height:400px">
+
+    <!-- The funnel shape. Bands are empty; everything else is placed on top.
+         No neck: nothing converts in this picture, so the stem would dangle. -->
+    <div class="seq__funnel">
+      <div class="funnel" style="--fw:900px; --fbh:104px">
+        <div class="funnel__band funnel__band--1"></div>
+        <div class="funnel__band funnel__band--2"></div>
+        <div class="funnel__band funnel__band--3"></div>
+      </div>
+    </div>
+
+    <p class="seq__stage" style="left:0; top:107px">Top of funnel</p>
+    <p class="seq__stage" style="left:0; top:217px">Middle of funnel</p>
+    <p class="seq__stage" style="left:0; top:327px">Bottom of funnel</p>
+
+    <!-- Where it lands first, then the two places it reaches later. The trail
+         climbs to the right as it goes, along the widening of the funnel, so
+         reaching a colder stage and reaching a bigger one are the same move.
+         It fades as it climbs, which is what puts the three in order. -->
+    <div class="seq__pill seq__pill--ghost" style="left:730px; top:90px;  width:110px; opacity:.72"></div>
+    <div class="seq__pill seq__pill--ghost" style="left:620px; top:200px; width:110px; opacity:.9"></div>
+    <div class="seq__pill"                  style="left:520px; top:310px; width:110px">New ad</div>
+
+    <svg class="seq__path" viewBox="0 0 1240 400" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="up" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g stroke="#0071E3" stroke-width="3" stroke-linecap="round" marker-end="url(#up)">
+        <!-- Launched into the warm end, arriving from outside the funnel. -->
+        <path d="M300 382 C 370 382, 390 342, 506 330"/>
+        <!-- Then one stage at a time, each arrow entering the next from below. -->
+        <path d="M580 302 C 610 281, 640 261, 670 243"/>
+        <path d="M680 192 C 712 172, 748 151, 780 135"/>
+      </g>
+    </svg>
+
+  </div>
+
+</section>
+
+</body>
+</html>
