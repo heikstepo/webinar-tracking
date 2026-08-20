@@ -1,0 +1,718 @@
+REFERENCE: THE AI APP CLASS, WRITTEN OUT IN OUR SCRIPT STYLE
+
+This is not our webinar. This is Heik's reference deck (May 31 AI App Free Class)
+reconstructed as the spoken script that sits on top of those slides.
+
+Purpose: length calibration only.
+
+Phase 1 covers 58 slides and carries FOUR teaching points.
+Phase 2 covers 53 slides and carries THREE.
+Written out as speech, that's what you see below.
+
+
+
+
+=====================================================
+PHASE 1: APP IDEATION
+(slides 67 - 124)
+=====================================================
+
+
+
+
+Alright. Phase one. App ideation.
+
+
+And I want to start by telling you how much weight this part carries.
+
+
+App ideation is one of the biggest factors in whether your app succeeds or not.
+
+
+Not your design. Not your code. Not how hard you work on it.
+
+
+The idea.
+
+
+Because here's the thing nobody tells you.
+
+
+If your app idea isn't validated - and I mean actually validated, not "my friends said it sounded cool" -
+
+
+you are never going to make serious money with your app business.
+
+
+You can build the most beautiful app in the world.
+
+
+If nobody wanted it in the first place, you built a beautiful thing nobody wanted.
+
+
+I've watched people spend eight months and twenty thousand dollars finding that out.
+
+
+
+
+Now, right now, some of you are probably asking yourself questions like:
+
+
+"I already have my idea. But how do I actually know it's going to make money?"
+
+
+Or:
+
+
+"There are already apps doing what I want to build. Is it even worth it?"
+
+
+Or maybe this one:
+
+
+"I've been working on this thing for a while now, and honestly I'm not sure if I should keep going or pivot."
+
+
+If any of those are running through your head right now, good. That's the right question to be asking.
+
+
+And by the end of this section you're going to know - with actual certainty - whether your app idea is worth going all in on.
+
+
+Plus, a lot of what I show you here ties directly into how we market the app later.
+
+
+You'll see how that connects. It's not two separate things.
+
+
+And at the end of this section, I'm going to give live feedback on your app ideas. In the chat. Whatever you drop in there.
+
+
+Fair enough?
+
+
+Drop a yes in the chat if that sounds good.
+
+
+Alright. Let's dive in.
+
+
+
+
+So there's a simple process I use to validate every single one of my app ideas before I invest a single dollar into building.
+
+
+Every one. I've never skipped it.
+
+
+I call it the Fail Proof Filter.
+
+
+SHOW LIVE
+[The Fail Proof Filter slide. Just the name on screen.]
+
+
+And following this process is exactly how Kevin and Ke got these results within a few days.
+
+
+SHOW LIVE
+[Kevin and Ke's revenue screenshots.]
+
+
+Days. Not months.
+
+
+So let me walk you through it.
+
+
+
+
+First thing, and this is the one that trips everybody up:
+
+
+You do NOT need to come up with some unicorn idea that has never been built before.
+
+
+I need you to actually hear that, because I think it's the single biggest thing holding people in this room back.
+
+
+You're sat there waiting to have the idea. The one nobody's thought of.
+
+
+That's not the game.
+
+
+All you need is to find a simple problem people have, and fix it with a very simple app.
+
+
+That's it. That's the whole bar.
+
+
+A simple problem. A simple app.
+
+
+Let me put that into perspective for you, because I know it sounds too easy.
+
+
+
+
+You've already seen this one - my previous app, Puff Count.
+
+
+SHOW LIVE
+[Puff Count on the App Store. Then the revenue dashboard.]
+
+
+I scaled it to forty four thousand a month before I exited the business.
+
+
+And all it did was help people solve one simple problem.
+
+
+Quitting vaping.
+
+
+That's it. That's the problem.
+
+
+And the app? The app literally just counted how many puffs you took.
+
+
+That's not me being modest. That is genuinely what the app did.
+
+
+You take a puff, you tap the button, it counts it.
+
+
+And it ended up becoming a seven figure business.
+
+
+So let's run it through the questions people always ask me.
+
+
+Was the idea revolutionary?
+
+
+No.
+
+
+Not even slightly. People have been counting things on their phones for fifteen years.
+
+
+Were there already competitors doing the exact same thing?
+
+
+Yes.
+
+
+Multiple. Some of them bigger than me at the time.
+
+
+Did it still work out?
+
+
+Yes.
+
+
+And here's why. Because it was marketable.
+
+
+That's the word. Marketable.
+
+
+Not original. Not clever. Marketable.
+
+
+And we're going to get deep into what that actually means in phase three, so hold that thought.
+
+
+But I want you to write that word down, because it's going to come back.
+
+
+
+
+Okay so if it doesn't need to be original, what does it need to be?
+
+
+It needs to solve a real problem in one of five markets.
+
+
+And as long as it does, you're in a good spot.
+
+
+SHOW LIVE
+[The five markets, one at a time.]
+
+
+Health.
+
+
+Wealth.
+
+
+Relationships.
+
+
+Status.
+
+
+Convenience.
+
+
+That's the list. There isn't a sixth one.
+
+
+And every single app that makes real money sits in at least one of those.
+
+
+Let me show you what I mean.
+
+
+SHOW LIVE
+[Bring up five real apps one at a time, tag each with the market it solves.]
+
+
+This one solves a relationship problem.
+
+
+This one solves a status and wealth problem.
+
+
+This one, health and status.
+
+
+This one's pure convenience.
+
+
+And this one's health.
+
+
+Look at that list. None of them are inventing anything.
+
+
+They all just picked a problem someone already had, and made it slightly less annoying.
+
+
+Does that make sense so far?
+
+
+Type 1 in the chat if you're with me.
+
+
+
+
+Okay. Now that we're clear on the niches.
+
+
+How do you actually confirm there's demand - before you go all in?
+
+
+Because "I think people want this" is not validation. That's a feeling.
+
+
+It all comes down to market research.
+
+
+And I've got a specific stack of tools I run every idea through.
+
+
+SHOW LIVE
+[The five-tool stack.]
+
+
+Viral ad library.
+
+
+Sensor Tower.
+
+
+Flippa and Acquire.
+
+
+Reddit, TikTok, Instagram, Twitter.
+
+
+And Google Trends.
+
+
+Five tools. Ten minutes each.
+
+
+And what you're looking for is signals.
+
+
+Viral videos in the space. Apps in the space that are making money. Apps in the space being bought and sold. Search volume trending up.
+
+
+If you see all of those signals lining up -
+
+
+you can be certain your app has the potential to make serious money.
+
+
+Not hope. Certain.
+
+
+Because at that point you're not guessing whether there's a market. You're looking at other people already making money in it.
+
+
+And that, my friends, is how you find and validate million dollar app ideas.
+
+
+Does this all make sense so far?
+
+
+Type 1 in the chat.
+
+
+
+
+Right. Now let's do a live review of some of YOUR app ideas.
+
+
+Drop it in the chat. What app idea have you got in mind?
+
+
+One line. Doesn't need to be polished.
+
+
+SHOW LIVE
+[Pull 4-6 from the chat. Run each through: is it a simple problem? which of the five markets? what would the research show? 30-45 seconds each.]
+
+
+Good. See how fast that is once you know what you're looking for?
+
+
+
+
+So now that we've validated your app idea -
+
+
+it's time to actually build the thing and get it live on the App Store.
+
+
+And just to show you how easy building an app has become in 2026 -
+
+
+check out Mino. One of my students.
+
+
+SHOW LIVE
+[Mino's app live in the store.]
+
+
+Answer this in the chat before I tell you.
+
+
+How long do you think it takes to go from idea to live app in the App Store?
+
+
+Type your guess.
+
+
+SHOW LIVE
+[Read a few guesses out loud.]
+
+
+Alright. Mino here did it in literally three days.
+
+
+Three.
+
+
+Within three days we validated the idea, he built the app, and he launched it.
+
+
+And I want to be clear about something.
+
+
+Zero coding experience. Three days.
+
+
+That's how powerful AI is right now in 2026.
+
+
+That is not a thing that was possible eighteen months ago.
+
+
+So let's dive right into the second part of our live class today.
+
+
+
+
+=====================================================
+PHASE 2: BUILDING THE APP
+(slides 125 - 177)
+=====================================================
+
+
+
+
+Phase two. Building the app.
+
+
+And our main priority at this stage is one thing.
+
+
+Ship fast.
+
+
+Not perfect.
+
+
+Fast.
+
+
+I'm going to say that again because everyone in this room is going to fight me on it.
+
+
+We ship the MVP super fast, and THEN we build on top of it.
+
+
+Your goal is not a finished app. Your goal is to start marketing the app as fast as possible.
+
+
+Which is phase three. Which is where the money actually is.
+
+
+Let me show you an example from my own portfolio, because I don't expect you to take my word for it.
+
+
+
+
+This is what Posted looks like right now.
+
+
+SHOW LIVE
+[Posted, current version. Then the revenue.]
+
+
+Over a hundred and fifty thousand a month.
+
+
+Nice app, right? Clean. Polished.
+
+
+Now.
+
+
+This is how it looked when we launched in early 2025.
+
+
+SHOW LIVE
+[First version of Posted. Sit on it. Let it be awkward.]
+
+
+Yeah.
+
+
+The first version was ugly. And it was full of bugs.
+
+
+I'm not saying that for effect. It was genuinely bad.
+
+
+But we launched anyway.
+
+
+And that is the entire point.
+
+
+Because that ugly version is the one that started collecting feedback from real users.
+
+
+Your goal is to launch fast, get feedback, and improve from there.
+
+
+Every month you spend polishing before launch is a month you learn nothing.
+
+
+
+
+Now, when it comes to actually building an app, you need two things.
+
+
+Design.
+
+
+And then turning that design into a working app.
+
+
+That's it. Two things.
+
+
+Let's start with designs.
+
+
+First, brain dump everything on paper. Sketch out what you want your app to look like.
+
+
+SHOW LIVE
+[Actual paper sketches. Messy ones.]
+
+
+And this goes for everything. Your onboarding. Your core features. Your paywall screens. All of it.
+
+
+Doesn't need to be pretty. It needs to exist.
+
+
+And if you're stuck, you can take inspiration from Screensdesigns dot com.
+
+
+SHOW LIVE
+[Screensdesigns. Scroll through a few flows.]
+
+
+Every screen from every good app, organised. Steal shamelessly.
+
+
+From there, you've got a few options to turn that brain dump into real designs.
+
+
+And my go-to recommendation is design contests.
+
+
+Here's how it works.
+
+
+You post a contest. Dozens of designers submit custom designs. And you only pay the winner.
+
+
+SHOW LIVE
+[99designs. An actual live contest with submissions coming in.]
+
+
+Look at that. That's forty designers competing for one payment.
+
+
+This is how you get high quality designs, fast, and affordable.
+
+
+Making sense so far?
+
+
+Drop a yes in the chat.
+
+
+
+
+So at this point you've got your designs sitting in Figma.
+
+
+Now, before we get to the marketing phase - and marketing is where this whole thing lives or dies -
+
+
+we just need to develop those designs into an actual app.
+
+
+And I say "develop" in quotes, because you're actually not coding anything.
+
+
+Now look - if you're a software developer, you can obviously just do this yourself.
+
+
+But if you're not, you've got two routes.
+
+
+You can vibe code your app with AI tools. Or you can hire affordable devs.
+
+
+Let's do AI first.
+
+
+Here are the main tools you can use right now.
+
+
+SHOW LIVE
+[The tool list.]
+
+
+Bolt dot new. Rork. Emergent. Cursor. Claude.
+
+
+And the way it works is you chat with the AI. You go back and forth. And you vibe code the features into your app.
+
+
+Let me actually show you how that works rather than describing it.
+
+
+SHOW LIVE
+[Live build. Prompt it, watch a screen appear, prompt again, add a feature. 2-3 minutes.]
+
+
+That's it. You just keep adding features until it's complete.
+
+
+That's vibe coding with AI.
+
+
+Now - if you're lazy like me, and you want the faster route - just hire developers.
+
+
+They can either build it from scratch, or finalise what you've already vibe coded.
+
+
+I use Upwork for that.
+
+
+SHOW LIVE
+[Upwork. A real job post and the applicant list.]
+
+
+And my tip here - go for Eastern European devs. Top quality for about half the US cost.
+
+
+Screen hard. And always hop on a quick call before you hire. Always.
+
+
+That's it.
+
+
+From there, they do their job, and congrats - you're done.
+
+
+Phase two complete.
+
+
+You've got your designs, and you've turned them into a functioning app.
+
+
+That's how you vibe code a fully functioning app in a few days.
+
+
+From there you just submit it to the app stores, and boom -
+
+
+you're a live app owner.
+
+
+Now we can focus on the part that ACTUALLY matters.
+
+
+The most important part of scaling an AI app business.
+
+
+
+
+=====================================================
+WHAT THIS MEASURES
+=====================================================
+
+
+Phase 1 as spoken script: ~1,650 words. Four teaching points.
+Phase 2 as spoken script: ~1,050 words. Three teaching points.
+
+At ~140 words per minute that's roughly 12 minutes for Phase 1
+and 8 minutes for Phase 2.
+
+The teaching points in Phase 1:
+  1. You don't need an original idea - simple problem, simple app
+  2. The five markets
+  3. The five-tool research stack
+  4. (implicit) marketable beats original
+
+Everything else in those 1,650 words is context, story-as-proof,
+objection pre-handling, and commitments.
+
+Ratio: roughly 400 spoken words per teaching point.
