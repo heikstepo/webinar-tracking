@@ -1,0 +1,374 @@
+RAUF WEBINAR - INTRODUCTION (v2)
+Clean read script. The only production note is: show live
+Anything in [SQUARE BRACKETS] is a gap for Rauf to fill.
+
+Runs approx 22 minutes, plus pre-roll.
+
+RUNNING ORDER
+   1. Hook - name it and show it working          approx 3 min
+   2. Relatability - short and sharp              approx 90 sec
+   3. The opportunity - why time                  approx 4 min
+   4. Proof - data, my results, their results     approx 7 min
+   5. Who I am                                    approx 2 min
+   6. Commitment                                  approx 2 min
+   7. The 5 open loops                            approx 2 min
+
+
+================================================================================
+PRE-ROLL - WHILE PEOPLE ARE JOINING
+================================================================================
+
+(Keep it light and short. Dashboards up, refreshing.)
+
+show live
+
+Alright, people are coming in. While we wait, that's my dashboard up on screen.
+It's live, I'm logged in, I'll refresh it so you can see I've not just screenshotted
+it onto a slide.
+
+[PLACEHOLDER - Rauf: which accounts are you showing, and what are we looking at.]
+
+Drop your city in the chat, let's see where everyone's at.
+
+(Read them out. 60 seconds, no more.)
+
+And give me a yes in the chat if you can hear me clearly. Actually - give me a yes
+without using the word yes.
+
+(Read the good ones. Ten-four, loud and clear, copy that. Then move.)
+
+Right. Let's go.
+
+
+================================================================================
+1. THE HOOK - NAME IT AND SHOW IT WORKING
+================================================================================
+
+I'm going to show you the whole thing in the next two minutes and then we'll spend
+the rest of the session going deep on it.
+
+It's called a time based range. Two lines on a chart.
+
+show live
+
+That's it. That's a one hour window. I mark the high of that hour and the low of
+that hour, and that's the whole setup.
+
+Then I wait for price to take out one side of it. And when it does, I trade to the
+other side.
+
+That's the entire strategy. Sweep one side, target the other.
+
+Now watch this.
+
+show live
+
+There's yesterday. There's the day before. There's the day before that.
+
+(Click through 5 consecutive sessions, fast. 20 seconds each. Do not explain yet -
+let them see the shape repeat.)
+
+Same box. Same sweep. Same run to the other side. Five days in a row, and I've not
+gone hunting for those - that's just this week.
+
+Now here's the part I want you to actually sit up for.
+
+show live
+
+That's not my data. That's a third party backtesting tool. A hundred and twenty
+eight trading sessions this year.
+
+That range broke on a hundred and twenty eight out of a hundred and twenty eight
+days.
+
+Zero days where nothing happened. Zero.
+
+So whatever else you take from today - there is a one hour window on your chart,
+every single day, where something is guaranteed to happen. And I'd put money on
+the fact that you have never once looked at it.
+
+That's what we're doing for the next ninety minutes.
+
+
+================================================================================
+2. RELATABILITY - SHORT AND SHARP
+================================================================================
+
+Quick, before we go further. Tell me if any of this is you.
+
+You enter, price takes your stop by two points, and then runs to your take profit
+without you.
+
+You've passed a funded account. Maybe two. You still haven't had a payout.
+
+You check the daily, then the four hour, then the fifteen, then you drop to the one
+minute to enter - and by the bell your brain's had five different signals and no
+idea what it's looking at.
+
+And you've had winning weeks where you couldn't tell anybody why they were winning
+weeks.
+
+Put a number in the chat. How many of those four was you?
+
+(Read a few. Do not linger. 20 seconds and move.)
+
+Right. Here's the only thing I want you to take from that.
+
+Not one of those is a discipline problem. Every single one of them is a timing
+problem.
+
+You were right on the trade. You were in at the wrong minute. And that's a much
+easier thing to fix than the problem you think you've got.
+
+
+================================================================================
+3. THE OPPORTUNITY - WHY TIME
+================================================================================
+
+So let me tell you why I built everything around time, because otherwise the
+windows I just showed you are going to sound arbitrary.
+
+Everyone knows the statistic. Ninety five percent of traders lose, five percent
+win. Everybody repeats it. Nobody does anything with it.
+
+So I asked the obvious question. Who's the five percent?
+
+And then I looked at what everybody is actually being taught. Every course, every
+channel, every Discord. And it's all the same. Same patterns, same indicators, same
+lens.
+
+So we're all in the ninety five. All of us. Doing the same thing and confused about
+getting the same result.
+
+Which means getting better at what everyone else does can't be the answer. You have
+to look at the market through a lens most people aren't using.
+
+So I asked - what on a chart actually repeats? Not usually works. What repeats,
+every single day, no exceptions?
+
+It's not patterns. A head and shoulders looks identical whether price is about to
+break or about to reverse. Same shape, opposite outcomes. You cannot build a
+business on that.
+
+It's not indicators either. An indicator is a maths problem run on price that has
+already happened. It's history.
+
+But look at your chart. Price up the side. Time along the bottom.
+
+You have no idea what candle is about to print. None. But you know exactly when
+it's going to print. To the second. Every day. Forever.
+
+Time is the only repeatable variable on a chart.
+
+And once you accept that, the question changes completely. It stops being what
+should I trade, and it becomes when does this market actually do something.
+
+That's what a time based range is. It's not an indicator, it's not a pattern. It's a
+window where the same thing happens, over and over, and you can go and check it
+yourself against a hundred and twenty eight days of data.
+
+That's the opportunity. And I'd argue it's the only genuine edge left, because
+everyone else is still arguing about which moving average to use.
+
+
+================================================================================
+4. PROOF - THAT IT WORKS
+================================================================================
+
+So let me show you what that's actually produced. Mine first, then people who
+aren't me - because theirs matter more.
+
+show live
+
+[PLACEHOLDER - Rauf: your numbers. Three types, in this order:
+   1. The big one - the nine month run, roughly $190,000, two windows a day
+   2. The recent one - most recent month, so they know it works right now
+   3. The relatable one - your first proper month, or your first ever payout]
+
+And I want to be specific about something, because it's the whole point.
+
+Every one of those trades happened inside one of two one-hour windows. Most of them
+I was done in under fifteen minutes. I'm not at the charts all day. I don't watch
+Asia. I don't run indicators.
+
+One window. In, out, close the laptop.
+
+Now - honestly, my numbers are the least useful thing I can show you. Because you
+can look at my account and think, yeah, six years, that's him, that's not me.
+
+So let's do the ones that aren't me.
+
+show live
+
+Full Send. Came to me with zero payouts. Zero. He'd had a couple of lucky wins,
+passed a couple of accounts by chance, and given it all back every time. That's him
+in June - twenty thousand dollars in payouts in a month.
+
+show live
+
+Mike. Full time job. He physically cannot sit at the charts all day. Over thirty
+thousand in a month, around a job.
+
+show live
+
+Kevin. Zero payouts when he came to me. Close to thirty thousand now.
+
+show live
+
+And this one's my favourite, and it's the smallest number on the screen.
+[PLACEHOLDER - the student who went from never having a payout to opening and
+closing months with them.]
+
+That's somebody going from never, to on purpose. That's the one that actually
+matters.
+
+[PLACEHOLDER - Rauf: anyone notable in the space who has vouched for the ranges, any
+features or interviews - drop them in here.]
+
+Now notice something about all four of those people, because this is important and
+we're coming back to it right at the end.
+
+Not one of them came to me because they couldn't trade.
+
+Every one of them could already trade. Most had already passed funded accounts.
+They knew what a setup looked like.
+
+What they couldn't do was get paid.
+
+Hold onto that.
+
+
+================================================================================
+5. WHO I AM
+================================================================================
+
+Quickly, so you know who's talking.
+
+[PLACEHOLDER - Rauf: what were you doing before trading, and how did you get into
+it. 30 seconds, keep it tight.]
+
+Six years in the market. And the first stretch of that I was genuinely terrible - I
+was winning trades without knowing why, and losing them without knowing why, and
+not too worried about it because I assumed I'd make it back.
+
+That's not a trader. That's a gambler. That was me.
+
+And about a year in, it caught up with me. I lost fifteen thousand dollars in a
+single day.
+
+[PLACEHOLDER - Rauf: one or two sentences on what that money was and what it cost
+you. Keep it short - it lands harder short.]
+
+And the reason I bring it up isn't the money. It's that I couldn't tell you what I
+did wrong. If I lost fifteen grand today, I'd be able to tell you exactly which rule
+I broke and when.
+
+Back then, nothing. And that's the worst place you can be in this business. Not
+losing. Losing and not knowing why.
+
+That's what sent me looking for something that repeats. And that's what we're
+looking at today.
+
+One more thing, and then we'll get into it.
+
+I trade this live, on YouTube, for free, three days a week. Monday, Wednesday,
+Friday. In front of hundreds of people, on the day, with no idea what's about to
+happen.
+
+So everything I'm showing you today - you don't have to take my word for any of it.
+You can go and watch me do it live on Monday and see if it holds up.
+
+[PLACEHOLDER - Rauf: confirm days and where, and mention the monthly track record
+you post publicly.]
+
+
+================================================================================
+6. COMMITMENT
+================================================================================
+
+Right. Two quick things before we start, and then we go.
+
+First one. Everybody whose results I just showed you paid me to learn what I'm
+about to hand you for free in the next hour.
+
+And it's a known thing that when people pay for something they pay attention, and
+when it's free it washes over them. So for the next ninety minutes, do me a favour
+and pretend you paid [PLACEHOLDER - a number] for this. Because if you use it, it's
+worth more than that.
+
+Fair enough? Yes in the chat.
+
+Good. Phone away, notebook out. Actual paper if you've got it.
+
+Second thing, and I'd rather be up front than have you wondering.
+
+I've got two jobs today.
+
+The first is to give you the best free training on this market you've ever sat
+through. Better than the paid ones. I say that because I get messages every week
+from people telling me my free stuff beat things they paid thousands for.
+
+The second is that at the end, I'm going to make you an offer for people who want to
+go further than one session.
+
+Here's the deal. If I don't do the first job properly - if you get to the end of the
+teaching and you're thinking, yeah, seen that before - then don't take me up on the
+second one. Genuinely, don't.
+
+But if I do deliver, all I'm asking is you give it a fair hearing. Not that you buy
+anything. Just that you actually listen.
+
+Deal? Yes in the chat if that's fair.
+
+(Wait for it. This is the most important yes of the webinar - it pre-authorises the
+pitch. Read a few, thank them.)
+
+Perfect.
+
+
+================================================================================
+7. THE 5 OPEN LOOPS
+================================================================================
+
+So here's exactly what you're getting in the next ninety minutes.
+
+One. Both time windows. The actual times, on the clock, London and New York. I'm
+not holding them back and I'm not making you guess - you'll have them written down
+in about ten minutes.
+
+Two. The full data set behind them. Broken down day by day, Monday to Friday -
+including the one day of the week I'll tell you to skip entirely, and the day that's
+statistically the strongest of all five. If you only trade one day a week, that's the
+one.
+
+Three. How to know whether you're a buyer or a seller before the market opens, off
+one single candle. And I'm going to show you why what your gut screams at you to do
+at 9:30 is almost always exactly backwards - this is the one that explains most of
+your losing trades.
+
+Four. The three entries I use, ranked. Which one gets the best price, which one is
+the most certain, and how to know which one today is asking for. This is the fix for
+getting stopped out two points before it runs.
+
+Five. My exits. The exact levels where I move to break even and where I take the
+money - because I'll be honest with you, exits are where most of you are losing
+this, not entries.
+
+And if you're here at the end, there's one more thing I'll show you that I've never
+put on YouTube.
+
+[PLACEHOLDER - Rauf: what are you holding back for people who stay? An extra range, a
+filter, a stat - anything genuinely good. Needs to be real and worth staying for.]
+
+Last thing before we start.
+
+Some of you are going to look at this in ten minutes and think, that's it? That
+can't be it.
+
+Good. Write that thought down and check back in with yourself at the end.
+
+Because simple and easy are not the same word. This is simple. Sitting on your hands
+doing nothing for forty minutes while the market moves in front of you is not easy.
+That's the hardest thing in this business.
+
+Everyone good? Yes in the chat and we'll start with the window.
