@@ -247,60 +247,39 @@ So now you've got a box inside a box.
 The big one tells you where the orders are. The small one tells you when the market goes for them.
 
 
-But what neither of them tells you is: where's the market actually going?
+But we've still got 2 boxes and no idea where the market's headed.
 
 
-So that's the last thing we mark.
+So that's the last thing we mark. 4 more lines.
 
 
 
 
-3- Your liquidity pools.
-
-
-They're the same thing we just talked about. A stack of orders sitting at a level.
-
-
-Just a much bigger stack.
-
-
-Because your box was built in one hour. These have been building for a whole day, or a whole week.
+3- Your targets.
 
 
 SHOW LIVE
-[Same chart. Mark previous daily high and low, then previous weekly high and low.]
+[Same chart. Mark yesterday's high and low, then last week's high and low.]
 
 LIVE START
 
 
-Previous daily high. Previous daily low. Previous weekly high. Previous weekly low.
+Yesterday's high. Yesterday's low.
 
 
-Everyone who looked at yesterday's chart saw that high. Everyone who looked at last week's saw that one.
-
-
-So orders have had a full day, or a full week, to pile up on them.
-
-
-4 more lines and you're done.
+Last week's high. Last week's low.
 
 
 LIVE END
 
 
-And we already said it — the market moves to where the orders are.
+Those are the 4 places the market keeps going back to. So those are your targets.
 
 
-So the biggest stacks are the biggest magnets.
+Takes about 40 seconds, and your chart's done.
 
 
-That's what these tell you. Where it's trying to get to, before it's even started moving.
-
-
-I mark all 4 before every session. Takes about 40 seconds.
-
-
-And that's your chart finished. Outer box. Inner box. And 4 targets.
+Outer box. Inner box. 4 targets.
 
 
 
