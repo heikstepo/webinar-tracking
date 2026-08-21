@@ -1,0 +1,126 @@
+DROP-IN: justifying the 2 windows
+Goes straight after "I'll work in New York today, because that's the one most of you can be awake for."
+
+Everything here is assembled from Rauf's own content. Sourcing notes at the bottom.
+
+
+
+
+Now — you're probably wondering why 1:12 to 2:12. Why 8:12 to 9:12.
+
+
+Why not the top of the hour like a normal person.
+
+
+So let me give you the short version.
+
+
+SHOW LIVE
+[Simple slide: CME. Then the daily candle opening at 6pm with cycles marked inside it.]
+
+
+The futures market follows a system, and it has followed the same system since the open outcry period.
+
+
+You're trading under the CME. They're the ones providing the liquidity — institutions, market makers, hedge funds, speculators.
+
+
+And nothing is random within these markets. Everything is predetermined.
+
+
+If everything is predetermined, then there's a cycle the algorithm has to follow.
+
+
+Every day you get one daily candle. It opens at 6pm. And inside that one candle there are loads of cycles.
+
+
+My ranges are two of them.
+
+
+Now — if the idea of an odd time on the clock mattering sounds like nonsense to you, let me give you a different example.
+
+
+8:20 in the morning. Random number, right?
+
+
+8:20 is the bond pit open. You're trading the Chicago Mercantile Exchange — that's a real event on a real clock.
+
+
+The market doesn't care that it isn't a round number. Neither should you.
+
+
+So here's what my range is actually doing.
+
+
+SHOW LIVE
+[The 8:12-9:12 box, then the 9:30 open marked to the right of it.]
+
+LIVE START
+
+
+From 8:12 to 9:12, this range stacks orders above and below the marketplace.
+
+
+That's what high frequency algorithms are going to match.
+
+
+Which is why by the time 9:30 hits, you're already in a trade, or you're already managing one.
+
+
+You're not showing up at the open and reacting. You showed up an hour early and did the work.
+
+
+LIVE END
+
+
+And I'll be honest with you about the rest of it.
+
+
+I'm not going to stand here and hand you the full derivation of why 12 minutes past.
+
+
+I've given away 2 of my time cycles. There are more, and they're the ones I keep.
+
+
+But you don't need the whole map to use these two. You've got the data. You've got the times.
+
+
+Go and check it yourself tomorrow morning.
+
+
+
+
+=====================================================
+SOURCING — every claim above, and where it comes from
+=====================================================
+
+"You're probably wondering why 1:12 to 2:12, why 8:12 to 9:12"
+   -> his words, verbatim, free YT course
+
+"the market follows a system... the same thing since the open outcry period.
+ Especially if you trade with CME"                              -> verbatim
+"how do the CME actually provide liquidity... institutions, market makers,
+ commercial hedge funds, speculators"                            -> verbatim
+"nothing is random within these markets, everything is predetermined.
+ If everything is predetermined then there's a cycle and a macro
+ that the algorithm needs to follow"                             -> verbatim
+"the daily candle opens at 6pm... there's loads of cycles within the market too"
+                                                                 -> verbatim
+"8:20 is the real opening price... 8:20am is the bond pit open. In Chicago time,
+ because you're trading the Chicago Mercantile Exchange"          -> verbatim
+"this range stacks orders above and below the marketplace where high-frequency
+ algorithms are going to match these orders. By 9:30 hit, you are already in a
+ trade or you're already managing a trade"                        -> verbatim
+"I've given away two of my time cycles"                           -> verbatim
+
+
+⚠️ WHAT HE NEVER SAYS PUBLICLY
+He does not explain why the cycle starts at 12 minutes past the hour specifically.
+He raises the question himself and then declines to answer it.
+So the script raises it, gives the real supporting logic, and then says out loud
+that he's keeping the rest. Do not invent a derivation for the :12 — there isn't
+one in any of the source material.
+
+NOTE ON 8:20
+8:20 is used as an ANALOGY for "odd times on the clock are real events."
+It is not one of the two time based ranges. Keep that distinction clear on the slide.
