@@ -1,5 +1,9 @@
-DROP-IN: why these 2 times
+DROP-IN: how he found these 2 ranges
 Goes after "I'll work in New York today, because that's the one most of you can be awake for."
+
+Replaces the "why 12 past" explanation. He never answers that one publicly.
+So instead of explaining the times, he explains how he came to be looking at time at all.
+All verbatim or near-verbatim. Sourcing at the bottom.
 
 
 
@@ -7,132 +11,181 @@ Goes after "I'll work in New York today, because that's the one most of you can 
 So why 12 minutes past? Why not the top of the hour like a normal person.
 
 
-3 things.
+I'll be honest — I'm not going to give you the derivation.
+
+
+But I'll tell you how I ended up looking at time in the first place, because that's the part that matters.
+
+
+3 things had to happen.
 
 
 SHOW LIVE
 [All 3 on screen.]
 
 
-1- The market runs on a schedule
-2- Odd times are real times
-3- My window sits before the open on purpose
+1- I took a big loss
+2- I asked who the 5% actually are
+3- I went looking for a different lens
 
 
 
 
-1- The market runs on a schedule.
+1- I took a big loss.
 
 
-You're trading under the CME. And that market has followed the same system since the open outcry days —
+That was the turning point in my trading.
 
 
-since people were stood in a pit shouting orders at each other.
+Because that's when I understood this is a very serious business. People can lose real money.
 
 
-Nothing is random in here. Everything is predetermined.
+There are people out there going into generational debt from this, because they don't know how to approach it the right way.
 
 
-And if it's predetermined, then there's a cycle the algorithm has to follow.
+I failed at the start of my journey. Taking big losses, not knowing what was going on.
+
+
+
+
+2- Then I asked a question nobody asks.
+
+
+Everyone knows the statistic. 95% of traders lose.
+
+
+Everyone repeats it like it's the end of the sentence.
+
+
+So I said — okay. 95 lose. Who are the 5%?
+
+
+And then it hit me.
 
 
 SHOW LIVE
-[Daily candle opening at 6pm, with several cycles marked inside it.]
+[Simple slide. 95% on one side, 5% on the other.]
+
+
+Most people are teaching things online, and everyone looks at the market the same way.
+
+
+Same indicators. Same setups. Same entries.
+
+
+So we're all the 95%.
+
+
+If I'm sat in front of the market taking the same trade as the person next to me, I get the same result as them.
+
+
+
+
+3- So I had to find a different lens.
+
+
+Not a better version of what everyone else was doing. A different way of looking entirely.
+
+
+So I started viewing the market from a liquidity standpoint. And from a timebased standpoint.
+
+
+And then it was 6 years of being in front of these markets every single day, collecting data.
+
+
+Not journaling my emotions. Collecting data on what actually repeats.
+
+
+SHOW LIVE
+[The two boxes on a chart, then several more days stacked.]
 
 LIVE START
 
 
-One daily candle every day. Opens at 6pm.
+And what that gave me was clarity.
 
 
-And inside that one candle, there are loads of cycles.
+Every time I sit in front of the market now, I know exactly what to look for.
 
 
-Mine are two of them.
+And I don't have to sit in front of it before a specific time.
+
+
+Once that time hits, I execute. Win or loss.
 
 
 LIVE END
 
 
-
-
-2- Odd times are real times.
-
-
-Take 8:20 in the morning. Sounds made up, right?
-
-
-8:20 is the bond pit open.
-
-
-Real event, real clock, not a round number.
-
-
-The market doesn't work in neat hours. Why would it?
+These 2 ranges came out of that. They're 2 of the cycles that kept repeating.
 
 
 
 
-3- My window sits before the open on purpose.
+And here's why I'm not giving you the rest.
 
 
-SHOW LIVE
-[The 8:12-9:12 box, then 9:30 marked to the right of it.]
-
-LIVE START
+A lot of people will just plagiarise what I teach and say they came up with it.
 
 
-From 8:12 to 9:12, this range stacks orders above and below the market.
+So the others I'm keeping to myself.
 
 
-That's what the algorithms are going to match against.
+But these 2 I'm willing to give away, because I trust you enough to actually go and use them.
 
 
-So by the time 9:30 hits, you're already in a trade, or you're already managing one.
+Don't take my word for any of it. Back test my time windows alone.
 
 
-You're not reacting to the open. You got here an hour early and did the work.
-
-
-LIVE END
-
-
-
-
-And here's the bit I'm not going to tell you.
-
-
-Why 12 past, exactly.
-
-
-I've given away 2 of my cycles. There are more, and those are the ones I keep.
-
-
-But you don't need the whole map to use these two.
+See how often they repeat before you decide what you think.
 
 
 
 
 =====================================================
-SOURCING
+SOURCING — verbatim from his channel
 =====================================================
 
-All verbatim from his free YouTube course + channel transcripts:
+"the turning point that came in my trading was when I took that big loss and I
+ understood, okay, trading is a very serious business. People can lose real money...
+ there's people out there going into generational debt from this business because
+ they don't know how to approach it the right way"
 
-  "the market follows a system... the same thing since the open outcry period.
-   Especially if you trade with CME"
-  "nothing is random within these markets, everything is predetermined.
-   If everything is predetermined then there's a cycle and a macro
-   that the algorithm needs to follow"
-  "the daily candle opens at 6pm... there's loads of cycles within the market too"
-  "8:20 is the real opening price... 8:20am is the bond pit open"
-  "this range stacks orders above and below the marketplace where high-frequency
-   algorithms are going to match these orders. By 9:30 hit, you are already in a
-   trade or you're already managing a trade"
-  "I've given away two of my time cycles"
+"I also failed at the start of my journey — taking big losses and not knowing
+ what was going on"
 
-⚠️ He NEVER explains the :12 itself. He raises the question and declines to answer it.
-   Don't invent a reason. The withheld answer is doing the selling.
+"I understood that 95% of traders lose. Everyone knows about this statistic...
+ So I was like, okay, 95 lose. Who's the 5%? Then I realized most people are
+ teaching things online. Like everyone looks at the market the same way.
+ So I was like, okay, so we're all the 95%"
 
-⚠️ 8:20 is an ANALOGY for "odd times are real." It is NOT one of the two ranges.
-   Keep that clear on the slide.
+"So I had to find a way to break out of the 95% bracket, view the markets from a
+ different lens, from a lens that if I sit in front of the market, I'm not taking
+ the same trade as everyone next to me... Viewing it from a liquidity standpoint.
+ Viewing it from a timebased standpoint"
+
+"I've been trading coming up to 6 years now" / "6 years of market experience
+ being inside the markets every single day"
+
+"The key insight to this is collecting data. You don't need to journal your emotion.
+ All you need to do is collect data every single day of a repeatable model"
+
+"understanding time, understanding ranges. And this just gave me clarity...
+ every time I would sit in front of the markets, I'll know exactly what to look for.
+ And I wouldn't have to sit in front of the markets before a specific time.
+ Once that time hit the market, I was able to execute on it, win or loss"
+
+"I know a lot of people will just plagarize what I'm teaching. They will also just
+ say that they came up with it. So I'm keeping it to myself. But this is one of the
+ ranges that I'm willing to give away for free"
+
+"if you actually back test my time windows alone, you'll be able to see how often
+ they repeat and how profitable this system really is"
+
+
+⚠️ He never says WHEN the big loss was, HOW much it was, or what the trade was.
+   If Rauf wants the number in, get it from him — don't guess.
+   (Heik's intro draft has a $15,000 placeholder that is still unconfirmed.)
+
+⚠️ He never explains the :12 itself. He raises the question and declines to answer.
+   The script now declines in his voice instead of inventing a reason.
