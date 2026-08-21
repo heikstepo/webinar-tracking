@@ -131,16 +131,52 @@ LIVE END
 Now why does that matter?
 
 
-Because of what sits above and below those 2 lines.
+Because of what's sitting above and below those 2 lines.
 
 
-Liquidity is just resting orders — money sat there waiting to get filled.
+SHOW LIVE
+[Same chart. Stack order markers above the high, then below the low, as he says each one.]
+
+LIVE START
 
 
-Above that high is where breakout buyers are waiting. Below that low is where breakdown sellers are.
+Everyone looking at this chart can see that high and that low. Same as you can.
 
 
-So the moment you draw those 2 lines, you know where the money is parked.
+So that's where everyone's orders end up.
+
+
+Say you want to buy if it breaks higher — your order goes above the high.
+
+
+And if you're already short, your stop loss goes above the high too.
+
+
+Because a stop loss on a short is a buy order.
+
+
+So above that high there's a stack of buy orders, sat there waiting to get filled.
+
+
+Below the low, exact same thing the other way round. A stack of sell orders.
+
+
+LIVE END
+
+
+That's all liquidity means. Orders waiting to get filled.
+
+
+And here's why you care.
+
+
+The market doesn't move to random places. It moves to where the orders are.
+
+
+So those aren't 2 lines.
+
+
+They're the 2 places on the chart the market has an actual reason to go.
 
 
 That's your outer box. Where the market cares.
