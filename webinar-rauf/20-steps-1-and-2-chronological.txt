@@ -1,0 +1,571 @@
+STEPS 1 & 2 — rebuilt chronologically
+
+Step 1 = before the open. You draw.
+Step 2 = after 9:12. You read what happens to what you drew.
+
+Context now sells the logic before any mechanics, and says what they'll have by the end.
+Blank statements are justified in 1-2 lines where they'd otherwise just be assertions.
+
+
+
+
+=========================
+STEP 1 — THE TIME BASED RANGES
+what you mark before the open
+=========================
+
+
+-- context --
+
+
+Your timing is the number 1 reason you're losing...
+
+
+Not your strategy...
+
+
+Your timing.
+
+
+And what I mean by that is the setup you're looking for only shows up at certain times of day.
+
+
+You're sat there hunting for it all day long.
+
+
+Most of you are at the desk from the open to the close, chasing every move that comes up.
+
+
+And the more time you spend in the market, the more risk you put on.
+
+
+More risk does not equal more money.
+
+
+Because those extra trades aren't better trades. They're just more trades.
+
+
+And every single one of them can take money off you.
+
+
+So here's how I want you to think about this.
+
+
+Every decision you make after the open was either made before the open, or it was made in a panic.
+
+
+There's no third option.
+
+
+The market moves too fast at 9:30 for you to work out where the levels are and what they mean while it's happening.
+
+
+So the traders who look calm at the open aren't calm. They're just finished.
+
+
+They did the work an hour earlier, and now they're watching one thing instead of everything.
+
+
+So by the end of this section you'll have a marked up chart.
+
+
+Every level you need, drawn before the market moves.
+
+
+3 things go on it.
+
+
+SHOW LIVE
+[All 3 on screen. Flash it, then back to the first.]
+
+
+1- Your 2 windows — mark the high and the low
+2- The dealing range it sits inside
+3- Your liquidity pools
+
+
+
+
+1- Your 2 windows.
+
+
+My London range starts at 1:12 and finishes at 2:12.
+
+
+New York runs 8:12 to 9:12. All Eastern Standard Time.
+
+
+I'll work in New York today, because that's the one most of you can be awake for.
+
+
+SHOW LIVE
+[Anchor day. Drop the box on. Mark the high, mark the low. Two lines, nothing else.]
+
+LIVE START
+
+
+8:12 it starts. 9:12 it's done. High there. Low there.
+
+
+That's your range. 2 lines on a chart.
+
+
+And what those 2 lines give you is free identification of where liquidity is resting.
+
+
+Buy side above the high. Sell side below the low.
+
+
+LIVE END
+
+
+And that's not a theory. That's just where orders sit.
+
+
+Everyone who wants to buy a breakout puts their order above a high.
+
+
+Everyone who wants to sell a breakdown puts theirs below a low.
+
+
+So the moment you draw those 2 lines, you know where the money is parked.
+
+
+
+
+2- The dealing range it sits inside.
+
+
+Now on its own, that hour is just an hour.
+
+
+It tells you where orders are sitting. It doesn't tell you whether the market cares about that spot.
+
+
+That's what the dealing range does.
+
+
+SHOW LIVE
+[Chart with a clear swing high and swing low. Mark both. Then drop the TBR box inside it.]
+
+LIVE START
+
+
+A dealing range is the space between a significant swing high and a swing low.
+
+
+This was the low that pushed the market higher.
+
+
+This was the high that pushed the market lower.
+
+
+Automatically, that becomes a range to the market.
+
+
+And here's the rule — I want to see my timebased range form inside this.
+
+
+If it hasn't, I'm not interested.
+
+
+LIVE END
+
+
+Because if my hour formed somewhere price has already been and moved past,
+
+
+then there's nothing left sitting there for the market to go and collect.
+
+
+The dealing range is what tells you your hour landed somewhere that still matters.
+
+
+
+
+3- Your liquidity pools.
+
+
+SHOW LIVE
+[Same chart. Mark previous daily high, previous daily low, previous weekly high, previous weekly low.]
+
+LIVE START
+
+
+Previous daily high. Previous daily low.
+
+
+Previous weekly high. Previous weekly low.
+
+
+LIVE END
+
+
+Those are the levels the algorithm targets.
+
+
+Which means they tell you where a move is likely to finish, before it's even started.
+
+
+I mark all 4 before every session. Takes about 40 seconds.
+
+
+
+
+-- and now the part everybody gets wrong --
+
+
+You've got your chart marked. And you don't touch any of it.
+
+
+That hour is not a trading window. It's a range formation window.
+
+
+You can't trade a range that hasn't finished forming.
+
+
+Until 9:12, you don't have a high and a low. You've got a guess.
+
+
+After 9:30 is when we look for one side to get taken. First hour of the New York session.
+
+
+Nothing by then? There's no trade, and you hop off the charts.
+
+
+
+
+-- why you should believe any of this --
+
+
+Now, you've got no reason to take my word for it.
+
+
+So I'm not going to ask you to. Data never lies. People can lie.
+
+
+SHOW LIVE
+[Edgeful. Their branding visible. 128 sessions, January to July.]
+
+LIVE START
+
+
+128 sessions. Not my data. Theirs.
+
+
+Both sides of that range got taken on 70% of them.
+
+
+And 0 days out of 128 where that range didn't get broken at all.
+
+
+Now — someone smart in this room will spot the catch, so I'll say it first.
+
+
+That's the whole session, and I only trade one window of it.
+
+
+Some days the break came at 2pm and I'd long gone. That's exactly why some days I don't trade.
+
+
+But the level gets respected every single day. You're never sat there hoping a setup appears.
+
+
+LIVE END
+
+
+That's one way of showing you. Here's the 2nd.
+
+
+SHOW LIVE
+[5 consecutive sessions. 20 seconds each. Then zoom out so several boxes sit on screen together.]
+
+LIVE START
+
+
+Look how identical they are. That's not 5 days I went hunting for. That's just the week.
+
+
+You're not looking for a new thing every day. You're looking for the same thing every day.
+
+
+That's what a system actually is.
+
+
+LIVE END
+
+
+And the 3rd way — on your chart, not mine. Drop the asset you trade in the chat.
+
+
+SHOW LIVE
+[Take 3 from the chat. Mark the box on each. 30 seconds each. Don't cherry-pick.]
+
+LIVE START
+
+
+Same thing. Different market.
+
+
+It's automatically applied every single day and you can trade it very mechanically.
+
+
+LIVE END
+
+
+And before anyone asks how often this shows up — minimum 3 times a week.
+
+
+If you're lucky, over 5. The A+ ones where everything lines up, once or twice.
+
+
+That's the honest number. It's not 20 trades a day.
+
+
+
+
+-- commitment --
+
+
+So which window are you trading — London or New York? Type it in the chat.
+
+
+Step 1 done. Your chart's marked. Now we wait.
+
+
+
+
+=========================
+STEP 2 — THE BIAS
+which way you're trading today
+=========================
+
+
+-- context --
+
+
+It's 9:12. Your chart is marked. Nothing has happened yet.
+
+
+So — which way?
+
+
+Here's what most of you do at this exact moment.
+
+
+Market spikes. You buy. It reverses. Stops you out. You flip and sell. It reverses again.
+
+
+Anyone done that? Put it in the chat.
+
+
+Right. All of us.
+
+
+And that is not a discipline problem.
+
+
+It's that you're making the biggest decision of your day in the most violent 30 seconds of the session,
+
+
+with nothing in front of you to base it on.
+
+
+So here's the bit that changes everything.
+
+
+You don't have to predict which way it's going.
+
+
+You just have to know what it has to do first.
+
+
+Because before the market can make a real move, it has to do one specific thing.
+
+
+It has to go and collect the orders sitting on one side.
+
+
+That's not an opinion. That's mechanics — and you marked exactly where those orders are in step 1.
+
+
+So instead of guessing the direction, you wait for that to happen, and you read it.
+
+
+By the end of this section you'll be able to sit down at 9:29 tomorrow and say "I'm a buyer today" —
+
+
+and have an actual reason behind it.
+
+
+2 things.
+
+
+SHOW LIVE
+[Both on screen.]
+
+
+1- One side of your range gets taken — that's your bias
+2- The dealing range extreme has to go too
+
+
+
+
+1- One side gets taken, and that's your bias.
+
+
+SHOW LIVE
+[Anchor day. Price trades below the low of the range.]
+
+LIVE START
+
+
+We take out the high — automatically my bias is bearish.
+
+
+We take out the low — automatically my bias is bullish.
+
+
+So here, the low goes. Which means I'm a buyer.
+
+
+LIVE END
+
+
+And I know exactly how that sounds. Price went down, and I'm buying.
+
+
+So let me justify that, because it's the thing that changed trading for me.
+
+
+Price doesn't move randomly. It moves to collect liquidity and pair orders.
+
+
+For every buyer there has to be a seller.
+
+
+So when price dips below that low — who's selling down there?
+
+
+Everyone taught to sell the breakdown. Everyone with a stop sat under the low.
+
+
+And not just retail — institutional breakout traders putting large orders out anticipating continuation.
+
+
+All of it triggers at once. And that is the point of the move.
+
+
+Those sell orders are what the big buy orders get paired with.
+
+
+The market has to take the sell side first. Then it can trade to the buy side.
+
+
+SHOW LIVE
+[Let it run. Breaks the low, everything says sell, then it reverses and runs the other way.]
+
+LIVE START
+
+
+Watch. Takes the low. Everything on your screen says sell.
+
+
+And then it turns and runs the whole way to the other end.
+
+
+LIVE END
+
+
+Now think about how many of your losing trades that just explained.
+
+
+You sold the low, it went up. You bought the high, it went down.
+
+
+You're not getting unlucky. You're basically misaligned to the market.
+
+
+If you don't understand where liquidity is being generated, 9 times out of 10 you're going to become the liquidity.
+
+
+And if both sides get taken, you just trade the direction of the last one.
+
+
+Because whichever side went last is the one the market cleared most recently —
+
+
+so that's the side it's finished with, and the other end is where it's headed.
+
+
+
+
+2- Then the dealing range extreme has to go too.
+
+
+You already marked it in step 1. Now it has to get taken as well.
+
+
+Because one level getting taken on its own can just be noise.
+
+
+Two levels getting taken in sequence is the market clearing everything out of the way before it moves.
+
+
+SHOW LIVE
+[Same chart. TBR high taken first. Then price runs the dealing range high. Mark both events in order.]
+
+LIVE START
+
+
+There's the high of my timebased range going.
+
+
+Now — you don't just sell blindly there.
+
+
+You wait for the market to run above the extreme of the dealing range as well.
+
+
+Once it runs that high, then you can trust selling setups.
+
+
+LIVE END
+
+
+Two levels swept, not one. That's the difference between a setup and a guess.
+
+
+And that's also what tells you where you're going — the opposing end.
+
+
+SHOW LIVE
+[Mark the opposing end. Then point back at the daily and weekly pools marked in step 1.]
+
+LIVE START
+
+
+Sweep one side, trade to the other side. That's the trade.
+
+
+And it's never a random level — those pools you marked in step 1 are sitting right there.
+
+
+LIVE END
+
+
+
+
+-- commitment --
+
+
+So on the day you last lost money — was the low taken first, or the high? Type L or H.
+
+
+And how many of you traded against it without knowing?
+
+
+Step 2 done. You know which way you're going. You still don't have a trade.
+
+
+That's step 3.
