@@ -247,10 +247,10 @@ So now you've got a box inside a box.
 The big one tells you where the orders are. The small one tells you when the market goes for them.
 
 
-What neither of them tells you is where the market is trying to get to.
+But what neither of them tells you is: where's the market actually going?
 
 
-That's the last thing we mark.
+So that's the last thing we mark.
 
 
 
@@ -258,13 +258,28 @@ That's the last thing we mark.
 3- Your liquidity pools.
 
 
+They're the same thing we just talked about. A stack of orders sitting at a level.
+
+
+Just a much bigger stack.
+
+
+Because your box was built in one hour. These have been building for a whole day, or a whole week.
+
+
 SHOW LIVE
-[Same chart. Mark previous daily high and low, previous weekly high and low.]
+[Same chart. Mark previous daily high and low, then previous weekly high and low.]
 
 LIVE START
 
 
 Previous daily high. Previous daily low. Previous weekly high. Previous weekly low.
+
+
+Everyone who looked at yesterday's chart saw that high. Everyone who looked at last week's saw that one.
+
+
+So orders have had a full day, or a full week, to pile up on them.
 
 
 4 more lines and you're done.
@@ -273,16 +288,13 @@ Previous daily high. Previous daily low. Previous weekly high. Previous weekly l
 LIVE END
 
 
-Same idea as before — those are places where orders have been building up.
+And we already said it — the market moves to where the orders are.
 
 
-Except these have been building for a whole day, or a whole week.
+So the biggest stacks are the biggest magnets.
 
 
-So they're bigger pools, and the algorithm targets them.
-
-
-Which means they tell you where a move is likely to finish, before it's even started.
+That's what these tell you. Where it's trying to get to, before it's even started moving.
 
 
 I mark all 4 before every session. Takes about 40 seconds.
