@@ -84,16 +84,15 @@ I have to show you what they sit inside first.
 So we're going to start with the biggest thing on the chart, and work our way in.
 
 
-3 things go on it.
+2 things go on it.
 
 
 SHOW LIVE
-[All 3 on screen. Flash it, then back to the first.]
+[Both on screen. Flash it, then back to the first.]
 
 
 1- The dealing range
 2- Your time based range inside it
-3- Your liquidity pools
 
 
 
@@ -247,39 +246,10 @@ So now you've got a box inside a box.
 The big one tells you where the orders are. The small one tells you when the market goes for them.
 
 
-But we've still got 2 boxes and no idea where the market's headed.
+And that's your chart done. Outer box, inner box.
 
 
-So that's the last thing we mark. 4 more lines.
-
-
-
-
-3- Your targets.
-
-
-SHOW LIVE
-[Same chart. Mark yesterday's high and low, then last week's high and low.]
-
-LIVE START
-
-
-Yesterday's high. Yesterday's low.
-
-
-Last week's high. Last week's low.
-
-
-LIVE END
-
-
-Those are the 4 places the market keeps going back to. So those are your targets.
-
-
-Takes about 40 seconds, and your chart's done.
-
-
-Outer box. Inner box. 4 targets.
+Nothing else goes on it.
 
 
 
@@ -624,7 +594,7 @@ And once both have gone, you also know where you're headed — the opposing end.
 
 
 SHOW LIVE
-[Mark the opposing end. Then point back at the daily and weekly pools from step 1.]
+[Mark the opposing end of the range. Draw the arrow from the sweep to it.]
 
 LIVE START
 
@@ -632,7 +602,7 @@ LIVE START
 Sweep one side, trade to the other side. That's the trade.
 
 
-And it's never a random level — those pools you marked in step 1 are sitting right there.
+And it's not a random level. It's the other end of a box you drew before the market opened.
 
 
 LIVE END
