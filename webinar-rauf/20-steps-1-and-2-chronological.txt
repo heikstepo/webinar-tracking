@@ -179,10 +179,10 @@ So those aren't 2 lines.
 They're the 2 places on the chart the market has an actual reason to go.
 
 
-That's your outer box. Where the market cares.
+That's your outer box. It tells you where the orders are.
 
 
-But it doesn't tell you when anything happens — that box could be days wide.
+What it doesn't tell you is when the market goes for them. That box could be days wide.
 
 
 So that's the next thing we mark.
@@ -244,7 +244,7 @@ The dealing range is what tells you your hour landed somewhere that still matter
 So now you've got a box inside a box.
 
 
-The big one tells you where the market cares. The small one tells you when it's going to act.
+The big one tells you where the orders are. The small one tells you when the market goes for them.
 
 
 What neither of them tells you is where the market is trying to get to.
