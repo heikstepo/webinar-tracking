@@ -518,49 +518,52 @@ So here, the low goes. Which means I'm a buyer.
 LIVE END
 
 
-And I know exactly how that sounds. Price went down, and I'm buying.
+And I know how that sounds. Price went down, and I'm buying.
 
 
-So let me justify it, because it's the thing that changed trading for me.
+So let me show you why.
 
 
-Price doesn't move randomly. It moves to collect liquidity and pair orders.
+Remember what we said is sitting below that low.
 
 
-For every buyer there has to be a seller.
+A stack of sell orders. People selling the breakdown, and people getting stopped out.
 
 
-So when price dips below that low — who's selling down there?
+Now — if you wanted to buy a big position, where would you go?
 
 
-Everyone taught to sell the breakdown. Everyone with a stop sat under the low.
+You'd go to where the sellers are.
 
 
-And not just retail — institutional breakout traders putting large orders out anticipating continuation.
-
-
-All of it triggers at once. And that is the point of the move.
-
-
-Those sell orders are what the big buy orders get paired with.
-
-
-The market has to take the sell side first. Then it can trade to the buy side.
+Because you can't buy anything unless somebody is selling it to you.
 
 
 SHOW LIVE
-[Let it run. Breaks the low, everything says sell, then it reverses and runs the other way.]
+[Anchor day. Price dips below the low, the sell orders fire, then it reverses and runs the other way.]
 
 LIVE START
 
 
-Watch. Takes the low. Everything on your screen says sell.
+So price dips below the low.
 
 
-And then it turns and runs the whole way to the other end.
+All those sell orders go off at once.
+
+
+Somebody buys the lot.
+
+
+And now they've got what they came for. So price goes up.
 
 
 LIVE END
+
+
+That's it. That's the whole thing.
+
+
+The dip wasn't the move. The dip was somebody getting filled.
 
 
 Now think about how many of your losing trades that just explained.
