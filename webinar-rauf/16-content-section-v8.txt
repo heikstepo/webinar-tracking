@@ -1054,15 +1054,14 @@ One bad day inside a repeatable process is just a bad day.
 So here's step 4. 4 things, and they happen in order while you're holding.
 
 
-SHOW LIVE
-[Graded price swing on the anchor day. 25, 50, 75 marked. Walk a live trade through, calling each level as price crosses.]
-
-
 1- Past 25
 2- Past 50
 3- 50 to 75
 4- The opposing end
 
+
+SHOW LIVE
+[Graded price swing on the anchor day. 25, 50, 75 marked. Walk a live trade through, calling each level as price crosses.]
 
 LIVE START
 
