@@ -1,0 +1,337 @@
+STEP 1 — your draft, with fixes
+
+Kept: your context, the NDA/leak framing, the flow, the mid-step commitment,
+the handoff into step 2.
+
+Changed 3 things:
+  1. "where the market cares" -> what it actually means (you killed this line earlier)
+  2. the liquidity explanation -> the simpler one (you said the old one was too complicated)
+  3. proof: one beat stays here, the rest moves to step 2 — see note at the bottom
+
+⚠️ ONE FLAG: the NDA line. See bottom.
+
+
+
+
+=========================
+STEP 1 — THE TIME BASED RANGES
+what you mark before the open
+=========================
+
+
+-- context --
+
+
+Now, as we already said — time within the market is by far the most important part of my strategy.
+
+
+Most inconsistent traders I talk to aren't bad at trading. Their timing is just wrong.
+
+
+And that's actually a good thing.
+
+
+Because if you fix that one problem and only trade at certain times of day…
+
+
+You won't have to sit there for hours on end waiting for your patterns to form.
+
+
+You get in at the same time every single day.
+
+
+Analyse the charts, wait for your bias.
+
+
+And if you see something in that window, you trade, and you're out fast.
+
+
+If not, you don't trade, and you're also out fast.
+
+
+That simple. It adds a lot of clarity to your trading and it takes out the stress.
+
+
+Because you don't have to do too much thinking by yourself —
+
+
+the charts within that 1 hour window tell you exactly what to do.
+
+
+So let's get into what those time windows are and how to mark them.
+
+
+
+
+-- before I give you the times --
+
+
+Now, I've got a number of time based ranges.
+
+
+Today I'm going to leak 2 of them, since you're live with me here.
+
+
+One for the New York session, and one for London.
+
+
+⚠️ [NDA line goes here if Rauf confirms it — see note at the bottom of this file]
+
+
+But back to the 2 you're getting today.
+
+
+All of them sit inside specific dealing ranges.
+
+
+So before I show you what the ranges are and how to mark them,
+
+
+I have to first show you how I identify those dealing ranges.
+
+
+
+
+-- the dealing range --
+
+
+A dealing range is the space between a significant swing high and a swing low.
+
+
+And a swing high and a swing low just means a point where the market turned around.
+
+
+SHOW LIVE
+[Chart with a clear swing high and swing low. Mark both.]
+
+LIVE START
+
+
+So — this was the low that pushed the market higher.
+
+
+And this was the high that pushed the market lower.
+
+
+Draw a line at each.
+
+
+Automatically, that becomes a range to the market.
+
+
+LIVE END
+
+
+That's it. Super easy.
+
+
+Now why does that matter?
+
+
+Because of what sits above and below those 2 lines.
+
+
+SHOW LIVE
+[Same chart. Stack order markers above the high, then below the low, as he says each one.]
+
+LIVE START
+
+
+An order is just you telling the market "if price gets here, I'm in."
+
+
+You set it, you walk away, and it fires by itself when price arrives.
+
+
+Now — everyone looking at this chart can see that high and that low. Same as you can.
+
+
+So they all leave their orders in roughly the same place.
+
+
+Which means there's a stack of them sat right there, waiting to get filled.
+
+
+LIVE END
+
+
+That's all liquidity means. Orders waiting to get filled.
+
+
+And the market doesn't move to random places. It moves to where the orders are.
+
+
+So the moment you draw those 2 lines, you know where the money is parked.
+
+
+But honestly — it doesn't tell you when anything happens. That box could be days wide.
+
+
+So the next thing we mark is our time based ranges.
+
+
+
+
+-- the time based range --
+
+
+This is the inner box. And this one is about time, not price.
+
+
+Here are the times.
+
+
+My London range starts at 1:12 and finishes at 2:12.
+
+
+New York runs 8:12 to 9:12. All Eastern Standard Time.
+
+
+I'll work in New York today, because that's the one most of you can be awake for.
+
+
+SHOW LIVE
+[Same chart. Drop the 8:12-9:12 box inside the dealing range. Mark its high and low.]
+
+LIVE START
+
+
+8:12 it starts. 9:12 it's done.
+
+
+High there. Low there.
+
+
+2 more lines. That's your time based range.
+
+
+LIVE END
+
+
+And now here's the rule that connects the 2 boxes.
+
+
+I want to see my time based range form inside the dealing range.
+
+
+If it hasn't, I'm not interested.
+
+
+Because if my hour formed somewhere price has already been and moved past,
+
+
+then there's nothing left sitting there for the market to go and collect.
+
+
+The dealing range is what tells you your hour landed somewhere that still matters.
+
+
+Makes sense? Put a yes in the chat.
+
+
+
+
+-- does the market actually do anything at these lines --
+
+
+Now, you've just watched me draw 2 boxes on a chart.
+
+
+So the fair question is — does the market actually do anything at those lines? Or are they just lines?
+
+
+Don't take my word for it. Data never lies. People can lie.
+
+
+SHOW LIVE
+[Edgeful. Their branding visible. 128 sessions, January to July.]
+
+LIVE START
+
+
+128 sessions. Not my data. Theirs.
+
+
+Zero.
+
+
+Zero days out of 128 where the market didn't take one of those lines.
+
+
+Not usually. Not most of the time. There wasn't a single day it ignored the box.
+
+
+LIVE END
+
+
+Now — someone smart will spot the catch, so I'll say it first.
+
+
+That's measured across the whole session, and I only trade one window of it.
+
+
+Some days it happened at 2pm and I'd long gone. That's why some days I don't trade.
+
+
+But the level gets respected every single day. You are never sat there hoping something shows up.
+
+
+
+
+-- handoff --
+
+
+So now you've got a box inside a box.
+
+
+The big one tells you where the orders are.
+
+
+The small one tells you when the market goes for them.
+
+
+But what neither of them tells you is: where's the market going?
+
+
+That's step 2. The bias.
+
+
+
+
+=====================================================
+NOTES
+=====================================================
+
+⚠️ THE NDA LINE
+
+You wrote: "The rest is reserved for my private students that sign an NDA — highly private."
+
+I can't verify that. There's no mention of an NDA anywhere in the 26 channel
+transcripts, the full A-Z free course, or the 5 Academy workbooks.
+
+It's a strong line and it makes the withheld ranges feel real. But it's a factual
+claim about how his business operates, said live on camera. If it isn't true and
+one student says so publicly, it costs more than the line is worth.
+
+Get a yes from Rauf and put it in. If it's a no, his own reason is nearly as good
+and it IS verified:
+
+  "A lot of people will just plagiarise what I teach and say they came up with it.
+   So the rest stay with me."
+
+
+ON THE PROOF
+
+Your draft cut all 3 proof beats. I kept 1 here — the 0 out of 128 — because
+without it step 1 is 5 minutes of "draw these boxes" with nothing to believe,
+and that's where people tab away.
+
+It's short, it answers the exact doubt step 1 creates ("are these just lines?"),
+and landing on a zero is a better beat than any of the others.
+
+The other 2 move to step 2, because they prove step 2's claim, not step 1's:
+  - the 70% double-break stat  -> proves "it goes to the other end"
+  - the 5 days, sweep and run  -> proves "same event every day"
+  - the live chat charts       -> proves "works on your market too"
+
+That also fixes step 2, which currently has no proof in it at all.
