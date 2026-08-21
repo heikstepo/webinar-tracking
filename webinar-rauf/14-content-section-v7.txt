@@ -1,0 +1,1054 @@
+RAUF WEBINAR — CONTENT SECTION (v7)
+
+Rebuilt on the TBR Academy workbook mechanics, restricted to the two ranges
+he has given out publicly (London 1:12–2:12, New York 8:12–9:12).
+
+What changed from v6:
+  - Entry window corrected: NY 9:20–10:15 (was wrongly 9:30–10:00)
+  - "Bias" is no longer a step. With two ranges, direction comes from the sweep.
+  - Entry is a CHECKLIST, not a menu: OB in liquidity AND the 3-candle hourly
+    swing point must both be present. Two of the four entry functions are
+    explicitly "not standalone."
+  - Four entry functions named, one taught. The other three are the gap.
+  - Previous daily / weekly pools added as the target beyond the range.
+
+Every numbered list is spoken as a list FIRST, then taught one by one.
+Only cue: SHOW LIVE, with the shot in brackets underneath.
+
+
+
+
+=========================
+THE ROADMAP
+=========================
+
+
+Four steps. That's the whole system.
+
+
+SHOW LIVE
+[Four steps on screen. Leave it up — we tick each one off.]
+
+
+One. The range. Two times on the clock, and what you do inside them.
+
+
+Two. The sweep. How the market tells you which way it's going.
+
+
+Three. The confirmation. The two things that must both be there before you're allowed in.
+
+
+Four. The exit. Where you get out.
+
+
+When. Which way. When am I allowed in. When do I leave.
+
+
+And I want you to notice something about that list before we start.
+
+
+Not one of those steps is a prediction.
+
+
+Every single one of them is you waiting for the market to do something first.
+
+
+That's the difference between this and everything else you've been taught.
+
+
+Let's do step one.
+
+
+
+
+=========================
+STEP 1 — THE RANGE
+=========================
+
+
+-- context --
+
+
+Your timing is the number one reason you're losing.
+
+
+Not your strategy. Not your discipline. Your timing.
+
+
+Most of you are at the desk from the open to the close, chasing every move that appears.
+
+
+And the more time you spend in the market, the more risk you put on.
+
+
+More risk does not equal more money.
+
+
+So maybe you're sat there thinking:
+
+
+"If I trade less, don't I make less?"
+
+
+"What if the big move happens while I'm away from the charts?"
+
+
+"Why would the market even be tradeable at one time and not another?"
+
+
+By the end of this section you'll have two times on the clock. Written down. Yours to keep.
+
+
+And you'll know when to walk away, which is worth more than knowing when to sit down.
+
+
+Fair enough? Give me a yes in the chat.
+
+
+-- vision --
+
+
+My last trade this week took twelve minutes.
+
+
+In at half nine. Out at twenty to ten. Laptop shut.
+
+
+I'm not sat there at two in the afternoon wondering if I should have another go.
+
+
+The day's decided before most people have finished their coffee.
+
+
+And that's not discipline. I don't have more discipline than you.
+
+
+It's that I only have two windows where I'm even allowed to be in the market.
+
+
+Everything outside them, there's no decision to make. So there's no decision to get wrong.
+
+
+-- strategy --
+
+
+So step one. Three things.
+
+
+SHOW LIVE
+[All three on screen at once. Flash it — faster than they can write. Then back to the first.]
+
+
+One. Know your two windows.
+
+
+Two. Mark the high and the low.
+
+
+Three. Then do absolutely nothing.
+
+
+Let's take them one at a time.
+
+
+One. Your two windows.
+
+
+London runs one twelve to two twelve. New York runs eight twelve to nine twelve. Eastern.
+
+
+I'll work in New York today because that's the one most of you can be awake for.
+
+
+Two. Mark the high and the low of that hour.
+
+
+SHOW LIVE
+[Anchor day. Drop the box on. Mark the high, mark the low. Two lines, nothing else.]
+
+
+That's your range. Two lines on a chart.
+
+
+There is buy side liquidity resting above that high.
+
+
+There is sell side liquidity resting below that low.
+
+
+Three — and this is the one everybody gets wrong — you do nothing.
+
+
+That hour is not a trading window. It's a range formation window.
+
+
+You are not looking for an entry. You are building the thing you'll trade later.
+
+
+I'll give you the exact minute you're allowed in, and it's not in step one.
+
+
+-- proof, three ways --
+
+
+Now, you've got no reason to believe any of that.
+
+
+Every educator on YouTube tells you their thing works and you take their word for it.
+
+
+So I'm not going to ask you to.
+
+
+Data never lies. People can lie.
+
+
+SHOW LIVE
+[Edgeful. Their branding visible. 128 sessions, January to July.]
+
+
+A hundred and twenty eight sessions. Not my data. Theirs.
+
+
+Both sides of that range got taken on seventy percent of them.
+
+
+And zero days out of 128 where that range didn't get broken at all.
+
+
+Zero.
+
+
+Now I'll be straight with you, because someone smart in this room will spot it.
+
+
+That's measured across the whole session, and I only trade one window of it.
+
+
+Some days the break came at two in the afternoon and I'd long gone.
+
+
+That's exactly why some days I don't trade at all.
+
+
+But that level gets respected every single day. You are never sat there hoping a setup appears.
+
+
+That's one way of showing you. Here's the second.
+
+
+SHOW LIVE
+[Five consecutive sessions. Twenty seconds each. Then zoom out so several boxes sit on screen together.]
+
+
+Look how identical they are.
+
+
+That's not five days I went hunting through the year for. That's just the week.
+
+
+You're not looking for a new thing every day. You're looking for the same thing every day.
+
+
+That's what a system actually is.
+
+
+And the third way — let's do it on your chart, not mine.
+
+
+Drop the asset you trade in the chat. Right now.
+
+
+SHOW LIVE
+[Take three from the chat. Mark the box on each. Thirty seconds each. Don't cherry-pick.]
+
+
+Same thing. Different market.
+
+
+It's automatically applied every single day and you can trade it very mechanically.
+
+
+-- commitment --
+
+
+So which window are you trading — London or New York? Type it in the chat.
+
+
+SHOW LIVE
+[Read a few out.]
+
+
+Step one done.
+
+
+
+
+=========================
+STEP 2 — THE SWEEP
+=========================
+
+
+-- context --
+
+
+Now that you've got your range marked, the window closes.
+
+
+And this is where the market tells you which way it's going.
+
+
+Not where you guess. Where it tells you.
+
+
+Because here's what happens to most of you at half nine.
+
+
+Market spikes. You buy. It reverses. Stops you out.
+
+
+You're annoyed, so you flip and sell. And it reverses again.
+
+
+Anyone done that? Put it in the chat.
+
+
+Right. All of us.
+
+
+That is not a discipline problem.
+
+
+It's that you're making the biggest decision of your day in the most violent thirty seconds of the session, with no information.
+
+
+By the end of this section you won't be deciding anything. You'll be reading.
+
+
+Fair enough?
+
+
+-- vision --
+
+
+And I want to show you the thing that changed this for me, because it's backwards from everything you've been taught.
+
+
+SHOW LIVE
+[Anchor day. Price trades below the low of the range.]
+
+
+Price takes out the low of the range.
+
+
+And I'm a buyer.
+
+
+Read that back, because I think half of you heard it wrong.
+
+
+Price goes down. And I buy.
+
+
+Here's why.
+
+
+Price doesn't move randomly. It moves to collect liquidity and pair orders.
+
+
+For every buyer there has to be a seller.
+
+
+So when price dips below that low — who's selling down there?
+
+
+Everyone who's been taught to sell the breakdown. Everyone with a stop sat under the low.
+
+
+All of it triggers at once. And that is the point of the move.
+
+
+Those sell orders are what the big buy orders get paired with.
+
+
+The market has to take the sell side first. Then it can trade to the buy side.
+
+
+SHOW LIVE
+[Let the anchor day run. Breaks the low, everything says sell, then it reverses and runs the high.]
+
+
+Now think about how many of your losing trades that just explained.
+
+
+You sold the low. It went up. You bought the high. It went down.
+
+
+You're not getting unlucky. You're basically misaligned to the market.
+
+
+And if you don't understand where liquidity is being generated, nine times out of ten you are going to become the liquidity.
+
+
+That's what's been happening to you.
+
+
+-- strategy --
+
+
+So here's step two. Three things.
+
+
+SHOW LIVE
+[All three at once. Flash it. Then back to the first.]
+
+
+One. One side gets taken. That's your direction.
+
+
+Two. Both sides get taken. Trade the last one.
+
+
+Three. Your target is the opposing end.
+
+
+One. One side gets taken, and that's your direction.
+
+
+Low gets taken — sell side cleared — I'm looking to buy, targeting the range high.
+
+
+High gets taken — buy side cleared — I'm looking to sell, targeting the range low.
+
+
+That's it. That's the read. You didn't predict anything, you waited to be told.
+
+
+Two. Sometimes both sides get taken. And you trade the direction of the last one.
+
+
+SHOW LIVE
+[A day where the low goes first, then the high. Mark the order.]
+
+
+Low first, then the high — the high was last, so I'm looking up.
+
+
+High first, then the low — I'm looking down.
+
+
+One-sided is the cleanest read. Two-sided still gives you a framework before you've entered anything.
+
+
+Three. Your target is the opposing end of the range.
+
+
+SHOW LIVE
+[Anchor day. Sweep the low, arrow to the high.]
+
+
+Sweep one side, trade to the other side. That's the trade.
+
+
+And it's never a random level, because there's a reason price wants to go there.
+
+
+SHOW LIVE
+[Mark the previous daily high and low on the same chart. Then the previous weekly high and low.]
+
+
+Previous daily high. Previous daily low. Previous weekly high. Previous weekly low.
+
+
+Those are liquidity pools, and the algorithm targets them.
+
+
+I mark all four before every session. Takes about forty seconds.
+
+
+One more thing while we're here, because it'll save you money.
+
+
+Never buy a market in a premium. You want to buy at a discounted price.
+
+
+And you don't want to sell when the market's in a discount.
+
+
+It's like walking into a shop and paying double because you couldn't wait a day.
+
+
+-- commitment --
+
+
+So on the day you last lost money — was the low taken first, or the high?
+
+
+Have a think. Type L or H.
+
+
+SHOW LIVE
+[Read a few out.]
+
+
+And how many of you traded against it without knowing?
+
+
+Step two done.
+
+
+
+
+=========================
+STEP 3 — THE CONFIRMATION
+=========================
+
+
+-- context --
+
+
+So now you know which way you're going.
+
+
+But knowing you're a buyer is still not a trade. You have to get in somewhere.
+
+
+And this is the part where I lost the most money for the longest time.
+
+
+Tell me if this is you.
+
+
+You do the work. You find the level. You wait. You get your entry.
+
+
+And the market stops you out — then immediately runs to your take profit.
+
+
+Yes in the chat if that's happened to you this month.
+
+
+SHOW LIVE
+[Look at the chat. Let it fill.]
+
+
+Look at that.
+
+
+Now I'm going to tell you exactly why that happens, and it's not what you think.
+
+
+It's not that your entry was bad. It's that you had one reason and you needed two.
+
+
+-- vision --
+
+
+Because here's what I do instead, and it's the least impressive advice you'll hear today.
+
+
+Price takes out the low. And I don't touch it.
+
+
+Instead of panicking and buying as soon as you see the first green candle — actually wait.
+
+
+Actually sit on your hands.
+
+
+The hardest thing to do in this business is wait.
+
+
+Most people can't, because they want to rush into the market.
+
+
+And the whole edge is sat in the gap between the sweep and the confirmation.
+
+
+-- strategy --
+
+
+So here's step three. Four things.
+
+
+SHOW LIVE
+[All four at once. Flash it. Then back to the first.]
+
+
+One. There are four entry functions. Not one.
+
+
+Two. Two of them are not standalone.
+
+
+Three. You need the entry function and the swing point. Both.
+
+
+Four. And you need them inside your window.
+
+
+One. There are four entry functions.
+
+
+Order block made in liquidity. Opening wick, return and hold fifty percent. Inverse fair value gap. And the three candle hourly swing point.
+
+
+I'm going to teach you the one I take most, properly, so you can actually use it.
+
+
+Two. Two of those four are not standalone.
+
+
+The inverse fair value gap is context. It's an early read that delivery is shifting, before the move has finished. It is not an entry on its own.
+
+
+And the three candle hourly swing point is confirmation only. Also not an entry on its own.
+
+
+I want you to sit with that for a second, because it explains a lot of your losses.
+
+
+If you've been entering on one signal, you've been entering on half a setup.
+
+
+Three. So here's what you actually need. Two things, both present.
+
+
+The first is the order block made in liquidity.
+
+
+SHOW LIVE
+[Anchor day, the leg down. Three or four down-close candles. Point at each. Land on the one that closed below the low.]
+
+
+Not that one. Not that one. This one.
+
+
+Because that's the candle that took the range low.
+
+
+By definition an order block is a change in the state of delivery.
+
+
+But the only ones that count are the ones made in liquidity.
+
+
+The algorithm used that candle to clear the liquidity. That's what gives it significance.
+
+
+Every other red candle on that chart is just a red candle.
+
+
+So: down-close candle takes the range low. Price closes back above the low. The body of that candle is your order block.
+
+
+And your entry is on the return to that body.
+
+
+SHOW LIVE
+[Same chart. Price closes back above, comes back to the body, mark the entry.]
+
+
+Not on the close. On the return.
+
+
+The second thing is the three candle hourly swing point.
+
+
+SHOW LIVE
+[Hourly chart. Three consecutive candles. Mark the left, middle, right.]
+
+
+Any three hourly candles in a row.
+
+
+Left and right both close above the middle — that's a swing low. Bullish.
+
+
+Left and right both close below the middle — that's a swing high. Bearish.
+
+
+For New York I'm checking the seven, eight and nine o'clock candles.
+
+
+And it has to agree with the direction the sweep already gave me.
+
+
+When the entry function and the swing point agree — that's the confluence. That's when I'm in.
+
+
+If you treat your hourly candles as your daily candles, a whole new world opens up.
+
+
+Four. And all of it has to happen inside your window.
+
+
+SHOW LIVE
+[The timeline on screen: 8:12 mark · 9:12 close · 9:20 open · 10:15 done.]
+
+
+Eight twelve to nine twelve, you mark the range.
+
+
+Nine twelve, the window closes and you wait for one side to be taken.
+
+
+Nine twenty, your entry window opens. Order block there? Swing point there? You go.
+
+
+Ten fifteen, your entry window closes. No trade by then, you're done for the day.
+
+
+London is the same shape. Range one twelve to two twelve. Entry window two twenty to four.
+
+
+Nothing by four in the morning, the market can chop. You hop off the charts.
+
+
+-- foreplay --
+
+
+Now — I'll be honest with you about something.
+
+
+You could take all of that home tonight and still get it wrong for six months.
+
+
+Not because it's hard. Because at 9:34 tomorrow, with your own money on it, the question in your head is going to be:
+
+
+"Is that a real order block, or am I seeing what I want to see?"
+
+
+And there is nobody sat next to you to answer it.
+
+
+Everyone I work with can recite this. Reading it live is a completely different skill.
+
+
+-- risk, briefly --
+
+
+One more thing. If it stops you out, take two trades in the same direction.
+
+
+If they're both wrong, then you're just wrong on the day, and you come back tomorrow.
+
+
+Understand that it's a cost of doing business if you take a loss.
+
+
+-- commitment --
+
+
+So of the two things you need — which one have you never once checked before entering?
+
+
+Type A for the order block, B for the swing point.
+
+
+SHOW LIVE
+[Read a spread of them out.]
+
+
+Yeah. It's B. It's almost always B.
+
+
+Step three done.
+
+
+
+
+=========================
+STEP 4 — THE EXIT
+=========================
+
+
+-- context --
+
+
+So now you're in the trade.
+
+
+And I'd argue this next part matters more than everything before it.
+
+
+Because once you've eliminated one direction, entries get easy.
+
+
+Exits are where the money is actually kept or given back.
+
+
+How many times have you been properly up on a trade — properly up — and watched it come all the way back to your entry?
+
+
+Yes in the chat.
+
+
+Every single person in this room. Including me, and I'll show you.
+
+
+-- vision --
+
+
+SHOW LIVE
+[The minus $8,580 day. P&L first. Sit on it. Then the chart.]
+
+
+Eight and a half thousand dollars. One day. Gone.
+
+
+I got in. I set my stop. And I failed to set a take profit.
+
+
+My alert went off, I came back, and it had hit my target and come all the way back through my stop.
+
+
+That's human error. We move on.
+
+
+The setup was right. The system was right. I was wrong.
+
+
+The system never fails me. If I lose, I failed the system.
+
+
+SHOW LIVE
+[The full month. $56,000 across 15 trading days.]
+
+
+And I still finished that month up fifty six thousand.
+
+
+One bad day inside a repeatable process is just a bad day.
+
+
+-- strategy --
+
+
+So here's step four. Four things, and they happen in order while you're holding.
+
+
+SHOW LIVE
+[Fib from swing high to swing low. 25, 50, 75 marked. Walk a live trade through, saying each out loud as price crosses.]
+
+
+One. Past twenty five.
+
+
+Two. Past fifty.
+
+
+Three. Fifty to seventy five.
+
+
+Four. Past seventy five.
+
+
+One. Close past twenty five, the market's shifting. That's my confirmation.
+
+
+Two. Close past fifty, it shouldn't be coming back to twenty five. That's where I move to break even.
+
+
+Three. Fifty to seventy five is the profit zone. That's where I'm taking money off.
+
+
+Four. Past seventy five it's extended. Full take profit, and never a new position up there.
+
+
+And if that's too much to think about at half nine in the morning, here's the simple version.
+
+
+Fifty points on the Nasdaq and you're done.
+
+
+You don't need the opposing end. You don't need the whole move.
+
+
+Because no one ever, and I mean ever, goes broke taking profit.
+
+
+You will go broke taking losses.
+
+
+-- commitment --
+
+
+So which one are you? The graded swing, or the flat fifty? Type A or B.
+
+
+Step four done.
+
+
+
+
+=========================
+THE BRIDGE — one trade, start to finish
+=========================
+
+
+Four steps, all ticked. Separately they're four ideas. Together they're one trade.
+
+
+SHOW LIVE
+[Brand new day — not the anchor. Full sequence, 8:12 to the exit. Rauf narrates each step as it happens.]
+
+
+Eight twelve. Range forms. I mark the high, I mark the low, and I sit there.
+
+
+Nine twelve. Window's closed. Now I wait.
+
+
+There's the low getting taken. Sell side cleared. So I'm a buyer.
+
+
+Down-close candle took it. Closed back above. There's my order block.
+
+
+Hourly — left and right close above the middle. Swing low. It agrees.
+
+
+Nine twenty six. Price returns to the body. I'm in.
+
+
+Past twenty five. Past fifty — stop to break even.
+
+
+Fifty points. Done. Twelve minutes.
+
+
+That's a day.
+
+
+-- the one rule worth writing down --
+
+
+And notice what happened there.
+
+
+I didn't predict a single thing.
+
+
+The market took the low. The market made the order block. The market printed the swing point.
+
+
+All I did was refuse to move until all of it lined up.
+
+
+Three or more things pointing the same direction — that's a high probability trade.
+
+
+And I'll be honest with you, because a lot of educators won't. I'm in the business to make money.
+
+
+You have to be able to risk more on the trades you're confident in. That's how you make more.
+
+
+-- now they do it --
+
+
+Now let's find out if any of that actually landed.
+
+
+I'm putting up a chart you've never seen. I'm not saying a word.
+
+
+SHOW LIVE
+[Cold chart. New day. Silent.]
+
+
+You tell me. Where's the range?
+
+
+SHOW LIVE
+[Wait for chat. Mark what they say.]
+
+
+Which side got taken? So am I a buyer or a seller?
+
+
+SHOW LIVE
+[Wait. Reveal. Confirm.]
+
+
+Now find me the order block. And tell me if the hourly agrees.
+
+
+SHOW LIVE
+[Wait. Let them argue in the chat. Then show it. Let the day play out to the exit.]
+
+
+There it is.
+
+
+Twenty minutes ago most of you couldn't have called any of that.
+
+
+
+
+=========================
+HANDOFF TO THE TRANSITION
+=========================
+
+
+So look at what you've actually got.
+
+
+Two windows and the data behind them.
+
+
+A direction that the market hands you instead of you guessing it.
+
+
+The two things that have to be true before you're allowed in, and the exact minutes you're allowed in them.
+
+
+And four levels on the way out.
+
+
+That is a complete system. That's more than I had after two years and thousands of pounds of courses.
+
+
+And you can go and use it. Tomorrow morning. No strings.
+
+
+But I'd rather be honest with you than sell you a dream, so here's the part nobody says out loud.
+
+
+You just read that chart sat here, with me, on a market I chose, with no money on it.
+
+
+Now do it at 9:31 tomorrow with your own account on the line.
+
+
+And again the day after. And again for six months. With nobody checking your work.
+
+
+Because everything I've shown you today gets you to the setup.
+
+
+None of it gets you to a payout.
+
+
+And those are two completely different problems.
+
+
+Which almost nobody finds out until they've passed an account and still can't get paid.
+
+
+Every single person I've worked with came to me from exactly that spot.
+
+
+They could trade. They'd passed evaluations.
+
+
+They just couldn't turn it into money coming out.
+
+
+So let me show you why that gap exists.
+
+
+And what actually closes it.
