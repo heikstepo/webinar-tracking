@@ -7,28 +7,16 @@ pres.author = 'Day Trading Rauf';
 pres.title  = 'DTR Content Section - internal';
 
 const INK='111111', PAPER='FFFFFF', DARK='111111', MUTE='777777', LIVEBG='FFF4D6';
-
-function size(t){
-  // pick the largest size where the longest hand-broken line still fits the box
-  const lines = t.split('\n');
-  const maxlen = Math.max(...lines.map(l=>l.length));
-  const BOX = 11.9 * 72;                 // points
-  let fs = Math.floor(BOX / (maxlen * 0.52));
-  fs = Math.min(fs, 44);
-  // and keep tall slides from running off the bottom
-  const maxByHeight = Math.floor((5.7 * 72) / (lines.length * 1.3));
-  fs = Math.min(fs, maxByHeight);
-  return Math.max(18, fs);
-}
+const BODY = 36;          // one size for every content slide
+const SECTION = 44;       // section dividers only
 
 slides.forEach((sl,i)=>{
   const s = pres.addSlide();
-  const n = i+1;
 
   if (sl.k === 's'){
     s.background = { color: DARK };
     s.addText(sl.t,{x:0.7,y:1.0,w:11.9,h:5.5,align:'center',valign:'middle',
-      fontFace:'Arial',fontSize:46,bold:true,color:PAPER,margin:0,lineSpacingMultiple:1.2});
+      fontFace:'Arial',fontSize:SECTION,bold:true,color:PAPER,margin:0,lineSpacingMultiple:1.25});
 
   } else if (sl.k === 'l'){
     s.background = { color: LIVEBG };
@@ -42,12 +30,12 @@ slides.forEach((sl,i)=>{
   } else {
     s.background = { color: PAPER };
     s.addText(sl.t,{x:0.7,y:0.9,w:11.9,h:5.7,align:'center',valign:'middle',
-      fontFace:'Arial',fontSize:size(sl.t),bold:true,color:INK,margin:0,lineSpacingMultiple:1.3});
+      fontFace:'Arial',fontSize:BODY,bold:true,color:INK,margin:0,lineSpacingMultiple:1.35});
   }
 
-  s.addText(String(n),{x:12.3,y:6.95,w:0.6,h:0.3,align:'right',
+  s.addText(String(i+1),{x:12.3,y:6.95,w:0.6,h:0.3,align:'right',
     fontFace:'Arial',fontSize:9,color: sl.k==='s' ? '555555' : 'BBBBBB',margin:0});
 });
 
 pres.writeFile({fileName:'DTR-Content-Section-internal.pptx'})
-  .then(f=>console.log('wrote',f,'-',slides.length,'slides'));
+  .then(f=>console.log('wrote',f,'-',slides.length,'slides @',BODY,'pt'));
