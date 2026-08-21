@@ -280,13 +280,13 @@ Nothing by then? There's no trade, and you hop off the charts.
 -- why you should believe any of this --
 
 
-Now, you've just watched me draw boxes on a chart for 10 minutes.
+Now, you've just watched me draw 2 boxes on a chart.
 
 
-And you've got no reason to think any of it repeats. So I'm not going to ask you to.
+So the fair question is — does the market actually do anything at those lines? Or are they just lines?
 
 
-Data never lies. People can lie.
+Don't take my word for it. Data never lies. People can lie.
 
 
 SHOW LIVE
@@ -298,22 +298,28 @@ LIVE START
 128 sessions. Not my data. Theirs.
 
 
-Both sides of that range got taken on 70% of them.
+Zero.
 
 
-And 0 days out of 128 where that range didn't get broken at all.
+Zero days out of 128 where the market didn't take one of those lines.
+
+
+Not usually. Not most of the time. There wasn't a single day it ignored the box.
 
 
 Now — someone smart will spot the catch, so I'll say it first.
 
 
-That's the whole session, and I only trade one window of it.
+That's measured across the whole session, and I only trade one window of it.
 
 
-Some days the break came at 2pm and I'd long gone. That's why some days I don't trade.
+Some days it happened at 2pm and I'd long gone. That's why some days I don't trade.
 
 
-But the level gets respected every single day. You're never sat there hoping a setup appears.
+But the level gets respected every single day.
+
+
+You are never sat there hoping something shows up.
 
 
 LIVE END
@@ -638,6 +644,27 @@ Sweep one side, trade to the other side. That's the trade.
 
 
 And it's not a random level. It's the other end of a box you drew before the market opened.
+
+
+LIVE END
+
+
+And this is where that same data comes back.
+
+
+SHOW LIVE
+[Edgeful again. Same 128 sessions. Highlight the double-break number.]
+
+LIVE START
+
+
+Out of those 128 sessions — both sides got taken on 70% of them.
+
+
+So it doesn't just take one side. 7 times out of 10 it goes and takes the other one as well.
+
+
+That's the trade. That's the only thing I'm doing.
 
 
 LIVE END
