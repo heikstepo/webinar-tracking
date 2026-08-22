@@ -1,0 +1,262 @@
+INTRO — THE PROOF BLOCK
+Goes after "The data shows that this has a repeatable edge."
+Before the 70/30 line and before the story.
+
+Built as a ladder: my numbers -> consistency, not one number -> other people's numbers
+-> payouts, not P&L -> proof it's mechanical and not talent.
+
+Everything in [BRACKETS AND CAPS] is a placeholder. Notes at the bottom on each one.
+
+
+
+
+-- 1. my own numbers, shown as consistency not as one big number --
+
+
+So let me back that up before I say another word.
+
+
+SHOW LIVE
+[Month by month. February $27,000 · March $56,000 · April $19,000.
+ Show them as a row, not one total.]
+
+LIVE START
+
+
+February. Twenty seven thousand.
+
+
+March. Fifty six.
+
+
+April. Nineteen.
+
+
+Now I want you to look at April, not March.
+
+
+Because March is the number that makes you go "yeah, alright."
+
+
+April is the number that tells you it's a system.
+
+
+Nineteen thousand on a slow month is what repeatable looks like.
+
+
+Around $200,000 across those months, trading 2 time based range windows.
+
+
+LIVE END
+
+
+And a separate account, so you can see it isn't one lucky run.
+
+
+SHOW LIVE
+[Apex end-of-day account. $30,000 in 15 trading days.]
+
+LIVE START
+
+
+Thirty thousand dollars. 15 trading days. Apex end of day account.
+
+
+LIVE END
+
+
+
+
+-- 2. and it's not just a good stretch --
+
+
+⚠️ [PLACEHOLDER — LONG RANGE TRACK RECORD]
+
+     What to show: the longest continuous stretch Rauf can evidence.
+     Ideally 12 months of monthly P&L in one screenshot, including the red months.
+
+     Why this one matters more than any other number here:
+     3 good months could be a good quarter. 12 months including bad ones
+     is the only thing that answers "is this just a hot streak."
+
+     Say the red months out loud. Do not hide them. It is the single
+     most credibility-building thing available in this whole section.
+
+     I don't have this. Needs Rauf.
+
+
+
+
+-- 3. but my numbers don't help you --
+
+
+Now — here's the thing. My numbers don't actually help you.
+
+
+Because you don't care that I can trade it. You care whether you can.
+
+
+So let me show you people who are not me.
+
+
+⚠️ [PLACEHOLDER — STUDENT RESULTS, QUANTITY OVER SIZE]
+
+     What to show: 8-12 student results in ONE screen. Not a slideshow.
+     The range that converts is $2,000-$8,000, not the one $50k outlier.
+
+     Fladlien's rule and it holds here: given a webinar with 2 giant results
+     or 100 small ones, take the 100 small ones every time. A $50,000 month
+     goes blank in a stranger's head. Six people making $3,000 is believable
+     AND aspirational at the same time.
+
+     Include at least one that is recent — last 30 days. "If it's not new,
+     it's not good" is a universal objection and this kills it.
+
+     I don't have any verified student numbers. Needs Rauf.
+
+
+⚠️ [PLACEHOLDER — 2 OR 3 NAMED STUDENTS WITH ONE LINE OF CONTEXT EACH]
+
+     Not just a screenshot. A sentence: who they were before, what changed.
+     "This is X. Software engineer, been trading 3 years, could never hold
+     an account. Here's his last 6 weeks."
+
+     A result with a person attached is worth ten without.
+     Needs Rauf.
+
+
+
+
+-- 4. and this is the number that actually matters --
+
+
+But even that isn't the number I'd want to see if I were you.
+
+
+Because you can have a green P&L and still never see a penny of it.
+
+
+SHOW LIVE
+[Payout screenshots. Money that has left the prop firm and landed in a bank account.]
+
+LIVE START
+
+
+⚠️ [PLACEHOLDER — PAYOUT PROOF]
+
+     What to show: actual withdrawals. Prop firm payout confirmations,
+     bank transfers, payout dashboards. His own AND students'.
+
+     Why this is the most important placeholder on this page:
+     the #2 pain you name 90 seconds later is "You've passed accounts.
+     You've never actually been paid."
+
+     Equity curves do not answer that. Payouts do.
+     This is the only proof in the entire intro that speaks directly
+     to the thing they're actually stuck on — and it's the same gap
+     the pitch closes at the end.
+
+     If Rauf has one asset to dig out for this webinar, it is this one.
+
+
+LIVE END
+
+
+
+
+-- 5. and the reason I trust it isn't the money --
+
+
+And honestly, the numbers aren't even the part that convinced me.
+
+
+This is.
+
+
+SHOW LIVE
+[The free Discord. Members posting the same setup, same box, same day.]
+
+LIVE START
+
+
+That's my free community.
+
+
+Go and look at it. Everyone takes the same losing trades.
+
+
+And everyone takes the same winning trades.
+
+
+Because we're all trading off time first, and price second.
+
+
+There is no community out there that can replicate that.
+
+
+LIVE END
+
+
+And that's the bit I want you to sit with.
+
+
+If this was talent, we'd all have different trades.
+
+
+We don't. We have the same one, at the same time, every day.
+
+
+That's not a skill you have to develop. That's a process you follow.
+
+
+
+
+-- then straight into --
+
+
+Now, does that mean I have a 100% success rate and every day you can just run this?
+
+
+No.
+
+
+[…continues as written]
+
+
+
+
+=====================================================
+NOTES
+=====================================================
+
+WHAT'S VERIFIED AND USED ABOVE
+  - Feb / March / April: $27,000 / $56,000 / $19,000, ~$200,000 total,
+    "trading two timebased range windows"                  -> his own words
+  - Apex end-of-day account: $30,000 in 15 trading days    -> his own words
+  - The free Discord: "everyone takes the same losing trades,
+    everyone takes the same winning trades. There is no community
+    out there that can replicate that."                    -> his own words
+
+
+WHAT I DELIBERATELY DID NOT USE HERE, AND WHY
+
+  The 70% double-break / 0-of-128 Edgeful data.
+  You were right. That proves the RANGE behaves a certain way — it's a
+  mechanics proof, and it only means something once they know what a
+  time based range is. It's already doing its job in step 1.
+  Using it here spends the strongest stat in the deck on an audience
+  that doesn't yet have the context to feel it.
+
+  "Minimum 3 setups a week, up to 5."
+  Real, and his, but it's an expectation-setting line, not proof.
+  It's better placed in step 1 where it currently sits.
+
+
+THE 4 PLACEHOLDERS, RANKED BY WHAT THEY'RE WORTH
+
+  1. PAYOUT PROOF          — answers the exact pain named 90 seconds later
+  2. STUDENT RESULTS       — answers "can someone who isn't you do it"
+  3. LONG RANGE RECORD     — answers "is this a hot streak"
+  4. NAMED STUDENT STORIES — makes the numbers into people
+
+  If Rauf can only get one, get #1.
