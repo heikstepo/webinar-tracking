@@ -1,0 +1,283 @@
+STEP 2: THE BIAS
+which way you're trading today
+
+REFRAMED: we DO predict. The enemy is guessing, not predicting.
+Uses his own line — "this separates reactive traders from anticipated traders."
+
+~700 words, down from ~900.
+
+
+
+
+So we've got our 2 boxes, and they tell us where the orders are and when the market's
+going to go for them.
+
+
+What they don't tell us yet is which way we're trading.
+
+
+And this is the part everyone assumes is the hard part, because everybody will tell you
+that you can't predict the market.
+
+
+That's rubbish. Predicting is exactly what we're doing here — it's the whole point.
+
+
+The difference is what you're predicting from.
+
+
+Most traders predict from an opinion. They check the news, glance at a higher timeframe,
+decide the market feels bearish, and hope they're right.
+
+
+That's not a prediction. That's a guess with a nicer word on it.
+
+
+And here's what that actually looks like on a normal day.
+
+
+* Market spikes
+* You buy
+* It reverses
+* Stops you out
+* You're annoyed, so you flip and sell
+* And it reverses again
+
+
+Anyone done that? Put it in the chat.
+
+
+And that's not a discipline problem. You're making the biggest decision of your entire
+day in the most violent 30 seconds of the session, with nothing in front of you to base
+it on.
+
+
+Nobody makes a good decision in that state… nobody.
+
+
+So here's what we do instead, and this is the part that took the pressure off me
+completely.
+
+
+We don't predict before the market has shown us anything. We wait for it to do one
+specific thing first, and then we anticipate what comes next.
+
+
+Because before the market can make a real move in either direction, it has to go and
+collect the orders sat on one side.
+
+
+And you already know exactly where those orders are, because you marked them in step 1.
+
+
+So the market is about to walk into one of your boxes, and the second it does, you can
+anticipate where it's going next.
+
+
+That's the difference between a reactive trader and an anticipative one.
+
+
+So by the end of this section you'll sit down at 9:29 tomorrow, watch one thing happen,
+and know whether you're a buyer or a seller today, with an actual reason behind it.
+
+
+Sounds good?
+
+
+Now, 2 things have to happen, and they happen in this order.
+
+
+SHOW LIVE
+[Both on screen.]
+
+
+1- One side of your time based range gets taken — that's your bias
+
+2- Then the dealing range extreme has to go too
+
+
+
+
+1- One side gets taken, and that's your bias.
+
+
+We start with the inner box, because that's the one that gets hit first.
+
+
+SHOW LIVE
+[Anchor day. Price trades below the low of the range.]
+
+LIVE START
+
+
+We take out the high, and automatically my bias is bearish.
+
+
+We take out the low, and automatically my bias is bullish.
+
+
+So here, the low goes… which means I'm a buyer.
+
+
+LIVE END
+
+
+And I know how that sounds. Price went down, and I'm buying. So let me show you why.
+
+
+Remember what we said is sitting below that low — a stack of sell orders, from people
+selling the breakdown and people getting stopped out.
+
+
+Now, if you wanted to buy a big position, where would you go? You'd go to where the
+sellers are, because you can't buy anything unless somebody is selling it to you.
+
+
+SHOW LIVE
+[Let it run. Breaks the low, everything says sell, then it reverses and runs the other way.]
+
+LIVE START
+
+
+So price dips below the low, all those sell orders go off at once, somebody buys the
+lot… and now they've got what they came for, so price goes up.
+
+
+LIVE END
+
+
+That's it. That's the whole thing.
+
+
+The dip wasn't the move — the dip was somebody getting filled.
+
+
+Now think about how many of your losing trades that just explained.
+
+
+You sold the low and it went straight back up. You bought the high and it went straight
+back down.
+
+
+You weren't unlucky, you were just on the wrong side of it — and 9 times out of 10,
+you become the liquidity.
+
+
+
+
+2- Then the dealing range extreme has to go too.
+
+
+Because the inner box on its own isn't enough. Remember the outer box, the one we drew
+first? That has to get taken as well.
+
+
+One level getting taken doesn't necessarily mean the market moves in our favour, but
+2 levels getting taken in sequence is the market clearing everything out of the way
+before it moves.
+
+
+SHOW LIVE
+[Same chart. TBR high taken first. Then price runs the dealing range high. Mark both in order.]
+
+LIVE START
+
+
+There's the high of my time based range going — that's the inner box.
+
+
+Now you don't just sell blindly there. You wait for the market to run above the extreme
+of the dealing range as well, the outer box.
+
+
+Once it runs that high, then you can trust selling setups.
+
+
+LIVE END
+
+
+2 levels swept, not one. I call that a double break, and it's the difference between a
+setup and a guess.
+
+
+⚠️ GET INTO DATA — the 70% double break stat goes here
+
+
+And once both have gone, you know exactly where you're headed. The opposing end.
+
+
+SHOW LIVE
+[Mark the opposing end. Draw the arrow from the sweep to it.]
+
+LIVE START
+
+
+Sweep one side, trade to the other side. That's the trade.
+
+
+LIVE END
+
+
+So think about what just changed.
+
+
+That thing I described at the start — spike, you buy, it reverses, you flip, it reverses
+again. That doesn't happen to you anymore.
+
+
+And not because you suddenly got more disciplined. I didn't fix your psychology.
+
+
+I took away the guessing, not the thinking.
+
+
+You've got your 2 boxes, you've got your direction, and you've got your target.
+
+
+There's one thing missing… a price.
+
+
+Because knowing you're a buyer still isn't a trade, you have to actually get in somewhere.
+
+
+And right now, on your screen, it's still falling.
+
+
+So how do you know when it's actually finished falling? When do you enter?
+
+
+That's step 3.
+
+
+
+
+=====================================================
+WHAT CHANGED
+=====================================================
+
+THE REFRAME
+  Was: "you don't have to predict anything"
+  Now: "predicting is the whole point — the difference is what you predict FROM"
+
+  Guessing = predicting from an opinion, before the market has shown you anything.
+  Anticipating = predicting from something that already happened.
+
+  His own line, verbatim from the free course:
+  "This is what separates reactive traders from anticipated traders."
+
+  This also fixed the ending. It used to be "there's nothing left to decide,"
+  which now contradicts the brand. Now:
+  "I took away the guessing, not the thinking."
+
+CUT
+  - "Price doesn't move randomly / it moves to collect liquidity and pair orders /
+     for every buyer there has to be a seller / institutional breakout traders
+     putting large orders out anticipating continuation"
+     -> replaced with the short version. Same point, half the words.
+  - "You didn't decide anything, the market handed it to you. You didn't have to think."
+     -> clashes with the new frame.
+  - "So where are we now" recap -> folded into the handoff.
+
+STILL OPEN
+  ⚠️ GET INTO DATA — the 70% double break stat. This is the right home for it,
+     since "double break" is the thing it actually measures.
