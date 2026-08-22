@@ -1,0 +1,173 @@
+STEP 4: THE EXIT
+where you get out
+
+~490 words, down from ~750.
+Main cut: the Feb/Mar/Apr + Apex P&L block — it's already in the intro.
+Notes at the bottom.
+
+
+
+
+So now you're in your trade.
+
+
+And this step is shorter than you think, because you already know your target. You marked it back in step 2, it's the opposing end of the range.
+
+
+So this step is only about one thing: what you do on the way there.
+
+
+And I'll show you why that matters with the worst day I've ever had.
+
+
+SHOW LIVE
+[The -$8,580 day. P&L first. Sit on it. Then the chart.]
+
+LIVE START
+
+
+$8,580. One day. Gone.
+
+
+I got in, I set my stop… and I failed to set a take profit.
+
+
+My alert went off, I came back, and it had hit my target and come all the way back through my stop.
+
+
+That's human error. We move on.
+
+
+The setup was right. The system was right. I was wrong.
+
+
+The system never fails me — if I lose, I failed the system.
+
+
+LIVE END
+
+
+And I still finished that month green, because one bad day inside a repeatable process is just a bad day.
+
+
+But that's the exact reason this step exists. So here's what I do now, and it's 3 things.
+
+
+SHOW LIVE
+[All 3 on screen.]
+
+
+1- Stop goes below the low that just got swept
+
+2- Then the market grades itself — 25, 50, 75
+
+3- Take the money and get out
+
+
+
+
+1- Your stop goes below the low that just got swept.
+
+
+Below the low if you're buying, above the high if you're selling.
+
+
+Because if price goes back through the level it just cleared, the reason you're in has gone.
+
+
+
+
+2- Then the market grades itself on the way to your target.
+
+
+SHOW LIVE
+[Graded price swing on the anchor day. 25, 50, 75 marked. Walk a trade through, calling each level as price crosses.]
+
+LIVE START
+
+
+Past 25, sentiment's beginning to shift and buyers are stepping in. That's my confirmation.
+
+
+Past 50, the market has no need to come back to 25. That's where I move to break even.
+
+
+50 to 75 is where I'm taking money off.
+
+
+And once it closes at 75, that's exactly where it should rally into the opposing end.
+
+
+LIVE END
+
+
+So notice what's happening there. I'm not deciding anything on the way to my target either. The market's grading itself and I'm just reading the score.
+
+
+
+
+3- Take the money and get out.
+
+
+And honestly, most days I'm not waiting for all of that.
+
+
+The easiest target is the opposing end, because I want to make my money and get out. I don't want to be sat inside the market for too long.
+
+
+Normally it takes 10 to 15 minutes to hit take profit from the 9:30 open. If you're 30 minutes in and price is still sat at your entry, something's wrong.
+
+
+Because no one ever, and I mean ever, goes broke taking profit. You go broke taking losses.
+
+
+One last thing, because this is what real trading actually looks like.
+
+
+You might buy that return to the order block and get stopped out anyway. It happens to me.
+
+
+So take 2 trades in the same direction. If they're both wrong, then you're just wrong on the day, and you come back tomorrow.
+
+
+It's a cost of doing business.
+
+
+
+
+=====================================================
+WHAT I CUT AND WHY
+=====================================================
+
+1. THE P&L RUN — Feb $27,000 / March $56,000 / April $19,000, ~$200,000, plus the
+   Apex $30,000 in 15 days. The whole block, plus its live section.
+
+   Your intro already shows January to August P&Ls. Showing the same proof again
+   here doesn't add to it, it dilutes it — the second time a number appears it
+   reads as padding rather than evidence.
+
+   The payoff line still lands, it just needs one clause instead of a screen:
+   "And I still finished that month green, because one bad day inside a
+   repeatable process is just a bad day."
+
+   That also moves it earlier, straight after the loss, where it does more work.
+
+
+2. THE "THAT FELT LIKE A LOT" BLOCK + the step 5 setup.
+   Not cut — moved out. That's the step 4 -> step 5 transition and it should
+   live as its own piece, not buried at the end of the exit teaching.
+   Say the word and I'll write it separately.
+
+
+3. "3 things:" preamble and the repeated "So here's what I do now to exit the
+   trade successfully" — tightened to one line.
+
+
+ADDED — one line, and it's the reason step 4 belongs in this webinar:
+
+   "So notice what's happening there. I'm not deciding anything on the way to
+    my target either. The market's grading itself and I'm just reading the score."
+
+   Every other step lands on "the market tells you, you don't decide."
+   Step 4 didn't have that line, which made it feel like a separate topic
+   instead of the same idea applied to exits.
