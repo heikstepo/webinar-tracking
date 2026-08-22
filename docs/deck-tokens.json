@@ -1,0 +1,82 @@
+{
+  "canvas": { "w": 10.0, "h": 5.625 },
+  "grid": {
+    "rail": 0.90, "rightEdge": 9.10,
+    "eyebrowText": 0.82, "eyebrowDot": 0.60,
+    "bottomSafe": 5.20, "lineSpacing": 1.06, "insets": 0
+  },
+  "color": {
+    "ink": "0A0A0A", "accent": "EE4844", "muted": "9A9A9A",
+    "sub": "545454", "hairline": "C9C9C9", "paper": "FFFFFF",
+    "darkRule": "2E2E2E"
+  },
+  "type": {
+    "banner": 11.7, "eyebrow": 11, "microLabel": 11, "subItem": 15,
+    "denseRow": 17, "listRow": 22, "statement": 28, "bigLine": 34,
+    "headline": 38, "hero": 46, "dividerNumeral": 150
+  },
+  "pitch": {
+    "subList": 0.50, "numbered": 0.72, "quoteRow": 1.18,
+    "bigLine": 0.95, "timeline": 0.78, "card": 1.12, "stack": 0.385
+  },
+  "components": {
+    "chapterBanner": {
+      "text": { "x": 1.40, "y": 0.06, "w": 7.19, "h": 0.40, "align": "ctr", "sz": 11.7 },
+      "ruleL": { "x": 1.76, "y": 0.26, "w": 1.26, "pt": 0.9 },
+      "ruleR": { "x": 6.98, "y": 0.26, "w": 1.26, "pt": 0.9 },
+      "capL": { "x": 1.74, "y": 0.23, "d": 0.05 },
+      "capR": { "x": 8.21, "y": 0.23, "d": 0.05 }
+    },
+    "eyebrow": {
+      "dot": { "x": 0.60, "y": 0.62, "d": 0.10 },
+      "text": { "x": 0.82, "y": 0.50, "w": 8.50, "h": 0.34, "sz": 11 }
+    },
+    "bulletRow": {
+      "dot": { "x": 0.95, "d": 0.08, "color": "C9C9C9", "dy": 0.13 },
+      "text": { "x": 1.20, "w": 7.90, "h": 0.45, "sz": 15, "color": "545454" }
+    },
+    "numberedRow": {
+      "num": { "x": 0.90, "w": 0.50, "h": 0.60, "sz": 22, "color": "EE4844" },
+      "text": { "x": 1.45, "w": 7.50, "h": 0.60, "sz": 18 }
+    },
+    "calloutBar": {
+      "bar": { "x": 0.90, "w": 0.06, "h": 0.62, "color": "EE4844" },
+      "text": { "x": 1.10, "w": 8.00, "h": 0.70, "labelSz": 11, "bodySz": 16 }
+    },
+    "ladderRow": {
+      "bar": { "x": 0.90, "w": 0.07, "h": 0.92, "color": "EE4844" },
+      "title": { "x": 1.15, "w": 5.20, "h": 0.45, "sz": 18 },
+      "desc": { "x": 1.15, "dy": 0.45, "w": 6.00, "h": 0.45, "sz": 15, "color": "545454" },
+      "value": { "x": 7.30, "w": 1.90, "h": 0.92, "align": "r", "color": "EE4844" }
+    },
+    "chatPill": {
+      "pill": { "x": 3.40, "y": 3.50, "w": 3.20, "h": 0.70, "color": "EE4844" },
+      "label": { "sz": 13, "color": "FFFFFF", "align": "ctr" },
+      "statement": { "x": 1.35, "y": 1.20, "w": 7.30, "h": 1.80, "sz": 36, "align": "ctr" }
+    },
+    "stackTimeline": {
+      "spine": { "x": 1.05, "pt": 2.0, "color": "2E2E2E" },
+      "node": { "x": 0.95, "d": 0.20, "innerD": 0.10 },
+      "nodeActive": { "x": 0.90, "d": 0.30 },
+      "code": { "x": 1.37, "w": 0.75, "h": 0.33 },
+      "label": { "x": 2.22, "w": 7.28, "h": 0.33 },
+      "justAdded": { "x": 7.95, "w": 1.45, "h": 0.34 }
+    },
+    "partDivider": {
+      "numeral": { "x": 0.90, "y": 1.00, "w": 3.00, "h": 2.20, "sz": 150, "color": "EE4844" },
+      "title": { "x": 0.95, "y": 3.15, "w": 8.10, "h": 1.40, "sz": 40, "color": "EE4844" }
+    },
+    "hero": {
+      "title": { "x": 0.90, "y": 1.70, "w": 7.15, "h": 1.50, "sz": 46 },
+      "sub": { "x": 0.90, "y": 3.25, "w": 8.20, "h": 0.80, "sz": 26 },
+      "note": { "x": 0.90, "y": 4.92, "w": 8.00, "h": 0.40, "sz": 11, "color": "9A9A9A" }
+    }
+  },
+  "buildRules": {
+    "duplicateSlidePerStep": true,
+    "neverRestyleRevealed": true,
+    "neverMoveBetweenSteps": true,
+    "designFinalStateFirst": true,
+    "greyMeansDismissed": "9A9A9A"
+  }
+}
