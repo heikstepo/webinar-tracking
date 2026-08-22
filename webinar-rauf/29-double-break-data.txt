@@ -1,0 +1,150 @@
+STEP 2 — THE DATA BLOCK
+Replaces "⚠️ GET INTO DATA". Goes right after "I call that a double break."
+
+Every number below is from his own Monday-to-Friday video. Sourcing at the bottom.
+Note: never called a win rate. It's how often the double break happened.
+
+
+
+
+2 levels swept, not one. I call that a double break.
+
+
+And this is where I'm going to do something nobody else in this industry does.
+
+
+Because every educator tells you their system works, and then shows you nothing. You just have to take their word for it.
+
+
+I'm not going to do that. Data never lies. People can lie.
+
+
+SHOW LIVE
+[Edgeful. Third party software, their branding visible. Pull up the double break stats.]
+
+LIVE START
+
+
+This isn't my software and it isn't my data. It's a tool called Edgeful, and anyone can go and check it.
+
+
+So here's how often that double break actually happened, day by day.
+
+
+Monday, 76%. That's 19 out of 25 Mondays. Strongest day of the week.
+
+
+Tuesday, 65%.
+
+
+Wednesday, 61%. That's the weakest day, and I'll come back to that.
+
+
+Thursday, 69%. 18 out of 26.
+
+
+Friday, 70%. 17 out of 25.
+
+
+LIVE END
+
+
+Now I want you to notice something about that list.
+
+
+I just told you which days are bad. Nobody does that.
+
+
+Wednesday is the weakest day of the week, and if I've already won on Monday and Tuesday, I'll quite happily sit it out.
+
+
+Because I'm not trying to sell you a system that works every day. I'm showing you which days it actually works on.
+
+
+But here's the number that matters most to me.
+
+
+SHOW LIVE
+[Highlight the 0% no-break row across all 5 days.]
+
+LIVE START
+
+
+0%.
+
+
+Across all 5 days, there has never been a day where neither side of the range got taken.
+
+
+Not one. So 100% of the time, at least one side goes.
+
+
+LIVE END
+
+
+And that's before we've added anything else on top.
+
+
+That data is the range high and the range low, and nothing else. No bias, no entry model, none of the stuff I'm about to show you in step 3.
+
+
+So think about what that means for a week.
+
+
+You've got 5 trading days. Realistically, with a good system, you're winning 3 of them.
+
+
+And I know before the week starts which 3 those are most likely to be — which is why Mondays and Thursdays are the days I'm actively looking to risk more.
+
+
+
+
+=====================================================
+SOURCING — all from his Monday-to-Friday video
+=====================================================
+
+  Monday      76%   ·  19 of 25 Mondays   ·  0% no-break  ·  highest of the week
+  Tuesday     65%   ·                     ·  0% no-break
+  Wednesday   61%   ·                     ·  0% no-break  ·  weakest of the week
+  Thursday    69%   ·  18 of 26 Thursdays ·  0% no-break
+  Friday      70%   ·  17 of 25 Fridays   ·  0% no-break
+
+  "0% of days across all five have had zero breaks… 100% of the time, at least
+   the high or the low of this range is going to get taken"
+  "This data is purely based on the range high and the low. Nothing else has
+   been taken into account."
+  "You are only going to have five trading days of the week… realistically you
+   are only going to win three of them with a good system."
+  "Mondays and Thursdays are days I'm actively looking to risk more"
+  "Wednesday is one of the days that we can completely ignore"
+  "Everyone tells you that a trading system works, but you just have to take
+   their word for it. They show you no data that actually backs it up."
+  "Data never lies. People can lie."
+  Software is Edgeful — third party, publicly available.
+
+
+=====================================================
+TWO THINGS I DELIBERATELY DID NOT DO
+=====================================================
+
+  1. Never called it a win rate.
+     He does, in that video — "it's going to show you even higher win rate."
+     But the number measures how often the market double breaks, not how often
+     a trade wins. Stating a win rate is a performance claim with nothing behind
+     it, and the gap is big enough for someone to pull apart on the call.
+     "How often the double break happened" is accurate and just as strong.
+
+  2. Left out "anything above 50% you can make money with."
+     True-ish, but it's an invitation to argue about R:R and expectancy, and it
+     drags the section into maths. The 0% line is the better closer.
+
+
+=====================================================
+WHY THE BAD DAYS ARE IN
+=====================================================
+
+  Wednesday at 61% is the most persuasive number on the page.
+  Saying "here's the day my own system is weakest, and here's when I skip it"
+  is the single cheapest credibility available in the whole webinar — it costs
+  nothing and it's the one thing his competitors structurally can't copy,
+  because they don't have day-level data to be honest about.
