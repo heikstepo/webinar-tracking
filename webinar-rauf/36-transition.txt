@@ -1,0 +1,183 @@
+=========================
+THE TRANSITION
+Content section → offer
+~900 words. Notes at the bottom.
+=========================
+
+
+So that's the whole thing.
+
+
+Let me put the last hour back together for you in about a minute, because a lot has gone past and I don't want you losing any of it.
+
+
+You've got two windows on the clock, down to the minute.
+
+
+You know how to mark a dealing range, and why the high and the low of it are the only two prices that matter.
+
+
+You know what's sitting under that low and above that high, and why the market has to go and get it before it can go anywhere.
+
+
+You know how to drop the time based range inside it.
+
+
+You know what a double break is, and that the side that gets taken is what tells you whether you're a buyer or a seller today. You're not guessing that anymore.
+
+
+You know your target the second you get your bias, because it's the opposite end of the range.
+
+
+You know what a delivery shift looks like. Three candles going one way, then one that closes back over all three.
+
+
+You know the two things I need in the same place before I'll take an entry, and that I'm buying the return to it, not the close.
+
+
+You know where your stop goes, and why it goes there instead of wherever felt safe.
+
+
+You know how to grade the swing at 25, 50 and 75, so the trade manages itself instead of you managing it.
+
+
+And you've watched the same thing happen Monday, Tuesday, Wednesday, Thursday and Friday, with third party data sat behind it.
+
+
+An hour ago, almost none of you had any of that.
+
+
+So let me ask you a few things.
+
+
+Knowing what you know now, can you see how this is different to what you've been doing? Type yes.
+
+
+Can you see yourself sitting down at 9:29 tomorrow and actually running it? Type yes.
+
+
+Was this hour worth your time? Type yes.
+
+
+Last one. Would you want to go further than one training?
+
+
+Because I should be straight with you about something.
+
+
+Everything I just showed you is the part I teach publicly.
+
+
+It's about 20% of what I actually run. ⚠️
+
+
+The rest of it isn't on my YouTube, it isn't in the free course, and it wasn't in this training. The people who have it signed an NDA before they got it. ⚠️
+
+
+And I want to tell you why, because "it's exclusive" on its own is a marketing line and I don't want it landing like one.
+
+
+1- These ranges work because of when they are, not what they look like. The minute everybody is standing at the same window I'm standing at, that window changes. So I give out two, and I keep the rest for people who are actually in this with me. ⚠️
+
+
+2- The bigger half of it isn't teachable in a video anyway. It's the part where you send me a trade and I tell you what you actually did, which is almost never what you thought you did.
+
+
+So when I sat down to put this together, I had two options.
+
+
+Option one: give you my ranges, show you the entry, wish you luck, and let you go and figure the rest out on your own.
+
+
+And look, that's not nothing. You could genuinely go and do that. Some of you will.
+
+
+But I know exactly what that looks like, because I did it for years.
+
+
+You'll run it for two weeks. You'll take three losers in a row, which is completely normal, I take them too. And you'll decide the strategy doesn't work, when what actually happened is that two of those weren't my setup.
+
+
+You'll have a green week and think you did it right, when you got away with it. That's worse, because now you've learned the wrong thing and you won't find out for another month.
+
+
+You'll change something after a bad day. Then something else. And eight weeks in you're not trading my strategy anymore, you're trading a version of it you made up on a Tuesday afternoon while you were annoyed, and you're right back where you started.
+
+
+And when you finally go and take a prop firm challenge, you'll fail it on a rule you didn't know was in there, and you'll pay to sit it again.
+
+
+That's option one. It's the free one, and it's the expensive one.
+
+
+Option two: I stay involved.
+
+
+You send me your trades and I tell you what you actually did. You're on a call with me every two weeks. You watch me trade live three times a week, so you're seeing it happen in front of you instead of watching a replay of it afterwards. And when you're ready for the challenge, I pay for it.
+
+
+I went with option two.
+
+
+So which one makes more sense to you? One, or two? Put the number in the chat.
+
+
+Do you mind if I take a few minutes and show you exactly what that looks like?
+
+
+Type yes and I'll walk you through it.
+
+
+=========================
+NOTES
+=========================
+
+STRUCTURE (playbook section 5)
+
+1. Recap — 12 points, all phrased as things they now HAVE, not things Rauf covered.
+   Ends on "an hour ago almost none of you had any of that", which is the value receipt.
+2. Yes-ladder — 4 rungs. The last one ("would you want to go further") is the bridge:
+   the only way to go further is to buy.
+3. The 20% / NDA reveal — sits between the ladder and the two choices deliberately.
+   The ladder asks "would you go further"; this is what proves a further exists.
+4. Two choices, with Heik's upgrade: the specific failures between the options.
+5. Permission to pitch. They type 2, then they type yes.
+
+WHY THE GO-ALONE LIST IS BUILT THE WAY IT IS
+
+Every failure on that list is a strategy-execution failure, not a discipline failure.
+That's deliberate — the intro's whole argument is "psychology problems are strategy
+problems". If the go-alone list said "you'll lack discipline", it would contradict the
+intro and hand back the excuse we spent an hour taking away.
+
+It also maps 1:1 onto the offer:
+ - "two of those weren't my setup"          -> personal trade reviews
+ - "you got away with it and learned wrong" -> personal trade reviews + 1on1 calls
+ - "you changed something on a Tuesday"     -> accountability check-ins, DM support
+ - "failed on a rule you didn't know"       -> prop firm playbooks
+ - "you'll pay to sit it again"             -> Rauf pays for the first challenge
+
+So by the time the offer appears, every component is already the answer to a problem
+they just agreed they'd have.
+
+⚠️ THREE THINGS I NEED RAUF TO CONFIRM
+
+- "About 20% of what I actually run" — is 20% the honest number? Any number here is a
+  factual claim about his business. If he's not sure, say "a fraction of" instead.
+- The NDA. I have not found this anywhere in his public material. If students really do
+  sign one, it's a strong line. If it's approximate, cut it — it's the kind of detail
+  people ask about on the call.
+- Reason 1 (giving out more ranges degrades them). This is a logical argument, not
+  something I've heard him say. It's the standard edge-decay argument and it holds up,
+  but he should be willing to defend it live because someone in the Q&A will push on it.
+
+Reason 2 needs no sign-off — it's just true, and it's the one that actually sells the
+1-on-1.
+
+WHAT I DELIBERATELY DIDN'T DO
+
+- No price. High-ticket book-a-call model: the CTA is the application, the closer handles
+  price. Bonus values still get anchored in the pitch.
+- No "I'm going to make you an offer now" apology. He already got permission in the intro
+  ("Then I'll make you an offer at the end to help you implement it. Sound good?"), and
+  he gets it again here. Twice is enough; a third apology reads as insecurity.
