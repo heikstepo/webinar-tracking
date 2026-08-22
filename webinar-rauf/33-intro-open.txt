@@ -9,16 +9,13 @@ Live Dashboard
 So this is my live dashboard.
 
 
-And a number on a screen doesn't mean much on its own, so let me show you where it actually came from.
+A number on a screen doesn't mean much on its own, so let me show you where it came from.
 
 
-Because the part that matters here isn't how big it is. It's that nearly all of it came from the same trade, taken at the same time of day, over and over again.
+Because what matters here isn't how big it is. It's that nearly all of it came from the same trade, at the same time of day, over and over.
 
 
-Same setup, different day.
-
-
-Let me just show you three of them.
+Same setup, different day. Here's three of them.
 
 
 Trade 1: Monday - Live showing (created this box, takes out one side, I'm in)
@@ -30,46 +27,28 @@ Trade 2: Tuesday - Live showing (created this box, takes out one side, I'm in)
 Trade 3: Friday - Live showing (created this box, takes out one side, I'm in)
 
 
-And I didn't go digging through the last two years to find three that happened to look good.
-
-
-Those were all inside the same five trading days, from DATE to DATE.
+And I didn't dig through two years to find three that happened to look good. Those were all inside the same five trading days, from DATE to DATE.
 
 
 Same window on the clock, same thing happening inside it, three days out of five.
 
 
-That window is what I call a time based range, and in a minute I'll tell you how I found it and exactly why it keeps working.
+That window is what I call a time based range, and in a minute I'll tell you how I found it and why it keeps working.
 
 
-But before that, I want you to notice what you just watched, because there was no analysis in any of those.
+But first, notice what wasn't in any of those. There was no analysis.
 
 
 I showed up at a time I knew about the day before, I watched one thing happen, and I was in.
 
 
-That's the whole job. It's about 30 minutes in front of the charts a day, at a time of day I know in advance, and then I'm done.
+That's the whole job. About 30 minutes a day, and then I'm done.
 
 
-Now, I'm not going to sit here and tell you I have a 100% success rate and you can run it every single day.
+Now, I'm not going to sit here and tell you it works every single day. Nobody knows everything about the markets, and anyone who tells you otherwise is lying to you.
 
 
-Nobody knows everything about the markets, and if they tell you otherwise they're just lying to you.
-
-
-We all know how messed up our trading space is.
-
-
-But what I can tell you is this:
-
-
-The data shows that my time based ranges strategy has a repeatable edge.
-
-
-On average, I see my exact setup play out 1 to 3 times a week.
-
-
-And that's how I've been able to string together consistent green months like these:
+What I can tell you is that my setup shows up 1 to 3 times a week, and that's been enough for months like these.
 
 
 January - August PNLs
@@ -79,33 +58,35 @@ January - August PNLs
 NOTES
 =========================
 
-WHAT CHANGED AND WHY
+WHAT CAME OUT OF THE SECOND HALF
 
-1. Cut "I'm not showing you this to impress you" and "you're going to think I'm lying to you."
-   Both of those hand the audience an objection before they've had it. Nobody watching minute
-   one has decided you're a liar yet. You're answering a question that hasn't been asked, and
-   it reads defensive.
+- "I want you to notice what you just watched, because there was no analysis in any of those"
+  → "notice what wasn't in any of those. There was no analysis." Same beat, half the words,
+  and it lands as an observation instead of an instruction.
 
-2. The bridge out of the dashboard is now the thing that's actually interesting about it:
-   it came from the same trade at the same time of day. That's a claim the three showings
-   directly prove, so the proof lands right where the claim was made.
+- Cut "at a time of day I know in advance" from the 30-minutes line. It repeats what the line
+  above it just said.
 
-3. "It all came from me trading my time-based ranges strategy" moved to AFTER the three trades.
-   Before them it's a brand name with nothing behind it. After them it's a label for something
-   they just watched happen three times.
+- Cut "We all know how messed up our trading space is" and "But what I can tell you is this:"
+  as a standalone line. Three sentences were doing one sentence of work.
 
-4. The "30 minutes a day" claim moved down for the same reason. Before the trades it's a big
-   claim on faith. After the trades it's a description of what they just saw — three setups
-   with no analysis in any of them.
+- Cut "The data shows that my time based ranges strategy has a repeatable edge." The 1-to-3-
+  times-a-week line is the same claim with an actual number in it, so the abstract version
+  in front of it was just delay.
 
-5. Cut "In a second I'll tell you the story of how I even came up with it and exactly how AND
-   WHY it works, step by step" and "But just to show you a glimpse of it, check this out."
-   Both were stalling. The loop is now one line and it sits after the proof, not before it.
+- "On average, I see my exact setup play out 1 to 3 times a week" + "And that's how I've been
+  able to string together consistent green months like these" merged into one sentence.
 
-6. Cut "Every trading day looks the exact same for me." It over-claims — you say later that
-   the setup shows 1 to 3 times a week, which contradicts "every day."
+FIRST HALF, MINOR
+
+- "And a number on a screen doesn't mean much" → dropped the "And".
+- "Let me just show you three of them" folded into "Same setup, different day. Here's three of them."
+- "go digging through the last two years to find three that happened to look good" → "dig through
+  two years to find three that happened to look good", and merged with the five-day line.
+
+Script is ~330 words, down from ~430.
 
 OPEN ITEMS
 
 - DATE to DATE on the five-day window.
-- "About 30 minutes of work a day" — confirm that's the number you want to stand behind on camera.
+- "About 30 minutes a day" — confirm that's the number you want Rauf standing behind on camera.
