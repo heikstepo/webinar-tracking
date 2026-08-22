@@ -1,0 +1,498 @@
+1| Show Live Dashboard of Posted + Live Payments
+2| You're here because you want to turn your  AI app  into a real business doing $5k, $10k, even $50k/mo+, right? Give me a  “YES”  in the chat if that sounds like you
+3| Now, you're probably in  one of 3 spots  right now...
+4| You've  launched your app  but you have no idea how to actually market it and get paying users…
+5| You're  in development  right now and you're already wondering...   How do I actually get users once this is live?
+6| Or you've got an  app idea  but you're not sure if it's worth going all in on yet.
+7| No matter what stage you're at right now... you're in the  right place .
+8| I've been in all 3 of those spots myself and I've  helped   hundreds  of app founders through each one.
+9| But don't just take my word for it… let me  show  you:
+10| I started building apps in 2015 ... working a normal job
+11| Since then, I’ve built multiple apps, scaled them to  millions of downloads , and exited multiple apps for well over 7 figures
+12| This was one of my previous apps,  Puff Count :
+13| I’ve also been  featured in
+14| I’ve also been  featured in
+15| 
+16| And I’ve helped  dozens of my students  replicate my process:
+17| 
+18| For example, this is  Vince :
+19| Vince was a normal  software developer …  He can build any app with ease,  launched  multiple ones himself…  But he had NO idea how to actually  market his app  and get paying users
+20| So he reached out to me, and…
+21| This is what happened  a few months later :
+22| Same exact story with  Simon :
+23| S oftware developer…  Can build anything…  But driving traffic and installs?  Converting them into paying customers?  NO IDEA
+24| So he reached out to me, and…
+25| This is what happened  5 months later :
+26| Or let’s take a look at what  Ke  did…
+27| Only had an  unclear app idea …  No idea how to build…  Unsure how to  drive installs and convert traffic …  And now?
+28| A  couple of months  later, $10k MRR:
+29| All the people I just showed you have built  apps worth well over 6-figures …
+30| Just by applying the exact systems I’ll be showing you  today
+31| So yes,  you are at the right place…
+32| And right now, there has  never  been a better time to  be  in this app space
+33| AI  has absolutely  changed  the game…
+34| 
+35| With AI you can vibe code and  launch  an app in days...
+36| Which means  anyone  can build an app now
+37| But here's what that also means...
+38| The app itself is no longer your  competitive advantage
+39| If everyone can build...   The thing that separates apps that make money from apps that don't is  marketing
+40| And with  short form  platforms like TikTok, Instagram, etc…
+41| Y ou can reach millions of people and get  thousands of downloads  WITHOUT spending a dollar on ads
+42| And THEN you can scale (almost) risk-free with  paid ads ,  creators , and  more
+43| You just need to know  HOW
+44| And that’s exactly what you’ll  learn  now
+45| On this Live Class…  The 3-step filter I use to know if an  app idea is worth pursuing , before I invest a single dollar
+46| On this Live Class…  How to vibe-code a  fully functional AI app  and launch to the App Store in 3-5 days
+47| On this Live Class… The exact  content strategy  behind Posted hitting $100k/mo... 80% of that  organic
+48| On this Live Class… Why most apps get thousands of downloads but almost no paying users...   And how to fix that with your  onboarding and paywall
+49| On this Live Class… How to get  influencers lining up to post for your app ... without cold outreach
+50| On this Live Class…  And much…  MUCH more .
+51| My goal today is to give you everything you need to  launch &amp; grow your AI app …
+52| And of course…
+53| Help you make a  sh*t ton of money
+54| 
+55| 
+56| Now, I have a little  request  for you:
+57| Everyone you just saw  paid me thousands  to learn what I'm about to share with you today... for free
+58| It’s a well-known psychological principle:   When people pay, they pay more  attention .
+59| So here’s the deal…   Pretend you just  paid $5,000  for this Live Training.
+60| So here’s the deal…   Pretend you just  paid $5,000  for this Live Training.   Because the insights I’m about to share are worth at least that… if you actually pay attention and use them.
+61| Sound fair enough?   Put a “ Yes ” in the chat
+62| So put away your phone,  grab a notebook and take notes ... we're covering a lot today
+63| I’m now going to show you how this model works  step by step …   Then I’ll make you an  offer at the end  to help you implement it.
+64| Sound good?
+65| Let’s dive in…
+66| The 3 Phases of Building an AI Mobile App: App Ideation   (make sure people actually want it) App Building   (get MVP live fast using AI) App Marketing &amp; Scaling   ( get installs &amp;  generate revenue)
+67| PHASE 1:  App Ideation
+68| App ideation  is one of the biggest factors in your app's success.
+69| If your app idea isn’t validated…
+70| If your app idea isn’t validated…   You’re  never  going to make serious money with your app business.
+71| Maybe you’re asking yourself  questions  like:
+72| “I  already have my idea ... but how do I know it's actually going to make money?”
+73| “There  already  are apps doing what I want to build... is it even worth it?”
+74| &quot;I've been working on this for a while but I'm not sure if I should  keep going or pivot &quot;
+75| After this section you'll know if your  app idea  is worth going  all in  on.
+76| Plus a lot of what I'll show you here ties directly into how we  market the app later ... you'll see.
+77| And I'll even give  live feedback  on your app idea in the chat
+78| Fair enough?
+79| So, let’s dive in:
+80| There's a simple process I use to  validate  every single one of my app ideas before I invest a dollar into building
+81| I call it the “ Fail Proof Filter ”...
+82| Following this process is how Kevin and Ke saw these results within just a few days:
+83| First off, you do NOT need to come up with some  unicorn idea  that’s never been built before…
+84| All you need is to find a  simple problem  people have and fix it with a very  simple app
+85| Let me put that into  perspective  for you:
+86| I scaled my previous app  Puff Count to $44k/mo  before I exited the business…
+87| And all it did was help people solve one simple problem:
+88| And all it did was help people solve one simple problem:   Quitting  Vaping
+89| The app literally just  counted  how many puffs you took
+90| And it ended up becoming a  7-figure business
+91| Was the idea  revolutionary ?
+92| Was the idea  revolutionary ?   No
+93| Were there already  competitors  doing the same thing?
+94| Were there already  competitors  doing the same thing?  Yes
+95| Did it still  work out ?
+96| Did it still  work out ?   Yes … Because it was marketable
+97| Did it still  work out ?   Yes … Because it was marketable  (We’ll get into  app marketing  shortly)
+98| As long as your idea solves a real problem in one of the following markets... you're in a  good spot :
+99| Health Wealth Relationships Status Convenience
+100| → Solves  Relationship  problem
+101| → Solves  Relationship  problem      → Solves  Status/Wealth  problem
+102| → Solves  Health/Status  problem → Solves  Relationship  problem       → Solves  Status/Wealth  problem
+103| → Solves  Convenience  problem → Solves  Relationship  problem      → Solves  Status/Wealth  problem     → Solves  Health/Status  problem
+104| → Solves  Health  problem → Solves  Relationship  problem      → Solves  Status/Wealth  problem     → Solves  Health/Status  problem   → Solves  Convenience  problem
+105| Okay now that we’re clear on the  niches …
+106| How do you actually confirm there's  demand  before you go all in?
+107| It all comes down to  market research
+108| App Market Research  Tool Stack: Viral Ad Library  Sensor Tower  Flippa &amp; Acquire  Reddit, TikTok, Instagram, Twitter…  Google Trends
+109| If you see all these  signals …  (viral videos, apps making money, apps being sold, trending searches, etc.)
+110| You can be certain your app has the  potential  to make serious money
+111| And that my friends is how you can  find + validate $1M app ideas
+112| Does this all make sense so far?  Type 1 in the chat
+113| Now let’s do a  live review  of some of YOUR app ideas…
+114| Drop it in the chat:  What app idea do you have in mind?
+115| So now that we’ve validated your  app idea …
+116| It’s time  to  build the app  and get it live on the App Store
+117| And just to show you how  easy  building an app  has  become in 2026…
+118| Check out  Mino , one of my students...
+119| Answer in the chat:   How long  do you think it takes to go from  idea to live app  in the app store?
+120| Well… Mino here did it in  literally  3 days
+121| Within  3 days , we validated the idea, and he  built his app + launched it
+122| ZERO coding experience… 3 DAYS.
+123| That’s how powerful  A.I  is now in 2026…
+124| So let’s dive right into the  second part  of our Live Class today:
+125| PHASE 2:  Build ing the app
+126| Our main priority at this stage is to SHIP FAST
+127| Not perfect…
+128| FAST
+129| We have to  ship our MVP  super fast, and THEN bu i ld on top of it
+130| Your goal is to  start marketing  the app as fast as possible (Phase 3)
+131| Let me show you an  example  of my own app:
+132| This is what  Posted  looks like right now, doing over $150k/mo...
+133| Show Posted
+134| Well, this is how it looked when we launched in  early 2025 :
+135| Show first  version  of Posted
+136| The first version was  ugly  and full of  bugs …
+137| But we  launched  anyway
+138| And that’s the point
+139| Your goal is to launch fast, get feedback, and  improve  from there.
+140| Now, when it comes to  building an app , you essentially need:  -  Design  - Turning that design into a  working app
+141| Let’s first start with  designs
+142| First,  brain dump  everything on paper and  sketch out  what you want your app to look like:
+143| This goes for  everything  from your onboarding to your core features, paywall screens, etc.
+144| You can also take inspiration from  Screensdesigns .com
+145| Screensdesigns
+146| From here, you now have  a few options  to turn your  brain dump into real designs :
+147| My go-to recommendation is  design contests
+148| You post a contest, dozens of designers submit custom designs, and  you only pay the winner
+149| 99designs
+150| This is how you get high quality designs,  fast and affordable
+151| Making sense so far?   Drop a ' yes ' in the chat
+152| So, at this point you’ll have your designs in  Figma…
+153| Now, before we start the  marketing phase …
+154| W e just need to  “develop”  the designs into an actual app
+155| And I say  “develop”  because you’re actually NOT coding anything…
+156| If you're a  software developer  you can obviously do this yourself...
+157| But you can also just vibe code your app with  A.I tools , OR hire affordable devs
+158| Here are the main  AI tools  you can use right now:
+159| Bolt.new Rork Emergent Cursor Claude
+160| You  chat with the AI , go back and forth, and vibe code the features into your app
+161| Let me  show  you how it works:
+162| Live showcase
+163| You just  keep adding features  until it's complete… That's vibe coding with AI
+164| Now, if you’re lazy like me and want the faster route... just  hire developers
+165| They can either  build it from scratch  or  finalize  what you've vibe-coded
+166| I use  Upwork  for that…
+167| Go for  Eastern European devs ... top quality for about half the US cost.
+168| Screen hard and always hop on a  quick call  before you hire
+169| That’s it
+170| From there, they do their job and  congrats…  you're done
+171| Phase 2 is  complete
+172| You've now got your  designs  and turned them into a  functioning app
+173| That's how you vibe-code a  fully functioning app  in a few days
+174| From there, just submit it to the  app stores , and boom…
+175| From there, just submit it to the  app stores , and boom…  You're a  live app owner
+176| Now we can focus on the part that  ACTUALLY matters …
+177| The  most important part  of scaling an  A.I app business :
+178| PHASE 3:  Marketing &amp; Scaling
+179| This is BY FAR the  most important  part of building a successful AI mobile app business
+180| You can have the best app idea, execution &amp; tech…
+181| You can have the best app idea, execution &amp; tech…  But if you don’t know how to market your app, you’re  never going to make money
+182| I’ve seen B-tier apps with mid ideas make  A TON of money  just because they nailed the marketing
+183| And I’ve also seen 10/10 apps with brilliant ideas  completely flop , simply because they couldn’t get users
+184| That’s exactly where  Vince  was...
+185| He tried  organic content … Facebook  Ads…  Apple  search ads…  Even  UGC creators …   But nothing worked for him
+186| And even when he got some installs…   He wasn’t able to  convert them into paying users
+187| So… He went  back to building .   Adding more features… Redesigning the app…   He thought the product wasn’t good enough yet.
+188| But once he learned what I'm about to show you... he hit  $20k/mo MRR  fast WITHOUT any changes to his app
+189| Want to see how he pulled it off?  Type “ yes ” in the chat
+190| So, to start this off…  You first need to understand  the 1 thing  most app founders get wrong...
+191| Most app founders don’t really have an  actual, systematized funnel
+192| 
+193| Every single  user  goes through these steps
+194| And if even  ONE  of these steps is leaking users... it won’t work.
+195| So let's  walk through  that funnel in 5 steps:
+196| STEP 1:  Organic Content (driving traffic to your app)  STEP 2:  App Store Listing (getting installs)  STEP 3:  Onboarding (priming installs for purchase)  STEP 4:  Paywall (getting people to purchase)  STEP 5:  Scaling with paid (pouring fuel on the fire)
+197| STEP 1 : Organic Content
+198| We always start with  Organic Content
+199| That’s how I grew Posted to  $100k/mo
+200| That’s how I grew Posted to  $100k/mo 80% of that came from  organic content … Just me posting on Instagram, TikTok, and YouTube.
+201| That’s how my student  Alain  has  crossed MILLIONS of views on IG
+202| Why start with  organic content ?   You don't need a budget…  You get to validate your messaging before you spend a single dollar on ads…
+203| Now, here’s the BEST advice I can give you about  Organic App Marketing :
+204| Do  NOT  talk about your app
+205| I know that might sound counterintuitive…
+206| B ut in reality,  nobody  cares about your product.
+207| If you're only talking about your app and its  features…
+208| If you're only talking about your app and its  features… It's going to be  boring  content that won't get views
+209| And if you can't get views…
+210| You won’t get any users.
+211| So here’s the  thought process  you need to follow instead:
+212| Your product is not what people care about.
+213| People care about what your product can do for  THEM .
+214| So you don't want to sell the features.   You want to  sell the transformation .
+215| For Puff Count, the following was one of my  best performing videos …
+216| For Puff Count, the following was one of my  best performing videos … I want you to think about where the call to action happens:
+217| https://www.tiktok.com/@puffcount/video/7028018054181211397
+218| It's kind of crazy... I only showed the product for  2 seconds  in that video.
+219| Here’s another example from Cal AI…. This app does  $3 million/mo :
+220| https://www.tiktok.com/@zedan_mutlu/video/7504485504197414166
+221| See the pattern?
+222| The content is about the PROBLEM… not the app.
+223| 
+224| We’re  not trying  to explain the app features and get them to purchase from TikTok directly…
+225| The TikTok videos  pique interest  and send them to the app store…
+226| Your App Store listing gets them to  download .
+227| Your onboarding gets them to  purchase .
+228| Don't try to do it all in one video
+229| If you actually  understand  that funnel…
+230| All you need to do is do  enough  market research …
+231| And y ou should be able to easily come up with  winning videos…
+232| And already start getting your first  downloads + paying users
+233| For Puff Count for example, I searched for  “quit vaping” on TikTok …
+234| And found a massive  pool of viral videos  that I could recreate
+235| And this works for any  niche…
+236| Live Tiktok Research
+237| Just like that, you’ll be able to find a ton of  proven content ideas  that you can recreate…
+238| So you just do that,  test different formats and angles , until you find something that works well.
+239| That’s how you can go  viral  on organic  platforms.
+240| So now you know how to  create content , and you’re starting to drive traffic to your app...
+241| STEP 2 : Your App Store listing
+242| Getting people to actually  install  the app
+243| You need  3 things  here:
+244| 1)  A  strong rating ... ideally 5 stars
+245| 2)  Clean screenshots  that show VALUE at the top... not features
+246| 3) Solid written  reviews
+247| Let me show you how the  top apps  do this...
+248| Live: Duolingo, MyFitnessPal, Posted
+249| So now you’re  driving traffic  to your app, and people  install  it…
+250| STEP 3 :  Onboarding
+251| If you can't keep a user busy for the first 2 minutes after they download your app... they're  gone .
+252| Most apps  lose  their users before they even have a chance to see the paywall
+253| So let me show you how we (and all the apps making millions) set up high converting  onboarding flows ...
+254| Live Showcase
+255| Long onboarding  Asking the user about THEIR problem  Making them set goals Customizing the experience
+256| The more  time  someone spends going through your onboarding...
+257| The more  invested  they feel...
+258| And the more likely they are to  pay  when they hit the paywall
+259| Does this make sense?   Drop a &quot; yes &quot; in the chat
+260| STEP 4 : The Paywall... your money screen
+261| Everything we just covered...   The  organic content , the  app store listing , the  onboarding ...
+262| All of it is just priming for  this 1 screen
+263| This is where you actually make  money
+264| So let me show you how the best apps structure their  paywalls  right now...
+265| Live Showcase
+266| Before  you even hit the real paywall, they show you these trust-building screens
+267| &quot;We want you to try the product for free&quot;
+268| &quot;We'll send you a reminder before your trial ends&quot;
+269| &quot;No payment due now&quot;
+270| And THEN you see the actual  HARD paywall
+271| And what if they  don’t convert  right away?
+272| You just set up a  drip funnel campaign
+273| If they didn't convert on the main paywall, we'd send a push notification...   &quot;Get 30% off  for a limited time.&quot;
+274| Makes sense?
+275| STEP 5 : Now let's scale
+276| So now your  funnel  is dialed in...
+277| You're getting  organic downloads , your  onboarding  is priming users, your  paywall  is converting...
+278| Now we  pour fuel on the fire
+279| 1) Paid Ads   2) Paid Influencers Scaling with  Paid Methods
+280| I’ll explain both here, but let’s first start with  paid ads …
+281| Start by taking your  winning organic videos  and run those as paid ads
+282| The winning organic videos have already  proven  they work...
+283| And if it works on organic…    I t's going to work on paid
+284| That’s the logic behind my “Organic to Paid Pipeline”
+285| Let me show you how that  performed  for my apps:
+286| Organic to Paid results
+287| That’s how you run  low-risk &amp;  profitable  paid ads
+288| So now let’s get to paid scaling method 2:
+289| So now let’s get to paid scaling method 2:   Influencers  /  Creators
+290| Influencers  are just another way to drive downloads and subscriptions
+291| I recently have gotten over  4,900 installs from 1 influencer video  alone
+292| So how do you ACTUALLY  get influencers  to post for your app?
+293| The key is finding creators who already make content in  your niche ...
+294| Their audience already has the  problem  your app solves.
+295| So when they  post about your app , it doesn't feel like an ad…
+296| So when they  post about your app , it doesn't feel like an ad…  It feels like a  recommendation .
+297| That's why it  converts  so well.
+298| You just take the  organic marketing frameworks  we covered earlier…
+299| Give them  references  + a  brief …
+300| And they do  everything  else for you.
+301| Now, to be fair… the  old way  of doing this was painful.
+302| You'd DM  hundreds of creators  manually...
+303| Half wouldn't reply...
+304| The other half would  charge ridiculous prices ...
+305| And the ones you did hire were often  lazy and unreliable .
+306| There's a  much better way  to do this now...   And I'll show you exactly how I handle it  later .
+307| But for now just know…
+308| Influencer marketing done right is one of the  fastest ways to scale  once your funnel is dialed in.
+309| And once you’ve done that as well…
+310| You are set up perfectly to  scale your app .
+311| You have: A  funnel  that actually converts...  Organic content  going…  Paid ads  running… Influencers  posting for your app…
+312| From here it’s just about  doing more  of everything…
+313| Keep  testing  and improving your content, ads, paywalls, onboarding, etc.
+314| To convert more users and  increase revenue
+315| And then you simply build processes around the business so you’re  not involved anymore
+316| That’s what I did too…
+317| I literally went on to  travel the world  while the app was scaling exponentially…
+318| 
+319| Once I stepped back from the day-to-day...
+320| I didn't just have an app anymore…  I had an asset I could sell
+321| It was very easy for me to exit my previous app  Puff Count
+322| Bigger companies  love app businesses  that run on autopilot without the owner...
+323| Because they can come in with  massive budgets  &amp; scale it even further
+324| And they pay you  big bucks  for it
+325| I've made well over  7 figures from my exits …
+326| A nd if you go to  Flippa and Acquire …
+327| Y ou'll see that these apps keep selling for  multiple 6 and 7 figures
+328| So a $5-10k/mo app is already  worth over 6 figures  IF set up correctly
+329| This is exactly how I turn  AI Mobile Apps  into 6- and 7-figure businesses… by running this system
+330| And dozens of my  students  have  replicated  it:
+331| 
+332| 
+333| 
+334| So far… On this Live Class we’ve  covered :
+335| How to  validate  your app idea in minutes so you know it's worth going all in on So far…
+336| How to get your app built and  live on the app store  ASAP So far…
+337| The  complete app funnel ... from marketing to app store to onboarding to paywall to scaling So far…
+338| Why most apps get downloads but no paying users... and how to fix that with your  onboarding &amp; paywall So far…
+339| How to market  through organic content, paid ads, and influencers So far…
+340| And much...  MUCH more  in the limited time we had together today So far…
+341| Knowing what you now know...
+342| Do you now understand how to  vibe-code &amp; launch fast ?
+343| Do you understand the  marketing funnel  for driving traffic &amp; converting users?
+344| Do you believe this can actually work for  YOUR app ?
+345| Even if you use just a tiny fraction of what I showed you,  would you say our time was well spent ?
+346| Would you like to spend even more time together, going even deeper on how to  build ,  launch ,   and  scale your app ? Drop a “Yes” in the chat
+347| Now, here’s the thing...
+348| Even if we had 4 hours together instead of just 60 minutes...
+349| Even if we had 4 hours together instead of just 60 minutes... It's going to be  tough  to pack everything I know into one training.
+350| While what I’ve given you today was  incredibly valuable  as you’ve told me...
+351| It’s really just the  tip of the iceberg
+352| And if you liked what I shared today,  you'll love what I've got next.
+353| So I basically had  2 choices  while creating this live class for you...
+354| The  first option  is:   I share what I've covered today, we part ways, and you try to figure out the rest on your own.
+355| Most app founders would probably run into the  common problems  like:
+356| Problem 1:   Posting content consistently but getting zero traction... no views, no downloads, nothing
+357| Problem 2:   Getting downloads but having no system to actually convert those users into paying customers
+358| Problem 3:   Running ads with no data and no strategy and just burning through cash
+359| Problem 4:   Going back to building more features every time the marketing feels uncomfortable...
+360| Problem 5:   Watching apps with worse ideas and worse execution outperform yours... just because they figured out the marketing
+361| But my  second option  was:   I could take a  more active role  and  responsibility , and ACTUALLY give you everything you need to build and scale your app.
+362| Help you nail your  marketing &amp; content  strategy
+363| Help you nail your  marketing &amp; content  strategy Help you build out your  onboarding &amp; paywall  so users actually convert
+364| Help you nail your  marketing &amp; content  strategy Help you build out your  onboarding &amp; paywall  so users actually convert  Give you my own  dev team  to clean up or build out your app
+365| Help you nail your  marketing &amp; content  strategy Help you build out your  onboarding &amp; paywall  so users actually convert  Give you my own  dev team  to clean up or build out your app Help you  set up your paid ads  so you're scaling profitably
+366| Help you nail your  marketing &amp; content  strategy Help you build out your  onboarding &amp; paywall  so users actually convert  Give you my own  dev team  to clean up or build out your app Help you  set up your paid ads  so you're scaling profitably  And  personally guide you  through the whole thing
+367| Which  option  makes more sense to you…  “1”  or  “2” ? Drop it in the chat👇
+368| Do you mind if I take a couple minutes to  show you  something I built that does exactly that?
+369| Introducing the  App Accelerator
+370| The App Accelerator is the  1on1 consulting program  I created to walk you through the entire process…
+371| And I want to be really clear about what this is and what it isn't:
+372| This is  NOT  a course where you're left watching videos alone.
+373| This is  hands-on consulting …  me personally guiding you through the steps
+374| So how does the App Accelerator work?
+375| It's a  4-month  fast-track program…
+376| 1)   1on1 Onboarding call, just you and me
+377| On that call, I map out your  exact roadmap …  Where you're at right now, what your goals are, and the fastest path forward.
+378| Whether you  already have an app  and you're struggling to get paying users...
+379| Whether you  already have an app  and you're struggling to get paying users...  Or you're  still building  and want to make sure you do it right from day 1…
+380| You walk off that call knowing  exactly  what to do
+381| Tonight’s Live Class S pecial  Offer 1)  1on1 Onboarding call
+382| 2 )  4 Live Group Coaching Calls/Week
+383| Monday 11am PST  -  General Call  |  Open Q&amp;A    Bring whatever you're working on and we work through it live.
+384| Tuesday 10am PST  -  Development Call   Vibe coding, tech stack, debugging, dev management, etc.
+385| Wednesday 8am PST  -  Product  Call   Design, UX, and building an app so good that users never want to delete it.
+386| Thursday 10am PST  -  Marketing Call   Content strategy, ad breakdowns, paywall optimization, influencer campaigns…   This is where the money gets made.
+387| These are  live , interactive sessions where you can:  Ask me anything  Get feedback on your specific app And learn from what's working for other founders in the group right now
+388| Imagine having that in your corner,  4 times a week …
+389| Instead of trying to  Google  your way through problems…
+390| Instead of trying to  Google  your way through problems…   You just bring it to the call and  we solve it together , in real time.
+391| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4 Live Group Coaching Calls/Week
+392| 3)  Access to our private Slack community
+393| This isn't some  dead  Facebook group or Discord…
+394| This is a living, breathing network of app founders who are actively building and scaling right now…   Making anywhere from a few hundred to  10s of thousands of dollars a month .
+395| We've got dedicated channels for  design ,  marketing ,  paywalls ,  user acquisition ,  onboarding flows , and much more…  And I'm in there personally every day answering questions.
+396| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community
+397| 4 )  Full A-Z Course + SOPs
+398| Legal &amp; Compliance Infrastructure  Idea Validation Protocol  Vibe Coding &amp; Development Suite  User Onboarding Vault  Paywall Conversion Suite  LTV &amp; Retention Blueprint  Organic Content Mastery  Paid Ads Blueprint
+399| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs
+400| Now, everything I just walked you through…   The 1on1 onboarding call   The 4 weekly group coaching calls The community &amp; network The full course…
+401| That's already an insane amount of  support …
+402| Most of the students I showed you today…
+403| They only had access to that core stuff and  STILL got these results …
+404| But since you're here with me  LIVE  right now…
+405| I decided to add some  additional bonuses  that I think are going to blow your mind
+406| And I'm saying that because each one of these  bonuses solves a very specific problem  that you'll likely be dealing with…
+407| BONUS #1 : Free Access to Posted   Normally $499/mo ($6,000/year)
+408| Remember how I said  influencer marketing  is one of the most powerful channels for growing an app?
+409| And how I was  going  to cover the  easiest  and fastest way  to do influencer marketing?
+410| This is it.
+411| Again, doing influencer marketing the OLD way is  hard ,  annoying , &amp;  expensive .
+412| Manual  outreach…
+413| Half wouldn't  reply …
+414| Outrageous prices …
+415| Lazy &amp; unreliable  creators …
+416| A  nightmare
+417| That's exactly why I built  Posted…  That's what it solves.
+418| Posted is my own platform that  connects app founders  directly with  creators …
+419| Instead of  DMing hundreds of influencers  and hoping someone replies...
+420| You post a  brief  describing what you need 👉
+421| Then,  Creators come to YOU  with finished videos and their price...
+422| And you * only *  pay  for the ones you actually like.
+423| You get the  video file  plus the rights to run it as a paid ad  straight from their profile .
+424| That's how I got  4,900 installs  from a single video.
+425| And normally, Posted costs $499/mo... That's  $6,000 a year .
+426| And normally, Posted costs $499/mo... That's  $6,000 a year .   But when you join the App Accelerator today, you get  full access to Posted, for absolutely FREE .
+427| You’ll have influencers and creators lining up to  post for YOUR app
+428| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus # 1  -  Free Access to Posted - Normally $499/mo ($6,000/yr)
+429| It doesn’t end here…
+430| BONUS #2 : Unlimited 1on1 DM Access to Me   …Throughout the ENTIRE Program
+431| Look… I know what it's like to be building something and you hit a wall at 9pm on a  random  Tuesday…
+432| Look… I know what it's like to be building something and you hit a wall at 9pm on a random Tuesday…   And you just need an answer right now so you can  keep moving .
+433| That's why I'm giving you  unlimited 1on1 DM access to me  throughout the entire program.
+434| And I'm  NOT  talking about like a chatbot or  some random coach  that I hired…
+435| I mean me… Steven.
+436| You have a question… You need a gut check on something…  You're not sure which direction to go…   You just DM me and  I will give you a real answer specific to your situation .
+437| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus #1  - Free Access to Posted - Normally $499/mo ($6,000/yr)  Bonus #2  - Unlimited 1on1 DM Access to Me
+438| Well… There’s even more
+439| Bonus #3 :  Access to our private dev team
+440| Earlier I showed you how to find good devs on Upwork...
+441| But here's the thing… Even with all that knowledge, the dev hiring process can still be  risky .
+442| You don't know if they're actually good until you've already  paid  them...  You don't know if they'll  ghost  you halfway through… And if you've never managed a developer before, it's  stressful .
+443| So we  solved  this.
+444| Inside the App Accelerator, you get direct access to our own  private development team .
+445| These are  developers  we've:  Personally vetted…  Personally worked with for years…  And personally trained on the exact tech stacks and frameworks our students use.
+446| They work at a  fraction  of what a US-based dev shop would charge…  We're talking low thousands, not 10s of thousands.
+447| So whether you want to  build it yourself  and just need someone to clean it up…  Or you want to  hand  the whole thing  off …
+448| You've now got a  team  ready to go.
+449| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus #1  - Free Access to Posted - Normally $499/mo ($6,000/yr)  Bonus #2  - Unlimited 1on1 DM Access to Me  Bonus #3  - Access to our private dev team
+450| And now the one  Bonus  I've saved for last…
+451| And now the one  Bonus  I've saved for last…  Because this is the one that I think makes the  biggest difference .
+452| Bonus #4 :  3 Additional 1on1 consulting calls with me
+453| I know everyone loves to throw around the word  “1on1” ...
+454| But then it's a  group call with 200 people  where maybe you get to ask  one  question if you're lucky.
+455| That's  NOT  what this is
+456| On top  of the 1on1 onboarding call…
+457| On top  of the weekly live group coaching…
+458| On top  of the 1on1 DM access in Slack…
+459| You also get  3 additional private consulting calls with me  throughout the program.
+460| These aren't 15-minute check-ins…
+461| These are  deep-dive consulting sessions  where we map out exactly what you need to do next to hit your goals…
+462| If we need to build out your  marketing plan  together - we do it.
+463| If we need to figure out your  paywall strategy  or your  pricing model  - we do it.
+464| If you're at the stage where you're thinking about  exiting  and you want to know how I did it with Puff Count…  We walk through it step by step.
+465| I made this program as  intensive  as I could because I wanted it to be genuinely unreasonable for you NOT to succeed.
+466| Between the weekly calls, the DM access, the community, and now 3 dedicated private sessions…
+467| There is no version of this where you don't know what to do next.
+468| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4  Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus #1  - Free Access to Posted - Normally $499/mo ($6,000/yr)  Bonus #2  - Unlimited 1on1 DM Access to Me  Bonus #3  - Access to our private dev team  Bonus #4  - 3 additional 1on1 consulting calls with me
+469| Now, I need to be straight with you about something…
+470| Everything I just showed you…   The free Posted access The 1on1 DM access The dev team The extra 1-on-1 calls
+471| Those free bonuses only apply to the  first 10 people  who join within the  next 72 hours …
+472| And the reason is simple…This program is  intensive .
+473| I'm  personally  on the group calls...   I'm  personally  answering DMs...   I'm  personally  doing 1on1 onboarding sessions…   I'm  personally  doing extra 1on1 consulting calls…
+474| And I'm still actively scaling Posted… My  time  is genuinely  limited .
+475| Plus, I need to make sure everyone who comes in gets my  full attention .
+476| I can't do that with 100 people… I can only do that with a  small, focused group
+477| So once those  10 spots  fill, and they will fill, because they always do…  The  bonuses  come  off .
+478| The core program will still exist…  But the level of personal access and extra support I'm offering today will  NOT be available .
+479| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4 Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus #1  - Free Access to Posted - Normally $499/mo ($6,000/yr)  Bonus #2  - Unlimited 1on1 DM Access to Me  Bonus #3  - Access to our private dev team  Bonus #4  - 3 additional 1on1 consulting calls with me
+480| So here's what I want you to do  right now …
+481| In the chat, you'll see the link to the  App Accelerator application form …
+482| Click on it, it takes about  2 min  to fill out.
+483| Just a few  quick questions  about where you're at and what your goals are, so we have some  context…
+484| The last step of the form is booking a call with  1 of my advisors :
+485| And just to be clear… this isn't some high-pressure call…
+486| Remember, I’m working with you 1on1, so we need to be  selective  about who we accept into the program…
+487| We're going to look at your situation, figure out if the App Accelerator is actually the  right fit .
+488| If it is, we’ll get you started  ASAP
+489| If it's  not for you , we'll tell you that too, no hard feelings
+490| So go ahead,  link's right there in the chat .
+491| Now, while you're doing that, let me answer some of the most  common questions  I get...
+492| Question 1    “How much does it cost?”
+493| Question 2    &quot;What if I already have an app but I'm struggling to grow it?”
+494| Question 3    &quot;Can I do this while working a full-time job?&quot;
+495| Question 4    &quot;How fast can I see results? What's the expected timeline?&quot;
+496| Question 5    &quot;Is this REALLY 1on1? How does the program actually work?&quot;
+497| Tonight’s Live Class Special Offer 1)  1on1 Onboarding call  2)  4 Live Group Coaching Calls/Week  3)  Access to our private Slack community  4)  Full A-Z Course + SOPs Bonus #1  - Free Access to Posted - Normally $499/mo ($6,000/yr)  Bonus #2  - Unlimited 1on1 DM Access to Me  Bonus #3  - Access to our private dev team  Bonus #4  - 3 additional 1on1 consulting calls with me
+498| LIVE Q&amp;A ↓App Accelerator application link in the chat↓
