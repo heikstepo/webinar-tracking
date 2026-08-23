@@ -1,0 +1,453 @@
+=========================
+CUTS — OLD vs NEW
+Slide numbers are from DTR_Webinar_V2_Green.
+Ordered by section. Time saved is at the end of each block.
+=========================
+
+
+A NOTE ON WHERE THE TIME ACTUALLY IS
+
+Animated builds are cheap. A 6-beat build costs about 25 seconds total.
+LIVE chart trips are expensive — 90 seconds minimum, usually 2 minutes.
+
+So the big savings below are all about removing chart trips and long runs of
+separate text slides. I've left most animated builds alone.
+
+
+=========================
+INTRO
+=========================
+
+
+--- SLIDES 44-48 ---
+
+OLD:
+I mean, just think about it for a second.
+Psychology problems are really strategy problems.
+Because what a good strategy actually does is take the big decisions away from you.
+If the market is telling you what to do, there's nothing left to be disciplined about.
+You see A, you do B. You see B, you do A.
+
+NEW:
+Psychology problems are really strategy problems.
+Because a good strategy takes the big decisions away from you. You see A, you do B.
+
+WHY: Slides 68-70 make this exact point again as the payoff after the mechanism
+("that's exactly why it fixed the psychology problem that was never a psychology
+problem / the market tells me what to do now / there's nothing left for me to be
+disciplined about"). You can't land the same punch twice. Keep 68-70, shorten here.
+
+SAVES: ~15 sec, and stops the repeat.
+
+
+--- SLIDE 80 ---
+
+OLD:
+TESTIMONIAL SCREENSHOTS DUMP
+
+NEW:
+[cut]
+
+WHY: This is the third proof moment before the content has started. Slide 21 is
+the PNL run, slides 24-29 are five named students with numbers. Both are stronger
+than an unnamed screenshot wall, and both already happened in the last 3 minutes.
+
+SAVES: ~45 sec.
+
+
+=========================
+STEP 1 — THE TIME BASED RANGES
+=========================
+
+
+--- SLIDES 97-100 ---
+
+OLD:
+I just showed you that we're working based on specific time windows and ranges within the markets…
+Now I've got a number of time based ranges, and today I'm leaking 2 of them since you're live with me…
+One for New York, one for London.
+The rest are reserved for my private students who sign an NDA, so those stay with me.
+
+NEW:
+Today I'm giving you 2 of my time based ranges. One for New York, one for London.
+
+WHY: Two things wrong here.
+
+97 repeats the intro word for word — they were told this 90 seconds ago.
+
+98 and 100 are the NDA / private ranges reveal, and you do it AGAIN at slides
+339-340 in the transition. The transition is where it belongs, because that's
+where it creates the gap the offer fills. Doing it here spends it 45 minutes
+early, when there's nothing they can do about it, and by the time you say it
+again it's old news.
+
+SAVES: ~15 sec here, and it protects the transition.
+
+
+=========================
+STEP 2 — THE BIAS
+=========================
+
+
+--- SLIDES 133-140 ---
+
+OLD:
+And this is the part everyone assumes is the hard part, because everybody will tell you that you can't predict the market.
+That's not true...
+Predicting is exactly what we're doing here… it's the whole point.
+The difference is WHAT you're predicting from.
+Most traders just predict from an opinion…
+They check the news, glance at a higher timeframe, decide the market feels bearish, and hope they're right.
+That's not a prediction.
+That's a guess with a nicer word on it.
+
+NEW:
+Everybody will tell you that you can't predict the market. That's not true — predicting is exactly what we're doing here.
+The difference is what you're predicting FROM.
+Most traders predict from an opinion. They check the news, glance at a higher timeframe, decide it feels bearish, and hope.
+That's not a prediction. That's a guess with a nicer word on it.
+
+WHY: Eight separate slides to make one point. The point is good and it stays —
+it just doesn't need eight beats to arrive.
+
+SAVES: ~25 sec.
+
+
+--- SLIDES 160-166 ---
+
+OLD:
+LIVE
+The reason behind it is pretty simple:
+Remember what we said is sitting below that low?
+A stack of sell orders, from people selling the breakdown and people getting stopped out.
+Now, if you wanted to buy a big position, where would you go?
+You'd go to where the sellers are, because you can't buy anything unless somebody is selling it to you.
+LIVE
+
+NEW:
+LIVE
+
+WHY: This is the passage you flagged yourself as confusing. And the slides
+directly underneath it (167-169) make the same point better and faster:
+
+    "That's it. That's the whole thing.
+     The run lower wasn't the move… it was trapping sellers."
+
+That's the same idea in three short slides, in plain language, with no thought
+experiment the audience has to follow. Cut the setup, keep the payoff.
+
+Also collapses two chart trips into one.
+
+SAVES: ~2 min (one full LIVE trip plus 5 text slides).
+
+
+=========================
+STEP 3 — THE ENTRY
+=========================
+
+This is the section with the most to give back. 7 chart trips, ~14.7 minutes,
+on the thing slide 242 tells them is "the least important thing I've shown you
+today."
+
+
+--- SLIDES 216-218 ---
+
+OLD:
+LIVE   [what a downtrend looks like]
+So the turn is when that stops.
+LIVE   [the turn]
+
+NEW:
+LIVE   [same chart: point at the sequence going down, then the candle where it stops]
+So the turn is when that stops.
+
+WHY: Two separate trips to the charts to show "here it's going down" and "here
+it stopped going down." That's one chart and one sentence — the whole point is
+that they're the same picture.
+
+SAVES: ~1.5 min.
+
+
+--- SLIDES 219-225 ---
+
+OLD:
+Now I want a second opinion, from a higher timeframe…
+A 1 minute chart isn't always accurate…
+LIVE   [hourly, 3 candles, mark left/middle/right]
+That's the 3 candle swing structure... It's confirmation for your direction.
+It is not where you buy…
+It's what tells you buying is worth doing.
+If you treat your hourly candles as your daily candles, a whole new world opens up.
+
+NEW:
+And before I take it, I want the higher timeframe agreeing with me. If it doesn't, I don't take the trade.
+
+WHY: This is the biggest single cut in the deck and I want to be clear about why.
+
+You are teaching an entire additional concept — hourly swing structure, and then
+"treat your hourly candles as your daily candles, a whole new world opens up" —
+for a step that slide 223 then says IS NOT WHERE YOU BUY.
+
+It's a confirmation filter. Confirmation filters need one sentence, not a chart
+trip and a new mental model. And "a whole new world opens up" opens a loop you
+never close, which is worse than not opening it.
+
+If Rauf wants it in, it belongs in the Academy, and it's a genuinely good reason
+to join.
+
+SAVES: ~2.5 min.
+
+
+--- SLIDES 231-235 ---
+
+OLD:
+The first is the order block made in liquidity.
+LIVE
+Now, the second entry is the inverse gap.
+LIVE
+And anything that forms in a liquidity pool, or at one, is very high probability.
+LIVE
+
+NEW:
+The first is the order block made in liquidity. The second is the inverse gap.
+LIVE   [one chart, mark both, then show them landing on the same spot]
+And when those two show up together, that's the one I want.
+
+WHY: Three trips to the charts for two entries and their overlap. One chart can
+carry all three — in fact it's better, because the whole point is that they
+overlap, and you can only see an overlap if both are on screen at once.
+
+SAVES: ~1.5 min.
+
+
+--- SLIDES 238-247 ---
+
+OLD:
+Now, I want to be honest with you about something, because it'll save you a lot of time.
+The entry is the part everyone obsesses over.
+It's what most people showed up for...
+It's what nearly every trading video on YouTube is about…
+But for us it's actually the least important thing I've shown you today.
+Because once you've eliminated one direction…
+Once you know the market will go up or down…
+Entries get easy, as you just saw.
+You'll find one… There's always one.
+Does that make sense? Give me a yes in the chat.
+
+NEW:
+And I'll be honest with you, the entry is the part everyone obsesses over, and it's the least important thing I've shown you today.
+Because once you know which way the market is going, you'll always find an entry. You just saw it.
+Does that make sense? Give me a yes in the chat.
+
+WHY: Ten slides to say one thing, and the longer it runs the more it sounds like
+you're apologising for the section you just taught.
+
+SAVES: ~35 sec.
+
+
+--- SLIDES 248-252 ---
+
+OLD:
+So look at where you are now.
+   + You've got your 2 boxes.
+   + You've got your direction.
+   + You've got your target.
+   + And now you've got a price, and you're in.
+
+NEW:
+[cut — go straight to "which means for the first time today, you've got money on the line"]
+
+WHY: You already ran this exact recap at slides 193-197 ("you've got your 2
+boxes, you've got your direction, and you've got your target"). Twice in fifteen
+minutes, same words, same build. The second one tells the audience you're
+padding.
+
+SAVES: ~20 sec, and removes a duplicate.
+
+
+=========================
+STEP 4 — THE EXIT
+=========================
+
+
+--- SLIDES 284-287 ---
+
+OLD:
+Normally it takes 10 to 15 minutes to hit take profit from the 9:30 open.
+If you're 30 minutes in and price is still sat at your entry, something's wrong.
+Because no one ever, and I mean ever, goes broke taking profit…
+You go broke taking losses.
+
+NEW:
+Normally it's 10 to 15 minutes from the 9:30 open to take profit. If you're 30 minutes in and price is still sat at your entry, something's wrong.
+Nobody ever went broke taking profit.
+
+WHY: The last two slides are one aphorism split in half. It's stronger whole.
+
+SAVES: ~10 sec.
+
+
+--- SLIDES 294-303 ---
+
+OLD:
+So that's the whole system.
+And I want to say something before we go any further, because I know what some of you are thinking right now.
+That felt like a lot.
+Boxes, sweeps, rotations, order blocks, levels… and you're sat there wondering how you're supposed to hold all of that in your head at 9:30 in the morning.
+So let me take that worry off you right now.
+You're not going to be doing 4 things… You're going to be doing 1 thing.
+Because in real time, all 4 of those steps happen inside about 12 minutes…
+And they happen in the same order, every single day.
+It only feels like a lot because I've spent the last hour pulling it apart in slow motion.
+Does that make sense? Give me a yes in the chat.
+
+NEW:
+So that's the whole system.
+And I know what that felt like. Boxes, sweeps, order blocks, levels… and you're wondering how you hold all of that in your head at 9:30 in the morning.
+You don't. In real time all 4 steps happen inside about 12 minutes, in the same order, every day.
+It only feels like a lot because I've spent the last hour pulling it apart in slow motion.
+Does that make sense? Give me a yes in the chat.
+
+WHY: This block's job is to make them feel LESS overwhelmed. Taking ten slides to
+do it works against itself — the length is the thing you're arguing against.
+"You don't" as the answer is faster and more confident than "let me take that
+worry off you."
+
+SAVES: ~30 sec.
+
+
+--- SLIDES 304-305 ---
+
+OLD:
+So here's what we're doing now. I'm going to put up a new trade, and I'm going to run the whole thing start to finish at normal speed.
+So here's what we're doing now.
+
+NEW:
+So here's what we're doing now. I'm going to put up a trade you've never seen, and run the whole thing start to finish at normal speed.
+
+WHY: 305 is 304 with the second half deleted. One of them is a leftover.
+
+SAVES: ~5 sec.
+
+
+=========================
+STEP 5 — FULL TRADES
+=========================
+
+DON'T CUT THIS. RE-SHAPE IT.
+
+Right now it's 6 examples at roughly equal weight, ~13 minutes.
+
+The argument Step 5 is making is "it repeats." Equal weight kills that argument,
+because by example 3 the audience is sitting through the same length of
+explanation again and it just feels slow.
+
+NEW SHAPE, same total time:
+
+  Trade 1   3-4 min    All four steps, narrated in full, slowly.
+  Trade 2   90 sec     "Range. There's the break. There's the entry. Out."
+  Trade 3   45 sec
+  Trade 4   30 sec
+  Trade 5   30 sec
+  Trade 6   20 sec     "Range, break, entry, out. Next."
+
+The acceleration IS the argument. By trade 5 they're finishing the sentences in
+their head before Rauf says them, and that feeling is worth more than any
+individual example.
+
+
+=========================
+TRANSITION
+=========================
+
+
+--- SLIDES 337-338 ---
+
+OLD:
+The 2 I gave you work, as you just saw… But there are a lot of people that are now using it…
+So a few thousand more people trading them changes nothing.
+
+NEW:
+The 2 I gave you are the busiest windows of the day, so a few thousand more people trading them changes nothing.
+
+SAVES: ~5 sec.
+
+
+--- SLIDES 346-349 ---
+
+OLD:
+And don't get me wrong… you could definitely go and make some profits with it…
+I've gotten so many messages from people making profits from my free course…
+And this was much more in depth.
+So it's a nice option.
+
+NEW:
+And don't get me wrong, you could genuinely go and do that. I get messages from people making money off my free course alone, and today was far more than that.
+
+WHY: Four slides is a long time to spend arguing FOR the option you don't want
+them to take. One line does the fairness job and then gets out of the way.
+
+SAVES: ~15 sec.
+
+
+=========================
+OFFER
+=========================
+
+
+--- SLIDE 395 ---
+
+OLD:
+This is super valuable…
+
+NEW:
+[cut]
+
+WHY: Telling them it's valuable is the weakest way to make it valuable. The two
+slides after it do the actual work ("you can't learn to time something from a
+video / you learn it by watching somebody do it live, over and over").
+
+
+--- SLIDES 389-390 ---
+
+OLD:
+So there's nothing I'm holding back from you.
+You get what I use.
+
+NEW:
+You get exactly what I use. Nothing held back.
+
+SAVES: ~5 sec.
+
+
+--- SLIDES 414-419 and 486-492 ---
+
+These are animated builds, so they only cost about 25 seconds each. Leave them
+if you like them — they're doing the "reveal, review, reveal, review" job
+Fladlien asks for, and the compounding is worth the seconds.
+
+The one thing I'd change: 419 currently reads "That is already an enormous
+amount of support." Make it its own slide after the build finishes, so the list
+lands and THEN you make the claim about it.
+
+
+=========================
+TOTALS
+=========================
+
+  Intro         ~1 min
+  Step 1        ~15 sec   (plus the NDA fix, which matters more than the time)
+  Step 2        ~2.5 min
+  Step 3        ~6 min
+  Step 4        ~45 sec
+  Transition    ~20 sec
+  Offer         ~10 sec
+
+  TOTAL         ~11 minutes
+
+Roughly 6 of those 11 come out of Step 3, which is correct — it's the section
+paying the most per idea, on the idea the script itself says matters least.
+
+Content section goes from ~60 min to ~52, which gives you room for the live
+chart trips to run long (they will) and still land on the 60 minutes you
+promised in the intro.
