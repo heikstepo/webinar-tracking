@@ -32,10 +32,31 @@ This is hands-on mentorship. Me personally taking you through all of it, and mak
 So how does the TBR Academy actually work?
 
 
-It's a 12-week intensive bootcamp, and there are 4 parts to it.
+It's a 12-week intensive bootcamp, and there are 5 parts to it.
 
 
-1) Everything I trade. Including the ranges I can't put online.
+1) A 1on1 onboarding call. Just you and me.
+
+
+Before you touch anything, we get on a call together.
+
+
+I want to see where you're actually at. What you're trading now, what account you're on, how much time you've got in the morning, and what's been going wrong.
+
+
+Because somebody who's been trading 3 years and can't stay consistent needs a completely different first 4 weeks to somebody who's never taken a trade in their life.
+
+
+So I map it out with you on that call. What you're doing in week 1, what we're not touching yet, and what we're aiming at by week 12.
+
+
+You come off that call knowing exactly what you're doing tomorrow morning.
+
+
+STACK
+
+
+2) Everything I trade. Including the ranges I can't put online.
 
 
 The second you're in, you get all of it.
@@ -56,7 +77,7 @@ So there's nothing I'm holding back from you. You get what I use.
 STACK
 
 
-2) 3 live trading sessions with me, every single week.
+3) 3 live trading sessions with me, every single week.
 
 
 3 mornings a week, I'm live, on my own account, in front of you.
@@ -80,7 +101,7 @@ You can't learn to time something from a video. You learn it by watching somebod
 STACK
 
 
-3) Weekly group coaching calls.
+4) Weekly group coaching calls.
 
 
 This is where we go through everything that happened that week.
@@ -98,7 +119,7 @@ And you're not just learning from your own week. You're in a room with people ru
 STACK
 
 
-4) The private community, my weekly blueprint, and my market commentaries.
+5) The private community, my weekly blueprint, and my market commentaries.
 
 
 The community isn't a dead Discord full of people posting rocket emojis.
@@ -119,7 +140,7 @@ STACK
 Now, everything I've just walked you through…
 
 
-The full model with every range I trade. The 3 live sessions a week. The weekly coaching. The community.
+The 1on1 onboarding call. The full model with every range I trade. The 3 live sessions a week. The weekly coaching. The community.
 
 
 That is already an enormous amount of support.
@@ -239,7 +260,7 @@ We go through your last 2 weeks properly. What you took, what you skipped, where
 And then you leave that call knowing exactly what you're working on for the next 2 weeks.
 
 
-On top of the live sessions. On top of the weekly coaching. On top of being able to message me whenever you want.
+On top of the onboarding call. On top of the live sessions. On top of the weekly coaching. On top of being able to message me whenever you want.
 
 
 I built it this way because I wanted it to be genuinely unreasonable for you not to make it.
@@ -349,7 +370,7 @@ WHAT I CHANGED FROM YOUR OPENING
 
 You had "It's a 6-month program, structured in 2 phases: Phase 1... Phase 2..."
 
-That's now "It's a 12-week intensive bootcamp, and there are 4 parts to it." It has to be,
+That's now "It's a 12-week intensive bootcamp, and there are 5 parts to it." It has to be,
 because Phase 2 is Bonus 1 — if he announces it in the core breakdown, it can't land as a
 surprise 10 minutes later. The payoff line "that's 6 months, not 12 weeks" only works if
 6 months hasn't already been promised.
@@ -359,7 +380,7 @@ guarantee tease, "so how does it work".
 
 STRUCTURE, AGAINST THE AI APP DECK
 
-Same spine: introducing -> what it isn't -> how it works -> 4 core parts each with a STACK
+Same spine: introducing -> what it isn't -> how it works -> 5 core parts each with a STACK
 slide -> "most students had only this and STILL got these results" -> "but since you're
 here LIVE" -> 4 bonuses each solving a named problem, STACK after each -> "saved this one
 for last" -> guarantee -> scarcity (first 10, bonuses come off, core stays) -> application
@@ -405,3 +426,9 @@ Bonus 3 absorbed the trade-review function you cut, which is why it's written ar
 
 5. "36 mornings" assumes 3 sessions a week for 12 weeks. Confirm the sessions run every
    week including the first one.
+
+6. THE ONBOARDING CALL sits in the core, exactly like the AI App deck does it, and the
+   bi-weekly 1on1s stay as bonus 4. That's deliberate and it doesn't cannibalise: the
+   onboarding call is a one-off that sets direction, the bonus is recurring and sets
+   pace. Bonus 4 now opens with "on top of the onboarding call" so the difference is
+   obvious rather than assumed.
