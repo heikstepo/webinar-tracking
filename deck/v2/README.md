@@ -36,6 +36,11 @@ At most four accented lines on any slide, so the colour still means something.
 type is dominated by 40/46/52pt — the small sizes only appear inside lists and
 the stack.
 
+**The five-step structure slide** (87) uses AA's "3 parts of an agency" layout:
+a large teal numeral, the step title in ink, and the descriptor after the em dash
+set small and grey on its own line. Rows no longer wrap, and the slide reads as a
+structure instead of five sentences.
+
 **Modelled on AA.** The offer stack is the reference deck's recurring frame:
 dark, vertical spine, hollow teal nodes for what's in, a solid node plus a teal
 row for what was just added. It returns 10 times and grows to 9 rows. The Q&A

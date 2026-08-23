@@ -171,6 +171,48 @@ function kList(g){
   });
 }
 
+// ---- the five-step structure slide (AA's "3 parts of an agency" layout) ---
+// numeral / title / quiet descriptor, so the slide reads as a structure and
+// not as five wrapping sentences.
+const DASH = /^(.*?)\s*([—–])\s*(.+)$/s;
+function kSteps(g){
+  const rows = g.slides.flatMap(linesOf).map(t => {
+    const m = t.match(NUM);
+    const num = m ? m[1] : "", rest = m ? m[2] : t;
+    const d = rest.match(DASH);
+    return { num, title: d ? d[1] : rest, dash: d ? d[2] : "", desc: d ? d[3] : "" };
+  });
+  const numW = Math.min(1.50, Math.max(...rows.map(r => textW(r.num, 52))) + 0.18);
+  const bx = RAIL + numW + 0.30, bw = 9.10 - bx;
+  let tz = 32;
+  for (;;){
+    const dz = Math.max(13, Math.round(tz*0.60));
+    const th = tz*1.22/72, dh = dz*1.30/72;
+    const rowH = th + dh + 0.06;
+    const gap = tz*0.008;
+    const tot = rows.length*rowH + gap*(rows.length-1);
+    const fits = tot <= 4.72 && rows.every(r => nlines(r.title, tz, bw) === 1
+                                             && (!r.desc || nlines(r.dash+" "+r.desc, dz, bw) === 1));
+    if (fits || tz <= 20){
+      let y = 0.72 + Math.max(0, (5.44 - 0.72 - tot)/2);
+      const s = newSlide(g, false);
+      accentDot(s);
+      const nz = Math.round(tz*1.75);
+      rows.forEach(r => {
+        s.addText(r.num, T({ x:RAIL, y:y - 0.12, w:numW, h:th + 0.34, fontSize:nz,
+                             color:C.accent, valign:"top" }));
+        s.addText(r.title, T({ x:bx, y:y, w:bw, h:th, fontSize:tz, color:C.ink, valign:"top" }));
+        if (r.desc) s.addText([{ text:r.dash+" ", options:{ color:C.hair } },
+                               { text:r.desc,     options:{ color:C.sub } }],
+          T({ x:bx, y:y + th + 0.06, w:bw, h:dh, fontSize:dz, valign:"top" }));
+        y += rowH + gap;
+      });
+      return;
+    }
+    tz -= 1;
+  }
+}
+
 // ---- step divider ---------------------------------------------------------
 function kDiv(g){
   const n = g.slides[0];
@@ -258,7 +300,7 @@ function kItem(g){
   picsOf(n).forEach(p => addPic(s, p));
 }
 
-const K = { stmt:kStmt, list:kList, div:kDiv, stack:kStack, shot:kShot, item:kItem };
+const K = { stmt:kStmt, list:kList, steps:kSteps, div:kDiv, stack:kStack, shot:kShot, item:kItem };
 for (const g of P.plan) K[g.k](g);
 
 pres.writeFile({ fileName: process.env.OUT || "DTR_Webinar_V2.pptx" })

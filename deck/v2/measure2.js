@@ -8,6 +8,9 @@ for (const k of Object.keys(P.slides)) for (const t of P.slides[k].lines) {
   add(t);
   const m = t.match(/^((?:Q\d+\s*[-–—:])|(?:BONUS\s*\d+\s*:)|(?:\d+\s*[.)\-]))\s*(.+)$/s);
   if (m) { add(m[1]); add(m[2]); }
+  const rest = m ? m[2] : t;
+  const d = rest.match(/^(.*?)\s*([\u2014\u2013])\s*(.+)$/s);
+  if (d) { add(d[1]); add(d[3]); add(d[2] + ' ' + d[3]); }
 }
 for (const b of Object.values(P.banners)) { add(b.full); add(b.head); add(b.tail); }
 

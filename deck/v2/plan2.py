@@ -116,6 +116,9 @@ def kind_of(g):
     if len(g) > 1 and any(NUM.match(S[str(m)]['lines'][0]) for m in g if S[str(m)]['lines']):
         return 'list'
     if len(g) == 1 and L and all(NUM.match(x) for x in L) and len(L) > 1:
+        # every row is "N- TITLE -- descriptor": lay it out as a structure
+        if all(re.search(r'—|–', x) for x in L):
+            return 'steps'
         return 'list'
     return 'stmt'
 
