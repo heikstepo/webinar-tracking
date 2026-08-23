@@ -13,6 +13,13 @@ const HEAD_A  = "What You're ";
 const HEAD_B  = "Getting";
 const PILL    = "JUST ADDED";
 
+// INVERT=1 flips the frame to white paper with dark ink; the teal is unchanged
+const INV = !!process.env.INVERT;
+const BG     = INV ? C.paper : C.ink;      // slide background
+const FG     = INV ? C.ink   : C.white;    // eyebrow, headline, row labels
+const HOLLOW = BG;                          // the ring reads through to the ground
+const SPINE  = INV ? C.hair  : C.darkRule;
+
 // ---- the nine components, in the order the deck introduces them ------------
 const ROWS = P.plan.filter(p => p.k === "stack").reduce((a, p) =>
   p.rows.length > a.length ? p.rows : a, []);
@@ -48,11 +55,11 @@ pres.layout = "LAYOUT_16x9";
 let seen = 0;
 COUNTS.forEach(k => {
   const s = pres.addSlide();
-  s.background = { color: C.ink };
+  s.background = { color: BG };
 
   s.addShape("ellipse", { x:0.60, y:0.58, w:0.10, h:0.10, fill:{ color:C.accent } });
-  s.addText(EYEBROW, T({ x:0.82, y:0.46, w:8.50, h:0.34, fontSize:11, color:C.white }));
-  s.addText([{ text:HEAD_A, options:{ color:C.white } },
+  s.addText(EYEBROW, T({ x:0.82, y:0.46, w:8.50, h:0.34, fontSize:11, color:FG }));
+  s.addText([{ text:HEAD_A, options:{ color:FG } },
              { text:HEAD_B, options:{ color:C.accent } }],
     T({ x:0.60, y:0.82, w:8.60, h:0.86, fontSize:40, valign:"top" }));
 
@@ -61,19 +68,19 @@ COUNTS.forEach(k => {
   const cyOf = i => ys[i] + LINE/2;              // node sits on the row's first line
 
   if (k > 1) s.addShape("line", { x:SPINE_X, y:cyOf(0), w:0, h:cyOf(k-1) - cyOf(0),
-    line:{ color:C.darkRule, width:2 } });
+    line:{ color:SPINE, width:2 } });
 
   rows.slice(0, k).forEach((r, i) => {
     const y = ys[i], cy = cyOf(i), on = i === newest;
     if (on) s.addShape("ellipse", { x:SPINE_X-0.15, y:cy-0.15, w:0.30, h:0.30, fill:{ color:C.accent } });
     else {
       s.addShape("ellipse", { x:SPINE_X-0.10, y:cy-0.10, w:0.20, h:0.20, fill:{ color:C.accent } });
-      s.addShape("ellipse", { x:SPINE_X-0.05, y:cy-0.05, w:0.10, h:0.10, fill:{ color:C.ink } });
+      s.addShape("ellipse", { x:SPINE_X-0.05, y:cy-0.05, w:0.10, h:0.10, fill:{ color:HOLLOW } });
     }
     s.addText(r.code,  T({ x:CODE_X, y:y, w:CODE_W, h:LINE, fontSize:fs_,
                            color:C.accent, align:"right", valign:"top" }));
     s.addText(r.label, T({ x:LABEL_X, y:y, w:LABEL_W, h:hs[i], fontSize:fs_,
-                           color: on ? C.accent : C.white, valign:"top" }));
+                           color: on ? C.accent : FG, valign:"top" }));
 
     // the pill only where the row is short enough to leave it room
     if (on && LABEL_X + textW(r.label, fs_) + 0.30 < PILL_X){
@@ -86,4 +93,4 @@ COUNTS.forEach(k => {
 });
 
 pres.writeFile({ fileName: process.env.OUT || "DTR_Offer_Stack.pptx" })
-  .then(() => console.log(`slides: ${COUNTS.length}   rows: ${rows.length}   row size: ${fs_}pt`));
+  .then(() => console.log(`slides: ${COUNTS.length}   rows: ${rows.length}   row size: ${fs_}pt   ${INV ? "inverted" : "dark"}`));
