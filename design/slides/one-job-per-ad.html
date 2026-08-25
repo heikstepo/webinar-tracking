@@ -12,35 +12,57 @@
 
   <div class="jobs">
 
-    <!-- Left: three creatives, one job. One tint, repeated. -->
-    <div class="jobs__mark jobs__mark--yes" style="left:270px; top:0">&#10003;</div>
+    <!-- Left: three creatives, one job. One tint repeated, and one outcome
+         set against the whole stack rather than against any single square. -->
+    <div class="jobs__mark jobs__mark--yes" style="left:264px; top:0">&#10003;</div>
 
-    <div class="jobs__ad" style="left:82px; top:187px">1 Ad</div>
+    <div class="jobs__ad" style="left:0; top:190px">1 Ad</div>
 
-    <div class="jobs__sq" style="left:402px; top:96px">TOFU</div>
-    <div class="jobs__sq" style="left:402px; top:214px">TOFU</div>
-    <div class="jobs__sq" style="left:402px; top:332px">TOFU</div>
+    <div class="jobs__sq" style="left:200px; top:96px">TOFU</div>
+    <div class="jobs__sq" style="left:200px; top:210px">TOFU</div>
+    <div class="jobs__sq" style="left:200px; top:324px">TOFU</div>
+
+    <p class="jobs__out" style="left:348px; top:96px; height:308px">
+      <span>make the person recognize the problem/opportunity.</span></p>
 
     <!-- Right: the same ad, three different jobs. The tints ladder down the
-         funnel, which is exactly the thing that shouldn't be happening
-         inside one ad. -->
-    <div class="jobs__mark jobs__mark--no" style="left:910px; top:0">&#10005;</div>
+         funnel and each square drags its own outcome along with it. -->
+    <div class="jobs__mark jobs__mark--no" style="left:927px; top:0">&#10005;</div>
 
-    <div class="jobs__ad" style="left:722px; top:187px">1 Ad</div>
+    <div class="jobs__ad" style="left:674px; top:190px">1 Ad</div>
 
-    <div class="jobs__sq" style="left:1042px; top:96px">TOFU</div>
-    <div class="jobs__sq jobs__sq--mid" style="left:1042px; top:214px">MOFU</div>
-    <div class="jobs__sq jobs__sq--deep" style="left:1042px; top:332px">BOFU</div>
+    <div class="jobs__sq" style="left:874px; top:96px">TOFU</div>
+    <div class="jobs__sq jobs__sq--mid" style="left:874px; top:210px">MOFU</div>
+    <div class="jobs__sq jobs__sq--deep" style="left:874px; top:324px">BOFU</div>
+
+    <p class="jobs__out jobs__out--struck" style="left:1000px; top:96px; height:80px">
+      <span>make the person recognize the problem/opportunity.</span></p>
+    <p class="jobs__out jobs__out--struck" style="left:1000px; top:210px; height:80px">
+      <span>educate them on solution</span></p>
+    <p class="jobs__out jobs__out--struck" style="left:1000px; top:324px; height:80px">
+      <span>hit them with a direct offer</span></p>
 
     <svg class="jobs__links" viewBox="0 0 1240 430" fill="none" aria-hidden="true">
       <g stroke="#BFD6F7" stroke-width="2.5" stroke-linecap="round">
-        <path d="M222 224 C 300 200, 330 144, 398 144"/>
-        <path d="M232 262 L 398 262"/>
-        <path d="M222 300 C 300 324, 330 380, 398 380"/>
+        <path d="M112 220 C 165 205, 165 136, 196 136"/>
+        <path d="M120 250 L 196 250"/>
+        <path d="M112 280 C 165 295, 165 364, 196 364"/>
 
-        <path d="M862 224 C 940 200, 970 144, 1038 144"/>
-        <path d="M872 262 L 1038 262"/>
-        <path d="M862 300 C 940 324, 970 380, 1038 380"/>
+        <path d="M786 220 C 839 205, 839 136, 870 136"/>
+        <path d="M794 250 L 870 250"/>
+        <path d="M786 280 C 839 295, 839 364, 870 364"/>
+      </g>
+
+      <!-- A bracket gathering the three squares into the single outcome, so
+           the one line on this side reads as shared rather than as a caption
+           on the middle square. The right side needs none: each square there
+           has its own. -->
+      <g stroke="#BFD6F7" stroke-width="2" stroke-linecap="round">
+        <path d="M304 136 L 320 136"/>
+        <path d="M304 250 L 320 250"/>
+        <path d="M304 364 L 320 364"/>
+        <path d="M320 136 L 320 364"/>
+        <path d="M320 250 L 340 250"/>
       </g>
     </svg>
 
