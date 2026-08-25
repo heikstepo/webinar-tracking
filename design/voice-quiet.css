@@ -730,6 +730,12 @@
   color: var(--ink-3);
 }
 
+/* A card carrying one statement and nothing under it. The statement is the
+   card's whole content, so it gets the room the definition and list would
+   otherwise have taken. */
+.metric--single { padding: 40px 44px 44px; }
+.metric--single .metric__name { margin-top: 12px; font-size: 32px; line-height: 1.32; }
+
 .metric__list { margin: 0; padding: 0; list-style: none; }
 
 .metric__list li {
