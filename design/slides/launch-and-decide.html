@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Launch and decide</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="seq" style="height:400px">
+
+    <div class="seq__pill" style="left:470px; top:0; width:300px; height:60px; font-size:26px">Launch it</div>
+
+    <p class="seq__stage" style="left:420px; top:74px; width:400px; text-align:center">let it run for at least 7 days</p>
+
+    <!-- The same black box the deck uses whenever a decision is the subject. -->
+    <div class="question" style="position:absolute; left:620px; top:158px;
+                                 transform:translateX(-50%);
+                                 font-size:30px; padding:18px 34px; white-space:nowrap">Is it profitable?</div>
+
+    <!-- Yes on the left, because that is the order it gets said in. -->
+    <p class="seq__stage" style="left:300px; top:256px; width:200px; text-align:center; color:var(--accent)">Yes</p>
+    <p class="seq__stage" style="left:740px; top:256px; width:200px; text-align:center; color:var(--accent)">No</p>
+
+    <div class="seq__pill" style="left:250px; top:322px; width:300px; height:68px; font-size:26px;
+                                  background:#E7F5E3; border-color:#34A518; color:#248A13">Scale</div>
+
+    <div class="seq__pill" style="left:690px; top:322px; width:300px; height:68px;
+                                  font-size:26px">Do creative testing</div>
+
+    <svg class="seq__path" viewBox="0 0 1240 400" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="br" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+
+      <g stroke="#0071E3" stroke-width="3" stroke-linecap="round">
+        <!-- Into the question. -->
+        <path d="M620 112 L 620 150" marker-end="url(#br)"/>
+        <!-- Out of it, and split. -->
+        <path d="M620 238 L 620 292"/>
+        <path d="M400 292 L 840 292"/>
+        <path d="M400 292 L 400 314" marker-end="url(#br)"/>
+        <path d="M840 292 L 840 314" marker-end="url(#br)"/>
+      </g>
+    </svg>
+
+  </div>
+
+</section>
+
+</body>
+</html>
