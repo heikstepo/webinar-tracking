@@ -977,6 +977,26 @@
   color: var(--ink-3);
 }
 
+/* Which way a metric is expected to run. Every chip is the same colour
+   whatever way it points: a high cost per result on a top-of-funnel ad is
+   the plan, not a problem, and red-and-green here would read as bad-and-good
+   and teach the opposite of what the slide says. Direction alone carries it. */
+.metric__dir {
+  align-self: flex-start;
+  margin: 14px 0 0;
+  padding: 6px 16px 6px 12px;
+  border-radius: 999px;
+  background: #E6F0FD;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.metric__dir::before {
+  content: '\2191';
+  margin-right: 8px;
+}
+.metric__dir--down::before { content: '\2193'; }
+
 /* A card carrying one statement and nothing under it. The statement is the
    card's whole content, so it gets the room the definition and list would
    otherwise have taken. */
