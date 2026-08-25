@@ -595,6 +595,109 @@
 }
 
 /* ============================================================================
+   STEPS  —  a procedure as a row of cards, each one drawing what its step
+   produces. The drawing is what keeps a four-step list off the slide: the
+   art carries the shape of the work and the words only have to name it.
+   ========================================================================= */
+
+.steps { display: flex; gap: 26px; }
+
+.steps__card {
+  flex: 1;
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 26px 28px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__num {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.steps__art { margin: 18px 0 20px; }
+.steps__art svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Held to three lines whether the title needs them or not, so the notes
+   below all start on the same line. Centred inside that block, so a short
+   title sits in the middle of the space rather than leaving the whole gap
+   underneath it. */
+.steps__title {
+  margin: 0;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.004em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.steps__note {
+  margin: 10px 0 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
+   MATRIX  —  the two diversities as two axes. Across the row, one ad per
+   column and each carrying its own format art; down a column, that ad's
+   creatives, all in one tint because they all serve one purpose. Reading
+   the grid in one direction gives you format diversity, in the other
+   creative diversity, which is the whole claim.
+   ========================================================================= */
+
+.matrix { position: relative; width: 1240px; height: 440px; flex: none; }
+
+.matrix__axis {
+  position: absolute;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.004em;
+  color: var(--accent);
+}
+
+.matrix__note {
+  position: absolute;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.36;
+  color: var(--ink-3);
+}
+
+/* The format art again, shrunk into the ad marker. It is a callback, not a
+   first showing — the row before this one set them at full size. */
+.matrix__art {
+  width: 46px;
+  height: 46px;
+  fill: none;
+  stroke: #6E9BD4;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.matrix__links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* ============================================================================
    FORMATS  —  the ad set laid out as a row, one card per ad. The stage tag
    reuses the funnel tint ladder, so the spread down the funnel is a colour
    you scan rather than a word you read, which leaves the eye free for the
