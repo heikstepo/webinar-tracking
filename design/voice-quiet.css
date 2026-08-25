@@ -424,7 +424,30 @@
 }
 .nest__inner { background: #E6F0FD; }
 .dot { border-color: #D3E1F6; }
+
+/* A white dot has enough contrast inside a card but disappears on the bare
+   ground. This fills it instead, for counts that sit straight on the slide. */
+.dots--filled .dot { background: #D7E7FA; border-color: #AFCCEE; }
 .nest__caption { font-size: 22px; font-weight: 400; color: var(--ink-2); }
+
+/* ============================================================================
+   CALC  —  a factorial and its result. Both lines are set at one size on one
+   left edge, so the length of the second line's run of digits is the whole
+   argument and nothing has to say it out loud.
+   ========================================================================= */
+
+.calc {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.calc__n { color: var(--accent); }
+.calc__eq { margin: 0 16px; font-weight: 400; color: var(--ink-3); }
+.calc__unit { margin-left: 16px; font-size: 24px; font-weight: 400; color: var(--ink-2); }
 
 /* ============================================================================
    SPLIT  —  evidence on one side, reasons on the other, divided by a rule
