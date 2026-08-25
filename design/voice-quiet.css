@@ -595,6 +595,66 @@
 }
 
 /* ============================================================================
+   JOBS  —  two ads side by side, each holding three creatives. The only thing
+   that differs is whether those three are doing one job or three, and the
+   tint carries it before the labels do: one shade repeated on one side,
+   a ladder of shades on the other. Depth of tint is depth in the funnel.
+   ========================================================================= */
+
+.jobs { position: relative; width: 1240px; height: 430px; flex: none; }
+
+.jobs__ad {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #E6F0FD;
+  border: 2px solid #BFD6F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  color: var(--ink);
+}
+
+.jobs__sq {
+  position: absolute;
+  width: 116px;
+  height: 96px;
+  border-radius: 16px;
+  background: #E6F0FD;
+  border: 1px solid #BFD6F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+.jobs__sq--mid  { background: #C2DCFA; border-color: #9AC4F5; }
+.jobs__sq--deep { background: #9AC4F5; border-color: #6FA8EE; }
+
+.jobs__mark {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 1;
+}
+.jobs__mark--yes { background: #E7F5E3; border: 2px solid #34A518; color: #248A13; }
+.jobs__mark--no  { background: #FCEBEE; border: 2px solid #E31D3E; color: #CC1734; }
+
+.jobs__links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* ============================================================================
    CONVERGE  —  the assembly view: several concepts feeding into one ad.
 
    Same vocabulary as .breakout (round tinted ad, square white creatives) but
