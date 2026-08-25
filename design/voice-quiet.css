@@ -595,6 +595,65 @@
 }
 
 /* ============================================================================
+   FORMATS  —  the ad set laid out as a row, one card per ad. The stage tag
+   reuses the funnel tint ladder, so the spread down the funnel is a colour
+   you scan rather than a word you read, which leaves the eye free for the
+   thing that actually differs: a distinct piece of line art per format.
+   ========================================================================= */
+
+.formats { display: flex; gap: 28px; }
+
+.formats__card {
+  flex: 1;
+  background: var(--surface);
+  border-radius: 22px;
+  /* Roomy side padding on purpose: it narrows the measure enough that the
+     format names break into two balanced lines instead of stranding a word. */
+  padding: 26px 34px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.formats__tag {
+  margin: 0;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #E6F0FD;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.formats__tag--mid  { background: #C2DCFA; }
+.formats__tag--deep { background: #9AC4F5; }
+
+.formats__art {
+  margin: 26px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formats__art svg {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.formats__name {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.36;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+/* ============================================================================
    JOBS  —  two ads side by side, each holding three creatives. The only thing
    that differs is whether those three are doing one job or three, and the
    tint carries it before the labels do: one shade repeated on one side,
