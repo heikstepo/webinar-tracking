@@ -110,6 +110,10 @@ input[type=color]{width:100%; height:30px; padding:1px; border:1px solid var(--l
 .check{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--ink-2); margin-bottom:9px; cursor:pointer}
 .check input{accent-color:var(--accent); width:15px; height:15px}
 .pair{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.drop.wide{aspect-ratio:16/10}
+.subhead{margin-bottom:8px}
+.pair .row{grid-template-columns:52px 1fr 38px; gap:6px}
+.pair .row > label{font-size:11px}
 .actions{display:flex; flex-direction:column; gap:9px}
 .actions .split2{display:grid; grid-template-columns:1fr 1fr; gap:9px}
 .note{font-size:11px; color:var(--ink-3); line-height:1.5}
@@ -164,13 +168,15 @@ var ctx = canvas.getContext('2d');
 var hint = document.getElementById('hint');
 var rail = document.getElementById('rail');
 
-var imgs = { a:null, b:null };
+var imgs = { a:null, b:null, bgA:null, bgB:null };
 
 var DEFAULTS = {
   zoom:0.86, panX:0, panY:130,
   seam:0.500, soft:5, seamGlow:0.30,
   bx:0, by:0, bzoom:1.000,
-  flip:false,
+  flip:false, cutout:false,
+  bgAScale:1.00, bgAX:0, bgAY:0, bgABlur:0,
+  bgBScale:1.00, bgBX:0, bgBY:0, bgBBlur:0,
   oldBright:0.70, oldSat:0.30, oldCon:1.10, oldTint:0.20, grain:0.35,
   newBright:1.14, newSat:1.10, newCon:1.05, newLift:0.06,
   vignette:0.38,
@@ -230,7 +236,7 @@ function scratch(w,h){
 }
 
 // Draws one graded half-source (backdrop + sharp feathered plate) onto its own canvas.
-function buildLayer(img, isB, k){
+function buildLayer(img, bg, isB, k){
   var w = W*k, h = H*k;
   var c = scratch(w,h);
   var g = c.getContext('2d');
@@ -238,6 +244,27 @@ function buildLayer(img, isB, k){
   var filter = isB
     ? 'brightness('+S.newBright+') saturate('+S.newSat+') contrast('+S.newCon+')'
     : 'brightness('+S.oldBright+') saturate('+S.oldSat+') contrast('+S.oldCon+')';
+
+  // Cut-out mode: a background plate sits under the subject, graded with that
+  // side's look so a bright screenshot reads as the dark OLD panel.
+  if(S.cutout){
+    g.fillStyle = isB ? '#f4f4f4' : '#242424';
+    g.fillRect(0,0,w,h);
+    if(bg){
+      var gs = (isB?S.bgBScale:S.bgAScale);
+      var gblur = (isB?S.bgBBlur:S.bgABlur);
+      var gcov = Math.max(w/bg.width, h/bg.height) * gs;
+      var gw = bg.width*gcov, gh = bg.height*gcov;
+      g.save();
+      g.filter = (gblur>0 ? 'blur('+(gblur*k)+'px) ' : '') + filter;
+      g.drawImage(bg,
+        (w-gw)/2 + (isB?S.bgBX:S.bgAX)*k,
+        (h-gh)/2 + (isB?S.bgBY:S.bgAY)*k, gw, gh);
+      g.restore();
+    }
+  }
+
+  if(!img){ return c; }
 
   var cover = Math.max(w/img.width, h/img.height);
 
@@ -253,11 +280,13 @@ function buildLayer(img, isB, k){
   var bcov = Math.max(w/pw, h/ph, 1) * 1.08;
   var bw = pw*bcov, bh = ph*bcov;
   var bx = px + pw/2 - bw/2, by = py + ph/2 - bh/2;
-  g.save();
-  if(S.flip){ g.translate(w,0); g.scale(-1,1); }
-  g.filter = 'blur('+(20*k)+'px) ' + filter;
-  g.drawImage(img, S.flip ? (w-bx-bw) : bx, by, bw, bh);
-  g.restore();
+  if(!S.cutout){
+    g.save();
+    if(S.flip){ g.translate(w,0); g.scale(-1,1); }
+    g.filter = 'blur('+(20*k)+'px) ' + filter;
+    g.drawImage(img, S.flip ? (w-bx-bw) : bx, by, bw, bh);
+    g.restore();
+  }
 
   var plate = scratch(w,h);
   var pg = plate.getContext('2d');
@@ -268,11 +297,11 @@ function buildLayer(img, isB, k){
   pg.drawImage(img, S.flip ? (w-px-pw) : px, py, pw, ph);
   pg.restore();
 
-  var f = 26*k;
-  pg.globalCompositeOperation = 'destination-out';
-  var fx = px;
-  edgeFade(pg, fx, py, pw, ph, f);
-  pg.globalCompositeOperation = 'source-over';
+  if(!S.cutout){
+    pg.globalCompositeOperation = 'destination-out';
+    edgeFade(pg, px, py, pw, ph, 26*k);
+    pg.globalCompositeOperation = 'source-over';
+  }
 
   g.drawImage(plate,0,0);
 
@@ -350,7 +379,7 @@ function render(g,k){
   g.fillStyle = '#000';
   g.fillRect(0,0,w,h);
 
-  if(!imgs.a && !imgs.b){ return; }
+  if(!imgs.a && !imgs.b && !imgs.bgA && !imgs.bgB){ return; }
 
   var seamPx = S.seam*w;
   var soft = Math.max(0.5, S.soft*k);
@@ -358,9 +387,9 @@ function render(g,k){
   var A = imgs.a || imgs.b;
   var B = imgs.b || imgs.a;
 
-  g.drawImage(buildLayer(A,false,k),0,0);
+  g.drawImage(buildLayer(A, imgs.bgA || imgs.bgB, false, k),0,0);
 
-  var right = buildLayer(B,true,k);
+  var right = buildLayer(B, imgs.bgB || imgs.bgA, true, k);
   var rg = right.getContext('2d');
   rg.globalCompositeOperation = 'destination-in';
   var mask = rg.createLinearGradient(seamPx-soft/2,0,seamPx+soft/2,0);
@@ -416,7 +445,7 @@ function draw(){
   requestAnimationFrame(function(){
     queued = false;
     render(ctx,1);
-    hint.style.display = (imgs.a || imgs.b) ? 'none' : 'flex';
+    hint.style.display = (imgs.a || imgs.b || imgs.bgA || imgs.bgB) ? 'none' : 'flex';
   });
 }
 
@@ -529,9 +558,10 @@ var drops = document.createElement('div');
 drops.className='drops';
 photos.appendChild(drops);
 
-function makeDrop(slot,label,sub,tagClass){
+function makeDrop(slot,label,sub,tagClass,container,wide){
+  container = container || drops;
   var d = document.createElement('div');
-  d.className='drop';
+  d.className='drop'+(wide?' wide':'');
   d.tabIndex = 0;
   d.setAttribute('role','button');
   d.setAttribute('aria-label','Choose the '+label+' photo');
@@ -573,7 +603,7 @@ function makeDrop(slot,label,sub,tagClass){
     d.addEventListener(ev,function(e){ e.preventDefault(); d.classList.remove('over'); });
   });
   d.addEventListener('drop',function(e){ load(e.dataTransfer.files[0]); });
-  drops.appendChild(d);
+  container.appendChild(d);
 }
 makeDrop('a','OLD','Left half &#183; the unhappy shot','old');
 makeDrop('b','NEW','Right half &#183; the smiling shot','new');
@@ -600,6 +630,42 @@ swap.addEventListener('click',function(){
   draw();
 });
 photos.appendChild(swap);
+
+checkbox(photos,'cutout','These are cut-outs (transparent PNG)');
+var cutnote = document.createElement('p');
+cutnote.className='note';
+cutnote.textContent = 'Turn this on once your subject has no background of its own. The backgrounds below then show through, and each side keeps its own grade.';
+photos.appendChild(cutnote);
+
+/* backgrounds */
+var bgsec = section('Backgrounds');
+var bgnote = document.createElement('p');
+bgnote.className='note';
+bgnote.style.margin='0 0 11px';
+bgnote.textContent = 'One image per side, sitting behind the subject. Each one picks up its side\'s grade, so a white screenshot on the left comes out as the dark OLD panel.';
+bgsec.appendChild(bgnote);
+var bgdrops = document.createElement('div');
+bgdrops.className='drops';
+bgsec.appendChild(bgdrops);
+makeDrop('bgA','OLD','Behind the left half','old',bgdrops,true);
+makeDrop('bgB','NEW','Behind the right half','new',bgdrops,true);
+
+var bgpair = document.createElement('div');
+bgpair.className='pair';
+bgpair.style.marginTop='12px';
+bgsec.appendChild(bgpair);
+var bgL = document.createElement('div'), bgR = document.createElement('div');
+bgpair.appendChild(bgL); bgpair.appendChild(bgR);
+[['bgA',bgL,'OLD','old'],['bgB',bgR,'NEW','new']].forEach(function(cfg){
+  var head = document.createElement('div');
+  head.className = 'subhead';
+  head.innerHTML = '<span class="tag '+cfg[3]+'">'+cfg[2]+'</span>';
+  cfg[1].appendChild(head);
+  range(cfg[1],cfg[0]+'Scale','Scale',0.4,3,0.01);
+  range(cfg[1],cfg[0]+'X','Move X',-900,900,1);
+  range(cfg[1],cfg[0]+'Y','Move Y',-900,900,1);
+  range(cfg[1],cfg[0]+'Blur','Blur',0,30,1);
+});
 
 /* framing */
 var fr = section('Framing');
