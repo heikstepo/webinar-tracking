@@ -595,6 +595,45 @@
 }
 
 /* ============================================================================
+   POOL  —  a reservoir of aware people. Drawn as a container deliberately
+   taller than its contents: the empty part above the level line is the
+   headroom, which is the thing the whole slide is about.
+   ========================================================================= */
+
+.pool {
+  position: absolute;
+  border-radius: 26px;
+  border: 2px solid #BFD6F7;
+  background: #EFF6FE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.pool__head {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Where the pool stands today. Dashed, because it is the one line here that
+   is meant to move. */
+.pool__level {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  border-top: 2px dashed #A9C8EC;
+}
+
+/* ============================================================================
    STEPS  —  a procedure as a row of cards, each one drawing what its step
    produces. The drawing is what keeps a four-step list off the slide: the
    art carries the shape of the work and the words only have to name it.
