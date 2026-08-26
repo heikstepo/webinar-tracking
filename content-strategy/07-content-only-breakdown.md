@@ -200,68 +200,82 @@ uses it.
 
 ## 6. CTA architecture — how, where, how often
 
-> **Sourcing note.** YouTube hard-blocked transcript and per-video description retrieval
-> from this environment (429 / bot-gate on watch pages, the InnerTube player and
-> `get_transcript` endpoints across seven client types, yt-dlp, headless Chromium, four
-> transcript services, and three Invidious/Piped mirrors). **In-video CTA timestamps could
-> not be measured.** What follows is what was verified directly: one complete video
-> description, both channels' link structures, and JJ's live landing page. Where a
-> recommendation goes beyond the evidence it is labelled as such.
+*Verified directly from JJ's video description, his live landing page and bundle, and both
+channels' link structures. **In-video CTA timestamps remain unmeasured** — YouTube's
+timedtext endpoint stayed rate-limited; §6.5 is labelled as recommendation, not measurement.*
 
-### 6.1 Channel-level CTA — verified, and the starkest difference
+### 6.1 Channel-level — one destination, not four
 
-| | Destination(s) |
+| | Where the channel sends people |
 |---|---|
-| **JJ Simon** | `jj.jjsimontrades.com/schedule-call` — **one destination**, plus a Discord |
-| **Hanck** | `createandcollect.io/implementation-call-org` — **one destination** |
-| **Rauf** | Discord, Telegram, Instagram, X — **four destinations, none of them an offer** |
+| **JJ Simon** | `jj.jjsimontrades.com/schedule-call` + a Discord |
+| **Hanck** | `createandcollect.io/implementation-call-org` |
+| **Rauf** | Discord, Telegram, Instagram, X — **four, none an offer** |
 
-Both reference channels run **exactly one commercial destination**. Rauf runs four social
-links and no offer link. Every CTA decision downstream of this is secondary to it.
+JJ's Discord is **"JJ's Mentorship" — 11,563 members, 1,948 online.** It is free, and it is
+named after the paid product. The free room is branded as the thing being sold.
 
-### 6.2 The description CTA ladder — verified from Hanck's own video
+### 6.2 JJ's description ladder — verified
 
-His description, in order, verbatim structure:
+From *"My $1,300,000 Trading Strategy (Explained in 10 Minutes)"* (40,107 views), verbatim
+structure:
 
 ```
-1  Work with me 1-on-1: https://www.createandcollect.io/implementation-call-org
-                        ?htrafficsource=youtube_organic&el=18062026
-2  If you're not ready yet, watch this $8k/mo to $1,23M/mo case study: [link to his BOF video]
-3  Follow my IG to see the behind-the-scenes: [instagram]
-4  Subscribe for more trading info-business related content
-5  ─────────────────────────
-6  STANDARD DISCLAIMER: This is NOT financial advice...
-7  Keywords: [large keyword block]
+1  Get Consistent Payouts Guaranteed: https://jj.jjsimontrades.com/schedule-call
+2  USE THE FREE WEBSITE
+   Website → https://go.jjsimontrades.com/freesite
+3  $0 to $250,000 in 90 days (student testimonial) → [link to a student testimonial video]
+4  JOIN THE FREE COMMUNITY
+   Discord → https://go.jjsimontrades.com/discord-...
+5  [SEO paragraph describing the video's content]
 ```
 
-Four things worth copying exactly:
+**Four rungs descending by commitment**, and note what each one is:
 
-**(a) The offer is line one.** Above the fold, before YouTube truncates. Not "links below",
-not after a timestamp list — the first thing in the box.
+| Rung | What it is | Why it's there |
+|---|---|---|
+| 1 | **The offer**, line one | Benefit-framed — *"Get Consistent Payouts Guaranteed"*, not "book a call" |
+| 2 | **Free website / lead magnet** | Captures people who won't book yet but will take a free asset |
+| 3 | **A student testimonial video** | Bottom-of-funnel proof for the unconvinced — content pointing at content |
+| 4 | **Free Discord** | The lowest-commitment rung, last |
 
-**(b) The second CTA catches everyone the first one loses.** *"If you're not ready yet,
-watch this case study"* routes the unready viewer to his strongest **bottom-of-funnel
-video** instead of losing them. This is a content CTA pointing at content — an internal
-funnel step, and it is why BOF content earns its slot even at low view counts: it is the
-destination other videos send people to.
+Every link runs through **`go.jjsimontrades.com/*` tracked short links** — he can attribute
+which video produced which click.
 
-**(c) Organic YouTube is tagged at the link level.** `?htrafficsource=youtube_organic`
-means he can separate organic YouTube revenue from every other source. Rauf's dashboard
-already has the fields for this (`UTM Source` / `UTM Content`) — see `06-metrics.md`.
+> **This is the same ladder Hanck runs** — offer first, then a free asset, then a proof
+> video, then community. Two independent channels, same structure. Rung 3 is the one people
+> miss: *the unready viewer gets routed into BOF proof content rather than lost.* That is a
+> large part of why bottom-of-funnel content earns its slot despite the worst view counts —
+> **it is the destination the other videos point at.**
 
-**(d) The ladder descends by commitment.** Call → case study → Instagram → subscribe. Every
-viewer has a next step sized to how warm they are, and the warmest step is first.
+### 6.3 The landing page — the full sequence
 
-### 6.3 Frequency — what the structure implies
+| Element | Detail |
+|---|---|
+| **Sticky bar** | *"Limited: If you don't become profitable and get consistent payouts → 100% refund guarantee"* |
+| **H1** | *"The Quant Trading Strategy Behind My $1,800,000 In Prop Firm Payouts"* |
+| **Sub** | *"Will Finally Get You Funded And Consistently Profitable"* |
+| **Explicit 2-step** | *"Step 1/2: Watch The Video"* → *"Step 2/2: Schedule Your Strategy Building Call"* |
+| **VSL host** | **Wistia** (`3mkeafn28j`) — not YouTube, so no related-video escape hatch |
+| **Exhibit A** | 7 student interview videos — *"Connor: From $40,000 To $250,000 In 45 Days"*, *"Kyle: From $0 To $25,000 Having Never Traded Before"*, *"Quinn: From $2,000 To $60,000 And Quit His 9-5"* |
+| **Exhibit B** | **21 written testimonials**, numbered B-01…B-21, each with a name, an exact figure, a **named prop firm** (Topstep, Lucid, Tradeify, Express V2, LFF, FTDFY) and a ★★★★★ "Verified" badge |
+| **Exhibit C** | *"MY OWN VERIFIED PAYOUTS — I don't just teach it, I withdraw it."* E8 Markets $222,122 Certificate of Performance · Lifetime $179,938.31 across 48 payouts · a single $46,433 payout · $123,901.41 disbursed · date-stamped finalized payouts |
+| **Scarcity** | *"A couple spots left today and tomorrow"* |
+| **Price** | Not shown anywhere |
+| **Cost framing** | *"The strategy building call is free"* |
+| **Intake form** | Framed as *their* benefit: *"a short intake form so we can prep your prop-firm plan before the call and make every minute count"* |
+| **Booking tool** | **iClosed** — event slug literally `guaranteed-profitability` |
 
-Not measured in-video. What *is* measurable is that the CTA appears at **every level of the
-channel simultaneously**: channel banner, channel links section, description line one, and
-(on JJ's channel) the end screen of the videos. The offer is not something a viewer has to
-go looking for at any point.
+### 6.4 He runs two numbers, and the bigger one isn't his
 
-Rauf's back catalogue currently carries **zero** of these placements.
+- **His own:** $1,800,000 in verified payouts *(the headline)*
+- **His students':** **$2,300,000** in verified payouts *(the page meta description)*
 
-### 6.4 Recommended in-video CTA pattern
+The student figure is **larger than his own** and it is the one that answers the only
+question a buyer actually has. Rauf currently has neither number — and the student one
+matters more.
+
+### 6.5 Recommended in-video CTA pattern
 
 *This is a recommendation derived from the landing-page structure and the description
 ladder above, not a measurement of JJ's videos.*
@@ -337,7 +351,7 @@ Rauf's only serialized content is **"Module 1 / 2 / 3 / 4"** — a curriculum, a
 
 ## 8. What to change
 
-### 6.1 The mix
+### 8.1 The mix
 
 Move to **8–10 videos/month** at this split:
 
@@ -352,7 +366,7 @@ Rauf already films his own trading; he publishes it as *"The Boring 1-Hour Windo
 Me $190,000"* (a mechanism reveal) instead of *"Week 4: $8,400 in payouts, two losses"*
 (a payout recap). Same footage, different job.
 
-### 6.2 The three BOF formats to start immediately
+### 8.2 The three BOF formats to start immediately
 
 1. **Weekly serialized payout recap.** A running total that climbs. JJ's runs at ~14,000
    views — below his median, and it is the format that carries his sales. Number in the
@@ -363,7 +377,7 @@ Me $190,000"* (a mechanism reveal) instead of *"Week 4: $8,400 in payouts, two l
 3. **Student results.** He has one. He needs one a month, minimum. Name, figure, named
    prop firm.
 
-### 6.3 Title rules, from his own data
+### 8.3 Title rules, from his own data
 
 **Do:**
 - Put **prop firm / Apex / Lucid / funded / payout** in the title — his +55% keyword
