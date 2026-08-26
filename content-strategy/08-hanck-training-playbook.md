@@ -46,7 +46,7 @@ a month.
 
 | # | Foundation | JJ's answer | **Rauf's status** |
 |---|---|---|---|
-| 1 | **Niche** | Prop firm trading — *"aspirational, constantly searched about, easy to understand from a viewer's perspective"* [0:06:57] | ⚠️ Time Based Ranges is a *method*, not a niche. Prop firms appear in only 12% of his titles |
+| 1 | **Niche** | Prop firm trading — *"aspirational, constantly searched about, easy to understand from a viewer's perspective"* [0:06:57] | ✅ Time Based Ranges is the niche *and* the unique mechanism. Prop-firm framing is the outcome layer on top, currently in 12% of titles |
 | 2 | **USP** | Results-based: verified payouts, tax reports, quant background | ✅ **Strong** — "first to break down time based ranges using real statistical data" |
 | 3 | **ICP** | Deliberately older, financially established, intermediate-to-advanced | ❓ Undeclared |
 | 4 | **Be yourself** | No persona | ✅ Fine |
@@ -312,9 +312,9 @@ Ordered by how explicitly the training calls for it.
 
 | # | Item | Training reference | Status |
 |---|---|---|---|
-| 1 | **A freebie with an opt-in form** — the TOF CTA | [0:21:18] | ❌ None. Discord captures no email |
+| 1 | **A freebie with an opt-in form** — the TOF CTA | [0:21:18] | ✅ **Exists** — free course. Not yet used as the TOF CTA in-video |
 | 2 | **A documentary series** — daily on IG, weekly on YouTube | [0:24:20] | ❌ None |
-| 3 | **Something to soft-mention in MOF and hard-pitch in BOF** | [0:22:04] | ❌ No offer exists to mention |
+| 3 | **Something to soft-mention in MOF and hard-pitch in BOF** | [0:22:04] | ✅ **Exists** — VSL funnel. Not yet pitched from video |
 | 4 | **Backtest / spreadsheet BOF content** | [0:22:04] | ⚠️ One, a year old |
 | 5 | **Student testimonial videos** | [0:22:04] | ⚠️ One, 1,000 views |
 | 6 | **Three pinned Instagram reels**, the first CTA-ing to YouTube | [0:43:24] | ❌ |
