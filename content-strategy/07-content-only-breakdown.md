@@ -8,6 +8,16 @@ call to action. Offer and funnel are covered in `02-offer-and-funnel.md` and exc
 
 ---
 
+> **⚠️ Superseded in part by [`08-hanck-training-playbook.md`](08-hanck-training-playbook.md).**
+> That document is built from the full transcript of Hanck's 152-minute training and is the
+> authoritative statement of the method. Two corrections it makes to this file:
+> **(a)** Hanck classifies the serialized payout show as **middle**-of-funnel, not bottom;
+> his BOF is narrower — backtests, spreadsheet-level analysis, and testimonials.
+> **(b)** He does not disclose stage percentages, so the ≈41/27/32 split below reflects *my*
+> classifier's definitions, not his. Treat these numbers as directional.
+> The volume, title-framing and keyword findings in this file are unaffected.
+
+
 ## 1. The one-line answer
 
 Rauf's funnel-stage mix is **inverted**. He publishes 2.1x too much middle-of-funnel and

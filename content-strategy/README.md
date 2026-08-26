@@ -24,7 +24,8 @@ it. That is the highest-leverage fix available and it is plumbing, not content.
 | [`04-90-day-calendar.md`](04-90-day-calendar.md) | 24 specific video titles across 12 weeks, plus the retrofit sprint and weekly rhythm |
 | [`05-scripts-and-templates.md`](05-scripts-and-templates.md) | VSL script, description template, pinned comment, application form, closer call frame, testimonial capture |
 | [`06-metrics.md`](06-metrics.md) | Targets, quality gates, and how to wire attribution into the existing dashboard |
-| [`07-content-only-breakdown.md`](07-content-only-breakdown.md) | **Content strategy only** — TOF/MOF/BOF split, publishing volume, CTA architecture, title framing, and the corrected monthly mix |
+| [`07-content-only-breakdown.md`](07-content-only-breakdown.md) | **Content strategy only** — publishing volume, title framing, CTA architecture, and the corrected monthly mix (stage splits superseded by `08`) |
+| [`08-hanck-training-playbook.md`](08-hanck-training-playbook.md) | **The method, from the source** — built from the full transcript of Hanck's 152-minute case-study training: the four foundations, TOF/MOF/BOF in his words, the CTA rule per stage, "sell the next click", the documentary series, and what Rauf is missing |
 
 ## Order of operations
 
