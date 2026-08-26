@@ -75,18 +75,15 @@ and escalate it. **Every number in a published title must be documented.**
 
 ---
 
-## Shorts — 3/week, clipped from long-form
+## Shorts — deprioritized
 
-Zero extra filming. Cut from the videos above:
+**Correction based on the channel data** (see `07-content-only-breakdown.md` §7.1):
+**JJ Simon publishes no Shorts at all** — his channel has no Shorts tab — and grew to
+25.3K subscribers in five months on long-form alone, at 17 videos in the last 30 days.
+Rauf runs no Shorts either.
 
-1. **The setup in 45 seconds** — one entry, one chart, one rule
-2. **The payout screenshot** — number on screen, one sentence of context
-3. **The contrarian line** — the sharpest 30 seconds of each belief-shift essay
-4. **The student clip** — one sentence of a result
-
-Every Short: same CTA in the description, same booking link, same pinned comment.
-
----
+If effort has to be split between more Shorts and more long-form, the reference channel
+answers decisively: **long-form volume.** Treat Shorts as optional overflow, not a pillar.
 
 ## Retrofit sprint — week 1, in parallel
 

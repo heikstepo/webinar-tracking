@@ -196,6 +196,98 @@ uses it.
 
 ---
 
+---
+
+## 6. CTA architecture — how, where, how often
+
+> **Sourcing note.** YouTube hard-blocked transcript and per-video description retrieval
+> from this environment (429 / bot-gate on watch pages, the InnerTube player and
+> `get_transcript` endpoints across seven client types, yt-dlp, headless Chromium, four
+> transcript services, and three Invidious/Piped mirrors). **In-video CTA timestamps could
+> not be measured.** What follows is what was verified directly: one complete video
+> description, both channels' link structures, and JJ's live landing page. Where a
+> recommendation goes beyond the evidence it is labelled as such.
+
+### 6.1 Channel-level CTA — verified, and the starkest difference
+
+| | Destination(s) |
+|---|---|
+| **JJ Simon** | `jj.jjsimontrades.com/schedule-call` — **one destination**, plus a Discord |
+| **Hanck** | `createandcollect.io/implementation-call-org` — **one destination** |
+| **Rauf** | Discord, Telegram, Instagram, X — **four destinations, none of them an offer** |
+
+Both reference channels run **exactly one commercial destination**. Rauf runs four social
+links and no offer link. Every CTA decision downstream of this is secondary to it.
+
+### 6.2 The description CTA ladder — verified from Hanck's own video
+
+His description, in order, verbatim structure:
+
+```
+1  Work with me 1-on-1: https://www.createandcollect.io/implementation-call-org
+                        ?htrafficsource=youtube_organic&el=18062026
+2  If you're not ready yet, watch this $8k/mo to $1,23M/mo case study: [link to his BOF video]
+3  Follow my IG to see the behind-the-scenes: [instagram]
+4  Subscribe for more trading info-business related content
+5  ─────────────────────────
+6  STANDARD DISCLAIMER: This is NOT financial advice...
+7  Keywords: [large keyword block]
+```
+
+Four things worth copying exactly:
+
+**(a) The offer is line one.** Above the fold, before YouTube truncates. Not "links below",
+not after a timestamp list — the first thing in the box.
+
+**(b) The second CTA catches everyone the first one loses.** *"If you're not ready yet,
+watch this case study"* routes the unready viewer to his strongest **bottom-of-funnel
+video** instead of losing them. This is a content CTA pointing at content — an internal
+funnel step, and it is why BOF content earns its slot even at low view counts: it is the
+destination other videos send people to.
+
+**(c) Organic YouTube is tagged at the link level.** `?htrafficsource=youtube_organic`
+means he can separate organic YouTube revenue from every other source. Rauf's dashboard
+already has the fields for this (`UTM Source` / `UTM Content`) — see `06-metrics.md`.
+
+**(d) The ladder descends by commitment.** Call → case study → Instagram → subscribe. Every
+viewer has a next step sized to how warm they are, and the warmest step is first.
+
+### 6.3 Frequency — what the structure implies
+
+Not measured in-video. What *is* measurable is that the CTA appears at **every level of the
+channel simultaneously**: channel banner, channel links section, description line one, and
+(on JJ's channel) the end screen of the videos. The offer is not something a viewer has to
+go looking for at any point.
+
+Rauf's back catalogue currently carries **zero** of these placements.
+
+### 6.4 Recommended in-video CTA pattern
+
+*This is a recommendation derived from the landing-page structure and the description
+ladder above, not a measurement of JJ's videos.*
+
+Two CTAs per video, both short:
+
+| When | Type | What it sounds like |
+|---|---|---|
+| **~2:00**, after the first proof beat | Soft, one line | *"Full system and my payout receipts are in the free training linked below."* Then keep teaching — do not dwell |
+| **~80–85% through**, after the value is delivered | Hard, qualified | See below |
+| End screen, last 20s | Visual | Call page + next video |
+
+The hard CTA should **qualify and disqualify**, matching how JJ's page filters applicants:
+
+> *"If you're trading a funded account or close to passing an evaluation, and you want me to
+> build this around your schedule and your firm — there's an application linked below. It's
+> not for beginners, and I take a limited number of students a month."*
+
+Four jobs in one paragraph: qualifies (funded or close), sets scarcity (limited), **dis**qualifies
+(not for beginners — which raises perceived value), and names the next step.
+
+**Do not stack more than two.** The reference channels sell through *frequency of publishing*,
+not frequency of asking — 10 videos a month each carrying two clean CTAs beats 5 videos
+carrying five pushy ones.
+
+
 ## 7. Content types: what they actually publish
 
 ### 7.1 Nobody in this comparison is winning with Shorts
@@ -284,3 +376,52 @@ Me $190,000"* (a mechanism reveal) instead of *"Week 4: $8,400 in payouts, two l
 - **"Will shock you" / "Will change your 2026"** — 2,300 and 1,400 views
 - **"Module 1/2/3/4"** — 2,800–4,500 views. Curriculum labels don't get clicked
 - **Negation openers** — "I Stopped Using Chart Patterns" (1,600)
+
+---
+
+## 9. The corrected month, concretely
+
+Eight videos, at the reference split. This is the same effort Rauf already spends —
+reallocated.
+
+| # | Stage | Format | Example title |
+|---|---|---|---|
+| 1 | TOF | Prop-firm ranking | *I Ranked Every Futures Prop Firm After $XXX,XXX In Payouts* |
+| 2 | **BOF** | **Payout recap Ep. 1** | *Road to $500,000 — Ep. 1 ($X,XXX This Week)* |
+| 3 | MOF | Mechanism reveal | *The Boring London Time Based Range That Made Me $190,000* |
+| 4 | TOF | Belief-shift | *If You Don't Understand Time, You Don't Understand Price* |
+| 5 | **BOF** | **Payout recap Ep. 2** | *Every Trade I Took This Week On Apex (Ep. 2)* |
+| 6 | MOF | Mechanism reveal | *How I Pass Apex And Lucid With One 30-Minute Window* |
+| 7 | TOF | Income aspiration | *How To Make $10,000/Month On Prop Firms With One Setup* |
+| 8 | **BOF** | **Student proof** | *I Put A Student On Time Based Ranges For 30 Days — Here's His Payout* |
+
+**5 of 8 titles contain a prop-firm term** (his +55% keyword, currently at 12%).
+**6 of 8 are proof-framed** rather than curiosity-framed. **3 of 8 are BOF** — up from
+1 in 59.
+
+### Sequencing note
+
+Videos 2, 5 and 8 are the ones that will get the fewest views and produce the most calls.
+When Ep. 1 does 2,000 views against a 5,300 median, that is the format working as designed
+on both reference channels — **not a signal to stop.** Judge them on applications, not views.
+
+---
+
+## 10. Summary
+
+| | Rauf now | Reference channels | Change |
+|---|---|---|---|
+| TOF share | 40.7% | ~41% | ✅ correct, leave it |
+| MOF share | 57.6% | ~27% | **cut by half** |
+| BOF share | **1.7%** | ~32% | **the whole problem** |
+| Videos/month | 5.3 | 10.3 (JJ) | double |
+| Proof-framed titles | 24% | 76% (JJ) | triple |
+| Prop-firm keyword | 12% | 59% (JJ) | quadruple |
+| Commercial destinations | 4 social, 0 offer | 1 offer | replace |
+| Shorts | none | none (JJ) | ✅ no change needed |
+| Video length | 14m | 17m | ✅ no change needed |
+
+**If only one thing changes: publish three bottom-of-funnel videos a month and accept that
+they will be the lowest-viewed videos on the channel.** That is the trade both winning
+channels made, and it is the only line in this table that separates a channel that
+sustains from one that sells.
