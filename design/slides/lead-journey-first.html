@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Lay out the lead journey first</title>
+<title>Map out Lead Journey</title>
 <link rel="stylesheet" href="../4pi.css">
 <link rel="stylesheet" href="../voice-quiet.css">
 </head>
@@ -10,11 +10,11 @@
 
 <section class="slide slide--center slide--mid">
 
-  <p class="lede lede--sm" style="margin-bottom:74px">&ldquo;What are the different steps/messages/ads I have to walk them through in order to get them closer to the conversion goal step by step?&rdquo;</p>
+  <h2 class="h3" style="margin-bottom:84px">Map out Lead Journey</h2>
 
-  <div class="jobs" style="height:210px">
+  <div class="jobs" style="height:200px">
 
-    <svg class="jobs__links" viewBox="0 0 1240 210" fill="none" aria-hidden="true">
+    <svg class="jobs__links" viewBox="0 0 1240 200" fill="none" aria-hidden="true">
       <defs>
         <marker id="lj" viewBox="0 0 10 10" refX="7" refY="5"
                 markerWidth="5" markerHeight="5" orient="auto">
@@ -23,40 +23,34 @@
         </marker>
       </defs>
 
-      <!-- The journey itself, running under the ads and into the goal. -->
-      <path d="M100 90 L 1078 90" stroke="#0071E3" stroke-width="3"
+      <!-- Drawn before the markers so it runs behind them; on top it cut
+           straight through the ad numbers. -->
+      <path d="M60 90 L 1103 90" stroke="#0071E3" stroke-width="3"
             stroke-linecap="round" marker-end="url(#lj)"/>
-
-      <!-- The three stages, drawn as spans of the journey rather than as
-           labels on individual ads. -->
-      <g stroke="#A9C8EC" stroke-width="2" stroke-linecap="round">
-        <path d="M130 142 L 130 150 L 445 150 L 445 142"/>
-        <path d="M455 142 L 455 150 L 625 150 L 625 142"/>
-        <path d="M635 142 L 635 150 L 950 150 L 950 142"/>
-      </g>
     </svg>
 
-    <p class="seq__stage" style="left:100px; top:34px; width:300px; text-align:left; color:var(--accent)">lead journey</p>
-
-    <!-- The ads sit on the journey rather than beside it: their stage is a
-         consequence of where they fall, which is the point. Tints run the
-         funnel ladder the deck has been using throughout. -->
-    <div class="jobs__ad" style="left:143px; top:58px; width:64px; height:64px; font-size:20px">1</div>
-    <div class="jobs__ad" style="left:323px; top:58px; width:64px; height:64px; font-size:20px">2</div>
-    <div class="jobs__ad" style="left:503px; top:58px; width:64px; height:64px; font-size:20px;
+    <!-- The ads sit on the journey rather than beside it, and the tint deepens
+         step by step toward the goal instead of sorting them into three named
+         stages — the stage is a consequence of where an ad falls. -->
+    <div class="jobs__ad" style="left:88px; top:58px; width:64px; height:64px; font-size:20px">1</div>
+    <div class="jobs__ad" style="left:293px; top:58px; width:64px; height:64px; font-size:20px;
+                                 background:#D3E4FB; border-color:#A9C8EC">2</div>
+    <div class="jobs__ad" style="left:498px; top:58px; width:64px; height:64px; font-size:20px;
                                  background:#C2DCFA; border-color:#9AC4F5">3</div>
-    <div class="jobs__ad" style="left:683px; top:58px; width:64px; height:64px; font-size:20px;
-                                 background:#9AC4F5; border-color:#6FA8EE">4</div>
-    <div class="jobs__ad" style="left:863px; top:58px; width:64px; height:64px; font-size:20px;
+    <div class="jobs__ad" style="left:703px; top:58px; width:64px; height:64px; font-size:20px;
+                                 background:#ADD0F7; border-color:#83B4F0">4</div>
+    <div class="jobs__ad" style="left:908px; top:58px; width:64px; height:64px; font-size:20px;
                                  background:#9AC4F5; border-color:#6FA8EE">5</div>
 
-    <div class="seq__conv" style="left:1090px; top:60px">&#10003;</div>
-    <p class="seq__conv-label" style="left:1010px; top:134px; width:220px">conversion goal</p>
+    <div class="seq__conv" style="left:1115px; top:60px">&#10003;</div>
 
-    <p class="seq__stage" style="left:167px; top:168px; width:240px; text-align:center">TOF</p>
-    <p class="seq__stage" style="left:435px; top:168px; width:200px; text-align:center">MOF</p>
-    <p class="seq__stage" style="left:662px; top:168px; width:240px; text-align:center">BOF</p>
+    <p class="seq__stage" style="left:25px;  top:138px; width:190px; text-align:center">Make aware of problem/opportunity</p>
+    <p class="seq__stage" style="left:230px; top:138px; width:190px; text-align:center">Educate on solution</p>
+    <p class="seq__stage" style="left:435px; top:138px; width:190px; text-align:center">DR straight offer</p>
+    <p class="seq__stage" style="left:640px; top:138px; width:190px; text-align:center">Case study</p>
+    <p class="seq__stage" style="left:845px; top:138px; width:190px; text-align:center">Objection handling</p>
 
+    <p class="seq__conv-label" style="left:1065px; top:138px; width:160px">conversion goal</p>
 
   </div>
 
