@@ -595,6 +595,31 @@
 }
 
 /* ============================================================================
+   SAME  —  two drawings with an equals between them. For a claim that two
+   things are one thing: an arrow would say the second follows from the
+   first, which is a different and weaker statement.
+   ========================================================================= */
+
+.same {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.same__eq {
+  flex: none;
+  margin: 0;
+  /* The glyph is two short bars, so it reads far smaller than its point
+     size — it needs to be set large to hold its own between two diagrams. */
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
    POOL  —  a reservoir of aware people. Drawn as a container deliberately
    taller than its contents: the empty part above the level line is the
    headroom, which is the thing the whole slide is about.
