@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lay out the lead journey first</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <p class="lede lede--sm" style="margin-bottom:74px">&ldquo;What are the different steps/messages/ads I have to walk them through in order to get them closer to the conversion goal step by step?&rdquo;</p>
+
+  <div class="jobs" style="height:210px">
+
+    <svg class="jobs__links" viewBox="0 0 1240 210" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="lj" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+
+      <!-- The journey itself, running under the ads and into the goal. -->
+      <path d="M100 90 L 1078 90" stroke="#0071E3" stroke-width="3"
+            stroke-linecap="round" marker-end="url(#lj)"/>
+
+      <!-- The three stages, drawn as spans of the journey rather than as
+           labels on individual ads. -->
+      <g stroke="#A9C8EC" stroke-width="2" stroke-linecap="round">
+        <path d="M130 142 L 130 150 L 445 150 L 445 142"/>
+        <path d="M455 142 L 455 150 L 625 150 L 625 142"/>
+        <path d="M635 142 L 635 150 L 950 150 L 950 142"/>
+      </g>
+    </svg>
+
+    <p class="seq__stage" style="left:100px; top:34px; width:300px; text-align:left; color:var(--accent)">lead journey</p>
+
+    <!-- The ads sit on the journey rather than beside it: their stage is a
+         consequence of where they fall, which is the point. Tints run the
+         funnel ladder the deck has been using throughout. -->
+    <div class="jobs__ad" style="left:143px; top:58px; width:64px; height:64px; font-size:20px">1</div>
+    <div class="jobs__ad" style="left:323px; top:58px; width:64px; height:64px; font-size:20px">2</div>
+    <div class="jobs__ad" style="left:503px; top:58px; width:64px; height:64px; font-size:20px;
+                                 background:#C2DCFA; border-color:#9AC4F5">3</div>
+    <div class="jobs__ad" style="left:683px; top:58px; width:64px; height:64px; font-size:20px;
+                                 background:#9AC4F5; border-color:#6FA8EE">4</div>
+    <div class="jobs__ad" style="left:863px; top:58px; width:64px; height:64px; font-size:20px;
+                                 background:#9AC4F5; border-color:#6FA8EE">5</div>
+
+    <div class="seq__conv" style="left:1090px; top:60px">&#10003;</div>
+    <p class="seq__conv-label" style="left:1010px; top:134px; width:220px">conversion goal</p>
+
+    <p class="seq__stage" style="left:167px; top:168px; width:240px; text-align:center">TOF</p>
+    <p class="seq__stage" style="left:435px; top:168px; width:200px; text-align:center">MOF</p>
+    <p class="seq__stage" style="left:662px; top:168px; width:240px; text-align:center">BOF</p>
+
+
+  </div>
+
+</section>
+
+</body>
+</html>
