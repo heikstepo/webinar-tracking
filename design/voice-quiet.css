@@ -595,6 +595,63 @@
 }
 
 /* ============================================================================
+   ROWS  —  a left column, an arrow, a right column. Built for the case where
+   the right column never changes: the repeated destination is the argument,
+   so it is set as a solid object rather than as grey supporting text.
+   ========================================================================= */
+
+.rows {
+  display: grid;
+  /* Columns sized to their content, not to fractions of a fixed width: with
+     fractions the grid centres but the ink does not, because the left column
+     holds a short label and the right one a wide pill. */
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 34px;
+  row-gap: 26px;
+}
+
+.rows__from {
+  margin: 0;
+  text-align: right;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  color: var(--ink);
+}
+
+.rows__arrow {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.rows__to {
+  justify-self: start;
+  margin: 0;
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid #D6E2F2;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+/* Stands in for the rows not drawn. Sits in the left column so it continues
+   that column rather than floating between the two. */
+.rows__more {
+  margin: 0;
+  text-align: right;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--ink-3);
+}
+
+/* ============================================================================
    SAME  —  two drawings with an equals between them. For a claim that two
    things are one thing: an arrow would say the second follows from the
    first, which is a different and weaker statement.
