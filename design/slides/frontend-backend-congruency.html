@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Front end vs back end congruency</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <h2 class="h3" style="margin-bottom:64px">Front end vs back end congruency</h2>
+
+  <div class="jobs" style="height:320px">
+
+    <svg class="jobs__links" viewBox="0 0 1240 320" fill="none" aria-hidden="true">
+      <!-- Where the front end stops and the back end starts. -->
+      <g stroke="#A9C8EC" stroke-width="2" stroke-linecap="round">
+        <path d="M70 38 L 70 30 L 300 30 L 300 38"/>
+        <path d="M356 38 L 356 30 L 1170 30 L 1170 38"/>
+      </g>
+
+      <!-- The chain of messages. It runs solid until the break, and dashed
+           after it: past that point this lead is no longer travelling. -->
+      <g stroke="#0071E3" stroke-width="3" stroke-linecap="round">
+        <path d="M304 104 L 352 104"/>
+        <path d="M594 104 L 642 104"/>
+      </g>
+      <path d="M884 104 L 932 104" stroke="#0071E3" stroke-width="3"
+            stroke-linecap="round" stroke-dasharray="3 9" opacity="0.4"/>
+
+      <!-- Out of the funnel, at the one message that spoke to someone else. -->
+      <path d="M765 194 L 765 246" stroke="#E31D3E" stroke-width="3"
+            stroke-linecap="round" marker-end="url(#drop)"/>
+      <defs>
+        <marker id="drop" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#E31D3E"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+    </svg>
+
+    <p class="seq__stage" style="left:85px;  top:0; width:200px; text-align:center">front end</p>
+    <p class="seq__stage" style="left:663px; top:0; width:200px; text-align:center">back end</p>
+
+    <div class="seq__pill" style="left:70px;  top:76px; width:230px; height:56px; font-size:23px">Ads</div>
+    <div class="seq__pill" style="left:360px; top:76px; width:230px; height:56px; font-size:23px">VSL</div>
+    <div class="seq__pill" style="left:650px; top:76px; width:230px; height:56px; font-size:23px">Emails</div>
+    <div class="seq__pill" style="left:940px; top:76px; width:230px; height:56px; font-size:23px">Pre-call systems</div>
+
+    <!-- Who each one is talking to. Three match; one does not, and that is the
+         only thing on the slide carrying colour. -->
+    <p class="formats__tag" style="position:absolute; left:185px; top:148px; transform:translateX(-50%)">$1M ARR</p>
+    <p class="formats__tag" style="position:absolute; left:475px; top:148px; transform:translateX(-50%)">$1M ARR</p>
+    <p class="formats__tag" style="position:absolute; left:765px; top:148px; transform:translateX(-50%);
+                                   background:#FCEBEE; color:#CC1734">$10k/mo</p>
+    <p class="formats__tag" style="position:absolute; left:1055px; top:148px; transform:translateX(-50%)">$1M ARR</p>
+
+    <p class="seq__stage" style="left:605px; top:258px; width:320px; text-align:center; color:#CC1734">cancels the call, or no-shows</p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
