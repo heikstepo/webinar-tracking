@@ -629,6 +629,88 @@
 .pyramid__band--5 { background: #9AC4F5; clip-path: polygon(32% 0%, 68% 0%, 60% 100%, 40% 100%); }
 
 /* ============================================================================
+   PHASES  —  a programme on one slide: what happens, when, and what each
+   part covers. Three cards carrying a time, a thing, and its contents, so
+   the whole shape of the engagement is legible without a slide per beat.
+   ========================================================================= */
+
+.phases {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.phase {
+  flex: 1;
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 30px 32px 34px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.phase svg {
+  display: block;
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.phase__when {
+  margin: 16px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Two lines whether it needs them or not, so the rules below line up across
+   the three cards and the lists start together. */
+.phase__what {
+  margin: 6px 0 0;
+  min-height: 66px;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  line-height: 1.22;
+  color: var(--ink);
+}
+
+.phase__rule { margin: 18px 0; height: 1px; background: var(--hairline); }
+
+.phase__list { margin: 0; padding: 0; list-style: none; }
+
+.phase__list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+.phase__list li:last-child { margin-bottom: 0; }
+
+.phase__list li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.phases__arrow { flex: none; align-self: center; width: 46px; height: 12px; }
+
+/* ============================================================================
    KIT  —  everything one stage is actually made of, as a wall of tiles. Each
    tile names who it speaks to, and the repetition is the argument: the wall
    only works if every tile says the same thing, so one that does not is
