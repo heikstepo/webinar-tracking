@@ -595,6 +595,83 @@
 }
 
 /* ============================================================================
+   KIT  —  everything one stage is actually made of, as a wall of tiles. Each
+   tile names who it speaks to, and the repetition is the argument: the wall
+   only works if every tile says the same thing, so one that does not is
+   findable at a glance.
+   ========================================================================= */
+
+.congr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.congr__label {
+  margin: 0 0 16px;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--ink-3);
+}
+
+.kit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  width: 662px;
+}
+
+.kit__tile {
+  width: 152px;
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 18px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.kit__tile svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Held to three lines so every tile is the same height and the chips line up
+   across a row — which is what makes the odd one out visible. */
+.kit__name {
+  margin: 10px 0 0;
+  min-height: 56px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.32;
+  color: var(--ink);
+}
+
+.kit__chip {
+  margin: 8px 0 0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #E6F0FD;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.kit__tile--off { background: #FCEBEE; }
+.kit__tile--off svg { stroke: #E0748A; }
+.kit__tile--off .kit__chip { background: #F7D3DA; color: #CC1734; }
+
+/* ============================================================================
    ROWS  —  a left column, an arrow, a right column. Built for the case where
    the right column never changes: the repeated destination is the argument,
    so it is set as a solid object rather than as grey supporting text.
