@@ -646,11 +646,11 @@
   stroke-linejoin: round;
 }
 
-/* Held to three lines so every tile is the same height and the chips line up
-   across a row — which is what makes the odd one out visible. */
+/* Held to two lines so a one-line name and a two-line name make the same
+   tile, and the wall reads as a grid rather than as a ragged edge. */
 .kit__name {
   margin: 10px 0 0;
-  min-height: 56px;
+  min-height: 38px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.32;
