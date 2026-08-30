@@ -595,6 +595,40 @@
 }
 
 /* ============================================================================
+   PYRAMID  —  a stack of tapering bands, widest at the top. Inverted, an
+   awareness pyramid is a funnel, which is the shape this deck already
+   speaks in, so the tint deepens downward on the same ladder everything
+   else uses: light is cold, deep is close.
+
+   Each band insets 8% per side over its own height, so the run of five
+   closes from full width to 20% and the edges meet across the gaps. It stops
+   there rather than at a point: the last band still has to hold a label, and
+   at mid-height 28% is the narrowest that stays readable.
+   ========================================================================= */
+
+.pyramid { width: var(--pw, 900px); flex: none; }
+
+.pyramid__band {
+  height: var(--pbh, 78px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--psz, 24px);
+  font-weight: 500;
+  letter-spacing: -0.004em;
+  color: var(--ink);
+  background: #E6F0FD;
+}
+
+.pyramid__band + .pyramid__band { margin-top: 6px; }
+
+.pyramid__band--1 { clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 8% 100%); }
+.pyramid__band--2 { background: #D3E4FB; clip-path: polygon(8% 0%, 92% 0%, 84% 100%, 16% 100%); }
+.pyramid__band--3 { background: #C2DCFA; clip-path: polygon(16% 0%, 84% 0%, 76% 100%, 24% 100%); }
+.pyramid__band--4 { background: #ADD0F7; clip-path: polygon(24% 0%, 76% 0%, 68% 100%, 32% 100%); }
+.pyramid__band--5 { background: #9AC4F5; clip-path: polygon(32% 0%, 68% 0%, 60% 100%, 40% 100%); }
+
+/* ============================================================================
    KIT  —  everything one stage is actually made of, as a wall of tiles. Each
    tile names who it speaks to, and the repetition is the argument: the wall
    only works if every tile says the same thing, so one that does not is
