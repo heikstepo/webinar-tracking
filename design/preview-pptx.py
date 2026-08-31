@@ -132,21 +132,31 @@ def render(path, outdir):
                 fnt = face(size, bool(r0.font.bold))
                 col = rgb(r0.font.color, (29, 29, 31)) if r0.font.color and r0.font.color.type is not None else (29, 29, 31)
                 bullet = '\u00b7   ' if '<a:buChar' in para._p.xml else ''
-                for ln in wrap(d, bullet + txt, fnt, w):
-                    block.append((ln, fnt, col, size, para.alignment))
+                # Use the paragraph's real leading and space-after. Guessing a
+                # multiple of the point size under-reports the height and the
+                # preview then shows text fitting that PowerPoint overflows.
+                lead = (para.line_spacing.pt if hasattr(para.line_spacing, 'pt')
+                        else (para.line_spacing * (r0.font.size.pt if r0.font.size else 18)
+                              if para.line_spacing else (r0.font.size.pt if r0.font.size else 18) * 1.2))
+                lead_px = lead * SCALE / 72
+                after_px = (para.space_after.pt * SCALE / 72) if para.space_after else 0
+                lines = wrap(d, bullet + txt, fnt, w)
+                for j, ln in enumerate(lines):
+                    block.append((ln, fnt, col, lead_px + (after_px if j == len(lines) - 1 else 0),
+                                  para.alignment))
 
-            total = sum(sz * 1.34 for _, _, _, sz, _ in block)
+            total = sum(adv for _, _, _, adv, _ in block)
             anchor = str(sh.text_frame.vertical_anchor or '')
             if 'MIDDLE' in anchor:
                 cy = y + (h - total) / 2
 
-            for ln, fnt, col, sz, align in block:
+            for ln, fnt, col, adv, align in block:
                 tw = d.textlength(ln, font=fnt)
                 tx = x
                 if align is not None and 'CENTER' in str(align):
                     tx = x + (w - tw) / 2
                 d.text((tx, cy), ln, font=fnt, fill=col)
-                cy += sz * 1.34
+                cy += adv
 
         out = os.path.join(outdir, 'slide-%02d.png' % idx)
         im.save(out)

@@ -79,10 +79,15 @@ function line(sl, text, opts) {
 function guarantees() {
   const sl = slide();
   line(sl, '2 Guarantees. Both in writing.', {
-    y: 1.6, h: 0.7, fontSize: 36, bold: true, charSpacing: -0.5
+    y: 1.86, h: 0.72, fontSize: 38, bold: true, charSpacing: -0.5
   });
 
-  const gap = 0.34, cw = (COL - gap) / 2, cy = 2.9, ch = 2.1;
+  /* Sized for the longer of the two titles wrapping to a second line, so the
+     rule below it never lands in the middle of the words. */
+  const padT = 0.36, numH = 0.28, titleH = 0.72, ruleGap = 0.12, bodyGap = 0.18, bodyH = 0.7, padB = 0.32;
+  const ch = padT + numH + titleH + ruleGap + bodyGap + bodyH + padB;
+  const gap = 0.34, cw = (COL - gap) / 2, cy = 3.02;
+
   const cards = [
     ['Guarantee 1', '30-Day ROI Guarantee', 'You’re in profit within 30 days. Or you get a full refund.'],
     ['Guarantee 2', '7-Day Alignment Guarantee', '7 days to see the work and make sure we’re a fit. Don’t like it? Full refund.']
@@ -90,12 +95,17 @@ function guarantees() {
   cards.forEach(([num, name, body], i) => {
     const x = PAD + i * (cw + gap);
     sl.addShape(pres.ShapeType.roundRect, {
-      x, y: cy, w: cw, h: ch, rectRadius: 0.18, fill: { color: CARD }, line: { color: CARD }
+      x, y: cy, w: cw, h: ch, rectRadius: 0.18, fill: { color: CARD }, line: { color: CARD },
+      shadow: { type: 'outer', blur: 14, offset: 3, angle: 90, color: '9AA3AE', opacity: 0.22 }
     });
-    sl.addText(num, { x: x + 0.42, y: cy + 0.3, w: cw - 0.84, h: 0.28, margin: 0, fit: 'none', fontFace: FONT, fontSize: 14, bold: true, color: ACCENT });
-    sl.addText(name, { x: x + 0.42, y: cy + 0.62, w: cw - 0.84, h: 0.44, margin: 0, fit: 'none', fontFace: FONT, fontSize: 23, bold: true, color: INK, charSpacing: -0.3 });
-    sl.addText(body, { x: x + 0.42, y: cy + 1.14, w: cw - 0.84, h: 0.8, margin: 0, fit: 'none', fontFace: FONT, fontSize: 16, color: INK2, lineSpacing: 23 });
+    const px = x + 0.46, pw = cw - 0.92;
+    sl.addText(num, { x: px, y: cy + padT, w: pw, h: numH, margin: 0, fit: 'none', fontFace: FONT, fontSize: 14, bold: true, color: ACCENT });
+    sl.addText(name, { x: px, y: cy + padT + numH, w: pw, h: titleH, margin: 0, fit: 'none', valign: 'top', fontFace: FONT, fontSize: 23, bold: true, color: INK, charSpacing: -0.4, lineSpacing: 29 });
+    sl.addShape(pres.ShapeType.line, { x: px, y: cy + padT + numH + titleH + ruleGap, w: pw, h: 0, line: { color: 'DCDCE1', width: 1 } });
+    sl.addText(body, { x: px, y: cy + padT + numH + titleH + ruleGap + bodyGap, w: pw, h: bodyH, margin: 0, fit: 'none', fontFace: FONT, fontSize: 17, color: INK2, lineSpacing: 24 });
   });
+
+  if (cy + ch > H - 0.6) throw new Error('guarantee cards overrun the slide: ' + (cy + ch));
 }
 guarantees();
 
@@ -181,7 +191,7 @@ result({ pics: [{ f: 'image14.png', x: 6.3, y: 3.39, w: 7.39, h: 2.81 }],
   const sl = slide();
   /* Clear of the wordmark, which runs to y=1.0. */
   line(sl, 'What happens after you join', {
-    y: 1.18, h: 0.62, fontSize: 34, bold: true, charSpacing: -0.5
+    y: 1.3, h: 0.66, fontSize: 36, bold: true, charSpacing: -0.5
   });
 
   const buckets = [
@@ -195,9 +205,20 @@ result({ pics: [{ f: 'image14.png', x: 6.3, y: 3.39, w: 7.39, h: 2.81 }],
      ['SOPs and trainings', 'Being built out now']]
   ];
 
+  /* The card is sized from its contents rather than guessed at: the longest
+     list sets the height, and every card takes that height. Guessing is what
+     pushed the sixth item out of the first card last time. */
+  const LEAD = 19, GAP = 5;                       // list leading and paragraph gap, pt
+  const maxItems = Math.max(...buckets.map(b => b[2].length));
+  const listH = (maxItems * LEAD + (maxItems - 1) * GAP) / 72;
+
+  const padT = 0.32, whenH = 0.26, titleH = 0.44, ruleGap = 0.16, listGap = 0.2, padB = 0.32;
+  const listTop = padT + whenH + titleH + ruleGap + listGap;
+  const ch = listTop + listH + padB;
+
   const gap = 0.26, cw = (COL - gap * 3) / 4;
-  const cy = 2.72, ch = 3.2;
-  const dotY = 2.26, dotD = 0.34;
+  const cy = 2.72;
+  const dotD = 0.36, dotY = cy - 0.46 - dotD / 2;
 
   /* One rail through all four markers: the four are a sequence, and without
      the rail they read as four unrelated boxes. */
@@ -216,24 +237,25 @@ result({ pics: [{ f: 'image14.png', x: 6.3, y: 3.39, w: 7.39, h: 2.81 }],
     });
     sl.addText(String(i + 1), {
       x: cx - dotD / 2, y: dotY, w: dotD, h: dotD, margin: 0, fit: 'none',
-      align: 'center', valign: 'middle', fontFace: FONT, fontSize: 12, bold: true, color: 'FFFFFF'
+      align: 'center', valign: 'middle', fontFace: FONT, fontSize: 13, bold: true, color: 'FFFFFF'
     });
 
     sl.addShape(pres.ShapeType.roundRect, {
-      x, y: cy, w: cw, h: ch, rectRadius: 0.18, fill: { color: CARD }, line: { color: CARD }
+      x, y: cy, w: cw, h: ch, rectRadius: 0.16, fill: { color: CARD }, line: { color: CARD },
+      shadow: { type: 'outer', blur: 14, offset: 3, angle: 90, color: '9AA3AE', opacity: 0.22 }
     });
 
-    const px = x + 0.3, pw = cw - 0.6;
-    sl.addText(when, { x: px, y: cy + 0.3, w: pw, h: 0.26, margin: 0, fit: 'none', fontFace: FONT, fontSize: 13, bold: true, color: ACCENT });
-    /* Every title is kept short enough to hold one line, so the rules and the
-       lists below start together across all four cards. */
-    sl.addText(what, { x: px, y: cy + 0.6, w: pw, h: 0.4, margin: 0, fit: 'none', valign: 'top', fontFace: FONT, fontSize: 19, bold: true, color: INK, charSpacing: -0.3 });
-    sl.addShape(pres.ShapeType.line, { x: px, y: cy + 1.12, w: pw, h: 0, line: { color: 'C9C9CE', width: 1 } });
+    const px = x + 0.28, pw = cw - 0.56;
+    sl.addText(when, { x: px, y: cy + padT, w: pw, h: whenH, margin: 0, fit: 'none', fontFace: FONT, fontSize: 13, bold: true, color: ACCENT });
+    sl.addText(what, { x: px, y: cy + padT + whenH, w: pw, h: titleH, margin: 0, fit: 'none', valign: 'top', fontFace: FONT, fontSize: 19, bold: true, color: INK, charSpacing: -0.3 });
+    sl.addShape(pres.ShapeType.line, { x: px, y: cy + padT + whenH + titleH + ruleGap, w: pw, h: 0, line: { color: 'DCDCE1', width: 1 } });
     sl.addText(items.map((t, j) => ({
-      text: t, options: { bullet: { characterCode: '2022', indent: 12 }, breakLine: j < items.length - 1 }
-    })), { x: px, y: cy + 1.3, w: pw, h: ch - 1.6, margin: 0, fit: 'none', valign: 'top',
-      fontFace: FONT, fontSize: 13, color: INK2, lineSpacing: 20, paraSpaceAfter: 6 });
+      text: t, options: { bullet: { characterCode: '2022', indent: 11 }, breakLine: j < items.length - 1 }
+    })), { x: px, y: cy + listTop, w: pw, h: listH + 0.1, margin: 0, fit: 'none', valign: 'top',
+      fontFace: FONT, fontSize: 13, color: INK2, lineSpacing: LEAD, paraSpaceAfter: GAP });
   });
+
+  if (cy + ch > H - 0.6) throw new Error('programme cards overrun the slide: ' + (cy + ch));
 }
 
 /* ------------------------------------------------------ 17. guarantees again */
