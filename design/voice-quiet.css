@@ -1619,3 +1619,99 @@
    the bottom margin without shrinking the whole family. */
 .build--dense { margin-top: 70px; }
 .build--dense li { font-size: 42px; margin-bottom: 27px; }
+
+/* ============================================================================
+   DECODE  —  a paper sentence taken apart. Each stage carries the phrase as
+   it was written, quoted and set quiet, and directly under it the same thing
+   said plainly. The quoted line is deliberately the smaller of the two: the
+   jargon is what we are translating away from, not toward.
+
+   Four stages rather than six. The paper's terms group into inputs, history,
+   weighing and summary, and a row of six cards at this width would starve
+   each one of measure.
+   ========================================================================= */
+
+.decode { display: flex; align-items: stretch; gap: 20px; }
+
+.decode__card {
+  flex: 1;
+  background: var(--surface);
+  border-radius: var(--r-card);
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* The phrase as the paper writes it. Quiet, quoted, and allowed to run to
+   two lines — clipping it would hide the words the reader came in with. */
+.decode__term {
+  margin: 0;
+  /* Fixed block, not min-content: the longest phrase runs to three lines and
+     without a floor under all four the drawings stop sharing a baseline. */
+  min-height: 62px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.30;
+  letter-spacing: 0;
+  color: var(--ink-3);
+}
+
+.decode__art {
+  margin: 18px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decode__art svg {
+  width: 132px;
+  height: 84px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* The two strokes that carry the point of each drawing — the ad being scored,
+   the behaviours that turned out to matter — take the accent so the eye finds
+   the mechanism before it reads the caption. */
+.decode__art .hot { stroke: var(--blue); stroke-width: 2.2; }
+.decode__art .hot-fill { fill: var(--blue); stroke: none; }
+.decode__art .faint { stroke: #C3D4EA; }
+
+.decode__plain {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+/* Arrows sit between the cards, on the same centre line as the drawings. */
+.decode__arrow {
+  flex: none;
+  width: 26px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* Pinned to the drawings' centre line — 24 pad + 62 term + 18 margin + half
+     of an 84px drawing, less half the arrow — rather than centred in the card,
+     which put it level with the caption instead. */
+  padding-top: 140px;
+}
+.decode__arrow svg { width: 26px; height: 12px; }
+
+/* The question the whole apparatus exists to answer, set as one line under
+   the row. It is the paper's own claim in the reader's words, so it gets the
+   accent and nothing else on the slide competes with it. */
+.decode__ask {
+  margin: 40px auto 0;
+  max-width: 1040px;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.34;
+  letter-spacing: -0.004em;
+  color: var(--blue);
+}
