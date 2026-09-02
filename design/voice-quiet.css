@@ -1621,97 +1621,129 @@
 .build--dense li { font-size: 42px; margin-bottom: 27px; }
 
 /* ============================================================================
-   DECODE  —  a paper sentence taken apart. Each stage carries the phrase as
-   it was written, quoted and set quiet, and directly under it the same thing
-   said plainly. The quoted line is deliberately the smaller of the two: the
-   jargon is what we are translating away from, not toward.
+   DECODE  —  a paper sentence taken apart. Each card pins one of Meta's
+   phrases to the plain thing it means, so a reader who has just seen the
+   original paragraph can find every technical term again and read across.
 
-   Four stages rather than six. The paper's terms group into inputs, history,
-   weighing and summary, and a row of six cards at this width would starve
-   each one of measure.
+   The size relationship is the whole point: the quoted phrase is small and
+   grey, the plain sentence is nearly twice its size in full ink. Jargon is
+   what we are translating away from, not toward, so it never leads.
    ========================================================================= */
 
-.decode { display: flex; align-items: stretch; gap: 20px; }
+.decode { display: flex; align-items: stretch; gap: 14px; }
 
 .decode__card {
   flex: 1;
+  min-width: 0;
   background: var(--surface);
   border-radius: var(--r-card);
-  padding: 24px 24px 28px;
+  padding: 22px 18px 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* The phrase as the paper writes it. Quiet, quoted, and allowed to run to
-   two lines — clipping it would hide the words the reader came in with. */
+/* Meta's own words, quoted. Given a floor of two lines so that the longest
+   phrase does not push its card's drawing out of line with the others. */
 .decode__term {
   margin: 0;
-  /* Fixed block, not min-content: the longest phrase runs to three lines and
-     without a floor under all four the drawings stop sharing a baseline. */
-  min-height: 62px;
-  font-size: 15px;
+  /* Floor of three lines: two of the phrases run to three, and without a
+     common floor their cards' drawings drop out of line with the others. */
+  min-height: 58px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.30;
+  line-height: 1.32;
   letter-spacing: 0;
   color: var(--ink-3);
 }
 
 .decode__art {
-  margin: 18px 0 20px;
+  margin: 16px 0 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .decode__art svg {
-  width: 132px;
-  height: 84px;
+  width: 140px;
+  height: 80px;
   fill: none;
-  stroke: #7FA8DC;
-  stroke-width: 1.5;
+  stroke: #A9BDD4;
+  stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-/* The two strokes that carry the point of each drawing — the ad being scored,
-   the behaviours that turned out to matter — take the accent so the eye finds
-   the mechanism before it reads the caption. */
+/* The accent marks the thing being judged and the behaviours that turned out
+   to matter — the mechanism, findable before any caption is read. */
 .decode__art .hot { stroke: var(--blue); stroke-width: 2.2; }
 .decode__art .hot-fill { fill: var(--blue); stroke: none; }
-.decode__art .faint { stroke: #C3D4EA; }
 
+/* The sentence that has to survive a five-second look. */
 .decode__plain {
   margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.38;
-  letter-spacing: -0.003em;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.30;
+  letter-spacing: -0.004em;
   color: var(--ink);
 }
 
-/* Arrows sit between the cards, on the same centre line as the drawings. */
+/* Concrete instances under one of the sentences. Set small and spaced so the
+   row reads as examples of the line above, not as a second claim. */
+.decode__eg {
+  margin: 12px 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--ink-3);
+}
+
 .decode__arrow {
   flex: none;
-  width: 26px;
+  width: 22px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* Pinned to the drawings' centre line — 24 pad + 62 term + 18 margin + half
-     of an 84px drawing, less half the arrow — rather than centred in the card,
-     which put it level with the caption instead. */
-  padding-top: 140px;
+  /* Pinned to the drawings' centre line rather than centred in the card,
+     which would put it level with the caption instead. */
+  padding-top: 130px;
 }
-.decode__arrow svg { width: 26px; height: 12px; }
+.decode__arrow svg { width: 22px; height: 12px; }
 
-/* The question the whole apparatus exists to answer, set as one line under
-   the row. It is the paper's own claim in the reader's words, so it gets the
-   accent and nothing else on the slide competes with it. */
-.decode__ask {
-  margin: 40px auto 0;
-  max-width: 1040px;
-  font-size: 27px;
+/* The spine, named. Four words under the four cards so the shape of the
+   thing is legible without reading a single card. */
+.decode__flow {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  /* Same gap and rail width as the card row, so each word sits under its
+     own card rather than near it. */
+  gap: 14px;
+}
+.decode__flow span {
+  flex: 1;
+  min-width: 0;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.34;
-  letter-spacing: -0.004em;
+  letter-spacing: -0.002em;
+  color: var(--blue);
+}
+.decode__flow i {
+  flex: none;
+  width: 22px;
+  font-style: normal;
+  font-size: 15px;
+  color: #9CC0EE;
+}
+
+/* The question the whole apparatus exists to answer. */
+.decode__ask {
+  margin: 34px auto 0;
+  max-width: 1080px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -0.005em;
   color: var(--blue);
 }

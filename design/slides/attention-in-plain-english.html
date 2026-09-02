@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Target-Aware Multi-Head Attention</title>
+<title>What Meta Actually Means</title>
 <link rel="stylesheet" href="../4pi.css">
 <link rel="stylesheet" href="../voice-quiet.css">
 </head>
@@ -10,120 +10,133 @@
 
 <section class="slide slide--center slide--mid">
 
-  <h2 class="h3" style="margin-bottom:38px">Target-Aware Multi-Head Attention</h2>
+  <h2 class="h3" style="margin-bottom:34px">What Meta Actually Means</h2>
 
-  <div class="decode" style="width:1240px">
+  <div style="width:1240px">
 
-    <!-- 1. The inputs. Two of the paper's terms, but one idea: a pile of
-            small facts, and the one ad being considered against them. -->
-    <div class="decode__card">
-      <p class="decode__term">&ldquo;tokenized sparse features&rdquo;<br>&ldquo;ad candidate information&rdquo;</p>
-      <div class="decode__art">
-        <svg viewBox="0 0 132 84" aria-hidden="true">
-          <!-- the ad itself, in the accent: it is the thing being scored -->
-          <rect class="hot" x="74" y="20" width="46" height="44" rx="7"/>
-          <path class="hot-fill" d="M91 33 L104 42 L91 51 Z"/>
-          <!-- the small facts Meta already holds -->
-          <rect x="12" y="16" width="30" height="10" rx="5"/>
-          <rect x="20" y="32" width="34" height="10" rx="5"/>
-          <rect x="10" y="48" width="26" height="10" rx="5"/>
-          <rect x="24" y="64" width="22" height="10" rx="5"/>
+    <div class="decode">
+
+      <!-- 1. The two things that go in: who, and which ad. -->
+      <div class="decode__card">
+        <p class="decode__term">&ldquo;tokenized sparse features<br>+ ad candidate information&rdquo;</p>
+        <div class="decode__art">
+          <svg viewBox="0 0 140 80" aria-hidden="true">
+            <!-- the person, and a few small things known about them -->
+            <circle cx="20" cy="26" r="8.5"/>
+            <path d="M7 52 C 7 43, 12.5 37, 20 37 C 27.5 37, 33 43, 33 52"/>
+            <rect x="41" y="20" width="15" height="6" rx="3"/>
+            <rect x="41" y="33" width="11" height="6" rx="3"/>
+            <rect x="41" y="46" width="15" height="6" rx="3"/>
+            <!-- plus -->
+            <path d="M70 33 V 47 M63 40 H 77"/>
+            <!-- the one ad in question, in the accent: it is what gets judged -->
+            <rect class="hot" x="88" y="15" width="46" height="50" rx="8"/>
+            <path class="hot-fill" d="M104 30 L 119 40 L 104 50 Z"/>
+          </svg>
+        </div>
+        <p class="decode__plain">Meta takes what it knows about the person + the ad it might show them.</p>
+      </div>
+
+      <div class="decode__arrow">
+        <svg viewBox="0 0 22 12" fill="none" aria-hidden="true">
+          <g stroke="#1877F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 6 H 15"/><path d="M11 2 L 18.5 6 L 11 10"/>
+          </g>
         </svg>
       </div>
-      <p class="decode__plain">Small facts Meta holds about the person, plus the one ad it&rsquo;s thinking of showing them</p>
-    </div>
 
-    <div class="decode__arrow">
-      <svg viewBox="0 0 26 12" fill="none" aria-hidden="true">
-        <g stroke="#0071E3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 6 H 18"/><path d="M14 2 L 22 6 L 14 10"/>
-        </g>
-      </svg>
-    </div>
+      <!-- 2. The history, drawn as a timeline: order is part of the signal. -->
+      <div class="decode__card">
+        <p class="decode__term">&ldquo;fused with user<br>behavior sequences&rdquo;</p>
+        <div class="decode__art">
+          <svg viewBox="0 0 140 80" aria-hidden="true">
+            <path d="M10 40 H 130"/>
+            <path d="M14 40 V 30 M40 40 V 52 M66 40 V 30 M92 40 V 52 M118 40 V 30"/>
+            <circle cx="14" cy="40" r="6"/>
+            <circle cx="40" cy="40" r="6"/>
+            <circle cx="66" cy="40" r="6"/>
+            <circle cx="92" cy="40" r="6"/>
+            <circle cx="118" cy="40" r="6"/>
+          </svg>
+        </div>
+        <p class="decode__plain">Then it adds what that person has done before.</p>
+        <p class="decode__eg">Watched &middot; Clicked &middot; Ignored<br>Engaged &middot; Bought</p>
+      </div>
 
-    <!-- 2. The history. Drawn as a run of beads on one line, because the
-            paper's word is *sequence* — the order is part of the signal. -->
-    <div class="decode__card">
-      <p class="decode__term">&ldquo;fused with user behavior sequences&rdquo;</p>
-      <div class="decode__art">
-        <svg viewBox="0 0 132 84" aria-hidden="true">
-          <path d="M12 42 H 120"/>
-          <circle cx="14" cy="42" r="7"/>
-          <circle cx="40" cy="42" r="7"/>
-          <circle cx="66" cy="42" r="7"/>
-          <circle cx="92" cy="42" r="7"/>
-          <circle cx="118" cy="42" r="7"/>
+      <div class="decode__arrow">
+        <svg viewBox="0 0 22 12" fill="none" aria-hidden="true">
+          <g stroke="#1877F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 6 H 15"/><path d="M11 2 L 18.5 6 L 11 10"/>
+          </g>
         </svg>
       </div>
-      <p class="decode__plain">Held up against what they watched, clicked, ignored, engaged with, bought</p>
-    </div>
 
-    <div class="decode__arrow">
-      <svg viewBox="0 0 26 12" fill="none" aria-hidden="true">
-        <g stroke="#0071E3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 6 H 18"/><path d="M14 2 L 22 6 L 14 10"/>
-        </g>
-      </svg>
-    </div>
+      <!-- 3. The weighing. Every past action is reached; only some of the
+              lines carry weight, and they all land on the one ad. -->
+      <div class="decode__card">
+        <p class="decode__term">&ldquo;multi-head attention&rdquo; + &ldquo;weigh a user&rsquo;s past behaviors against the specific ad&rdquo;</p>
+        <div class="decode__art">
+          <svg viewBox="0 0 140 80" aria-hidden="true">
+            <circle cx="12" cy="10" r="5"/>
+            <circle class="hot" cx="12" cy="25" r="5"/>
+            <circle cx="12" cy="40" r="5"/>
+            <circle class="hot" cx="12" cy="55" r="5"/>
+            <circle cx="12" cy="70" r="5"/>
+            <path d="M19 10 C 50 10, 52 40, 78 40"/>
+            <path class="hot" d="M19 25 C 50 25, 52 40, 78 40"/>
+            <path d="M19 40 H 78"/>
+            <path class="hot" d="M19 55 C 50 55, 52 40, 78 40"/>
+            <path d="M19 70 C 50 70, 52 40, 78 40"/>
+            <rect class="hot" x="86" y="16" width="44" height="48" rx="8"/>
+            <path class="hot-fill" d="M102 30 L 116 40 L 102 50 Z"/>
+          </svg>
+        </div>
+        <p class="decode__plain">Meta looks through that history and figures out what matters most for THIS ad.</p>
+      </div>
 
-    <!-- 3. The weighing. The fan is the whole idea: every past action is
-            reached, but only some of the lines carry weight — and two of
-            them are joined, which is the higher-order part. -->
-    <div class="decode__card">
-      <p class="decode__term">&ldquo;multi-head attention&rdquo;<br>&ldquo;higher-order interactions&rdquo;</p>
-      <div class="decode__art">
-        <svg viewBox="0 0 132 84" aria-hidden="true">
-          <circle cx="16" cy="42" r="7"/>
-          <path class="faint" d="M24 42 C 58 42, 64 12, 98 12"/>
-          <path class="hot"   d="M24 42 C 58 42, 64 29, 98 29"/>
-          <path class="faint" d="M24 42 H 98"/>
-          <path class="hot"   d="M24 42 C 58 42, 64 55, 98 55"/>
-          <path class="faint" d="M24 42 C 58 42, 64 72, 98 72"/>
-          <circle class="faint" cx="104" cy="12" r="6"/>
-          <circle class="hot"   cx="104" cy="29" r="6"/>
-          <circle class="faint" cx="104" cy="42" r="6"/>
-          <circle class="hot"   cx="104" cy="55" r="6"/>
-          <circle class="faint" cx="104" cy="72" r="6"/>
-          <!-- the two that matter, bracketed together: a pair, not two singles -->
-          <path class="hot" d="M116 29 H 122 V 55 H 116"/>
+      <div class="decode__arrow">
+        <svg viewBox="0 0 22 12" fill="none" aria-hidden="true">
+          <g stroke="#1877F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 6 H 15"/><path d="M11 2 L 18.5 6 L 11 10"/>
+          </g>
         </svg>
       </div>
-      <p class="decode__plain">Which of those actions matter for this ad &mdash; and which combinations</p>
-    </div>
 
-    <div class="decode__arrow">
-      <svg viewBox="0 0 26 12" fill="none" aria-hidden="true">
-        <g stroke="#0071E3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 6 H 18"/><path d="M14 2 L 22 6 L 14 10"/>
-        </g>
-      </svg>
-    </div>
-
-    <!-- 4. The squeeze. Many beads in, one chip out — the drawing is the
-            inverse of the fan next to it, which is what "distilling" means. -->
-    <div class="decode__card">
-      <p class="decode__term">&ldquo;distilling long sequences into compact representations&rdquo;</p>
-      <div class="decode__art">
-        <svg viewBox="0 0 132 84" aria-hidden="true">
-          <circle cx="14" cy="12" r="6"/>
-          <circle cx="14" cy="29" r="6"/>
-          <circle cx="14" cy="42" r="6"/>
-          <circle cx="14" cy="55" r="6"/>
-          <circle cx="14" cy="72" r="6"/>
-          <path d="M22 12 C 56 12, 56 42, 82 42"/>
-          <path d="M22 29 C 56 29, 56 42, 82 42"/>
-          <path d="M22 42 H 82"/>
-          <path d="M22 55 C 56 55, 56 42, 82 42"/>
-          <path d="M22 72 C 56 72, 56 42, 82 42"/>
-          <rect class="hot" x="86" y="31" width="34" height="22" rx="11"/>
-        </svg>
+      <!-- 4. The squeeze. A long timeline narrowing to one short reading. -->
+      <div class="decode__card">
+        <p class="decode__term">&ldquo;higher-order interactions&rdquo; + &ldquo;distilling long sequences into compact representations&rdquo;</p>
+        <div class="decode__art">
+          <svg viewBox="0 0 140 80" aria-hidden="true">
+            <path d="M6 40 H 64"/>
+            <circle cx="8" cy="40" r="4.5"/>
+            <circle cx="22" cy="40" r="4.5"/>
+            <circle cx="36" cy="40" r="4.5"/>
+            <circle cx="50" cy="40" r="4.5"/>
+            <circle cx="64" cy="40" r="4.5"/>
+            <!-- the funnel that does the compressing -->
+            <path d="M70 24 L 86 36 L 86 44 L 70 56"/>
+            <!-- the short reading that comes out: a part-filled meter -->
+            <rect class="hot" x="94" y="31" width="40" height="18" rx="9"/>
+            <path class="hot-fill" d="M94 40 a9 9 0 0 1 9-9 h17 v18 h-17 a9 9 0 0 1 -9-9 z"/>
+          </svg>
+        </div>
+        <p class="decode__plain">Meta combines those patterns into a quick judgment of how relevant the ad is.</p>
       </div>
-      <p class="decode__plain">All of it squeezed into one short summary it can score in an instant</p>
+
+    </div>
+
+    <!-- The spine named, aligned to the cards above it, so the shape is
+         readable without reading a single card. -->
+    <div class="decode__flow">
+      <span>Person + Ad</span><i>&rarr;</i>
+      <span>Past Behavior</span><i>&rarr;</i>
+      <span>What Matters</span><i>&rarr;</i>
+      <span>Relevance</span>
     </div>
 
   </div>
 
-  <p class="decode__ask">&ldquo;Given everything this person has done before, how relevant is <em style="font-style:normal; text-decoration:underline; text-underline-offset:5px; text-decoration-thickness:2px">this</em> specific ad to them right now?&rdquo;</p>
+  <p class="decode__ask">&ldquo;Based on everything this person has done before, how relevant is <em style="font-style:normal; text-decoration:underline; text-underline-offset:5px; text-decoration-thickness:2px">this</em> specific ad to them right now?&rdquo;</p>
 
 </section>
 
