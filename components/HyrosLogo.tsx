@@ -39,13 +39,6 @@ function columnRuns(col: number): Run[] {
 
 const COLUMNS = Array.from({ length: COLS }, (_, col) => columnRuns(col));
 
-/**
- * Columns are separate <g> elements so they can animate independently, which
- * leaves a hairline seam between them at non-integer render sizes. A sliver of
- * horizontal overlap closes it; at 1/160th of a cell it is not visible.
- */
-const BLEED = 0.006;
-
 /** Per-column entrance delay, in seconds. The left column lands first. */
 const COLUMN_STAGGER = 0.045;
 
@@ -62,11 +55,20 @@ export function HyrosMark({
   delay?: number;
   className?: string;
 }) {
+  /*
+   * Columns are separate <g> elements so they can animate independently, which
+   * puts an anti-aliased edge on both sides of every seam. Two of those edges
+   * compositing never reaches full coverage, so a fractional cell size leaves
+   * visible hairlines down the mark. Snapping to a whole-pixel cell lands each
+   * boundary on one pixel and the seams disappear.
+   */
+  const cell = Math.max(1, Math.round(height / ROWS));
+
   return (
     <svg
       viewBox={`0 0 ${COLS} ${ROWS}`}
-      width={height * MARK_ASPECT}
-      height={height}
+      width={cell * COLS}
+      height={cell * ROWS}
       className={className}
       fill="currentColor"
       role="img"
@@ -83,13 +85,7 @@ export function HyrosMark({
           }
         >
           {runs.map((run) => (
-            <rect
-              key={run.y}
-              x={col - BLEED}
-              y={run.y}
-              width={1 + BLEED * 2}
-              height={run.h}
-            />
+            <rect key={run.y} x={col} y={run.y} width={1} height={run.h} />
           ))}
         </g>
       ))}
