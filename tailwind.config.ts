@@ -12,6 +12,7 @@ const config: Config = {
         panel: "#141821",
         edge: "#222836",
         accent: "#5b8cff",
+        hyros: "#5348f2",
       },
     },
   },
