@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Three concepts per ad</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   The journey read downwards: every ad on the line holds three creatives.
+
+   Stacked under each ad rather than laid side by side, so the three become
+   rows that can be named once on the left instead of twenty-four times across
+   the slide. Each column sits on its own panel — without one the grid reads as
+   loose tiles in rows, and "three inside one ad" is the whole claim. Each
+   column also inherits its ad's tint, which keeps it reading as that ad's
+   family rather than as three unrelated squares.
+   ========================================================================= */
+
+.pj { position: relative; width: 1240px; height: 356px; flex: none; }
+
+.pj__axis { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.pj__ad {
+  position: absolute; top: 32px;
+  width: 56px; height: 56px; border-radius: 50%;
+  border: 1.5px solid;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 19px; font-weight: 600; color: var(--ink);
+}
+
+/* A short drop from each ad onto its own panel, so the grouping is stated and
+   not merely implied by two things happening to share an x. */
+.pj__drop { position: absolute; top: 88px; width: 2px; height: 8px; background: #CFD8E2; }
+
+.pj__hold {
+  position: absolute; top: 94px;
+  width: 94px; height: 252px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+}
+
+.cre {
+  position: absolute;
+  width: 66px; height: 66px;
+  border-radius: 12px;
+  border: 1.5px solid;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px;
+}
+.cre svg { width: 15px; height: 15px; fill: rgba(20, 60, 120, 0.42); margin-bottom: 3px; }
+.cre i { display: block; height: 4px; border-radius: 2px; background: rgba(20, 60, 120, 0.16); }
+
+.pj__row {
+  position: absolute; left: 0; width: 130px; margin: 0;
+  text-align: right;
+  font-size: 18px; font-weight: 600; letter-spacing: -0.002em; color: #6C7A8C;
+}
+
+.pj__conv {
+  position: absolute; left: 1100px; top: 30px;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: #E7F5E3; border: 2px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; line-height: 1; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="pj">
+
+    <svg class="pj__axis" viewBox="0 0 1240 356" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="pj" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <!-- Drawn before the markers so it runs behind them. -->
+      <path d="M156 60 L 1092 60" stroke="#0071E3" stroke-width="3"
+            stroke-linecap="round" marker-end="url(#pj)"/>
+    </svg>
+
+    <div class="pj__ad" style="left:172px; background:#E6F0FD; border-color:#BFD6F7">1</div>
+    <div class="pj__ad" style="left:290px; background:#DDEAFC; border-color:#B3CEF3">2</div>
+    <div class="pj__ad" style="left:408px; background:#D3E4FB; border-color:#A9C8EC">3</div>
+    <div class="pj__ad" style="left:526px; background:#CAE0FA; border-color:#9FC2E9">4</div>
+    <div class="pj__ad" style="left:644px; background:#C2DCFA; border-color:#9AC4F5">5</div>
+    <div class="pj__ad" style="left:762px; background:#B8D6F9; border-color:#90BCF2">6</div>
+    <div class="pj__ad" style="left:880px; background:#ADD0F7; border-color:#83B4F0">7</div>
+    <div class="pj__ad" style="left:998px; background:#9AC4F5; border-color:#6FA8EE">8</div>
+
+    <div class="pj__conv">&#10003;</div>
+
+    <div class="pj__drop" style="left:199px"></div>
+    <div class="pj__drop" style="left:317px"></div>
+    <div class="pj__drop" style="left:435px"></div>
+    <div class="pj__drop" style="left:553px"></div>
+    <div class="pj__drop" style="left:671px"></div>
+    <div class="pj__drop" style="left:789px"></div>
+    <div class="pj__drop" style="left:907px"></div>
+    <div class="pj__drop" style="left:1025px"></div>
+    <div class="pj__hold" style="left:153px"></div>
+    <div class="pj__hold" style="left:271px"></div>
+    <div class="pj__hold" style="left:389px"></div>
+    <div class="pj__hold" style="left:507px"></div>
+    <div class="pj__hold" style="left:625px"></div>
+    <div class="pj__hold" style="left:743px"></div>
+    <div class="pj__hold" style="left:861px"></div>
+    <div class="pj__hold" style="left:979px"></div>
+
+    <p class="pj__row" style="top:134px">Concept 1</p>
+    <p class="pj__row" style="top:212px">Concept 2</p>
+    <p class="pj__row" style="top:290px">Concept 3</p>
+
+    <div class="cre" style="left:167px; top:110px; background:#E6F0FD; border-color:#BFD6F7"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:167px; top:188px; background:#E6F0FD; border-color:#BFD6F7"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:167px; top:266px; background:#E6F0FD; border-color:#BFD6F7"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:285px; top:110px; background:#DDEAFC; border-color:#B3CEF3"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:285px; top:188px; background:#DDEAFC; border-color:#B3CEF3"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:285px; top:266px; background:#DDEAFC; border-color:#B3CEF3"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:403px; top:110px; background:#D3E4FB; border-color:#A9C8EC"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:403px; top:188px; background:#D3E4FB; border-color:#A9C8EC"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:403px; top:266px; background:#D3E4FB; border-color:#A9C8EC"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:521px; top:110px; background:#CAE0FA; border-color:#9FC2E9"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:521px; top:188px; background:#CAE0FA; border-color:#9FC2E9"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:521px; top:266px; background:#CAE0FA; border-color:#9FC2E9"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:639px; top:110px; background:#C2DCFA; border-color:#9AC4F5"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:639px; top:188px; background:#C2DCFA; border-color:#9AC4F5"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:639px; top:266px; background:#C2DCFA; border-color:#9AC4F5"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:757px; top:110px; background:#B8D6F9; border-color:#90BCF2"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:757px; top:188px; background:#B8D6F9; border-color:#90BCF2"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:757px; top:266px; background:#B8D6F9; border-color:#90BCF2"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:875px; top:110px; background:#ADD0F7; border-color:#83B4F0"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:875px; top:188px; background:#ADD0F7; border-color:#83B4F0"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:875px; top:266px; background:#ADD0F7; border-color:#83B4F0"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:993px; top:110px; background:#9AC4F5; border-color:#6FA8EE"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:993px; top:188px; background:#9AC4F5; border-color:#6FA8EE"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+    <div class="cre" style="left:993px; top:266px; background:#9AC4F5; border-color:#6FA8EE"><svg viewBox="0 0 12 12"><path d="M4 3 L9.5 6 L4 9 Z"/></svg><i style="width:30px"></i><i style="width:20px"></i></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
