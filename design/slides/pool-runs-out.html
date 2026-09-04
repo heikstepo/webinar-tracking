@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The pool runs out</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   Local to this slide, because it is the only animated one.
+
+   Deliberately no CSS transitions anywhere. A screenshotter cannot keep real
+   time, so anything animated by the browser's own clock smears across frames
+   that were captured out of it. Instead render(t) computes every colour,
+   opacity and offset as a number, and the frame at t is the same frame every
+   time it is asked for.
+   ========================================================================= */
+
+.stage { position: relative; width: 1240px; height: 400px; flex: none; }
+
+.stage .tile {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+#pool {
+  position: absolute;
+  left: 360px; top: 30px; width: 400px; height: 340px;
+  border-radius: 26px;
+  border: 2px solid #BFD6F7;
+  background: #EFF6FE;
+}
+
+#poolhead {
+  position: absolute; left: 360px; top: 52px; width: 400px;
+  margin: 0; text-align: center;
+  font-size: 19px; font-weight: 600; color: #2A7BE0;
+}
+
+/* The one word the drawing cannot say on its own. */
+#gone {
+  position: absolute; left: 360px; top: 176px; width: 400px;
+  margin: 0; text-align: center;
+  font-size: 36px; font-weight: 600; letter-spacing: -0.012em;
+  color: var(--red);
+  opacity: 0;
+}
+
+.dot {
+  position: absolute;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #6FA8EE;
+}
+
+/* The level line is the one rule here meant to move, so it is dashed. */
+#level {
+  position: absolute; left: 386px; width: 348px;
+  border-top: 2px dashed #A9C8EC;
+}
+
+#conv {
+  position: absolute; left: 1075px; top: 161px;
+  width: 78px; height: 78px; border-radius: 50%;
+  background: #E7F5E3; border: 2px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34px; line-height: 1; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="stage">
+
+    <svg id="links" viewBox="0 0 1240 400" fill="none" aria-hidden="true"
+         style="position:absolute; inset:0; width:100%; height:100%">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="ahg" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#D3D8DF"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g stroke="#0071E3" stroke-width="3" stroke-linecap="round">
+        <!-- the two feeder spokes, absent until the funnel gets built -->
+        <path id="f1" d="M258 105 C 310 105, 300 170, 350 178" marker-end="url(#ah)" opacity="0"/>
+        <path id="f2" d="M258 265 C 310 265, 300 222, 350 214" marker-end="url(#ah)" opacity="0"/>
+        <!-- the pull that was profitable from day one -->
+        <path id="pull" d="M768 200 L 840 200" marker-end="url(#ah)"/>
+        <path id="out"  d="M1008 200 L 1065 200" marker-end="url(#ah)"/>
+      </g>
+    </svg>
+
+    <div class="tile" id="tof" style="left:100px; top:60px;  width:158px; height:90px">TOF ads</div>
+    <div class="tile" id="mof" style="left:100px; top:220px; width:158px; height:90px">MOF ads</div>
+
+    <div id="pool"></div>
+    <p id="poolhead">aware people</p>
+    <p id="gone">gone</p>
+    <div id="level"></div>
+    <div id="dots"></div>
+
+    <div class="tile" style="left:850px; top:140px; width:158px; height:120px">BOF DR ads</div>
+    <div id="conv">&#10003;</div>
+
+  </div>
+
+</section>
+
+<script>
+// ---------------------------------------------------------------------------
+// The pool's people, placed by hand rather than by a grid so the fill order is
+// explicit: bottom row first, left to right. Draining has to take from the top,
+// the way a level falls, and a wrapped grid fills the wrong way round.
+// ---------------------------------------------------------------------------
+var COLS = 10, ROWS = 5, N = COLS * ROWS;
+var dots = [];
+(function build() {
+  var host = document.getElementById('dots');
+  for (var r = 0; r < ROWS; r++) {          // r = 0 is the bottom row
+    for (var c = 0; c < COLS; c++) {
+      var d = document.createElement('span');
+      d.className = 'dot';
+      d.style.left = (407 + c * 34) + 'px';
+      d.style.top  = (329 - r * 32) + 'px';
+      host.appendChild(d);
+      dots.push(d);
+    }
+  }
+})();
+
+var $ = function (id) { return document.getElementById(id); };
+var poolEl = $('pool'), goneEl = $('gone'), headEl = $('poolhead'),
+    lvlEl = $('level'), convEl = $('conv'),
+    f1 = $('f1'), f2 = $('f2'), pull = $('pull'), out = $('out'),
+    tof = $('tof'), mof = $('mof');
+
+function clamp(u) { return u < 0 ? 0 : u > 1 ? 1 : u; }
+function ramp(t, a, b) { return clamp((t - a) / (b - a)); }
+function ease(u) { return u * u * (3 - 2 * u); }
+
+// Colours are mixed rather than swapped: the pool going grey is a thing that
+// happens over a second, not a class that flips on one frame.
+function hex(h) {
+  return [parseInt(h.substr(1, 2), 16), parseInt(h.substr(3, 2), 16), parseInt(h.substr(5, 2), 16)];
+}
+function mix(a, b, u) {
+  var x = hex(a), y = hex(b);
+  return 'rgb(' + Math.round(x[0] + (y[0] - x[0]) * u) + ','
+               + Math.round(x[1] + (y[1] - x[1]) * u) + ','
+               + Math.round(x[2] + (y[2] - x[2]) * u) + ')';
+}
+
+// Every visual is a pure function of t. Nothing accumulates between frames, so
+// any frame can be rendered on its own and captured in any order.
+function render(t) {
+  // 0.0–1.4 selling · 1.4–5.8 draining · 5.8–8.4 gone
+  // 7.5–8.4 the funnel gets built · 8.4–11.2 refilling · 11.2–12 running
+  var drained = ease(ramp(t, 1.4, 5.8));
+  var refill  = ease(ramp(t, 8.4, 11.2));
+  var count   = N * (1 - drained + refill);
+
+  // Fractional count, so each dot fades on its own beat and the pool empties
+  // as a cascade rather than as fifty separate pops.
+  for (var i = 0; i < N; i++) {
+    var a = clamp(count - i);
+    dots[i].style.opacity = a;
+    dots[i].style.transform = 'scale(' + (0.4 + 0.6 * a) + ')';
+  }
+
+  // The line rides above the topmost row that still has anyone in it, so it
+  // steps down a notch per row. Gliding it continuously puts it through the
+  // middle of the half-empty row instead of above it.
+  var rowsF = count / COLS;
+  lvlEl.style.top = (315 - 32 * (Math.ceil(rowsF) - 1)) + 'px';
+  lvlEl.style.opacity = clamp(count / 2);
+
+  var dry = clamp(ramp(t, 5.3, 6.2) - ramp(t, 8.4, 9.1));
+  poolEl.style.background  = mix('#EFF6FE', '#F2F3F5', dry);
+  poolEl.style.borderColor = mix('#BFD6F7', '#DDE0E5', dry);
+  headEl.style.color       = mix('#2A7BE0', '#9AA0A8', dry);
+  goneEl.style.opacity     = clamp(ramp(t, 5.9, 6.4) - ramp(t, 8.4, 8.8));
+
+  // Starved is a matter of degree too: the last few people still buy.
+  var starved = 1 - clamp(count / 4);
+  convEl.style.background  = mix('#E7F5E3', '#F2F3F5', starved);
+  convEl.style.borderColor = mix('#34A518', '#DDE0E5', starved);
+  convEl.style.color       = mix('#248A13', '#B6BBC2', starved);
+  pull.style.stroke = out.style.stroke = mix('#0071E3', '#D3D8DF', starved);
+  var mk = starved > 0.5 ? 'url(#ahg)' : 'url(#ah)';
+  pull.setAttribute('marker-end', mk);
+  out.setAttribute('marker-end', mk);
+
+  // A sale lands about every 0.9s while there are still people to sell to.
+  var beat = (t % 0.9) < 0.2 ? Math.sin((t % 0.9) / 0.2 * Math.PI) : 0;
+  convEl.style.transform = 'scale(' + (1 + 0.11 * beat * (1 - starved)) + ')';
+
+  // The funnel gets built only once the pool has visibly run out.
+  var u1 = ease(ramp(t, 7.5, 8.2)), u2 = ease(ramp(t, 7.8, 8.5));
+  tof.style.opacity = u1; tof.style.transform = 'translateX(' + (-26 * (1 - u1)) + 'px)';
+  mof.style.opacity = u2; mof.style.transform = 'translateX(' + (-26 * (1 - u2)) + 'px)';
+  f1.setAttribute('opacity', u1);
+  f2.setAttribute('opacity', u2);
+}
+window.render = render;
+
+// Opened plainly, or printed, the slide shows the state it ends in — the funnel
+// built and running — so the still is the payoff rather than the setup.
+// Append #play to watch it run.
+if (location.hash === '#play') {
+  var t0 = performance.now();
+  (function loop(now) { render(((now - t0) / 1000) % 12); requestAnimationFrame(loop); })(t0);
+} else {
+  render(11.7);
+}
+</script>
+
+</body>
+</html>
