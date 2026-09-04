@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Warmest traffic first</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   Same construction as pool-runs-out: no CSS transitions anywhere, every value
+   computed from t by render(). The two play back to back, so they share the
+   tile, arrow and tick vocabulary on purpose — a viewer should read the second
+   as the same world later on, not as a different diagram.
+   ========================================================================= */
+
+.stage { position: relative; width: 1240px; height: 472px; flex: none; }
+
+.stage .tile {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+}
+
+.lbl {
+  position: absolute; margin: 0; text-align: center;
+  font-size: 18px; font-weight: 600; letter-spacing: -0.002em;
+}
+
+#conv {
+  position: absolute; left: 1105px; top: 181px;
+  width: 78px; height: 78px; border-radius: 50%;
+  background: #E7F5E3; border: 2px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34px; line-height: 1; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="stage">
+
+    <svg id="art" viewBox="0 0 1240 472" aria-hidden="true"
+         style="position:absolute; inset:0; width:100%; height:100%">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <!-- The rails the delivery rides. Never painted; they exist so the
+             particles have a real length to be measured along. -->
+        <path id="railA" d="M248 220 L 500 220" fill="none" stroke="none"/>
+        <path id="railB" d="M700 220 L 882 220" fill="none" stroke="none"/>
+      </defs>
+
+      <!-- The audience as heat: two cold bands and, at the centre, the one
+           Facebook reaches for first. Concentric rather than side by side,
+           because "warmest first" is about which part gets hit, not order. -->
+      <circle id="r3" cx="600" cy="220" r="200" fill="#ECEEF1" stroke="#E2E5E9" stroke-width="1.5"/>
+      <circle id="r2" cx="600" cy="220" r="146" fill="#E3E9F0" stroke="#D7DDE5" stroke-width="1.5"/>
+      <circle id="warm" cx="600" cy="220" r="92" fill="#C2DCFA" stroke="#8FBBF0" stroke-width="2"/>
+
+      <g id="dotsA"></g>
+      <g id="dotsB"></g>
+
+      <path id="outArrow" d="M1064 220 L 1098 220" fill="none" stroke="#0071E3"
+            stroke-width="3" stroke-linecap="round" marker-end="url(#ah)" opacity="0"/>
+    </svg>
+
+    <div class="tile" id="ad"  style="left:70px;  top:170px; width:178px; height:100px">new ad</div>
+    <div class="tile" id="web" style="left:890px; top:170px; width:174px; height:100px">webinar</div>
+
+    <p class="lbl" id="warmlbl" style="left:500px; top:208px; width:200px; color:#1B62C4">warmest traffic</p>
+    <p class="lbl" id="orglbl"  style="left:470px; top:432px; width:260px; color:#8A9099">from your organic</p>
+
+    <div id="conv">&#10003;</div>
+
+  </div>
+
+</section>
+
+<script>
+var $ = function (id) { return document.getElementById(id); };
+var railA = $('railA'), railB = $('railB'),
+    warm = $('warm'), warmlbl = $('warmlbl'), orglbl = $('orglbl'),
+    ad = $('ad'), web = $('web'), conv = $('conv'), outArrow = $('outArrow');
+
+// ---------------------------------------------------------------------------
+// Delivery, as particles riding a measured path. Positioning by
+// getPointAtLength rather than by animating a dash offset means each mark is a
+// real object that can be faded, sized and phased on its own.
+// ---------------------------------------------------------------------------
+var PER = 7;
+function makeDots(host, n) {
+  var out = [];
+  for (var i = 0; i < n; i++) {
+    var c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.setAttribute('r', 5); c.setAttribute('fill', '#1877F2');
+    host.appendChild(c); out.push(c);
+  }
+  return out;
+}
+var dotsA = makeDots($('dotsA'), PER), dotsB = makeDots($('dotsB'), PER);
+
+function clamp(u) { return u < 0 ? 0 : u > 1 ? 1 : u; }
+function ramp(t, a, b) { return clamp((t - a) / (b - a)); }
+function ease(u) { return u * u * (3 - 2 * u); }
+function hex(h) { return [parseInt(h.substr(1,2),16), parseInt(h.substr(3,2),16), parseInt(h.substr(5,2),16)]; }
+function mix(a, b, u) {
+  var x = hex(a), y = hex(b);
+  return 'rgb(' + Math.round(x[0]+(y[0]-x[0])*u) + ',' + Math.round(x[1]+(y[1]-x[1])*u)
+       + ',' + Math.round(x[2]+(y[2]-x[2])*u) + ')';
+}
+
+// One group of particles along one rail. `on` gates the whole stream, and each
+// mark fades in off the tail and out into the head, so nothing ever appears or
+// vanishes with a hard edge.
+function flow(dots, rail, t, start, speed, on) {
+  var len = rail.getTotalLength();
+  for (var i = 0; i < dots.length; i++) {
+    var u = ((t - start) * speed + i / dots.length) % 1;
+    if (u < 0 || !on) { dots[i].setAttribute('opacity', 0); continue; }
+    var p = rail.getPointAtLength(u * len);
+    dots[i].setAttribute('cx', p.x);
+    dots[i].setAttribute('cy', p.y);
+    dots[i].setAttribute('opacity', on * clamp(u / 0.12) * clamp((1 - u) / 0.18));
+  }
+}
+
+function render(t) {
+  // 1.0 the ad launches · 2.0 delivery starts · 3.0 the warm centre lights
+  // 5.0 the webinar opens · 5.6 sales start · 11 running
+  var adIn  = ease(ramp(t, 0.9, 1.7));
+  ad.style.opacity = adIn;
+  ad.style.transform = 'translateX(' + (-28 * (1 - adIn)) + 'px)';
+
+  var webIn = ease(ramp(t, 4.9, 5.7));
+  web.style.opacity = webIn;
+  web.style.transform = 'translateX(' + (28 * (1 - webIn)) + 'px)';
+
+  flow(dotsA, railA, t, 2.0, 0.42, ease(ramp(t, 2.0, 2.5)));
+  flow(dotsB, railB, t, 5.4, 0.42, ease(ramp(t, 5.4, 5.9)));
+
+  // The centre warms as the delivery lands on it. The two outer bands never
+  // change: that they are never reached is the point of the drawing.
+  var hit = ease(ramp(t, 2.9, 4.4));
+  warm.setAttribute('fill', mix('#C2DCFA', '#7FB3F2', hit));
+  warm.setAttribute('stroke', mix('#8FBBF0', '#1877F2', hit));
+  warm.setAttribute('r', 92 + 5 * hit);
+  warmlbl.style.color = mix('#1B62C4', '#FFFFFF', hit);
+  orglbl.style.opacity = ease(ramp(t, 0.3, 1.1));
+
+  outArrow.setAttribute('opacity', ease(ramp(t, 5.6, 6.2)));
+
+  // Sales land every 0.75s once the webinar is running, and the tick is the
+  // same one the next slide uses so the two read as one continuous story.
+  var live = ramp(t, 6.0, 6.4);
+  var beat = (t % 0.75) < 0.2 ? Math.sin((t % 0.75) / 0.2 * Math.PI) : 0;
+  conv.style.opacity = live;
+  conv.style.transform = 'scale(' + (1 + 0.13 * beat * live) + ')';
+}
+window.render = render;
+
+// Opened plainly, or printed, the slide shows the state it ends in.
+// Append #play to watch it run.
+if (location.hash === '#play') {
+  var t0 = performance.now();
+  (function loop(now) { render(((now - t0) / 1000) % 12); requestAnimationFrame(loop); })(t0);
+} else {
+  render(11.4);
+}
+</script>
+
+</body>
+</html>
