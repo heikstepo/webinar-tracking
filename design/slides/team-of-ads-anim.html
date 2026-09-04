@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One Ad Set. A Team of Ads.</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   Animated build of the team-of-ads funnel.
+
+   The blank circles are gone: an ad in a funnel band should look like an ad,
+   so each one is a real little creative — thumbnail, play mark, two lines of
+   copy, a call to action — and the thumbnail takes its band's tint, so depth
+   in the funnel is legible on the artwork itself and not only on the band
+   behind it.
+
+   As everywhere else here: no CSS transitions, every value computed from t.
+   ========================================================================= */
+
+.stage { position: relative; width: 1240px; height: 668px; flex: none; }
+
+.stage h2, .stage .sub {
+  position: absolute; left: 0; width: 1240px; margin: 0; text-align: center;
+}
+.stage .sub { color: var(--ink-2); font-size: 27px; font-weight: 400; letter-spacing: 0; }
+
+/* The bands. Tapered by clip-path rather than by borders, so the slope is a
+   true straight edge at any size and the fill goes right to it. */
+.band {
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+.band--1 { left: 120px; top: 140px; width: 1000px; height: 126px;
+           background: #E4ECF8; clip-path: polygon(0% 0%, 100% 0%, 91% 100%, 9% 100%); }
+.band--2 { left: 210px; top: 272px; width: 820px;  height: 116px;
+           background: #D5E3F6; clip-path: polygon(0% 0%, 100% 0%, 86.6% 100%, 13.4% 100%); }
+.band--3 { left: 320px; top: 394px; width: 600px;  height: 116px;
+           background: #C3D8F3; clip-path: polygon(0% 0%, 100% 0%, 76.7% 100%, 23.3% 100%); }
+.band--4 { left: 460px; top: 516px; width: 320px;  height: 26px; background: #B4CFF0; }
+
+.stagelbl {
+  position: absolute; margin: 0; text-align: center;
+  font-size: 19px; font-weight: 600; letter-spacing: -0.002em; color: #6C7A8C;
+}
+
+/* ---- one ad, drawn as an ad ---------------------------------------------- */
+.adc {
+  position: absolute;
+  width: 104px; height: 76px;
+  background: var(--surface);
+  border: 1px solid #E1E5EA;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(20, 25, 35, 0.09);
+  padding: 6px;
+}
+.adc__img {
+  height: 32px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+}
+.adc__img svg { width: 13px; height: 13px; fill: #1877F2; }
+.adc__bar { height: 5px; border-radius: 3px; background: #DCE0E5; margin-top: 6px; }
+.adc__cta {
+  position: absolute; right: 8px; bottom: 8px;
+  width: 30px; height: 11px; border-radius: 6px; background: #1877F2;
+}
+/* The bottom-of-funnel ad is the one asking for the money, so its call to
+   action is the whole width of it and the card carries the accent border. */
+.adc--bof { border-color: #8FBBF0; }
+.adc--bof .adc__cta { width: 56px; }
+
+#stem {
+  position: absolute; left: 619px; top: 542px; width: 2px; height: 28px;
+  background: #C9CED6;
+}
+
+#tick {
+  position: absolute; left: 588px; top: 570px;
+  width: 64px; height: 64px; border-radius: 50%;
+  background: #E7F5E3; border: 2px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 30px; line-height: 1; color: #248A13;
+}
+#burst {
+  position: absolute; left: 588px; top: 570px;
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 2px solid #34A518; opacity: 0;
+}
+#convlbl {
+  position: absolute; left: 420px; top: 646px; width: 400px; margin: 0;
+  text-align: center; font-size: 21px; font-weight: 600; color: #248A13;
+}
+
+/* The one person we follow all the way down. */
+#trav {
+  position: absolute;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #1877F2;
+  box-shadow: 0 0 0 7px rgba(24, 119, 242, 0.16);
+}
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <div class="stage">
+
+    <h2 class="h3" id="ttl" style="top:0">One Ad Set. A Team of Ads.</h2>
+    <p class="sub" id="sub" style="top:88px">Each ad does a different job in the funnel.</p>
+
+    <div class="band band--1" id="b1"></div>
+    <div class="band band--2" id="b2"></div>
+    <div class="band band--3" id="b3"></div>
+    <div class="band band--4" id="b4"></div>
+
+    <p class="stagelbl" id="l1" style="left:120px; top:150px; width:1000px">Top of funnel</p>
+    <p class="stagelbl" id="l2" style="left:210px; top:282px; width:820px">Middle of funnel</p>
+    <p class="stagelbl" id="l3" style="left:320px; top:404px; width:600px">Bottom of funnel</p>
+
+    <div id="trav" style="top:150px"></div>
+
+    <div id="stem"></div>
+    <div id="burst"></div>
+    <div id="tick">&#10003;</div>
+    <p id="convlbl">Conversion</p>
+
+  </div>
+
+</section>
+
+<script>
+var $ = function (id) { return document.getElementById(id); };
+
+// ---------------------------------------------------------------------------
+// The ads. Three at the top doing awareness work, one in the middle, one at
+// the bottom asking for the sale — the same counts the static slide had.
+// ---------------------------------------------------------------------------
+var PLAY = '<svg viewBox="0 0 12 12"><path d="M3 2 L10 6 L3 10 Z"/></svg>';
+var SPEC = [
+  { x: 448, y: 180, tint: '#E6F0FD', band: 0 },
+  { x: 568, y: 180, tint: '#E6F0FD', band: 0 },
+  { x: 688, y: 180, tint: '#E6F0FD', band: 0 },
+  { x: 568, y: 306, tint: '#D3E4FB', band: 1 },
+  { x: 568, y: 428, tint: '#B8D6F9', band: 2, bof: true }
+];
+var cards = SPEC.map(function (s) {
+  var d = document.createElement('div');
+  d.className = 'adc' + (s.bof ? ' adc--bof' : '');
+  d.style.left = s.x + 'px';
+  d.style.top = s.y + 'px';
+  d.innerHTML = '<div class="adc__img" style="background:' + s.tint + '">' + PLAY + '</div>'
+              + '<div class="adc__bar" style="width:78px"></div>'
+              + '<div class="adc__bar" style="width:50px"></div>'
+              + '<div class="adc__cta"></div>';
+  document.querySelector('.stage').insertBefore(d, $('trav'));
+  return d;
+});
+
+function clamp(u) { return u < 0 ? 0 : u > 1 ? 1 : u; }
+function ramp(t, a, b) { return clamp((t - a) / (b - a)); }
+function ease(u) { return u * u * (3 - 2 * u); }
+// A little overshoot on the things that pop in; without it a card arriving at
+// exactly its final size reads as a cut rather than as a landing.
+function pop(u) { return u >= 1 ? 1 : 1 - Math.pow(2, -10 * u) * Math.cos(u * 14); }
+
+var ttl = $('ttl'), sub = $('sub'), trav = $('trav'), stem = $('stem'),
+    tick = $('tick'), burst = $('burst'), convlbl = $('convlbl'),
+    bands = [$('b1'), $('b2'), $('b3'), $('b4')],
+    lbls  = [$('l1'), $('l2'), $('l3')];
+
+var BAND_MID = [203, 330, 452];   // vertical centre of each band's ads
+
+function render(t) {
+  var u;
+
+  u = ease(ramp(t, 0.00, 0.45));
+  ttl.style.opacity = u; ttl.style.transform = 'translateY(' + (14 * (1 - u)) + 'px)';
+  u = ease(ramp(t, 0.28, 0.70));
+  sub.style.opacity = u; sub.style.transform = 'translateY(' + (12 * (1 - u)) + 'px)';
+
+  // Bands drop in top to bottom, each scaling down from its own top edge, so
+  // the funnel appears to be poured rather than assembled.
+  for (var i = 0; i < 4; i++) {
+    var bu = ease(ramp(t, 0.58 + i * 0.14, 0.92 + i * 0.14));
+    bands[i].style.opacity = bu;
+    bands[i].style.transform = 'scaleY(' + (0.72 + 0.28 * bu) + ')';
+    if (i < 3) {
+      var lu = ease(ramp(t, 0.74 + i * 0.14, 1.04 + i * 0.14));
+      lbls[i].style.opacity = lu;
+    }
+  }
+
+  // The traveller's position drives the card pulses, so a card brightens
+  // exactly as the person reaches it rather than on a timer of its own.
+  var travU = ease(ramp(t, 2.95, 4.55));
+  var travY = 150 + (540 - 150) * travU;
+  // Held out to the left and drawn in only as the funnel closes, so the
+  // person never walks across the ads. Running it straight down the centre
+  // put it on top of the middle creative, which read as a fault.
+  var travX = 360 + 250 * Math.pow(travU, 2.2);
+  trav.style.top = travY + 'px';
+  trav.style.left = travX + 'px';
+  trav.style.opacity = clamp(ramp(t, 2.75, 3.05) - ramp(t, 4.5, 4.62));
+
+  var IN = [1.30, 1.42, 1.54, 1.95, 2.35];
+  for (var c = 0; c < cards.length; c++) {
+    var cu = pop(ramp(t, IN[c], IN[c] + 0.42));
+    var near = travU > 0 && travU < 1
+             ? clamp(1 - Math.abs(travY - BAND_MID[SPEC[c].band]) / 46) : 0;
+    cards[c].style.opacity = clamp(ramp(t, IN[c], IN[c] + 0.18));
+    cards[c].style.transform = 'scale(' + (0.86 + 0.14 * cu + 0.07 * near) + ')';
+    cards[c].style.boxShadow = '0 3px 10px rgba(20,25,35,0.09), 0 0 0 '
+                             + (3 * near) + 'px rgba(24,119,242,' + (0.20 * near) + ')';
+  }
+
+  stem.style.opacity = ease(ramp(t, 1.05, 1.35));
+
+  var tu = pop(ramp(t, 4.5, 5.0));
+  tick.style.opacity = clamp(ramp(t, 4.5, 4.7));
+  tick.style.transform = 'scale(' + (0.5 + 0.5 * tu) + ')';
+
+  // One ring, thrown off the tick as it lands.
+  var bu2 = ramp(t, 4.55, 5.35);
+  burst.style.opacity = bu2 > 0 && bu2 < 1 ? 0.45 * (1 - bu2) : 0;
+  burst.style.transform = 'scale(' + (1 + 1.1 * bu2) + ')';
+
+  u = ease(ramp(t, 4.85, 5.25));
+  convlbl.style.opacity = u;
+  convlbl.style.transform = 'translateY(' + (10 * (1 - u)) + 'px)';
+}
+window.render = render;
+
+// Opened plainly, or printed, the slide shows its finished state.
+// Append #play to watch it build.
+if (location.hash === '#play') {
+  var t0 = performance.now();
+  (function loop(now) { render(((now - t0) / 1000) % 6.4); requestAnimationFrame(loop); })(t0);
+} else {
+  render(6.0);
+}
+</script>
+
+</body>
+</html>
