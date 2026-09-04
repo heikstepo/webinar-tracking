@@ -1747,3 +1747,67 @@
   letter-spacing: -0.005em;
   color: var(--blue);
 }
+
+/* ============================================================================
+   ORBIT  —  one outcome in the middle, everything it actually takes ringed
+   around it. The ring is elliptical rather than circular so it fills a 16:9
+   stage instead of leaving two columns of dead space.
+
+   Exactly one satellite carries the accent. That is the whole argument the
+   drawing makes: all of these matter, and only one of them is today's
+   subject — said by colour, so the speaker doesn't have to caption it.
+   ========================================================================= */
+
+.orbit { position: relative; width: 1240px; height: 600px; flex: none; }
+
+.orbit__links { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.orbit__hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  box-shadow: 0 10px 30px rgba(24, 30, 40, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+
+/* Fixed width, not content width: the connectors are cut to a constant
+   half-extent, and pills that each sized to their own label would leave
+   the gaps ragged around the ring. */
+.orbit__node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 156px;
+  height: 46px;
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.orbit__node--on {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.28);
+}
