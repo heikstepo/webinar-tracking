@@ -1811,3 +1811,47 @@
   color: #fff;
   box-shadow: 0 8px 20px rgba(24, 119, 242, 0.28);
 }
+
+/* ============================================================================
+   PIECE  —  a single named thing, drawn big enough to be the subject rather
+   than one tile in a wall. The kit tiles are sized for a grid of many; these
+   are meant to be dropped into a slide on their own or in a pair, so the
+   drawing carries the weight and the name sits under it as a caption.
+   ========================================================================= */
+
+.pieces { display: flex; gap: 64px; justify-content: center; }
+
+.piece {
+  width: 300px;
+  background: var(--surface);
+  border-radius: 26px;
+  padding: 40px 24px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.piece svg {
+  display: block;
+  width: 124px;
+  height: 124px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* The one mark that says which kind of thing this is — the play on a video,
+   the head of the person presenting — carries the accent so the two drawings
+   are told apart before either caption is read. */
+.piece svg .hot { stroke: var(--blue); stroke-width: 2.2; }
+.piece svg .hot-fill { fill: var(--blue); stroke: none; }
+
+.piece__name {
+  margin: 26px 0 0;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  color: var(--ink);
+}
