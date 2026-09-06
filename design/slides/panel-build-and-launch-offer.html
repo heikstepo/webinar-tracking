@@ -17,12 +17,11 @@
    A hairline down the left edge, full height, so the panel reads as its own
    surface butting the video rather than as the frame simply running out.
 
-   The offer is two claims, not one sentence: what we do, and what it costs.
-   They were set as a single block joined by an em dash, which flattened them
-   to the same weight and buried the terms at the end of a paragraph. Now the
-   deliverable leads, a rule takes the dash's job, and the terms answer under
-   it. The rule is the same short blue one the case study panels use, so the
-   two read as one family.
+   One size for the whole statement, matching the offer panel later in the run
+   so the two land as the same claim said twice rather than as two designs.
+   An earlier pass split it into a large deliverable over a smaller set of
+   terms with a rule between; that gave the terms less weight than the promise,
+   which is backwards for the one line that makes the offer safe to take.
    ========================================================================= */
 @page { size: 800px 1080px; margin: 0; }
 
@@ -44,30 +43,14 @@
   background: #B9C0C9;
 }
 
-.offer {
-  margin: 0;
-  max-width: 680px;
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 1.22;
-  letter-spacing: -0.016em;
-  color: var(--ink);
-}
-
-.offer__rule {
-  width: 56px; height: 3px; border-radius: 2px;
-  background: var(--blue);
-  margin: 40px auto;
-}
-
-.offer__terms {
+.say {
   margin: 0;
   max-width: 640px;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 38px;
+  font-weight: 600;
   line-height: 1.34;
-  letter-spacing: -0.006em;
-  color: var(--ink-2);
+  letter-spacing: -0.01em;
+  color: var(--ink);
 }
 
 /* One emphasis, on the phrase the whole offer turns on. A weighted underline
@@ -88,15 +71,9 @@
 
   <!-- Breaks set by hand: the emphasised phrase needs a line of its own, or
        the underline splits and reads as two separate marks. -->
-  <p class="offer">
-    We&rsquo;ll build and launch<br>
-    your ads funnel<br>
-    in 14 days.
-  </p>
-
-  <div class="offer__rule"></div>
-
-  <p class="offer__terms">
+  <p class="say">
+    We&rsquo;ll build and launch your<br>
+    ads funnel in 14 days.<br>
     You only pay us from<br>
     <span class="say__mark">the revenue we generate</span>.
   </p>
