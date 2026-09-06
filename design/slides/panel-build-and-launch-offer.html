@@ -6,28 +6,55 @@
 <link rel="stylesheet" href="../4pi.css">
 <link rel="stylesheet" href="../voice-quiet.css">
 <style>
+/* ============================================================================
+   Panel version, warmed to the video's own palette.
+
+   Cream ground rather than pure white: against a warm-lit talking head a white
+   panel reads as a hole cut in the frame. The accent goes bronze for the same
+   reason — the deck's blue is a cool mark and it fights a warm ground.
+
+   Type sits at 50px, about 70% of the panel width, rather than filling it.
+   ========================================================================= */
 @page { size: 900px 1080px; margin: 0; }
-.slide { width: 900px; height: 1080px; padding: 90px 70px; background: #FFFFFF; }
+
+.slide {
+  width: 900px;
+  height: 1080px;
+  padding: 90px 70px;
+  background: #F7F5F1;
+}
+
+.say {
+  margin: 0;
+  max-width: 760px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -0.012em;
+  /* Warm near-black. True neutral ink looks blue-grey on a cream ground. */
+  color: #201D17;
+}
+
+/* One emphasis, in the ground's own family. */
+.say__mark {
+  padding-bottom: 0.10em;
+  border-bottom: 3px solid #B08A45;
+}
 </style>
 </head>
 <body>
 
 <section class="slide slide--center slide--mid">
 
-  <!-- Two claims, one emphasis. The house voice dropped the highlighter wash a
-       while back, so the reference's yellow block becomes a single thin rule.
-
-       The breaks are set by hand rather than left to wrap. Two reasons: the
-       emphasised phrase has to land on one line of its own or the rule splits
-       across two and reads as two underlines, and the dash has to end a line
-       rather than start one. Sized off the longest of the four — 730px at
-       58px against a 760px column, with 60px the point it touches the edge. -->
-  <h2 class="h2" style="font-size:58px; line-height:1.28; max-width:760px">
+  <!-- Breaks set by hand: the emphasised phrase needs a line of its own or the
+       rule splits and reads as two underlines, and the dash has to end a line
+       rather than start one. -->
+  <p class="say">
     We&rsquo;ll build and launch your<br>
     ads funnel in 14 days &mdash;<br>
     You only pay us from<br>
-    <span class="mark--rule">the revenue we generate</span>.
-  </h2>
+    <span class="say__mark">the revenue we generate</span>.
+  </p>
 
 </section>
 
