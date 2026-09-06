@@ -104,9 +104,9 @@ HEAD = '''<!doctype html>
                 font-weight: 600; color: var(--blue); }
 
 /* Thirteen small chips against one line of work. Wrapping is the point. */
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-.chips span { padding: 7px 14px; border-radius: 999px; background: var(--surface);
-              border: 1px solid var(--hairline); font-size: 16px; font-weight: 500;
+.chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.chips span { padding: 6px 12px; border-radius: 999px; background: var(--surface);
+              border: 1px solid var(--hairline); font-size: 14px; font-weight: 500;
               color: var(--ink-2); }
 
 /* Two things that make up one price. */
@@ -569,10 +569,20 @@ SLIDES = [
       <span class="who who--us">Us</span>
       <h3>Everything else.</h3>
       <div class="chips">
-        <span>Offer</span><span>Funnel</span><span>Landing pages</span><span>VSL script</span>
-        <span>Editing</span><span>Emails</span><span>SMS</span><span>Telegram</span>
-        <span>Ad scripts</span><span>Ad account</span><span>Campaigns</span><span>Pixel</span>
-        <span>Automations</span><span>Sales training</span>
+        <span>Cold traffic offer</span><span>Sales funnel</span><span>VSL landing page</span>
+        <span>VSL script</span><span>VSL editing</span><span>Application</span>
+        <span>Booking automations</span><span>Thank you page</span><span>Thank you video</span>
+        <span>FAQ videos</span><span>Sales assets</span><span>Pre call emails</span>
+        <span>Pre call SMS</span><span>Pre call sales assets</span><span>Tech integrations</span>
+        <span>Automations</span><span>Webinar slideshow</span><span>Webinar script</span>
+        <span>Opt in page</span><span>VIP upsell offer</span><span>Post registration page</span>
+        <span>Registration video</span><span>Webinar FAQ videos</span><span>Pre webinar emails</span>
+        <span>Pre webinar SMS</span><span>Telegram nurture</span><span>Post webinar SMS</span>
+        <span>SDR scripts</span><span>Ad scripts</span><span>Ad account</span>
+        <span>Campaigns</span><span>Pixel</span><span>Setters</span>
+        <span>Closers</span><span>Sales systems</span><span>Sales team training</span>
+        <span>Fulfillment</span><span>Iterate the funnel</span><span>Iterate the ads</span>
+        <span>Continuous testing</span><span>Train more reps</span>
       </div>
     </div>
   </div>
