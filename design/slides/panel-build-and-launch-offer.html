@@ -24,21 +24,21 @@
 
 /* Sized for where it ends up, not for how it looks here. The panel gets scaled
    to roughly 400px wide in the edit, so a 1px hairline lands at under half a
-   pixel and vanishes; 4px arrives as a visible line and still reads as a
-   hairline at that size. */
+   pixel and vanishes; 6px arrives as a clear line and still reads as a rule
+   rather than a bar at that size. */
 .edge {
   position: absolute;
   left: 0; top: 0; bottom: 0;
-  width: 4px;
-  background: #CDD2D8;
+  width: 6px;
+  background: #B9C0C9;
 }
 
 .say {
   margin: 0;
   max-width: 760px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 1.32;
+  line-height: 1.36;
   letter-spacing: -0.012em;
   color: var(--ink);
 }
