@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Doing $20K to $100K a month</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+@page { size: 800px 1080px; margin: 0; }
+
+.slide { width: 800px; height: 1080px; padding: 90px 60px; background: var(--ground); }
+
+/* Full-height hairline down the seam against the camera crop. 6px here so it
+   survives the scale down into the edit; see panel-template. */
+.edge { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: #B9C0C9; }
+
+.lead { margin: 0 0 26px; font-size: 26px; font-weight: 600; letter-spacing: -0.002em; color: var(--ink-3); }
+.big  { margin: 0; max-width: 680px; font-size: 62px; font-weight: 600;
+        line-height: 1.16; letter-spacing: -0.018em; color: var(--ink); }
+.say  { margin: 0; max-width: 660px; font-size: 36px; font-weight: 600;
+        line-height: 1.34; letter-spacing: -0.008em; color: var(--ink); }
+.sub  { margin: 22px 0 0; font-size: 26px; font-weight: 500; line-height: 1.38; color: var(--ink-2); }
+
+.tiles { display: flex; gap: 22px; justify-content: center; }
+.tile  { width: 220px; background: var(--surface); border: 1px solid var(--hairline);
+         border-radius: 22px; padding: 30px 18px 26px; text-align: center; }
+.tile svg { display: block; width: 62px; height: 62px; margin: 0 auto 16px;
+            fill: none; stroke: #7FA8DC; stroke-width: 1.6;
+            stroke-linecap: round; stroke-linejoin: round; }
+.tile b { display: block; font-size: 26px; font-weight: 600; letter-spacing: -0.004em; color: var(--ink); }
+/* The thing that is not there yet reads as an outline, not a card. */
+.tile--todo { background: none; border-style: dashed; border-color: #A9BDD4; }
+.tile--todo svg { stroke: #A9BDD4; }
+
+.art { margin: 0 0 42px; }
+
+.bul { margin: 34px 0 0; padding: 0; list-style: none; text-align: left; max-width: 620px; }
+.bul li { position: relative; padding-left: 34px; margin-bottom: 20px;
+          font-size: 26px; font-weight: 500; line-height: 1.32; color: var(--ink); }
+.bul li:last-child { margin-bottom: 0; }
+.bul li::before { content: ""; position: absolute; left: 0; top: 14px;
+                  width: 12px; height: 12px; border-radius: 50%; background: var(--blue); }
+.bul li.muted { color: var(--ink-2); }
+.bul li.muted::before { background: #C3CCD8; }
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+  <div class="edge"></div>
+
+  <div class="art" style="width:600px">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:20px">
+      <span style="font-size:56px; font-weight:600; letter-spacing:-0.02em; color:var(--ink)">$20K</span>
+      <span style="font-size:56px; font-weight:600; letter-spacing:-0.02em; color:var(--blue)">$100K</span>
+    </div>
+    <div style="height:14px; border-radius:8px;
+                background:linear-gradient(90deg,#CFE0F8 0%,#1877F2 100%)"></div>
+    <p style="margin:18px 0 0; font-size:26px; font-weight:600; color:var(--ink-2)">per month</p>
+  </div>
+  <p class="say">Selling your<br>high-ticket offer.</p>
+
+</section>
+
+</body>
+</html>
