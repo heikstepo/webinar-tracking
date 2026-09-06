@@ -67,6 +67,16 @@ CASES = [
         'chip': '',
         'note': '',
     },
+    {
+        'shape': 'solo',
+        'slug': 'matt',
+        'name': 'Matt',
+        'crop': '260%; background-position: 60% 27%',
+        'to':   '$50K+',
+        'unit': 'in less than two weeks',
+        'chip': '',
+        'note': '',
+    },
 ]
 
 
