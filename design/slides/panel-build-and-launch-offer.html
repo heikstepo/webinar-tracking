@@ -7,13 +7,11 @@
 <link rel="stylesheet" href="../voice-quiet.css">
 <style>
 /* ============================================================================
-   Panel version, warmed to the video's own palette.
+   Panel version: our ground, our ink, our blue. Back off the borrowed cream
+   and bronze — this is our style sitting beside his footage, not a copy of it.
 
-   Cream ground rather than pure white: against a warm-lit talking head a white
-   panel reads as a hole cut in the frame. The accent goes bronze for the same
-   reason — the deck's blue is a cool mark and it fights a warm ground.
-
-   Type sits at 50px, about 70% of the panel width, rather than filling it.
+   A hairline down the left edge, full height, so the panel reads as its own
+   surface butting the video rather than as the frame simply running out.
    ========================================================================= */
 @page { size: 900px 1080px; margin: 0; }
 
@@ -21,7 +19,18 @@
   width: 900px;
   height: 1080px;
   padding: 90px 70px;
-  background: #F7F5F1;
+  background: var(--ground);
+}
+
+/* Sized for where it ends up, not for how it looks here. The panel gets scaled
+   to roughly 400px wide in the edit, so a 1px hairline lands at under half a
+   pixel and vanishes; 4px arrives as a visible line and still reads as a
+   hairline at that size. */
+.edge {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: #CDD2D8;
 }
 
 .say {
@@ -31,20 +40,22 @@
   font-weight: 600;
   line-height: 1.32;
   letter-spacing: -0.012em;
-  /* Warm near-black. True neutral ink looks blue-grey on a cream ground. */
-  color: #201D17;
+  color: var(--ink);
 }
 
-/* One emphasis, in the ground's own family. */
+/* One emphasis. Namespaced because `.rule` already means a filled highlighter
+   block in 4pi.css and wins on specificity. */
 .say__mark {
   padding-bottom: 0.10em;
-  border-bottom: 3px solid #B08A45;
+  border-bottom: 3px solid var(--blue);
 }
 </style>
 </head>
 <body>
 
 <section class="slide slide--center slide--mid">
+
+  <div class="edge"></div>
 
   <!-- Breaks set by hand: the emphasised phrase needs a line of its own or the
        rule splits and reads as two underlines, and the dash has to end a line
