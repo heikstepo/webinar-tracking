@@ -90,6 +90,19 @@ CASES = [
         'chip': '',
         'note': '',
     },
+    {
+        'shape': 'solo',
+        'slug': 'mike',
+        'name': 'Mike',
+        # Cropped in past the branded banner behind him: another company's
+        # logo has no business sitting on one of our slides.
+        'crop': '138%; background-position: 50% 36%',
+        'to':   'MULTIPLE<br>6-FIGURES',
+        'size': '74px',
+        'unit': '',
+        'chip': '',
+        'note': '',
+    },
 ]
 
 
