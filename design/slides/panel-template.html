@@ -9,7 +9,7 @@
 /* ============================================================================
    PANEL  —  the right-hand half of a talking-head video frame.
 
-   900x1080 sits beside a 1020-wide camera crop in a 1920x1080 timeline, which
+   720x1080 sits beside a 1020-wide camera crop in a 1920x1080 timeline, which
    is the "a bit less than half" the reference frame uses. White rather than
    the deck's ground, because it butts up against a white panel on screen and
    the deck grey would read as a dirty edge against it.
@@ -18,12 +18,12 @@
    their layouts do not simply squeeze into this, so panel graphics get built
    for the shape rather than cropped into it.
    ========================================================================= */
-@page { size: 900px 1080px; margin: 0; }
+@page { size: 720px 1080px; margin: 0; }
 
 .slide {
-  width: 900px;
+  width: 720px;
   height: 1080px;
-  padding: 90px 70px;
+  padding: 90px 60px;
   background: #FFFFFF;
 }
 </style>
@@ -32,8 +32,8 @@
 
 <section class="slide slide--center slide--mid">
 
-  <p class="lede" style="max-width:640px">Panel format — 900 &times; 1080.<br>
-     Safe area is 70px in from each edge, 90px top and bottom.</p>
+  <p class="lede" style="max-width:640px">Panel format — 720 &times; 1080.<br>
+     Safe area is 60px in from each edge, 90px top and bottom.</p>
 
 </section>
 
