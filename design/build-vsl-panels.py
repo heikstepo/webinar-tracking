@@ -667,21 +667,12 @@ SLIDES = [
   </ul>
 '''),
 
-    # 32a — the risk-free claim, and why it exists. Four beats: the aside about
-    #       pricing, the claim, the competitive reason, the certainty. The
-    #       reason is set quiet because it is an explanation; the certainty
-    #       carries the accent because it is what he wants them to leave with.
+    # 32a — the claim on its own. It had the pricing aside, the competitive
+    #       reason and the certainty line stacked under it, which left nothing
+    #       for him to say: the panel was reading the script out loud. One
+    #       line, and the rest is spoken.
     ('risk-free-by-design', 'Risk-free by design', '''
-  <p class="lead">Pricing structure in a second</p>
-  <p class="big" style="font-size:50px">But this whole offer<br>is designed to be<br>
-    <span class="say__mark">risk-free</span> on your end.</p>
-  <p class="sub" style="margin-top:36px; max-width:640px">
-    Simply so our competitors literally<br>can&rsquo;t compete with it,
-    because<br>they can&rsquo;t get results.
-  </p>
-  <p class="say" style="margin-top:30px; font-size:30px; color:var(--blue); max-width:620px">
-    And I know we can get you<br>results for certain.
-  </p>
+  <p class="big">Risk-free<br>on your end.</p>
 '''),
 
     # 32b — the handoff into the case studies. Nothing on it but the question
