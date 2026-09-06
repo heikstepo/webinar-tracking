@@ -56,6 +56,17 @@ CASES = [
         'chip': 'Well over six figures in total',
         'note': '',
     },
+    {
+        'shape': 'solo',
+        'slug': 'simon',
+        'name': 'Simon',
+        'crop': '145%; background-position: 50% 2%',
+        # His words, not a dollar figure we coined. The + carries "well over".
+        'to':   '7 FIGURES+',
+        'unit': 'for his own high ticket offers',
+        'chip': '',
+        'note': '',
+    },
 ]
 
 
