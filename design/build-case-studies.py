@@ -136,5 +136,5 @@ for c in CASES:
               .replace('__TO__', c['to']).replace('__UNIT__', c['unit'])
               .replace('__CHIP__', c['chip']).replace('__NOTE__', c['note']))
     open('slides/case-%s.html' % c['slug'], 'w').write(out)
-    have = 'photo' if 'cs__pic--none' not in out else 'NO PHOTO, placeholder disc'
+    have = 'NO PHOTO, placeholder disc' if 'cs__pic cs__pic--none' in out else 'photo embedded'
     print('wrote slides/case-%s.html  (%s)' % (c['slug'], have))
