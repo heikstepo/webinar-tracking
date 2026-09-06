@@ -694,6 +694,18 @@ SLIDES = [
   </p>
 '''),
 
+    # 32c — lands after the case studies. Two beats only: the statement that
+    #       opens a question, and the answer, with the mark on the thing being
+    #       pointed at. No third line, because the pause between them is the
+    #       whole device.
+    ('a-reason-for-this-offer', 'A reason for this offer', '''
+  <p class="big" style="font-size:52px">There is a reason<br>why I&rsquo;m giving you<br>this offer.</p>
+  <p class="say" style="margin-top:46px; font-size:32px; max-width:620px">
+    We can get you results as well<br>via our
+    <span class="say__mark">high-ticket offer</span>.
+  </p>
+'''),
+
     # 33 — section opener for the money part.
     ('the-pricing-structure', 'The pricing structure', '''
   <p class="art" style="margin-bottom:32px"><span class="tag">Pricing</span></p>
