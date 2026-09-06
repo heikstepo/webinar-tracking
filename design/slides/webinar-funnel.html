@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Webinar Funnel</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* A map, not a slide: the canvas is sized to the diagram. */
+@page { size: 2400px 1700px; margin: 0; }
+.slide { width: 2400px; height: 1700px; padding: 0; display: block; }
+
+.map { position: relative; width: 2400px; height: 1700px; }
+.map svg.links { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.ttl { position: absolute; left: 70px; top: 54px; margin: 0;
+       font-size: 46px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink); }
+
+/* A single step. White, because the systems behind them are tinted — the
+   contrast is what separates one action from a bundle of them. */
+.bx { position: absolute; background: #fff; border: 1px solid #E1E5EA;
+      border-radius: 14px; box-shadow: 0 2px 6px rgba(20,25,35,.06);
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center; padding: 0 16px; }
+.bx span { font-size: 20px; font-weight: 600; letter-spacing: -0.004em;
+           line-height: 1.24; color: var(--ink); }
+.bx i { font-style: normal; margin-top: 5px; font-size: 15px; color: #8A9099; }
+.bx--pill { border-radius: 999px; }
+
+/* A system: several things that happen together, so they get one container
+   and a tint, and the steps stay white. */
+.pn { position: absolute; background: #EFF3F9; border: 1px solid #DCE4EF;
+      border-radius: 20px; }
+.hd { position: absolute; margin: 0; font-size: 24px; font-weight: 600;
+      letter-spacing: -0.008em; color: var(--ink); }
+.tl { position: absolute; background: #fff; border: 1px solid #E4E9F0;
+      border-radius: 11px; display: flex; align-items: center;
+      justify-content: center; text-align: center; padding: 0 14px;
+      font-size: 17px; font-weight: 500; line-height: 1.26; color: var(--ink); }
+
+.lb { position: absolute; margin: 0; font-weight: 600; letter-spacing: -0.002em; }
+
+.src { position: absolute; background: #fff; border: 1px solid #E1E5EA;
+       border-radius: 16px; box-shadow: 0 2px 6px rgba(20,25,35,.06); }
+.src span { position: absolute; display: block; width: 28px; height: 16px; }
+.src svg { width: 28px; height: 16px; fill: none; stroke: #1877F2; stroke-width: 1.7; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+  <div class="map">
+
+    <p class="ttl">Webinar Funnel</p>
+
+    <svg class="links" viewBox="0 0 2400 1700" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5"
+                markerHeight="5.5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="ap" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5"
+                markerHeight="5.5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#F2A3AE"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <path d="M 284 450 L 319 450 Q 335 450 335 434 L 335 316 Q 335 300 351 300 L 562 300" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 284 450 L 319 450 Q 335 450 335 466 L 335 624 Q 335 640 351 640 L 562 640" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 780 300 L 832 300" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1020 300 L 1035 300 Q 1050 300 1050 285 L 1050 232 Q 1050 221 1061 221 L 1072 221" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1020 300 L 1035 300 Q 1050 300 1050 315 L 1050 330 Q 1050 341 1061 341 L 1072 341" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1300 221 L 1324 221 Q 1340 221 1340 237 L 1340 314 Q 1340 330 1356 330 L 1372 330" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1300 341 L 1330.5 341 Q 1340 341 1340 350.5 L 1340 350.5 Q 1340 360 1349.5 360 L 1372 360" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 780 640 L 832 640" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1080 640 L 1184 640 Q 1200 640 1200 624 L 1200 486 Q 1200 470 1216 470 L 1372 470" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1820 406 L 1872 406" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 2100 407 L 2142 407" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1190 178 L 1190 164 Q 1190 150 1176 150 L 193 150 Q 177 150 177 166 L 177 292" fill="none" stroke="#F2A3AE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ap)"/>
+      <path d="M 960 675 L 960 716 Q 960 732 944 732 L 193 732 Q 177 732 177 716 L 177 608" fill="none" stroke="#F2A3AE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ap)"/>
+      <path d="M 2240 443 L 2240 778 Q 2240 800 2218 800 L 492 800 Q 470 800 470 822 L 470 872" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 530 1075 L 612 1075" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 820 1075 L 1072 1075" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1280 1075 L 1452 1075" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1660 1075 L 1832 1075" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 720 1111 L 720 1322" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+      <path d="M 1080 1480 L 1174 1480 Q 1190 1480 1190 1464 L 1190 1119" fill="none" stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+    </svg>
+
+    <div class="src" style="left:70px;top:300px;width:214px;height:300px"><span style="left:18px;top:18px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:18px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:18px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:18px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:18px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:18px;top:59px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:59px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:59px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:59px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:59px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:18px;top:100px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:100px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:100px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:100px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:100px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:18px;top:141px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:141px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:141px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:141px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:141px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:18px;top:182px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:182px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:182px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:182px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:182px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:18px;top:223px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:53px;top:223px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:88px;top:223px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:123px;top:223px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span><span style="left:158px;top:223px"><svg viewBox="0 0 28 16"><path d="M6 8 C6 5.2 8 3.5 10 3.5 C13 3.5 14.5 12.5 17.5 12.5 C19.5 12.5 21.5 10.8 21.5 8 C21.5 5.2 19.5 3.5 17.5 3.5 C14.5 3.5 13 12.5 10 12.5 C8 12.5 6 10.8 6 8 Z"/></svg></span></div>
+    <div class="pn" style="left:1380px;top:240px;width:440px;height:332px"></div>
+    <div class="pn" style="left:70px;top:880px;width:460px;height:390px"></div>
+    <div class="pn" style="left:620px;top:1330px;width:460px;height:300px"></div>
+    <p class="hd" style="left:1380px;top:196px;width:440px">Pre-Webinar Education System</p>
+    <p class="hd" style="left:70px;top:836px;width:460px">Back-End Education System</p>
+    <p class="hd" style="left:620px;top:1286px;width:460px">No-Close Follow-Up System</p>
+    <div class="tl" style="left:1402px;top:262px;width:189px;height:84px">Pre-Webinar Email Sequence</div>
+    <div class="tl" style="left:1609px;top:262px;width:189px;height:84px">Retargeting Ads</div>
+    <div class="tl" style="left:1402px;top:364px;width:189px;height:84px">YouTube Nurturing</div>
+    <div class="tl" style="left:1609px;top:364px;width:189px;height:84px">SMS Blasts</div>
+    <div class="tl" style="left:1402px;top:466px;width:189px;height:84px">Telegram</div>
+    <div class="tl" style="left:1609px;top:466px;width:189px;height:84px">Lead Magnet</div>
+    <div class="tl" style="left:92px;top:902px;width:201px;height:76px">Pre-Framing confirmation page</div>
+    <div class="tl" style="left:307px;top:902px;width:201px;height:76px">SDR Process</div>
+    <div class="tl" style="left:92px;top:992px;width:201px;height:76px">Retargeting Ads</div>
+    <div class="tl" style="left:307px;top:992px;width:201px;height:76px">15 Long-Form Pre-Call Emails</div>
+    <div class="tl" style="left:92px;top:1082px;width:201px;height:76px">Text Reminders</div>
+    <div class="tl" style="left:307px;top:1082px;width:201px;height:76px">Puzzle-Youtube Channel</div>
+    <div class="tl" style="left:92px;top:1172px;width:201px;height:76px">Pre-Call Sales Assets</div>
+    <div class="tl" style="left:307px;top:1172px;width:201px;height:76px">Text SDR Process</div>
+    <div class="tl" style="left:642px;top:1352px;width:201px;height:76px">Manual SDR Follow-Up</div>
+    <div class="tl" style="left:857px;top:1352px;width:201px;height:76px">Post-Call Emails</div>
+    <div class="tl" style="left:642px;top:1442px;width:201px;height:76px">YouTube</div>
+    <div class="tl" style="left:857px;top:1442px;width:201px;height:76px">Sales Assets</div>
+    <div class="tl" style="left:642px;top:1532px;width:201px;height:76px">Close-Up Calls</div>
+    <div class="tl" style="left:857px;top:1532px;width:201px;height:76px">Conversation with clients</div>
+    <div class="bx" style="left:570px;top:265px;width:210px;height:70px"><span>Webinar Opt-In Page</span></div>
+    <div class="bx" style="left:840px;top:265px;width:180px;height:70px"><span>Order Bump</span></div>
+    <div class="bx" style="left:1080px;top:178px;width:220px;height:86px"><span>Thank You Page A</span><i>[upsell]</i></div>
+    <div class="bx" style="left:1080px;top:298px;width:220px;height:86px"><span>Thank you Page B</span><i>[no upsell]</i></div>
+    <div class="bx" style="left:570px;top:605px;width:210px;height:70px"><span>Webinar Opt-In Page</span></div>
+    <div class="bx" style="left:840px;top:605px;width:240px;height:70px"><span>Webinar Confirmation Page</span></div>
+    <div class="bx bx--pill" style="left:1880px;top:371px;width:220px;height:72px"><span>Webinar Execution</span></div>
+    <div class="bx" style="left:2150px;top:371px;width:180px;height:72px"><span>Booked Call</span></div>
+    <div class="bx" style="left:620px;top:1039px;width:200px;height:72px"><span>Show Call</span></div>
+    <div class="bx" style="left:1080px;top:1039px;width:200px;height:72px"><span>Closed Deal</span></div>
+    <div class="bx" style="left:1460px;top:1039px;width:200px;height:72px"><span>Case Study</span></div>
+    <div class="bx" style="left:1840px;top:1039px;width:220px;height:72px"><span>Referral System</span></div>
+    <p class="lb" style="left:380px;top:262px;width:200px;color:#1B1D20;font-size:18px;text-align:center">With Order Bump</p>
+    <p class="lb" style="left:380px;top:602px;width:200px;color:#1B1D20;font-size:18px;text-align:center">No Order Bump</p>
+    <p class="lb" style="left:560px;top:116px;width:460px;color:#E31D3E;font-size:18px;text-align:center">Reports back to Pixel</p>
+    <p class="lb" style="left:360px;top:700px;width:460px;color:#E31D3E;font-size:18px;text-align:center">Reports back to Pixel</p>
+    <p class="lb" style="left:820px;top:1042px;width:260px;color:#5A5E66;font-size:17px;text-align:center">1-call-close</p>
+    <p class="lb" style="left:742px;top:1190px;width:200px;color:#5A5E66;font-size:17px;text-align:left">No Close</p>
+    <p class="lb" style="left:1210px;top:1290px;width:220px;color:#5A5E66;font-size:17px;text-align:left">2-call-close</p>
+
+  </div>
+</section>
+
+</body>
+</html>
