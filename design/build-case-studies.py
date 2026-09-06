@@ -77,6 +77,19 @@ CASES = [
         'chip': '',
         'note': '',
     },
+    {
+        'shape': 'solo',
+        'slug': 'abdul',
+        'name': 'Abdul',
+        'crop': '190%; background-position: 33% 14%',
+        # Again his words rather than a figure we coined. Two lines because
+        # the phrase is too long to hold the panel width on one.
+        'to':   'MULTIPLE<br>5-FIGURES',
+        'size': '74px',
+        'unit': '',
+        'chip': '',
+        'note': '',
+    },
 ]
 
 
@@ -156,7 +169,7 @@ TPL = '''<!doctype html>
 .cs__before { margin: 0 0 20px; font-size: 22px; font-weight: 500; color: var(--ink-3); }
 .cs__hero { margin: 0; font-size: 78px; font-weight: 600; letter-spacing: -0.03em;
             line-height: 1; color: var(--blue); }
-.cs__hero--solo { font-size: 96px; letter-spacing: -0.034em; }
+.cs__hero--solo { font-size: 96px; letter-spacing: -0.034em; line-height: 1.04; }
 
 /* Money in, money out. The arrow here is a real claim (spend went in, return
    came out) rather than a before/after, so both sides get a caption saying
@@ -220,8 +233,8 @@ HERO = '''  <p class="cs__before">%(before)s</p>
 
 # One number and nothing else. No before line to set it against and no
 # milestone to follow it, so the figure gets the whole panel and runs larger.
-SOLO = '''  <p class="cs__hero cs__hero--solo">%(to)s</p>
-  <p class="cs__unit">%(unit)s</p>'''
+# `size` overrides that for a figure set in words, which needs two lines.
+SOLO = '''  <p class="cs__hero cs__hero--solo"%(styleattr)s>%(to)s</p>%(unitp)s'''
 
 IO = '''  <p class="cs__before">%(before)s</p>
   <div class="cs__io">
@@ -239,6 +252,10 @@ IO = '''  <p class="cs__before">%(before)s</p>
 SHAPES = {'jump': JUMP, 'hero': HERO, 'solo': SOLO, 'io': IO}
 
 for c in CASES:
+    c = dict(c)
+    c['styleattr'] = ' style="font-size:%s"' % c['size'] if c.get('size') else ''
+    c['unitp'] = ('\n  <p class="cs__unit">%s</p>' % c['unit']
+                  if c.get('unit') else '')
     figure = SHAPES[c['shape']] % c
     # An empty chip or note still leaves a line box behind, which shifts the
     # whole centred stack. Drop the element rather than emit it empty.
