@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Steven</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   Case study panel.
+
+   Same family as the reference the client sent, but deliberately not the same
+   design: our ground and our blue rather than cream and gold, no small caps
+   role line under the name (we were not given one and will not invent one),
+   and the pill carries a real milestone instead of a computed multiple. The
+   supporting claim is set as type rather than a second pill, so the eye lands
+   on the figure once and not three times.
+   ========================================================================= */
+@page { size: 800px 1080px; margin: 0; }
+
+.slide { width: 800px; height: 1080px; padding: 90px 60px; background: var(--ground); }
+.edge { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: #B9C0C9; }
+
+.cs__pic {
+  width: 190px; height: 190px; border-radius: 50%;
+  background-size: cover; background-position: center 22%;
+  box-shadow: 0 0 0 5px var(--ground), 0 0 0 8px #BFD6F7,
+              0 10px 26px rgba(20, 25, 35, 0.13);
+}
+.cs__pic--none { background: #DDE3EA; }
+
+.cs__name { margin: 34px 0 0; font-size: 38px; font-weight: 600;
+            letter-spacing: -0.012em; color: var(--ink); }
+
+/* Short rule under the name, the one borrowed device, kept in our accent. */
+.cs__rule { width: 56px; height: 3px; border-radius: 2px;
+            background: var(--blue); margin: 22px auto 30px; }
+
+.cs__jump { display: flex; align-items: baseline; justify-content: center; gap: 22px; }
+.cs__from { font-size: 30px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink-3); }
+.cs__arrow { font-size: 26px; color: #9CB4D2; }
+.cs__to { font-size: 64px; font-weight: 600; letter-spacing: -0.026em; color: var(--blue); }
+
+.cs__unit { margin: 14px 0 0; font-size: 21px; font-weight: 500; color: var(--ink-3); }
+
+.cs__chip { display: inline-block; margin-top: 30px; padding: 10px 22px;
+            border-radius: 999px; background: #E4EFFD; color: var(--blue);
+            font-size: 21px; font-weight: 600; letter-spacing: -0.003em; }
+
+.cs__note { margin: 30px auto 0; max-width: 560px; font-size: 22px;
+            font-weight: 500; line-height: 1.36; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+  <div class="edge"></div>
+
+  <div class="cs__pic cs__pic--none"></div>
+  <p class="cs__name">Steven</p>
+  <div class="cs__rule"></div>
+
+  <div class="cs__jump">
+    <span class="cs__from">$15K/mo</span>
+    <span class="cs__arrow">&rarr;</span>
+    <span class="cs__to">$160K/mo</span>
+  </div>
+  <p class="cs__unit">per month in cash collected</p>
+
+  <p style="margin:0"><span class="cs__chip">$100K/mo within 12 weeks</span></p>
+  <p class="cs__note">Hundreds of thousands of dollars<br>with this offer alone.</p>
+
+</section>
+
+</body>
+</html>
