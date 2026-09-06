@@ -51,6 +51,44 @@ HEAD = '''<!doctype html>
                   width: 12px; height: 12px; border-radius: 50%; background: var(--blue); }
 .bul li.muted { color: var(--ink-2); }
 .bul li.muted::before { background: #C3CCD8; }
+/* Struck through, because the point is the things being skipped over. */
+.bul li.gone { color: var(--ink-3); text-decoration: line-through;
+               text-decoration-color: #BFC6CF; text-decoration-thickness: 2px; }
+.bul li.gone::before { background: #D3D8DF; }
+
+/* A stack of icon rows: the densest layout here, used once. Namespaced
+   because plain .rows already means something else in voice-quiet.css. */
+.parts { display: flex; flex-direction: column; gap: 22px; text-align: left; width: 600px; }
+.part  { display: flex; align-items: center; gap: 20px; }
+.part svg { flex: none; width: 42px; height: 42px; fill: none; stroke: #7FA8DC;
+           stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.part b { display: block; font-size: 25px; font-weight: 600; letter-spacing: -0.004em;
+         line-height: 1.24; color: var(--ink); }
+.part i { display: block; font-style: normal; margin-top: 4px;
+         font-size: 19px; font-weight: 500; color: var(--ink-3); }
+
+/* Two states of the same measure, stacked so the cut between them is the shape. */
+.pill { width: 560px; border-radius: 18px; padding: 24px 30px;
+        font-size: 30px; font-weight: 600; letter-spacing: -0.006em;
+        display: flex; align-items: center; justify-content: space-between; }
+.pill--in  { background: #E4EFFD; color: var(--ink); border: 1px solid #C3DAF6; }
+.pill--out { background: none; color: var(--ink-3); border: 1px dashed #CDD2D8;
+             margin-top: 16px; }
+.pill--out span { text-decoration: line-through; text-decoration-color: #C3C9D1;
+                  text-decoration-thickness: 2px; }
+.pill em { font-style: normal; font-size: 28px; }
+
+/* Fourteen days, drawn as fourteen days. */
+.days { display: flex; gap: 9px; justify-content: center; }
+.days span { width: 26px; height: 26px; border-radius: 8px; background: #C7DCF7; }
+.days span.on { background: var(--blue); }
+
+.chipnum { width: 54px; height: 54px; border-radius: 50%; background: #E4EFFD;
+           color: var(--blue); font-size: 24px; font-weight: 600;
+           display: flex; align-items: center; justify-content: center; }
+
+.hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
+        letter-spacing: -0.03em; color: var(--ink); }
 </style>
 </head>
 <body>
@@ -132,7 +170,7 @@ SLIDES = [
     </div>
   </div>
   <p class="sub" style="max-width:600px; margin-top:38px">
-    Fully on organic &mdash; and you want<br>to launch paid ads as well.
+    Fully on organic, and you want<br>to launch paid ads as well.
   </p>
 '''),
 
@@ -166,7 +204,112 @@ SLIDES = [
     # 7 — the close. Small setup, then the answer at full size.
     ('yes-we-can-help', 'Yes, we can help you', '''
   <p class="lead">If you fall into this</p>
-  <p class="big">Yes &mdash;<br>we can help you.</p>
+  <p class="big">Yes,<br>we can help you.</p>
+'''),
+    # 8 — the mirror of 7. Same shape, opposite answer, so the pair reads as
+    #     one decision rather than two unrelated cards.
+    ('not-for-you', 'This is not for you', '''
+  <p class="lead">If you don&rsquo;t fall into this</p>
+  <p class="big" style="color:#8A9099">No,<br>this is not for you.</p>
+'''),
+
+    # 9 — the cut drawn as a cut: the same measure in two states, one kept and
+    #     one struck, stacked so the line between them is the qualification.
+    ('under-20k-not-for-you', 'Under $20K a month', '''
+  <div class="art">
+    <div class="pill pill--in"><span>$20K to $100K / mo</span><em>&#10003;</em></div>
+    <div class="pill pill--out"><span>Under $20K / mo</span><em>&#10007;</em></div>
+  </div>
+  <p class="say" style="max-width:600px">If you&rsquo;re making less<br>than that, this is not for you.</p>
+'''),
+
+    # 10 — a list of what is deliberately not being covered, so the crossing out
+    #      is the whole slide. The one live line sits under it.
+    ('no-pain-points', 'We both know what is going on', '''
+  <p class="lead">I won&rsquo;t go into</p>
+  <ul class="bul" style="margin-top:0">
+    <li class="gone">Your current situation</li>
+    <li class="gone">The roadblocks</li>
+    <li class="gone">The pain points</li>
+    <li class="gone">The desire</li>
+  </ul>
+  <p class="say" style="margin-top:44px; max-width:600px">
+    We&rsquo;re both business owners.<br>We know what&rsquo;s going on here.
+  </p>
+'''),
+
+    # 11 — two promises, so two sizes: what gets built, then where it goes.
+    ('build-and-scale', 'Build it, then scale it', '''
+  <p class="lead">If you fall into that bucket</p>
+  <p class="big" style="font-size:52px">Build this ad funnel<br>in the next 14 days.</p>
+  <p class="say" style="margin-top:34px; color:var(--blue); max-width:600px">
+    Scale that offer to multiple<br>six and seven figures.
+  </p>
+'''),
+
+    # 12 — a section opener like slide 1, but numbered, because what follows is
+    #      a sequence and the chips say so before a word of it is read.
+    ('how-this-works', 'How this works', '''
+  <div class="art" style="display:flex; gap:14px; justify-content:center">
+    <span class="chipnum">1</span><span class="chipnum">2</span><span class="chipnum">3</span>
+  </div>
+  <p class="big" style="font-size:54px">Here&rsquo;s exactly<br>how this works.</p>
+  <p class="sub" style="margin-top:26px">Step by step.</p>
+'''),
+
+    # 13 — the quietest slide in the run, on purpose: it sets up the dense one
+    #      that follows, and two heavy slides back to back read as one.
+    ('funnel-has-parts', 'The funnel has parts', '''
+  <p class="say" style="font-size:40px; max-width:640px">
+    That ads funnel includes a few<br>things in order to work.
+  </p>
+'''),
+
+    # 14 — the five parts. Rows rather than cards: five cards at this width go
+    #      small and square, five rows keep the labels at reading size.
+    ('the-five-parts', 'The five parts', '''
+  <div class="parts">
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M4 18 L18 4 H36 V22 L22 36 Z"/><circle cx="29" cy="13" r="3"/></svg>
+      <span><b>Cold traffic friendly offer</b></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M5 8 H37 L26 22 V35 L16 30 V22 Z"/></svg>
+      <span><b>Dialed in sales funnel</b><i>VSL funnel or webinar funnel</i></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><circle cx="15" cy="14" r="6"/>
+        <path d="M4 34 C 4 26, 9 22, 15 22 C 21 22, 26 26, 26 34"/>
+        <circle cx="30" cy="16" r="4.5"/><path d="M25 34 C 25 28, 28 25, 32 25 C 35 25, 37.5 27, 38 30"/></svg>
+      <span><b>Sales team</b><i>with systems and automations</i></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M6 13 L21 5 L36 13 V29 L21 37 L6 29 Z"/>
+        <path d="M6 13 L21 21 L36 13 M21 21 V37"/></svg>
+      <span><b>Good fulfillment</b></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><rect x="4" y="9" width="34" height="24" rx="5"/>
+        <path d="M17 17 L26 21 L17 25 Z"/></svg>
+      <span><b>A paid ads engine</b></span>
+    </div>
+  </div>
+'''),
+
+    # 15 — fourteen days drawn as fourteen days, so the promise is countable
+    #      rather than just asserted.
+    ('within-14-days', 'Within 14 days', '''
+  <p class="hero">14 days</p>
+  <div class="days" style="margin:38px 0 40px">
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span>
+  </div>
+  <p class="say" style="max-width:620px">
+    Everything I&rsquo;m about to explain<br>happens in the first two weeks.
+  </p>
 '''),
 ]
 

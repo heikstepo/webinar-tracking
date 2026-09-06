@@ -42,6 +42,44 @@
                   width: 12px; height: 12px; border-radius: 50%; background: var(--blue); }
 .bul li.muted { color: var(--ink-2); }
 .bul li.muted::before { background: #C3CCD8; }
+/* Struck through, because the point is the things being skipped over. */
+.bul li.gone { color: var(--ink-3); text-decoration: line-through;
+               text-decoration-color: #BFC6CF; text-decoration-thickness: 2px; }
+.bul li.gone::before { background: #D3D8DF; }
+
+/* A stack of icon rows: the densest layout here, used once. Namespaced
+   because plain .rows already means something else in voice-quiet.css. */
+.parts { display: flex; flex-direction: column; gap: 22px; text-align: left; width: 600px; }
+.part  { display: flex; align-items: center; gap: 20px; }
+.part svg { flex: none; width: 42px; height: 42px; fill: none; stroke: #7FA8DC;
+           stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.part b { display: block; font-size: 25px; font-weight: 600; letter-spacing: -0.004em;
+         line-height: 1.24; color: var(--ink); }
+.part i { display: block; font-style: normal; margin-top: 4px;
+         font-size: 19px; font-weight: 500; color: var(--ink-3); }
+
+/* Two states of the same measure, stacked so the cut between them is the shape. */
+.pill { width: 560px; border-radius: 18px; padding: 24px 30px;
+        font-size: 30px; font-weight: 600; letter-spacing: -0.006em;
+        display: flex; align-items: center; justify-content: space-between; }
+.pill--in  { background: #E4EFFD; color: var(--ink); border: 1px solid #C3DAF6; }
+.pill--out { background: none; color: var(--ink-3); border: 1px dashed #CDD2D8;
+             margin-top: 16px; }
+.pill--out span { text-decoration: line-through; text-decoration-color: #C3C9D1;
+                  text-decoration-thickness: 2px; }
+.pill em { font-style: normal; font-size: 28px; }
+
+/* Fourteen days, drawn as fourteen days. */
+.days { display: flex; gap: 9px; justify-content: center; }
+.days span { width: 26px; height: 26px; border-radius: 8px; background: #C7DCF7; }
+.days span.on { background: var(--blue); }
+
+.chipnum { width: 54px; height: 54px; border-radius: 50%; background: #E4EFFD;
+           color: var(--blue); font-size: 24px; font-weight: 600;
+           display: flex; align-items: center; justify-content: center; }
+
+.hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
+        letter-spacing: -0.03em; color: var(--ink); }
 </style>
 </head>
 <body>
