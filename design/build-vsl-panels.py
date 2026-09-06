@@ -103,7 +103,8 @@ HEAD = '''<!doctype html>
 .vs strong { display: block; margin-top: 16px; font-size: 24px;
                 font-weight: 600; color: var(--blue); }
 
-/* Thirteen small chips against one line of work. Wrapping is the point. */
+/* Forty one small chips against one line of work. The wrap is the point:
+   the imbalance has to be felt before any of it is read. */
 .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
 .chips span { padding: 6px 12px; border-radius: 999px; background: var(--surface);
               border: 1px solid var(--hairline); font-size: 14px; font-weight: 500;
@@ -132,8 +133,11 @@ HEAD = '''<!doctype html>
 .gcard h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
             letter-spacing: -0.003em; color: var(--blue); }
 .gcard ul { margin: 0; padding: 0; list-style: none; }
-.gcard li { position: relative; padding-left: 18px; margin-bottom: 9px;
-            font-size: 17px; font-weight: 500; line-height: 1.32; color: var(--ink); }
+.gcard li { position: relative; padding-left: 18px; margin-bottom: 8px;
+            font-size: 16px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.gcard--wide { grid-column: span 2; }
+.gcard--wide ul { columns: 2; column-gap: 30px; }
+.gcard--wide li { break-inside: avoid; }
 .gcard li:last-child { margin-bottom: 0; }
 .gcard li::before { content: ""; position: absolute; left: 0; top: 9px;
                     width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
@@ -452,39 +456,43 @@ SLIDES = [
     # 22 — fourteen deliverables would be a wall. Four gcards of three is the
     #      same content read four times faster.
     ('vsl-funnel-buildout', 'VSL funnel buildout', '''
-  <p class="art" style="margin-bottom:34px"><span class="tag">VSL funnel</span></p>
+  <p class="art" style="margin-bottom:28px"><span class="tag">VSL funnel</span></p>
   <div class="gcards">
     <div class="gcard"><h4>The page</h4><ul>
       <li>VSL landing page</li><li>VSL script</li><li>VSL editing</li></ul></div>
     <div class="gcard"><h4>The booking</h4><ul>
-      <li>Application</li><li>Booking automations</li><li>Thank you page</li></ul></div>
-    <div class="gcard"><h4>The assets</h4><ul>
-      <li>Thank you video</li><li>FAQ videos</li><li>More sales assets</li></ul></div>
-    <div class="gcard"><h4>Show up and convert</h4><ul>
+      <li>Application</li><li>Booking automations</li></ul></div>
+    <div class="gcard"><h4>The thank you page</h4><ul>
+      <li>Thank you page setup</li><li>Thank you video</li>
+      <li>FAQ videos</li><li>More sales assets</li></ul></div>
+    <div class="gcard"><h4>The post booking process</h4><ul>
       <li>15 to 20 long form pre call emails</li><li>Pre call SMS sequences</li>
-      <li>Pre call sales assets</li><li>Sales team training</li></ul></div>
+      <li>Pre call sales assets</li><li>Pre call videos</li>
+      <li>Sales team training</li></ul></div>
+    <div class="gcard gcard--wide"><h4>The tech</h4><ul>
+      <li>Entire tech integrations</li><li>All the automations</li>
+      <li>Every tool connected</li><li>Nothing for you to worry about</li></ul></div>
   </div>
-  <p class="sub" style="margin-top:32px; max-width:620px">
-    Every tech integration and automation handled.
-  </p>
 '''),
 
     # 23 — same grid as 22 on purpose: the two are a pair, and the webinar one
     #      is additive, which the chip under the title says.
     ('webinar-funnel-buildout', 'Webinar funnel buildout', '''
-  <p class="art" style="margin-bottom:10px"><span class="tag">Webinar funnel</span></p>
-  <p class="sub" style="margin:0 0 30px; font-size:22px">On top of the VSL funnel</p>
+  <p class="art" style="margin-bottom:8px"><span class="tag">Webinar funnel</span></p>
+  <p class="sub" style="margin:0 0 26px; font-size:21px">On top of the VSL funnel</p>
   <div class="gcards">
     <div class="gcard"><h4>The webinar</h4><ul>
       <li>Full slideshow presentation</li><li>The script</li></ul></div>
     <div class="gcard"><h4>The pages</h4><ul>
-      <li>Webinar opt in page</li><li>Post registration page</li>
-      <li>Thank you and FAQ videos</li></ul></div>
+      <li>Webinar opt in page</li><li>Post registration page</li></ul></div>
     <div class="gcard"><h4>The upsell</h4><ul>
-      <li>VIP upsell offer, before the webinar</li></ul></div>
-    <div class="gcard"><h4>Show up and convert</h4><ul>
-      <li>15 to 20 pre webinar emails</li><li>SMS sequences</li>
-      <li>Telegram gcard nurture</li><li>SDR scripts</li></ul></div>
+      <li>VIP upsell offer</li><li>Sold before the webinar</li></ul></div>
+    <div class="gcard"><h4>On the pages</h4><ul>
+      <li>Thank you video</li><li>FAQ videos</li><li>More sales assets</li></ul></div>
+    <div class="gcard gcard--wide"><h4>Pre and post webinar flows</h4><ul>
+      <li>15 to 20 pre webinar emails</li><li>Pre webinar SMS sequences</li>
+      <li>Telegram group nurture</li><li>Post webinar SMS sequence</li>
+      <li>SDR scripts</li><li>Show up, convert, then close</li></ul></div>
   </div>
 '''),
 
