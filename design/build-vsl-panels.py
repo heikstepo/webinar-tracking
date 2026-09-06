@@ -6,6 +6,7 @@ to back, so the ground, the left edge, the type scale and the card treatment
 have to be identical across all of them. Kept apart, they drift.
 """
 import os
+import re
 
 HEAD = '''<!doctype html>
 <html lang="en">
@@ -87,6 +88,36 @@ HEAD = '''<!doctype html>
            color: var(--blue); font-size: 24px; font-weight: 600;
            display: flex; align-items: center; justify-content: center; }
 
+/* Two halves with a rule between them, so a contrast is a shape and not a
+   claim. The volume in the lower half is the argument. */
+.vs { width: 660px; text-align: left; }
+.vs__half { padding: 30px 0; }
+.vs__half + .vs__half { border-top: 1px solid var(--hairline); padding-top: 34px; }
+.who { display: inline-block; margin-bottom: 18px; padding: 6px 18px;
+       border-radius: 999px; font-size: 18px; font-weight: 600; letter-spacing: 0.01em; }
+.who--you { background: #E8EAEE; color: var(--ink-2); }
+.who--us  { background: #E4EFFD; color: var(--blue); }
+.vs h3 { margin: 0; font-size: 32px; font-weight: 600;
+            letter-spacing: -0.008em; color: var(--ink); }
+.vs p  { margin: 10px 0 0; font-size: 20px; font-weight: 500; color: var(--ink-3); }
+.vs strong { display: block; margin-top: 16px; font-size: 24px;
+                font-weight: 600; color: var(--blue); }
+
+/* Thirteen small chips against one line of work. Wrapping is the point. */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.chips span { padding: 7px 14px; border-radius: 999px; background: var(--surface);
+              border: 1px solid var(--hairline); font-size: 16px; font-weight: 500;
+              color: var(--ink-2); }
+
+/* Two things that make up one price. */
+.duo { display: flex; gap: 22px; }
+.duo > div { width: 300px; background: var(--surface); border: 1px solid var(--hairline);
+             border-radius: 20px; padding: 30px 26px 32px; text-align: left; }
+.duo h4 { margin: 0; font-size: 27px; font-weight: 600; letter-spacing: -0.006em;
+          line-height: 1.2; color: var(--ink); }
+.duo p  { margin: 12px 0 0; font-size: 19px; font-weight: 500; line-height: 1.35;
+          color: var(--ink-3); }
+
 /* A quiet numeral that gives the build sequence a spine without spending a
    word on it. Sits above the line it belongs to, not beside it. */
 .stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
@@ -94,17 +125,17 @@ HEAD = '''<!doctype html>
 
 /* Two by two, so a long deliverable list reads as four short ones. A single
    column of fourteen items is the thing to avoid here. */
-.groups { display: grid; grid-template-columns: 320px 320px; gap: 26px;
+.gcards { display: grid; grid-template-columns: 320px 320px; gap: 26px;
           text-align: left; }
-.group { background: var(--surface); border: 1px solid var(--hairline);
+.gcard { background: var(--surface); border: 1px solid var(--hairline);
          border-radius: 18px; padding: 22px 24px 24px; }
-.group h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
+.gcard h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
             letter-spacing: -0.003em; color: var(--blue); }
-.group ul { margin: 0; padding: 0; list-style: none; }
-.group li { position: relative; padding-left: 18px; margin-bottom: 9px;
+.gcard ul { margin: 0; padding: 0; list-style: none; }
+.gcard li { position: relative; padding-left: 18px; margin-bottom: 9px;
             font-size: 17px; font-weight: 500; line-height: 1.32; color: var(--ink); }
-.group li:last-child { margin-bottom: 0; }
-.group li::before { content: ""; position: absolute; left: 0; top: 9px;
+.gcard li:last-child { margin-bottom: 0; }
+.gcard li::before { content: ""; position: absolute; left: 0; top: 9px;
                     width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
 
 .tag { display: inline-block; padding: 9px 22px; border-radius: 999px;
@@ -418,18 +449,18 @@ SLIDES = [
   <p class="say" style="max-width:600px">Depending on the ICP<br>we&rsquo;re attracting for you.</p>
 '''),
 
-    # 22 — fourteen deliverables would be a wall. Four groups of three is the
+    # 22 — fourteen deliverables would be a wall. Four gcards of three is the
     #      same content read four times faster.
     ('vsl-funnel-buildout', 'VSL funnel buildout', '''
   <p class="art" style="margin-bottom:34px"><span class="tag">VSL funnel</span></p>
-  <div class="groups">
-    <div class="group"><h4>The page</h4><ul>
+  <div class="gcards">
+    <div class="gcard"><h4>The page</h4><ul>
       <li>VSL landing page</li><li>VSL script</li><li>VSL editing</li></ul></div>
-    <div class="group"><h4>The booking</h4><ul>
+    <div class="gcard"><h4>The booking</h4><ul>
       <li>Application</li><li>Booking automations</li><li>Thank you page</li></ul></div>
-    <div class="group"><h4>The assets</h4><ul>
+    <div class="gcard"><h4>The assets</h4><ul>
       <li>Thank you video</li><li>FAQ videos</li><li>More sales assets</li></ul></div>
-    <div class="group"><h4>Show up and convert</h4><ul>
+    <div class="gcard"><h4>Show up and convert</h4><ul>
       <li>15 to 20 long form pre call emails</li><li>Pre call SMS sequences</li>
       <li>Pre call sales assets</li><li>Sales team training</li></ul></div>
   </div>
@@ -443,17 +474,17 @@ SLIDES = [
     ('webinar-funnel-buildout', 'Webinar funnel buildout', '''
   <p class="art" style="margin-bottom:10px"><span class="tag">Webinar funnel</span></p>
   <p class="sub" style="margin:0 0 30px; font-size:22px">On top of the VSL funnel</p>
-  <div class="groups">
-    <div class="group"><h4>The webinar</h4><ul>
+  <div class="gcards">
+    <div class="gcard"><h4>The webinar</h4><ul>
       <li>Full slideshow presentation</li><li>The script</li></ul></div>
-    <div class="group"><h4>The pages</h4><ul>
+    <div class="gcard"><h4>The pages</h4><ul>
       <li>Webinar opt in page</li><li>Post registration page</li>
       <li>Thank you and FAQ videos</li></ul></div>
-    <div class="group"><h4>The upsell</h4><ul>
+    <div class="gcard"><h4>The upsell</h4><ul>
       <li>VIP upsell offer, before the webinar</li></ul></div>
-    <div class="group"><h4>Show up and convert</h4><ul>
+    <div class="gcard"><h4>Show up and convert</h4><ul>
       <li>15 to 20 pre webinar emails</li><li>SMS sequences</li>
-      <li>Telegram group nurture</li><li>SDR scripts</li></ul></div>
+      <li>Telegram gcard nurture</li><li>SDR scripts</li></ul></div>
   </div>
 '''),
 
@@ -472,7 +503,183 @@ SLIDES = [
       <small>Optional staffing, on the sales side</small></span></div>
   </div>
 '''),
+    # 26 — a bridge. Quiet on purpose, sitting between the funnel build and
+    #      the ads build.
+    ('while-we-build', 'While we build all of this', '''
+  <p class="say" style="font-size:40px; max-width:640px">
+    And while all of this<br>is being built by us&hellip;
+  </p>
+  <p class="art" style="margin:34px 0 0"><span class="tag">Still inside the first 14 days</span></p>
+'''),
+
+    # 27 — the third build step. Rows rather than the 2x2 grid used for the
+    #      funnel slides, so this reads as its own thing and not a third
+    #      instalment of the same list.
+    ('paid-ads-engine', 'Paid ads engine', '''
+  <p class="stepnum">03</p>
+  <p class="art" style="margin-bottom:34px"><span class="tag">Paid ads engine</span></p>
+  <div class="parts">
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M10 5 H32 V37 H10 Z"/><path d="M16 14 H26 M16 21 H26 M16 28 H22"/></svg>
+      <span><b>All the ad scripts</b></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><rect x="5" y="8" width="32" height="26" rx="4"/>
+        <path d="M5 15 H37"/><circle cx="10" cy="11.5" r="1.4"/></svg>
+      <span><b>The entire account set up</b></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="15"/><circle cx="21" cy="21" r="8"/>
+        <circle cx="21" cy="21" r="2.4"/></svg>
+      <span><b>Campaigns and pixel</b></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M21 34 V16"/><path d="M13 24 L21 15 L29 24"/>
+        <path d="M10 8 H32"/></svg>
+      <span><b>Ready to launch</b></span>
+    </div>
+  </div>
+  <p class="sub" style="margin-top:34px; max-width:600px">Done for you. You don&rsquo;t worry about any of it.</p>
+'''),
+
+    # 28 — the fourteen days again. The strip leads this time and the number is
+    #      the caption, so the callback is not a copy of slide 15.
+    ('all-within-14-days', 'All within 14 days', '''
+  <div class="days" style="margin-bottom:40px">
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span><span class="on"></span>
+    <span class="on"></span><span class="on"></span>
+  </div>
+  <p class="big" style="font-size:50px">All of this happens<br>in the first 14 days<br>of working together.</p>
+'''),
+
+    # 29 — the contrast, drawn as two halves of one column. One line of work
+    #      above the rule, thirteen chips below it. The wrap does the arguing.
+    ('your-involvement', 'Your involvement', '''
+  <div class="vs">
+    <div class="vs__half">
+      <span class="who who--you">You</span>
+      <h3>Record a couple of videos.</h3>
+      <p>The ads and the funnel videos.</p>
+      <strong>A couple of hours, max.</strong>
+    </div>
+    <div class="vs__half">
+      <span class="who who--us">Us</span>
+      <h3>Everything else.</h3>
+      <div class="chips">
+        <span>Offer</span><span>Funnel</span><span>Landing pages</span><span>VSL script</span>
+        <span>Editing</span><span>Emails</span><span>SMS</span><span>Telegram</span>
+        <span>Ad scripts</span><span>Ad account</span><span>Campaigns</span><span>Pixel</span>
+        <span>Automations</span><span>Sales training</span>
+      </div>
+    </div>
+  </div>
+'''),
+
+    # 30 — the thing we are not doing, struck, then what is actually happening.
+    ('not-just-the-launch', 'Not just the launch', '''
+  <p class="say" style="font-size:32px; color:var(--ink-3); max-width:620px;
+                        text-decoration:line-through; text-decoration-color:#C3C9D1;
+                        text-decoration-thickness:2px">
+    Set it up, launch it,<br>and let it be.
+  </p>
+  <p class="big" style="margin-top:44px; font-size:50px">This is all<br>just the launch.</p>
+'''),
+
+    # 31 — alignment drawn as two paths becoming one, because the sentence is
+    #      about incentives pointing the same way.
+    ('same-goal', 'Aligned on the same goal', '''
+  <div class="art">
+    <svg viewBox="0 0 320 140" width="320" height="140" fill="none" aria-hidden="true">
+      <defs><marker id="one" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4.6"
+             markerHeight="4.6" orient="auto">
+        <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <path d="M14 26 C 110 26, 120 70, 190 70" stroke="#AEB6C0" stroke-width="4" stroke-linecap="round"/>
+      <path d="M14 114 C 110 114, 120 70, 190 70" stroke="#AEB6C0" stroke-width="4" stroke-linecap="round"/>
+      <path d="M190 70 H 292" stroke="#0071E3" stroke-width="5" stroke-linecap="round"
+            marker-end="url(#one)"/>
+    </svg>
+  </div>
+  <p class="big" style="font-size:44px">We only get paid from<br>the revenue we generate.</p>
+  <p class="say" style="margin-top:30px; font-size:27px; color:var(--blue); max-width:620px">
+    So we scale it with you, long term.
+  </p>
+'''),
+
+    # 32 — a loop, because every item on it is a thing that keeps happening.
+    ('continuous-iteration', 'Continuous iteration', '''
+  <div class="art">
+    <svg viewBox="0 0 90 90" width="90" height="90" fill="none" aria-hidden="true">
+      <path d="M45 12 A 33 33 0 1 1 18 27" stroke="#0071E3" stroke-width="5"
+            stroke-linecap="round"/>
+      <path d="M32 8 L45 12 L41 25" stroke="#0071E3" stroke-width="5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <ul class="bul">
+    <li>Iterate the funnel, the ads, the sales systems</li>
+    <li>Test new things, continuously</li>
+    <li>Staff more sales reps</li>
+    <li>Train them</li>
+  </ul>
+'''),
+
+    # 33 — section opener for the money part.
+    ('the-pricing-structure', 'The pricing structure', '''
+  <p class="art" style="margin-bottom:32px"><span class="tag">Pricing</span></p>
+  <p class="big" style="font-size:52px">Here&rsquo;s the exact<br>pricing structure.</p>
+'''),
+
+    # 34 — the offer restated, same shape as the standalone offer panel so it
+    #      lands as the thing they have already been shown.
+    ('the-offer-again', 'The offer again', '''
+  <p class="lead">Just to revisit the offer</p>
+  <p class="say" style="font-size:38px; max-width:640px">
+    We build and launch your ads<br>funnel in the next 14 days.<br>
+    You only pay us
+    <span class="say__mark">from the revenue we generate</span>.
+  </p>
+'''),
+
+    # 35 — one quiet line before the numbers.
+    ('pricing-is-simple', 'Pricing is simple', '''
+  <p class="big" style="font-size:52px">And the pricing<br>behind it is<br>pretty simple.</p>
+'''),
+
+    # 36 — two components, so two cards, with the term that qualifies both
+    #      sitting under them rather than inside either.
+    ('setup-fee-and-revshare', 'Setup fee and revenue share', '''
+  <div class="duo">
+    <div><h4>A credited setup fee</h4><p>Credited, not charged upfront.</p></div>
+    <div><h4>A gross revenue share</h4><p>On the revenue we generate for you.</p></div>
+  </div>
+  <p class="sub" style="margin-top:34px; max-width:600px">
+    For the first six months, extendable from there.
+  </p>
+'''),
+
+    # 37 — the word that needs explaining, and the explanation. The rule sits on
+    #      the word, not on the sentence.
+    ('credited-not-upfront', 'Credited, not upfront', '''
+  <p class="lead">I say <span class="say__mark">credited</span> setup fee</p>
+  <p class="big" style="font-size:52px">because we don&rsquo;t<br>charge you upfront.</p>
+'''),
 ]
+
+def _check_class_collisions():
+    css = open('4pi.css').read() + open('voice-quiet.css').read()
+    taken = set(re.findall(r'\.([a-zA-Z][\w-]*)', css))
+    mine = set(re.findall(r'^\.([a-zA-Z][\w-]*)', HEAD, re.M)) - {'slide'}
+    clash = sorted(mine & taken)
+    if clash:
+        raise SystemExit('class names already used by the shared stylesheets: '
+                         + ', '.join(clash))
+
+
+_check_class_collisions()
 
 for name, title, body in SLIDES:
     open('slides/vsl-%s.html' % name, 'w').write(

@@ -78,6 +78,36 @@
            color: var(--blue); font-size: 24px; font-weight: 600;
            display: flex; align-items: center; justify-content: center; }
 
+/* Two halves with a rule between them, so a contrast is a shape and not a
+   claim. The volume in the lower half is the argument. */
+.vs { width: 660px; text-align: left; }
+.vs__half { padding: 30px 0; }
+.vs__half + .vs__half { border-top: 1px solid var(--hairline); padding-top: 34px; }
+.who { display: inline-block; margin-bottom: 18px; padding: 6px 18px;
+       border-radius: 999px; font-size: 18px; font-weight: 600; letter-spacing: 0.01em; }
+.who--you { background: #E8EAEE; color: var(--ink-2); }
+.who--us  { background: #E4EFFD; color: var(--blue); }
+.vs h3 { margin: 0; font-size: 32px; font-weight: 600;
+            letter-spacing: -0.008em; color: var(--ink); }
+.vs p  { margin: 10px 0 0; font-size: 20px; font-weight: 500; color: var(--ink-3); }
+.vs strong { display: block; margin-top: 16px; font-size: 24px;
+                font-weight: 600; color: var(--blue); }
+
+/* Thirteen small chips against one line of work. Wrapping is the point. */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.chips span { padding: 7px 14px; border-radius: 999px; background: var(--surface);
+              border: 1px solid var(--hairline); font-size: 16px; font-weight: 500;
+              color: var(--ink-2); }
+
+/* Two things that make up one price. */
+.duo { display: flex; gap: 22px; }
+.duo > div { width: 300px; background: var(--surface); border: 1px solid var(--hairline);
+             border-radius: 20px; padding: 30px 26px 32px; text-align: left; }
+.duo h4 { margin: 0; font-size: 27px; font-weight: 600; letter-spacing: -0.006em;
+          line-height: 1.2; color: var(--ink); }
+.duo p  { margin: 12px 0 0; font-size: 19px; font-weight: 500; line-height: 1.35;
+          color: var(--ink-3); }
+
 /* A quiet numeral that gives the build sequence a spine without spending a
    word on it. Sits above the line it belongs to, not beside it. */
 .stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
@@ -85,17 +115,17 @@
 
 /* Two by two, so a long deliverable list reads as four short ones. A single
    column of fourteen items is the thing to avoid here. */
-.groups { display: grid; grid-template-columns: 320px 320px; gap: 26px;
+.gcards { display: grid; grid-template-columns: 320px 320px; gap: 26px;
           text-align: left; }
-.group { background: var(--surface); border: 1px solid var(--hairline);
+.gcard { background: var(--surface); border: 1px solid var(--hairline);
          border-radius: 18px; padding: 22px 24px 24px; }
-.group h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
+.gcard h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
             letter-spacing: -0.003em; color: var(--blue); }
-.group ul { margin: 0; padding: 0; list-style: none; }
-.group li { position: relative; padding-left: 18px; margin-bottom: 9px;
+.gcard ul { margin: 0; padding: 0; list-style: none; }
+.gcard li { position: relative; padding-left: 18px; margin-bottom: 9px;
             font-size: 17px; font-weight: 500; line-height: 1.32; color: var(--ink); }
-.group li:last-child { margin-bottom: 0; }
-.group li::before { content: ""; position: absolute; left: 0; top: 9px;
+.gcard li:last-child { margin-bottom: 0; }
+.gcard li::before { content: ""; position: absolute; left: 0; top: 9px;
                     width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
 
 .tag { display: inline-block; padding: 9px 22px; border-radius: 999px;
@@ -125,14 +155,14 @@
   <div class="edge"></div>
 
   <p class="art" style="margin-bottom:34px"><span class="tag">VSL funnel</span></p>
-  <div class="groups">
-    <div class="group"><h4>The page</h4><ul>
+  <div class="gcards">
+    <div class="gcard"><h4>The page</h4><ul>
       <li>VSL landing page</li><li>VSL script</li><li>VSL editing</li></ul></div>
-    <div class="group"><h4>The booking</h4><ul>
+    <div class="gcard"><h4>The booking</h4><ul>
       <li>Application</li><li>Booking automations</li><li>Thank you page</li></ul></div>
-    <div class="group"><h4>The assets</h4><ul>
+    <div class="gcard"><h4>The assets</h4><ul>
       <li>Thank you video</li><li>FAQ videos</li><li>More sales assets</li></ul></div>
-    <div class="group"><h4>Show up and convert</h4><ul>
+    <div class="gcard"><h4>Show up and convert</h4><ul>
       <li>15 to 20 long form pre call emails</li><li>Pre call SMS sequences</li>
       <li>Pre call sales assets</li><li>Sales team training</li></ul></div>
   </div>
