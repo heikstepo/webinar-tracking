@@ -87,6 +87,43 @@ HEAD = '''<!doctype html>
            color: var(--blue); font-size: 24px; font-weight: 600;
            display: flex; align-items: center; justify-content: center; }
 
+/* A quiet numeral that gives the build sequence a spine without spending a
+   word on it. Sits above the line it belongs to, not beside it. */
+.stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
+           letter-spacing: 0.04em; color: #A9BDD4; }
+
+/* Two by two, so a long deliverable list reads as four short ones. A single
+   column of fourteen items is the thing to avoid here. */
+.groups { display: grid; grid-template-columns: 320px 320px; gap: 26px;
+          text-align: left; }
+.group { background: var(--surface); border: 1px solid var(--hairline);
+         border-radius: 18px; padding: 22px 24px 24px; }
+.group h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
+            letter-spacing: -0.003em; color: var(--blue); }
+.group ul { margin: 0; padding: 0; list-style: none; }
+.group li { position: relative; padding-left: 18px; margin-bottom: 9px;
+            font-size: 17px; font-weight: 500; line-height: 1.32; color: var(--ink); }
+.group li:last-child { margin-bottom: 0; }
+.group li::before { content: ""; position: absolute; left: 0; top: 9px;
+                    width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
+
+.tag { display: inline-block; padding: 9px 22px; border-radius: 999px;
+       background: #E4EFFD; color: var(--blue);
+       font-size: 24px; font-weight: 600; letter-spacing: -0.004em; }
+
+/* A running tally: what is already done, and the one thing being added. */
+.check { display: flex; flex-direction: column; gap: 26px; text-align: left; width: 600px; }
+.check div { display: flex; align-items: flex-start; gap: 18px;
+             font-size: 28px; font-weight: 600; letter-spacing: -0.005em; color: var(--ink); }
+.check em { flex: none; width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-style: normal; font-size: 20px; }
+.check .done em { background: #E7F5E3; color: #248A13; }
+.check .now  em { background: #E4EFFD; color: var(--blue); }
+.check .now { color: var(--blue); }
+.check small { display: block; margin-top: 6px; font-size: 19px;
+               font-weight: 500; color: var(--ink-3); }
+
 .hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
         letter-spacing: -0.03em; color: var(--ink); }
 </style>
@@ -310,6 +347,130 @@ SLIDES = [
   <p class="say" style="max-width:620px">
     Everything I&rsquo;m about to explain<br>happens in the first two weeks.
   </p>
+'''),
+    # 16 — opener for the build. The payoff line takes the accent so the
+    #      section is framed by where it ends up, not by what it costs.
+    ('initial-launch', 'The initial launch', '''
+  <p class="lead">For the initial launch</p>
+  <p class="big" style="font-size:52px">Here&rsquo;s exactly<br>what we set up.</p>
+  <p class="say" style="margin-top:32px; font-size:28px; color:var(--blue); max-width:620px">
+    The foundation to scale to multiple<br>six and seven figures.
+  </p>
+'''),
+
+    # 17 — first of the build steps, and where the numeral motif starts.
+    ('cold-traffic-offer', 'Cold traffic friendly offer', '''
+  <p class="stepnum">01</p>
+  <p class="big" style="font-size:50px">Make your offer<br>cold traffic friendly.</p>
+  <p class="sub" style="max-width:600px">Paid ads only work if the offer does.</p>
+'''),
+
+    # 18 — the traffic has to land somewhere, so the slide is two boxes and the
+    #      arrow between them. Nothing else to say.
+    ('traffic-needs-a-funnel', 'Traffic needs somewhere to go', '''
+  <p class="stepnum">02</p>
+  <div class="art" style="display:flex; align-items:center; gap:22px">
+    <div class="tile" style="width:210px; padding:26px 16px 24px">
+      <svg viewBox="0 0 62 62"><rect x="9" y="14" width="44" height="34" rx="6"/>
+        <path d="M27 25 L 39 31 L 27 37 Z"/></svg>
+      <b>Paid ads</b>
+    </div>
+    <svg viewBox="0 0 34 14" width="34" height="14" fill="none" style="flex:none">
+      <g stroke="#0071E3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 7 H 24"/><path d="M19 2.5 L 29 7 L 19 11.5"/></g>
+    </svg>
+    <div class="tile" style="width:210px; padding:26px 16px 24px">
+      <svg viewBox="0 0 62 62"><path d="M9 12 H53 L37 32 V50 L25 44 V32 Z"/></svg>
+      <b>Your funnel</b>
+    </div>
+  </div>
+  <p class="say" style="max-width:600px">The traffic has to land<br>somewhere. That is the funnel.</p>
+'''),
+
+    # 19 — the two shapes it might already be, then the condition on both.
+    ('dialed-in-before-launch', 'Dialed in before launch', '''
+  <p class="lead">Whether it&rsquo;s a</p>
+  <div class="art" style="display:flex; gap:16px; justify-content:center">
+    <span class="tag">VSL funnel</span><span class="tag">Webinar funnel</span>
+  </div>
+  <p class="say" style="max-width:640px">
+    It needs to be super dialed in<br>before we launch.
+  </p>
+  <p class="sub" style="max-width:600px">Too many leaks and cold traffic will not convert.</p>
+'''),
+
+    # 20 — one line, full size. The turn from problem to offer.
+    ('we-build-the-whole-thing', 'We build the whole thing', '''
+  <p class="big">That&rsquo;s why we build<br>the whole thing<br>for you.</p>
+'''),
+
+    # 21 — two routes, and the second is the first plus one more, so it is drawn
+    #      that way rather than as two unrelated options.
+    ('one-funnel-or-two', 'One funnel or two', '''
+  <div class="art" style="display:flex; flex-direction:column; gap:18px">
+    <div class="pill pill--in" style="width:600px; font-size:26px">
+      <span>VSL call funnel</span><em>&#10003;</em>
+    </div>
+    <div class="pill pill--in" style="width:600px; font-size:26px; margin:0">
+      <span>VSL call funnel plus webinar funnel</span><em>&#10003;</em>
+    </div>
+  </div>
+  <p class="say" style="max-width:600px">Depending on the ICP<br>we&rsquo;re attracting for you.</p>
+'''),
+
+    # 22 — fourteen deliverables would be a wall. Four groups of three is the
+    #      same content read four times faster.
+    ('vsl-funnel-buildout', 'VSL funnel buildout', '''
+  <p class="art" style="margin-bottom:34px"><span class="tag">VSL funnel</span></p>
+  <div class="groups">
+    <div class="group"><h4>The page</h4><ul>
+      <li>VSL landing page</li><li>VSL script</li><li>VSL editing</li></ul></div>
+    <div class="group"><h4>The booking</h4><ul>
+      <li>Application</li><li>Booking automations</li><li>Thank you page</li></ul></div>
+    <div class="group"><h4>The assets</h4><ul>
+      <li>Thank you video</li><li>FAQ videos</li><li>More sales assets</li></ul></div>
+    <div class="group"><h4>Show up and convert</h4><ul>
+      <li>15 to 20 long form pre call emails</li><li>Pre call SMS sequences</li>
+      <li>Pre call sales assets</li><li>Sales team training</li></ul></div>
+  </div>
+  <p class="sub" style="margin-top:32px; max-width:620px">
+    Every tech integration and automation handled.
+  </p>
+'''),
+
+    # 23 — same grid as 22 on purpose: the two are a pair, and the webinar one
+    #      is additive, which the chip under the title says.
+    ('webinar-funnel-buildout', 'Webinar funnel buildout', '''
+  <p class="art" style="margin-bottom:10px"><span class="tag">Webinar funnel</span></p>
+  <p class="sub" style="margin:0 0 30px; font-size:22px">On top of the VSL funnel</p>
+  <div class="groups">
+    <div class="group"><h4>The webinar</h4><ul>
+      <li>Full slideshow presentation</li><li>The script</li></ul></div>
+    <div class="group"><h4>The pages</h4><ul>
+      <li>Webinar opt in page</li><li>Post registration page</li>
+      <li>Thank you and FAQ videos</li></ul></div>
+    <div class="group"><h4>The upsell</h4><ul>
+      <li>VIP upsell offer, before the webinar</li></ul></div>
+    <div class="group"><h4>Show up and convert</h4><ul>
+      <li>15 to 20 pre webinar emails</li><li>SMS sequences</li>
+      <li>Telegram group nurture</li><li>SDR scripts</li></ul></div>
+  </div>
+'''),
+
+    # 24 — a breath after two dense slides.
+    ('thats-the-funnel-side', 'That is the funnel side', '''
+  <p class="big" style="font-size:54px">That&rsquo;s everything<br>on the funnel side.</p>
+'''),
+
+    # 25 — the running tally. Two ticks already earned, one thing being added,
+    #      and the optional flag lives on the item rather than in a sentence.
+    ('sales-side-next', 'On to the sales side', '''
+  <div class="check">
+    <div class="done"><em>&#10003;</em><span>Cold traffic friendly offer</span></div>
+    <div class="done"><em>&#10003;</em><span>Funnel set up</span></div>
+    <div class="now"><em>&#43;</em><span>Setters and closers
+      <small>Optional staffing, on the sales side</small></span></div>
+  </div>
 '''),
 ]
 

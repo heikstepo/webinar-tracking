@@ -78,6 +78,43 @@
            color: var(--blue); font-size: 24px; font-weight: 600;
            display: flex; align-items: center; justify-content: center; }
 
+/* A quiet numeral that gives the build sequence a spine without spending a
+   word on it. Sits above the line it belongs to, not beside it. */
+.stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
+           letter-spacing: 0.04em; color: #A9BDD4; }
+
+/* Two by two, so a long deliverable list reads as four short ones. A single
+   column of fourteen items is the thing to avoid here. */
+.groups { display: grid; grid-template-columns: 320px 320px; gap: 26px;
+          text-align: left; }
+.group { background: var(--surface); border: 1px solid var(--hairline);
+         border-radius: 18px; padding: 22px 24px 24px; }
+.group h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
+            letter-spacing: -0.003em; color: var(--blue); }
+.group ul { margin: 0; padding: 0; list-style: none; }
+.group li { position: relative; padding-left: 18px; margin-bottom: 9px;
+            font-size: 17px; font-weight: 500; line-height: 1.32; color: var(--ink); }
+.group li:last-child { margin-bottom: 0; }
+.group li::before { content: ""; position: absolute; left: 0; top: 9px;
+                    width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
+
+.tag { display: inline-block; padding: 9px 22px; border-radius: 999px;
+       background: #E4EFFD; color: var(--blue);
+       font-size: 24px; font-weight: 600; letter-spacing: -0.004em; }
+
+/* A running tally: what is already done, and the one thing being added. */
+.check { display: flex; flex-direction: column; gap: 26px; text-align: left; width: 600px; }
+.check div { display: flex; align-items: flex-start; gap: 18px;
+             font-size: 28px; font-weight: 600; letter-spacing: -0.005em; color: var(--ink); }
+.check em { flex: none; width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-style: normal; font-size: 20px; }
+.check .done em { background: #E7F5E3; color: #248A13; }
+.check .now  em { background: #E4EFFD; color: var(--blue); }
+.check .now { color: var(--blue); }
+.check small { display: block; margin-top: 6px; font-size: 19px;
+               font-weight: 500; color: var(--ink-3); }
+
 .hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
         letter-spacing: -0.03em; color: var(--ink); }
 </style>
