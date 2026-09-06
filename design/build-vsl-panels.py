@@ -31,6 +31,14 @@ HEAD = '''<!doctype html>
         line-height: 1.34; letter-spacing: -0.008em; color: var(--ink); }
 .sub  { margin: 22px 0 0; font-size: 26px; font-weight: 500; line-height: 1.38; color: var(--ink-2); }
 
+/* The one phrase in a sentence that carries it. A weighted underline rather
+   than a filled highlighter block: the panel sits beside a talking head, not
+   on a keynote screen, and a slab of colour at this size shouts. This was
+   referenced by three panels before it existed, so their emphasis was
+   silently rendering as plain text. */
+.say__mark { color: var(--blue);
+             background: linear-gradient(to top, #C6DDFA 0 0.15em, transparent 0.15em); }
+
 .tiles { display: flex; gap: 22px; justify-content: center; }
 .tile  { width: 220px; background: var(--surface); border: 1px solid var(--hairline);
          border-radius: 22px; padding: 30px 18px 26px; text-align: center; }
@@ -657,6 +665,33 @@ SLIDES = [
     <li>Staff more sales reps</li>
     <li>Train them</li>
   </ul>
+'''),
+
+    # 32a — the risk-free claim, and why it exists. Four beats: the aside about
+    #       pricing, the claim, the competitive reason, the certainty. The
+    #       reason is set quiet because it is an explanation; the certainty
+    #       carries the accent because it is what he wants them to leave with.
+    ('risk-free-by-design', 'Risk-free by design', '''
+  <p class="lead">Pricing structure in a second</p>
+  <p class="big" style="font-size:50px">But this whole offer<br>is designed to be<br>
+    <span class="say__mark">risk-free</span> on your end.</p>
+  <p class="sub" style="margin-top:36px; max-width:640px">
+    Simply so our competitors literally<br>can&rsquo;t compete with it,
+    because<br>they can&rsquo;t get results.
+  </p>
+  <p class="say" style="margin-top:30px; font-size:30px; color:var(--blue); max-width:620px">
+    And I know we can get you<br>results for certain.
+  </p>
+'''),
+
+    # 32b — the handoff into the case studies. Nothing on it but the question
+    #       and the answer, because the panels that follow are the answer.
+    ('here-are-the-results', 'Here are the results', '''
+  <p class="lead">Why?</p>
+  <p class="big" style="font-size:50px">Here are some of<br>the results<br>we&rsquo;ve seen.</p>
+  <p class="sub" style="margin-top:30px; max-width:640px">
+    Running high ticket offers<br>over the past couple of years.
+  </p>
 '''),
 
     # 33 — section opener for the money part.

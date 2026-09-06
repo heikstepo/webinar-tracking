@@ -21,6 +21,14 @@
         line-height: 1.34; letter-spacing: -0.008em; color: var(--ink); }
 .sub  { margin: 22px 0 0; font-size: 26px; font-weight: 500; line-height: 1.38; color: var(--ink-2); }
 
+/* The one phrase in a sentence that carries it. A weighted underline rather
+   than a filled highlighter block: the panel sits beside a talking head, not
+   on a keynote screen, and a slab of colour at this size shouts. This was
+   referenced by three panels before it existed, so their emphasis was
+   silently rendering as plain text. */
+.say__mark { color: var(--blue);
+             background: linear-gradient(to top, #C6DDFA 0 0.15em, transparent 0.15em); }
+
 .tiles { display: flex; gap: 22px; justify-content: center; }
 .tile  { width: 220px; background: var(--surface); border: 1px solid var(--hairline);
          border-radius: 22px; padding: 30px 18px 26px; text-align: center; }
