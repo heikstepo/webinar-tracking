@@ -14,6 +14,7 @@ W, H = 800, 1080
 
 CASES = [
     {
+        'shape': 'jump',
         'slug': 'steven',
         'name': 'Steven',
         'from': '$15K/mo',
@@ -21,6 +22,16 @@ CASES = [
         'unit': 'per month in cash collected',
         'chip': '$100K/mo within 12 weeks',
         'note': 'Hundreds of thousands of dollars<br>with this offer alone.',
+    },
+    {
+        'shape': 'hero',
+        'slug': 'rauf',
+        'name': 'Rauf',
+        'before': 'Was doing $3K/mo on a low ticket offer',
+        'to':   '$350K+',
+        'unit': 'from his high ticket offer,<br>launched from zero',
+        'chip': 'On track for $100K this month',
+        'note': '',
     },
 ]
 
@@ -87,6 +98,15 @@ TPL = '''<!doctype html>
             border-radius: 999px; background: #E4EFFD; color: var(--blue);
             font-size: 21px; font-weight: 600; letter-spacing: -0.003em; }
 
+/* The hero variant carries the old rate above the figure rather than either
+   side of an arrow: $3K/mo is a monthly rate and $350K+ is a total, so setting
+   them across an arrow would claim a comparison that isn't true. Margins are
+   stated on both, because a bare <p> here inherits the stylesheet's paragraph
+   spacing and the figure ends up adrift in the middle of the panel. */
+.cs__before { margin: 0 0 20px; font-size: 22px; font-weight: 500; color: var(--ink-3); }
+.cs__hero { margin: 0; font-size: 78px; font-weight: 600; letter-spacing: -0.03em;
+            line-height: 1; color: var(--blue); }
+
 .cs__note { margin: 30px auto 0; max-width: 560px; font-size: 22px;
             font-weight: 500; line-height: 1.36; color: var(--ink-2); }
 </style>
@@ -100,15 +120,10 @@ __PHOTO__
   <p class="cs__name">__NAME__</p>
   <div class="cs__rule"></div>
 
-  <div class="cs__jump">
-    <span class="cs__from">__FROM__</span>
-    <span class="cs__arrow">&rarr;</span>
-    <span class="cs__to">__TO__</span>
-  </div>
-  <p class="cs__unit">__UNIT__</p>
+__FIGURE__
 
   <p style="margin:0"><span class="cs__chip">__CHIP__</span></p>
-  <p class="cs__note">__NOTE__</p>
+__NOTE__
 
 </section>
 
@@ -129,12 +144,27 @@ def _check_class_collisions():
 
 _check_class_collisions()
 
+JUMP = '''  <div class="cs__jump">
+    <span class="cs__from">%(from)s</span>
+    <span class="cs__arrow">&rarr;</span>
+    <span class="cs__to">%(to)s</span>
+  </div>
+  <p class="cs__unit">%(unit)s</p>'''
+
+HERO = '''  <p class="cs__before">%(before)s</p>
+  <p class="cs__hero">%(to)s</p>
+  <p class="cs__unit">%(unit)s</p>'''
+
 for c in CASES:
+    figure = (JUMP if c['shape'] == 'jump' else HERO) % c
     out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
               .replace('__PHOTO__', '  ' + photo(c['slug']))
-              .replace('__NAME__', c['name']).replace('__FROM__', c['from'])
-              .replace('__TO__', c['to']).replace('__UNIT__', c['unit'])
-              .replace('__CHIP__', c['chip']).replace('__NOTE__', c['note']))
+              .replace('__NAME__', c['name']).replace('__FIGURE__', figure)
+              .replace('__CHIP__', c['chip'])
+              # An empty note still leaves a line box behind, which pushes the
+              # whole centred stack up by half a line. Drop the element instead.
+              .replace('__NOTE__', '  <p class="cs__note">%s</p>' % c['note']
+                                   if c['note'] else ''))
     open('slides/case-%s.html' % c['slug'], 'w').write(out)
     have = 'NO PHOTO, placeholder disc' if 'cs__pic cs__pic--none' in out else 'photo embedded'
     print('wrote slides/case-%s.html  (%s)' % (c['slug'], have))

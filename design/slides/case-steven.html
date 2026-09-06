@@ -47,6 +47,15 @@
             border-radius: 999px; background: #E4EFFD; color: var(--blue);
             font-size: 21px; font-weight: 600; letter-spacing: -0.003em; }
 
+/* The hero variant carries the old rate above the figure rather than either
+   side of an arrow: $3K/mo is a monthly rate and $350K+ is a total, so setting
+   them across an arrow would claim a comparison that isn't true. Margins are
+   stated on both, because a bare <p> here inherits the stylesheet's paragraph
+   spacing and the figure ends up adrift in the middle of the panel. */
+.cs__before { margin: 0 0 20px; font-size: 22px; font-weight: 500; color: var(--ink-3); }
+.cs__hero { margin: 0; font-size: 78px; font-weight: 600; letter-spacing: -0.03em;
+            line-height: 1; color: var(--blue); }
+
 .cs__note { margin: 30px auto 0; max-width: 560px; font-size: 22px;
             font-weight: 500; line-height: 1.36; color: var(--ink-2); }
 </style>
