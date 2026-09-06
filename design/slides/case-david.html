@@ -57,6 +57,18 @@
             line-height: 1; color: var(--blue); }
 .cs__hero--solo { font-size: 96px; letter-spacing: -0.034em; }
 
+/* Money in, money out. The arrow here is a real claim (spend went in, return
+   came out) rather than a before/after, so both sides get a caption saying
+   which is which; without them the left number reads as an old result. */
+.cs__io { display: flex; align-items: flex-start; justify-content: center; gap: 34px; }
+.cs__io .cs__arrow { margin-top: 20px; }
+.cs__in, .cs__out { font-size: 58px; font-weight: 600; letter-spacing: -0.026em;
+                    line-height: 1; }
+.cs__in { color: var(--ink-3); }
+.cs__out { color: var(--blue); }
+.cs__iolab { margin: 12px 0 0; font-size: 17px; font-weight: 500;
+             letter-spacing: 0.01em; color: var(--ink-3); }
+
 .cs__note { margin: 30px auto 0; max-width: 560px; font-size: 22px;
             font-weight: 500; line-height: 1.36; color: var(--ink-2); }
 </style>

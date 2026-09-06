@@ -43,6 +43,19 @@ CASES = [
         'chip': '',
         'note': '',
     },
+    {
+        'shape': 'io',
+        'slug': 'nik',
+        'name': 'Nik',
+        'crop': '190%; background-position: 48% 8%',
+        'before': 'Launched paid ads from zero',
+        'in':   '$15K',
+        'inlab':  'spent last month',
+        'out':  '$80K+',
+        'outlab': 'made back',
+        'chip': 'Well over six figures in total',
+        'note': '',
+    },
 ]
 
 
@@ -124,6 +137,18 @@ TPL = '''<!doctype html>
             line-height: 1; color: var(--blue); }
 .cs__hero--solo { font-size: 96px; letter-spacing: -0.034em; }
 
+/* Money in, money out. The arrow here is a real claim (spend went in, return
+   came out) rather than a before/after, so both sides get a caption saying
+   which is which; without them the left number reads as an old result. */
+.cs__io { display: flex; align-items: flex-start; justify-content: center; gap: 34px; }
+.cs__io .cs__arrow { margin-top: 20px; }
+.cs__in, .cs__out { font-size: 58px; font-weight: 600; letter-spacing: -0.026em;
+                    line-height: 1; }
+.cs__in { color: var(--ink-3); }
+.cs__out { color: var(--blue); }
+.cs__iolab { margin: 12px 0 0; font-size: 17px; font-weight: 500;
+             letter-spacing: 0.01em; color: var(--ink-3); }
+
 .cs__note { margin: 30px auto 0; max-width: 560px; font-size: 22px;
             font-weight: 500; line-height: 1.36; color: var(--ink-2); }
 </style>
@@ -177,7 +202,20 @@ HERO = '''  <p class="cs__before">%(before)s</p>
 SOLO = '''  <p class="cs__hero cs__hero--solo">%(to)s</p>
   <p class="cs__unit">%(unit)s</p>'''
 
-SHAPES = {'jump': JUMP, 'hero': HERO, 'solo': SOLO}
+IO = '''  <p class="cs__before">%(before)s</p>
+  <div class="cs__io">
+    <div>
+      <div class="cs__in">%(in)s</div>
+      <p class="cs__iolab">%(inlab)s</p>
+    </div>
+    <span class="cs__arrow">&rarr;</span>
+    <div>
+      <div class="cs__out">%(out)s</div>
+      <p class="cs__iolab">%(outlab)s</p>
+    </div>
+  </div>'''
+
+SHAPES = {'jump': JUMP, 'hero': HERO, 'solo': SOLO, 'io': IO}
 
 for c in CASES:
     figure = SHAPES[c['shape']] % c
