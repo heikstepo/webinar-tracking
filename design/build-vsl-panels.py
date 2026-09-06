@@ -119,6 +119,20 @@ HEAD = '''<!doctype html>
 .duo p  { margin: 12px 0 0; font-size: 19px; font-weight: 500; line-height: 1.35;
           color: var(--ink-3); }
 
+/* The credit, drawn as a bar that gets cleared rather than described. */
+.bar { width: 560px; height: 26px; border-radius: 999px; background: #DDE4EC;
+       overflow: hidden; }
+.bar span { display: block; height: 100%;
+            background: linear-gradient(90deg, #9AC4F5 0%, #0071E3 100%); }
+.barlab { display: flex; justify-content: space-between; width: 560px;
+          margin-bottom: 14px; font-size: 20px; font-weight: 600; color: var(--ink-2); }
+.barlab b { color: #248A13; font-weight: 600; }
+
+/* One definition, set as the equation it is. */
+.eq { display: flex; align-items: baseline; justify-content: center; gap: 18px;
+      font-size: 40px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink); }
+.eq i { font-style: normal; color: var(--blue); font-size: 44px; }
+
 /* A quiet numeral that gives the build sequence a spine without spending a
    word on it. Sits above the line it belongs to, not beside it. */
 .stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
@@ -684,6 +698,164 @@ SLIDES = [
     ('credited-not-upfront', 'Credited, not upfront', '''
   <p class="lead">I say <span class="say__mark">credited</span> setup fee</p>
   <p class="big" style="font-size:52px">because we don&rsquo;t<br>charge you upfront.</p>
+'''),
+    # 38 — the claim on its own. Nothing to read past it.
+    ('no-risk', 'No risk on your end', '''
+  <p class="big">There is no risk,<br>literally, on<br>your end.</p>
+'''),
+
+    # 39 — the mechanism, stated once, with the word that carries it marked.
+    ('we-front-the-setup-fee', 'We front the setup fee', '''
+  <p class="lead">The way the setup fee works</p>
+  <p class="big" style="font-size:50px">We front you<br>the setup fee.</p>
+  <p class="say" style="margin-top:30px; font-size:28px; color:var(--blue); max-width:600px">
+    You get it as <span class="say__mark">credit</span>.
+  </p>
+'''),
+
+    # 40 — a number slide. The figure is the whole argument here.
+    ('zero-upfront', 'Zero upfront', '''
+  <p class="hero">$0</p>
+  <p class="say" style="margin-top:26px; font-size:34px">upfront.</p>
+  <p class="sub" style="margin-top:34px; max-width:620px">
+    We build and launch the entire ads funnel<br>before you pay anything.
+  </p>
+'''),
+
+    # 41 — the credit clearing, drawn as a bar that fills. Describing it takes
+    #      two sentences; showing it takes one glance.
+    ('credit-clears', 'The credit clears', '''
+  <div class="art">
+    <div class="barlab"><span>Setup fee credit</span><b>Paid in full</b></div>
+    <div class="bar"><span style="width:100%"></span></div>
+  </div>
+  <p class="say" style="max-width:640px">
+    The first closes we generate<br>go against that credit.
+  </p>
+'''),
+
+    # 42 — a definition, so it is set as the equation it is.
+    ('gross-revenue-share', 'Gross revenue share', '''
+  <p class="lead">Gross revenue share</p>
+  <div class="art" style="margin-bottom:34px">
+    <div class="eq"><span>Cash collected</span><i>&minus;</i><span>Ad spend</span></div>
+  </div>
+  <p class="art" style="margin:0"><span class="tag">For the next six months</span></p>
+  <p class="sub" style="margin-top:30px; max-width:600px">From there, only the revenue share continues.</p>
+'''),
+
+    # 43 — where it goes, in the accent, since that is the promise.
+    ('scale-together', 'Scale together', '''
+  <p class="lead">Working together</p>
+  <p class="big" style="font-size:50px">To scale to multiple<br>six and seven figures.</p>
+  <p class="sub" style="max-width:600px">Over the next couple of months.</p>
+'''),
+
+    # 44 — a conditional, so the two halves get two weights: the condition
+    #      quiet, the consequence in full ink.
+    ('only-if-you-do', 'We only make money if you do', '''
+  <p class="say" style="font-size:36px; color:var(--ink-3); max-width:620px">
+    We only make money
+  </p>
+  <p class="big" style="margin-top:14px; font-size:50px">if we make<br>you money.</p>
+  <p class="sub" style="margin-top:34px; max-width:600px">Both aligned on the same goal.</p>
+'''),
+
+    # 45 — the closing tally, deliberately the same shape as the one earlier in
+    #      the run so it reads as the ledger being settled.
+    ('full-clarity', 'Full clarity', '''
+  <p class="lead">You now have full clarity on</p>
+  <div class="check">
+    <div class="done"><em>&#10003;</em><span>The offer</span></div>
+    <div class="done"><em>&#10003;</em><span>The pricing structure</span></div>
+    <div class="done"><em>&#10003;</em><span>The deliverables</span></div>
+  </div>
+'''),
+
+    # 46 — the bridge into the ask.
+    ('if-you-fall-into-this', 'If you fall into this', '''
+  <p class="big" style="font-size:50px">So if this offer<br>is for you&hellip;</p>
+'''),
+
+    # 47 — the arrow points down because the thing it points at is literally
+    #      below the video.
+    ('application-below', 'Application below', '''
+  <p class="lead">Below this video</p>
+  <div class="art">
+    <svg viewBox="0 0 60 76" width="60" height="76" fill="none" aria-hidden="true">
+      <g stroke="#0071E3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 8 V 60"/><path d="M13 45 L 30 64 L 47 45"/></g>
+    </svg>
+  </div>
+  <div class="tiles" style="flex-direction:column; gap:16px">
+    <div class="pill pill--in" style="width:520px; font-size:26px; justify-content:center">
+      <span>There is an application</span>
+    </div>
+    <div class="pill pill--in" style="width:520px; font-size:26px; margin:0; justify-content:center">
+      <span>Book a call with me personally</span>
+    </div>
+  </div>
+'''),
+
+    # 48 — two moves on the call, so two numbered beats.
+    ('on-that-call', 'On that call', '''
+  <p class="lead">On that call</p>
+  <div class="parts">
+    <div class="part">
+      <svg viewBox="0 0 42 42"><circle cx="21" cy="13" r="7"/>
+        <path d="M7 36 C 7 27, 13 22, 21 22 C 29 22, 35 27, 35 36"/></svg>
+      <span><b>You describe your offer</b><i>And the business as it stands</i></span>
+    </div>
+    <div class="part">
+      <svg viewBox="0 0 42 42"><path d="M21 6 V 20"/><path d="M8 20 H34"/>
+        <path d="M8 20 L 4 31 H 12 Z"/><path d="M34 20 L 30 31 H 38 Z"/>
+        <path d="M14 36 H28"/></svg>
+      <span><b>We decide together</b><i>Whether it makes sense for both of us</i></span>
+    </div>
+  </div>
+'''),
+
+    # 49 — if it is a yes, the next two things happen fast, so the window gets
+    #      the accent rather than a sentence about urgency.
+    ('sign-and-start', 'Sign and start', '''
+  <p class="lead">If it does</p>
+  <ul class="bul" style="margin-top:0">
+    <li>We sign the agreement</li>
+    <li>We get to work as soon as possible</li>
+  </ul>
+  <p class="say" style="margin-top:40px; font-size:30px; color:var(--blue); max-width:620px">
+    Your onboarding call<br>within the first 48 hours.
+  </p>
+'''),
+
+    # 50 — the softest slide in the run. Grey throughout, because the point is
+    #      that a no costs nothing.
+    ('not-a-fit-is-fine', 'Not a fit is fine', '''
+  <p class="say" style="font-size:36px; color:var(--ink-2); max-width:640px">
+    And if it&rsquo;s not a good fit,<br>that&rsquo;s cool too.
+  </p>
+'''),
+
+    # 51 and 52 are one beat in the script, so they are one slide.
+    ('schedule-the-meeting', 'Schedule the meeting', '''
+  <p class="lead">If you&rsquo;ve watched this far</p>
+  <p class="say" style="font-size:30px; max-width:620px">
+    You probably already know<br>this is for you.
+  </p>
+  <p class="big" style="margin-top:36px; font-size:52px; color:var(--blue)">
+    So go ahead,<br>schedule the meeting.
+  </p>
+'''),
+
+    # 53 — what happens on the call, in one line.
+    ('everything-on-the-call', 'Everything on the call', '''
+  <p class="big" style="font-size:48px">On the call I&rsquo;ll lay out<br>everything you<br>need to know.</p>
+  <p class="sub" style="max-width:600px">Then we get to work together.</p>
+'''),
+
+    # 54 — the sign off. Nothing else on it.
+    ('see-you-on-that-call', 'See you on that call', '''
+  <p class="big">I&rsquo;ll see you<br>on that call.</p>
 '''),
 ]
 

@@ -109,6 +109,20 @@
 .duo p  { margin: 12px 0 0; font-size: 19px; font-weight: 500; line-height: 1.35;
           color: var(--ink-3); }
 
+/* The credit, drawn as a bar that gets cleared rather than described. */
+.bar { width: 560px; height: 26px; border-radius: 999px; background: #DDE4EC;
+       overflow: hidden; }
+.bar span { display: block; height: 100%;
+            background: linear-gradient(90deg, #9AC4F5 0%, #0071E3 100%); }
+.barlab { display: flex; justify-content: space-between; width: 560px;
+          margin-bottom: 14px; font-size: 20px; font-weight: 600; color: var(--ink-2); }
+.barlab b { color: #248A13; font-weight: 600; }
+
+/* One definition, set as the equation it is. */
+.eq { display: flex; align-items: baseline; justify-content: center; gap: 18px;
+      font-size: 40px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink); }
+.eq i { font-style: normal; color: var(--blue); font-size: 44px; }
+
 /* A quiet numeral that gives the build sequence a spine without spending a
    word on it. Sits above the line it belongs to, not beside it. */
 .stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
