@@ -181,6 +181,11 @@ HEAD = '''<!doctype html>
 .check small { display: block; margin-top: 6px; font-size: 19px;
                font-weight: 500; color: var(--ink-3); }
 
+/* One word carrying the claim, set far above the line it sits on. Baselines
+   align on their own for an inline span, but the tall line box has to be
+   pulled back in or it opens a gap above the second line. */
+.big__zero { font-size: 112px; line-height: 0.86; letter-spacing: -0.03em; color: var(--blue); }
+
 .hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
         letter-spacing: -0.03em; color: var(--ink); }
 </style>
@@ -672,7 +677,7 @@ SLIDES = [
     #       for him to say: the panel was reading the script out loud. One
     #       line, and the rest is spoken.
     ('risk-free-by-design', 'Risk-free by design', '''
-  <p class="big">Risk-free<br>on your end.</p>
+  <p class="big"><span class="big__zero">Zero</span> risk<br>on your end.</p>
 '''),
 
     # 32b — the handoff into the case studies. Nothing on it but the question
