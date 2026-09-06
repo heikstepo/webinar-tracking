@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Panel template</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   PANEL  —  the right-hand half of a talking-head video frame.
+
+   900x1080 sits beside a 1020-wide camera crop in a 1920x1080 timeline, which
+   is the "a bit less than half" the reference frame uses. White rather than
+   the deck's ground, because it butts up against a white panel on screen and
+   the deck grey would read as a dirty edge against it.
+
+   Everything here is a tall, narrow composition: the house slides are 16:9 and
+   their layouts do not simply squeeze into this, so panel graphics get built
+   for the shape rather than cropped into it.
+   ========================================================================= */
+@page { size: 900px 1080px; margin: 0; }
+
+.slide {
+  width: 900px;
+  height: 1080px;
+  padding: 90px 70px;
+  background: #FFFFFF;
+}
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+
+  <p class="lede" style="max-width:640px">Panel format — 900 &times; 1080.<br>
+     Safe area is 70px in from each edge, 90px top and bottom.</p>
+
+</section>
+
+</body>
+</html>
