@@ -37,7 +37,7 @@ CASES = [
         'shape': 'solo',
         'slug': 'david',
         'name': 'David',
-        'crop': '235%; background-position: 50% 9%',
+        'crop': '210%; background-position: 50% 9%',
         'to':   '$200K+',
         'unit': 'selling his high ticket offer',
         'chip': '',
@@ -71,7 +71,7 @@ CASES = [
         'shape': 'solo',
         'slug': 'matt',
         'name': 'Matt',
-        'crop': '260%; background-position: 60% 27%',
+        'crop': '215%; background-position: 40% 19%',
         'to':   '$50K+',
         'unit': 'in less than two weeks',
         'chip': '',
@@ -81,7 +81,7 @@ CASES = [
         'shape': 'solo',
         'slug': 'abdul',
         'name': 'Abdul',
-        'crop': '190%; background-position: 33% 14%',
+        'crop': '172%; background-position: 31% 15%',
         # Again his words rather than a figure we coined. Two lines because
         # the phrase is too long to hold the panel width on one.
         'to':   'MULTIPLE<br>5-FIGURES',
@@ -96,7 +96,8 @@ CASES = [
         'name': 'Mike',
         # Cropped in past the branded banner behind him: another company's
         # logo has no business sitting on one of our slides.
-        'crop': '138%; background-position: 50% 36%',
+        'precrop': (77, 77, 1037, 1037),
+        'crop': 'cover; background-position: center 50%',
         'to':   'MULTIPLE<br>6-FIGURES',
         'size': '74px',
         'unit': '',
@@ -104,6 +105,21 @@ CASES = [
         'note': '',
     },
 ]
+
+
+def precrop(path, box):
+    """Cut the source down before it is inlined.
+
+    A tight selfie leaves no slack for background-position to work with: the
+    head already fills the frame, so shifting it only pushes the far side out.
+    Cropping the file itself is the only way to reframe one of those."""
+    if not box:
+        return open(path, 'rb').read()
+    from PIL import Image
+    from io import BytesIO
+    buf = BytesIO()
+    Image.open(path).convert('RGB').crop(box).save(buf, 'JPEG', quality=92)
+    return buf.getvalue()
 
 
 def photo(c):
@@ -118,7 +134,7 @@ def photo(c):
         p = 'photos/%s.%s' % (c['slug'], ext)
         if os.path.exists(p):
             mime = 'jpeg' if ext in ('jpg', 'jpeg') else ext
-            b64 = base64.b64encode(open(p, 'rb').read()).decode()
+            b64 = base64.b64encode(precrop(p, c.get('precrop'))).decode()
             return ('<div class="cs__pic" style="background-size:%s; '
                     'background-image:url(data:image/%s;base64,%s)"></div>'
                     % (crop, mime, b64))
