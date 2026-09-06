@@ -692,7 +692,7 @@ SLIDES = [
     ('a-reason-for-this-offer', 'A reason for this offer', '''
   <p class="big" style="font-size:52px">There is a reason<br>why I&rsquo;m giving you<br>this offer.</p>
   <p class="say" style="margin-top:46px; font-size:32px; max-width:620px">
-    We can get you results as well<br>via our
+    We can get you results as well<br>for our
     <span class="say__mark">high-ticket offer</span>.
   </p>
 '''),
