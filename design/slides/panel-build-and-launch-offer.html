@@ -9,7 +9,7 @@
 /* ============================================================================
    Panel version: our ground, our ink, our blue.
 
-   720x1080 rather than 900x1080. The slot beside the camera crop is a tall
+   800x1080 rather than 900x1080. The slot beside the camera crop is a tall
    narrow column, and a 900-wide canvas dropped into it gets stretched sideways
    to fill — which widens the type no matter how small the type is set. Cutting
    the canvas is the fix; shrinking the text was not.
@@ -17,10 +17,10 @@
    A hairline down the left edge, full height, so the panel reads as its own
    surface butting the video rather than as the frame simply running out.
    ========================================================================= */
-@page { size: 720px 1080px; margin: 0; }
+@page { size: 800px 1080px; margin: 0; }
 
 .slide {
-  width: 720px;
+  width: 800px;
   height: 1080px;
   padding: 90px 60px;
   background: var(--ground);
@@ -39,7 +39,7 @@
 
 .say {
   margin: 0;
-  max-width: 600px;
+  max-width: 680px;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.36;
