@@ -16,7 +16,7 @@ CASES = [
     {
         'shape': 'jump',
         'slug': 'steven',
-        'name': 'Steven',
+        'name': 'Steven Cravotta',
         'from': '$15K/mo',
         'to':   '$160K/mo',
         'unit': 'per month in cash collected',
@@ -36,7 +36,7 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'david',
-        'name': 'David',
+        'name': 'David Capablanca',
         'crop': '210%; background-position: 50% 9%',
         'to':   '$200K+',
         'unit': 'selling his high ticket offer',
@@ -46,7 +46,7 @@ CASES = [
     {
         'shape': 'io',
         'slug': 'nik',
-        'name': 'Nik',
+        'name': 'Nik Lanning',
         'crop': '190%; background-position: 48% 8%',
         'before': 'Launched paid ads from zero',
         'in':   '$15K',
@@ -59,7 +59,7 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'simon',
-        'name': 'Simon',
+        'name': 'Simon Arzuman',
         'crop': '145%; background-position: 50% 2%',
         # His words, not a dollar figure we coined. The + carries "well over".
         'to':   '7 FIGURES+',
@@ -70,7 +70,7 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'matt',
-        'name': 'Matt',
+        'name': 'Matt Loeber',
         'crop': '215%; background-position: 40% 19%',
         'to':   '$50K+',
         'unit': 'in less than two weeks',
@@ -80,7 +80,7 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'abdul',
-        'name': 'Abdul',
+        'name': 'Abdul-Qawiyy',
         'crop': '172%; background-position: 31% 15%',
         # Again his words rather than a figure we coined. Two lines because
         # the phrase is too long to hold the panel width on one.
@@ -93,7 +93,7 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'mike',
-        'name': 'Mike',
+        'name': 'Mike Meza',
         # Cropped in past the branded banner behind him: another company's
         # logo has no business sitting on one of our slides.
         'precrop': (77, 77, 1037, 1037),
