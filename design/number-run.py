@@ -46,6 +46,14 @@ if missing:
     raise SystemExit('not rendered yet, run ./render.sh on these first:\n  '
                      + '\n  '.join(missing))
 
+# The 16:9 set is numbered alongside the panels, from the same order, so a
+# slide carries the same number in both shapes.
+WIDE = 'exports/run-wide'
+have_wide = all(os.path.exists('exports/wide-%s.png' % s) for s in order)
+shutil.rmtree(WIDE, ignore_errors=True)
+if have_wide:
+    os.makedirs(WIDE)
+
 shutil.rmtree(OUT, ignore_errors=True)   # so a removed slide leaves no orphan
 os.makedirs(OUT)
 
@@ -54,9 +62,13 @@ for i, slug in enumerate(order, 1):
         src = 'exports/%s.%s' % (slug, ext)
         if os.path.exists(src):
             shutil.copy(src, '%s/%02d-%s.%s' % (OUT, i, slug, ext))
+    if have_wide:
+        shutil.copy('exports/wide-%s.png' % slug,
+                    '%s/%02d-%s.png' % (WIDE, i, slug))
     print('%2d  %s' % (i, slug))
 
 print('\n%d slides in %s/' % (len(order), OUT))
+print('%d slides in %s/' % (len(order) if have_wide else 0, WIDE))
 
 
 # ---------------------------------------------------------------------------

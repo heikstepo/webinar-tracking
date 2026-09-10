@@ -280,6 +280,8 @@ IO = '''  <p class="cs__before">%(before)s</p>
 
 SHAPES = {'jump': JUMP, 'hero': HERO, 'solo': SOLO, 'io': IO}
 
+os.makedirs('slides/wide', exist_ok=True)
+
 for c in CASES:
     c = dict(c)
     c['styleattr'] = ' style="font-size:%s"' % c['size'] if c.get('size') else ''
@@ -296,5 +298,19 @@ for c in CASES:
               .replace('__NAME__', c['name']).replace('__FIGURE__', figure)
               .replace('__CHIP__', chip).replace('__NOTE__', note))
     open('slides/case-%s.html' % c['slug'], 'w').write(out)
+
+    # The 16:9 twin. Only the canvas changes: the stack stays centred and keeps
+    # its measure, so the panel and the widescreen slide are one composition on
+    # two fields. The left hairline goes, since it exists to butt the camera
+    # crop and a full frame has none.
+    wide = (out.replace('href="../', 'href="../../')
+               .replace('size: %dpx %dpx' % (W, H), 'size: 1920px 1080px')
+               .replace('.slide { width: %dpx; height: %dpx;' % (W, H),
+                        '.slide { width: 1920px; height: 1080px;')
+               .replace('  <div class="edge"></div>\n', ''))
+    if 'size: 1920px 1080px' not in wide:
+        raise SystemExit('the canvas rule moved; the wide variant no longer matches')
+    open('slides/wide/wide-case-%s.html' % c['slug'], 'w').write(wide)
+
     have = 'NO PHOTO, placeholder disc' if 'cs__pic cs__pic--none' in out else 'photo embedded'
-    print('wrote slides/case-%s.html  (%s)' % (c['slug'], have))
+    print('wrote slides/case-%s.html  (%s, + wide)' % (c['slug'], have))

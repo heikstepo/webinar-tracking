@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Who this is for</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 120px; background: var(--ground); }
+
+/* Full-height hairline down the seam against the camera crop. 6px here so it
+   survives the scale down into the edit; see panel-template. */
+.edge { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: #B9C0C9; }
+
+.lead { margin: 0 0 26px; font-size: 26px; font-weight: 600; letter-spacing: -0.002em; color: var(--ink-3); }
+.big  { margin: 0; max-width: 680px; font-size: 62px; font-weight: 600;
+        line-height: 1.16; letter-spacing: -0.018em; color: var(--ink); }
+.say  { margin: 0; max-width: 660px; font-size: 36px; font-weight: 600;
+        line-height: 1.34; letter-spacing: -0.008em; color: var(--ink); }
+.sub  { margin: 22px 0 0; font-size: 26px; font-weight: 500; line-height: 1.38; color: var(--ink-2); }
+
+/* The one phrase in a sentence that carries it. A weighted underline rather
+   than a filled highlighter block: the panel sits beside a talking head, not
+   on a keynote screen, and a slab of colour at this size shouts. This was
+   referenced by three panels before it existed, so their emphasis was
+   silently rendering as plain text. */
+.say__mark { color: var(--blue);
+             background: linear-gradient(to top, #C6DDFA 0 0.15em, transparent 0.15em); }
+
+.tiles { display: flex; gap: 22px; justify-content: center; }
+.tile  { width: 220px; background: var(--surface); border: 1px solid var(--hairline);
+         border-radius: 22px; padding: 30px 18px 26px; text-align: center; }
+.tile svg { display: block; width: 62px; height: 62px; margin: 0 auto 16px;
+            fill: none; stroke: #7FA8DC; stroke-width: 1.6;
+            stroke-linecap: round; stroke-linejoin: round; }
+.tile b { display: block; font-size: 26px; font-weight: 600; letter-spacing: -0.004em; color: var(--ink); }
+/* The thing that is not there yet reads as an outline, not a card. */
+.tile--todo { background: none; border-style: dashed; border-color: #A9BDD4; }
+.tile--todo svg { stroke: #A9BDD4; }
+
+.art { margin: 0 0 42px; }
+
+.bul { margin: 34px 0 0; padding: 0; list-style: none; text-align: left; max-width: 620px; }
+.bul li { position: relative; padding-left: 34px; margin-bottom: 20px;
+          font-size: 26px; font-weight: 500; line-height: 1.32; color: var(--ink); }
+.bul li:last-child { margin-bottom: 0; }
+.bul li::before { content: ""; position: absolute; left: 0; top: 14px;
+                  width: 12px; height: 12px; border-radius: 50%; background: var(--blue); }
+.bul li.muted { color: var(--ink-2); }
+.bul li.muted::before { background: #C3CCD8; }
+/* Struck through, because the point is the things being skipped over. */
+.bul li.gone { color: var(--ink-3); text-decoration: line-through;
+               text-decoration-color: #BFC6CF; text-decoration-thickness: 2px; }
+.bul li.gone::before { background: #D3D8DF; }
+
+/* A stack of icon rows: the densest layout here, used once. Namespaced
+   because plain .rows already means something else in voice-quiet.css. */
+.parts { display: flex; flex-direction: column; gap: 22px; text-align: left; width: 600px; }
+.part  { display: flex; align-items: center; gap: 20px; }
+.part svg { flex: none; width: 42px; height: 42px; fill: none; stroke: #7FA8DC;
+           stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.part b { display: block; font-size: 25px; font-weight: 600; letter-spacing: -0.004em;
+         line-height: 1.24; color: var(--ink); }
+.part i { display: block; font-style: normal; margin-top: 4px;
+         font-size: 19px; font-weight: 500; color: var(--ink-3); }
+
+/* Two states of the same measure, stacked so the cut between them is the shape. */
+.pill { width: 560px; border-radius: 18px; padding: 24px 30px;
+        font-size: 30px; font-weight: 600; letter-spacing: -0.006em;
+        display: flex; align-items: center; justify-content: space-between; }
+.pill--in  { background: #E4EFFD; color: var(--ink); border: 1px solid #C3DAF6; }
+.pill--out { background: none; color: var(--ink-3); border: 1px dashed #CDD2D8;
+             margin-top: 16px; }
+.pill--out span { text-decoration: line-through; text-decoration-color: #C3C9D1;
+                  text-decoration-thickness: 2px; }
+.pill em { font-style: normal; font-size: 28px; }
+
+/* Fourteen days, drawn as fourteen days. */
+.days { display: flex; gap: 9px; justify-content: center; }
+.days span { width: 26px; height: 26px; border-radius: 8px; background: #C7DCF7; }
+.days span.on { background: var(--blue); }
+
+.chipnum { width: 54px; height: 54px; border-radius: 50%; background: #E4EFFD;
+           color: var(--blue); font-size: 24px; font-weight: 600;
+           display: flex; align-items: center; justify-content: center; }
+
+/* Two halves with a rule between them, so a contrast is a shape and not a
+   claim. The volume in the lower half is the argument. */
+.vs { width: 660px; text-align: left; }
+.vs__half { padding: 30px 0; }
+.vs__half + .vs__half { border-top: 1px solid var(--hairline); padding-top: 34px; }
+.who { display: inline-block; margin-bottom: 18px; padding: 6px 18px;
+       border-radius: 999px; font-size: 18px; font-weight: 600; letter-spacing: 0.01em; }
+.who--you { background: #E8EAEE; color: var(--ink-2); }
+.who--us  { background: #E4EFFD; color: var(--blue); }
+.vs h3 { margin: 0; font-size: 32px; font-weight: 600;
+            letter-spacing: -0.008em; color: var(--ink); }
+.vs p  { margin: 10px 0 0; font-size: 20px; font-weight: 500; color: var(--ink-3); }
+.vs strong { display: block; margin-top: 16px; font-size: 24px;
+                font-weight: 600; color: var(--blue); }
+
+/* Forty one small chips against one line of work. The wrap is the point:
+   the imbalance has to be felt before any of it is read. */
+.chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.chips span { padding: 6px 12px; border-radius: 999px; background: var(--surface);
+              border: 1px solid var(--hairline); font-size: 14px; font-weight: 500;
+              color: var(--ink-2); }
+
+/* Two things that make up one price. */
+.duo { display: flex; gap: 22px; }
+.duo > div { width: 300px; background: var(--surface); border: 1px solid var(--hairline);
+             border-radius: 20px; padding: 30px 26px 32px; text-align: left; }
+.duo h4 { margin: 0; font-size: 27px; font-weight: 600; letter-spacing: -0.006em;
+          line-height: 1.2; color: var(--ink); }
+.duo p  { margin: 12px 0 0; font-size: 19px; font-weight: 500; line-height: 1.35;
+          color: var(--ink-3); }
+
+/* The credit, drawn as a bar that gets cleared rather than described. */
+.bar { width: 560px; height: 26px; border-radius: 999px; background: #DDE4EC;
+       overflow: hidden; }
+.bar span { display: block; height: 100%;
+            background: linear-gradient(90deg, #9AC4F5 0%, #0071E3 100%); }
+.barlab { display: flex; justify-content: space-between; width: 560px;
+          margin-bottom: 14px; font-size: 20px; font-weight: 600; color: var(--ink-2); }
+.barlab b { color: #248A13; font-weight: 600; }
+
+/* One definition, set as the equation it is. */
+.eq { display: flex; align-items: baseline; justify-content: center; gap: 18px;
+      font-size: 40px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink); }
+.eq i { font-style: normal; color: var(--blue); font-size: 44px; }
+
+/* A quiet numeral that gives the build sequence a spine without spending a
+   word on it. Sits above the line it belongs to, not beside it. */
+.stepnum { margin: 0 0 20px; font-size: 30px; font-weight: 600;
+           letter-spacing: 0.04em; color: #A9BDD4; }
+
+/* Two by two, so a long deliverable list reads as four short ones. A single
+   column of fourteen items is the thing to avoid here. */
+.gcards { display: grid; grid-template-columns: 320px 320px; gap: 26px;
+          text-align: left; }
+.gcard { background: var(--surface); border: 1px solid var(--hairline);
+         border-radius: 18px; padding: 22px 24px 24px; }
+.gcard h4 { margin: 0 0 14px; font-size: 20px; font-weight: 600;
+            letter-spacing: -0.003em; color: var(--blue); }
+.gcard ul { margin: 0; padding: 0; list-style: none; }
+.gcard li { position: relative; padding-left: 18px; margin-bottom: 8px;
+            font-size: 16px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.gcard--wide { grid-column: span 2; }
+.gcard--wide ul { columns: 2; column-gap: 30px; }
+.gcard--wide li { break-inside: avoid; }
+.gcard li:last-child { margin-bottom: 0; }
+.gcard li::before { content: ""; position: absolute; left: 0; top: 9px;
+                    width: 7px; height: 7px; border-radius: 50%; background: #B9CFEC; }
+
+.tag { display: inline-block; padding: 9px 22px; border-radius: 999px;
+       background: #E4EFFD; color: var(--blue);
+       font-size: 24px; font-weight: 600; letter-spacing: -0.004em; }
+
+/* A running tally: what is already done, and the one thing being added. */
+.check { display: flex; flex-direction: column; gap: 26px; text-align: left; width: 600px; }
+.check div { display: flex; align-items: flex-start; gap: 18px;
+             font-size: 28px; font-weight: 600; letter-spacing: -0.005em; color: var(--ink); }
+.check em { flex: none; width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-style: normal; font-size: 20px; }
+.check .done em { background: #E7F5E3; color: #248A13; }
+.check .now  em { background: #E4EFFD; color: var(--blue); }
+.check .now { color: var(--blue); }
+.check small { display: block; margin-top: 6px; font-size: 19px;
+               font-weight: 500; color: var(--ink-3); }
+
+/* One word carrying the claim, set far above the line it sits on. Baselines
+   align on their own for an inline span, but the tall line box has to be
+   pulled back in or it opens a gap above the second line. */
+.big__zero { font-size: 112px; line-height: 0.86; letter-spacing: -0.03em; color: var(--blue); }
+
+.hero { margin: 0; font-size: 96px; font-weight: 600; line-height: 1;
+        letter-spacing: -0.03em; color: var(--ink); }
+
+/* Auto-fit: see fit-wide.py. The box keeps the panel's text column width so
+   nothing reflows, and scales about its centre so the slide's own centring
+   still places it. Scale is written in per slide. */
+.fit { display: flex; flex-direction: column; align-items: center;
+       justify-content: center; width: 680px; transform: scale(2.0); }
+</style>
+</head>
+<body>
+
+<section class="slide slide--center slide--mid">
+<div class="fit">
+
+  <p class="big">Here&rsquo;s exactly<br>who this is for.</p>
+
+</div>
+</section>
+
+</body>
+</html>

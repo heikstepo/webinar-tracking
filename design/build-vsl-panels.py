@@ -914,7 +914,33 @@ def _check_class_collisions():
 
 _check_class_collisions()
 
+def widen(html):
+    """The 16:9 twin of a panel.
+
+    Only the canvas changes. The type keeps its measure and stays centred, so
+    a panel and its widescreen version are the same composition on a wider
+    field rather than two different slides. The left edge hairline goes: it
+    exists to butt the camera crop, and a full frame has no camera crop.
+    """
+    out = (html
+           # One directory deeper, so the shared stylesheets are one level
+           # further up. Left wrong they simply fail to load and the slide
+           # renders as unstyled text.
+           .replace('href="../', 'href="../../')
+           .replace('@page { size: 800px 1080px; margin: 0; }',
+                    '@page { size: 1920px 1080px; margin: 0; }')
+           .replace('.slide { width: 800px; height: 1080px; padding: 90px 60px;',
+                    '.slide { width: 1920px; height: 1080px; padding: 90px 120px;')
+           .replace('  <div class="edge"></div>\n', ''))
+    if '1920px 1080px' not in out:
+        raise SystemExit('the panel canvas rule moved; widen() no longer matches')
+    return out
+
+
+os.makedirs('slides/wide', exist_ok=True)
+
 for name, title, body in SLIDES:
-    open('slides/vsl-%s.html' % name, 'w').write(
-        HEAD.replace('__TITLE__', title) + body + FOOT)
-    print('wrote slides/vsl-%s.html' % name)
+    html = HEAD.replace('__TITLE__', title) + body + FOOT
+    open('slides/vsl-%s.html' % name, 'w').write(html)
+    open('slides/wide/wide-vsl-%s.html' % name, 'w').write(widen(html))
+    print('wrote slides/vsl-%s.html  (+ wide)' % name)
