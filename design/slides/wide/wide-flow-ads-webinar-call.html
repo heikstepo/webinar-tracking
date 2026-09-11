@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ads to webinar to booked call</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Three steps, two arrows, nothing else.
+
+   Drawn in the same line vocabulary as the webinar and VSL icons: a light blue
+   stroke throughout, with one mark per icon in the accent. That accent mark is
+   what tells the three apart before any caption is read — the play on the ad,
+   the presenter on the webinar, the tick on the booked call.
+
+   No cards behind the icons. A card would make each step a thing in a box, and
+   the point here is the movement between them, so the only structure on the
+   slide is the two arrows.
+
+   Written directly at 1920x1080 rather than through the panel generator: this
+   is a horizontal flow, and the narrow panel would force it into a vertical
+   stack, which is a different drawing rather than the same one resized.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 120px; background: var(--ground); }
+
+.flow3 { display: flex; align-items: flex-start; justify-content: center; gap: 70px; }
+
+.flow3__step { width: 360px; display: flex; flex-direction: column; align-items: center; }
+
+.flow3__step svg {
+  display: block;
+  width: 260px; height: 260px;
+  fill: none;
+  stroke: #7FA8DC;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.flow3__step svg .hot { stroke: var(--blue); stroke-width: 3; }
+.flow3__step svg .hot-fill { fill: var(--blue); stroke: none; }
+
+.flow3__name {
+  margin: 34px 0 0;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Sits on the icons' centre line, not the block's, so it points between the
+   drawings rather than at the captions under them. */
+.flow3__arrow { flex: none; width: 140px; margin-top: 112px; }
+.flow3__arrow svg { display: block; width: 140px; height: 40px; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: this is already sized for 1920 and its row is wider
+     than the panel text column the fit pass would wrap it into. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="flow3">
+
+    <!-- An ad in a feed: picture, two lines of copy, and the button that is
+         the whole reason it exists. -->
+    <div class="flow3__step">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="12" y="14" width="100" height="96" rx="11"/>
+        <rect x="24" y="26" width="76" height="40" rx="6"/>
+        <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+        <path d="M24 78 H 92 M24 88 H 72"/>
+        <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+      </svg>
+      <p class="flow3__name">Meta ads</p>
+    </div>
+
+    <div class="flow3__arrow">
+      <svg viewBox="0 0 74 26" aria-hidden="true">
+        <g fill="none" stroke="#0071E3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13 H 60"/><path d="M50 4 L 69 13 L 50 22"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- The same webinar icon used elsewhere: a presenter on the screen, and
+         the room watching it at the same time. -->
+    <div class="flow3__step">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="12" y="12" width="100" height="62" rx="8"/>
+        <circle class="hot" cx="42" cy="34" r="7"/>
+        <path class="hot" d="M30 56 C 30 46, 35.5 41, 42 41 C 48.5 41, 54 46, 54 56"/>
+        <path d="M68 32 H 96 M68 42 H 90 M68 52 H 96"/>
+        <circle cx="32" cy="92" r="7"/>
+        <path d="M20 112 C 20 102, 25.5 97, 32 97 C 38.5 97, 44 102, 44 112"/>
+        <circle cx="62" cy="92" r="7"/>
+        <path d="M50 112 C 50 102, 55.5 97, 62 97 C 68.5 97, 74 102, 74 112"/>
+        <circle cx="92" cy="92" r="7"/>
+        <path d="M80 112 C 80 102, 85.5 97, 92 97 C 98.5 97, 104 102, 104 112"/>
+      </svg>
+      <p class="flow3__name">Webinar</p>
+    </div>
+
+    <div class="flow3__arrow">
+      <svg viewBox="0 0 74 26" aria-hidden="true">
+        <g fill="none" stroke="#0071E3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13 H 60"/><path d="M50 4 L 69 13 L 50 22"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- A date taken. The tick is the accent because booked, not scheduled,
+         is the state this step is claiming. -->
+    <div class="flow3__step">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="14" y="24" width="96" height="86" rx="10"/>
+        <path d="M14 48 H 110"/>
+        <path d="M40 14 V 32 M84 14 V 32"/>
+        <path class="hot" d="M44 78 L 57 90 L 84 64"/>
+      </svg>
+      <p class="flow3__name">Booked call</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

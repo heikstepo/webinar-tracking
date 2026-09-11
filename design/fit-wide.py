@@ -53,7 +53,10 @@ def set_scale(html, scale):
     return html.replace('</style>', FIT_CSS % round(scale, 4), 1)
 
 
-files = sorted(glob.glob('slides/wide/*.html'))
+files = [p for p in sorted(glob.glob('slides/wide/*.html'))
+         # A slide drawn directly at 1920 can be wider than the panel text
+         # column, and wrapping it into that box would reflow it.
+         if 'no-autofit' not in open(p).read()]
 if not files:
     raise SystemExit('no wide slides; run the generators first')
 
