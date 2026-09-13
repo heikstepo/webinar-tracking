@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ICP, messaging, offer positioning</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Three phrases, stacked.
+
+   Even spacing and one weight throughout, deliberately: they are three things
+   of equal standing, and the gaps are equal so the stack can be revealed a
+   line at a time in the edit without anything shifting. No dividers, numbers
+   or bullets for the same reason — each would be another thing to mask.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 120px; background: var(--ground); }
+
+.stack3 { display: flex; flex-direction: column; align-items: center; gap: 84px; }
+
+.stack3 p {
+  margin: 0;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: sized for 1920 here, so the fit pass must leave it alone. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="stack3">
+    <p>ICP</p>
+    <p>Messaging</p>
+    <p>Offer Positioning</p>
+  </div>
+
+</section>
+
+</body>
+</html>
