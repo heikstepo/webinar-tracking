@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ecom versus high ticket, vertical</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   Ecom against high ticket, upright for a phone.
+
+   The widescreen version compares two chains by how far right each one runs.
+   That cannot survive a 1080 wide card, so here the chains run downward and sit
+   side by side, and the comparison becomes column height instead. Same argument,
+   turned ninety degrees.
+
+   Both columns are on the same baseline at the top and use the same spacing, so
+   the ecom column simply stops while the high ticket one keeps going. The empty
+   space under the ecom tick is the whole point and is not to be filled.
+
+   Stripped to fit: no arrows between the marks, just a hairline link, and the
+   marks are smaller than on the widescreen slide. At this width an arrowhead
+   between every step is noise competing with the thing being counted.
+   ========================================================================= */
+@page { size: 1080px 1200px; margin: 0; }
+
+.slide { width: 1080px; height: 1200px; padding: 70px; background: var(--ground); }
+
+.cols { display: flex; gap: 96px; justify-content: center; align-items: flex-start; }
+
+.col { width: 396px; display: flex; flex-direction: column; align-items: center; }
+
+.col__label {
+  margin: 0 0 34px;
+  font-size: 46px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);
+}
+
+.col__chain { display: flex; flex-direction: column; align-items: center; }
+
+/* Hairline between steps instead of an arrow: at this size an arrowhead every
+   step is noise competing with the thing being counted. */
+.link { width: 3px; height: 44px; background: #D2D8E0; border-radius: 2px; }
+
+.who svg { display: block; width: 70px; height: 160px; fill: var(--ink); }
+
+.mark svg {
+  display: block; width: 112px; height: 112px;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.mark svg .hot { stroke: var(--blue); stroke-width: 3.2; }
+.mark svg .hot-fill { fill: var(--blue); stroke: none; }
+/* YouTube is a real logo, so it is a filled mark rather than a line drawing. */
+.mark .yt { width: 118px; height: 118px; fill: var(--ink); stroke: none; }
+
+.tick {
+  width: 112px; height: 112px; border-radius: 50%;
+  background: #E7F5E3; border: 3px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 56px; line-height: 1; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center">
+
+  <div class="cols">
+
+    <div class="col">
+      <p class="col__label">Ecom</p>
+      <div class="col__chain">
+
+        <div class="who">
+          <svg viewBox="0 0 66 150" aria-hidden="true">
+            <circle cx="33" cy="16" r="14"/>
+            <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
+                     L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
+            <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
+            <rect x="52" y="46" width="11" height="44" rx="5.5"/>
+            <rect x="19" y="88" width="12" height="58" rx="6"/>
+            <rect x="35" y="88" width="12" height="58" rx="6"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="mark">
+          <svg viewBox="0 0 124 124" aria-hidden="true">
+            <rect x="12" y="14" width="100" height="96" rx="11"/>
+            <rect x="24" y="26" width="76" height="40" rx="6"/>
+            <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+            <path d="M24 78 H 92 M24 88 H 72"/>
+            <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="tick">&#10003;</div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <p class="col__label">High ticket</p>
+      <div class="col__chain">
+
+        <div class="who">
+          <svg viewBox="0 0 66 150" aria-hidden="true">
+            <circle cx="33" cy="16" r="14"/>
+            <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
+                     L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
+            <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
+            <rect x="52" y="46" width="11" height="44" rx="5.5"/>
+            <rect x="19" y="88" width="12" height="58" rx="6"/>
+            <rect x="35" y="88" width="12" height="58" rx="6"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="mark">
+          <svg viewBox="0 0 124 124" aria-hidden="true">
+            <rect x="12" y="14" width="100" height="96" rx="11"/>
+            <rect x="24" y="26" width="76" height="40" rx="6"/>
+            <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+            <path d="M24 78 H 92 M24 88 H 72"/>
+            <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="mark">
+          <svg viewBox="0 0 124 124" aria-hidden="true">
+            <rect x="12" y="14" width="100" height="96" rx="11"/>
+            <rect x="24" y="26" width="76" height="40" rx="6"/>
+            <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+            <path d="M24 78 H 92 M24 88 H 72"/>
+            <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <!-- not an ad: they went looking themselves -->
+        <div class="mark">
+          <svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="mark">
+          <svg viewBox="0 0 124 124" aria-hidden="true">
+            <rect x="12" y="14" width="100" height="96" rx="11"/>
+            <rect x="24" y="26" width="76" height="40" rx="6"/>
+            <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+            <path d="M24 78 H 92 M24 88 H 72"/>
+            <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+          </svg>
+        </div>
+
+        <div class="link"></div>
+
+        <div class="tick">&#10003;</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
