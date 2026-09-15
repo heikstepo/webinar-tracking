@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One person, four touches, one week</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   One buyer across one week.
+
+   The whole point is that it is the SAME person the whole way through, so the
+   figure is drawn once and stands at the head of the track rather than being
+   repeated at every stop. Five figures would read as five people, which is the
+   opposite of the argument.
+
+   The stops sit at their real position in the week, not evenly spaced: Monday,
+   Tuesday, Thursday, Saturday and then the sale. Wednesday and Friday are gaps
+   and they show as gaps, because a row of evenly spaced stops would quietly say
+   the touches were regular when the point is that they are scattered.
+
+   The last stop is the conversion, in the same green tick this deck uses for a
+   sale everywhere else, so it reads as the payoff and not as a fifth touch.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.wk { display: flex; align-items: flex-start; gap: 44px; width: 1700px; }
+
+/* The person. Solid ink, built from a few rounded shapes with real gaps left
+   between the arms and the torso — overlapped, they merge into one lump and
+   the silhouette stops reading as a figure. */
+.wk__who { flex: none; padding-top: 26px; }
+.wk__who svg { display: block; width: 132px; height: 310px; fill: var(--ink); }
+
+.wk__track { position: relative; flex: 1; }
+
+/* Behind the dots, at their centre. */
+.wk__line {
+  position: absolute; left: 0; right: 0; top: 232px; height: 3px;
+  background: #D2D8E0; border-radius: 2px;
+}
+
+.wk__stops { position: relative; height: 320px; }
+
+/* Placed by day rather than distributed. The week runs 0 to 1 across the
+   track, inset at both ends so the first and last stop stay inside it. */
+.stop {
+  position: absolute; top: 0; width: 212px; margin-left: -106px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.stop--mon  { left: 6%; }     /* day 1 */
+.stop--tue  { left: 20.7%; }  /* day 2 */
+.stop--thu  { left: 50%; }    /* day 4 */
+.stop--sat  { left: 79.3%; }  /* day 6 */
+.stop--conv { left: 94%; }    /* day 7 */
+
+.stop__art { height: 200px; display: flex; align-items: flex-end; justify-content: center; }
+.stop__art svg {
+  display: block; width: 130px; height: 130px;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.stop__art svg .hot { stroke: var(--blue); stroke-width: 3.2; }
+.stop__art svg .hot-fill { fill: var(--blue); stroke: none; }
+/* YouTube is a real logo, so it is a filled mark rather than a line drawing. */
+.stop__art .yt { width: 140px; height: 140px; fill: var(--ink); stroke: none; }
+
+.stop__dot {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--ground); border: 3px solid #A9B6C6;
+  margin: 19px 0 0;
+}
+.stop__day {
+  margin: 28px 0 0;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
+}
+
+/* The sale. Green, filled, and a size up, because it is the outcome rather
+   than another thing that happened. */
+.stop--conv .tick {
+  width: 146px; height: 146px; border-radius: 50%;
+  background: #E7F5E3; border: 3px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 72px; line-height: 1; color: #248A13;
+}
+.stop--conv .stop__dot { border-color: #34A518; background: #34A518; }
+.stop--conv .stop__day { color: #248A13; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: sized for 1920 here, and its row is far wider than the panel
+     text column the fit pass would wrap it into. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="wk">
+
+    <div class="wk__who">
+      <svg viewBox="0 0 66 150" aria-hidden="true">
+        <circle cx="33" cy="16" r="14"/>
+        <!-- torso: sloped shoulders, so it is not a slab under the head -->
+        <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
+                 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
+        <!-- arms, set clear of the torso -->
+        <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
+        <rect x="52" y="46" width="11" height="44" rx="5.5"/>
+        <!-- legs -->
+        <rect x="19" y="88" width="12" height="58" rx="6"/>
+        <rect x="35" y="88" width="12" height="58" rx="6"/>
+      </svg>
+    </div>
+
+    <div class="wk__track">
+      <div class="wk__line"></div>
+
+      <div class="wk__stops">
+
+        <!-- an ad in the feed: picture, copy, and the button -->
+        <div class="stop stop--mon">
+          <div class="stop__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="stop__dot"></span>
+          <p class="stop__day">Monday</p>
+        </div>
+
+        <div class="stop stop--tue">
+          <div class="stop__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="stop__dot"></span>
+          <p class="stop__day">Tuesday</p>
+        </div>
+
+        <!-- not an ad: they went looking themselves -->
+        <div class="stop stop--thu">
+          <div class="stop__art">
+            <svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <span class="stop__dot"></span>
+          <p class="stop__day">Thursday</p>
+        </div>
+
+        <div class="stop stop--sat">
+          <div class="stop__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="stop__dot"></span>
+          <p class="stop__day">Saturday</p>
+        </div>
+
+        <div class="stop stop--conv">
+          <div class="stop__art"><div class="tick">&#10003;</div></div>
+          <span class="stop__dot"></span>
+          <p class="stop__day">Converts</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
