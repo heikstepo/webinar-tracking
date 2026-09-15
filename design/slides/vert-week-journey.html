@@ -9,48 +9,53 @@
 /* ============================================================================
    The one-week journey, turned upright for a phone.
 
-   1080x1500 rather than a full 9:16 screen, so dropped into a vertical video it
-   leaves bars at the top and bottom. Not 4:5: at that height a single day gap
-   is too short to hold a legible card without Monday and Tuesday touching.
+   1080x1200, so dropped into a vertical video it leaves deep bars top and bottom.
+
+   The stops are unevenly spaced but not to scale. Strictly proportional day
+   spacing sets a floor on the height — the shortest gap is one day, and it
+   still has to hold a legible card — which made the card far too tall. The
+   gaps are compressed instead: a two day jump is wider than a one day jump,
+   so Wednesday and Friday still read as gaps, without paying full height
+   for them.
 
    Not the widescreen version squashed: a five stop horizontal timeline cannot
    survive being narrowed, so the track runs down instead and each stop becomes
    a row — dot, what they saw, which day. Everything else is the same argument:
-   one figure drawn once at the top, and the stops placed at their real position
-   in the week so Wednesday and Friday read as the gaps they are.
+   one figure drawn once at the top, because five figures would read as five
+   people when the point is that it is the same person every time.
    ========================================================================= */
-@page { size: 1080px 1500px; margin: 0; }
+@page { size: 1080px 1200px; margin: 0; }
 
-.slide { width: 1080px; height: 1500px; padding: 80px; background: var(--ground); }
+.slide { width: 1080px; height: 1200px; padding: 70px; background: var(--ground); }
 
-.vwk { width: 920px; }
+.vwk { width: 940px; }
 
 /* The person, once, at the head of the week. Indented so they stand over the
    line the week runs down. */
 /* Clear of the first stop: each row is pulled up by half its own height, so
    too small a gap here and the Monday card climbs into the figure's legs. */
-.vwk__who { padding-left: 200px; margin-bottom: 90px; }
-.vwk__who svg { display: block; width: 88px; height: 200px; fill: var(--ink); }
+.vwk__who { padding-left: 237px; margin-bottom: 76px; }
+.vwk__who svg { display: block; width: 75px; height: 170px; fill: var(--ink); }
 
 /* Indented so the block of dot, card and day sits optically centred on the
    card rather than hard against the left edge. */
-.vwk__track { position: relative; height: 880px; }
+.vwk__track { position: relative; height: 690px; }
 
 .vwk__line {
-  position: absolute; left: 251px; top: 0; bottom: 0; width: 3px;
+  position: absolute; left: 273px; top: 0; bottom: 0; width: 3px;
   background: #D2D8E0; border-radius: 2px;
 }
 
-/* Placed by day, not distributed: days 1, 2, 4, 6 and the sale on 7. */
+/* Ordered and unequal, but compressed: see the note at the top. */
 .vstop {
-  position: absolute; left: 240px; right: 0;
-  display: flex; align-items: center; gap: 36px;
+  position: absolute; left: 262px; right: 0;
+  display: flex; align-items: center; gap: 34px;
   transform: translateY(-50%);
 }
 .vstop--mon  { top: 0%; }
-.vstop--tue  { top: 16.7%; }
+.vstop--tue  { top: 20%; }
 .vstop--thu  { top: 50%; }
-.vstop--sat  { top: 83.3%; }
+.vstop--sat  { top: 80%; }
 .vstop--conv { top: 100%; }
 
 .vstop__dot {
@@ -59,31 +64,31 @@
   background: var(--ground); border: 3px solid #A9B6C6;
 }
 
-.vstop__art { flex: none; width: 130px; display: flex; justify-content: center; }
+.vstop__art { flex: none; width: 124px; display: flex; justify-content: center; }
 .vstop__art svg {
-  display: block; width: 118px; height: 118px;
+  display: block; width: 112px; height: 112px;
   fill: none; stroke: #7FA8DC; stroke-width: 2.4;
   stroke-linecap: round; stroke-linejoin: round;
 }
 .vstop__art svg .hot { stroke: var(--blue); stroke-width: 3.2; }
 .vstop__art svg .hot-fill { fill: var(--blue); stroke: none; }
 /* YouTube is a real logo, so it is a filled mark rather than a line drawing. */
-.vstop__art .yt { width: 126px; height: 126px; fill: var(--ink); stroke: none; }
+.vstop__art .yt { width: 118px; height: 118px; fill: var(--ink); stroke: none; }
 
 .vstop__day {
   margin: 0;
-  font-size: 52px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);
+  font-size: 48px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);
 }
 
 /* The sale. Green and a size up, because it is the outcome rather than another
    thing that happened. */
 .vstop--conv .tick {
-  width: 130px; height: 130px; border-radius: 50%;
+  width: 124px; height: 124px; border-radius: 50%;
   background: #E7F5E3; border: 3px solid #34A518;
   display: flex; align-items: center; justify-content: center;
-  font-size: 64px; line-height: 1; color: #248A13;
+  font-size: 60px; line-height: 1; color: #248A13;
 }
-.vstop--conv .vstop__art { width: 130px; }
+.vstop--conv .vstop__art { width: 124px; }
 .vstop--conv .vstop__dot { border-color: #34A518; background: #34A518; }
 .vstop--conv .vstop__day { color: #248A13; }
 </style>
