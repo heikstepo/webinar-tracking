@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The webinar, in five parts</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-webinar-parts.py. A stepper, because five parts this detailed
+   cannot be cards side by side without shrinking the type past reading.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.plan { position: relative; width: 1700px; text-align: left; }
+
+/* Behind the discs, from the first centre to the last, so the five read as one
+   run rather than as five separate rows. */
+.plan__line {
+  position: absolute; left: 36px; top: 36px; bottom: 36px;
+  width: 3px; background: #D5DCE5; border-radius: 2px;
+}
+
+.plan__row { position: relative; display: flex; align-items: flex-start; gap: 36px; }
+.plan__row + .plan__row { margin-top: 38px; }
+
+.plan__n {
+  flex: none;
+  width: 72px; height: 72px; border-radius: 50%;
+  background: #E4EFFD;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34px; font-weight: 700; letter-spacing: -0.01em; color: var(--blue);
+}
+
+.plan__t {
+  margin: 0;
+  font-size: 40px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+.plan__b {
+  margin: 10px 0 0;
+  font-size: 26px; font-weight: 500; line-height: 1.36; color: var(--ink-2);
+}
+/* The sequence arrows: the accent, so the order inside a part is visible at a
+   glance without reading the words around it. */
+.arw { color: var(--blue); font-weight: 700; padding: 0 9px; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="plan">
+    <div class="plan__line"></div>
+    <div class="plan__row">
+      <span class="plan__n">1</span>
+      <div>
+        <h3 class="plan__t">Intro</h3>
+        <p class="plan__b">Hook with live proof, establish authority, sell the mechanism, get commitments, open 5 loops.</p>
+      </div>
+    </div>
+
+    <div class="plan__row">
+      <span class="plan__n">2</span>
+      <div>
+        <h3 class="plan__t">Content</h3>
+        <p class="plan__b">3-5 logical steps. Teach the what, show a glimpse of how. Weave in proof, objections, and commitments.</p>
+      </div>
+    </div>
+
+    <div class="plan__row">
+      <span class="plan__n">3</span>
+      <div>
+        <h3 class="plan__t">Transition</h3>
+        <p class="plan__b">Recap <span class="arw">&rarr;</span> 3-5 &ldquo;yes&rdquo; questions <span class="arw">&rarr;</span> Crossroads close</p>
+      </div>
+    </div>
+
+    <div class="plan__row">
+      <span class="plan__n">4</span>
+      <div>
+        <h3 class="plan__t">Pitch</h3>
+        <p class="plan__b">Core offer <span class="arw">&rarr;</span> price anchor for offers below $3k <span class="arw">&rarr;</span> bonuses (second best first, best last) <span class="arw">&rarr;</span> guarantee <span class="arw">&rarr;</span> booking/payment link.</p>
+      </div>
+    </div>
+
+    <div class="plan__row">
+      <span class="plan__n">5</span>
+      <div>
+        <h3 class="plan__t">Q&amp;A</h3>
+        <p class="plan__b">Stay 20-30+ minutes. Address 5-10 common objections, then answer live questions.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
