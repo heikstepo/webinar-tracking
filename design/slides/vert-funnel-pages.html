@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The three funnel pages</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-funnel-pages.py. Each icon is a browser window because all three
+   are pages; what sits inside the window is what tells them apart.
+   ========================================================================= */
+@page { size: 1080px 1200px; margin: 0; }
+
+.slide { width: 1080px; height: 1200px; padding: 80px 80px; background: var(--ground); }
+
+.pgs { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 90px; }
+
+.pg { display: flex;  align-items: center; gap: 48px; }
+
+.pg svg {
+  display: block; width: 210px; height: 210px; flex: none;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.pg svg .dot { fill: #9DBCE0; stroke: none; }
+.pg svg .hot { stroke: var(--blue); stroke-width: 4.2; }
+.pg svg .hot-fill { fill: var(--blue); stroke: none; }
+
+.pg__name {
+  margin: 0;
+  font-size: 52px; font-weight: 600; letter-spacing: -0.008em;
+  line-height: 1.24; color: var(--ink); text-align: left;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="pgs">
+    <div class="pg">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="10" y="18" width="104" height="88" rx="10"/>
+        <path d="M10 41 H 114"/>
+        <circle class="dot" cx="22" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="31" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="40" cy="29.5" r="2.8"/>
+        <path d="M30 56 H 94"/>
+        <rect x="30" y="66" width="64" height="15" rx="4"/>
+        <rect class="hot-fill" x="30" y="88" width="64" height="13" rx="4"/>
+      </svg>
+      <p class="pg__name">Webinar opt in page</p>
+    </div>
+
+    <div class="pg">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="10" y="18" width="104" height="88" rx="10"/>
+        <path d="M10 41 H 114"/>
+        <circle class="dot" cx="22" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="31" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="40" cy="29.5" r="2.8"/>
+        <path class="hot-fill" d="M62 48 L65.5 57.1 L75.3 57.7
+          L67.7 63.9 L70.2 73.3 L62 68 L53.8 73.3 L56.3 63.9 L48.7 57.7 L58.5 57.1 Z"/>
+        <rect class="hot-fill" x="30" y="86" width="64" height="13" rx="4"/>
+      </svg>
+      <p class="pg__name">VIP upsell page</p>
+    </div>
+
+    <div class="pg">
+      <svg viewBox="0 0 124 124" aria-hidden="true">
+        <rect x="10" y="18" width="104" height="88" rx="10"/>
+        <path d="M10 41 H 114"/>
+        <circle class="dot" cx="22" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="31" cy="29.5" r="2.8"/>
+        <circle class="dot" cx="40" cy="29.5" r="2.8"/>
+        <path class="hot" d="M45 71 L57 83 L81 55"/>
+      </svg>
+      <p class="pg__name">Thank you page</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
