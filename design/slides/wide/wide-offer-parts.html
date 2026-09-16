@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Offer</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-offer-parts.py. Three cards in sequence; the guarantee carries a
+   mark instead of body copy because it is the one part that needs no
+   explaining.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.hl {
+  margin: 0 0 62px;
+  font-size: 88px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+
+/* Explicit width on the stacked version: the slide centres its children,
+   so a row left to size itself shrinks to its content and the cards stop
+   short of the card's own margins. */
+.row { display: flex;  align-items: stretch; justify-content: center;
+       gap: 34px;  }
+
+.card {
+  width: 470px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 24px;
+  padding: 40px 42px 42px;
+  text-align: left;
+  display: flex; flex-direction: column;
+}
+
+/* Ghosted, so it orders the parts without competing with their names. */
+.card__n {
+  display: block;
+  font-size: 52px; font-weight: 700; line-height: 1;
+  letter-spacing: -0.03em; color: #D3DDE9;
+}
+.card__t {
+  margin: 18px 0 0;
+  font-size: 44px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+.card__b {
+  margin: 20px 0 0;
+  font-size: 28px; font-weight: 500; line-height: 1.34; color: var(--ink-2);
+}
+/* The how-to line, in the accent: an instruction, not more description. */
+.card__note {
+  margin: auto 0 0;
+  padding-top: 20px;
+  font-size: 26px; font-weight: 600; letter-spacing: -0.004em; color: var(--blue);
+}
+
+.card__art { margin: auto 0 0; padding-top: 20px; }
+.card__art svg {
+  display: block; width: 132px; height: 132px;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.card__art svg .hot { stroke: var(--blue); stroke-width: 4; }
+
+.arr { flex: none; display: flex; align-items: center; }
+.arr svg { display: block; width: 54px; height: 26px; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <p class="hl">Offer</p>
+
+  <div class="row">
+    <div class="card">
+      <span class="card__n">01</span>
+      <h3 class="card__t">Core offer</h3>
+      <p class="card__b">Expected essentials<br>(course, community, coaching)</p>
+      <p class="card__note">Explain in 3-5 minutes</p>
+    </div>
+    <div class="arr">
+      <svg viewBox="0 0 54 26" aria-hidden="true">
+        <g fill="none" stroke="#0071E3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13 H 40"/><path d="M32 4 L 50 13 L 32 22"/>
+        </g>
+      </svg>
+    </div>
+    <div class="card">
+      <span class="card__n">02</span>
+      <h3 class="card__t">Bonuses</h3>
+      <p class="card__b">3-5 surprising extras that<br>overcome objections</p>
+      <p class="card__note">Second best first, best last.</p>
+    </div>
+    <div class="arr">
+      <svg viewBox="0 0 54 26" aria-hidden="true">
+        <g fill="none" stroke="#0071E3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13 H 40"/><path d="M32 4 L 50 13 L 32 22"/>
+        </g>
+      </svg>
+    </div>
+    <div class="card">
+      <span class="card__n">03</span>
+      <h3 class="card__t">Guarantee</h3>
+      <div class="card__art"><svg viewBox="0 0 124 124" aria-hidden="true">
+          <path d="M62 14 L104 31 V 62 C 104 86, 84 103, 62 111
+                   C 40 103, 20 86, 20 62 V 31 Z"/>
+          <path class="hot" d="M44 62 L56 74 L82 46"/>
+        </svg></div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
