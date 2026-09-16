@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nurture assets</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-nurture-assets.py. Four drawn icons and two real brand marks, all
+   in one ink so the set reads as one family.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 430px);
+  column-gap: 90px; row-gap: 80px;
+  justify-content: center;
+}
+
+.cell { display: flex; flex-direction: column; align-items: center; }
+
+/* Fixed height, so a wide mark and a tall one still leave their captions on
+   one line as each other. */
+.cell__art { height: 180px; display: flex; align-items: center; justify-content: center; }
+.cell__art svg {
+  display: block; width: 180px; height: 180px;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.cell__art svg .hot { stroke: var(--blue); stroke-width: 3.6; }
+.cell__art svg .hot-fill { fill: var(--blue); stroke: none; }
+/* Real logos are filled marks, not line drawings. */
+.cell__art .brand { width: 170px; height: 170px; fill: var(--ink); stroke: none; }
+
+.cell__name {
+  margin: 30px 0 0;
+  font-size: 40px; font-weight: 600; letter-spacing: -0.006em;
+  line-height: 1.22; color: var(--ink); text-align: center;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="grid">
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="" viewBox="0 0 124 124" aria-hidden="true"><rect x="30" y="24" width="64" height="42" rx="6"/>
+        <rect x="16" y="44" width="80" height="56" rx="7"/>
+        <path class="hot" d="M22 51 L56 77 L90 51"/></svg>
+      </div>
+      <p class="cell__name">Pre-Webinar Email Sequence</p>
+    </div>
+
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="" viewBox="0 0 124 124" aria-hidden="true"><rect x="20" y="10" width="84" height="50" rx="8"/>
+        <rect x="30" y="20" width="64" height="20" rx="4"/>
+        <rect class="hot-fill" x="30" y="46" width="32" height="6" rx="3"/>
+        <path class="hot" d="M64 74 H 76 C 92 74, 92 102, 76 102 H 40"/>
+        <path class="hot" d="M49 94 L39 102 L49 110"/></svg>
+      </div>
+      <p class="cell__name">Retargeting Ads</p>
+    </div>
+
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="brand" viewBox="0 0 24 24" aria-hidden="true"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </div>
+      <p class="cell__name">YouTube Nurturing</p>
+    </div>
+
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="26" width="88" height="52" rx="12"/>
+        <path d="M34 78 L34 96 L54 78"/>
+        <circle class="hot-fill" cx="36" cy="52" r="5"/>
+        <circle class="hot-fill" cx="52" cy="52" r="5"/>
+        <circle class="hot-fill" cx="68" cy="52" r="5"/>
+        <path d="M104 40 H 114 M104 52 H 118 M104 64 H 114"/></svg>
+      </div>
+      <p class="cell__name">SMS Blasts</p>
+    </div>
+
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="brand" viewBox="0 0 24 24" aria-hidden="true"><title>Telegram</title><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      </div>
+      <p class="cell__name">Telegram</p>
+    </div>
+
+    <div class="cell">
+      <div class="cell__art">
+        <svg class="" viewBox="0 0 124 124" aria-hidden="true"><path d="M24 102 C 24 82, 41 72, 62 72 C 83 72, 100 82, 100 102"/>
+        <circle cx="62" cy="46" r="17"/>
+        <path class="hot" d="M42 46 a 20 20 0 0 1 40 0"/>
+        <rect class="hot-fill" x="38" y="44" width="9" height="18" rx="4.5"/>
+        <rect class="hot-fill" x="77" y="44" width="9" height="18" rx="4.5"/>
+        <path class="hot" d="M42 62 C 42 73, 52 77, 58 77"/></svg>
+      </div>
+      <p class="cell__name">Setters</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
