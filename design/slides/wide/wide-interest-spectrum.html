@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Interest Spectrum</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The interest spectrum, and the window it moves through.
+
+   The rough used four different colours for the four bars. One quantity rising
+   is not four categories, so the bars run a single blue from pale to full
+   instead: the ramp itself says "more", and four unrelated hues would have said
+   "four different things".
+
+   The chart and the timeline are one drawing, not two. The bars sit over the
+   window they happen in, so the argument reads without a caption: every touch
+   inside the education window lifts them a level, and the last one puts them
+   over the line where the money is.
+
+   Class names are prefixed isp__ because 4pi.css already owns .spectrum.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 70px 110px; background: var(--ground); }
+
+.isp { position: relative; width: 1700px; height: 900px; text-align: left; }
+
+.isp__title {
+  position: absolute; left: 0; top: 0; margin: 0;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+
+/* ---- the plot ----------------------------------------------------------- */
+.isp__yaxis { position: absolute; left: 300px; top: 78px; width: 3px; height: 552px;
+              background: #C6CDD6; border-radius: 2px; }
+.isp__xaxis { position: absolute; left: 300px; top: 628px; width: 1300px; height: 3px;
+              background: #C6CDD6; border-radius: 2px; }
+.isp__xtip { position: absolute; left: 1592px; top: 618px; width: 0; height: 0;
+             border-left: 16px solid #C6CDD6;
+             border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
+.isp__ytip { position: absolute; left: 290px; top: 62px; width: 0; height: 0;
+             border-bottom: 16px solid #C6CDD6;
+             border-left: 11px solid transparent; border-right: 11px solid transparent; }
+
+/* Right aligned into the axis, so the four read as one column of levels. */
+.isp__lvl {
+  position: absolute; right: 1420px; width: 260px; margin: 0;
+  transform: translateY(-50%);
+  text-align: right;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.004em; color: var(--ink-2);
+}
+.isp__tick { position: absolute; left: 286px; width: 14px; height: 3px;
+             background: #C6CDD6; transform: translateY(-1px); }
+
+/* The line conviction has to clear, and what is on the other side of it. */
+.isp__thresh {
+  position: absolute; left: 300px; top: 130px; width: 1300px; height: 0;
+  border-top: 3px dashed #9FC4EE;
+}
+.isp__money {
+  position: absolute; left: 980px; top: 130px; transform: translate(-50%, -50%);
+  padding: 0 24px; background: var(--ground);
+  font-size: 46px; font-weight: 700; letter-spacing: 0.02em; color: var(--blue);
+}
+
+.isp__bar { position: absolute; bottom: 270px; width: 96px; border-radius: 10px 10px 0 0; }
+
+/* ---- the window the bars happen in -------------------------------------- */
+.isp__line { position: absolute; left: 320px; top: 800px; width: 840px; height: 3px;
+             background: #C6CDD6; border-radius: 2px; }
+.isp__tip  { position: absolute; left: 1152px; top: 790px; width: 0; height: 0;
+             border-left: 16px solid #C6CDD6;
+             border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
+
+.isp__ev {
+  position: absolute; top: 800px; transform: translateY(-50%); margin: 0;
+  font-size: 25px; font-weight: 600; letter-spacing: -0.004em; color: var(--ink);
+}
+.isp__ev--a { left: 0; width: 300px; text-align: right; padding-right: 26px; }
+.isp__ev--b { left: 1196px; }
+
+.isp__win {
+  position: absolute; left: 320px; top: 742px; width: 840px; margin: 0;
+  text-align: center;
+  font-size: 26px; font-weight: 600; letter-spacing: -0.004em; color: var(--blue);
+}
+
+/* The one event inside the window. Its position in the rough was ambiguous, so
+   it is set mid window, where an education call actually falls. */
+.isp__mark { position: absolute; top: 794px; width: 15px; height: 15px;
+             border-radius: 50%; background: var(--blue); }
+.isp__marklbl {
+  position: absolute; top: 826px; transform: translateX(-50%); margin: 0;
+  font-size: 23px; font-weight: 600; letter-spacing: -0.003em; color: var(--blue);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center">
+
+  <div class="isp">
+
+    <p class="isp__title">Interest Spectrum</p>
+
+    <div class="isp__yaxis"></div>
+    <div class="isp__ytip"></div>
+    <div class="isp__xaxis"></div>
+    <div class="isp__xtip"></div>
+
+    <div class="isp__thresh"></div>
+    <span class="isp__money">$$$</span>
+
+    <span class="isp__tick" style="top:130px"></span>
+    <p class="isp__lvl" style="top:130px">Convicted</p>
+
+    <span class="isp__tick" style="top:255px"></span>
+    <p class="isp__lvl" style="top:255px">Strong Intent</p>
+
+    <span class="isp__tick" style="top:380px"></span>
+    <p class="isp__lvl" style="top:380px">Active Interest</p>
+
+    <span class="isp__tick" style="top:505px"></span>
+    <p class="isp__lvl" style="top:505px">Curious</p>
+
+    <!-- One quantity rising, so one colour deepening. -->
+    <div class="isp__bar" style="left:470px;  height:123px; background:#C5DDFA"></div>
+    <div class="isp__bar" style="left:755px;  height:248px; background:#8EBCF4"></div>
+    <div class="isp__bar" style="left:1040px; height:373px; background:#4A97EF"></div>
+    <div class="isp__bar" style="left:1325px; height:498px; background:#0071E3"></div>
+
+    <p class="isp__win">Education Window</p>
+    <div class="isp__line"></div>
+    <div class="isp__tip"></div>
+
+    <p class="isp__ev isp__ev--a">Event: Call Booked</p>
+    <p class="isp__ev isp__ev--b">Event: Closing Call occurs</p>
+
+    <span class="isp__mark" style="left:733px"></span>
+    <p class="isp__marklbl" style="left:740px">Education Call</p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
