@@ -87,13 +87,15 @@
   font-size: 26px; font-weight: 600; letter-spacing: -0.004em; color: var(--blue);
 }
 
-/* The one event inside the window. Its position in the rough was ambiguous, so
-   it is set mid window, where an education call actually falls. */
-.isp__mark { position: absolute; top: 794px; width: 15px; height: 15px;
-             border-radius: 50%; background: var(--blue); }
-.isp__marklbl {
-  position: absolute; top: 826px; transform: translateX(-50%); margin: 0;
-  font-size: 23px; font-weight: 600; letter-spacing: -0.003em; color: var(--blue);
+/* Struck out under the closing call, as in the rough: the education call is
+   the thing that does not happen here. Red rather than grey, because it is
+   ruled out rather than merely quiet. The rule is the same red at a hairline
+   weight: a paler rule at full thickness read as a smudge over the words. */
+.isp__gone {
+  position: absolute; left: 1196px; top: 842px; margin: 0;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.004em; color: var(--red);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
 </style>
 </head>
@@ -139,8 +141,7 @@
     <p class="isp__ev isp__ev--a">Event: Call Booked</p>
     <p class="isp__ev isp__ev--b">Event: Closing Call occurs</p>
 
-    <span class="isp__mark" style="left:733px"></span>
-    <p class="isp__marklbl" style="left:740px">Education Call</p>
+    <p class="isp__gone">Education Call</p>
 
   </div>
 
