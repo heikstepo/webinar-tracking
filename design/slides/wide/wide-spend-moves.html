@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spend moves to the new ads</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   One campaign, and the spend moving across inside it.
+
+   Deliberately plain. The earlier version made the argument itself with a
+   fixed width bar in two states; this one just shows the two groups and the
+   arrows between them and leaves the argument to be spoken.
+
+   Everything sits inside one outlined box so it reads as one campaign rather
+   than as two sets of ads. The old ads are drawn in grey and the new ones in
+   the accent, so which way the spend is going is clear before the arrows are
+   followed.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.camp { position: relative; width: 1700px; height: 470px; }
+
+/* The campaign. Its name sits on the border, so the box needs no header row. */
+.camp__box {
+  position: absolute; inset: 40px 0 0 0;
+  border: 3px solid #C6CDD6; border-radius: 30px;
+}
+.camp__name {
+  position: absolute; left: 70px; top: 40px; transform: translateY(-50%);
+  margin: 0; padding: 0 24px; background: var(--ground);
+  font-size: 32px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink-2);
+}
+
+.camp__side {
+  position: absolute; top: 130px; width: 420px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.camp__side--old { left: 110px; }
+.camp__side--new { left: 1170px; }
+
+.camp__ads { display: flex; gap: 34px; }
+.camp__ads svg {
+  display: block; width: 168px; height: 168px;
+  fill: none; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Starved: same ads, drawn back to grey. */
+.camp__side--old svg { stroke: #C3CAD4; }
+.camp__side--old .fill { fill: #C3CAD4; stroke: none; }
+
+.camp__side--new svg { stroke: #7FA8DC; }
+.camp__side--new .fill { fill: var(--blue); stroke: none; }
+
+.camp__lbl {
+  margin: 34px 0 0;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.008em;
+}
+.camp__side--old .camp__lbl { color: var(--ink-3); }
+.camp__side--new .camp__lbl { color: var(--ink); }
+
+.camp__flow { position: absolute; left: 570px; top: 150px; width: 580px; height: 300px; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center">
+
+  <div class="camp">
+
+    <div class="camp__box"></div>
+    <p class="camp__name">Campaign</p>
+
+    <div class="camp__side camp__side--old">
+      <div class="camp__ads">
+        <svg viewBox="0 0 124 124" aria-hidden="true">
+          <rect x="12" y="14" width="100" height="96" rx="11"/>
+          <rect x="24" y="26" width="76" height="40" rx="6"/>
+          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+          <path d="M24 78 H 92 M24 88 H 72"/>
+          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+        </svg>
+        <svg viewBox="0 0 124 124" aria-hidden="true">
+          <rect x="12" y="14" width="100" height="96" rx="11"/>
+          <rect x="24" y="26" width="76" height="40" rx="6"/>
+          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+          <path d="M24 78 H 92 M24 88 H 72"/>
+          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+        </svg>
+      </div>
+      <p class="camp__lbl">Old ads</p>
+    </div>
+
+    <!-- the spend, moving across -->
+    <svg class="camp__flow" viewBox="0 0 580 300" fill="none" aria-hidden="true">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5"
+                markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g stroke="#0071E3" stroke-width="7" stroke-linecap="round" marker-end="url(#ah)">
+        <path d="M40 92 C 200 30, 380 30, 530 88"/>
+        <path d="M40 208 C 200 270, 380 270, 530 212"/>
+      </g>
+    </svg>
+
+    <div class="camp__side camp__side--new">
+      <div class="camp__ads">
+        <svg viewBox="0 0 124 124" aria-hidden="true">
+          <rect x="12" y="14" width="100" height="96" rx="11"/>
+          <rect x="24" y="26" width="76" height="40" rx="6"/>
+          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+          <path d="M24 78 H 92 M24 88 H 72"/>
+          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+        </svg>
+        <svg viewBox="0 0 124 124" aria-hidden="true">
+          <rect x="12" y="14" width="100" height="96" rx="11"/>
+          <rect x="24" y="26" width="76" height="40" rx="6"/>
+          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+          <path d="M24 78 H 92 M24 88 H 72"/>
+          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+        </svg>
+      </div>
+      <p class="camp__lbl">New ads</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
