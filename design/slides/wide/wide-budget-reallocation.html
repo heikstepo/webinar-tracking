@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New ads take the spend</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Where the campaign budget goes, before and after a launch.
+
+   One bar, the same width in both states. That is the whole argument: the
+   budget does not grow, so anything the new ads take has to come off the old
+   ones. Two separate charts, or bars of different lengths, would have let a
+   viewer read it as "more spend arrived" — which is the opposite of the point.
+
+   The old ads keep their place at the left in both rows so the boundary that
+   moves is the same boundary, and the dashed lines drop from where it was to
+   where it ends up. Colour carries the rest: the proven ads go from working
+   blue to starved grey, and the new ads arrive in full accent.
+
+   Class names are prefixed alloc__; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 80px 110px; background: var(--ground); }
+
+.alloc { position: relative; width: 1700px; height: 560px; text-align: left; }
+
+.alloc__cap {
+  position: absolute; left: 200px; top: 0; margin: 0;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
+}
+
+/* The two states, named as quietly as possible: chart furniture, not copy. */
+.alloc__when {
+  position: absolute; left: 0; width: 160px; margin: 0;
+  text-align: right;
+  font-size: 30px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink);
+}
+
+.alloc__bar {
+  position: absolute; left: 200px; width: 1440px; height: 132px;
+  display: flex; gap: 5px;
+}
+.alloc__seg {
+  height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.004em;
+}
+.alloc__seg:first-child { border-radius: 12px 0 0 12px; }
+.alloc__seg:last-child  { border-radius: 0 12px 12px 0; }
+
+.alloc__seg--old  { background: #8EBCF4; color: #0B3C77; }
+/* Starved: the same ads, still there, no longer being fed. */
+.alloc__seg--thin { background: #CBD3DD; color: #6B7684; }
+.alloc__seg--new  { background: var(--blue); color: #fff; }
+
+/* Drops from each boundary in the top bar to where it lands in the bottom one,
+   so the collapse is visible as a distance rather than inferred from widths. */
+.alloc__drop {
+  position: absolute; width: 0; border-left: 3px dashed #C6CDD6;
+}
+.alloc__slide {
+  position: absolute; height: 0; border-top: 3px dashed var(--red);
+}
+.alloc__slidetip {
+  position: absolute; width: 0; height: 0;
+  border-right: 15px solid var(--red);
+  border-top: 10px solid transparent; border-bottom: 10px solid transparent;
+}
+
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center">
+
+  <div class="alloc">
+
+    <p class="alloc__cap">Campaign budget</p>
+
+    <!-- before: three proven ads, sharing it evenly -->
+    <p class="alloc__when" style="top:104px">Before</p>
+    <div class="alloc__bar" style="top:56px">
+      <div class="alloc__seg alloc__seg--old" style="width:476px">Old ad</div>
+      <div class="alloc__seg alloc__seg--old" style="width:477px">Old ad</div>
+      <div class="alloc__seg alloc__seg--old" style="width:477px">Old ad</div>
+    </div>
+
+    <!-- after: the same bar, the same width, two new ads inside it -->
+    <p class="alloc__when" style="top:456px">After</p>
+    <div class="alloc__bar" style="top:408px">
+      <div class="alloc__seg alloc__seg--thin" style="width:186px">Old ad</div>
+      <div class="alloc__seg alloc__seg--thin" style="width:186px">Old ad</div>
+      <div class="alloc__seg alloc__seg--thin" style="width:186px">Old ad</div>
+      <div class="alloc__seg alloc__seg--new" style="width:434px">New ad</div>
+      <div class="alloc__seg alloc__seg--new" style="width:434px">New ad</div>
+    </div>
+
+    <!-- the boundary that moves, drawn as the distance it moves -->
+    <div class="alloc__drop" style="left:1157px; top:188px; height:220px"></div>
+    <div class="alloc__drop" style="left:772px;  top:188px; height:220px"></div>
+
+    <div class="alloc__slide" style="left:775px; top:322px; width:382px"></div>
+    <div class="alloc__slidetip" style="left:760px; top:312px"></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
