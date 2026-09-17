@@ -9,125 +9,152 @@
 /* ============================================================================
    One campaign, and the spend moving across inside it.
 
-   Deliberately plain. The earlier version made the argument itself with a
-   fixed width bar in two states; this one just shows the two groups and the
-   arrows between them and leaves the argument to be spoken.
+   Two things the first pass got wrong. The box was far wider than its contents
+   so the arrows floated in dead space; everything is one centred row now and
+   the box is drawn around it. And nothing said the thing crossing was money:
+   the arrow carries $ tokens and is labelled, so it cannot read as "traffic"
+   or "attention".
 
-   Everything sits inside one outlined box so it reads as one campaign rather
-   than as two sets of ads. The old ads are drawn in grey and the new ones in
-   the accent, so which way the spend is going is clear before the arrows are
-   followed.
+   The old ads are also drawn smaller as well as greyer. Size is the fastest
+   way to say they are getting less, before any label is read.
    ========================================================================= */
 @page { size: 1920px 1080px; margin: 0; }
 
 .slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
 
-.camp { position: relative; width: 1700px; height: 470px; }
+.camp { position: relative; }
 
 /* The campaign. Its name sits on the border, so the box needs no header row. */
 .camp__box {
-  position: absolute; inset: 40px 0 0 0;
   border: 3px solid #C6CDD6; border-radius: 30px;
+  padding: 70px 80px 62px;
 }
 .camp__name {
-  position: absolute; left: 70px; top: 40px; transform: translateY(-50%);
+  position: absolute; left: 70px; top: 0; transform: translateY(-50%);
   margin: 0; padding: 0 24px; background: var(--ground);
   font-size: 32px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink-2);
 }
 
-.camp__side {
-  position: absolute; top: 130px; width: 420px;
-  display: flex; flex-direction: column; align-items: center;
-}
-.camp__side--old { left: 110px; }
-.camp__side--new { left: 1170px; }
+.camp__row { display: flex; align-items: center; justify-content: center; gap: 70px; }
 
-.camp__ads { display: flex; gap: 34px; }
+.camp__side { display: flex; flex-direction: column; align-items: center; }
+/* Fixed height: the two groups use different card sizes on purpose, and
+   without it each column is only as tall as its own cards and the two
+   labels land on different lines. */
+.camp__ads { height: 190px; display: flex; align-items: center; gap: 26px; }
 .camp__ads svg {
-  display: block; width: 168px; height: 168px;
-  fill: none; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round;
+  display: block; fill: none; stroke-width: 2.6;
+  stroke-linecap: round; stroke-linejoin: round;
 }
 
-/* Starved: same ads, drawn back to grey. */
-.camp__side--old svg { stroke: #C3CAD4; }
+/* Starved: smaller and greyer. Size says "less" before the label is read. */
+.camp__side--old svg { width: 140px; height: 140px; stroke: #C3CAD4; }
 .camp__side--old .fill { fill: #C3CAD4; stroke: none; }
 
-.camp__side--new svg { stroke: #7FA8DC; }
+.camp__side--new svg { width: 190px; height: 190px; stroke: #7FA8DC; }
 .camp__side--new .fill { fill: var(--blue); stroke: none; }
 
 .camp__lbl {
-  margin: 34px 0 0;
+  margin: 30px 0 0;
   font-size: 34px; font-weight: 600; letter-spacing: -0.008em;
 }
 .camp__side--old .camp__lbl { color: var(--ink-3); }
 .camp__side--new .camp__lbl { color: var(--ink); }
 
-.camp__flow { position: absolute; left: 570px; top: 150px; width: 580px; height: 300px; }
+/* ---- the spend itself --------------------------------------------------- */
+.camp__flow { position: relative; width: 420px; flex: none; }
+
+.camp__word {
+  margin: 0 0 26px; text-align: center;
+  font-size: 32px; font-weight: 600; letter-spacing: -0.006em; color: var(--blue);
+}
+.camp__track { position: relative; height: 58px; }
+.camp__rail {
+  position: absolute; left: 28px; top: 27px; width: 358px; height: 5px;
+  background: var(--blue); border-radius: 3px;
+}
+.camp__arrow {
+  position: absolute; left: 384px; top: 13px; width: 0; height: 0;
+  border-left: 34px solid var(--blue);
+  border-top: 16px solid transparent; border-bottom: 16px solid transparent;
+}
+/* Coins on the rail, so what is moving cannot be mistaken for traffic. */
+.camp__coin {
+  position: absolute; top: 0; width: 58px; height: 58px; border-radius: 50%;
+  background: var(--blue); border: 4px solid var(--ground);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: 700; color: #fff;
+}
+/* Lightest at the tail, full at the head: the money is on its way over. */
+.camp__coin--a { left: 0;     background: #9CC6F7; }
+.camp__coin--b { left: 150px; background: #4A97EF; }
+.camp__coin--c { left: 282px; }
 </style>
 </head>
 <body>
 
 <!-- no-autofit: its own canvas, not a panel. -->
-<section class="slide slide--center">
+<section class="slide slide--center slide--mid">
 
   <div class="camp">
 
-    <div class="camp__box"></div>
     <p class="camp__name">Campaign</p>
 
-    <div class="camp__side camp__side--old">
-      <div class="camp__ads">
-        <svg viewBox="0 0 124 124" aria-hidden="true">
-          <rect x="12" y="14" width="100" height="96" rx="11"/>
-          <rect x="24" y="26" width="76" height="40" rx="6"/>
-          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
-          <path d="M24 78 H 92 M24 88 H 72"/>
-          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
-        </svg>
-        <svg viewBox="0 0 124 124" aria-hidden="true">
-          <rect x="12" y="14" width="100" height="96" rx="11"/>
-          <rect x="24" y="26" width="76" height="40" rx="6"/>
-          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
-          <path d="M24 78 H 92 M24 88 H 72"/>
-          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
-        </svg>
-      </div>
-      <p class="camp__lbl">Old ads</p>
-    </div>
+    <div class="camp__box">
+      <div class="camp__row">
 
-    <!-- the spend, moving across -->
-    <svg class="camp__flow" viewBox="0 0 580 300" fill="none" aria-hidden="true">
-      <defs>
-        <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5"
-                markerWidth="5" markerHeight="5" orient="auto">
-          <path d="M0.5 0.5 L9 5 L0.5 9.5" fill="none" stroke="#0071E3"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </marker>
-      </defs>
-      <g stroke="#0071E3" stroke-width="7" stroke-linecap="round" marker-end="url(#ah)">
-        <path d="M40 92 C 200 30, 380 30, 530 88"/>
-        <path d="M40 208 C 200 270, 380 270, 530 212"/>
-      </g>
-    </svg>
+        <div class="camp__side camp__side--old">
+          <div class="camp__ads">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <p class="camp__lbl">Old ads</p>
+        </div>
 
-    <div class="camp__side camp__side--new">
-      <div class="camp__ads">
-        <svg viewBox="0 0 124 124" aria-hidden="true">
-          <rect x="12" y="14" width="100" height="96" rx="11"/>
-          <rect x="24" y="26" width="76" height="40" rx="6"/>
-          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
-          <path d="M24 78 H 92 M24 88 H 72"/>
-          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
-        </svg>
-        <svg viewBox="0 0 124 124" aria-hidden="true">
-          <rect x="12" y="14" width="100" height="96" rx="11"/>
-          <rect x="24" y="26" width="76" height="40" rx="6"/>
-          <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
-          <path d="M24 78 H 92 M24 88 H 72"/>
-          <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
-        </svg>
+        <div class="camp__flow">
+          <p class="camp__word">Spend</p>
+          <div class="camp__track">
+            <div class="camp__rail"></div>
+            <div class="camp__arrow"></div>
+            <span class="camp__coin camp__coin--a">$</span>
+            <span class="camp__coin camp__coin--b">$</span>
+            <span class="camp__coin camp__coin--c">$</span>
+          </div>
+        </div>
+
+        <div class="camp__side camp__side--new">
+          <div class="camp__ads">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="fill" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <p class="camp__lbl">New ads</p>
+        </div>
+
       </div>
-      <p class="camp__lbl">New ads</p>
     </div>
 
   </div>
