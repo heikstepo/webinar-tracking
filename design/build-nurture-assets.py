@@ -2,12 +2,15 @@
 """The six nurture assets, as icons with their names.
 
 Drawn icons for the four things that are activities, and the real marks for the
-two that are products: YouTube and Telegram come from design/logos and are set
+two that are products: YouTube and Sendblue come from design/logos and are set
 filled in one ink, matching how the ICP sources slide handles them. Mixing a
 brand colour in here would put two loud colours against a set otherwise built
 from one blue.
 
 Lead magnet is deliberately absent and setters is in its place, as asked.
+
+The Sendblue mark is traced from the brand's own favicon rather than drawn from
+memory, so the blob's lobes sit where they actually sit.
 
     ./build-nurture-assets.py    writes the 16:9 slide and the vertical card
 """
@@ -30,7 +33,7 @@ DRAWN = '0 0 124 124'
 
 ITEMS = [
     # Three envelopes would crowd; two says "sequence" just as well.
-    ('Pre-Webinar Email Sequence', DRAWN, '''<rect x="30" y="24" width="64" height="42" rx="6"/>
+    ('Pre Call Sequence', DRAWN, '''<rect x="30" y="24" width="64" height="42" rx="6"/>
         <rect x="16" y="44" width="80" height="56" rx="7"/>
         <path class="hot" d="M22 51 L56 77 L90 51"/>'''),
     # The ad, and a U-turn under it. An arc alone read as a smile rather than
@@ -48,7 +51,7 @@ ITEMS = [
         <circle class="hot-fill" cx="52" cy="52" r="5"/>
         <circle class="hot-fill" cx="68" cy="52" r="5"/>
         <path d="M104 40 H 114 M104 52 H 118 M104 64 H 114"/>'''),
-    ('Telegram',) + logo('telegram'),
+    ('Sendblue',) + logo('sendblue'),
     # A person on calls: the headset is the accent, because that is the job.
     ('Setters', DRAWN, '''<path d="M24 102 C 24 82, 41 72, 62 72 C 83 72, 100 82, 100 102"/>
         <circle cx="62" cy="46" r="17"/>
@@ -95,6 +98,9 @@ TPL = '''<!doctype html>
 .cell__art svg .hot-fill { fill: var(--blue); stroke: none; }
 /* Real logos are filled marks, not line drawings. */
 .cell__art .brand { width: __BRAND__px; height: __BRAND__px; fill: var(--ink); stroke: none; }
+/* Sendblue's mark fills its whole square, where YouTube's is wide and short,
+   so at one size it carries far more weight than the rest of the set. */
+.cell__art .brand--tight { width: __TIGHT__px; height: __TIGHT__px; }
 
 .cell__name {
   margin: __NGAP__px 0 0;
@@ -128,20 +134,25 @@ CELL = '''    <div class="cell">
 VARIANTS = [
     dict(path='slides/wide/wide-nurture-assets.html', css='../../',
          W=1920, H=1080, PX=110, PY=90, COLS=3, CELL=430,
-         CGAP=90, RGAP=80, ICON=180, BRAND=170, NAME=40, NGAP=30),
+         CGAP=90, RGAP=80, ICON=180, BRAND=170, TIGHT=142, NAME=40, NGAP=30),
     dict(path='slides/vert-nurture-assets.html', css='../',
          W=1080, H=1200, PX=70, PY=70, COLS=2, CELL=420,
-         CGAP=60, RGAP=62, ICON=150, BRAND=142, NAME=36, NGAP=24),
+         CGAP=60, RGAP=62, ICON=150, BRAND=142, TIGHT=120, NAME=36, NGAP=24),
 ]
 
-cells = '\n\n'.join(
-    CELL % ('brand' if box != DRAWN else '', box, art, name)
-    for name, box, art in ITEMS)
+def cls(name, box):
+    if box == DRAWN:
+        return ''
+    return 'brand brand--tight' if name == 'Sendblue' else 'brand'
+
+
+cells = '\n\n'.join(CELL % (cls(name, box), box, art, name)
+                    for name, box, art in ITEMS)
 
 for v in VARIANTS:
     out = TPL
     for k in ('W', 'H', 'PX', 'PY', 'COLS', 'CELL', 'CGAP', 'RGAP',
-              'ICON', 'BRAND', 'NAME', 'NGAP'):
+              'ICON', 'BRAND', 'TIGHT', 'NAME', 'NGAP'):
         out = out.replace('__%s__' % k, str(v[k]))
     out = out.replace('__CSS__', v['css']).replace('__CELLS__', cells)
     os.makedirs(os.path.dirname(v['path']), exist_ok=True)
