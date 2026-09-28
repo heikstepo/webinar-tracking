@@ -25,22 +25,22 @@
 
 .slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
 
-.seq { display: flex; align-items: flex-start; gap: 44px; width: 1700px; }
+.jr { display: flex; align-items: flex-start; gap: 44px; width: 1700px; }
 
 /* The person. Solid ink, with real gaps left between the arms and the torso —
    overlapped, they merge into one lump and the silhouette stops reading. */
-.seq__who { flex: none; padding-top: 26px; }
-.seq__who svg { display: block; width: 132px; height: 310px; fill: var(--ink); }
+.jr__who { flex: none; padding-top: 26px; }
+.jr__who svg { display: block; width: 132px; height: 310px; fill: var(--ink); }
 
-.seq__track { position: relative; flex: 1; }
+.jr__track { position: relative; flex: 1; }
 
 /* Behind the dots, at their centre. */
-.seq__line {
+.jr__line {
   position: absolute; left: 0; right: 0; top: 232px; height: 3px;
   background: #D2D8E0; border-radius: 2px;
 }
 
-.seq__stops { position: relative; height: 340px; }
+.jr__stops { position: relative; height: 340px; }
 
 .hit {
   position: absolute; top: 0; width: 212px; margin-left: -106px;
@@ -92,9 +92,9 @@
      text column the fit pass would wrap it into. -->
 <section class="slide slide--center slide--mid">
 
-  <div class="seq">
+  <div class="jr">
 
-    <div class="seq__who">
+    <div class="jr__who">
       <svg viewBox="0 0 66 150" aria-hidden="true">
         <circle cx="33" cy="16" r="14"/>
         <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
@@ -106,10 +106,10 @@
       </svg>
     </div>
 
-    <div class="seq__track">
-      <div class="seq__line"></div>
+    <div class="jr__track">
+      <div class="jr__line"></div>
 
-      <div class="seq__stops">
+      <div class="jr__stops">
 
         <div class="hit hit--1">
           <div class="hit__art">
