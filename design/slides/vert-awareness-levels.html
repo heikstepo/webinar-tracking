@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Awareness levels</title>
+<link rel="stylesheet" href="../4pi.css">
+<link rel="stylesheet" href="../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-awareness-levels.py. The cards climb so the rise says "levels",
+   and the chips ramp pale to full because it is one quantity increasing.
+   ========================================================================= */
+@page { size: 1080px 1500px; margin: 0; }
+
+.slide { width: 1080px; height: 1500px; padding: 70px 70px; background: var(--ground); }
+
+.awl { display: flex; flex-direction: column; gap: 22px; align-items: stretch; }
+
+.awl__card {
+  width: 940px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 22px;
+  padding: 28px 34px 32px;
+  text-align: left;
+}
+
+.awl__n {
+  display: flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; border-radius: 50%;
+  font-size: 27px; font-weight: 700; color: #fff;
+}
+.awl__t {
+  margin: 18px 0 0;
+  font-size: 38px; font-weight: 600; letter-spacing: -0.01em;
+  line-height: 1.2; color: var(--ink);
+}
+.awl__b {
+  margin: 12px 0 0;
+  font-size: 26px; font-weight: 500; line-height: 1.36; color: var(--ink-2);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="awl">
+    <div class="awl__card">
+      <span class="awl__n" style="background:#C5DDFA">1</span>
+      <h3 class="awl__t">Unaware of the Ecom</h3>
+      
+    </div>
+
+    <div class="awl__card">
+      <span class="awl__n" style="background:#A7CCF7">2</span>
+      <h3 class="awl__t">Curious but Skeptical</h3>
+      <p class="awl__b">Has heard about ecom and seen the success stories, but isn&rsquo;t sure it&rsquo;s real or right for them.</p>
+    </div>
+
+    <div class="awl__card">
+      <span class="awl__n" style="background:#7CB2F3">3</span>
+      <h3 class="awl__t">Actively Researching</h3>
+      <p class="awl__b">Consuming content, comparing models, trying to find the right way in.</p>
+    </div>
+
+    <div class="awl__card">
+      <span class="awl__n" style="background:#4A97EF">4</span>
+      <h3 class="awl__t">Started and Struggling</h3>
+      <p class="awl__b">Has launched a store and spent money, but isn&rsquo;t getting consistent sales or profit.</p>
+    </div>
+
+    <div class="awl__card">
+      <span class="awl__n" style="background:#0071E3">5</span>
+      <h3 class="awl__t">Profitable but Plateaued</h3>
+      <p class="awl__b">Making money, but hitting a ceiling on scaling and needs systems or expert help to break through.</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
