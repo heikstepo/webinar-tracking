@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Three ads, a video, then the fourth ad lands</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   One person, four ads and a video.
+
+   Same figure as the week journey, drawn once at the head of the track: the
+   argument is that it is the same person seeing all of it, and repeating the
+   figure at every stop would say five people instead.
+
+   Evenly spaced here, unlike the week journey. Nothing was said about when
+   these happen, so the spacing carries order and nothing else.
+
+   The first three ads are drawn in the quiet blue and the fourth in full
+   accent, so the one that lands is visible before any label is read. The
+   conversion sits under that ad rather than as a sixth stop, because it is
+   what that ad did, not another thing that happened.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.seq { display: flex; align-items: flex-start; gap: 44px; width: 1700px; }
+
+/* The person. Solid ink, with real gaps left between the arms and the torso —
+   overlapped, they merge into one lump and the silhouette stops reading. */
+.seq__who { flex: none; padding-top: 26px; }
+.seq__who svg { display: block; width: 132px; height: 310px; fill: var(--ink); }
+
+.seq__track { position: relative; flex: 1; }
+
+/* Behind the dots, at their centre. */
+.seq__line {
+  position: absolute; left: 0; right: 0; top: 232px; height: 3px;
+  background: #D2D8E0; border-radius: 2px;
+}
+
+.seq__stops { position: relative; height: 340px; }
+
+.hit {
+  position: absolute; top: 0; width: 212px; margin-left: -106px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.hit--1 { left: 9%; }
+.hit--2 { left: 29.5%; }
+.hit--3 { left: 50%; }
+.hit--4 { left: 70.5%; }
+.hit--5 { left: 91%; }
+
+.hit__art { height: 200px; display: flex; align-items: flex-end; justify-content: center; }
+.hit__art svg {
+  display: block; width: 130px; height: 130px;
+  fill: none; stroke: #7FA8DC; stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.hit__art svg .hot { stroke: var(--blue); stroke-width: 3.2; }
+.hit__art svg .hot-fill { fill: var(--blue); stroke: none; }
+/* YouTube is a real logo, so it is a filled mark rather than a line drawing. */
+.hit__art .yt { width: 140px; height: 140px; fill: var(--ink); stroke: none; }
+
+.hit__dot {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--ground); border: 3px solid #A9B6C6;
+  margin: 19px 0 0;
+}
+/* Wider than its stop, and allowed to be: "YouTube video" wrapped to two lines
+   inside 212px and dropped that label a line below the other four. Centred, so
+   it spreads into the gaps either side rather than off the end. */
+.hit__name {
+  margin: 28px 0 0; white-space: nowrap;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
+}
+
+/* The ad that lands: full accent, and the outcome named under it in the green
+   this deck uses for a sale everywhere else. */
+.hit--5 .hit__art svg { stroke: var(--blue); stroke-width: 3.2; }
+.hit--5 .hit__dot { border-color: #34A518; background: #34A518; }
+.hit__won {
+  margin: 10px 0 0;
+  font-size: 30px; font-weight: 600; letter-spacing: -0.006em; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: sized for 1920 here, and its row is far wider than the panel
+     text column the fit pass would wrap it into. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="seq">
+
+    <div class="seq__who">
+      <svg viewBox="0 0 66 150" aria-hidden="true">
+        <circle cx="33" cy="16" r="14"/>
+        <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
+                 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
+        <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
+        <rect x="52" y="46" width="11" height="44" rx="5.5"/>
+        <rect x="19" y="88" width="12" height="58" rx="6"/>
+        <rect x="35" y="88" width="12" height="58" rx="6"/>
+      </svg>
+    </div>
+
+    <div class="seq__track">
+      <div class="seq__line"></div>
+
+      <div class="seq__stops">
+
+        <div class="hit hit--1">
+          <div class="hit__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="hit__dot"></span>
+          <p class="hit__name">Ad 1</p>
+        </div>
+
+        <div class="hit hit--2">
+          <div class="hit__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="hit__dot"></span>
+          <p class="hit__name">Ad 2</p>
+        </div>
+
+        <div class="hit hit--3">
+          <div class="hit__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="hit__dot"></span>
+          <p class="hit__name">Ad 3</p>
+        </div>
+
+        <!-- not an ad: they went looking themselves -->
+        <div class="hit hit--4">
+          <div class="hit__art">
+            <svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <span class="hit__dot"></span>
+          <p class="hit__name">YouTube video</p>
+        </div>
+
+        <div class="hit hit--5">
+          <div class="hit__art">
+            <svg viewBox="0 0 124 124" aria-hidden="true">
+              <rect x="12" y="14" width="100" height="96" rx="11"/>
+              <rect x="24" y="26" width="76" height="40" rx="6"/>
+              <path class="hot-fill" d="M56 36 L 72 46 L 56 56 Z"/>
+              <path d="M24 78 H 92 M24 88 H 72"/>
+              <rect class="hot" x="24" y="96" width="40" height="6" rx="3"/>
+            </svg>
+          </div>
+          <span class="hit__dot"></span>
+          <p class="hit__name">Ad 4</p>
+          <p class="hit__won">Converts</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
