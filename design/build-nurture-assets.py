@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The six nurture assets, as icons with their names.
 
-Drawn icons for the four things that are activities, and the real marks for the
+Drawn icons for the three things that are activities, and the real marks for the
 two that are products: YouTube and Sendblue come from design/logos and are set
 filled in one ink, matching how the ICP sources slide handles them. Mixing a
 brand colour in here would put two loud colours against a set otherwise built
@@ -36,13 +36,6 @@ ITEMS = [
     ('Pre Call Sequence', DRAWN, '''<rect x="30" y="24" width="64" height="42" rx="6"/>
         <rect x="16" y="44" width="80" height="56" rx="7"/>
         <path class="hot" d="M22 51 L56 77 L90 51"/>'''),
-    # The ad, and a U-turn under it. An arc alone read as a smile rather than
-    # as coming back, so the path now visibly goes out, turns, and returns.
-    ('Retargeting Ads', DRAWN, '''<rect x="20" y="10" width="84" height="50" rx="8"/>
-        <rect x="30" y="20" width="64" height="20" rx="4"/>
-        <rect class="hot-fill" x="30" y="46" width="32" height="6" rx="3"/>
-        <path class="hot" d="M64 74 H 76 C 92 74, 92 102, 76 102 H 40"/>
-        <path class="hot" d="M49 94 L39 102 L49 110"/>'''),
     ('YouTube Nurturing',) + logo('youtube'),
     # A message, and the signal going out to a lot of people at once.
     ('SMS Blasts', DRAWN, '''<rect x="8" y="26" width="88" height="52" rx="12"/>
@@ -70,19 +63,23 @@ TPL = '''<!doctype html>
 <link rel="stylesheet" href="__CSS__voice-quiet.css">
 <style>
 /* ============================================================================
-   See build-nurture-assets.py. Four drawn icons and two real brand marks, all
+   See build-nurture-assets.py. Three drawn icons and two real brand marks, all
    in one ink so the set reads as one family.
    ========================================================================= */
 @page { size: __W__px __H__px; margin: 0; }
 
 .slide { width: __W__px; height: __H__px; padding: __PY__px __PX__px; background: var(--ground); }
 
+/* Wrapping flex rather than a grid: five cells leave a short last row, and a
+   grid packs that row against the left where this centres it under the rest.
+   The container is sized to exactly __COLS__ cells so it still wraps where it did. */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(__COLS__, __CELL__px);
+  display: flex; flex-wrap: wrap; justify-content: center;
   column-gap: __CGAP__px; row-gap: __RGAP__px;
-  justify-content: center;
+  width: __ROWW__px; margin: 0 auto;
 }
+
+.cell { width: __CELL__px; flex: none; }
 
 .cell { display: flex; flex-direction: column; align-items: center; }
 
@@ -151,8 +148,9 @@ cells = '\n\n'.join(CELL % (cls(name, box), box, art, name)
 
 for v in VARIANTS:
     out = TPL
+    v = dict(v, ROWW=v['COLS'] * v['CELL'] + (v['COLS'] - 1) * v['CGAP'])
     for k in ('W', 'H', 'PX', 'PY', 'COLS', 'CELL', 'CGAP', 'RGAP',
-              'ICON', 'BRAND', 'TIGHT', 'NAME', 'NGAP'):
+              'ICON', 'BRAND', 'TIGHT', 'NAME', 'NGAP', 'ROWW'):
         out = out.replace('__%s__' % k, str(v[k]))
     out = out.replace('__CSS__', v['css']).replace('__CELLS__', cells)
     os.makedirs(os.path.dirname(v['path']), exist_ok=True)
