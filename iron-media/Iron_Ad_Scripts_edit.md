@@ -59,7 +59,7 @@ Und statt an 2, 3 Ads zu hängen, laufen am Ende 3, 4 Angles parallel… jeder m
 
 Heißt, wenn mal eine Ad ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
 
-Bei einer Brand haben wir so aus demselben Produkt und demselben Offer die 3 bis 5 fache Performance rausgeholt… nur durch neue Angles.
+Genau so haben wir [CASE: Brand] nach X Monaten Plateau von X auf X im Monat gebracht… mit demselben Produkt und demselben Offer.
 
 Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten von 7 auf 8 stellig willst…
 
