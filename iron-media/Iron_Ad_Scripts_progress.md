@@ -192,11 +192,11 @@ Also ja… es funktioniert mit Sicherheit auch für Brands zwischen 100 und 500k
 
 Einfach weil der Prozess immer der gleiche ist, scheiß egal wie groß die Brand ist oder in was für einer Nische du bist.
 
-Das nennen wir unser Funnel First System… 3 Phasen.
+Wir machen das mit Ugly Funnels… immer in 3 Phasen.
 
 Phase 1 ist Research… warum deine Kunden wirklich kaufen und was sie zurückhält.
 
-Phase 2 ist das Fundament… Ugly Funnels statt der Produktseite, mit einem Cold Traffic Offer und Upsells dahinter.
+Phase 2 ist das Fundament… die Funnels selbst statt der Produktseite, mit Cold Traffic Offer und Upsells dahinter.
 
 Und erst in Phase 3 wird skaliert… mit VSL Ads auf Meta und Google.
 
