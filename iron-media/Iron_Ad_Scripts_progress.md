@@ -89,7 +89,7 @@ Klick auf die Ad… dort erklär ich dir, wie wir mit dir erst mal den Rest vom 
 ```
 
 
-## Creative 5.1: Creative Volume (Entwurf, wartet auf Heiks Feedback)
+## Creative 5.1: Creative Volume (final, 276 Wörter)
 
 ```
 Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?
@@ -116,13 +116,131 @@ Neue Leute erreichst du nur mit einer neuen Message… bei einem Supplement z.B.
 
 Jede davon mit eigener VSL Ad und eigenem Funnel dahinter… sonst hält keine Ad 200k Adspend aus.
 
-Erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
+Und erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
 
-Heißt, 5 Ads mit 5 neuen Messages schlagen 100 mit derselben.
+Heißt, 5 Ads mit 5 neuen Messages schlagen 100 Ads mit derselben.
 
 So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
 
-Also… wenn du gerade überlegst, auf 50 Ads die Woche hochzugehen…
+Also… falls du deine Ecom brand von 7 auf 8 stellig skalieren willst…
 
-Klick auf die Ad… dort zeig ich dir, wie wir mit dir deine Brand in den nächsten 3 Monaten auf 8 stellig bringen.
+Ohne hunderte neue ads immer ins Leere zu launchen…
+
+Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
+```
+
+## Creative 8.1: Keine Zeit für Umsetzung (Entwurf)
+
+```
+Ich sag's dir ehrlich… wenn du deine Ecom Brand von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
+
+Und ich weiß, das willst du gerade nicht hören…
+
+Weil bei dir wahrscheinlich eh schon die ganze Freizeit für die Brand draufgeht.
+
+Neue Landing Pages bauen… stundenlang Ads in CapCut schneiden… Lager, Logistik, Customer Support…
+
+Und trotzdem tut sich beim Umsatz nicht wirklich was.
+
+Aber die gute Nachricht ist… die Zeit steckst du eh schon rein.
+
+Nur halt an der falschen Stelle.
+
+Weil ohne klares System probierst du rum… neue Hooks, neue Seite, neuer Rabattcode… und genau dieses Rumprobieren frisst die meiste Zeit.
+
+Bei uns bekommst du stattdessen eine Roadmap, die dir genau sagt, was als Nächstes dran ist.
+
+Erst der Funnel statt der Produktseite… dann das Cold Traffic Offer… und erst dann mehr Ads.
+
+Und bei jedem Schritt schaut jemand aus meinem Team drüber, bevor du Zeit in die falsche Richtung steckst.
+
+Du brauchst dafür auch keine 10 Leute… sondern den richtigen Prozess, 1, 2 gute Leute und AI.
+
+Und wenn du für Schnitt oder Media Buying jemanden brauchst, kriegst du den aus unserem Pool… suchen musst du nicht.
+
+Heißt, du arbeitest nicht mehr als jetzt… aber jede Stunde geht in etwas, das wirklich Umsatz bringt.
+
+Woher ich das weiß? Weil wir in meiner Firma Iron genau so [CASE: Brand] mit X Leuten im Team von X auf X im Monat gebracht haben.
+
+Also… falls du in den nächsten 3 Monaten auf 8 stellig willst…
+
+Ohne noch mehr Abende in CapCut zu verbringen…
+
+Klick auf die Ad und schau dir an, wie das bei uns mit deinem Team aussehen würde.
+```
+
+## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf)
+
+```
+Wenn ich eine Ecom Brand mit 200k im Monat hätte, würde mich die IM8 Case Study auch einen Scheiß interessieren.
+
+David Beckham, über 100 Millionen in 11 Monaten… schön und gut.
+
+Aber du hast halt keinen Beckham… du hast ein Produkt, ein kleines Team und ein paar Ads, die gerade laufen.
+
+Und die eigentliche Frage ist ja… klappt das auch bei meiner Brand? In meiner Nische?
+
+Deswegen zeig ich dir lieber mal Brands, die genau da angefangen haben, wo du jetzt stehst.
+
+[CASE: Fashion Brand] von X auf X im Monat…
+
+[CASE: Brand außerhalb Supplements und Beauty] von X auf X im Monat in X Monaten…
+
+[CASE: Brand] von X auf X im Monat mit X % Marge.
+
+Und ich zeig dir auch ehrlich, wenn's mal nicht so läuft…
+
+Dann liegt's fast nie am Produkt… sondern daran, wie konsequent das umgesetzt wird.
+
+Weil das System ist bei jeder Brand dasselbe.
+
+Erst Research, warum deine Kunden wirklich kaufen und was sie noch zurückhält…
+
+Dann Ugly Funnels für jede Bewusstseinsstufe statt der Produktseite… und ein Cold Traffic Offer, mit dem du schon an der ersten Bestellung verdienst.
+
+Nur der Inhalt kommt jedes Mal aus deinem Markt… deine Kunden, deine Einwände, deine Angles.
+
+Heißt, wir kopieren nicht IM8 auf deine Brand… wir bauen das System mit dem, was deine Kunden wirklich sagen.
+
+Und so haben wir in meiner Firma Iron mittlerweile über 500 Marken begleitet… von Fashion über Parfum und Schmuck bis Supplements.
+
+Also… wenn du von 7 auf 8 stellig willst und dich gerade fragst, ob das bei dir auch klappt…
+
+Klick auf die Ad und check ab, wie wir deine Brand dahin bringen würden.
+```
+
+## Creative 8.3: Individuell oder Kurs? (Entwurf)
+
+```
+Videokurs gekauft… Gruppencoaching gemacht… und deine Ecom Brand hängt trotzdem noch bei 200k im Monat?
+
+Das sehe ich bei fast jeder Brand zwischen 100 und 500k im Monat…
+
+Erst ein Kurs… dann ein Mentoring… dann ein Gruppencoaching, wo du mit 20 anderen Brands im Call sitzt und dich jemand fragt, ob du schon mal dein Creative iteriert hast.
+
+Und klar… für die Basics sind die Dinger gar nicht schlecht.
+
+Aber ab einem gewissen Punkt fehlt dir kein Wissen mehr.
+
+Dir fehlt jemand, der sich DEINE Zahlen anschaut und dir sagt, was bei deiner Brand jetzt der nächste Schritt ist.
+
+Und das kann dir halt kein Video sagen.
+
+Deswegen startet bei uns alles mit einer Analyse von deinem Account und deinen Zahlen…
+
+Daraus bekommst du eine Roadmap mit klaren Zielen nach 1, 3, 6 und 12 Monaten.
+
+Und einen festen Customer Success Manager, der 1 zu 1 mit dir arbeitet… einmal die Woche im Call, dazwischen im Slack.
+
+Du baust dein Advertorial, schickst es rein… und kriegst ein Loom zurück, nicht nur mit „passt“ oder „passt nicht“, sondern warum.
+
+Heißt, du lernst nicht noch mehr Theorie… sondern setzt genau das um, was bei deiner Brand gerade Umsatz bringt.
+
+Und der Grund, warum das so gut funktioniert, ist einfach… ich hab in meiner Firma Iron richtig gute Leute, und genau die sitzen bei dir im Projekt.
+
+So ist [CASE: Brand] nach X Kursen mit uns von X auf X im Monat gegangen.
+
+Also… falls du deine Brand auf 1 Mio im Monat bringen willst… mit jemandem, der sich wirklich deine Zahlen anschaut…
+
+Klick auf die Ad und ich zeig dir, wie das bei uns 1 zu 1 abläuft.
 ```

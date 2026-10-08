@@ -68,12 +68,12 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 | 2 Q4 Opportunity | Reason why now | 2.1 gefilmt · 2.2 fertig · **2.3 fast fertig** (siehe §8) |
 | 3 Mechanism | Mechanismus etablieren | 3.1 gefilmt (Purple Ocean) · 3.2 fertig (Tafel) · 3.3 fertig |
 | 4 Reframe | Falschen Glauben brechen | 4.1 fertig · 4.2 fertig · **4.3 fertig** (siehe §9) |
-| 5 Gegen die Szene | Common Advice/Beliefs, nicht konkrete Firmen | 5.1 offen (AI Creatives & Creative Volume) · 5.2 gefilmt · 5.3 fertig |
+| 5 Gegen die Szene | Common Advice/Beliefs, nicht konkrete Firmen | **5.1 fertig** (Creative Volume, siehe §9b) · 5.2 gefilmt · 5.3 fertig |
 | 6 Straight Offer | Zusammenarbeit direkt pitchen | 6.1 gefilmt (Main Stage) · 6.2 gefilmt (Voller Kalender) · 6.3 offen |
 | 7 Case Studies | Proof | 7.1 gefilmt · 7.2 fertig (Straight Flex) · 7.3 offen |
-| 8 Objection Handling | Einwände | 8.1 offen (Keine Zeit für Umsetzung) · 8.2 offen (Klappt das auch bei uns?) · 8.3 offen (Individuell oder Kurs?) |
+| 8 Objection Handling | Einwände | 8.1 · 8.2 · 8.3 **Entwurf** (Keine Zeit · Klappt's bei uns? · Individuell oder Kurs?), Logik aus den Pre Call FAQ Videos |
 
-**Reihenfolge der offenen Creatives:** 5.1 → 6.3 → 7.3 → 8.1 → 8.2 → 8.3. 1.3 vorher klären.
+**Reihenfolge der offenen Creatives:** AG8 Feedback → 6.3 → 7.3 → 8.1 → 8.2 → 8.3. 1.3 vorher klären.
 
 ### Schon benutzt, also nicht wiederholen
 
@@ -87,10 +87,11 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 - 4.2: "Hör auf, neue Ads zu launchen… Nein, jetzt mal ohne Spaß…"
 - 4.3: "Ich finds so funny wie so viele Ecom Brands denken, dass sie: '…'"
 - 5.3: "Jeder in der Ecom Szene will dir… verkaufen"
+- 5.1: Frage-Hook mit Zahl: "Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?"
 - 7.2: Selbst-Flex
 - Gesperrt: **"Jeder in der Ecom Szene…" ist dreimal benutzt.**
 
-**Freie Hook-Typen:** Frage-Hook, "Hart gesagt…" (Seb's alter Winner), "Was dir keine Agentur sagt…", der Plan als Szene ("Jeden Monat eine neue Sorte… dann…"), Call-out mit Rückgang ("schon mal 300k, jetzt 150"), Zahlen-Paradox.
+**Freie Hook-Typen:** "Hart gesagt…" (Seb's alter Winner), "Was dir keine Agentur sagt…", der Plan als Szene ("Jeden Monat eine neue Sorte… dann…"), Call-out mit Rückgang ("schon mal 300k, jetzt 150"), Zahlen-Paradox.
 
 **CTAs:**
 - 1.2: "schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können"
@@ -101,6 +102,7 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 - 4.1: "schau dir an, wie wir deine Creative Strategy und deinen Funnel aufbauen würden"
 - 4.2: "check ab, wie wir das bei Iron mit dir umsetzen würden"
 - 4.3: "dort erklär ich dir, wie wir mit dir erst mal den Rest vom DACH Raum holen"
+- 5.1: "Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden" (**fast wie 7.2**)
 - 5.3: "check das Video ab, was ich gedreht habe…"
 - 7.2: "ich zeig dir genau, wie wir dir dabei helfen und wie eine Zusammenarbeit mit uns aussieht"
 
@@ -110,12 +112,14 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 - 4.1: "bevor du den nächsten Media Buyer einstellst…"
 - 4.2: "wenn du von 7 auf 8 stellig willst, ohne jede Woche 300 neue Ads rauszuhauen…"
 - 4.3: "bevor du das nächste Produkt launchst oder in ein neues Land gehst…"
+- 5.1: "falls du deine Ecom Brand von 7 auf 8 stellig skalieren willst… Ohne hunderte neue Ads immer ins Leere zu launchen…" (**gleicher Aufbau wie 4.2**)
 
 **Authority- und Case-Zeilen:**
 - 1.2: "…in meiner Firma Iron, die by the way allein dieses Jahr schon 30 Marken auf 8 stellig…"
 - 2.2: "Genau das machen wir in meiner Firma Iron Media den ganzen Tag" plus 3 Rapid-Fire-Cases
 - 2.3 und 4.3: "Genau so ist/haben wir [CASE] in meiner Firma Iron…", **zweimal derselbe Aufbau, nächste Ads anders**
 - 4.2: über 500 Marken, IM8 von Tag 1, FT/Statista
+- 5.1: "Wir haben mit meiner Firma Iron allein dieses Jahr schon 30 Brands von 7 auf 8 stellig gebracht…" mitten in der Ad als Beweis gegen den Glauben, unten nur kurz "So haben wir [CASE]… mit X Ads die Woche"
 - 5.3: "Und das sag ich dir nicht einfach so…"
 - 7.2: Case-Salve
 - Noch frei: **"Woher ich das weiß?"**, die Marken-Liste (More Nutrition, ESN…), "Ich weiß, das klingt großkotzig… ist aber die Realität".
@@ -297,6 +301,70 @@ Klick auf die Ad… dort erklär ich dir, wie wir mit dir erst mal den Rest vom 
 ```
 
 Offen: die Platzhalter "X Y und Z", "ab X Umsatz" und ein Case, der im DACH Raum ohne neues Produkt gewachsen ist.
+
+---
+
+## 9b. Case Study 5.1 "Creative Volume" (AG5)
+
+| # | Was ich geliefert habe | Heiks Reaktion | Lektion |
+|---|---|---|---|
+| 1 | Hook Influencer vs. AI, mit dem Unterton "AI Videos funktionieren nicht" | "was sind Sebs thoughts on KI Videos?" | Seb ist pro AI. Erst Sebs Haltung prüfen, dann den Gegner wählen |
+| 2 | Start mit "AI Ads sind grad am rasieren…", Zeilen wie "weniger Ads" und "rasieren nur das Ad Budget" | "komm schneller zum Punkt… ERST NACHDEM man die Winning Ad gefunden hat kommt AI" | AI kommt nach dem Winner. Nach dem Hook sofort zur Sache |
+| 3 | Seb-Anekdote "das haben wir auch mal gemacht… ganze Nächte lang…" | "komplett ohne Sinn" | Keine erfundenen Seb-Storys |
+| 4 | – | **Heik dreht die Ad:** Hauptidee Creative Volume, weil die Konkurrenz das predigt und Prospects es glauben. AI nur als Mittel. Er schreibt die ersten 9 Zeilen | Bei Ads gegen die Szene ist der Gegner der Glaube, nicht das Werkzeug |
+| 5 | Fortsetzung: dieselbe Message → dieselben Leute, neue Message für neue Gruppe (Seb Ad 11, IM8 Gruppen), eigener Funnel pro Gruppe, AI erst nach dem Winner, "Heißt, 5 Ads mit 5 neuen Messages schlagen 100…", Case | **Body 1:1 übernommen.** Meine 2 Kürzungen auf 270 Wörter hat er nicht übernommen | Flow schlägt Wortzahl. Seine finale Ad hat 276 Wörter |
+| 6 | CTA "im Video zeig ich dir, wie wir rausfinden, welche Leute deine Brand noch nicht erreicht" | "CTA mal mehr das Offer, etwas weniger super direkt als Straight Offer Ad" | – |
+| 7 | CTA mit Leistungen ("Messages finden… VSL Ads und Funnels bauen") | "nein man, Offer ist auf 8 stellig bringen in den nächsten 3 Monaten" | Offer = Outcome, keine Leistungsliste |
+| 8 | CTA "wie wir mit dir deine Brand in den nächsten 3 Monaten auf 8 stellig bringen" | schreibt den CTA selbst | siehe unten |
+
+**Sein CTA (Vorlage für "Offer andeuten" außerhalb von AG6):**
+1. Qualifier mit dem Outcome: "falls du deine Ecom Brand von 7 auf 8 stellig skalieren willst…"
+2. Eine "Ohne"-Zeile mit dem Schmerz dieser Ad: "Ohne hunderte neue Ads immer ins Leere zu launchen…"
+3. Ein schlichter Klick ohne Mechanismus und ohne Zeitversprechen: "Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden."
+
+Das Offer steckt im Outcome des Qualifiers, nicht im Klick-Satz.
+
+**Finale 5.1 (276 Wörter):**
+
+```
+Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?
+
+Weil wenn du der Ecom Szene Glauben schenkst, sinds 50, 100 oder sogar mehr…
+
+Am besten gleich mit AI gebaut oder mit dutzenden echten Creators.
+
+Und genau das machen gerade die meisten Brands zwischen 100 und 500k im Monat…
+
+Was auch der Grund ist, warum sie es nicht schaffen, auf 1 Mio im Monat zu skalieren.
+
+Ich meine, lass uns mal Folgendes anschauen…
+
+Wir haben mit meiner Firma Iron allein dieses Jahr schon 30 Brands von 7 auf 8 stellig gebracht…
+
+Und meistens haben dafür 3 bis 5 Ads die Woche völlig gereicht.
+
+Weil solange jede dieser Ads wirklich neue Leute erreicht, kannst du easy mal 200k auf nur eine Ad profitabel spenden.
+
+Und genau da liegt der Fehler bei den 100 Ads… wenn alle dieselbe Message haben, zeigt Meta sie halt immer denselben Leuten.
+
+Neue Leute erreichst du nur mit einer neuen Message… bei einem Supplement z.B. einmal für Leute im Gym… einmal für Darmprobleme… einmal fürs Abnehmen.
+
+Jede davon mit eigener VSL Ad und eigenem Funnel dahinter… sonst hält keine Ad 200k Adspend aus.
+
+Und erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
+
+Heißt, 5 Ads mit 5 neuen Messages schlagen 100 Ads mit derselben.
+
+So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
+
+Also… falls du deine Ecom brand von 7 auf 8 stellig skalieren willst…
+
+Ohne hunderte neue ads immer ins Leere zu launchen…
+
+Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
+```
+
+Offen: "30 Brands dieses Jahr", "3 bis 5 Ads die Woche", "200k auf eine Ad" bestätigen, Case mit wenigen Ads pro Woche. Qualifier ähnelt 4.2, Klick-Zeile ähnelt 7.2.
 
 ---
 
