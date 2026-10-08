@@ -87,3 +87,42 @@ Also… bevor du das nächste Produkt launchst oder in ein neues Land gehst…
 
 Klick auf die Ad… dort erklär ich dir, wie wir mit dir erst mal den Rest vom DACH Raum holen.
 ```
+
+
+## Creative 5.1: Creative Volume (Entwurf, wartet auf Heiks Feedback)
+
+```
+Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?
+
+Weil wenn du der Ecom Szene Glauben schenkst, sinds 50, 100 oder sogar mehr…
+
+Am besten gleich mit AI gebaut oder mit dutzenden echten Creators.
+
+Und genau das machen gerade die meisten Brands zwischen 100 und 500k im Monat…
+
+Was auch der Grund ist, warum sie es nicht schaffen, auf 1 Mio im Monat zu skalieren.
+
+Ich meine, lass uns mal Folgendes anschauen…
+
+Wir haben mit meiner Firma Iron allein dieses Jahr schon 30 Brands von 7 auf 8 stellig gebracht…
+
+Und meistens haben dafür 3 bis 5 Ads die Woche völlig gereicht.
+
+Weil solange jede dieser Ads wirklich neue Leute erreicht, kannst du easy mal 200k auf nur eine Ad profitabel spenden.
+
+Und genau da liegt der Fehler bei den 100 Ads… wenn alle dieselbe Message haben, zeigt Meta sie halt immer denselben Leuten.
+
+Neue Leute erreichst du nur mit einer neuen Message… bei einem Supplement z.B. einmal für Leute im Gym… einmal für Darmprobleme… einmal fürs Abnehmen.
+
+Jede davon mit eigener VSL Ad und eigenem Funnel dahinter… sonst hält keine Ad 200k Adspend aus.
+
+Und erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
+
+Heißt, 5 Ads mit 5 neuen Messages schlagen 100 Ads mit derselben.
+
+So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
+
+Also… wenn du gerade überlegst, auf 50 Ads die Woche hochzugehen…
+
+Klick auf die Ad… im Video zeig ich dir, wie wir rausfinden, welche Leute deine Brand noch gar nicht erreicht.
+```
