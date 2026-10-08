@@ -211,7 +211,7 @@ Also… wenn du auch von 7 auf 8 stellig willst…
 Klick auf die Ad und check ab, wie wir dich dahin bringen würden.
 ```
 
-## Creative 8.3: Individuell oder Kurs? (Entwurf v2, Heiks Richtung)
+## Creative 8.3: Individuell oder Kurs? (Entwurf v2, Heiks Richtung, mit Sparringpartner)
 
 ```
 Ich hab ein echt dickes Problem mit der ganzen Ecom Szene…
@@ -224,7 +224,7 @@ Weil das alles den meisten Brands, die von 7 auf 8 stellig wollen, nicht wirklic
 
 Die Brands, die ich kenne, brauchen keinen weiteren Kurs, keine Gruppencalls und auch nicht noch 100 neue Creatives…
 
-Denen fehlt einfach jemand, der sich DEREN Zahlen anschaut und sagt, was bei der Brand jetzt der nächste Schritt ist.
+Denen fehlt ein echter Sparringpartner… jemand, der sich DEREN Zahlen anschaut und sagt, was jetzt der nächste Schritt ist.
 
 Nimm mal 3 Brands, alle bei 300k im Monat…
 
@@ -240,7 +240,7 @@ Deswegen schauen wir uns bei jeder Brand erst mal alles an… Account, Funnel, O
 
 Daraus bekommst du eine Roadmap, was bei DIR als Erstes dran ist.
 
-Und dann sitzt jede Woche jemand aus meinem Team mit dir drüber, der deine Zahlen kennt und weiß, was als Nächstes kommt.
+Und dann hast du jemanden aus meinem Team als Sparringpartner, der jede Woche mit dir drübergeht und weiß, was als Nächstes kommt.
 
 Heißt, du machst nicht, was bei irgendeiner Brand im Kurs funktioniert hat… sondern was bei deiner gerade den nächsten Sprung bringt.
 
