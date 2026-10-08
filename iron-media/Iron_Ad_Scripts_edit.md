@@ -1,11 +1,11 @@
 # Iron Ad Scripts: Edit-Durchgang (kürzer, ohne Flow zu verlieren)
 
-## Creative 1.2 (edit, 212 Wörter, vorher 270)
+## Creative 1.2 (edit, 226 Wörter, vorher 270)
 
 ```
-Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat hängen bleiben… ist die Produktseite.
+Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat hängen bleiben… sie schicken ihren kompletten Traffic einfach nur auf die Produktseite.
 
-Weil da halt nur Leute kaufen, die eh schon wissen, dass sie dein Produkt wollen.
+Und da kaufen halt nur Leute, die eh schon wissen, dass sie dein Produkt wollen.
 
 Und von denen gibt's nur eine begrenzte Anzahl.
 
@@ -19,7 +19,7 @@ In meiner Firma Iron sehen wir das fast jeden Tag… und haben by the way allein
 
 Und die Lösung? Ugly Funnels.
 
-Also für jede Bewusstseinsstufe eine eigene Seite mit Cold Traffic Offer.
+Also statt alles auf eine Seite zu schicken… für jede Bewusstseinsstufe eine eigene Seite mit Cold Traffic Offer.
 
 Kalte Leute bekommen eine lange Seite, die erklärt, warum sie dein Produkt überhaupt brauchen…
 
