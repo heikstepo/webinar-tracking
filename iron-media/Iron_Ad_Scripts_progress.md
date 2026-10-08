@@ -129,7 +129,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit / leanes Team (Entwurf v8, Heiks Frage-Hook, einmal statt jede Woche)
+## Creative 8.1: Keine Zeit / leanes Team (Entwurf v9, klarer Plan + Offer)
 
 ```
 Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
@@ -152,23 +152,27 @@ Mal wurde an der Landing Page gearbeitet, mal ein paar neue Ads gemacht… dazwi
 
 Da arbeitest du schnell den ganzen Tag… und trotzdem fühlt es sich an, als würde sich am Umsatz nichts tun.
 
-Weil fast alles davon jede Woche wieder von vorne anfängt.
+In meiner Firma Iron haben die stattdessen von Tag 1 an einen klaren Plan bekommen… dem sie nur folgen mussten.
 
-Die Ads brennen aus, also schneidest du neue… die Aktion ist vorbei, also kommt die nächste.
+Sowas wie…
 
-Mit uns ging die Zeit in Sachen, die man einmal baut… und die dann jeden Tag verkaufen.
+„Diese Woche nur eins: Produktseite raus, Ugly Funnel rein… alles andere bleibt liegen.“
 
-Allen voran Ugly Funnels… Seiten statt der Produktseite, die auch kalte Leute überzeugen.
+Dann…
 
-Steht das einmal, drehst du nur noch das Budget hoch.
+„Der Funnel läuft? Gut, jetzt kommt das Cold Traffic Offer drauf… erst danach neue Ads.“
 
-Und die haben das nicht von null gebaut… sondern mit dem, was bei über 500 Brands funktioniert hat, und meinem Team an der Seite.
+Und dann…
 
-Heißt, ja, du steckst Zeit rein… aber einmal, nicht jede Woche.
+„Jetzt drehen wir das Budget hoch… und die neuen Ads schafft dein Cutter locker allein.“
 
-Also… falls du mit deinem jetzigen Team auf 8 stellig willst…
+Heißt, dieselbe Zeit wie vorher… nur bringt jetzt jede Stunde die Brand nach vorne.
 
-Klick auf die Ad und schau dir an, wie wir das mit dir bauen würden.
+Und genau so machen wir das auch mit dir…
+
+Also… wenn du deine Brand in den nächsten 3 Monaten auf 8 stellig bringen willst, mit dem Team, das du jetzt schon hast…
+
+Klick auf die Ad und ich zeig dir den Plan, mit dem wir das machen.
 ```
 
 ## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v3)
