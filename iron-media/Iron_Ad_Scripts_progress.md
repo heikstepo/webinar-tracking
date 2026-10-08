@@ -129,7 +129,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit / leanes Team (Entwurf v6, Heiks erste Hälfte)
+## Creative 8.1: Keine Zeit / leanes Team (Entwurf v7, eins nach dem anderen)
 
 ```
 Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
@@ -138,35 +138,31 @@ Ja ich weiß… wahrscheinlich steckst du jetzt schon viel Zeit rein…
 
 Und mit deinem kleinen Team denkst du dann, 8 stellig geht entweder gar nicht… oder nur mit 10 neuen Leuten.
 
-Aber die Zeit haben die meisten Founder eigentlich schon… sie geht nur an die falschen Stellen.
+Weil sich das gerade so anfühlt, als müsstest du alles gleichzeitig machen…
 
-Der halbe Tag für Lager, Logistik und Kundenanfragen…
+Neue Ads, neue Landing Page, TikTok, Google, E-Mails… und das alles neben dem Tagesgeschäft.
 
-Und fürs Marketing bleibt dann nur noch Rumprobieren… mal ein paar neue Ads oder mal eine neue Landing Page und so weiter.
+Und mit 3 Leuten wird dann halt von allem ein bisschen gemacht… aber nichts richtig.
 
-Da ist nicht wirklich ein klares System dahinter…
+Aber die Brands, die wir auf 8 stellig bringen, machen nicht mehr Sachen gleichzeitig… sondern eins nach dem anderen, in der richtigen Reihenfolge.
 
-Und das ist recht typisch für Brands, die so zwischen 100 und 500k im Monat machen.
+Erst der Funnel… Ugly Funnels statt der Produktseite, damit auch Leute kaufen, die dich noch nicht kennen.
 
-Ich meine, wir haben allein dieses Jahr über 30 solcher Brands auf 1 Mio im Monat gebracht…
+Dann das Offer, damit du an jeder Bestellung mehr verdienst.
 
-Die haben auch immer noch super leane Teams…
+Und erst dann mehr Ads und mehr Budget.
 
-Der einzige Grund, warum es geklappt hat, ist, weil die auf einmal genau wussten, was wann dran ist.
+Jeder Schritt baut auf dem davor auf… deswegen wächst die Brand dann nicht linear, sondern in Sprüngen.
 
-Und weil die ein Setup hatten, bei dem der Umsatz wächst… aber die Arbeit nicht.
+Und damit du nicht wieder alles auf einmal anfängst, sagt dir mein Team jede Woche, was gerade dran ist… und was warten kann.
 
-Bei uns heißt das Ugly Funnels… Seiten statt der Produktseite, die auch Leute überzeugen, die dich noch nie gesehen haben.
+Heißt, du steckst weiter Zeit rein… aber immer nur in eine Sache. Und dafür reicht dein Team völlig.
 
-Damit trägt eine einzige Ad 100 bis 200k Adspend… statt dass du jede Woche neue schneiden musst.
-
-Und mein Team sagt dir bei jedem Schritt, was als Nächstes kommt… damit du nicht wieder rumprobierst.
-
-Heißt, du steckst nicht mehr Zeit rein als jetzt… nur endlich in die richtigen Sachen.
+So haben wir in meiner Firma Iron allein dieses Jahr über 30 Brands auf 8 stellig gebracht… bei vielen sitzen bis heute nur der Founder, ein Mitarbeiter für Google und 2, 3 Freelancer.
 
 Also… falls du mit deinem jetzigen Team auf 8 stellig willst…
 
-Klick auf die Ad und schau dir an, wie wir das mit dir aufziehen würden.
+Klick auf die Ad und schau dir an, womit wir bei deiner Brand anfangen würden.
 ```
 
 ## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v3)
