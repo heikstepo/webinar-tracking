@@ -160,7 +160,7 @@ Mit uns ging die Zeit in Sachen, die man einmal baut… und die dann jeden Tag v
 
 Allen voran Ugly Funnels… Seiten statt der Produktseite, die auch kalte Leute überzeugen.
 
-Steht der, drehst du nur noch das Budget hoch.
+Steht das einmal, drehst du nur noch das Budget hoch.
 
 Und die haben das nicht von null gebaut… sondern mit dem, was bei über 500 Brands funktioniert hat, und meinem Team an der Seite.
 
