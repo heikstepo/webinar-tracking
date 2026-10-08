@@ -129,36 +129,38 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit / leanes Team (Entwurf v4, Heiks Ablauf)
+## Creative 8.1: Keine Zeit / leanes Team (Entwurf v5)
 
 ```
 Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
 
 Ja ich weiß… wahrscheinlich steckst du jetzt schon viel Zeit rein und hast nicht viel mehr verfügbar, um noch mehr zu machen…
 
-Und mit deinem kleinen Team denkst du, entweder geht 8 stellig gar nicht… oder du musst erst mal 10 neue Leute einstellen.
+Und mit deinem kleinen Team denkst du dann, 8 stellig geht entweder gar nicht… oder nur mit 10 neuen Leuten.
 
-Aber dass du schon so viel Zeit reinsteckst, ist gut.
+Aber die Zeit hast du ja schon… sie geht nur an die falschen Stellen.
 
-Das Problem ist nur, wo die hingeht… Lager, Logistik, Customer Support…
+Der halbe Tag für Lager, Logistik und Kundenanfragen…
 
-Und dazwischen mal hier ein paar neue Ads… mal da eine neue Landing Page… mal ein neues Offer.
+Und fürs Marketing bleibt dann nur noch Rumprobieren… mal ein paar neue Ads, mal eine neue Landing Page, mal ein neuer Rabatt.
 
-Weil du keinen klaren Plan hast, was als Nächstes wirklich Umsatz bringt.
+Weil dir keiner sagt, was als Nächstes wirklich dran ist.
 
 Dabei ist der Weg auf 8 stellig eigentlich ziemlich klar.
 
-Viele 8 stellige Brands haben nämlich gar nicht mehr Leute als du… sondern ein Setup, bei dem der Umsatz wächst und die Arbeit nicht.
+Und die Brands, die ihn gehen, haben oft nicht mehr Leute als du.
 
-Bei uns läuft das über Ugly Funnels… deine Ads landen nicht mehr auf der Produktseite, sondern auf Seiten, die auch kalte Leute überzeugen.
+Die haben nur ein Setup, bei dem der Umsatz wächst… und die Arbeit nicht.
 
-Dadurch hält eine Ad 100 bis 200k Adspend aus… und du drehst das Budget hoch, statt jede Woche neue Ads zu schneiden.
+Wir machen das mit Ugly Funnels… Seiten statt der Produktseite, die auch Leute überzeugen, die dich noch nie gesehen haben.
 
-Und mein Team sagt dir dabei genau, wann was dran ist… erst der Funnel, dann das Offer, dann die Skalierung.
+Damit trägt eine einzige Ad 100 bis 200k Adspend… statt dass du jede Woche neue schneiden musst.
 
-Heißt, mehr Umsatz bedeutet auf einmal nicht mehr Arbeit.
+Und damit du nicht wieder rumprobierst, sagt dir mein Team genau, was wann dran ist.
 
-Wir haben in meiner Firma Iron Brands auf 8 stellig gebracht… mit dem Founder, einem Mitarbeiter für Google und 2, 3 Freelancern für Creatives.
+Heißt, du steckst nicht mehr Zeit rein als jetzt… nur endlich in die richtigen Sachen.
+
+Wir haben in meiner Firma Iron Brands auf 8 stellig gebracht, da sitzen der Founder, ein Mitarbeiter für Google und 2, 3 Freelancer für Creatives… das war's.
 
 Also… falls du mit deinem jetzigen Team auf 8 stellig willst…
 
