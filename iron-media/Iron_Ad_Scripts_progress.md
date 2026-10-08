@@ -169,7 +169,7 @@ Ohne noch mehr Abende in CapCut zu verbringen…
 Klick auf die Ad und schau dir an, wie das bei uns mit deinem Team aussehen würde.
 ```
 
-## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf)
+## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v2, Heiks Mittelteil)
 
 ```
 Wenn ich eine Ecom Brand mit 200k im Monat hätte, würde mich die IM8 Case Study auch einen Scheiß interessieren.
@@ -188,25 +188,25 @@ Deswegen zeig ich dir lieber mal Brands, die genau da angefangen haben, wo du je
 
 [CASE: Brand] von X auf X im Monat mit X % Marge.
 
-Und ich zeig dir auch ehrlich, wenn's mal nicht so läuft…
+Also ja… es funktioniert mit Sicherheit auch für Brands zwischen 100 und 500k Monatsumsatz, die auf 1 Mio skalieren wollen…
 
-Dann liegt's fast nie am Produkt… sondern daran, wie konsequent das umgesetzt wird.
+Einfach weil der Prozess immer der gleiche ist, scheiß egal wie groß die Brand ist oder in was für einer Nische du bist.
 
-Weil das System ist bei jeder Brand dasselbe.
+Das nennen wir unser Funnel First System… 3 Phasen.
 
-Erst Research, warum deine Kunden wirklich kaufen und was sie noch zurückhält…
+Phase 1 ist Research… warum deine Kunden wirklich kaufen und was sie zurückhält.
 
-Dann Ugly Funnels für jede Bewusstseinsstufe statt der Produktseite… und ein Cold Traffic Offer, mit dem du schon an der ersten Bestellung verdienst.
+Phase 2 ist das Fundament… Ugly Funnels statt der Produktseite, mit einem Cold Traffic Offer und Upsells dahinter.
 
-Nur der Inhalt kommt jedes Mal aus deinem Markt… deine Kunden, deine Einwände, deine Angles.
+Und erst in Phase 3 wird skaliert… mit VSL Ads auf Meta und Google.
 
-Heißt, wir kopieren nicht IM8 auf deine Brand… wir bauen das System mit dem, was deine Kunden wirklich sagen.
+Heißt, ob du Hoodies oder Supplements verkaufst… du kannst mehr für einen Kunden zahlen als jeder in deiner Nische.
 
-Und so haben wir in meiner Firma Iron mittlerweile über 500 Marken begleitet… von Fashion über Parfum und Schmuck bis Supplements.
+Das machen wir in meiner Firma Iron mit über 500 Marken… vom kleinen Fashion Label bis IM8.
 
-Also… wenn du von 7 auf 8 stellig willst und dich gerade fragst, ob das bei dir auch klappt…
+Also… wenn du auch von 7 auf 8 stellig willst…
 
-Klick auf die Ad und check ab, wie wir deine Brand dahin bringen würden.
+Klick auf die Ad und check ab, wie wir dich dahin bringen würden.
 ```
 
 ## Creative 8.3: Individuell oder Kurs? (Entwurf)
