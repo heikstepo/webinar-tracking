@@ -116,13 +116,13 @@ Neue Leute erreichst du nur mit einer neuen Message… bei einem Supplement z.B.
 
 Jede davon mit eigener VSL Ad und eigenem Funnel dahinter… sonst hält keine Ad 200k Adspend aus.
 
-Und erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
+Erst wenn da ein Winner steht, machst du daraus mit AI 15 Varianten.
 
-Heißt, 5 Ads mit 5 neuen Messages schlagen 100 Ads mit derselben.
+Heißt, 5 Ads mit 5 neuen Messages schlagen 100 mit derselben.
 
 So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
 
 Also… wenn du gerade überlegst, auf 50 Ads die Woche hochzugehen…
 
-Klick auf die Ad… im Video zeig ich dir, wie wir rausfinden, welche Leute deine Brand noch gar nicht erreicht.
+Klick auf die Ad… dort zeig ich dir, wie wir mit dir die neuen Messages finden… und die VSL Ads und Funnels dafür bauen.
 ```
