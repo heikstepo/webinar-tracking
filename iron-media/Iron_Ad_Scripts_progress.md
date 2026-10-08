@@ -196,11 +196,11 @@ Wir nennen das intern Ugly Funnels…
 
 Du machst quasi erst mal Research, warum deine Kunden wirklich kaufen…
 
-Dann schickst du deine Ads nicht mehr auf die Produktseite, sondern auf ein Advertorial mit Cold Traffic Offer…
+Dann schickst du deine Ads nicht mehr auf die Produktseite, sondern je nach Bewusstseinsstufe auf Advertorials, Listicles oder Vergleichsseiten… mit Cold Traffic Offer.
 
 Sieht nicht schön aus, daher der Name… verkauft aber besser als jede Produktseite.
 
-Und erst dann skalierst du mit VSL Ads auf Meta und Google.
+Und erst dann skalierst du mit VSL Ads.
 
 Heißt, ob Hoodies oder Supplements… du kannst mehr für einen Kunden zahlen als deine Konkurrenz.
 

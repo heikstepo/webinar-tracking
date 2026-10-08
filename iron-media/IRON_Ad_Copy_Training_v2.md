@@ -124,6 +124,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 - 7.2: Case-Salve
 - Noch frei: **"Woher ich das weiß?"**, die Marken-Liste (More Nutrition, ESN…), "Ich weiß, das klingt großkotzig… ist aber die Realität".
 
+**Seb's Funnel-Seiten (aus YT, nicht nur Advertorial und Listicle):** "Jede Awareness Stufe braucht die richtige Page." Kalt: Longform Page oder Advertorial, die aufklärt. Für mehr Scale ein Listicle davor. Mitte: Vergleichsseite, auch fürs Retargeting. Warm: Shortform Offer Page, die Einwände killt. Am Ende eine Checkout Page mit Upsells und Downsells, dazu Quiz Funnels und Presell Pages. Name in Ads: lieber **"Ugly Funnels"** (Heik, 8.2).
+
 **Mechanismus-Formulierungen (nicht wörtlich wiederholen):**
 - 2.2: "Vorne VSL Ads statt nur ein paar UGCs… dahinter ein fettes Listicle oder Advertorial… Cold Traffic Offer, das schon vorne über 100 € AOV holt… Upsells und Downsells…"
 - 2.3: "VSL Ads, die auch kalten Leuten in 3 bis 5 Minuten erklären… Listicle oder Advertorial statt der Produktseite… sieht hässlich aus, konvertiert aber wie Sau… Cold Traffic Offer mit über 100 € AOV schon bei der ersten Bestellung"
