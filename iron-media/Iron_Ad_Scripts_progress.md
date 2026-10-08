@@ -211,38 +211,42 @@ Also… wenn du auch von 7 auf 8 stellig willst…
 Klick auf die Ad und check ab, wie wir dich dahin bringen würden.
 ```
 
-## Creative 8.3: Individuell oder Kurs? (Entwurf)
+## Creative 8.3: Individuell oder Kurs? (Entwurf v2, Heiks Richtung)
 
 ```
-Videokurs gekauft… Gruppencoaching gemacht… und deine Ecom Brand hängt trotzdem noch bei 200k im Monat?
+Ich hab ein echt dickes Problem mit der ganzen Ecom Szene…
 
-Das sehe ich bei fast jeder Brand zwischen 100 und 500k im Monat…
+Agenturen, Done for you Media Buyer, Gruppencoachings und so weiter.
 
-Erst ein Kurs… dann ein Mentoring… dann ein Gruppencoaching, wo du mit 20 anderen Brands im Call sitzt und dich jemand fragt, ob du schon mal dein Creative iteriert hast.
+Weißt du warum?
 
-Und klar… für die Basics sind die Dinger gar nicht schlecht.
+Weil das alles den meisten Brands, die von 7 auf 8 stellig wollen, nicht wirklich hilft.
 
-Aber ab einem gewissen Punkt fehlt dir kein Wissen mehr.
+Die Brands, die ich kenne, brauchen keinen weiteren Kurs, keine Gruppencalls und auch nicht noch 100 neue Creatives…
 
-Dir fehlt jemand, der sich DEINE Zahlen anschaut und dir sagt, was bei deiner Brand jetzt der nächste Schritt ist.
+Denen fehlt einfach jemand, der sich DEREN Zahlen anschaut und sagt, was bei der Brand jetzt der nächste Schritt ist.
 
-Und das kann dir halt kein Video sagen.
+Nimm mal 3 Brands, alle bei 300k im Monat…
 
-Deswegen startet bei uns alles mit einer Analyse von deinem Account und deinen Zahlen…
+Bei der einen landet der ganze Traffic auf der Produktseite… bei der zweiten holt das Offer nur 35 € pro Bestellung… und bei der dritten sind die Winner ausgebrannt.
 
-Daraus bekommst du eine Roadmap mit klaren Zielen nach 1, 3, 6 und 12 Monaten.
+Ein Kurs erzählt allen dreien dasselbe.
 
-Und einen festen Customer Success Manager, der 1 zu 1 mit dir arbeitet… einmal die Woche im Call, dazwischen im Slack.
+Und eine Agentur dreht bei allen dreien einfach an den Ads.
 
-Du baust dein Advertorial, schickst es rein… und kriegst ein Loom zurück, nicht nur mit „passt“ oder „passt nicht“, sondern warum.
+Dabei braucht jede was komplett anderes.
 
-Heißt, du lernst nicht noch mehr Theorie… sondern setzt genau das um, was bei deiner Brand gerade Umsatz bringt.
+Deswegen schauen wir uns bei jeder Brand erst mal alles an… Account, Funnel, Offer, Zahlen… und gleichen das mit über 500 anderen Brands ab.
 
-Und der Grund, warum das so gut funktioniert, ist einfach… ich hab in meiner Firma Iron richtig gute Leute, und genau die sitzen bei dir im Projekt.
+Daraus bekommst du eine Roadmap, was bei DIR als Erstes dran ist.
 
-So ist [CASE: Brand] nach X Kursen mit uns von X auf X im Monat gegangen.
+Und dann sitzt jede Woche jemand aus meinem Team mit dir drüber, der deine Zahlen kennt und weiß, was als Nächstes kommt.
 
-Also… falls du deine Brand auf 1 Mio im Monat bringen willst… mit jemandem, der sich wirklich deine Zahlen anschaut…
+Heißt, du machst nicht, was bei irgendeiner Brand im Kurs funktioniert hat… sondern was bei deiner gerade den nächsten Sprung bringt.
 
-Klick auf die Ad und ich zeig dir, wie das bei uns 1 zu 1 abläuft.
+So haben wir in meiner Firma Iron allein dieses Jahr über 30 Brands auf 8 stellig gebracht… jede mit einem anderen ersten Schritt.
+
+Also… falls du von 7 auf 8 stellig willst und keinen Bock mehr auf Lösungen von der Stange hast…
+
+Klick auf die Ad und schau dir an, wie das bei deiner Brand aussehen würde.
 ```
