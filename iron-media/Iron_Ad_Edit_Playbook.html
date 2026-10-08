@@ -1,0 +1,419 @@
+<title>Iron Ad Edit Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: eine Lesespalte wie ein Skript-Doc; Vorher/Nachher als zweispaltige Zeilen, die auf dem Handy stapeln */
+:root {
+  --bg: #f2f4f6;
+  --surface: #ffffff;
+  --ink: #15191e;
+  --muted: #5a6571;
+  --line: #d9dee4;
+  --accent: #2b5a87;
+  --accent-soft: #e3ecf5;
+  --cut: #a8372f;
+  --cut-soft: #f7e3e1;
+  --add: #1d6f47;
+  --add-soft: #dff1e7;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-script: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1317; --surface: #171c22; --ink: #e5e9ed; --muted: #9ba7b3; --line: #2a323b;
+    --accent: #86b4e2; --accent-soft: #1d2a38; --cut: #e58a82; --cut-soft: #3a2220; --add: #6cc796; --add-soft: #1b3326;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1317; --surface: #171c22; --ink: #e5e9ed; --muted: #9ba7b3; --line: #2a323b;
+  --accent: #86b4e2; --accent-soft: #1d2a38; --cut: #e58a82; --cut-soft: #3a2220; --add: #6cc796; --add-soft: #1b3326;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 56px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 6vw, 52px); line-height: 1.02; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 26px; line-height: 1.15; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--font-display); font-weight: 700; font-size: 18px; margin: 0; }
+p { margin: 0; max-width: 66ch; }
+.lede { font-size: 19px; color: var(--muted); }
+section { display: grid; gap: 20px; }
+.stats { display: flex; flex-wrap: wrap; gap: 28px; padding-top: 6px; }
+.stat { display: grid; gap: 2px; }
+.stat b { font-family: var(--font-display); font-weight: 800; font-size: 30px; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 13px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.verdict { color: var(--add); }
+
+/* Runden */
+.rounds { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.round { display: grid; grid-template-columns: 64px 1fr; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--line); }
+.round .n { font-family: var(--font-display); font-weight: 800; font-size: 15px; color: var(--accent); padding-top: 2px; font-variant-numeric: tabular-nums; }
+.round .body { display: grid; gap: 8px; min-width: 0; }
+.quote { font-family: var(--font-script); font-size: 14px; background: var(--accent-soft); padding: 10px 12px; border-radius: 4px; overflow-wrap: anywhere; }
+.lesson { font-weight: 600; }
+.lesson::before { content: "Lektion: "; color: var(--accent); }
+
+/* Vorher / Nachher */
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; color: var(--muted); }
+.legend del, .legend ins { font-family: var(--font-script); font-size: 13px; }
+.diff { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.cell { background: var(--surface); padding: 12px 14px; font-family: var(--font-script); font-size: 14px; line-height: 1.6; min-width: 0; overflow-wrap: anywhere; }
+.cell.gone { color: var(--muted); font-style: italic; font-family: var(--font-body); }
+.why { grid-column: 1 / -1; background: var(--surface); padding: 8px 14px 12px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.tag { font-family: var(--font-display); font-weight: 700; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+.row.same .cell { color: var(--muted); }
+del { color: var(--cut); background: var(--cut-soft); text-decoration: line-through; text-decoration-thickness: 1.5px; }
+ins { color: var(--add); background: var(--add-soft); text-decoration: none; }
+.colhead { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding-inline: 14px; }
+
+/* Regeln */
+ol.rules { margin: 0; padding: 0; list-style: none; counter-reset: r; display: grid; gap: 0; border-top: 1px solid var(--line); }
+ol.rules li { counter-increment: r; display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+ol.rules li::before { content: counter(r); font-family: var(--font-display); font-weight: 800; font-size: 20px; color: var(--accent); font-variant-numeric: tabular-nums; }
+ol.rules li > div { display: grid; gap: 4px; min-width: 0; }
+ol.rules .ex { font-family: var(--font-script); font-size: 13.5px; color: var(--muted); overflow-wrap: anywhere; }
+.top1 { background: var(--accent-soft); border-radius: 6px; padding-inline: 12px; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.box ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.box.keep h3 { color: var(--add); }
+.box.cut h3 { color: var(--cut); }
+.box code { font-family: var(--font-script); font-size: 13.5px; }
+
+ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 70ch; }
+ol.steps li::marker { font-family: var(--font-display); font-weight: 700; color: var(--accent); }
+
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+.done { color: var(--add); font-weight: 600; }
+
+.script { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.script-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.script-bar span { font-size: 14px; color: var(--muted); }
+button { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: .04em; color: var(--surface); background: var(--accent); border: 0; border-radius: 4px; padding: 8px 14px; cursor: pointer; }
+button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+pre#final { margin: 0; padding: 18px 16px; font-family: var(--font-script); font-size: 14px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+@media (max-width: 640px) {
+  .row, .colhead { grid-template-columns: 1fr; }
+  .colhead span:last-child { display: none; }
+  .cell.after::before { content: "Nachher"; display: block; font-family: var(--font-display); font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .cell.before::before { content: "Vorher"; display: block; font-family: var(--font-display); font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .split { grid-template-columns: 1fr; }
+  .round { grid-template-columns: 1fr; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Iron Media · Edit-Durchgang · Stand nach Creative 1.2</div>
+  <h1>Iron Ad Edit Playbook</h1>
+  <p class="lede">Wie Heik seine Ads gekürzt haben will, gelernt an Creative 1.2. Erst der Verlauf mit seinen Einwänden, dann Vorher und Nachher Zeile für Zeile, dann die Regeln und der Ablauf für alle weiteren Ads.</p>
+  <div class="stats">
+    <div class="stat"><b>270 → 259</b><span>Wörter in 1.2</span></div>
+    <div class="stat"><b>5</b><span>Runden</span></div>
+    <div class="stat"><b class="verdict">„BEAUTIFUL“</b><span>Heiks Urteil</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>Der Verlauf von 1.2</h2>
+  <p>Jede Runde: was ich geliefert habe, was Heik gesagt hat, was daraus folgt.</p>
+  <div class="rounds">
+    <div class="round"><div class="n">R1</div><div class="body">
+      <p>Erste Kürzung auf 212 Wörter. Hook: „…ist die Produktseite.“ Gestrichen: „Das Problem ist…“, „Klar kann das reichen…“, „Und so weiter.“ Neu: eine Heißt-Zeile zur Marge.</p>
+      <div class="quote">„naja das klingt als wäre die produktseite das problem… das problem ist dass sie einfach leute nur auf die seite schicken… klingt so als würden sie diese produkt seite überarbeiten müssen“</div>
+      <p class="lesson">Beim Kürzen nie die Bedeutung verschieben. Das Problem ist „alles nur auf die Produktseite schicken“, nicht die Produktseite selbst.</p>
+    </div></div>
+    <div class="round"><div class="n">R2</div><div class="body">
+      <p>Hook auf „sie schicken ihren kompletten Traffic einfach nur auf die Produktseite“ korrigiert, 226 Wörter. Der Rest blieb so knapp wie in R1.</p>
+      <div class="quote">„und verlier nicht den flow bro NUMBER 1 PRIORITY… Klar, kann das blabla, solche sachen, fluff words, es muss richtig geil klingen ausgesprochen“</div>
+      <p class="lesson">Flow ist Priorität 1. Gesprochene Verbindungsstücke tragen den Rhythmus und bleiben drin.</p>
+    </div></div>
+    <div class="round"><div class="n">R3</div><div class="body">
+      <p>Neu vom Original aus. Nur echte Wiederholungen raus, die Verbindungsstücke zurück, die neue Heißt-Zeile wieder gestrichen. 256 Wörter.</p>
+      <div class="quote">„statt hängen bleiben benutz glasdecke erreichen oder wie auch immer seb das in den videos sagt check nochmal“</div>
+      <p class="lesson">Kernbegriffe in Seb's Worten. In den YT-Transkripten nachsehen (YT 07: „wie man eine gläserne Decke durchbricht, wenn man auf einem Umsatzplateau festhängt“).</p>
+    </div></div>
+    <div class="round"><div class="n">R4</div><div class="body">
+      <p>Hook: „…an eine gläserne Decke stoßen…“. 259 Wörter.</p>
+      <div class="quote">„siehst du wie die beiden lines connected sind in selbem satz oder idee? bei sowas muss es dann … sein“</div>
+      <p class="lesson">Führt die nächste Zeile denselben Gedanken weiter, endet die Zeile mit „…“. Ein Punkt steht nur, wenn ein neuer Gedanke anfängt.</p>
+    </div></div>
+    <div class="round"><div class="n">R5</div><div class="body">
+      <p>„…“ an 4 Stellen gesetzt. Auf „gimme whole ad“ die ganze Ad geliefert.</p>
+      <div class="quote">„BEAUTIFUL“</div>
+      <p class="lesson">Am Ende immer die komplette Ad in einem Code-Block, nicht nur die geänderten Zeilen.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Vorher und Nachher, Zeile für Zeile</h2>
+  <div class="legend"><span><del>gestrichen</del></span><span><ins>neu</ins></span><span>grau = unverändert</span></div>
+  <div class="colhead"><span>Vorher (Doc, 270 Wörter)</span><span>Nachher (final, 259 Wörter)</span></div>
+  <div class="diff">
+
+    <div class="row">
+      <div class="cell before">Der mit Abstand häufigste Grund, warum Ecom Brands <del>zwischen 100 und 500k</del> im Monat <del>hängen bleiben</del>…</div>
+      <div class="cell after">Der mit Abstand häufigste Grund, warum Ecom Brands <ins>bei 100 bis 500k</ins> im Monat <ins>an eine gläserne Decke stoßen</ins>…</div>
+      <div class="why"><span class="tag">Seb-Wort</span>„Gläserne Decke“ sagt Seb selbst. „Hängen bleiben“ war zu schwach.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before"><del>Und nicht skalieren können, ohne dass die Marge komplett einbricht…</del></div>
+      <div class="cell after gone">gestrichen</div>
+      <div class="why"><span class="tag">Hook kürzen</span>Der Hook hatte 3 Zeilen Anlauf. Die Marge kommt einmal im CTA vor, das reicht.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Ist <del>einfach</del>, dass sie ihren kompletten Traffic auf die Produktseite schicken.</div>
+      <div class="cell after">Ist, dass sie ihren kompletten Traffic <ins>einfach nur</ins> auf die Produktseite schicken.</div>
+      <div class="why"><span class="tag">Bedeutung</span>„Einfach nur“ betont, dass das Problem das „nur dahin“ ist, nicht die Seite selbst.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Das Problem ist… <del>auf der Produktseite</del> kaufen halt nur die Leute, die eh schon wissen, dass sie <del>das</del> Produkt wollen<del>.</del></div>
+      <div class="cell after">Das Problem ist… <ins>da</ins> kaufen halt nur die Leute, die eh schon wissen, dass sie <ins>dein</ins> Produkt wollen<ins>…</ins></div>
+      <div class="why"><span class="tag">Doppelt</span><span class="tag">„…“-Regel</span>„Produktseite“ stand 2 Zeilen hintereinander. Die nächste Zeile setzt den Gedanken fort, also „…“.</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Und von denen gibt's halt nur eine begrenzte Anzahl.</div>
+      <div class="cell after">Und von denen gibt's halt nur eine begrenzte Anzahl.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Klar kann das reichen, um auf deine ersten 100, 200, 500k <del>Umsatz</del> im Monat zu kommen…</div>
+      <div class="cell after">Klar kann das reichen, um auf deine ersten 100, 200, 500k im Monat zu kommen…</div>
+      <div class="why"><span class="tag">Bleibt</span>In R1 gestrichen, auf Heiks Einwand zurück. Das ist genau die Art Zeile, die den Flow trägt.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Aber sobald mehr Budget reinkommt, muss Meta <del>die</del> Ads auch Leuten zeigen, die <del>das Produkt</del> noch gar nicht kennen<del>.</del></div>
+      <div class="cell after">Aber sobald mehr Budget reinkommt, muss Meta <ins>deine</ins> Ads auch Leuten zeigen, die <ins>dich</ins> noch gar nicht kennen<ins>…</ins></div>
+      <div class="why"><span class="tag">Du-Ansprache</span><span class="tag">„…“-Regel</span>Direkter. Die nächste Zeile erzählt weiter, was diese Leute dann tun.</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Und die landen dann auf einer Seite mit Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.</div>
+      <div class="cell after">Und die landen dann auf einer Seite mit Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Wir sehen <del>dieses Problem</del> fast jeden Tag in meiner Firma Iron<del>,</del> die by the way allein dieses <del>jahr</del> schon 30 Marken auf 8 stellig skaliert hat<del>…</del></div>
+      <div class="cell after">Wir sehen <ins>das</ins> fast jeden Tag in meiner Firma Iron<ins>…</ins> die by the way allein dieses <ins>Jahr</ins> schon 30 Marken auf 8 stellig skaliert hat<ins>.</ins></div>
+      <div class="why"><span class="tag">Sprechpause</span>„…“ vor „by the way“ ist die Pause beim Sprechen. Danach beginnt mit der Lösung ein neuer Gedanke, also Punkt.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Und die Lösung <del>dazu</del> ist <del>eigentlich ziemlich simpel</del>… <del>Du brauchst nur einige</del> Ugly Funnels.</div>
+      <div class="cell after">Und die Lösung <ins>dafür</ins> ist <ins>gar nicht so kompliziert</ins>… <ins>du brauchst einfach</ins> Ugly Funnels<ins>…</ins></div>
+      <div class="why"><span class="tag">Floskel</span>„Eigentlich ziemlich simpel“ steht auch in 2.2, 4.1 und 4.2. Die Floskel wird pro Ad variiert.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before"><del>Für jede Bewusstseinsstufe des Marktes gibt es einen abgestimmten Direct Response Funnel mit einem cold traffic offer.</del></div>
+      <div class="cell after"><ins>Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite… mit einem Cold Traffic Offer…</ins></div>
+      <div class="why"><span class="tag">Doppelt</span><span class="tag">Callback</span>Nicht 2 Namen für dieselbe Sache (Ugly Funnel und Direct Response Funnel). Die Lösung nimmt die Wörter des Problems auf.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Kalte Leute, die <del>das</del> Produkt noch nicht kennen, bekommen <del>ein langes Listicle, das</del> ihnen erklärt, warum sie <del>dein Produkt</del> überhaupt brauchen…</div>
+      <div class="cell after">Kalte Leute, die <ins>dein</ins> Produkt noch nicht kennen, bekommen <ins>eine lange Seite, die</ins> ihnen erklärt, warum sie <ins>es</ins> überhaupt brauchen…</div>
+      <div class="why"><span class="tag">Seb-korrekt</span>Laut Seb bekommen Kalte eine Longform Page. Das Listicle kommt nur zum Skalieren davor. Dazu „Produkt“ nicht zweimal im Satz.</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Warme Leute eine kurze, die nur noch die letzten Einwände ausräumt…</div>
+      <div class="cell after">Warme Leute eine kurze, die nur noch die letzten Einwände ausräumt…</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Und so weiter.</div>
+      <div class="cell after">Und so weiter.</div>
+      <div class="why"><span class="tag">Bleibt</span>In R1 gestrichen, kam zurück. Klingt gesprochen locker und deutet an, dass es mehr Stufen gibt.</div>
+    </div>
+
+    <div class="row">
+      <div class="cell before">Genau darüber haben wir <del>eine Brand</del> von X im Monat auf über X Millionen im Monat gebracht.</div>
+      <div class="cell after">Genau darüber haben wir <ins>[CASE: Brand]</ins> von X im Monat auf über X Millionen im Monat gebracht.</div>
+      <div class="why"><span class="tag">Platzhalter</span>Der Case wird einheitlich markiert, damit er beim Füllen auffällt.</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig willst, ohne dass dir die Marge wegbricht…</div>
+      <div class="cell after">Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig willst, ohne dass dir die Marge wegbricht…</div>
+    </div>
+
+    <div class="row same">
+      <div class="cell before">Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.</div>
+      <div class="cell after">Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>So will Heik seine Ads</h2>
+  <p>Die Regeln in der Reihenfolge, in der sie wichtig sind. Regel 1 schlägt alle anderen.</p>
+  <ol class="rules">
+    <li class="top1"><div><h3>Flow ist Priorität Nummer 1</h3><p>Jede Ad wird laut gelesen. Sie muss klingen, wie Seb redet. Lieber 259 Wörter mit Flow als 212 abgehackte. Kürzer ist ein Ergebnis, kein Ziel.</p></div></li>
+    <li><div><h3>Gesprochene Verbindungsstücke bleiben</h3><p>Sie tragen den Rhythmus. Wer sie streicht, macht aus der Ad einen Text zum Lesen.</p><span class="ex">Das Problem ist… · Klar kann das reichen… · by the way · halt · einfach · Und so weiter.</span></div></li>
+    <li><div><h3>Gestrichen wird nur echte Wiederholung</h3><p>Dasselbe Wort kurz hintereinander, dieselbe Sache unter 2 Namen, Hook-Zeilen, die nur Anlauf nehmen, ein doppelter Payoff und Floskeln, die in mehreren Ads stehen.</p><span class="ex">„Produktseite“ 2× in 2 Zeilen · Ugly Funnel + Direct Response Funnel · „eigentlich ziemlich simpel“</span></div></li>
+    <li><div><h3>Die Bedeutung bleibt exakt</h3><p>Vor dem Kürzen den Kernsatz der Ad in einem Satz aufschreiben. Jede Kürzung wird daran geprüft.</p><span class="ex">Kernsatz 1.2: Sie schicken allen Traffic nur auf die Produktseite, da kaufen nur die, die eh wollen.</span></div></li>
+    <li><div><h3>Kernbegriffe in Seb's Worten</h3><p>Im Zweifel in den YT-Transkripten nachsehen, wie Seb es sagt.</p><span class="ex">gläserne Decke · Umsatzplateau · Ugly Funnels · Bewusstseinsstufe · Cold Traffic Offer · Sparringpartner</span></div></li>
+    <li><div><h3>„…“ oder Punkt</h3><p>Führt die nächste Zeile denselben Satz oder Gedanken weiter, endet die Zeile mit „…“. Fängt danach ein neuer Gedanke an, steht ein Punkt.</p><span class="ex">…dass sie dein Produkt wollen… / Und von denen gibt's halt nur eine begrenzte Anzahl.</span></div></li>
+    <li><div><h3>Hook: höchstens 2 Zeilen</h3><p>Zeile 1 baut Spannung und endet mit „…“. Zeile 2 liefert die Pointe.</p></div></li>
+    <li><div><h3>Die Lösung nimmt die Wörter des Problems auf</h3><p>Der Callback macht die Ad rund, ohne etwas Neues zu erklären.</p><span class="ex">„Statt alles auf die Produktseite zu schicken…“</span></div></li>
+    <li><div><h3>Nichts dazubauen, was die Ad nicht braucht</h3><p>Im Edit wird nicht umgeschrieben. Die Heißt-Zeile in 1.2 war neu und ist wieder rausgeflogen.</p></div></li>
+    <li><div><h3>Format wie im Doc</h3><p>Zeile, Leerzeile, Zeile. Zahlen als Ziffern, keine Bindestriche in Fachwörtern, „Ecom Brand“, „8 stellig“, Platzhalter als [CASE: …].</p></div></li>
+    <li><div><h3>Lieferung</h3><p>Die ganze Ad in einem Code-Block, dazu kurz, was raus ist, was neu ist und warum. Keine Romane.</p></div></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Was bleibt, was fliegt</h2>
+  <div class="split">
+    <div class="box keep"><h3>Bleibt drin</h3><ul>
+      <li><code>Das Problem ist…</code> als Überleitung</li>
+      <li><code>Klar kann das reichen…</code> als Zugeständnis</li>
+      <li><code>by the way</code>, <code>halt</code>, <code>einfach</code>: Seb's Sprechton</li>
+      <li><code>Und so weiter.</code> als lockerer Abschluss einer Aufzählung</li>
+      <li>Szenen-Zeilen wie <code>Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.</code></li>
+      <li>Der CTA, wenn er schon den Hook spiegelt</li>
+    </ul></div>
+    <div class="box cut"><h3>Fliegt raus</h3><ul>
+      <li>Hook-Zeilen, die nur Anlauf nehmen</li>
+      <li>Dasselbe Wort 2× in 2 Zeilen</li>
+      <li>Ein zweiter Name für dieselbe Sache</li>
+      <li>Floskeln, die schon in anderen Ads stehen</li>
+      <li>Ein zweiter Payoff, der den ersten wiederholt</li>
+      <li>„Umsatz“, „des Marktes“ und Ähnliches, was beim Sprechen nichts trägt</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Der Ablauf pro Ad</h2>
+  <ol class="steps">
+    <li>Original laut lesen. Den Kernsatz der Ad in einem Satz aufschreiben.</li>
+    <li>Gedanken-Blöcke markieren: welche Zeilen gehören zu einem Gedanken.</li>
+    <li>Den Hook auf 2 Zeilen bringen, ohne die Spannung zu verlieren.</li>
+    <li>Wiederholungen innerhalb der Ad suchen: gleiches Wort, gleiche Sache doppelt, doppelter Payoff.</li>
+    <li>Floskeln über alle Ads hinweg prüfen (Liste unten) und variieren.</li>
+    <li>Kernbegriffe gegen Seb's Wortwahl prüfen.</li>
+    <li>Die „…“-Regel Zeile für Zeile durchgehen.</li>
+    <li>Nochmal laut lesen: Fehlt irgendwo ein Verbindungsstück? Wenn ja, wieder rein.</li>
+    <li>Wörter zählen, die ganze Ad liefern, darunter die kurze Liste der Änderungen.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Floskeln über alle Ads</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Floskel</th><th>Steht in</th><th>Umgang</th></tr></thead>
+    <tbody>
+      <tr><td>„eigentlich ziemlich simpel“</td><td>2.2 · 4.1 · 4.2 (1.2 erledigt)</td><td>Pro Ad anders formulieren oder streichen</td></tr>
+      <tr><td>„allein dieses Jahr (über) 30 Brands/Marken“</td><td>1.2 · 3.3 · 4.1 · 4.2 · 5.1 · 5.3 · 7.2 · 8.1 · 8.3</td><td>Bleibt als Proof, aber jedes Mal anders gebaut (mitten im Satz, als Frage, als Nebensatz)</td></tr>
+      <tr><td>„Genau so … in meiner Firma Iron [CASE]“</td><td>2.3 · 4.3</td><td>Eine der beiden umbauen</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Die nächsten Ads</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Ad</th><th>Wörter</th><th>Erste Kandidaten</th></tr></thead>
+    <tbody>
+      <tr><td>1.2</td><td class="num">270 → 259</td><td class="done">fertig</td></tr>
+      <tr><td>1.3</td><td class="num">281</td><td>„kein klares System“ und „es gibt ein klares System“ doppelt, dazu doppelter Payoff</td></tr>
+      <tr><td>2.2</td><td class="num">278</td><td>„eigentlich ziemlich simpel“, „Das funktioniert ja so schon schwer…“, 3 Cases (vielleicht reichen 2)</td></tr>
+      <tr><td>2.3</td><td class="num">305</td><td>„Das holt halt die paar Leute ab…“, Stakes und Payoff sagen fast dasselbe</td></tr>
+      <tr><td>3.2</td><td class="num">343</td><td>2 CTA-Blöcke, Partnership und Native Details</td></tr>
+      <tr><td>3.3</td><td class="num">312</td><td>5 Stufen sehr ausführlich, „Jede Stufe bekommt…“ wiederholt den Anfang</td></tr>
+      <tr><td>4.1</td><td class="num">237</td><td>Floskel „ziemlich simpel“, sonst Feinschliff</td></tr>
+      <tr><td>4.2</td><td class="num">299</td><td>2 Authority-Zeilen hintereinander, Floskel „ziemlich simpel“</td></tr>
+      <tr><td>4.3</td><td class="num">266</td><td>„Genau so … Iron“ wie in 2.3, sonst fast fertig</td></tr>
+      <tr><td>5.1</td><td class="num">276</td><td>„Ich meine, lass uns mal Folgendes anschauen…“ prüfen (laut lesen, bevor es fliegt)</td></tr>
+      <tr><td>5.3</td><td class="num">386</td><td>die längste: Marge doppelt, 2× „Heißt“, mehrere Anlauf-Zeilen</td></tr>
+      <tr><td>7.2</td><td class="num">234</td><td>Case-Liste, kaum Luft</td></tr>
+      <tr><td>8.1</td><td class="num">290</td><td>Proof-Teil und Heißt enger fassen</td></tr>
+      <tr><td>8.2</td><td class="num">277</td><td>wenig Doppeltes</td></tr>
+      <tr><td>8.3</td><td class="num">260</td><td>„…“-Regel, 30 und 500 Brands in 2 Zeilen</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Finale 1.2</h2>
+  <div class="script">
+    <div class="script-bar"><span>Creative 1.2: Nur Produktseite / kein Treffen der Bewusstseinsstufen · 259 Wörter</span><button type="button" id="copy">Kopieren</button></div>
+<pre id="final">Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat an eine gläserne Decke stoßen…
+
+Ist, dass sie ihren kompletten Traffic einfach nur auf die Produktseite schicken.
+
+Das Problem ist… da kaufen halt nur die Leute, die eh schon wissen, dass sie dein Produkt wollen…
+
+Und von denen gibt's halt nur eine begrenzte Anzahl.
+
+Klar kann das reichen, um auf deine ersten 100, 200, 500k im Monat zu kommen…
+
+Aber sobald mehr Budget reinkommt, muss Meta deine Ads auch Leuten zeigen, die dich noch gar nicht kennen…
+
+Und die landen dann auf einer Seite mit Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.
+
+Wir sehen das fast jeden Tag in meiner Firma Iron… die by the way allein dieses Jahr schon 30 Marken auf 8 stellig skaliert hat.
+
+Und die Lösung dafür ist gar nicht so kompliziert… du brauchst einfach Ugly Funnels…
+
+Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite… mit einem Cold Traffic Offer…
+
+Kalte Leute, die dein Produkt noch nicht kennen, bekommen eine lange Seite, die ihnen erklärt, warum sie es überhaupt brauchen…
+
+Warme Leute eine kurze, die nur noch die letzten Einwände ausräumt…
+
+Und so weiter.
+
+Genau darüber haben wir [CASE: Brand] von X im Monat auf über X Millionen im Monat gebracht.
+
+Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig willst, ohne dass dir die Marge wegbricht…
+
+Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.</pre>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById("copy");
+  var pre = document.getElementById("final");
+  btn.addEventListener("click", function () {
+    var text = pre.textContent;
+    function selectFallback() {
+      var r = document.createRange(); r.selectNodeContents(pre);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = "Markiert, jetzt kopieren";
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = "Kopiert";
+        setTimeout(function () { btn.textContent = "Kopieren"; }, 1600);
+      }, selectFallback);
+    } catch (e) { selectFallback(); }
+  });
+})();
+</script>
