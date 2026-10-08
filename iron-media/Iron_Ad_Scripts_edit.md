@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 283 Wörter, vorher 283, Fix = Angles + Ugly Funnel)
+## Creative 1.3 (edit, 240 Wörter, vorher 283, Fix nach Seb: Winner auseinandernehmen, iterieren, 3–4 Angles mit eigenem Ugly Funnel)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -49,21 +49,17 @@ Da ist halt kein klares System dahinter… Und der Fix dazu ist eigentlich recht
 
 Es wäre quasi genau das, was wir mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gemacht haben…
 
-Wir kopieren nicht die alte Ad… sondern schauen erst mal, WARUM die funktioniert hat.
+Wir kopieren den Winner nicht einfach… wir nehmen ihn erst mal auseinander.
 
-Und meistens ist das nicht der Hook… sondern der Angle dahinter, also das eine Thema, das die Leute zum Kaufen gebracht hat.
+War's die Hook? Das Argument? Der Proof? Das Offer?… erst wenn du das weißt, kannst du den nächsten bauen.
 
-Darauf bauen wir dann neue Ads mit neuen Angles… für Leute, die deine alte Ad nie angesprochen hat.
+Und dann wird der Winner Schritt für Schritt weitergebaut… neue Hooks, neue Bilder, ein anderer Mechanismus.
 
-Und jeder Test zeigt dir, was der nächste Winner sein muss… statt random neue Hooks zu testen.
+Und statt an 2, 3 Ads zu hängen, laufen am Ende 3, 4 Angles parallel… jeder mit seinem eigenen Ugly Funnel dahinter, wie z.B. Listicles, Advertorials und so weiter.
 
-Damit so ein Winner dann auch 100, 200.000 € Adspend aushält, landet der nicht auf der Produktseite… sondern in einem Ugly Funnel.
+Heißt, wenn mal eine Ad ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
 
-Also VSL Ad vorne, Advertorial dahinter und ein Offer, das über 100 € AOV holt.
-
-Heißt, du hängst nicht mehr an 2, 3 Winnern, die zufällig funktioniert haben… sondern weißt jedes Mal, wie du den nächsten baust.
-
-Bei einer Brand haben wir so aus demselben Produkt, demselben Offer und derselben Seite die 3 bis 5 fache Performance rausgeholt… nur durch neue Angles.
+Bei einer Brand haben wir so aus demselben Produkt und demselben Offer die 3 bis 5 fache Performance rausgeholt… nur durch neue Angles.
 
 Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten von 7 auf 8 stellig willst…
 
