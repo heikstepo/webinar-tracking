@@ -129,7 +129,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit für Umsetzung (Entwurf v2, Heiks Hook)
+## Creative 8.1: Keine Zeit / zu wenig Leute zum Skalieren (Entwurf v3)
 
 ```
 Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
@@ -138,31 +138,33 @@ Ja ich weiß… wahrscheinlich steckst du jetzt schon viel Zeit rein und hast ni
 
 Aber genau das ist die gute Nachricht… du brauchst nicht mehr Zeit, du musst sie nur woanders reinstecken.
 
-Weil die meisten Founder ihre Zeit halt in die falschen Sachen stecken…
+Weil die meisten Founder ihre Zeit in Sachen stecken, die die Nadel nicht bewegen… stundenlang Ads in CapCut schneiden…
 
-Neue Landing Pages bauen… stundenlang Ads in CapCut schneiden… Lager, Logistik…
+Und wenn's nicht reicht, wollen sie erst mal 10 neue Leute einstellen.
 
-Und trotzdem tut sich beim Umsatz nicht wirklich was… weil du ohne klaren Plan halt nur rumprobierst.
+Noch ein Cutter, noch ein Media Buyer, noch eine Agentur für Google…
 
-Bei uns bekommst du eine Roadmap, die dir sagt, was bei deiner Brand als Nächstes dran ist… und was du erst mal liegen lassen kannst.
+Und am Ende liest du nur noch Reports.
 
-Und du baust auch nichts mehr von null.
+Dabei gibt's genug Brands, die mit unter 10 Leuten 8 stellig machen.
 
-Ist dein nächster Schritt z.B. ein Listicle, machst du mit AI erst mal eine Grundversion… mein Team gibt dir Feedback… und du arbeitest nur noch nach.
+Da steckt der Founder seine Zeit genau in das eine Ding, das die Brand gerade bremst.
 
-Du brauchst dafür auch keine 10 Leute… sondern den richtigen Prozess, 1, 2 gute Leute und AI.
+Und bei 100 bis 500k im Monat ist das fast nie das nächste Creative… sondern das, was nach dem Klick passiert.
 
-Und wenn dir für Schnitt oder Media Buying jemand fehlt, kriegst du den aus unserem Pool.
+Solange deine Ads auf der Produktseite landen, hält keine lange durch… und du sitzt schon wieder in CapCut.
 
-Heißt, du arbeitest nicht mehr als jetzt… aber jede Stunde geht in etwas, das wirklich Umsatz bringt.
+Mit einem Ugly Funnel dahinter hält eine Ad 100 bis 200k Adspend aus… und du fängst nicht jede Woche neu an.
 
-Woher ich das weiß? Weil wir in meiner Firma Iron genau so [CASE: Brand] mit X Leuten im Team von X auf X im Monat gebracht haben.
+Heißt, du skalierst nicht über mehr Leute und mehr Stunden… sondern darüber, dass jede Stunde mehr bringt.
+
+Woher ich das weiß? In meiner Firma Iron haben wir Brands auf 8 stellig gebracht… mit dem Founder, einem Google Mitarbeiter und 2, 3 Creative Freelancern.
 
 Also… falls du in den nächsten 3 Monaten auf 8 stellig willst…
 
-Ohne noch mehr Abende in CapCut zu verbringen…
+Ohne erst mal 10 neue Leute einzustellen…
 
-Klick auf die Ad und schau dir an, wie das bei uns mit deinem Team aussehen würde.
+Klick auf die Ad und schau dir an, wie das mit deinem jetzigen Team geht.
 ```
 
 ## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v3)

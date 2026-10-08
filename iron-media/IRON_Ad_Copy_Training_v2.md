@@ -73,6 +73,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 | 7 Case Studies | Proof | 7.1 gefilmt · 7.2 fertig (Straight Flex) · 7.3 offen |
 | 8 Objection Handling | Einwände | 8.1 · 8.2 · 8.3 **Entwurf** (Keine Zeit · Klappt's bei uns? · Individuell oder Kurs?), Logik aus den Pre Call FAQ Videos |
 
+**AG8 Objection Handling (Heik, 8.1):** Die Ads behandeln Einwände gegen das **Skalieren an sich** ("ich hab nicht genug Zeit, um auf 8 stellig zu gehen", "dafür muss ich viele neue Leute einstellen"), **nicht** Einwände gegen Iron als Produkt. Also keine Roadmap/CSM/Feedback-Abläufe als Antwort, sondern Seb's Reframe zum Glauben (YT 07: Founder im "Managing Modus", Zeit in Sachen, "die die Nadel nicht bewegen", lean Teams; YT 10: 8 stellig mit Founder + 1 Google Mitarbeiter + 2–3 Creative Freelancern; YT 02: "lean Killer Teams von unter 10 Leuten, die achtstellig sind"). Iron und der Mechanismus kommen erst als Lösung bzw. Proof.
+
 **Reihenfolge der offenen Creatives:** AG8 Feedback → 6.3 → 7.3 → 8.1 → 8.2 → 8.3. 1.3 vorher klären.
 
 ### Schon benutzt, also nicht wiederholen
