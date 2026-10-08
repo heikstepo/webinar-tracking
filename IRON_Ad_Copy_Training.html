@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IRON Ad-Copy Training</title>
+<style>
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --surface-2:#efede8; --ink:#1b1a17; --ink-2:#55524b; --ink-3:#86827a;
+  --line:#e2dfd8; --accent:#c2410c; --accent-soft:#fbe9dd; --good:#15803d; --good-soft:#e3f3e8; --bad:#b91c1c; --bad-soft:#fbe4e4;
+  --code-bg:#f1efe9; --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141311; --surface:#1d1c19; --surface-2:#26241f; --ink:#f1efe9; --ink-2:#bdb8ad; --ink-3:#8c877d;
+    --line:#34312b; --accent:#fb923c; --accent-soft:#3a2516; --good:#4ade80; --good-soft:#15291c; --bad:#f87171; --bad-soft:#331a1a; --code-bg:#23211d;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141311; --surface:#1d1c19; --surface-2:#26241f; --ink:#f1efe9; --ink-2:#bdb8ad; --ink-3:#8c877d;
+  --line:#34312b; --accent:#fb923c; --accent-soft:#3a2516; --good:#4ade80; --good-soft:#15291c; --bad:#f87171; --bad-soft:#331a1a; --code-bg:#23211d;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6}
+.wrap{max-width:920px;margin:0 auto;padding:40px 16px 96px}
+header.top{margin-bottom:28px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:8px 0 10px;letter-spacing:-.02em}
+.lede{color:var(--ink-2);font-size:17px;max-width:68ch;margin:0}
+.meta{color:var(--ink-3);font-size:13px;margin-top:10px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+nav.toc a{font-size:13px;text-decoration:none;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+nav.toc a:hover{color:var(--ink);border-color:var(--ink-3)}
+section{margin-top:56px}
+h2{font-size:24px;letter-spacing:-.01em;margin:0 0 6px}
+h2 .num{color:var(--accent);font-variant-numeric:tabular-nums;margin-right:8px}
+.sub{color:var(--ink-2);margin:0 0 20px;max-width:70ch}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:0 0 12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:14px}
+.callout{background:var(--accent-soft);border:1px solid transparent;border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+.callout strong{color:var(--accent)}
+.pattern{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.pattern .n{width:36px;height:36px;border-radius:10px;background:var(--surface-2);display:grid;place-items:center;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.pair>div{border-radius:10px;padding:12px 14px;font-size:15px}
+.do{background:var(--good-soft)}
+.dont{background:var(--bad-soft)}
+.lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.do .lbl{color:var(--good)} .dont .lbl{color:var(--bad)}
+.quote{border-left:3px solid var(--accent);padding:2px 0 2px 12px;margin:10px 0;color:var(--ink-2);font-size:15px}
+.quote b{color:var(--ink)}
+.src{font-size:12px;color:var(--ink-3)}
+pre.ex{background:var(--code-bg);border-radius:10px;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font-family:var(--font);font-size:14.5px;line-height:1.55;margin:8px 0}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;background:var(--surface-2);color:var(--ink-2);margin-right:6px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+ol.steps li{counter-increment:s;position:relative;padding:12px 0 12px 44px;border-top:1px solid var(--line)}
+ol.steps li:first-child{border-top:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:14px}
+ul.tight{margin:0;padding-left:20px} ul.tight li{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+details>summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+details>summary::-webkit-details-marker{display:none}
+details>summary .id{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+details>summary .t{font-weight:600}
+details>summary .s{color:var(--ink-3);font-size:13px;margin-left:auto}
+details[open]>summary{border-bottom:1px solid var(--line)}
+.db{padding:16px 20px}
+.rounds{margin:0;padding:0;list-style:none}
+.rounds li{display:grid;grid-template-columns:1fr;gap:4px;padding:10px 0;border-top:1px dashed var(--line);font-size:15px}
+.rounds li:first-child{border-top:0}
+.rounds .h{color:var(--ink)}
+.rounds .m{color:var(--ink-2)}
+.lesson{margin-top:12px;background:var(--surface-2);border-radius:10px;padding:12px 14px;font-size:15px}
+.lesson b{color:var(--accent)}
+.check{list-style:none;padding:0;margin:0}
+.check li{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.check li:first-child{border-top:0}
+.check li::before{content:"";width:16px;height:16px;border:2px solid var(--ink-3);border-radius:5px;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:10px 10px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);border-top:0}
+.tablewrap{overflow-x:auto}
+footer{margin-top:64px;color:var(--ink-3);font-size:13px}
+@media (max-width:640px){
+  .pair{grid-template-columns:1fr}
+  .pattern{grid-template-columns:1fr}
+  .pattern .n{width:32px;height:32px}
+  details>summary .s{margin-left:0;width:100%}
+  .wrap{padding-top:28px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Internes Trainingsdokument · IRON Meta Ads</div>
+  <h1>Wie Heik Ads will und was ich stattdessen immer wieder mache</h1>
+  <p class="lede">Alles aus den Feedback-Runden zu den Ad Groups 1 bis 8: Ad Group-Struktur, 1.2, 1.3, 2.2, 3.1–3.3, 4.1–4.3, 5.3, 7.2 und die Angle-Runden. Vor jeder neuen Ad lesen. Die Muster oben sind die Fehler, die ich am häufigsten wiederhole.</p>
+  <p class="meta">Stand 08.10.2026 · Quelle: alle Nachrichten von Heik in dieser Session · Zitate leicht von Tippfehlern bereinigt, Wortlaut sonst original</p>
+  <nav class="toc">
+    <a href="#muster">Die 12 Muster</a>
+    <a href="#bauplan">Bauplan einer Ad</a>
+    <a href="#hook">Hook</a>
+    <a href="#flow">Flow</a>
+    <a href="#voice">Sprache &amp; Voice</a>
+    <a href="#wahrheit">Wahrheit &amp; Quellen</a>
+    <a href="#angle">Angle</a>
+    <a href="#proof">Proof</a>
+    <a href="#cta">Pitch &amp; CTA</a>
+    <a href="#laenge">Länge &amp; Kürzen</a>
+    <a href="#format">Format</a>
+    <a href="#feedback">Umgang mit Feedback</a>
+    <a href="#ads">Ad für Ad</a>
+    <a href="#check">Checkliste</a>
+  </nav>
+</header>
+
+<div class="callout"><strong>Kurz gesagt:</strong> Eine Ad hat einen Angle und erzählt ihn in einem durchgehenden Gedankengang: Situation, Reframe, Lösung, Proof, CTA. Jede Zeile nimmt die vorige auf. Jede Behauptung steht so bei Seb, in den Calls oder in Heiks Training. Iron kommt erst beim Proof, der Pitch ist kurz, den Rest macht die VSL. Ziel sind 250 bis 270 Wörter, laut gelesen ohne Stolpern.</div>
+
+<!-- ============ MUSTER ============ -->
+<section id="muster">
+  <h2><span class="num">01</span>Die 12 Muster, die ich immer wieder mache</h2>
+  <p class="sub">Jedes Muster mit dem, was Heik eigentlich will, und einem echten Beleg aus der Session.</p>
+
+  <div class="card pattern"><div class="n">1</div><div>
+    <h3>Ich packe zu viele Ideen in eine Ad und führe jede komplett aus</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Founder-Story, Research, Winner zerlegen, Funnel, AOV, „nicht jede Ad muss ein Winner sein“ und IM8, alles in einer Ad. Am Ende stehen 22 Zeilen, die sich wie 3 Ads lesen.</div>
+      <div class="do"><span class="lbl">Heik will</span>Eine Idee, sauber durcherzählt. Was nicht direkt zum Angle gehört, fliegt raus, auch wenn es stimmt.</div>
+    </div>
+    <div class="quote"><b>„ich brauch legit die hälfte, das ist zu lang, weil du zu viele Ideen mit reingebracht und komplett ausgeführt hast“</b> <span class="src">· 1.3</span></div>
+    <div class="quote"><b>„misch nicht viele verschiedene Angles in ein Creative“</b> <span class="src">· 1.2</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">2</div><div>
+    <h3>Ich leite Logik selbst ab und schreibe sie, als hätte Seb sie gesagt</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>„Der Winner hat genau einen Nerv bei genau einer Gruppe getroffen… irgendwann hat die Ad jeder aus dieser Gruppe gesehen.“ Das war meine Ableitung aus Heiks Training und stand so nirgends bei Iron.</div>
+      <div class="do"><span class="lbl">Heik will</span>Nur Sebs Erklärungen, Sebs Zahlen und die Worte der Leads. Was ich selbst ableite, sage ich dazu, bevor er fragen muss.</div>
+    </div>
+    <div class="quote"><b>„woher hast du das?“</b> <span class="src">· 1.3</span> &nbsp; <b>„KEINE outside Info, NUR Sebastians eigene Worte benutzen“</b> <span class="src">· FAQ-Skripte</span> &nbsp; <b>„nichts erfinden, was du nicht weißt“</b></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">3</div><div>
+    <h3>Ich pitche Iron zu früh</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Direkt nach dem Problem kommt: „In meiner Firma Iron… kopieren wir Winner nicht… wir nehmen die erst mal auseinander.“</div>
+      <div class="do"><span class="lbl">Heik will</span>Nach Problem und Situation kommt erst der Reframe (was eigentlich stimmt), dann die Lösung, dann der Proof mit Iron, dann der CTA.</div>
+    </div>
+    <div class="quote"><b>„ich mag das nicht, du pitchst zu früh. Wir haben Problem und Situation perfekt erklärt. Jetzt reframe die zu eigentlichem Thought und Fix, zeig Proof, dann CTA“</b> <span class="src">· 1.3</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">4</div><div>
+    <h3>Ich setze harte Schnitte zwischen Zeilen</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span><pre class="ex">…warum der Winner damals überhaupt funktioniert hat.
+
+So, hier ist das Ding… ein Winner ist eigentlich gar kein Zufall.</pre></div>
+      <div class="do"><span class="lbl">Heik will</span>Jede Zeile hängt an der vorigen. Die neue Zeile greift ein Wort oder einen Gedanken von davor auf, zum Beispiel „Dabei…“, „Heißt…“ oder „Und genau deswegen…“.</div>
+    </div>
+    <div class="quote"><b>„merkst du, wie kein Flow zwischen diesen Lines ist? Das ist wie ein Hard Cut, als hättest du beim Lesen den Stift abgesetzt und neu angefangen, NICHT GUT“</b> <span class="src">· 1.3</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">5</div><div>
+    <h3>Ich schreibe KI-Sätze: Sinnsprüche, „nicht X, sondern Y“, Pathos</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>„Ganz ehrlich… das Volumen war nie das Problem. Mehr Creatives skalieren halt nur das, was eh schon da ist.“ Oder: „…sind nicht durch ein System da hingekommen… sondern durch 2, 3 Ads…“</div>
+      <div class="do"><span class="lbl">Heik will</span>Konkrete Szenen und Sebs Reaktion: „Und ich so… ey, du kannst auch 1.000 Ads launchen.“ Klare Ursache-Wirkung ohne große Worte.</div>
+    </div>
+    <div class="quote"><b>„das hier klingt super AI“</b> <span class="src">· 4.2</span> &nbsp; <b>„mach die Hook mehr interessant und less AI salesy“</b> <span class="src">· 1.3</span> &nbsp; <b>„erklär das mal viel klarer und less emotional bullshit“</b> <span class="src">· 1.3</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">6</div><div>
+    <h3>Ich kopiere Hooks und Formulierungen wörtlich statt der Prinzipien</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Nach Heiks fertiger 1.2 baue ich die nächsten Hooks wieder mit „Der mit Abstand häufigste Grund…“.</div>
+      <div class="do"><span class="lbl">Heik will</span>Ich soll den Denkprozess übernehmen: ICP, Symptom und überraschende Ursache in einem Atemzug. Jede Ad bekommt einen neuen Hook-Typ.</div>
+    </div>
+    <div class="quote"><b>„wir können nicht immer dieselbe Hook haben. Als ich meinte ‚analysier‘, meinte ich die unterliegenden Prozesse und Gedanken, nicht Wort für Wort“</b> <span class="src">· AG2</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">7</div><div>
+    <h3>Ich nehme Feedback zu wörtlich und überkorrigiere</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Aus „in der Szene werden Geheimnisse verkauft“ (Kontext) mache ich das Hauptthema der Ad Groups. Aus „halb so lang“ werden 192 Wörter. Aus „Shiny Objects“ wird ein Mini-Skript.</div>
+      <div class="do"><span class="lbl">Heik will</span>Ich soll die Absicht hinter dem Feedback verstehen. „Kürzer“ heißt, Ideen streichen, nicht unter die Ziellänge fallen. Kontext bleibt Kontext.</div>
+    </div>
+    <div class="quote"><b>„du hast mein Ding mit den Geheimnissen zu literal genommen und es zum Main Player gemacht“</b> · <b>„jetzt hast du es übertrieben“</b> <span class="src">· Ad Groups</span> &nbsp; <b>„du hast es zu literal genommen“</b> <span class="src">· 5.3</span> &nbsp; <b>„das ist jetzt viel zu wenig“</b> <span class="src">· 1.3</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">8</div><div>
+    <h3>Ich mache Annahmen über den Zuschauer</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>„…dann machst du höchstwahrscheinlich X.“ Oder (TY-Video): „Ich weiß, du wirst uns jetzt googeln, ChatGPT fragen…“</div>
+      <div class="do"><span class="lbl">Heik will</span>Beobachtend in der 3. Person: „Bei vielen Ecom Brands, die so zwischen 100 und 300k festhängen…“. Ein konkreter Situations-Call-out im CTA ist okay („wenn dein Umsatz schon mal höher war…“).</div>
+    </div>
+    <div class="quote"><b>„keine assumptive Sachen. Wir können nicht einfach sagen, ja dann machst du wahrscheinlich das“</b> <span class="src">· 1.2</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">9</div><div>
+    <h3>Ich schreibe Hooks, die für den ICP gar nicht stimmen</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>„…haben noch nie was von Bewusstseinsstufen gehört.“ Oder: „…haben einfach nur Glück gehabt.“ Beides polarisiert, ist aber nicht die Realität der Leads.</div>
+      <div class="do"><span class="lbl">Heik will</span>Polarisieren mit etwas, das stimmt und das die Leads selbst so erleben. Erst in den Calls prüfen: Sagen die das so?</div>
+    </div>
+    <div class="quote"><b>„die haben's aber gehört“</b> <span class="src">· 3.3</span> &nbsp; <b>„sagen die Prospects was von Glück, diese ersten Winner gefunden zu haben, oder nein?“</b> <span class="src">· 1.3</span> &nbsp; <b>„ist das wirklich, was die denken? Ich glaube nicht“</b> <span class="src">· AG4</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">10</div><div>
+    <h3>Ich schreibe Fachbegriffe als Labels, statt zu erklären wie Seb</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>„Creative Strategy heißt… Direct Response Funnel heißt…“, also Definitionen und Klassifizierungen.</div>
+      <div class="do"><span class="lbl">Heik will</span>So erzählen, wie Seb Ads und Funnels baut: „Wir gucken uns erst mal im Research an… was wollen diese Leute eigentlich, was haben die schon alles probiert…“, „5 Minuten Video Ad, 10 Minuten Advertorial, 5 Minuten Einwandbehandlung, Checkout…“</div>
+    </div>
+    <div class="quote"><b>„eben NICHT klassifizieren, vorne Creative Strategy whatever. Sprich an, wie du Ads machst und Funnels“</b> · <b>„nein Mann, wie Seb es macht, bro, du hast sooooo viel Kontext, benutz es“</b> <span class="src">· 5.3</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">11</div><div>
+    <h3>Mein Pitch ist eine Leistungsliste, und CTAs und Authority-Zeilen wiederholen sich</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Roadmap, CSM, Slack, Backend, „wir sind nicht günstig“, alles in der Ad. Jede Ad endet mit „Klick auf die Ad und schau dir an, wie wir…“ und hat dieselbe „30 Brands“-Zeile.</div>
+      <div class="do"><span class="lbl">Heik will</span>Die Zusammenarbeit direkt, aber kurz pitchen und auf die Ad klicken lassen, denn die VSL erklärt den Rest. CTA und Authority-Zeile sind in jeder Ad anders.</div>
+    </div>
+    <div class="quote"><b>„nah bro, ich hab immer noch die VSL, die das ganze macht, wir sollen einfach pitchen und dann Click für mehr Info“</b> <span class="src">· 7.2</span> &nbsp; <b>„nicht jede CTA kann gleich sein“</b> <span class="src">· 4.2</span> &nbsp; <b>„dein Close ist bei jedem Video gleich“</b> <span class="src">· FAQ</span></div>
+  </div></div>
+
+  <div class="card pattern"><div class="n">12</div><div>
+    <h3>Mein Angle verfehlt den Job der Ad Group oder widerspricht dem Iron-Modell</h3>
+    <div class="pair">
+      <div class="dont"><span class="lbl">Ich mache</span>Ein Q4-Angle über Ware und Cash statt Mechanismus. Ein Team-Angle, obwohl Iron DWY mit kleinem Inhouse-Team macht. „Expansion ist falsch“, obwohl Iron pro Internationalisierung ist (NoMisk).</div>
+      <div class="do"><span class="lbl">Heik will</span>Jeder Angle bringt den ICP einen Schritt weiter in der Purchase Journey und führt zum Mechanismus und zur VSL. Er passt zu dem, was Iron verkauft.</div>
+    </div>
+    <div class="quote"><b>„du verstehst schon, was das Ziel eines Angles ist, oder?“</b> <span class="src">· AG2</span> &nbsp; <b>„ich find das super backwards, macht keinen Sinn für uns oder nicht?“</b> <span class="src">· 4.3 Team</span> &nbsp; <b>„dieses Angle hat nicht wirklich viel Clarity“</b> <span class="src">· AG4</span></div>
+  </div></div>
+</section>
+
+<!-- ============ BAUPLAN ============ -->
+<section id="bauplan">
+  <h2><span class="num">02</span>Bauplan einer Ad</h2>
+  <p class="sub">Aus Heiks Meta-Ads-Training (SRPA, Purchase Journey) und den fertigen Ads 1.2, 2.2, 4.1, 4.2, 5.3 und 7.2. Der Ablauf ist fest, die Formulierungen sind jedes Mal neu.</p>
+  <div class="card">
+    <ol class="steps">
+      <li><b>Hook (1–2 Zeilen).</b> Springt direkt rein und nennt den ICP („Ecom Brands zwischen 100 und 500k im Monat“) und das Problem oder den Glauben. Polarisierend, aber wahr. Keine Annahme über den Zuschauer, kein langer Anlauf.</li>
+      <li><b>Situation.</b> Die Lage, wie die Leads sie selbst erzählen, in der Reihenfolge, wie sie passiert. Beispiel 1.3: Winner tragen alles, Winner brennen aus, Umsatz geht runter, Kopieren auf Krampf, jede Version schlechter, kein System.</li>
+      <li><b>Zugeständnis</b> (optional, aber stark): „Klar kann das reichen, um auf deine ersten 100, 200k zu kommen… Aber sobald…“</li>
+      <li><b>Reframe.</b> Was sie denken und was eigentlich stimmt. Er schließt nahtlos an die letzte Situationszeile an.</li>
+      <li><b>Lösung / Mechanismus.</b> Klein machen („eigentlich ziemlich simpel…“), dann konkret in Sebs Worten: VSL Ad mit 3 bis 5 Minuten statt kurzer UGCs, Direct Response Funnel statt Produktseite, Offer über 100 € AOV, Upsells und Downsells. Das klare Warum dazu: „Heißt, du verdienst an jedem Kunden so viel, dass…“</li>
+      <li><b>Proof.</b> Authority („Woher ich das weiß?“, über 500 Marken, über 30 Brands auf 8-stellig, IM8, More Nutrition, ESN, Statista) und/oder ein Case. Fehlt die Freigabe, steht ein Platzhalter: <code>[CASE: Brand] von X auf X</code>.</li>
+      <li><b>CTA.</b> Ein Qualifier, der den Hook spiegelt („Also… wenn du gerade…“), plus ein direkter Klick auf die Ad mit dem Hinweis, dass dort gezeigt wird, wie die Zusammenarbeit aussieht oder wie Iron hilft. Kurz, keine Leistungsliste, in jeder Ad anders.</li>
+    </ol>
+  </div>
+  <div class="callout"><strong>Iron-Regel:</strong> Iron steht frühestens im Proof oder als beiläufiger Nebensatz zur Authority („…in meiner Firma Iron, die by the way…“). Ausnahme: Heik setzt Iron selbst früher (1.3: „Schau mal, ich hab mit meiner Firma Iron Media mit Brands wie IM8… gearbeitet… und es gibt ein klares System, wie…“), dann dient es als Glaubwürdigkeit vor der Lösung.</div>
+</section>
+
+<!-- ============ HOOK ============ -->
+<section id="hook">
+  <h2><span class="num">03</span>Hook</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Direkt rein.</b> „Hook ist wayyy too unspezifisch und langweilig und lang gezogen. Jump right in.“ (3.3)</li>
+      <li><b>Polarisierend, im Seb-Style.</b> „mach andere Hook komplett, polarisierender, mehr Seb Style“ (4.1), „bro, polarisierende Hook bitte“ (1.3)</li>
+      <li><b>Mit dem Glauben der Brands starten, aber hooky.</b> „nein, start rein direkt mit dem Belief, was die Brands haben, aber hooky ausgedrückt“ führte zu: „‚Wir brauchen einfach besseres Media Buying‘ … Den Satz hören wir von fast jeder Ecom Brand… und er stimmt fast nie…“ (4.1)</li>
+      <li><b>ICP-Zahl früh.</b> „fang an direkt in Hook mit 100–300k im Monat festhängen“ (1.2). Bei 2.2 darf sie auch im Body stehen.</li>
+      <li><b>Wahr für den ICP</b>, siehe Muster 9. Auch ein polarisierender Hook muss stimmen.</li>
+      <li><b>Die Situation in ihren Worten trifft mehr als eine Behauptung.</b> Heiks 1.3-Start („Meistens sind es so 2, 3 winning ads… Aber irgendwann brennen diese Winner dann halt aus… Der Umsatz geht runter…“) erzählt die Lage chronologisch, so wie Leads sie erleben: „ich glaub, das spricht die Leute mehr an“.</li>
+      <li><b>Nie zweimal derselbe Hook-Typ.</b> Belegt sind schon: „Der mit Abstand häufigste Grund…“ (1.2), „Q4 macht die einen… reich… und die anderen broke…“ (2.2), „Real talk… Jeder in der Ecom Szene labert…“ (3.3), Zitat-Hook (4.1), „Hör auf, neue Ads zu launchen… Nein, jetzt mal ohne Spaß…“ (4.2), „Jeder in der Ecom Szene will dir… verkaufen“ (5.3), Selbst-Flex (7.2), „Meistens sind es so 2, 3 winning ads…“ (1.3).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FLOW ============ -->
+<section id="flow">
+  <h2><span class="num">04</span>Flow</h2>
+  <p class="sub">Heik optimiert jede Ad fürs laute Vorlesen. Flow hat die höchste Priorität: Jede Zeile soll in die nächste ziehen.</p>
+  <div class="card">
+    <ul class="tight">
+      <li>Jede Zeile greift die vorige auf, mit Brückenwörtern: „Dabei…“, „Heißt…“, „Und genau deswegen…“, „Das Problem ist…“, „Das funktioniert ja so schon schwer… aber jetzt…“.</li>
+      <li>Keine neuen Gedanken ohne Übergang. „Merkst du, wie deins gar keinen Flow hat? Die Lines sind disconnected“ (TY-Video, Vergleich mit Daniel Iles).</li>
+      <li>Füllwörter bleiben, wenn sie den Flow tragen: halt, einfach, eigentlich, ehrlich gesagt, „So…“, „…“. Flow-Zeilen bleiben, auch wenn sie länger sind. Raus fliegen nur echte Wiederholungen.</li>
+      <li>Steigerung statt Wiederholung, zum Beispiel „Das funktioniert ja so schon schwer… Aber jetzt im Q4…“ (Heiks Fix in 2.2).</li>
+      <li>Selbstcheck: Die Ad im Kopf laut lesen. Wo ich stocke oder ein Satz „forced“ klingt, schreibe ich ihn um. „das hört sich forced an, wenn du mal laut vorliest“ (4.2)</li>
+      <li>Keine Wiederholungen derselben Aussage. „hier ist einiges repetitive“ (FAQ 10x)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ VOICE ============ -->
+<section id="voice">
+  <h2><span class="num">05</span>Sprache &amp; Voice</h2>
+  <div class="card">
+    <h3>Was Seb klingen lässt wie Seb</h3>
+    <ul class="tight">
+      <li>Conversational, kurze Zeilen, „…“. „So, hier ist das Ding…“, „höchstwahrscheinlich“, „halt“, „ehrlich gesagt“, „Das kann alles stimmen, aber…“, „Ich weiß, das klingt großkotzig… ist aber die Realität“, „Woher ich das weiß?“, „Meine Firma Iron macht genau das den ganzen Tag“, „by the way“, „ballern“, „raushauen“, „konvertiert wie Sau“, „scheiß egal“, Selbstironie (Bizeps).</li>
+      <li>Konkrete Szenen statt Thesen: „Und ich so… ey, du kannst auch 1.000 Ads launchen.“ „Und die landen dann auf einer Seite mit Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.“ „Und wenn die Ad über Schlafprobleme redet, dann redet die Seite auch über Schlafprobleme…“</li>
+      <li>Sebs eigene Mechanismus-Wörter: VSL Ad, Ugly Funnels, Direct Response Funnels, Listicle, Advertorial, Cold Traffic Offer, über 100 € AOV, Upsells und Downsells (+20–30 €), Backend, 3–5 Ads die Woche, Ads, die 100, 200.000 € Adspend aushalten, Bewusstseinsstufen.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Was nicht nach Seb klingt (alles schon passiert)</h3>
+    <div class="tablewrap"><table>
+      <tr><th>Meine Zeile</th><th>Heiks Reaktion</th><th>Besser</th></tr>
+      <tr><td>„Ganz ehrlich… das Volumen war nie das Problem.“</td><td>„klingt super AI“ (4.2)</td><td>Szene: „Und ich so… ey, du kannst auch 1.000 Ads launchen.“</td></tr>
+      <tr><td>„Und die Seite erzählt genau da weiter, wo die Ad aufgehört hat…“</td><td>„das ist nicht Seb Style“ (4.2)</td><td>„Und wenn die Ad über Schlafprobleme redet, dann redet die Seite auch über Schlafprobleme…“</td></tr>
+      <tr><td>„eklige Video Ad“</td><td>„eklige Video Ad?“ (4.1)</td><td>„VSL Ad“, ohne Kontext keine Insider-Wörter</td></tr>
+      <tr><td>„Ich mach mit meiner Firma Iron seit Jahren nichts anderes, über 500 Marken…“</td><td>„das klingt dumm“ → „keep it, aber sound better“ (5.3)</td><td>„Und das sag ich dir nicht einfach so… ich mach mit meiner Firma Iron seit Jahren nichts anderes.“</td></tr>
+      <tr><td>Kunden-Zitat: „Das Volumen ist nicht das Problem.“</td><td>„hört sich forced an“ (4.2)</td><td>Szene aus Sebs Perspektive erzählen</td></tr>
+      <tr><td>„…und kannst wieder skalieren“, „komplett anderen Avatar“</td><td>„less emotional bullshit“ (1.3)</td><td>Nüchterne Ursache und Wirkung: „Heißt, du verdienst an jedem Kunden so viel, dass die Ad auch mit mehr Budget profitabel bleibt.“</td></tr>
+    </table></div>
+  </div>
+  <div class="card">
+    <h3>Schreibregeln (aus FAQ- und Ad-Runden)</h3>
+    <ul class="tight">
+      <li>Zahlen immer als Ziffern: „6“, „12“, „mittel 4 und 5 im Monat“. „IMMER ZAHLEN“</li>
+      <li>Fachbegriffe ohne Bindestriche: „Media Buying Struktur“, „Direct Response Funnel“, „8 stellig“. Statt „Skalierung über den Tag“ schreibe ich „Intraday“.</li>
+      <li>Iron nie wie eine Agentur framen: „das klingt so, als wären wir auch eine Agentur, was wir nicht sind“.</li>
+      <li>Kein Cringe und keine Insider-Lingo. „man, sei nicht cringe“, „benutz keine cringe Lingo“.</li>
+      <li>Keine heiße Luft. „das ist heiße Luft, erklär kurz, wie es funktioniert“, „außer Phase 3 war der Schluss hier nur heiße Luft“.</li>
+      <li>Keine Fluff-Starts mit gespielter Relatability, außer wo es Sinn macht.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ WAHRHEIT ============ -->
+<section id="wahrheit">
+  <h2><span class="num">06</span>Wahrheit &amp; Quellen</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Jede inhaltliche Zeile hat eine Quelle:</b> Seb (gefilmte Ads, VSL, YouTube, Pre-Call-FAQ), die Leads in den Calls, CSM-Weeklies, Edis/Niklas oder Heiks Training. Bei „woher hast du das?“ antworte ich mit einer Tabelle (Zeile → Quelle → belegt oder von mir abgeleitet).</li>
+      <li><b>Abgeleitetes markiere ich selbst</b>, bevor Heik fragt. Beispiel 1.3: Die „Nerv bei einer Gruppe“-Logik kam aus Heiks Training (Ads gehen erst an warmen Traffic). Seb sagt dagegen: Ads brennen nicht aus, wenn der Funnel dahinter im Frontend profitabel ist und einen hohen AOV hat, dann halten sie 100, 200.000 € Adspend aus.</li>
+      <li><b>Worte der Leads statt meiner Paraphrase.</b> „Was sagen unsere Leads selbst…“, „was sind so deren genaue Worte?“, „wie drücken die das in eigenen Worten aus?“ Beispiele: Tom („kein System, wo ich konstant Winner finden kann“, „alles schlechter als das Vorige“), Isabella („repliziert und nachgeschossen“, „volles Canva-Board“).</li>
+      <li><b>Platzhalter statt erfinden:</b> <code>[CASE: Brand] von X auf X</code>, „(x Erfahrung)“, „(CSM-Namen)“. „woher hast du die Namen?“, „hab hier lieber Placeholder“.</li>
+      <li><b>Zahlen genau so, wie Seb sie sagt:</b> „100, 200.000 € Adspend“, nicht „200k“. Unbestätigte Zahlen markieren, zum Beispiel „30 dieses Jahr auf 8-stellig“, alte Cases oder Edis' Unterwäsche-Story.</li>
+      <li><b>Zum Iron-Modell passend:</b> DWY und DFY gibt es beide („es kommt drauf an“, beides gut framen), ein kleines Inhouse-Team ist Teil des Modells, Expansion und Internationalisierung sind positiv.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ANGLE ============ -->
+<section id="angle">
+  <h2><span class="num">07</span>Angle</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Was ein Angle ist:</b> eine Botschaft, die zum Job der Ad Group passt und den ICP einen Schritt weiter Richtung Mechanismus und VSL bringt. Alle 3 Creatives einer Ad Group haben denselben Job und unterschiedliche Angles.</li>
+      <li><b>Ein Angle pro Creative.</b> Mitten in der Ad keinen neuen aufmachen: „hier hast du irgendwie versucht, neue Angles reinzubringen, was keine gute Idee ist, mach es smoother“ (3.3).</li>
+      <li><b>Der Angle muss Clarity haben</b> und das treffen, was der ICP wirklich denkt. Gegencheck in den Calls (Niklas: was Leute denken vs. was eigentlich ihr Problem ist).</li>
+      <li><b>„Gegen Competitors“ heißt</b> gegen Common Advice und Glaubenssätze der Szene, nicht gegen konkrete Firmen.</li>
+      <li><b>Reframe (AG4) heißt</b> den aktuellen Glauben, warum sie nicht skalieren oder was sie skalieren soll, gegen das zu stellen, was in Realität stimmt.</li>
+      <li><b>Wenn zwei Ideen auftauchen,</b> eine davon zum Fundament machen und die andere darunter einordnen: „nimm erst Fundament, dann Congruency als Teil des Fundaments“ (4.2).</li>
+      <li><b>Ad Groups einfach halten</b> und an der Standard-Journey orientieren: Problem, Opportunity, Mechanism, Reframe, gegen die Szene, Straight Offer, Cases, Einwände.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section id="proof">
+  <h2><span class="num">08</span>Proof</h2>
+  <div class="card">
+    <ul class="tight">
+      <li>Jede Ad hat Proof, auch eine Problem-Ad. „siehst du, wie wir immer noch in jeder Ad Proof zeigen und auch starke CTAs haben“</li>
+      <li>Mehr Proof im Seb-Style, wenn's dünn ist: „baller mal hier mehr Proof Seb Style“ (4.2), „mach hier etwas mehr Proof“ (3.3). Zum Beispiel über 500 Marken, über 30 auf 8-stellig, IM8 von Tag 1, Financial Times/Statista.</li>
+      <li>Bei Flex-Ads (7.2) die großen Cases nehmen: IM8, Kinobody, NoMisk, Valkental, Rubby, Parfum, dazu Statista.</li>
+      <li>Belegte Marken: IM8 von David Beckham, More Nutrition, ESN, Kinobody, The Oodie, Corbo, Ljubav.</li>
+      <li>Die Authority-Zeile ist in jeder Ad anders formuliert und hat jedes Mal einen anderen Schwerpunkt (500 Marken, 30 auf 8-stellig, IM8, Brands-Liste, Statista).</li>
+      <li>Proof kommt nach der Lösung und nicht als Pitch vor dem Reframe.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="cta">
+  <h2><span class="num">09</span>Pitch &amp; CTA</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Straight und direkt:</b> „mach hier straight CTA“. Er sagt klar, worum es geht (Zusammenarbeit oder „wie wir dir helfen“). „das ist zu indirekt, sag lieber direkt über Zusammenarbeit oder helfen oder was auch immer, klar und deutlich“ (7.2)</li>
+      <li><b>Kurz pitchen, Klick für mehr Info.</b> Die VSL erklärt Ablauf und Preis, also keine Leistungsliste in der Ad.</li>
+      <li><b>Qualifier spiegelt den Hook:</b> „Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig willst, ohne dass dir die Marge wegbricht…“</li>
+      <li><b>Kein Satz ohne Bezug.</b> „Und genau das machen wir jetzt auch mit deiner Brand“ ergibt nach einer Case-Liste keinen Sinn. Besser: „Also… Falls du auch von 7 auf 8 stellig willst mit deiner Ecom Brand…“</li>
+      <li><b>Jede Ad bekommt einen anderen CTA.</b> Bisher verwendet:
+        <pre class="ex">1.2  Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
+2.2  Dann klick auf die Ad und check ab, wie wir bei Iron dir dabei helfen können.
+3.3  Klick auf die Ad und check ab, wie wir das bei deiner Brand aufsetzen würden.
+4.1  Also… bevor du den nächsten Media Buyer einstellst… Klick auf die Ad und schau dir an, wie wir deine Creative Strategy und deinen Funnel aufbauen würden…
+4.2  Also… wenn du von 7 auf 8 stellig willst, ohne jede Woche 300 neue Ads rauszuhauen… Klick auf die Ad und check ab, wie wir das bei Iron mit dir umsetzen würden.
+5.3  Klick auf die Ad und check das Video ab, was ich gedreht habe, was genau erklärt, wie wir dir helfen könnten.
+7.2  Klick einfach auf die Ad und ich zeig dir genau, wie wir dir dabei helfen und wie eine Zusammenarbeit mit uns aussieht.
+1.3  Klick auf die Ad und schau dir an, wie wir dir so ein System aufbauen können.</pre></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LÄNGE ============ -->
+<section id="laenge">
+  <h2><span class="num">10</span>Länge &amp; Kürzen</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Ziel: 250 bis 270 Wörter</b> (Selfie-Ad), das sind etwa 18 bis 28 Zeilen. Ich zähle mit <code>wc -w</code> nach, bevor ich liefere.</li>
+      <li><b>Zu lang entsteht</b>, wenn ich zu viele Ideen ausführe. Dann streiche ich ganze Ideen. „Wenn ich ‚kürzer‘ sag, meine ich nicht, jedes Wort zu cutten. Ganze Passagen usw., um es einfach komplett kürzer zu haben, aber immer noch massivst nicen Flow in Sebs Stimme.“ (1.2)</li>
+      <li><b>Zu kurz ist genauso falsch:</b> „viel zu kurz bro, wtf are you doing“ (5.3), „das sind 192 Wörter, ich will 250–270“ (1.3).</li>
+      <li><b>Beim Kürzen bleiben</b> Flow und Mechanismus erhalten: „wie können wir das jetzt kürzer machen, ohne Flow und Mechanism zu verlieren“ (2.2).</li>
+      <li><b>Wenn Heik eine Zeile einfügt</b> (zum Beispiel „Dann musst du auch nicht 100 Ads pro Woche launchen…“), gleiche ich die Länge an anderer Stelle aus, ohne seine Zeilen anzufassen.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FORMAT ============ -->
+<section id="format">
+  <h2><span class="num">11</span>Format &amp; Lieferung</h2>
+  <div class="card">
+    <ul class="tight">
+      <li>Die ganze Ad in einem einzigen Code-Block zum Kopieren. „mach volle Code-Blöcke, warum ist das so abgehackt“</li>
+      <li>Abstand: Zeile, Leerzeile, Zeile. Genau eine Leerzeile, nicht zwei.</li>
+      <li>Keine Regie- oder Whiteboard-Kommentare, außer Heik will sie. „lösch erstmal die Kommentare zum Whiteboard aufnehmen“. Wenn welche gebraucht werden, dann einfach: „mach die Anweisungen nicht so kompliziert“.</li>
+      <li>Whiteboard-Ads: schon etwas auf dem Board haben und langsam aufdecken. Visuals brauchen eine spezifische Idee, die genau zu dieser Ad passt (zum Beispiel IM8 und „outperformed“).</li>
+      <li>Die Antwort nach dem Code-Block kurz halten: was geändert wurde, woher es kommt und was offen ist. Kein Roman.</li>
+      <li>Heiks eigene Zeilen übernehme ich wörtlich und schreibe sie nicht um.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FEEDBACK ============ -->
+<section id="feedback">
+  <h2><span class="num">12</span>Umgang mit Feedback</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><b>Objektiv bleiben:</b> „kein People-Pleasing. Nicht immer Ja sagen, aber auch nicht immer ohne Grund Nein sagen, wenn nichts verändert werden muss.“ „wir müssen nicht zwingend immer was ändern“</li>
+      <li><b>Nur ändern, worum es geht.</b> Wenn Heik eine Zeile kritisiert, fixe ich diese Zeile oder Passage und baue nicht die ganze Ad um. Danach liefere ich die ganze Ad, damit er kopieren kann.</li>
+      <li><b>Absicht statt Wortlaut:</b> „kürzer“ heißt weniger Ideen, „polarisierend“ heißt trotzdem wahr, „mehr Proof“ heißt Seb-Style und nicht noch eine Statistik.</li>
+      <li><b>Inhalt vor Stil-Nitpicks.</b> Wenn Heik fragt „was halten wir davon“, prüfe ich zuerst Logik, Angle, Quelle, Flow und Länge, nicht Kommas oder Tippfehler.</li>
+      <li><b>Nicht im Prompt-Verlauf verlieren:</b> „bro, bau von vorne, du hast dich verloren zwischen meinen Prompts“. Bei Verwirrung baue ich die Ad neu auf Basis der letzten Version, die Heik bestätigt hat.</li>
+      <li><b>Interne Erklärungen ohne Ad-Lingo:</b> „erklär mal kurz mir intern ohne Ad-Lingo…“</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AD FÜR AD ============ -->
+<section id="ads">
+  <h2><span class="num">13</span>Ad für Ad</h2>
+  <p class="sub">Jede Feedback-Runde in Reihenfolge, mit der Lektion daraus.</p>
+
+  <details>
+    <summary><span class="id">AG</span><span class="t">Ad-Group-Struktur</span><span class="s">vor den Creatives</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„bei uns in der Space verkaufen viele random Geheimnisse und Shiny Objects… wir brauchen starke Mechanism Ads… wenn gegen andere Lösungen, lieber gegen die Space und Common Beliefs“</span><span class="m">Ich habe die Ad Groups um Geheimnisse herum umgebaut.</span></li>
+      <li><span class="h">„jetzt hast du es übertrieben. Schau dir nochmal die YouTube Meta Ads Trainings an, alle ICP-Calls, CSM- und Closer-Interviews, past Winning Ads von Seb“</span><span class="m">Zurück zur Standard-Journey.</span></li>
+      <li><span class="h">„du hast mein Ding mit den Geheimnissen zu literal genommen und es zum Main Player gemacht“</span><span class="m">Erst mappen, welche bestehenden Seb-Ads schon wohin passen.</span></li>
+      <li><span class="h">„mit ‚gegen Competitors‘ meine ich gegen Common Advice und Beliefs der Szene“ · „Reframe = current Belief, was sie denken, warum sie nicht skalieren… aber in Realität ist es XYZ“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Kontext bleibt Kontext. Ich halte mich an Heiks Journey (Training) und baue sie nicht mit einem Nebenthema um.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">1.2</span><span class="t">Nur Produktseite / Bewusstseinsstufen nicht getroffen</span><span class="s">AG1 Problem · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„mach volle Code-Blöcke, warum ist das so abgehackt“</span></li>
+      <li><span class="h">„misch nicht viele verschiedene Angles in ein Creative. Was sagen unsere Leads selbst, warum sie denken, sie haben kein System?“</span></li>
+      <li><span class="h">„wie lösen wir überhaupt das Problem?“ · „siehst du, wie wir immer noch in jeder Ad Proof zeigen und auch starke CTAs haben“</span><span class="m">Die Problem-Ad braucht auch Mechanismus und Proof.</span></li>
+      <li><span class="h">„fang an direkt in Hook mit 100–300k im Monat festhängen“ · „keine assumptive Sachen“</span><span class="m">Heiks Beispiel: „Bei vielen Ecom Brands, die so zwischen 100 und 300k festhängen… ist das große Problem einfach, dass sie ihren ganzen Traffic auf eine Product Page schicken“</span></li>
+      <li><span class="h">Heik gibt den Hook vor: „Der mit Abstand häufigste Grund, warum Ecom Brands zwischen 100 und 300k im Monat hängen bleiben…“ · „mach hier straight CTA“</span></li>
+      <li><span class="h">„was können wir hier jetzt cutten… nicht jedes Wort, ganze Passagen“</span><span class="m">Heiks Endversion: Das Zugeständnis bleibt, die Authority ist ein Nebensatz („die by the way…“), die Lösung wird klein gemacht („eigentlich ziemlich simpel… Ugly Funnels“), 2 Beispiele, dann „Und so weiter.“, 1 Case, CTA spiegelt den Hook.</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Das ist das Grundmuster für Problem-Ads. Ich übernehme die Prinzipien, nicht den Wortlaut.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">1.3</span><span class="t">Ein paar Winner tragen alles, kein System</span><span class="s">AG1 Problem · in Arbeit</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„ich brauch legit die Hälfte, das ist zu lang, weil du zu viele Ideen mit reingebracht und komplett ausgeführt hast“</span><span class="m">Mein Entwurf hatte Founder-Story, Research, Winner zerlegen, Funnel, AOV, „nicht jede Ad muss Winner sein“ und IM8.</span></li>
+      <li><span class="h">„das ist jetzt viel zu wenig. Das sind 192 Wörter, ich will 250–270“</span><span class="m">Überkorrigiert.</span></li>
+      <li><span class="h">„mach die Hook mehr interessant und less AI salesy“</span><span class="m">Mein Hook: „…sind nicht durch ein System da hingekommen… sondern durch 2, 3 Ads…“</span></li>
+      <li><span class="h">„bro, polarisierende Hook bitte“ → „sagen die Prospects was von Glück, diese ersten Winner gefunden zu haben, oder nein?“</span><span class="m">Nein. „Glück“ ist Irons Frame (Edis, Sales-Doc), nicht der der Leads.</span></li>
+      <li><span class="h">Heik schreibt den Start selbst: „Meistens sind es so 2, 3 winning ads…“ → „schau mal, perfekter Start“</span></li>
+      <li><span class="h">„ich mag das nicht, du pitchst zu früh… jetzt Reframe zu eigentlichem Thought und Fix, zeig Proof, dann CTA“</span></li>
+      <li><span class="h">„merkst du, wie kein Flow zwischen diesen Lines ist? … wie ein Hard Cut“</span><span class="m">„…funktioniert hat. / So, hier ist das Ding… ein Winner ist eigentlich gar kein Zufall.“</span></li>
+      <li><span class="h">„woher hast du das?“</span><span class="m">„Nerv bei einer Gruppe“ und „dieselben Leute“ waren meine Ableitung, „nimm diesen Nerv“ war erfunden.</span></li>
+      <li><span class="h">„erklär das mal viel klarer und less emotional bullshit“</span></li>
+      <li><span class="h">Heik gibt die Richtung vor: „…der komplett falsche Ansatz… wir haben mit IM8, More Nutrition, ESN gearbeitet… es gibt einen Weg, wie man wirklich 200.000 € auf eine Ad spenden kann, ohne dass die ausbrennen (sagt das Seb?)“</span><span class="m">Ja, als „100, 200.000 € Adspend aushalten“ in Sebs gefilmten Ads.</span></li>
+      <li><span class="h">Heik baut den Start chronologisch um (brennen aus → Umsatz runter → kopieren auf Krampf → kein System): „ich glaub, das spricht die Leute mehr an“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Die stärkste Situation ist die, die der Lead selbst so erlebt hat, chronologisch erzählt. Danach kommt ein Reframe mit Brücke und ohne Pitch, dann Sebs echte Erklärung. Iron taucht erst als Glaubwürdigkeit oder Proof auf.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">2.2</span><span class="t">Ads werden teuer im Q4</span><span class="s">AG2 Opportunity · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„wir können nicht immer dieselbe Hook haben, als ich meinte ‚analysier‘, meinte ich die unterliegenden Prozesse und Gedanken, nicht Wort für Wort“</span></li>
+      <li><span class="h">Heik gibt die Struktur vor: „Q4 ist gut, aber jede andere Brand weiß das auch, deshalb werden die Ads extrem teuer… du brauchst XYZ schnell runtergerattert… das wird dir helfen… 3 rapid fire Cases… CTA“</span></li>
+      <li><span class="h">„nah bro“ + Wohnungs-Ad: „check mal ab, wie er es hier erklärt mit ganz viel Shit“</span><span class="m">Seb rattert den Mechanismus konkret runter: vorne VSL Ads, dahinter Listicle/Advertorial, Offer, Upsells.</span></li>
+      <li><span class="h">„wie können wir hier den Anfang sharper machen und mehr hooky und kürzer, ohne Cringe, in Sebs Lingo“ → „mach besser weiter als ‚da trennt sich's halt‘“ → „kurz gehalten“ → „gibt's andere Wege, das zu formulieren“</span></li>
+      <li><span class="h">Heiks Zeile: „Und am Ende gewinnt halt nur, wer sich diese teuren Klicks auch leisten kann.“ · „wie kürzer, ohne Flow und Mechanism zu verlieren“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Die ICP-Zahl darf auch im Body stehen. Steigern statt wiederholen („Das funktioniert ja so schon schwer… Aber jetzt im Q4…“), den Mechanismus komplett runterrattern, 3 Rapid-Fire-Cases, CTA mit „von 7 auf 8 stellig“.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">AG2</span><span class="t">Drittes Q4-Angle</span><span class="s">Angle-Runde</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„VIP Launch vor Black Friday: ist das das Main-Ding vom Q4 Guide?“ · „du verstehst schon, was das Ziel eines Angles ist, oder?“ · „was genau wäre also der Angle“</span><span class="m">Mein Angle drehte sich um Operations (Ware, Cash) und verfehlte den Job: Er führte nicht zum Mechanismus und zur VSL.</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Ein Angle muss zum Mechanismus führen. Ein Nebenthema aus dem Q4-Guide ist noch kein Angle.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">3.1 / 3.2</span><span class="t">IM8-Playbook und Funfact als Whiteboard</span><span class="s">AG3 Mechanism · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„erstmal nimm das Transcript 1 zu 1 und bau es in unserem Format auf, also einfach nur hinschreiben“</span></li>
+      <li><span class="h">„nicht viel, aber bisschen umformulieren oder umstrukturieren, weil ich es auf einem Whiteboard filmen will“</span></li>
+      <li><span class="h">„hier ist ein Formulierungsproblem und zu lang“ · „vielleicht sollten wir schon was auf dem Whiteboard haben und langsam aufdecken?“ · „mach die Anweisungen nicht so kompliziert“</span></li>
+      <li><span class="h">„Skript ist gut, btw er sagt ‚outperformed‘, aber für die Visuals brauchen wir eine spezifische Idee, die speziell hierfür Sinn macht“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Bei bestehenden Seb-Ads bleibt Sebs Wortlaut, ich strukturiere nur um. Whiteboard-Hinweise sind einfach und haben eine konkrete Visual-Idee pro Ad.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">3.3</span><span class="t">Bewusstseinsstufen</span><span class="s">AG3 Mechanism · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„ist das wirklich Top 3 Dinge für Sebs System?“ → „dann lass über das Treffen der Bewusstseinsstufen reden und Creative System + Funnels dafür“</span></li>
+      <li><span class="h">„Hook ist wayyy too unspezifisch und langweilig und lang gezogen. Jump right in“ · „red von Bewusstseinsstufen vielleicht früher, mach mehr polarisierende Hook“</span></li>
+      <li><span class="h">Heiks Hook: „Hart gesagt… die meisten Ecom Brands zwischen 100 und 300k im Monat haben noch nie was von Bewusstseinsstufen gehört.“ + „die targeten nur an die 10 % des Markets… sobald man mehr spendet, targetet Meta kältere Leute…“</span></li>
+      <li><span class="h">„lösch erstmal die Kommentare zum Whiteboard“ · „ich finde, das ist jetzt mehr so eine AG1-Ad“</span></li>
+      <li><span class="h">„hier hast du irgendwie versucht, neue Angles reinzubringen… mach es smoother“ · „mach hier etwas mehr Proof“</span></li>
+      <li><span class="h">„die haben's aber gehört“ · „jetzt wurd's zu langweilig“ · „‚hat wirklich für jede Stufe eine eigene Ad und einen eigenen Funnel‘, das ist das Einzige, was ich nicht mag“</span><span class="m">Endung: „Real talk… Jeder in der Ecom Szene labert über Bewusstseinsstufen… Aber fast keine Brand… setzt die auch richtig um…“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Eine Mechanism-Ad erklärt den Mechanismus und rutscht nicht ins Problem ab. Der Hook muss für den ICP stimmen: Sie kennen den Begriff, setzen ihn aber nicht um.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">4.1</span><span class="t">Media Buying → DR Funnels, Creative Strategy, Copy</span><span class="s">AG4 Reframe · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„ne man, Angle ist, dass heutzutage Creative Strategy und Funnels viel wichtiger sind als nur Knöpfe zu drücken in Meta, weil Meta es sehr leicht gemacht hat. Wir verbringen nicht mehr als ein paar Minuten am Tag im Ads Manager“</span><span class="m">Ich hatte den Angle falsch verstanden.</span></li>
+      <li><span class="h">„man bro, vergiss nicht, wie wir Hooks machen und die ganzen Ads gestalten“ · „mach andere Hook komplett, polarisierender, mehr Seb Style“ · „start rein direkt mit dem Belief, was die Brands haben, aber hooky ausgedrückt“</span></li>
+      <li><span class="h">„mehr spezifisch, nimm Sebs old Ads mit den Timestamps, um zu verstehen, was du hier sagen könntest“ · „eklige Video Ad?“</span></li>
+      <li><span class="h">„pack hier oben KI rein“ · „Lösch das“ (Zeilen „vor 3, 4 Jahren…“, „Heute ist das ein breites Adset…“)</span></li>
+      <li><span class="h">„ich brauch eine bessere CTA“</span><span class="m">→ „Also… bevor du den nächsten Media Buyer einstellst…“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Den Angle vor dem Schreiben in einem Satz bestätigen. Belief-Hook als Zitat, konkrete Mechanismus-Bilder aus Sebs Ads, keine Exkurse.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">4.2</span><span class="t">Volumen → Direct Response Funnel als Fundament</span><span class="s">AG4 Reframe · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„nutz die CSM-Calls dafür“ · „du hast 2 Angles: Congruency und Fundament. Nimm erst Fundament, dann Congruency als Teil des Fundaments“</span></li>
+      <li><span class="h">Heiks Hook: „Hör auf, neue Ads zu launchen für deine Ecom Brand… nein, also jetzt ohne Spaß…“ · „sag 500 statt 300“</span></li>
+      <li><span class="h">„baller mal hier mehr Proof Seb Style“ · „jetzt integrier das perfekt in die Ad“</span></li>
+      <li><span class="h">„das hört sich forced an, wenn du mal laut vorliest“ · „das hier klingt super AI“</span><span class="m">Fix: „Und ich so… ey, du kannst auch 1.000 Ads launchen.“</span></li>
+      <li><span class="h">„mach das sound besser“ · „das ist nicht Seb Style“</span><span class="m">Fix: das Schlaf-Beispiel für Kongruenz.</span></li>
+      <li><span class="h">„nicht nur Produktseite immer: wenn da kein gutes Fundament mit Creative Strategy und DR Funnels ist“</span></li>
+      <li><span class="h">„hab hier lieber Placeholder“ (Unterwäsche-Case) · „außerdem kann nicht jede CTA gleich sein“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Eine Szene schlägt jeden Merksatz, und ich prüfe das durch lautes Lesen. Nicht jedes Problem auf „Produktseite“ reduzieren. Cases ohne Freigabe bekommen Platzhalter, jeder CTA ist neu.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">4.3</span><span class="t">Team → Expansion → mehr Bewusstseinsstufen treffen</span><span class="s">AG4 Reframe · Angle steht</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„3. wird Team-Angle, wie würdest du das framen?“ → „ich find das super backwards, macht keinen Sinn für uns oder nicht? Aber bleib objektiv, not a yes or no sayer“</span><span class="m">Ein Team-Angle widerspricht DWY mit kleinem Inhouse-Team.</span></li>
+      <li><span class="h">„ich mag das auch nicht“ → „lass bei Dienstleister vs. kleines Inhouse-Team bleiben, aber anders geframed“</span></li>
+      <li><span class="h">„schau in die Calls mit Niklas… was Leute denken, was ihr Problem ist, vs. was eigentlich ihr Problem ist“ · „dieses Angle hat nicht wirklich viel Clarity“ · „ist das wirklich, was die denken? Ich glaube nicht“</span></li>
+      <li><span class="h">„Glaube: Expansion, was meinst du?“ · „ja, aber wie drücken die das in eigenen Worten aus?“</span><span class="m">Ergebnis: „Neues Produkt/Expansion → mehr Bewusstseinsstufen treffen“. Expansion wird nicht schlechtgeredet.</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Ein Reframe-Glaube muss aus den Calls kommen, in den Worten der Leads. Er darf nicht gegen das gehen, was Iron selbst macht.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">5.3</span><span class="t">Keine Shiny Objects</span><span class="s">AG5 gegen die Szene · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„du hast es zu literal genommen. Analysier nochmal alle Ad-Iterationen, alle Winning Ads… und versuch, richtige Ads zu schreiben, bro“</span></li>
+      <li><span class="h">SRPA-Video: „check mal das ab“ → „viel zu kurz, bro, wtf are you doing. Und für Sebastian bleib bei unserem Ad Framework“</span></li>
+      <li><span class="h">„Angle sollte sein: Im Endeffekt ist das eh alles dieselben Fundamentals, aber die nennen das neu, deshalb sag ich es einfach vorab. Es wird jedes Mal Creative Strategy und Direct Response Funnels sein“</span></li>
+      <li><span class="h">„das klingt dumm“ (Authority-Zeile) → „keep it, aber tu es sound better“</span></li>
+      <li><span class="h">Heik gibt den Text vor + „wir fangen an mit Research… geh da kurz durch“ → „eben NICHT klassifizieren… sprich an, wie du Ads machst und Funnels“ → „wie Seb es macht, bro, du hast sooooo viel Kontext, benutz es“</span><span class="m">Fix: Sebs Prozess in Sebs Worten (Research-Fragen, VSL Ads mit 3 bis 5 Minuten, hässliche Funnels, die konvertieren wie Sau, 5/10/5 Minuten, Checkout, Margen, 3 bis 5 Ads pro Woche).</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Die volle Länge gilt immer, auch bei „gegen die Szene“. Den Mechanismus zeige ich, indem ich Sebs Arbeitsweise erzähle, nicht mit Labels.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">7.2</span><span class="t">Straight Flex</span><span class="s">AG7 Cases · fertig</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„dafür benutz einfach die großen Case Studies und auch Statista und so“</span></li>
+      <li><span class="h">„das sollte die Zusammenarbeit direkt pitchen“ → „nein Mann, wir haben immer noch VSL, einfach Zusammenarbeit pitchen, für mehr Info Click Ad“ → „nah bro, ich hab immer noch die VSL, die das ganze macht“</span><span class="m">Meine Leistungsliste flog raus.</span></li>
+      <li><span class="h">„‚Und genau das machen wir jetzt auch mit deiner Brand‘ macht absolut keinen Sinn. Lieber: Also… Falls du eine Ecom Brand…“ · „von 7 auf 8 stellig skalieren“</span></li>
+      <li><span class="h">„das ist zu indirekt, sag lieber direkt über Zusammenarbeit oder helfen… klar und deutlich“ · „mach so, dass der Rest auch passt“</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Pitch = Qualifier + direkter Klick mit „wie wir dir helfen / wie eine Zusammenarbeit aussieht“. Es gibt keine Feature-Liste, weil die VSL das übernimmt.</div></div>
+  </details>
+
+  <details>
+    <summary><span class="id">Rest</span><span class="t">2.3, 4.3, 5.1, 6.3, 7.3, AG8</span><span class="s">Angles stehen, Skripte offen</span></summary>
+    <div class="db"><ul class="rounds">
+      <li><span class="h">„ich brauch erstmal deine Hilfe, für die letzten paar Creatives Angles zu finden… schau dir nochmal Heiks Meta Ads Training an“</span></li>
+      <li><span class="h">„8 sollte gut so sein oder?“ · „fehlt eine Message oder ein Angle jetzt? Based on ICP-Analyse und allem“</span></li>
+      <li><span class="h">„ok, nun haben wir die Angles, lass anfangen, den Rest zu schreiben“</span><span class="m">Reihenfolge: 1.3 → 2.3 → 4.3 → 5.1 → 6.3 → 7.3 → 8.1 → 8.2 → 8.3</span></li>
+    </ul><div class="lesson"><b>Lektion:</b> Für jede offene Ad gilt der Bauplan oben. Bevor ich schreibe, frage ich mich: Welcher Hook-Typ ist noch frei? Welche Authority-Zeile und welcher CTA sind noch frei?</div></div>
+  </details>
+</section>
+
+<!-- ============ CHECKLISTE ============ -->
+<section id="check">
+  <h2><span class="num">14</span>Checkliste vor dem Abschicken</h2>
+  <div class="card">
+    <ul class="check">
+      <li><span><b>Ein Angle.</b> Kann ich die Ad in einem Satz zusammenfassen? Steht irgendwo eine zweite Idee?</span></li>
+      <li><span><b>Angle-Job.</b> Passt er zur Ad Group und führt er zum Mechanismus und zur VSL? Passt er zum Iron-Modell (DWY/DFY, Inhouse, Expansion positiv)?</span></li>
+      <li><span><b>Hook.</b> Springt er direkt rein, nennt er den ICP, ist er polarisierend und trotzdem wahr? Ist der Hook-Typ in dieser Kampagne noch frei?</span></li>
+      <li><span><b>Keine Annahmen</b> über den Zuschauer, alles beobachtend in der 3. Person?</span></li>
+      <li><span><b>Situation in den Worten der Leads,</b> chronologisch erzählt?</span></li>
+      <li><span><b>Reframe vor dem Pitch.</b> Taucht Iron erst ab dem Proof auf (oder als Glaubwürdigkeit kurz vor der Lösung, wenn Heik es so setzt)?</span></li>
+      <li><span><b>Flow.</b> Hängt jede Zeile an der vorigen? Gibt es keinen harten Schnitt? Habe ich die Ad im Kopf laut gelesen?</span></li>
+      <li><span><b>Keine KI-Sätze:</b> keine Sinnsprüche, kein „nicht X, sondern Y“ als Effekt, kein Pathos? Konkrete Szenen statt Thesen?</span></li>
+      <li><span><b>Mechanismus wie Seb ihn erklärt,</b> ohne Labels? Ist das Warum nüchtern formuliert?</span></li>
+      <li><span><b>Quelle für jede Zeile.</b> Habe ich Abgeleitetes markiert und für Unbekanntes Platzhalter gesetzt? Stehen die Zahlen genau so da, wie Seb sie sagt?</span></li>
+      <li><span><b>Proof drin,</b> und ist die Authority-Zeile anders als in den anderen Ads?</span></li>
+      <li><span><b>CTA:</b> straight, kurz, direkt über Zusammenarbeit oder Hilfe, spiegelt den Hook und ist neu formuliert?</span></li>
+      <li><span><b>Länge 250 bis 270 Wörter</b>, mit <code>wc -w</code> gezählt?</span></li>
+      <li><span><b>Format:</b> ein voller Code-Block, Zeile und Leerzeile, keine Regie-Kommentare, Ziffern, Fachbegriffe ohne Bindestrich, Heiks Zeilen wörtlich übernommen?</span></li>
+      <li><span><b>Antwort danach kurz:</b> was geändert wurde, woher es kommt, was offen ist?</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>Internes Dokument für Claude · IRON Meta Ads (Seb / Sol Twenty) · Wird nach jeder Feedback-Runde ergänzt.</footer>
+</div>
+</body>
+</html>
