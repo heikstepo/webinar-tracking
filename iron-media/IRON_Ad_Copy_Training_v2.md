@@ -226,6 +226,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 ---
 
+**Brain Dump ≠ Copy (Heik, 8.1):** Wenn Heik Stichpunkte in Kleinschreibung mit Tippfehlern schickt ("die denken die haben keine zeit… logistik blablabla… kein system"), ist das die **Gliederung**, nicht der Text. Dann die Logik übernehmen und in Seb's Voice neu formulieren, mit Flow von Zeile zu Zeile. 1:1 übernehmen nur seine ausformulierten Ad-Zeilen (mit "…", Großschreibung, ganzen Sätzen). Und **1 Main Idee pro Ad**: kein Sammeln von Seb-Zitaten, nur was den einen Gedanken trägt.
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |
