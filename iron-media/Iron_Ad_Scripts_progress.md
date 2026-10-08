@@ -129,7 +129,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit / leanes Team (Entwurf v9, klarer Plan + Offer)
+## Creative 8.1: Keine Zeit / leanes Team (Entwurf v10, neue Plan-Schritte)
 
 ```
 Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
@@ -156,15 +156,11 @@ In meiner Firma Iron haben die stattdessen von Tag 1 an einen klaren Plan bekomm
 
 Sowas wie…
 
-„Diese Woche nur eins: Produktseite raus, Ugly Funnel rein… alles andere bleibt liegen.“
+„Woche 1: Bevor du irgendwas Neues baust… frag deine letzten 500 Kunden, warum sie wirklich gekauft haben.“
 
-Dann…
+„Woche 2: Aus den Antworten bauen wir dein erstes Advertorial… statt 30 neue Ads zu schneiden.“
 
-„Der Funnel läuft? Gut, jetzt kommt das Cold Traffic Offer drauf… erst danach neue Ads.“
-
-Und dann…
-
-„Jetzt drehen wir das Budget hoch… und die neuen Ads schafft dein Cutter locker allein.“
+„Und TikTok, Google und E-Mail? Lassen wir die nächsten 2 Monate komplett liegen.“
 
 Heißt, dieselbe Zeit wie vorher… nur bringt jetzt jede Stunde die Brand nach vorne.
 
