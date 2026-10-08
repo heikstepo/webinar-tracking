@@ -232,6 +232,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **"…" vs. Punkt (Heik, 1.2):** Wenn die nächste Zeile denselben Satz oder dieselbe Idee weiterführt, endet die Zeile mit "…", nicht mit einem Punkt. Beispiel: "da kaufen halt nur die Leute, die eh schon wissen, dass sie dein Produkt wollen…" / "Und von denen gibt's halt nur eine begrenzte Anzahl." Ein Punkt nur, wenn danach ein neuer Gedanke anfängt.
 
+**Ein Gedanke nicht über viele Zeilen ziehen (Heik, 1.3):** Der Hook-Gedanke ("2, 3 Winner → brennen aus → kopieren → jede Version schlechter → keiner weiß warum") stand auf 5 Zeilen. Das wirkt langgezogen. Ein Gedanke bekommt eine Zeile, höchstens 2. Die "…"-Regel heißt nicht, einen Satz in viele Zeilen zu zerlegen. Sie gilt, wenn eine Zeile einen neuen Schritt bringt und der Gedanke trotzdem weiterläuft.
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |

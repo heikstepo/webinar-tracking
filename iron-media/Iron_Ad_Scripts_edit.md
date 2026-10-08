@@ -36,20 +36,14 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 272 Wörter, vorher 283)
+## Creative 1.3 (edit, 256 Wörter, vorher 283)
 
 ```
 Meistens sind es nur 2, 3 Winning Ads, die eine Ecom Brand auf 100 bis 500k im Monat bringen…
 
-Und irgendwann brennen die halt aus… und der Umsatz geht runter…
+Und sobald die ausbrennen, wird auf Krampf kopiert… aber jede Version läuft schlechter als die davor.
 
-Dann versuchst du auf Krampf, die alten Winner irgendwie zu kopieren…
-
-Aber jede Version läuft ein bisschen schlechter als die davor…
-
-Weil keiner so richtig weiß, warum der Winner damals überhaupt funktioniert hat…
-
-Da ist halt kein klares System dahinter.
+Weil keiner so richtig weiß, warum der Winner überhaupt funktioniert hat… da ist halt kein klares System dahinter.
 
 Schau mal, ich hab mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gearbeitet…
 
@@ -63,9 +57,7 @@ Dahinter ein Ugly Funnel statt der Produktseite… der denen in 10 Minuten erkl�
 
 Und ein Offer, das über 100 € AOV holt… mit Upsells und Downsells landest du bei 30 bis 35 % Marge.
 
-Heißt, du verdienst an jedem Kunden so viel, dass die Ad auch mit mehr Budget profitabel bleibt…
-
-Und deswegen nicht nach ein paar Wochen ausbrennt.
+Heißt, du verdienst an jedem Kunden so viel, dass die Ad auch mit mehr Budget profitabel bleibt… und nicht nach ein paar Wochen ausbrennt.
 
 Genau so haben wir [CASE: Brand] nach X Monaten Plateau von X auf X im Monat gebracht.
 
