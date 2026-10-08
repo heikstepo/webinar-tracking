@@ -7,21 +7,21 @@ Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat an
 
 Ist, dass sie ihren kompletten Traffic einfach nur auf die Produktseite schicken.
 
-Das Problem ist… da kaufen halt nur die Leute, die eh schon wissen, dass sie dein Produkt wollen.
+Das Problem ist… da kaufen halt nur die Leute, die eh schon wissen, dass sie dein Produkt wollen…
 
 Und von denen gibt's halt nur eine begrenzte Anzahl.
 
 Klar kann das reichen, um auf deine ersten 100, 200, 500k im Monat zu kommen…
 
-Aber sobald mehr Budget reinkommt, muss Meta deine Ads auch Leuten zeigen, die dich noch gar nicht kennen.
+Aber sobald mehr Budget reinkommt, muss Meta deine Ads auch Leuten zeigen, die dich noch gar nicht kennen…
 
 Und die landen dann auf einer Seite mit Produktbild, Preis und Warenkorb Button… und sind direkt wieder weg.
 
 Wir sehen das fast jeden Tag in meiner Firma Iron… die by the way allein dieses Jahr schon 30 Marken auf 8 stellig skaliert hat.
 
-Und die Lösung dafür ist gar nicht so kompliziert… du brauchst einfach Ugly Funnels.
+Und die Lösung dafür ist gar nicht so kompliziert… du brauchst einfach Ugly Funnels…
 
-Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite… mit einem Cold Traffic Offer.
+Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite… mit einem Cold Traffic Offer…
 
 Kalte Leute, die dein Produkt noch nicht kennen, bekommen eine lange Seite, die ihnen erklärt, warum sie es überhaupt brauchen…
 

@@ -230,6 +230,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **Edit-Durchgang (Heik, 1.2): Flow ist Priorität Nummer 1.** Kürzen heißt: echte Wiederholungen und doppelte Erklärungen raus. Gesprochene Verbindungsstücke bleiben drin ("Das Problem ist…", "Klar kann das reichen…", "Und so weiter.", "by the way"). Die Ad muss laut ausgesprochen geil klingen. Lieber 250 Wörter mit Flow als 210 abgehackte. Und beim Kürzen den Inhalt nicht verschieben: Das Problem in 1.2 ist "alles nur auf die Produktseite schicken", nicht "die Produktseite".
 
+**"…" vs. Punkt (Heik, 1.2):** Wenn die nächste Zeile denselben Satz oder dieselbe Idee weiterführt, endet die Zeile mit "…", nicht mit einem Punkt. Beispiel: "da kaufen halt nur die Leute, die eh schon wissen, dass sie dein Produkt wollen…" / "Und von denen gibt's halt nur eine begrenzte Anzahl." Ein Punkt nur, wenn danach ein neuer Gedanke anfängt.
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |
