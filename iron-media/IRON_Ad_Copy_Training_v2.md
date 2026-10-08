@@ -44,6 +44,8 @@ Die 10 Regeln, die ich am häufigsten breche:
 
 **CTA-Ziel:** Jede Ad führt auf die **VSL-Landingpage**, die VSL erklärt den Rest bis zur Callbuchung. In der Ad steht also kein "Call buchen" und keine Leistungsliste.
 
+**Das Offer (Heik, 5.1):** "Wir bringen deine Brand in den nächsten 3 Monaten auf 8 stellig." Wenn ein CTA das Offer zeigen soll, dann dieses Outcome, nicht die Leistungen (Messages, VSL Ads, Funnels). Außerhalb von AG6 nur angedeutet ("dort zeig ich dir, wie wir mit dir…"). In AG6 kommt es direkt.
+
 **Mechanismus-Name:** "Funnel First System" oder "Ugly Funnel System", je nachdem was passt. Innerhalb einer Ad bleibt es ein Name.
 
 **Proof:**

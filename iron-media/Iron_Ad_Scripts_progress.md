@@ -124,5 +124,5 @@ So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
 
 Also… wenn du gerade überlegst, auf 50 Ads die Woche hochzugehen…
 
-Klick auf die Ad… dort zeig ich dir, wie wir mit dir die neuen Messages finden… und die VSL Ads und Funnels dafür bauen.
+Klick auf die Ad… dort zeig ich dir, wie wir mit dir deine Brand in den nächsten 3 Monaten auf 8 stellig bringen.
 ```
