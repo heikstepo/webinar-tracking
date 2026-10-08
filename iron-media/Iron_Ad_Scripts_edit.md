@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 272 Wörter, vorher 283, Heiks Anfang + Brücke + Systemname)
+## Creative 1.3 (edit, 283 Wörter, vorher 283, Fix = Angles + Ugly Funnel)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -45,27 +45,25 @@ Aber irgendwann brennen diese Winner dann halt aus, der Umsatz geht runter…
 
 Und wenn man dann versucht, irgendwie die alten Winner zu kopieren, läuft jede Version ein bisschen schlechter als die davor.
 
-Da ist halt kein klares System dahinter.
+Da ist halt kein klares System dahinter… Und der Fix dazu ist eigentlich recht simpel…
 
-Bei den ganz großen Brands läuft das komplett anders…
+Es wäre quasi genau das, was wir mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gemacht haben…
 
-Schau mal, ich hab mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gearbeitet…
+Wir kopieren nicht die alte Ad… sondern schauen erst mal, WARUM die funktioniert hat.
 
-Und da gibt's ein klares System, wie du wirklich 100, 200.000 € auf eine einzige Ad spenden kannst, ohne dass die ausbrennt…
+Und meistens ist das nicht der Hook… sondern der Angle dahinter, also das eine Thema, das die Leute zum Kaufen gebracht hat.
 
-Dann musst du auch nicht 100 Ads pro Woche launchen, um irgendwie mitzuhalten.
+Darauf bauen wir dann neue Ads mit neuen Angles… für Leute, die deine alte Ad nie angesprochen hat.
 
-Intern nennen wir das Ugly Funnels…
+Und jeder Test zeigt dir, was der nächste Winner sein muss… statt random neue Hooks zu testen.
 
-Vorne läuft statt kurzer UGCs eine 3 bis 5 Minuten VSL Ad… die auch Leute abholt, die noch gar nicht wussten, dass sie dein Produkt brauchen…
+Damit so ein Winner dann auch 100, 200.000 € Adspend aushält, landet der nicht auf der Produktseite… sondern in einem Ugly Funnel.
 
-Dahinter ein Advertorial statt der Produktseite… das denen in 10 Minuten erklärt, warum sie es jetzt kaufen sollten…
+Also VSL Ad vorne, Advertorial dahinter und ein Offer, das über 100 € AOV holt.
 
-Und ein Offer, das über 100 € AOV holt… mit Upsells und Downsells landest du bei 30 bis 35 % Marge.
+Heißt, du hängst nicht mehr an 2, 3 Winnern, die zufällig funktioniert haben… sondern weißt jedes Mal, wie du den nächsten baust.
 
-Heißt, du verdienst an jedem Kunden so viel, dass die Ad auch mit mehr Budget profitabel bleibt… und nicht nach ein paar Wochen ausbrennt.
-
-Genau so haben wir [CASE: Brand] nach X Monaten Plateau von X auf X im Monat gebracht.
+Bei einer Brand haben wir so aus demselben Produkt, demselben Offer und derselben Seite die 3 bis 5 fache Performance rausgeholt… nur durch neue Angles.
 
 Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten von 7 auf 8 stellig willst…
 
