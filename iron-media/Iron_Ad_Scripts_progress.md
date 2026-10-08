@@ -169,7 +169,7 @@ Ohne noch mehr Abende in CapCut zu verbringen…
 Klick auf die Ad und schau dir an, wie das bei uns mit deinem Team aussehen würde.
 ```
 
-## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v2, Heiks Mittelteil)
+## Creative 8.2: Klappt es auch für unsere Brand? (Entwurf v3)
 
 ```
 Wenn ich eine Ecom Brand mit 200k im Monat hätte, würde mich die IM8 Case Study auch einen Scheiß interessieren.
@@ -192,15 +192,17 @@ Also ja… es funktioniert mit Sicherheit auch für Brands zwischen 100 und 500k
 
 Einfach weil der Prozess immer der gleiche ist, scheiß egal wie groß die Brand ist oder in was für einer Nische du bist.
 
-Wir machen das mit Ugly Funnels… immer in 3 Phasen.
+Wir nennen das intern Ugly Funnels…
 
-Phase 1 ist Research… warum deine Kunden wirklich kaufen und was sie zurückhält.
+Du machst quasi erst mal Research, warum deine Kunden wirklich kaufen…
 
-Phase 2 ist das Fundament… die Funnels selbst statt der Produktseite, mit Cold Traffic Offer und Upsells dahinter.
+Dann schickst du deine Ads nicht mehr auf die Produktseite, sondern auf ein Advertorial mit Cold Traffic Offer…
 
-Und erst in Phase 3 wird skaliert… mit VSL Ads auf Meta und Google.
+Sieht nicht schön aus, daher der Name… verkauft aber besser als jede Produktseite.
 
-Heißt, ob du Hoodies oder Supplements verkaufst… du kannst mehr für einen Kunden zahlen als jeder in deiner Nische.
+Und erst dann skalierst du mit VSL Ads auf Meta und Google.
+
+Heißt, ob Hoodies oder Supplements… du kannst mehr für einen Kunden zahlen als deine Konkurrenz.
 
 Das machen wir in meiner Firma Iron mit über 500 Marken… vom kleinen Fashion Label bis IM8.
 
