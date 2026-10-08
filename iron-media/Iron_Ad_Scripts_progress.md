@@ -129,6 +129,38 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
+## Creative 6.3: Straight outcome based offer + mechanism (Entwurf v1)
+
+```
+Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
+
+Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat zu skalieren… mit unserem Ugly Funnel System.
+
+Und dir parallel dein eigenes Team aufzubauen… damit du am Ende nicht von uns abhängig bist.
+
+Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron haben wir mittlerweile über 500 Marken skaliert…
+
+IM8 von David Beckham, More Nutrition, Kinobody, The Oodie, Corbo von RAF Camora…
+
+Allein dieses Jahr über 30 davon auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
+
+Und das Ugly Funnel System funktioniert im Grunde so…
+
+Vorne VSL Ads, die auch Leuten, die dich noch nie gesehen haben, in 3 bis 5 Minuten erklären, warum sie dein Produkt brauchen…
+
+Dahinter Advertorials und Listicles statt der Produktseite… je nachdem, wie gut dich die Leute schon kennen…
+
+Und ein Cold Traffic Offer mit Upsells, mit dem du schon an der ersten Bestellung Geld verdienst.
+
+Heißt, du kannst mehr für einen Kunden zahlen als deine Konkurrenz… und dein Budget hochdrehen, ohne dass die Marge wegbricht.
+
+Und während das läuft, holen wir dir aus unserem Pool die Leute für Media Buying, Creative Strategy und Schnitt… und arbeiten die direkt mit ein.
+
+Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
+
+Klick auf die Ad und check ab, ob deine Brand reinpasst.
+```
+
 ## Creative 8.1: Keine Zeit / leanes Team (Entwurf v11, grobe Schritte mit weil)
 
 ```
