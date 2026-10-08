@@ -211,42 +211,42 @@ Also… wenn du auch von 7 auf 8 stellig willst…
 Klick auf die Ad und check ab, wie wir dich dahin bringen würden.
 ```
 
-## Creative 8.3: Individuell oder Kurs? (Entwurf v2, Heiks Richtung, mit Sparringpartner)
+## Creative 8.3: Individuell oder Kurs? (Entwurf v3, Sparringpartner-Beispiele)
 
 ```
 Ich hab ein echt dickes Problem mit der ganzen Ecom Szene…
 
-Agenturen, Done for you Media Buyer, Gruppencoachings und so weiter.
+Agenturen, Done for you Media Buyer, Gruppencoachings und hast du nicht gesehen…
 
-Weißt du warum?
+Und weißt du warum?
 
 Weil das alles den meisten Brands, die von 7 auf 8 stellig wollen, nicht wirklich hilft.
 
-Die Brands, die ich kenne, brauchen keinen weiteren Kurs, keine Gruppencalls und auch nicht noch 100 neue Creatives…
+Die Brands, die ich kenne, brauchen keinen Kurs, keine Gruppencalls und auch nicht 100 neue random Creatives…
 
 Denen fehlt ein echter Sparringpartner… jemand, der sich DEREN Zahlen anschaut und sagt, was jetzt der nächste Schritt ist.
 
-Nimm mal 3 Brands, alle bei 300k im Monat…
+So Sachen wie…
 
-Bei der einen landet der ganze Traffic auf der Produktseite… bei der zweiten holt das Offer nur 35 € pro Bestellung… und bei der dritten sind die Winner ausgebrannt.
+„Hey, dein ganzer Traffic geht auf die Produktseite… bau mal ein Listicle davor und schick deine 3 besten Ads da drauf.“
 
-Ein Kurs erzählt allen dreien dasselbe.
+Oder…
 
-Und eine Agentur dreht bei allen dreien einfach an den Ads.
+„Schau mal, dein AOV liegt bei 35 €… mit einem Bundle und 2 Upsells holst du über 100 € pro Bestellung und kannst auf einmal doppelt so viel für einen Kunden zahlen.“
 
-Dabei braucht jede was komplett anderes.
+Oder…
 
-Deswegen schauen wir uns bei jeder Brand erst mal alles an… Account, Funnel, Offer, Zahlen… und gleichen das mit über 500 anderen Brands ab.
+„Deine Winner brennen aus, weil alle mit denselben Leuten reden… lass uns diese Woche eine VSL Ad für die bauen, die dein Problem haben, aber dich noch gar nicht kennen.“
 
-Daraus bekommst du eine Roadmap, was bei DIR als Erstes dran ist.
+Echtes Done with you Consulting eben… jede Woche, an deinen echten Zahlen.
 
-Und dann hast du jemanden aus meinem Team als Sparringpartner, der jede Woche mit dir drübergeht und weiß, was als Nächstes kommt.
+Heißt, du weißt immer genau, was als Nächstes dran ist… statt einfach random irgendwas zu testen.
 
-Heißt, du machst nicht, was bei irgendeiner Brand im Kurs funktioniert hat… sondern was bei deiner gerade den nächsten Sprung bringt.
+Und genau so fühlt sich das für die über 30 Brands an, die wir in meiner Firma Iron allein dieses Jahr auf 8 stellig skaliert haben…
 
-So haben wir in meiner Firma Iron allein dieses Jahr über 30 Brands auf 8 stellig gebracht… jede mit einem anderen ersten Schritt.
+Und für die über 500 Marken aus den Jahren davor.
 
-Also… falls du von 7 auf 8 stellig willst und keinen Bock mehr auf Lösungen von der Stange hast…
+Also… falls du von 7 auf 8 stellig willst und dir genau so einen Sparringpartner wünschst…
 
 Klick auf die Ad und schau dir an, wie das bei deiner Brand aussehen würde.
 ```
