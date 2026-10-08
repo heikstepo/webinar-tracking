@@ -1,9 +1,9 @@
 # Iron Ad Scripts: Edit-Durchgang (kürzer, ohne Flow zu verlieren)
 
-## Creative 1.2 (edit, 256 Wörter, vorher 270)
+## Creative 1.2 (edit, 259 Wörter, vorher 270)
 
 ```
-Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat hängen bleiben…
+Der mit Abstand häufigste Grund, warum Ecom Brands bei 100 bis 500k im Monat an eine gläserne Decke stoßen…
 
 Ist, dass sie ihren kompletten Traffic einfach nur auf die Produktseite schicken.
 
