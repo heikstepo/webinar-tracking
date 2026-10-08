@@ -129,34 +129,30 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 8.1: Keine Zeit für Umsetzung (Entwurf)
+## Creative 8.1: Keine Zeit für Umsetzung (Entwurf v2, Heiks Hook)
 
 ```
-Ich sag's dir ehrlich… wenn du deine Ecom Brand von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
+Ich sag's dir ehrlich… wenn du deine Ecom Brand WIRKLICH von 7 auf 8 stellig bringen willst, wirst du dafür Zeit reinstecken müssen.
 
-Und ich weiß, das willst du gerade nicht hören…
+Ja ich weiß… wahrscheinlich steckst du jetzt schon viel Zeit rein und hast nicht viel mehr verfügbar, um noch mehr zu machen…
 
-Weil bei dir wahrscheinlich eh schon die ganze Freizeit für die Brand draufgeht.
+Aber genau das ist die gute Nachricht… du brauchst nicht mehr Zeit, du musst sie nur woanders reinstecken.
 
-Neue Landing Pages bauen… stundenlang Ads in CapCut schneiden… Lager, Logistik, Customer Support…
+Weil die meisten Founder ihre Zeit halt in die falschen Sachen stecken…
 
-Und trotzdem tut sich beim Umsatz nicht wirklich was.
+Neue Landing Pages bauen… stundenlang Ads in CapCut schneiden… Lager, Logistik…
 
-Aber die gute Nachricht ist… die Zeit steckst du eh schon rein.
+Und trotzdem tut sich beim Umsatz nicht wirklich was… weil du ohne klaren Plan halt nur rumprobierst.
 
-Nur halt an der falschen Stelle.
+Bei uns bekommst du eine Roadmap, die dir sagt, was bei deiner Brand als Nächstes dran ist… und was du erst mal liegen lassen kannst.
 
-Weil ohne klares System probierst du rum… neue Hooks, neue Seite, neuer Rabattcode… und genau dieses Rumprobieren frisst die meiste Zeit.
+Und du baust auch nichts mehr von null.
 
-Bei uns bekommst du stattdessen eine Roadmap, die dir genau sagt, was als Nächstes dran ist.
-
-Erst der Funnel statt der Produktseite… dann das Cold Traffic Offer… und erst dann mehr Ads.
-
-Und bei jedem Schritt schaut jemand aus meinem Team drüber, bevor du Zeit in die falsche Richtung steckst.
+Ist dein nächster Schritt z.B. ein Listicle, machst du mit AI erst mal eine Grundversion… mein Team gibt dir Feedback… und du arbeitest nur noch nach.
 
 Du brauchst dafür auch keine 10 Leute… sondern den richtigen Prozess, 1, 2 gute Leute und AI.
 
-Und wenn du für Schnitt oder Media Buying jemanden brauchst, kriegst du den aus unserem Pool… suchen musst du nicht.
+Und wenn dir für Schnitt oder Media Buying jemand fehlt, kriegst du den aus unserem Pool.
 
 Heißt, du arbeitest nicht mehr als jetzt… aber jede Stunde geht in etwas, das wirklich Umsatz bringt.
 
