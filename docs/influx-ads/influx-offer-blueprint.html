@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Influx Offer Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+<style>
+:root{
+  /* Layout: sticky contents rail on the left, one reading column on the right; the rail becomes a chip row under 900px */
+  --bg:#F6F5F9;--surface:#FFFFFF;--sunken:#EFECF5;--ink:#18151F;--muted:#5E586D;--line:#E1DDE9;
+  --accent:#6A3ED2;--accent-soft:#EEE8FB;
+  --good:#1C7047;--good-soft:#E2F2E9;--warn:#8A5800;--warn-soft:#FAEFD8;--bad:#B3261E;--bad-soft:#FBE5E2;
+  --font-display:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --font-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E0C13;--surface:#17141F;--sunken:#1F1B29;--ink:#EFECF6;--muted:#A69FB7;--line:#2C2739;
+  --accent:#B092F8;--accent-soft:#261E3F;
+  --good:#62C99A;--good-soft:#13271D;--warn:#E6B354;--warn-soft:#2A2110;--bad:#F27D70;--bad-soft:#2D1614;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E0C13;--surface:#17141F;--sunken:#1F1B29;--ink:#EFECF6;--muted:#A69FB7;--line:#2C2739;
+  --accent:#B092F8;--accent-soft:#261E3F;
+  --good:#62C99A;--good-soft:#13271D;--warn:#E6B354;--warn-soft:#2A2110;--bad:#F27D70;--bad-soft:#2D1614;
+  color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:clamp(16px,4vw,44px);padding-block:48px 96px}
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(32px,5vw,64px);align-items:start}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);max-height:calc(100vh - 48px);overflow:auto;padding-bottom:8px}
+.toc-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px 10px}
+.toc ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc a{display:block;padding:6px 10px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:14px;line-height:1.35}
+.toc a:hover{color:var(--ink);background:var(--sunken)}
+.toc a.active{color:var(--accent);background:var(--accent-soft)}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:28px}
+  .toc{position:static;max-height:none}
+  .toc-label{margin-left:0}
+  .toc ul{display:flex;flex-wrap:wrap;gap:6px}
+  .toc a{border:1px solid var(--line);font-size:13px;padding:4px 10px;border-radius:999px}
+}
+main{min-width:0}
+.doc-head{display:grid;gap:18px;padding-bottom:40px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0}
+h1,h2,h3{text-wrap:balance}
+h1{font-family:var(--font-display);font-weight:650;font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.06;letter-spacing:-.015em;margin:0;max-width:21ch}
+.lead{font-size:1.16rem;line-height:1.55;color:var(--muted);margin:0;max-width:64ch}
+.meta{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;margin:0}
+section{padding-block:52px 4px;border-top:1px solid var(--line);scroll-margin-top:16px}
+h2{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.005em}
+.intro{color:var(--muted);margin:0 0 26px;max-width:66ch;font-size:1.04rem}
+h3{font-size:1.02rem;font-weight:600;margin:0 0 10px;line-height:1.35}
+h4{font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+p{margin:0 0 14px;max-width:68ch}
+p:last-child{margin-bottom:0}
+.stack{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+.stack>*{min-width:0}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.grid-2,.grid-3{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;min-width:0}
+ul.list{margin:0;padding-left:1.15em;display:grid;gap:8px}
+ul.list li::marker{color:var(--accent)}
+ul.list.tight{gap:4px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.mono{font-family:var(--font-mono);font-size:13px}
+/* spec strip */
+.spec{display:flex;flex-wrap:wrap;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:0}
+.spec>div{flex:1 1 150px;background:var(--surface);padding:14px 16px;min-width:0}
+.spec dt{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.spec dd{margin:6px 0 0;font-weight:600;line-height:1.35}
+/* pills */
+.pill{display:inline-block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;vertical-align:2px;white-space:nowrap;background:var(--sunken);color:var(--muted)}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.accent{background:var(--accent-soft);color:var(--accent)}
+/* promise */
+.promise-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,4vw,36px)}
+.promise{font-family:var(--font-display);font-size:clamp(1.55rem,3.2vw,2.3rem);line-height:1.18;font-weight:600;margin:0 0 12px;max-width:24ch;letter-spacing:-.01em}
+.promise span{color:var(--accent)}
+/* quotes */
+blockquote{margin:0;padding:2px 0 2px 16px;border-left:2px solid var(--accent);font-family:var(--font-display);font-size:1.08rem;line-height:1.45;max-width:62ch}
+blockquote cite{display:block;font-family:var(--font-mono);font-style:normal;font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4}
+/* notes */
+.note{background:var(--warn-soft);border-radius:var(--radius);padding:16px 18px}
+.note>strong:first-child{color:var(--warn);display:block;margin-bottom:6px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.note.bad{background:var(--bad-soft)}
+.note.bad>strong:first-child{color:var(--bad)}
+.note.info{background:var(--accent-soft)}
+.note.info>strong:first-child{color:var(--accent)}
+.note ul.list li::marker{color:currentColor}
+/* steps */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;min-width:0}
+ol.steps>li::before{content:counter(s,decimal-leading-zero);font-family:var(--font-mono);font-size:12px;color:var(--accent);display:block;margin-bottom:6px;letter-spacing:.06em}
+ol.steps>li b{display:block;margin-bottom:4px;line-height:1.3}
+ol.steps>li span{font-size:14px;color:var(--muted);display:block;line-height:1.5}
+ol.steps>li.end{border-color:var(--accent);background:var(--accent-soft)}
+/* timeline */
+ol.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+ol.timeline>li{position:relative;padding:30px 14px 0 0;min-width:0}
+ol.timeline>li::before{content:"";position:absolute;top:8px;left:0;right:0;height:2px;background:var(--line)}
+ol.timeline>li::after{content:"";position:absolute;top:2px;left:0;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+ol.timeline>li.key::after{background:var(--accent)}
+.tl-day{font-family:var(--font-mono);font-size:12.5px;color:var(--accent);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.tl-title{font-weight:600;margin:2px 0 4px;line-height:1.3}
+.tl-desc{font-size:14px;color:var(--muted);margin:0;line-height:1.5}
+@media (max-width:820px){
+  ol.timeline{grid-template-columns:minmax(0,1fr)}
+  ol.timeline>li{padding:0 0 22px 30px}
+  ol.timeline>li::before{top:0;bottom:0;left:6px;right:auto;width:2px;height:auto}
+  ol.timeline>li:last-child::before{display:none}
+  ol.timeline>li::after{top:4px;left:0}
+}
+/* tables */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.5}
+th{text-align:left;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--sunken);padding:10px 14px;white-space:nowrap}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600}
+table.wide{min-width:720px}
+table.mid{min-width:600px}
+tr.hl td{background:var(--accent-soft)}
+caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+/* ledger */
+.ledger .panel{display:grid;gap:12px;align-content:start}
+.ledger h3{display:flex;align-items:center;gap:8px;margin:0}
+.ledger ul{margin:0;padding-left:1.1em;display:grid;gap:7px;font-size:14.5px}
+.ledger .good-col ul li::marker{color:var(--good)}
+.ledger .warn-col ul li::marker{color:var(--warn)}
+.ledger .bad-col ul li::marker{color:var(--bad)}
+/* do / don't */
+.isnot li::marker{color:var(--bad)}
+.foot{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:grid;gap:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="layout">
+
+<nav class="toc" aria-label="Contents">
+  <p class="toc-label">Contents</p>
+  <ul>
+    <li><a href="#plain">In plain terms</a></li>
+    <li><a href="#promise">The 30-in-30 promise</a></li>
+    <li><a href="#system">The system</a></li>
+    <li><a href="#content">Content and voice</a></li>
+    <li><a href="#timeline">How it runs</a></li>
+    <li><a href="#ownership">Who does what</a></li>
+    <li><a href="#deliverables">Deliverables</a></li>
+    <li><a href="#scope">Scope options</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#compare">Versus alternatives</a></li>
+    <li><a href="#funnel">How it is sold</a></li>
+    <li><a href="#proof">Proof ledger</a></li>
+    <li><a href="#rules">Copy rules</a></li>
+    <li><a href="#open">Open questions</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="doc-head">
+    <p class="eyebrow">Influx · Internal offer breakdown</p>
+    <h1>What Influx sells, how it works, and what it costs</h1>
+    <p class="lead">Influx installs and runs a done-for-you LinkedIn Authority System on a founder's profile. It turns their expertise into content, pushes that content in front of their ideal buyers through an owned distribution network, and hands back a list of warm, ICP-qualified people the founder can pursue. The Meta offer wraps all of it in one promise: 30 warm ICP leads in 30 days, or you don't pay.</p>
+    <p class="meta"><span>Prepared 9 Oct 2026</span><span>Sources: Offer Brief (06 Oct), Deck V3, VSL V2, 9 call transcripts, case studies</span><span>Companion: <a href="influx-icp-dossier.html">ICP Dossier</a></span></p>
+    <dl class="spec">
+      <div><dt>The promise</dt><dd>30 warm ICP leads in 30 days, or you don't pay</dd></div>
+      <div><dt>Client time</dt><dd>1 hour to onboard, then about 10 minutes a month</dd></div>
+      <div><dt>Time to live</dt><dd>About 7 days from the start</dd></div>
+      <div><dt>Price</dt><dd>$4,900/mo for a 3-month trial, or $3,900/mo on 12 months</dd></div>
+      <div><dt>Channel</dt><dd>LinkedIn only. No ad spend, no video.</dd></div>
+    </dl>
+  </header>
+
+  <!-- PLAIN TERMS -->
+  <section id="plain">
+    <h2>In plain terms</h2>
+    <p class="intro">Influx is the LinkedIn authority brand of Fetched L.L.C-FZ, a Dubai company founded by Alex Alleyne (influxonline.co). It works on one platform only. Alex calls the category "a hybrid between a lead generation agency and a PR agency": it raises the founder's profile the way PR does, and it is judged on leads the way lead gen is.</p>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>What it is</h3>
+        <ul class="list">
+          <li>A done-for-you system installed on the founder's personal LinkedIn profile, with the company page as an optional second "brand".</li>
+          <li>Strategy, writing, design, publishing, distribution and reporting, all run by Influx.</li>
+          <li>Built from one recorded interview, then approved by the founder before anything goes live.</li>
+          <li>Measured on warm, ICP-qualified leads. Likes and impressions are supporting signals, not the product.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>What it is not</h3>
+        <ul class="list isnot">
+          <li>Not a content calendar or writing tool the founder has to operate.</li>
+          <li>Not an AI writer. The VSL says it plainly: "If you want a thirty-five dollar AI writer, we are the wrong firm."</li>
+          <li>Not appointment setting. Influx does not book calls or meetings.</li>
+          <li>Not paid LinkedIn ads. There is no ad budget on top of the fee.</li>
+          <li>Not video or podcast production, and not coaching.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="stack" style="margin-top:24px">
+      <div>
+        <h4>Positioning lines already in use</h4>
+        <div class="table-wrap">
+          <table class="mid">
+            <thead><tr><th>Line</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr><td>"Turn your executive expertise into warm ICP-qualified leads."</td><td class="muted">Deck V3 cover</td></tr>
+              <tr><td>"We capture your expertise once, turn it into authority-based content on LinkedIn and use our Media Engine to attract high-intent buyers."</td><td class="muted">Deck V3 cover</td></tr>
+              <tr><td>"The market cannot buy expertise it cannot see."</td><td class="muted">Deck V3, VSL</td></tr>
+              <tr><td>"Your expertise. Our infrastructure."</td><td class="muted">Deck V3</td></tr>
+              <tr><td>"We install and operate the system. You keep authority, approvals, and account control."</td><td class="muted">Deck V3</td></tr>
+              <tr><td>"Influx installs the system. You keep the authority. We take the content load so you can stay in the business."</td><td class="muted">VSL close</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section id="promise">
+    <h2>The 30-in-30 promise</h2>
+    <p class="intro">This is the centrepiece of the Meta funnel. It appears in the VSL, the brief and the newer discovery calls. Deck V3 does not mention it.</p>
+    <div class="stack">
+      <div class="promise-box">
+        <p class="promise">30 warm, ICP-qualified LinkedIn leads in <span>30 days</span>, or you don't pay.</p>
+        <p class="muted" style="margin:0">Paired in the VSL with a second promise of equal weight: "we protect your time." About one hour to onboard, then approvals.</p>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>What counts as a lead</h3>
+          <p>From the brief: "A person who matches the client's agreed ICP (role, seniority, company type and size) and who has shown engagement or intent with the client's LinkedIn presence, for example engaging with content, viewing the profile, or interacting with the client's activity."</p>
+          <p class="small muted">So every lead passes two tests: they fit the ICP agreed at onboarding, and they gave a signal. A profile view counts.</p>
+        </div>
+        <div class="panel">
+          <h3>What the client receives</h3>
+          <p>"Intent and lead data: a list of warm ICP-qualified people the client can act on."</p>
+          <ul class="list small">
+            <li>Month 1: one list for the month.</li>
+            <li>After month 1: a new list every week.</li>
+            <li>Each person is scored, with a percentage match to the ICP and the reason they were picked (Alex, Shikha call).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>What is not promised</h3>
+          <ul class="list isnot small">
+            <li>Booked meetings or sales calls.</li>
+            <li>Closed revenue. The VSL: "We will not pretend LinkedIn closes a six-month deal in week three."</li>
+            <li>Results identical to the case studies.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Why it works on calls</h3>
+          <blockquote>"I like what you said about, hey, you'll give me 30 qualified ICP leads within the first 30 days. If not, then there's a refund guarantee. So I was like, okay, well, that's a good offer."<cite>Mario, founder, ~$1.2M services firm · 23 Sep</cite></blockquote>
+        </div>
+      </div>
+      <div class="note">
+        <strong>Unresolved before scaling spend</strong>
+        <ul class="list small">
+          <li><b>Refund or no charge?</b> The trial is paid in full upfront, so in practice "you don't pay" is a refund. Alex told Mario "refund guarantee" and "money back". Ads need one wording.</li>
+          <li><b>What is refunded?</b> Month 1, or the whole 3-month trial?</li>
+          <li><b>When does the clock start?</b> Signature, onboarding, or first post (day 6 to 7)?</li>
+          <li><b>Per brand or per client?</b> Is it 30 leads per profile?</li>
+          <li><b>Contract terms:</b> the VSL placeholder for the exact terms is still empty.</li>
+        </ul>
+      </div>
+      <div class="note info">
+        <strong>LQL vs warm ICP lead</strong>
+        <p class="small" style="margin:0">Older calls use "LQL" (LinkedIn Qualified Lead), counted from comments showing intent and clicks on tracked links. DMs only counted if the client tallied them. The 30-in-30 definition is broader because it includes profile views. Use "warm ICP lead" in anything public. LQL is internal jargon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM -->
+  <section id="system">
+    <h2>The system</h2>
+    <p class="intro">Three named parts. The <b>Authority Engine</b> is the whole done-for-you system. The <b>Media Engine</b> is the distribution layer inside it. The <b>intent scoring</b> layer turns engagement into the lead list. Alex said on 30 Sep that it was "built very recently", after the case studies ran. It has no public name yet.</p>
+    <div class="stack">
+      <ol class="steps" aria-label="How expertise becomes leads">
+        <li><b>Founder expertise</b><span>Captured once in a 1-hour interview: voice, ICP, offer, stories, beliefs.</span></li>
+        <li><b>Narrative strategy</b><span>Positioning and content pillars tied to the commercial conversations the founder wants.</span></li>
+        <li><b>Authority content</b><span>Impact Cards and long-form posts written in the founder's voice and approved by them.</span></li>
+        <li><b>Media Engine</b><span>Early engagement tells LinkedIn the post is relevant. The algorithm then shows it to matching buyers.</span></li>
+        <li><b>Buyer trust</b><span>ICP buyers see useful, consistent thinking and start engaging before any sales conversation.</span></li>
+        <li><b>Warm ICP leads</b><span>Signals are scored against the ICP and delivered as a list.</span></li>
+        <li class="end"><b>Client follows up</b><span>Influx stops at warm interest. The client's team turns it into conversations.</span></li>
+      </ol>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>The Media Engine, public version</h3>
+          <p>"The Media Engine creates the early relevance signals authority content needs. Once the authority narrative is clear, targeted distribution helps content reach the right audiences faster and earn wider visibility signals." <span class="muted">(Deck V3)</span></p>
+          <p class="small muted">Alex's metaphors on calls: getting a snowball down a hill, or jump-starting a car. "Difficult up front. Once it has momentum, it compounds."</p>
+        </div>
+        <div class="panel">
+          <h3>The Media Engine, as described on calls <span class="pill">internal</span></h3>
+          <ul class="list small">
+            <li>20+ owned theme company pages (AI, sales, business insights, a general "daily wisdom" page), roughly 200k to 300k followers each, 3M+ in total, mostly US and Europe.</li>
+            <li>A separate pool of "notable creator" profiles.</li>
+            <li>Pages leave likes only, "so it doesn't appear bot-like". Creators leave comments.</li>
+            <li>Engagement lands within about 15 minutes of a scheduled post.</li>
+            <li>Replaces boosting. There is no paid ad spend.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note bad">
+        <strong>Keep this out of ads</strong>
+        <p class="small" style="margin:0">Deck V3 says "All engagement to your profile is organic and authentic." That sits awkwardly next to the internal description above. In public copy, describe distribution at deck level ("targeted distribution creates early relevance signals"). Never describe the page network and never claim "100% organic".</p>
+      </div>
+      <div class="panel">
+        <h3>Reporting</h3>
+        <p class="small" style="margin:0">A report every Tuesday with a day-by-day breakdown of the previous week: visibility, ICP exposure, engagement and inbound indicators, plus the plan for the coming week. The warm lead list sits alongside it. Month 1 is a testing phase against a hypothesis. From day 31 the data decides what gets scaled and what gets dropped.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section id="content">
+    <h2>Content and voice</h2>
+    <p class="intro">Influx reuses formats it has already tested instead of inventing new ones per client. In Alex's words, "consistent proven formats versus innovating for the sake of it."</p>
+    <div class="grid-3">
+      <div class="panel">
+        <h3>Impact Cards</h3>
+        <p class="small">Visual, statement-based posts. The most consistent performer. In the Scott case they were built to "solve immediate technical friction" for buyers and drive top-of-funnel reach.</p>
+      </div>
+      <div class="panel">
+        <h3>Thought leadership</h3>
+        <p class="small">Longer-form posts that build trust and depth, or drive a specific call to action. In the Scott case they "challenged conventional industry wisdom".</p>
+      </div>
+      <div class="panel">
+        <h3>Newsletter <span class="pill">add-on</span></h3>
+        <p class="small">Sold separately, mainly to grow visibility in AI search. Both featured clients added one after starting.</p>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:18px">
+      <div class="panel">
+        <h3>Cadence and topics</h3>
+        <ul class="list small">
+          <li>Standard: Monday to Friday, one post a day, about 20 a month. Alex told Shikha "at least five times a week".</li>
+          <li>Topics are mostly evergreen: beliefs, leadership principles, stories, operating experience. That is what keeps approvals to about 10 minutes a month.</li>
+          <li>If priorities or perspective shift, Influx runs another capture call.</li>
+          <li>Company page and founder publish different posts with connected themes. Reposting gets suppressed by the algorithm.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Voice standards (Deck V3)</h3>
+        <ul class="list small">
+          <li><b>Deep understanding, not invention.</b> Real operating experience, extracted in a structured onboarding.</li>
+          <li><b>Zero AI-speak.</b> Written to the founder's natural cadence, without buzzwords or corporate jargon.</li>
+          <li><b>Total editorial control.</b> Nothing publishes without factual review and voice approval.</li>
+          <li>First-time approval rate: 90% (Deck V3) or 95% (brief).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <h2>How it runs</h2>
+    <p class="intro">Live in about a week, assuming approvals come back on time. Two approval gates happen before anything is published. After that the founder approves once a month.</p>
+    <div class="stack">
+      <ol class="timeline">
+        <li><div class="tl-day">Day 0</div><div class="tl-title">Decision</div><p class="tl-desc">Scope chosen, access permissions set up.</p></li>
+        <li><div class="tl-day">Days 1–2</div><div class="tl-title">Onboarding</div><p class="tl-desc">The 1-hour interview. Voice of the Customer document within 48 hours.</p></li>
+        <li><div class="tl-day">Days 3–5</div><div class="tl-title">Engine build</div><p class="tl-desc">Strategy, roadmap, content showcase, distribution set-up.</p></li>
+        <li class="key"><div class="tl-day">Days 6–7</div><div class="tl-title">Activation</div><p class="tl-desc">First post goes live.</p></li>
+        <li><div class="tl-day">Days 8–30</div><div class="tl-title">Launch phase</div><p class="tl-desc">Test the hypothesis, collect data.</p></li>
+        <li><div class="tl-day">Day 31+</div><div class="tl-title">Scale phase</div><p class="tl-desc">Double down on what works, drop what doesn't.</p></li>
+      </ol>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>The two approval gates</h3>
+          <ul class="list small">
+            <li><b>Gate 1: Voice of the Customer document.</b> Influx's read on how the founder thinks, acts and operates, plus the strategy.</li>
+            <li><b>Gate 2: Content showcase.</b> A sample set of the posts that will go live first.</li>
+          </ul>
+          <p class="small muted" style="margin-top:10px">"Nothing goes live without your sign-off."</p>
+        </div>
+        <div class="panel">
+          <h3>The monthly rhythm</h3>
+          <ul class="list small">
+            <li>Start of month: 30 days of content arrives for one approval pass.</li>
+            <li>Every Tuesday: the weekly report.</li>
+            <li>From month 2: a weekly warm lead list.</li>
+            <li>Some clients stop approving once trust is built, and Influx simply publishes (Alex, Marigold call).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNERSHIP -->
+  <section id="ownership">
+    <h2>Who does what</h2>
+    <p class="intro">The time-protection promise depends on this split. The client's real job after onboarding is approvals, plus following up the leads.</p>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Influx owns</h3>
+        <ul class="list">
+          <li>Positioning strategy and the founder narrative</li>
+          <li>Content production: writing, editing, design</li>
+          <li>Publishing on schedule</li>
+          <li>Media Engine distribution</li>
+          <li>Weekly reporting every Tuesday</li>
+          <li>Scoring and delivering the warm lead list</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>The client owns</h3>
+        <ul class="list">
+          <li>Subject-matter insight: one hour at onboarding</li>
+          <li>Voice approval: two gates up front, then a monthly review</li>
+          <li>Flagging any change in strategic priorities</li>
+          <li><b>Following up the leads.</b> Influx cannot see DMs and does not book meetings. It offers guidance, and a managed follow-up service exists for some clients.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note info" style="margin-top:18px">
+      <strong>Account access</strong>
+      <p class="small" style="margin:0">Everything runs through a secure, encrypted third-party platform with permission boundaries. Influx never needs the founder's password. "Zero account bans since inception."</p>
+    </div>
+  </section>
+
+  <!-- DELIVERABLES -->
+  <section id="deliverables">
+    <h2>Deliverables</h2>
+    <p class="intro">Everything the client gets, in the order they get it.</p>
+    <div class="stack">
+      <div class="table-wrap">
+        <table class="wide">
+          <thead><tr><th>Deliverable</th><th>When</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><b>Onboarding interview</b></td><td>Days 1–2</td><td>60 minutes. Alex calls it "downloading your brain": voice, ICP, offer, stories, beliefs.</td></tr>
+            <tr><td><b>Voice of the Customer document</b></td><td>Within 48 hours</td><td>Approval gate 1. One per person.</td></tr>
+            <tr><td><b>Narrative and content pillars</b></td><td>Days 3–5</td><td>Tied to the commercial conversations the founder wants to have.</td></tr>
+            <tr><td><b>Content showcase</b></td><td>Days 3–5</td><td>Approval gate 2. The first posts to go live.</td></tr>
+            <tr><td><b>Monthly content batch</b></td><td>Start of each month</td><td>About 20 posts: Impact Cards and thought leadership, written and designed. Approved in one pass.</td></tr>
+            <tr><td><b>Publishing</b></td><td>Monday to Friday</td><td>Scheduled. The founder never logs in to post.</td></tr>
+            <tr><td><b>Media Engine distribution</b></td><td>Every post</td><td>Within about 15 minutes of going live.</td></tr>
+            <tr><td><b>Weekly report</b></td><td>Every Tuesday</td><td>Day by day: visibility, ICP exposure, engagement, inbound indicators, next week's plan.</td></tr>
+            <tr class="hl"><td><b>Warm ICP lead list</b></td><td>End of month 1, then weekly</td><td>The 30-in-30 scoreboard. Each person shown with an ICP match score and the reason they were picked.</td></tr>
+            <tr><td>Company page <span class="pill">option</span></td><td>Second brand</td><td>Its own posts, not reposts. The recommended starting scope.</td></tr>
+            <tr><td>Newsletter <span class="pill">add-on</span></td><td>Optional</td><td>For AI search visibility.</td></tr>
+            <tr><td>Managed lead follow-up <span class="pill">some clients</span></td><td>Optional</td><td>Influx tallies DMs or helps move leads into pipeline.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h4>What a weekly lead list looks like <span class="pill warn">illustrative</span></h4>
+        <div class="table-wrap">
+          <table class="wide">
+            <thead><tr><th>Person</th><th class="num">ICP match</th><th>Signal</th><th>Why selected</th></tr></thead>
+            <tbody>
+              <tr><td>Head of Operations · 60-person logistics firm · US</td><td class="num">94%</td><td>Commented on 2 posts, viewed profile</td><td>Target role and company size, repeat engagement</td></tr>
+              <tr><td>Founder · 18-person IT services company</td><td class="num">88%</td><td>Viewed profile after an Impact Card</td><td>Target company type, decision maker</td></tr>
+              <tr><td>VP Sales · B2B SaaS, Series A</td><td class="num">81%</td><td>Engaged with 3 posts this week</td><td>Senior buyer, rising engagement</td></tr>
+              <tr><td>Managing Partner · advisory firm</td><td class="num">76%</td><td>Asked a question in the comments</td><td>Expressed interest in the topic</td></tr>
+            </tbody>
+            <caption>Invented rows that show the shape of the deliverable as Alex described it. Not client data. Confirm the real fields with Influx before showing this in an ad.</caption>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE -->
+  <section id="scope">
+    <h2>Scope options</h2>
+    <p class="intro">Pricing is per "brand". One brand is either one person's profile or one company page. Alex's recommended minimum is one founder plus the company page, or two executives, to get a "flywheel effect".</p>
+    <div class="grid-3">
+      <div class="panel">
+        <h3>Executive Authority</h3>
+        <p class="small">One founder, CEO or senior exec. A focused build around the main commercial voice. The likely Meta entry point.</p>
+      </div>
+      <div class="panel" style="border-color:var(--accent)">
+        <h3>Personal + Company Brand <span class="pill accent">recommended</span></h3>
+        <p class="small">Connects the founder's authority to company credibility, category trust and demand capture. Two brands.</p>
+      </div>
+      <div class="panel">
+        <h3>Leadership Team Expansion</h3>
+        <p class="small">Several executives visible at once. Usually where accounts grow after a successful start ("land and expand").</p>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:18px">
+      <h3>A separate product: Media Engine only <span class="pill">not the Meta offer</span></h3>
+      <p class="small">For teams that write their own content and only want amplification (sold to a well-funded AI scale-up in August). Two tiers: <b>Growth</b> uses part of the page network, roughly 5x. <b>Accelerator</b> uses the full network plus creator comments, roughly 10x. The standard volume is Monday to Friday, 20 posts a month. Priced per scope.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p class="intro">Per brand. Price is never mentioned in the VSL or the ads. It comes up on the discovery call, and the formal proposal arrives on the second call with an ROI projection.</p>
+    <div class="stack">
+      <div class="table-wrap">
+        <table class="wide">
+          <thead><tr><th>Plan</th><th class="num">Monthly</th><th>Payment</th><th class="num">Total</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><b>Proof of Value</b>, 3 months</td><td class="num">$4,900</td><td>In full, upfront</td><td class="num">$14,700</td><td>The entry point. The brief says "about $14,670".</td></tr>
+            <tr><td><b>Authority Engine</b>, 12 months</td><td class="num">$3,900</td><td>Monthly</td><td class="num">$46,800</td><td>$1,000 a month less than the trial.</td></tr>
+            <tr><td><b>Authority Engine</b>, 12 months upfront</td><td class="num">$3,900</td><td>In full, upfront</td><td class="num">$46,800</td><td>13th month free, so about $3,600 a month effective.</td></tr>
+            <tr><td>Founder + company page, 12 months</td><td class="num">$7,800</td><td>Monthly</td><td class="num">$93,600</td><td>Before any multi-brand discount. Alex says "economies of scale improve" but gave no figure.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid-2">
+        <div class="note">
+          <strong>Variants quoted on calls</strong>
+          <ul class="list small">
+            <li>Mario (23 Sep): a 4-month trial at $4,900. Pay 3 months upfront and the 4th is free.</li>
+            <li>Shikha (30 Sep): a 3-month trial paid in full, "just under 15K".</li>
+            <li>Marigold (Sep): one model "with a performance component", and the standard retainer.</li>
+            <li>Mario: Alex mentioned a "more done-with-you" option. No details given.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>How the price lands</h3>
+          <ul class="list small">
+            <li>ChatGPT told Shikha that Influx costs "about $15,000 per month". It's wrong, and it nearly cost the call.</li>
+            <li>Her anchor for freelancers was "3,000" a month. $4,900 felt "within the budget, as long as it can generate sales".</li>
+            <li>At ~$1.2M revenue, Mario put ~$60k a year at "about 5% of our revenue... pretty much the full marketing budget for the year".</li>
+            <li>Rule of thumb (inference): the trial is easiest to justify when one or two new clients pay for it.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="compare">
+    <h2>Versus the alternatives</h2>
+    <p class="intro">How Influx positions itself against what the founder could do instead. Drawn from the VSL objection section and the calls. A competitor named by a prospect: Windmill.</p>
+    <div class="table-wrap">
+      <table class="wide">
+        <thead><tr><th>Option</th><th>Who writes</th><th>Who sees it</th><th>Judged on</th><th>Founder time</th></tr></thead>
+        <tbody>
+          <tr><td><b>Posting yourself</b></td><td>The founder</td><td>Existing network. Deck V2: 5 to 20 engagements per post, mostly staff and peers.</td><td>Usually nothing</td><td>Hours a week, then it stops</td></tr>
+          <tr><td><b>Freelance ghostwriter</b></td><td>The freelancer</td><td>Existing network</td><td>Posts delivered</td><td>Briefing and editing</td></tr>
+          <tr><td><b>AI writing tools</b></td><td>AI, edited by the founder</td><td>Existing network</td><td>Nothing</td><td>Prompting and fixing "AI-speak"</td></tr>
+          <tr><td><b>Paid ads</b></td><td>Ad copy</td><td>Whoever you pay to reach</td><td>Clicks, cold leads. Mario: 2,000 leads, under 3% converted.</td><td>Managing spend</td></tr>
+          <tr><td><b>Lead gen or appointment setting</b></td><td>Outreach scripts</td><td>Cold lists</td><td>Meetings booked</td><td>Taking cold calls</td></tr>
+          <tr><td><b>PR agency</b></td><td>Journalists, the agency</td><td>Media audiences</td><td>Coverage</td><td>Interviews</td></tr>
+          <tr class="hl"><td><b>Influx</b></td><td>Influx, from a 1-hour interview</td><td>ICP buyers, via the Media Engine</td><td>Warm ICP leads (30 in 30)</td><td>1 hour, then ~10 minutes a month</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FUNNEL -->
+  <section id="funnel">
+    <h2>How it is sold</h2>
+    <p class="intro">Until October, nearly every client came from outbound: cold email and LinkedIn outreach, often with a personalised "visibility report" and videos. The Meta funnel went live on 5 October 2026.</p>
+    <div class="stack">
+      <ol class="steps">
+        <li><b>Meta ad</b><span>ABO test, US, ages 25 to 64, broad targeting, about $225 a day.</span></li>
+        <li><b>Landing page and VSL</b><span>30in30.influxonline.co. A 13-minute VSL with Alex speaking to camera.</span></li>
+        <li><b>Typeform qualifier</b><span>Screens out companies below about $500k in revenue.</span></li>
+        <li><b>Discovery call</b><span>Booked on Calendly, with evening slots in Gulf time. Alex runs every call.</span></li>
+        <li><b>Second call</b><span>Statement of work and ROI projection, often with finance, the CEO or a board-facing exec.</span></li>
+        <li class="end"><b>Start</b><span>Trial or 12-month contract. The delivery team takes over onboarding (Omar runs fulfilment).</span></li>
+      </ol>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>The VSL in ten sections</h3>
+          <p class="small muted">About 1,885 words at 145 words a minute.</p>
+          <ul class="list tight small">
+            <li>Hook: ICP callout and the 30-in-30 promise</li>
+            <li>Problem: the invisible founder vs the visible founder with a system</li>
+            <li>Cost: missed warm interest, slower trust, founder time</li>
+            <li>Mechanism: the Authority System and the Media Engine</li>
+            <li>Offer: 30 in 30, who it is and isn't for</li>
+            <li>Proof: the two documented examples, plus Alex's credentials</li>
+            <li>How it works: capture, architect, produce, distribute, learn</li>
+            <li>Objections: time, AI-speak, account safety, vanity reach, meetings</li>
+            <li>Soft urgency: limited installs, "every quiet quarter"</li>
+            <li>CTA: book a Discovery call</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>How Alex runs the discovery call</h3>
+          <ul class="list tight small">
+            <li>What made you take the call?</li>
+            <li>Priorities for the next 3 to 6 months</li>
+            <li>How you generate demand today, and how predictable it is</li>
+            <li>How the market sees you, compared with how you want to be seen</li>
+            <li>Deck: invisible vs visible executive</li>
+            <li>LinkedIn as the buyer research layer, and AI search</li>
+            <li>The mechanism, then the two examples</li>
+            <li>Who owns what, the timeline, the starting scope</li>
+            <li>"Putting pricing aside, do you feel this is what you need?"</li>
+            <li>Pricing, then the next call booked live on the calendar</li>
+          </ul>
+        </div>
+      </div>
+      <p class="small muted">Capacity: about 15 brands under management (brief) and "about 20" clients (Alex, August). The brief calls delivery "elastic", able to absorb new clients from paid acquisition.</p>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section id="proof">
+    <h2>Proof ledger</h2>
+    <p class="intro">Every claim found across the sources, sorted by whether it can go into an ad. Deck V3 and the VSL now agree on the Month 1 figures. Those are the canonical public proof.</p>
+    <div class="grid-3 ledger">
+      <div class="panel good-col">
+        <h3><span class="pill good">Use</span> Ad-safe</h3>
+        <ul>
+          <li><b>Ryan, GovTech</b> (CEO and CRO): 61 warm ICP leads in Month 1. 454,000 cumulative impressions by Month 2. 6,896 engagements by Month 3.</li>
+          <li><b>Scott, IT consulting</b> (CEO, zero-visibility start): 43 warm ICP leads in Month 1. 330,790 organic impressions by Month 2. 4,202 engagements by Month 3.</li>
+          <li>Always labelled "documented example", first names only.</li>
+          <li>2x LinkedIn Top Voice (2019, 2020)</li>
+          <li>LinkedIn [In]sider Program</li>
+          <li>100M+ impressions across clients and the owned Media Engine, as supporting proof only</li>
+          <li>Zero account bans since inception. Operates within LinkedIn's terms.</li>
+          <li>LinkedIn is #2 among domains cited in AI answers</li>
+          <li>1-hour onboarding, live in about 7 days, weekly reporting</li>
+        </ul>
+      </div>
+      <div class="panel warn-col">
+        <h3><span class="pill warn">Confirm</span> Needs a ruling</h3>
+        <ul>
+          <li>First-time approval: 90% (Deck V3) or 95% (brief)</li>
+          <li>"About 10 minutes a month" for approvals</li>
+          <li>Scott extras: 0 to 25,435 impressions in 7 days. 43% of his audience is C-suite. He bought it for his leadership team.</li>
+          <li>Alex: former EVP at Braze (the brief says "Brace"), led an 8-figure team, ~60k followers. Also mentions Twilio and AWS.</li>
+          <li>"AI answers reference LinkedIn ahead of Wikipedia, YouTube and news" (needs a source)</li>
+          <li>The weekly lead list with an ICP match score (name and format)</li>
+          <li>At least 5 posts a week as standard</li>
+        </ul>
+      </div>
+      <div class="panel bad-col">
+        <h3><span class="pill bad">Avoid</span> Do not use</h3>
+        <ul>
+          <li>Modelled meetings, pipeline and ARR (Deck V2)</li>
+          <li>"5x response rate" and "3 to 5x close rate" (said on calls)</li>
+          <li>"All engagement is organic"</li>
+          <li>Pipeline-dollar, contract-win or valuation claims, including both "Flywheel" case studies until they are confirmed</li>
+          <li>10x engagement, 721 and 532 LQLs, 65M decision makers (all dropped in Deck V3)</li>
+          <li>Team size (10, 15 and 20 have all been quoted). "0.0001% of people".</li>
+          <li>Any meeting guarantee</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:18px">
+      <strong>One client, three lead numbers</strong>
+      <p class="small" style="margin:0">Scott's case shows 43 warm ICP leads in Month 1 (VSL, Deck V3), 532 LQLs in 12 weeks (older calls) and 60 "high-intent enterprise leads" (case study PDF). These are probably three different definitions. A buyer who sees the ad and then the case study will notice, so keep public copy to the Month 1 figure.</p>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules">
+    <h2>Copy rules</h2>
+    <p class="intro">Hard rules from the brief and the VSL production notes. They apply to every ad, page and script.</p>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Never</h3>
+        <ul class="list isnot">
+          <li>Em dashes in client-facing copy</li>
+          <li>Claim Influx books calls or meetings</li>
+          <li>Surnames, company names or client photos in case studies</li>
+          <li>"$50k pipeline", impression guarantees, or invented Media Engine figures</li>
+          <li>Read the calendar URL on camera</li>
+          <li>Hype slogans</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Always</h3>
+        <ul class="list">
+          <li>Label results "documented example", never a promise of identical results</li>
+          <li>Define "lead" on screen whenever the 30-in-30 is stated</li>
+          <li>Use anonymised first names: "Ryan, GovTech" and "Scott, IT consulting"</li>
+          <li>Say "book a call" or "book a Discovery call"</li>
+          <li>Speak peer to peer: direct, commercial, in complete sentences</li>
+          <li>Treat time protection as equal to the lead promise</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN -->
+  <section id="open">
+    <h2>Open questions</h2>
+    <p class="intro">Inconsistencies across the sources that should be settled before ad spend scales.</p>
+    <div class="table-wrap">
+      <table class="wide">
+        <thead><tr><th>Question</th><th>What the sources say</th></tr></thead>
+        <tbody>
+          <tr><td><b>Guarantee wording</b></td><td>"You don't pay" (VSL, brief) vs "refund" and "money back" (Mario call). The trial is paid upfront.</td></tr>
+          <tr><td><b>Guarantee mechanics</b></td><td>What is refunded, when the 30 days start, and whether it is per brand. Not written anywhere yet.</td></tr>
+          <tr><td><b>Trial length</b></td><td>3 months (brief, Shikha) vs a 4-month term with the 4th free (Mario).</td></tr>
+          <tr><td><b>First-time approval</b></td><td>90% (Deck V3, calls) vs 95% (brief).</td></tr>
+          <tr><td><b>Lead definition</b></td><td>The brief counts profile views. Older calls counted comments and tracked clicks only.</td></tr>
+          <tr><td><b>Scott's lead number</b></td><td>43 (Month 1), 532 (12 weeks) or 60 (case study).</td></tr>
+          <tr><td><b>"Flywheel" case studies</b></td><td>Real clients with permission, or illustrative templates? Their method and metrics don't match the rest.</td></tr>
+          <tr><td><b>Capacity</b></td><td>"Limited installs, finite on purpose" (VSL) vs "elastic, can absorb new clients" (brief).</td></tr>
+          <tr><td><b>Alex's EVP role</b></td><td>"Brace" (brief) vs Braze (calls). Can past employers be named in ads?</td></tr>
+          <tr><td><b>Done-with-you tier</b></td><td>Mentioned once to Mario. Does it exist?</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>Built from: Influx Company and Offer Brief (06 Oct 2026), Authority Engine Deck V3 and V2, Meta VSL "30 in 30" V2 (22 Sep 2026), case studies, and 9 sales and discovery calls (11 Aug to 30 Sep 2026).</span>
+    <span>Prospects are referred to by first name and company type only. Internal document. It contains pricing and call excerpts.</span>
+  </footer>
+</main>
+</div>
+</div>
+<script>
+(function(){
+  try{
+    var links=[].slice.call(document.querySelectorAll('.toc a'));
+    var byId={};links.forEach(function(a){byId[a.getAttribute('href').slice(1)]=a});
+    if(!('IntersectionObserver' in window))return;
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active')});var a=byId[e.target.id];if(a)a.classList.add('active');}
+      });
+    },{rootMargin:'-15% 0px -75% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s)});
+  }catch(err){}
+})();
+</script>
+</body>
+</html>
