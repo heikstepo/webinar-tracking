@@ -68,7 +68,7 @@ Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten 
 Klick auf die Ad und schau dir an, wie wir dir so ein System aufbauen können.
 ```
 
-## Creative 2.2 (edit, 297 Wörter, vorher 280)
+## Creative 2.2 (edit, 305 Wörter, vorher 280)
 
 ```
 Q4 macht die einen Ecom Brands richtig reich… und die anderen broke…
@@ -91,7 +91,9 @@ Dann zahlen die für jeden Kunden auf einmal mehr, als sie an ihm verdienen…
 
 Und müssen ihr Budget genau dann runterfahren, wenn die Leute am meisten kaufen.
 
-Was du stattdessen brauchst, ist gar nicht so kompliziert…
+Und wenn du dieses Q4 nicht zu denen gehören willst…
+
+Dann brauchst du einfach ein anderes Setup…
 
 Vorne VSL Ads statt nur ein paar UGCs… dahinter ein fettes Listicle oder Advertorial statt der Produktseite…
 
