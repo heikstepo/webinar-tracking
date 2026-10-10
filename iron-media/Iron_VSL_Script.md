@@ -43,15 +43,17 @@ Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… i
 
 Wenn du bei 100, 200, 500k im Monat bist, dann sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
-Du hast ein Produkt, das funktioniert… 2, 3 Winning Ads, die den Großteil vom Umsatz tragen… und der komplette Traffic geht auf die Produktseite.
+Du hast ein Produkt, das funktioniert… ein paar Ads, die ganz gut laufen… und der Umsatz kommt irgendwie auch rein.
 
 Und das hat dich bis hierhin auch gut gebracht, keine Frage.
 
 Aber jedes Mal, wenn du das Budget hochdrehst, passiert dasselbe… der CPA geht hoch, die Marge geht runter und irgendwann fährst du wieder zurück.
 
-Weil auf der Produktseite halt nur die Leute kaufen, die eh schon wissen, dass sie dein Produkt wollen… und von denen gibt's nicht unendlich viele.
+Weil der meiste Traffic halt immer noch auf der Produktseite landet… und da kaufen nur die, die eh schon wissen, dass sie dein Produkt wollen.
 
-Dann brennen die Winner aus… du versuchst sie zu kopieren… und jede Version läuft ein bisschen schlechter als die davor.
+Und von denen gibt's nicht unendlich viele.
+
+Dann brennen die guten Ads irgendwann aus… du versuchst sie zu kopieren… und jede Version läuft ein bisschen schlechter als die davor.
 
 Und irgendwann kommt der Moment, wo du denkst, okay, ich brauch einfach mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer.
 
