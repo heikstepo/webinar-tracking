@@ -112,4 +112,28 @@ Klar… günstig sind wir nicht.
 Je nach Umfang kostet dich das [PREIS: X bis X] im Monat…
 
 Aber wenn im Schnitt 1,4 Mio zusätzlich in den ersten 3 Monaten reinkommen… ist das eher ein No Brainer.
+
+[BLOCK 6: FÜR WEN DAS IST UND FÜR WEN NICHT]
+
+Das gilt aber halt nur, wenn deine Brand auch ein Fit ist…
+
+Heißt, du machst schon mindestens 100k im Monat… und hast Bock, das die nächsten 3 Monate richtig durchzuziehen.
+
+Und dein Produkt muss funktionieren… zaubern können wir nämlich auch nicht.
+
+Wenn du noch unter 100k bist… oder einfach den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt…
+
+Dann sind wir für dich ehrlich gesagt nicht die Richtigen.
+
+Und falls ich dich damit gerade disqualifiziert hab… tut mir nicht leid.
+
+Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst.
+
+Wir haben es auch überhaupt nicht nötig, jeden zu nehmen…
+
+Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
+
+Weil am Ende jede Brand, die bei uns nicht läuft, auf mich zurückfällt.
+
+Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study wirst.
 ```
