@@ -238,6 +238,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **Kongruenz im Mechanismus (Heik, 1.3):** Nicht 2 Konzepte nebeneinanderstellen, die nicht auseinander folgen ("Winner weiterbauen mit neuen Hooks" und "mehrere Angles/Gründe"). Ein Begriff zieht sich als Kette durch: Grund des Winners finden → auf diesem Grund neue Ads bauen (neue Hooks, Bilder, Creators) → nächsten Grund finden → jeder Grund bekommt seinen Funnel. Fachwörter wie "Angle" durch das ersetzen, was sie meinen ("Grund, warum Leute kaufen"), und mit einem Beispiel belegen.
 
+**Zeilenanfänge variieren (Heik, 2.3):** Nicht mehrere Zeilen hintereinander mit "Und" anfangen ("und und und"). Und auch nicht dasselbe Wort in 2 aufeinanderfolgenden Zeilen ("vorbereitet sind… / vorbereitest"). Beim Edit die ersten Wörter jeder Zeile untereinander lesen.
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |
