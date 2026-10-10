@@ -41,27 +41,19 @@ Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… i
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
-Wenn du bei 100, 200, 500k im Monat bist, dann sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
+Wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
-Du hast ein Produkt, das funktioniert… ein paar Ads, die ganz gut laufen… und der Umsatz kommt irgendwie auch rein.
+Das Produkt funktioniert… die Ads laufen… und eigentlich läuft's ja auch ganz gut.
 
-Und das hat dich bis hierhin auch gut gebracht, keine Frage.
+Aber sobald du das Budget hochdrehst, wird's zäh… der CPA geht hoch und die Marge runter.
 
-Aber jedes Mal, wenn du das Budget hochdrehst, passiert dasselbe… der CPA geht hoch, die Marge geht runter und irgendwann fährst du wieder zurück.
+Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen laufen nicht mehr so wie die alten.
 
-Weil der meiste Traffic halt immer noch auf der Produktseite landet… und da kaufen nur die, die eh schon wissen, dass sie dein Produkt wollen…
+Also machst du mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer.
 
-Und von denen gibt's nicht unendlich viele.
+Und wenn das so bleibt, stehst du in 12 Monaten immer noch da, wo du heute bist… nur mit deutlich mehr Arbeit.
 
-Dann brennen die guten Ads aus… du versuchst sie zu kopieren… und jede Version läuft ein bisschen schlechter als die davor.
+Das Ding ist… an deinem Produkt liegt's fast nie.
 
-Und irgendwann kommt der Moment, wo du denkst, okay, ich brauch einfach mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer.
-
-Das macht's in den allermeisten Fällen aber einfach nur teurer.
-
-Und wenn das so bleibt, hängst du in 12 Monaten immer noch beim selben Umsatz… arbeitest mehr als je zuvor… und jeder Monat ist ein Glücksspiel, ob die Ads noch laufen.
-
-Das Ding ist nur… an deinem Produkt liegt's fast nie.
-
-Es liegt daran, was passiert, nachdem jemand auf deine Ad klickt… und genau da setzen wir an, um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
+Es liegt daran, dass dein ganzes Setup nur die Leute abholt, die eh schon kaufen wollen… und genau da setzen wir an, um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 ```
