@@ -236,6 +236,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **Sprechbar schreiben (Heik hat 1.3 laut gelesen und ist gestolpert):** Stolperfallen sind ein Personenwechsel mitten im Block (wir → du), Passiv ("wird weitergebaut"), Zahlen dicht hintereinander ("2, 3 Ads… 3, 4 Angles"), "z.B." (liest sich laut schlecht), "?…" nach Fragen und Aufzählungen mit 4 Punkten. Lösung: eine Person pro Block, aktiv, höchstens 3 parallele Punkte, Zahlen nicht stapeln, "also" statt "z.B.".
 
+**Kongruenz im Mechanismus (Heik, 1.3):** Nicht 2 Konzepte nebeneinanderstellen, die nicht auseinander folgen ("Winner weiterbauen mit neuen Hooks" und "mehrere Angles/Gründe"). Ein Begriff zieht sich als Kette durch: Grund des Winners finden → auf diesem Grund neue Ads bauen (neue Hooks, Bilder, Creators) → nächsten Grund finden → jeder Grund bekommt seinen Funnel. Fachwörter wie "Angle" durch das ersetzen, was sie meinen ("Grund, warum Leute kaufen"), und mit einem Beispiel belegen.
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |
