@@ -13,19 +13,35 @@ Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Medi
 
 Und keine Sorge… hier kommen jetzt keine 3 geheimen Steps, kein magischer ROAS… und auch kein Call, in dem dich irgendwer eine Dreiviertelstunde in Ratenzahlung belabert.
 
-Ich zeig dir in den nächsten paar Minuten einfach, wie wir das machen, für wen das ist… und für wen halt auch nicht.
+Ich zeig dir gleich ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
+
+Aber vorher kurz, mit wem wir das schon gemacht haben…
+
+[PROOF]
+
+IM8 von David Beckham haben wir von Tag 1 mit aufgebaut… die haben im ersten Jahr knapp 100 Millionen gemacht, steht so auch in deren Pressemitteilung.
+
+Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Supplement Brand in Deutschland.
+
+Aber eben auch Brands, die genau da angefangen haben, wo du jetzt stehst…
+
+NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leuten im Team.
+
+Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.
+
+Allein dieses Jahr über 30 Brands auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
 
 [SOFT CTA]
 
-Und wenn du jetzt schon weißt, dass du da Bock drauf hast… dann musst du dir den Rest hier eigentlich gar nicht angucken.
+Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann musst du dir den Rest hier eigentlich gar nicht mehr angucken.
 
 Unter diesem Video kannst du dir direkt einen Termin buchen… da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das bei dir funktioniert.
 
-Für alle anderen… bleib noch kurz dran.
+Für alle anderen… lass uns mal kurz anschauen, wo du gerade stehst.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
-Wenn du gerade bei 100, 200, 500k im Monat stehst, dann sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
+Wenn du bei 100, 200, 500k im Monat bist, dann sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
 Du hast ein Produkt, das funktioniert… 2, 3 Winning Ads, die den Großteil vom Umsatz tragen… und der komplette Traffic geht auf die Produktseite.
 
