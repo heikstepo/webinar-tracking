@@ -49,17 +49,17 @@ Und das hat dich bis hierhin auch gut gebracht, keine Frage.
 
 Aber jedes Mal, wenn du das Budget hochdrehst, passiert dasselbe… der CPA geht hoch, die Marge geht runter und irgendwann fährst du wieder zurück.
 
-Weil der meiste Traffic halt immer noch auf der Produktseite landet… und da kaufen nur die, die eh schon wissen, dass sie dein Produkt wollen.
+Weil der meiste Traffic halt immer noch auf der Produktseite landet… und da kaufen nur die, die eh schon wissen, dass sie dein Produkt wollen…
 
 Und von denen gibt's nicht unendlich viele.
 
-Dann brennen die guten Ads irgendwann aus… du versuchst sie zu kopieren… und jede Version läuft ein bisschen schlechter als die davor.
+Dann brennen die guten Ads aus… du versuchst sie zu kopieren… und jede Version läuft ein bisschen schlechter als die davor.
 
 Und irgendwann kommt der Moment, wo du denkst, okay, ich brauch einfach mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer.
 
 Das macht's in den allermeisten Fällen aber einfach nur teurer.
 
-Und wenn das so bleibt, hängst du in 12 Monaten immer noch bei denselben 300k… arbeitest mehr als je zuvor… und jeder Monat ist ein Glücksspiel, ob die Ads noch laufen.
+Und wenn das so bleibt, hängst du in 12 Monaten immer noch beim selben Umsatz… arbeitest mehr als je zuvor… und jeder Monat ist ein Glücksspiel, ob die Ads noch laufen.
 
 Das Ding ist nur… an deinem Produkt liegt's fast nie.
 
