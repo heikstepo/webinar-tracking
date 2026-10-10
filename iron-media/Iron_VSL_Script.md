@@ -43,21 +43,31 @@ Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
-Wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
+Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir genauso aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
-Das Produkt funktioniert… die Ads bringen Umsatz… und eigentlich passt das ja auch.
+Product Market Fit ist da… die Ads bringen Umsatz… und eigentlich passt das ja auch.
 
 Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
 
-Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
+Die Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
-Also machst du mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer.
+Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer.
 
-Und wenn das so bleibt, stehst du in 12 Monaten immer noch da, wo du heute bist… nur mit deutlich mehr Arbeit.
+Das Ding ist… das Problem liegt ganz woanders.
 
-Das Ding ist… an deinem Produkt liegt's fast nie.
+Bis jetzt haben deine Ads fast nur Leute erreicht, die dein Produkt eh schon wollten… deine kleine Käuferblase.
 
-Es liegt daran, dass dein ganzes Setup nur die Leute abholt, die eh schon kaufen wollen… und genau da setzen wir an, um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
+Sobald du aber das Budget hochdrehst, gehst du raus aus dieser Blase… und rein in die Masse.
+
+Die kennt dich nicht, ist skeptisch und hat Einwände…
+
+Und genau die schickst du dann auf dieselbe Produktseite wie vorher… und die ist halt nur für Leute gebaut, die schon überzeugt sind.
+
+Heißt, da können deine Ads so gut sein, wie sie wollen… die Masse kauft da trotzdem nicht.
+
+Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal, wie viel Geld du noch reinsteckst.
+
+Genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 
 [BLOCK 3: WIE WIR DICH DAHIN BRINGEN]
 
