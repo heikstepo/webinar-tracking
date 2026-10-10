@@ -17,7 +17,9 @@ Ich zeig dir gleich ganz stumpf, wie wir das machen, für wen das ist… und fü
 
 [PROOF]
 
-Wir haben das by the way auch bei IM8 von David Beckham gemacht… von Tag 1 an, im ersten Jahr knapp 100 Millionen Umsatz, steht so auch in deren Pressemitteilung.
+Bei IM8 von David Beckham hat das zum Beispiel ganz gut funktioniert…
+
+Die haben wir von Tag 1 mit aufgebaut… im ersten Jahr knapp 100 Millionen Umsatz, steht so auch in deren Pressemitteilung.
 
 Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Supplement Brand in Deutschland.
 
