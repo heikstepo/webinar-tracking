@@ -56,3 +56,18 @@ Ablauf: TLDR "Ansturm zu heftig, mussten schließen" → Anti-Funnel-Opener ("Dr
 | 7 | CTA + was im Call passiert | 5:45–6:45 | Ein klarer nächster Schritt | Termin unter dem Video, Formular (URL, echte Zahlen inkl. Marge, Team), Call mit CSM = Analyse deines Accounts, ehrliches Fit/kein Fit, bei Fit Roadmap. Sign-off | "keine Sales Skripte, keine Einwandbehandlung", "geil für dich und für uns" |
 
 Offen: Preis-Spanne in der VSL? "Eine Marke pro Nische" belegbar? Q4-Zeile für die Q4-Ads?
+
+## Struktur v2 (Heiks Feedback)
+
+Frame: Das Offer ("in den nächsten 3 Monaten von 100–500k auf 1 Mio im Monat") ist der Einstieg und kommt in jedem Block wieder. Soft CTA bei ca. 10–20 %.
+
+| # | Block | Zeit | Job | Bezug zum Offer |
+|---|---|---|---|---|
+| 1 | Einstieg mit dem Offer | 0:00–0:40 | Offer als erster Satz, wer ich bin, was das Video zeigt, kurzer Anti-Funnel-Satz | Das Offer wird gesetzt |
+| – | Soft CTA | ca. 0:40–0:55 | "Wenn du schon weißt, dass du das willst, buch dir unter dem Video direkt deinen Analyse-Call. Alle anderen: bleib dran." | Der Weg zum Offer ist der Call |
+| 2 | Situationsanalyse + Konsequenzen | 0:55–2:00 | Wo du gerade stehst (Traffic nur auf der Produktseite, 2–3 Winner tragen alles, mehr Ads/Leute helfen nicht) und was es kostet, wenn das so bleibt | Warum du ohne Änderung nicht auf 1 Mio kommst |
+| 3 | Wie wir dich da rausholen | 2:00–3:15 | Mit Ugly Funnels von der Situation zum Ziel: Grund → Ads → Funnel pro Bewusstseinsstufe → Cold Traffic Offer + Upsells | So kommst du in 3 Monaten auf 1 Mio |
+| 4 | Proof | 3:15–4:00 | IM8, More/ESN, FT/Statista, 500+, 30 dieses Jahr, Ø 1,4 Mio extra in den ersten 3 Monaten, 1 Case aus 100–500k | Das Offer ist realistisch |
+| 5 | Genaue Umsetzung | 4:00–5:00 | Analyse → Roadmap → Sparringpartner 1:1 → Pool. Wir schalten nichts ab, was läuft. Preis-Frame | Was in den 3 Monaten passiert |
+| 6 | Für wen es ist und für wen nicht | 5:00–6:00 | Exclusivity mit Begründung | Für wen das Offer gilt |
+| 7 | CTA + was im Call passiert | 6:00–7:00 | Analyse-Call mit CSM, Fit-Check, Roadmap | Dein erster Schritt zur 1 Mio |
