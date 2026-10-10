@@ -101,9 +101,7 @@ Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
 Und so laufen die 3 Monate bei dir dann ganz konkret ab…
 
-Am Anfang gehen wir einmal durch deine Ads, deine Funnels und deine echten Zahlen…
-
-Und gleichen das mit über 500 anderen Brands ab, mit denen wir schon gearbeitet haben.
+Am Anfang gehen wir einmal durch deine Ads, deine Funnels und deine echten Zahlen.
 
 Daraus bekommst du eine Roadmap, in der genau drinsteht, was bei dir wann dran ist.
 
