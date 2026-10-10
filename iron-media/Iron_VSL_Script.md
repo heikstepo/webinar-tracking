@@ -7,7 +7,7 @@ Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
 
 Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat zu skalieren… mit unserem Ugly Funnel System.
 
-Und dir parallel dein eigenes Team aufzubauen… damit du am Ende nicht von uns abhängig bist.
+Und dir parallel dein eigenes Team aufzubauen… damit die 1 Mio am Ende auch bleibt.
 
 Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media machen wir eigentlich den ganzen Tag nichts anderes.
 
@@ -101,7 +101,7 @@ Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
 Und so laufen die 3 Monate bei dir dann ganz konkret ab…
 
-[DELIVERABLES: was du in den 3 Monaten genau bekommst und wie die Zusammenarbeit läuft… am Ende eine Heißt-Line, die das zusammenfasst und an "eigenes Team aufbauen, nicht von uns abhängig" aus Block 1 anknüpft]
+[DELIVERABLES: was du in den 3 Monaten genau bekommst und wie die Zusammenarbeit läuft… am Ende eine Heißt-Line, die das zusammenfasst und an "eigenes Team aufbauen… damit die 1 Mio am Ende auch bleibt" aus Block 1 anknüpft]
 
 Und ganz wichtig… wir schalten nichts ab, was bei dir gerade funktioniert.
 
