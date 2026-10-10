@@ -36,3 +36,23 @@ Ablauf: TLDR "Ansturm zu heftig, mussten schließen" → Anti-Funnel-Opener ("Dr
 - Ein CTA: Call buchen. Das Formular fragt die Daten ab, und im Call bekommt man seine Roadmap. Keine anderen Ausgänge.
 - Proof kurz und stark. Raus fliegen die Gerichtsgeschichte, Ego-Abschweifungen und Feature-Listen.
 - Done with you ehrlich benennen (Sparringpartner), damit Sales nicht korrigieren muss.
+
+## Entscheidungen (Heik)
+
+- CTA: Call mit einem Customer Success Manager, als Analyse framen ("schauen, ob es ein Fit ist").
+- "Im Schnitt 1,4 Mio zusätzlicher Umsatz in den ersten 3 Monaten" stimmt.
+- Mindestanforderung: 100k im Monat.
+
+## Struktur v1 (Ziel 6–8 Min, ca. 900–1.100 Wörter)
+
+| # | Block | Zeit | Job | Inhalt | Lingo aus den alten VSLs |
+|---|---|---|---|---|---|
+| 1 | Einstieg | 0:00–0:40 | Zuschauer abholen, Offer nennen, Exclusivity säen | Wer ich bin, woher du kommst (Ad), das Offer (100–500k → 1 Mio/Monat in 3 Monaten), was das Video zeigt: wie, für wen, für wen nicht | "keine 3 geheimen Steps, kein magischer ROAS" |
+| 2 | Warum du feststeckst | 0:40–1:40 | Brücke zu allen Ad-Angles | Traffic nur auf die Produktseite, Winner brennen aus ohne System, mehr Ads/mehr Leute lösen es nicht | – |
+| 3 | Was wir machen | 1:40–3:00 | Mechanismus kurz, kongruent mit den Ads | Grund, warum Kunden kaufen → Ads darauf → Ugly Funnel pro Bewusstseinsstufe → Cold Traffic Offer + Upsells, dazu ein "Heißt" | "Ugly Funnels, Advertorials, Listicles… sehen scheiße aus, konvertieren wie Sau" |
+| 4 | Proof | 3:00–3:45 | Glauben, dass es auch bei mir klappt | IM8 von Tag 1 (Pressemitteilung), More/ESN, FT/Statista, 500+, 30 dieses Jahr, Ø 1,4 Mio extra in den ersten 3 Monaten, 1 Case aus 100–500k außerhalb von Supplements | IM8 + Pressemitteilung, FT/Statista |
+| 5 | Wie die Zusammenarbeit läuft | 3:45–4:45 | DWY ehrlich, Einwände Zeit/Kurs/Risiko | Mit dir, nicht für dich: Analyse → Roadmap → Sparringpartner (CSM 1:1, weekly, Slack) → Leute aus dem Pool. Wir schalten nichts ab, was läuft. Preis-Frame | "teuer, aber No Brainer… 1,4 Mio extra" |
+| 6 | Für wen es ist und für wen nicht | 4:45–5:45 | Exclusivity mit Begründung | Min. 100k/Monat, PMF, Founder setzt um. "Wir haben es nicht nötig… schlechter Kunde schadet mir mehr… geile Case Study" | "tut mir nicht leid" |
+| 7 | CTA + was im Call passiert | 5:45–6:45 | Ein klarer nächster Schritt | Termin unter dem Video, Formular (URL, echte Zahlen inkl. Marge, Team), Call mit CSM = Analyse deines Accounts, ehrliches Fit/kein Fit, bei Fit Roadmap. Sign-off | "keine Sales Skripte, keine Einwandbehandlung", "geil für dich und für uns" |
+
+Offen: Preis-Spanne in der VSL? "Eine Marke pro Nische" belegbar? Q4-Zeile für die Q4-Ads?
