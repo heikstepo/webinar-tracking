@@ -224,7 +224,7 @@ Also… wenn du eine 7 stellige Marke hast und 100, 200, 500.000 € Tagesumsatz
 Klick auf die Ad, check den Prozess ab.
 ```
 
-## Creative 3.3 (edit, 315 Wörter, vorher 312)
+## Creative 3.3 (edit, 314 Wörter, vorher 312)
 
 ```
 Real talk… Jeder in der Ecom Szene labert über Bewusstseinsstufen…
@@ -241,9 +241,11 @@ Allein dieses Jahr über 30 Stück.
 
 Jeder Markt hat 5 Bewusstseinsstufen… und jede bekommt ihre eigene Creative Strategy und ihren eigenen Funnel.
 
-Ganz unten sind die Leute, die noch gar nicht wissen, dass sie ein Problem haben… und die, die es zwar kennen, aber noch keine Lösung suchen.
+Ganz unten sind die, die noch gar nicht wissen, dass sie ein Problem haben…
 
-Die bekommen eine VSL Ad, die ihnen ihr Problem erst mal erklärt… und dahinter ein Advertorial, das sie aufklärt.
+Direkt darüber die, die es wissen, aber noch keine Lösung suchen.
+
+Beide bekommen eine VSL Ad, die ihnen ihr Problem erst mal erklärt… und dahinter ein Advertorial, das sie aufklärt.
 
 In der Mitte sind die, die schon nach einer Lösung suchen und wahrscheinlich schon 3 Sachen ausprobiert haben.
 
