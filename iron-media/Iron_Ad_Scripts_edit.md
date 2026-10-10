@@ -315,3 +315,53 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
+
+## Creative 5.3 (edit, 380 Wörter, vorher 387)
+
+```
+Jeder in der Ecom Szene will dir gerade irgendein Geheimnis oder Shiny Object verkaufen…
+
+Ich seh das die ganze Zeit in diesen Ads…
+
+Ein Ebook, eine Masterclass, den einen Hack, den angeblich keiner kennt…
+
+Aber das Ding ist…
+
+Und jeder, der mich kennt, weiß, ich bin real, was solche Sachen angeht…
+
+Es läuft am Ende jedes Mal auf dieselben 2 Sachen raus… Creative Strategy und Direct Response Funnels.
+
+Klar, kann man dem Ganzen coole neue Namen geben…
+
+Aber die Brands, die wirklich von 7 auf 8 stellig gehen, machen nichts anderes als diese 2 Sachen… nur halt richtig.
+
+Und das sag ich dir nicht einfach so… ich mach mit meiner Firma Iron seit Jahren nichts anderes.
+
+Wir haben mittlerweile mit über 500 Marken gearbeitet… und allein dieses Jahr über 30 davon auf 8 stellig gebracht.
+
+Und bei jeder einzelnen lief es am Ende genau darauf hinaus.
+
+Am Anfang steht immer Research… warum deine Kunden wirklich kaufen und was sie vorher schon alles ausprobiert haben.
+
+Und darauf bauen wir dann VSL Ads, die richtig tief psychologisch reingehen… und die Leute innerhalb von 3 bis 5 Minuten zu zahlenden Kunden machen.
+
+Die landen dann nicht auf der Produktseite, sondern auf so hässlichen Direct Response Funnels… Advertorials, Listicles, die natürlich scheiße aussehen, aber konvertieren wie Sau.
+
+Heißt, 5 Minuten Video Ad, 10 Minuten Advertorial, 5 Minuten Einwandbehandlung, Checkout…
+
+Und plötzlich kauft jemand, der morgens aufgestanden ist und noch nicht mal wusste, dass er dein Produkt braucht.
+
+Vorne holst du damit über 100 € AOV, bist mit 20 bis 25 % Marge schon im Frontend profitabel…
+
+Und mit den Upsells und Downsells dahinter landest du bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
+
+Heißt, du kannst 2 bis 3 mal so viel für einen Kunden ausgeben wie deine Konkurrenz… und reichst mit 3 bis 5 neuen Ads die Woche, statt jede Woche 30 neue Batches rauszuballern.
+
+Das war's. Kein Geheimnis, kein Hack… einfach saubere Arbeit in der richtigen Reihenfolge.
+
+Genau so haben wir [CASE: Brand] von X auf X im Monat gebracht.
+
+Also… falls du deine ecom brand von 7 auf 8 stellig skalieren willst und diese ganzen shiny objects satt hast…
+
+Klick auf die Ad und check das video ab was ich gedreht habe was genau erklärt wie wir dir helfen könnten.
+```
