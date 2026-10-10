@@ -77,19 +77,27 @@ Genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat 
 
 Und das machen wir mit dem, was wir intern Ugly Funnels nennen…
 
-Als Erstes schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst.
+Das sind im Grunde 3 Phasen, die aufeinander aufbauen.
 
-Darauf bauen wir dann VSL Ads, die genau dieses Problem ansprechen… und so auch Leute abholen, die deine Brand noch nie gesehen haben.
+Phase 1 ist Research…
 
-Und die schicken wir dann nicht auf die Produktseite… sondern auf eine Seite, die genau zu ihrer Bewusstseinsstufe passt.
+Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst.
 
-Wer dich noch nicht kennt, bekommt ein langes Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
+Phase 2 ist das Fundament…
 
-Wer dich schon kennt, eine kurze Seite, die nur noch die letzten Einwände ausräumt.
+Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite.
+
+Wer dich noch nicht kennt, landet auf einem langen Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
+
+Wer dich schon kennt, auf einer kurzen Seite, die nur noch die letzten Einwände ausräumt.
 
 Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
 
 Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, damit jeder Käufer hinten raus noch mal mehr Geld bei dir lässt.
+
+Erst in Phase 3 skalieren wir dann…
+
+Mit VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
