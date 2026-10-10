@@ -9,17 +9,11 @@ Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat z
 
 Und dir parallel dein eigenes Team aufzubauen… damit die 1 Mio am Ende auch bleibt.
 
-Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media machen wir eigentlich den ganzen Tag nichts anderes.
-
-Und keine Sorge… hier kommen jetzt keine 3 geheimen Steps, kein magischer ROAS… und auch kein Call, in dem dich irgendwer eine Dreiviertelstunde in Ratenzahlung belabert.
-
-Ich zeig dir gleich ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
-
 [PROOF]
 
-Bei IM8 von David Beckham hat das zum Beispiel ganz gut funktioniert…
+Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir unter anderem IM8 von David Beckham von Tag 1 mit aufgebaut…
 
-Die haben wir von Tag 1 mit aufgebaut… im ersten Jahr knapp 100 Millionen Umsatz, steht so auch in deren Pressemitteilung.
+Im ersten Jahr knapp 100 Millionen Umsatz… steht so auch in deren Pressemitteilung.
 
 Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Supplement Brand in Deutschland.
 
@@ -37,7 +31,11 @@ Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann 
 
 Unter diesem Video kannst du dir direkt einen Termin buchen… da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das bei dir funktioniert.
 
-Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt ganz genau, wie das funktioniert.
+Keine Sorge… da belabert dich keiner eine Dreiviertelstunde in irgendeine Ratenzahlung.
+
+Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
+
+Ich zeig dir jetzt ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
