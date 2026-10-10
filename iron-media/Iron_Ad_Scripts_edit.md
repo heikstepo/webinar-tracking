@@ -165,3 +165,63 @@ Also… wenn du dein Ecom Brand in Q4 von 7 auf 8 stellig skalieren willst…
 
 Klick auf die Ad… da siehst du, wie wir das mit dir noch vor Black Friday aufbauen.
 ```
+
+## Creative 3.2 (edit, 355 Wörter inkl. Regie, vorher 346)
+
+```
+(Vorher: 4 Schritte an die Tafel schreiben und abdecken: VSL Ads → Listicle → Checkout → Upsell)
+
+Ich habe einen kleinen Funfact für dich…
+
+Denn alle Marken, bei denen es dieses Jahr so richtig läuft… und ich meine über 1 Million Monatsumsatz konstant, mit 150 bis 500.000 € Profit im Monat…
+
+Nutzen Direct Response Funnels.
+
+Und ich zeig dir mal, wie das aussieht.
+
+(Schritt 1 aufdecken)
+
+Ganz vorne nutzen die VSL Ads, also massenpsychologisch konvertierende Longform Videos, auf eiskalten Traffic.
+
+Oft über Partnership Ads mit Influencern…
+
+Und zusätzlich Bannerwerbung über Native Ads, um eine ältere Zielgruppe abzuholen.
+
+(Schritt 2 aufdecken)
+
+Und die schicken sie nicht auf die Produktseite, sondern auf Advertorials und Listicles… oft sogar auf Drittseiten.
+
+So kommen jeden Tag tausende Leute in den Shop, die noch nie von der Brand gehört haben…
+
+(Schritt 3 aufdecken)
+
+Aber trotzdem bereit sind, dreistellige AOVs jeden Tag auszugeben.
+
+(Schritt 4 aufdecken)
+
+Und das Signature ist dann, dahinter so eine Upsell und Downsell Kette zu haben, die den AOV noch mal doppelt pusht.
+
+Und mit so einem System musst du auch nicht mehr jeden Tag 1.000 neue Hooks testen…
+
+Weil so eine Longform Ad easy 100 bis 200.000 € Adspend aushält, bevor sie ausbrennt…
+
+Und du dann genau weißt, wie du die nächste baust.
+
+Und ich weiß das, weil wir hinter den meisten Marken davon stecken.
+
+Meine Firma Iron Media, laut Statista und Financial Times die schnellstwachsende Ecom Growth Firma Europas, hat genau das die letzten Jahre perfektioniert.
+
+Wir arbeiten mit reihenweise Marken auf 8 und 9 stelligem Level zusammen, um genau diese Multifunnel Konstrukte für die Brands aufzubauen.
+
+Und wenn du jetzt FOMO bekommst, ist das genau der richtige Impuls.
+
+Klick mal auf die Ad hier, da siehst du den ganzen Prozess… und kannst dort einen Platz bei uns anfragen, dass wir das auch bei dir umsetzen.
+
+Kleine Vorwarnung… wir sind verdammt teuer, aber es lohnt sich.
+
+Denn alle Marken, die mit uns arbeiten, haben so viel Erfolg, dass sie durchschnittlich über 2 Jahre mit uns arbeiten.
+
+Also… wenn du eine 7 stellige Marke hast und 100, 200, 500.000 € Tagesumsatz zur Norm machen willst…
+
+Klick auf die Ad, check den Prozess ab.
+```
