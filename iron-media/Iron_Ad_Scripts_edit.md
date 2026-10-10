@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 240 Wörter, vorher 283, Fix nach Seb: Winner auseinandernehmen, iterieren, 3–4 Angles mit eigenem Ugly Funnel)
+## Creative 1.3 (edit, 227 Wörter, vorher 283, Fix-Teil sprechbar gemacht)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -49,19 +49,21 @@ Da ist halt kein klares System dahinter… Und der Fix dazu ist eigentlich recht
 
 Es wäre quasi genau das, was wir mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gemacht haben…
 
-Wir kopieren den Winner nicht einfach… wir nehmen ihn erst mal auseinander.
+Wir kopieren den Winner nicht einfach… sondern schauen uns erst mal an, WARUM der überhaupt funktioniert hat.
 
-War's die Hook? Das Argument? Der Proof? Das Offer?… erst wenn du das weißt, kannst du den nächsten bauen.
+Lag's an der Hook? Am Argument? Oder am Offer?
 
-Und dann wird der Winner Schritt für Schritt weitergebaut… neue Hooks, neue Bilder, ein anderer Mechanismus.
+Und wenn wir das wissen, bauen wir genau darauf die nächsten Ads auf.
 
-Und statt an 2, 3 Ads zu hängen, laufen am Ende 3, 4 Angles parallel… jeder mit seinem eigenen Ugly Funnel dahinter, wie z.B. Listicles, Advertorials und so weiter.
+So hängt am Ende nicht mehr alles an 2, 3 Ads… sondern an mehreren Angles gleichzeitig.
+
+Und jeder davon bekommt seinen eigenen Ugly Funnel… also ein eigenes Listicle oder Advertorial.
 
 Heißt, wenn mal eine Ad ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
 
-Genau so haben wir [CASE: Brand] nach X Monaten Plateau von X auf X im Monat gebracht… mit demselben Produkt und demselben Offer.
+Genauso haben wir bei Iron Media allein dieses Jahr über 30 Brands auf 8 stellig gebracht.
 
-Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten von 7 auf 8 stellig willst…
+Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten von 7 auf 8 stellig skalieren willst…
 
 Klick auf die Ad und schau dir an, wie wir dir so ein System aufbauen können.
 ```

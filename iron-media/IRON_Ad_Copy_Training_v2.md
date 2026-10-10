@@ -234,6 +234,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **Ein Gedanke nicht über viele Zeilen ziehen (Heik, 1.3):** Der Hook-Gedanke ("2, 3 Winner → brennen aus → kopieren → jede Version schlechter → keiner weiß warum") stand auf 5 Zeilen. Das wirkt langgezogen. Ein Gedanke bekommt eine Zeile, höchstens 2. Die "…"-Regel heißt nicht, einen Satz in viele Zeilen zu zerlegen. Sie gilt, wenn eine Zeile einen neuen Schritt bringt und der Gedanke trotzdem weiterläuft.
 
+**Sprechbar schreiben (Heik hat 1.3 laut gelesen und ist gestolpert):** Stolperfallen sind ein Personenwechsel mitten im Block (wir → du), Passiv ("wird weitergebaut"), Zahlen dicht hintereinander ("2, 3 Ads… 3, 4 Angles"), "z.B." (liest sich laut schlecht), "?…" nach Fragen und Aufzählungen mit 4 Punkten. Lösung: eine Person pro Block, aktiv, höchstens 3 parallele Punkte, Zahlen nicht stapeln, "also" statt "z.B.".
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |
