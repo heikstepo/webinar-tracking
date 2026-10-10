@@ -166,7 +166,7 @@ Also… wenn du dein Ecom Brand in Q4 von 7 auf 8 stellig skalieren willst…
 Klick auf die Ad… da siehst du, wie wir das mit dir noch vor Black Friday aufbauen.
 ```
 
-## Creative 3.2 (edit, 369 Wörter inkl. Regie, vorher 346)
+## Creative 3.2 (edit, 350 Wörter inkl. Regie, vorher 346)
 
 ```
 (Vorher: 4 Schritte an die Tafel schreiben und abdecken: VSL Ads → Listicle → Checkout → Upsell)
@@ -207,9 +207,7 @@ Weil so eine Longform Ad easy 100 bis 200.000 € Adspend aushält, bevor sie au
 
 Und du dann genau weißt, wie du die nächste baust.
 
-Und das weiß ich so genau, weil wir bei vielen dieser Marken mit über 1 Million im Monat selbst dahinterstecken.
-
-Meine Firma Iron Media, laut Statista und Financial Times die schnellstwachsende Ecom Growth Firma Europas, hat genau das die letzten Jahre perfektioniert.
+Und meine Firma Iron Media, laut Statista und Financial Times die schnellstwachsende Ecom Growth Firma Europas, hat genau das die letzten Jahre perfektioniert.
 
 Wir arbeiten mit reihenweise Marken auf 8 und 9 stelligem Level zusammen, um genau diese Multifunnel Konstrukte für die Brands aufzubauen.
 
