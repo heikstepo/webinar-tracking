@@ -223,3 +223,49 @@ Also… wenn du eine 7 stellige Marke hast und 100, 200, 500.000 € Tagesumsatz
 
 Klick auf die Ad, check den Prozess ab.
 ```
+
+## Creative 3.3 (edit, 315 Wörter, vorher 312)
+
+```
+Real talk… Jeder in der Ecom Szene labert über Bewusstseinsstufen…
+
+Aber fast keine Brand zwischen 100 und 500k im Monat setzt die auch richtig um…
+
+Und genau deswegen können die nicht skalieren… weil die mit UGCs und Produktseite nur die paar Leute erreichen, die eh schon kaufen wollen.
+
+Deswegen zeig ich dir mal, wie man Bewusstseinsstufen richtig umsetzt…
+
+So wie bei den Brands, die wir in meiner Firma Iron Media auf 8 stellig bringen…
+
+Allein dieses Jahr über 30 Stück.
+
+Jeder Markt hat 5 Bewusstseinsstufen… und jede bekommt ihre eigene Creative Strategy und ihren eigenen Funnel.
+
+Ganz unten sind die Leute, die noch gar nicht wissen, dass sie ein Problem haben… und die, die es zwar kennen, aber noch keine Lösung suchen.
+
+Die bekommen eine VSL Ad, die ihnen ihr Problem erst mal erklärt… und dahinter ein Advertorial, das sie aufklärt.
+
+In der Mitte sind die, die schon nach einer Lösung suchen und wahrscheinlich schon 3 Sachen ausprobiert haben.
+
+Die bekommen Ads, die zeigen, warum das alles nicht funktioniert hat… und dahinter ein Listicle, warum dein Produkt anders ist.
+
+Dann die, die dein Produkt schon kennen, aber noch zögern.
+
+Die bekommen Testimonials und eine Vergleichsseite.
+
+Und ganz oben die, die eigentlich schon kaufen wollen.
+
+Die bekommen nur noch ein klares Offer… und eine kurze Seite, die die letzten Einwände ausräumt.
+
+Und so erreichst du plötzlich nicht mehr nur die paar Leute ganz oben… sondern den ganzen Markt.
+
+Jede Stufe bekommt genau die Ad und die Seite, die sie braucht.
+
+Und genau deswegen kannst du dann auch das Budget hochdrehen, ohne dass dir die Marge einbricht.
+
+Genau darüber haben wir eine Brand von 500k im Monat auf über 2,3 Millionen im Monat gebracht.
+
+Also… wenn du gerade zwischen 100 und 500k im Monat machst und von 7 auf 8 stellig willst…
+
+Klick auf die Ad und check ab, wie wir das bei deiner Brand aufsetzen würden.
+```
