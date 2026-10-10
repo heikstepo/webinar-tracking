@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 249 Wörter, vorher 283, Fix-Teil sprechbar und konkret)
+## Creative 1.3 (edit, 256 Wörter, vorher 283, Fix als eine Kette: Grund → neue Ads auf dem Grund → nächster Grund → eigener Funnel)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -49,21 +49,17 @@ Da ist halt kein klares System dahinter… Und der Fix dazu ist eigentlich recht
 
 Es wäre quasi genau das, was wir mit meiner Firma Iron Media mit Brands wie IM8 von David Beckham, More Nutrition oder ESN gemacht haben…
 
-Wir kopieren den Winner nicht einfach… sondern schauen uns erst mal an, WARUM der überhaupt funktioniert hat.
+Wir kopieren den Winner nicht einfach… sondern schauen uns erst mal an, WARUM die Leute über diese Ad gekauft haben.
 
-Lag's an der Hook? Am Argument? Oder am Offer?
+Meistens steckt da ein ganz bestimmter Grund dahinter… bei einem Supplement zum Beispiel, weil sie endlich wieder durchschlafen wollen.
 
-Und wenn wir das wissen, bauen wir genau darauf die nächsten Ads auf.
+Und wenn du diesen Grund kennst, kannst du darauf so viele neue Ads bauen, wie du willst… mit neuen Hooks, neuen Bildern, neuen Creators.
 
-So hängt am Ende nicht mehr alles an 2, 3 Ads…
+Und dann suchst du dir den nächsten Grund… Stress, Energie und so weiter.
 
-Sondern du hast mehrere Gründe, warum Leute bei dir kaufen… und für jeden laufen eigene Ads.
+Jeder davon bekommt seinen eigenen Ugly Funnel… also ein eigenes Listicle oder Advertorial.
 
-Bei einem Supplement zum Beispiel einmal Schlaf… einmal Stress… einmal Energie.
-
-Und jeder davon bekommt seinen eigenen Ugly Funnel… also ein eigenes Listicle oder Advertorial.
-
-Heißt, wenn mal eine Ad ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
+Heißt, es hängt nicht mehr alles an 2, 3 Ads… und wenn mal eine ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
 
 Genauso haben wir bei Iron Media allein dieses Jahr über 30 Brands auf 8 stellig gebracht.
 
