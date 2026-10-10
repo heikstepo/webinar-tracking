@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 256 Wörter, vorher 283, Fix als eine Kette: Grund → neue Ads auf dem Grund → nächster Grund → eigener Funnel)
+## Creative 1.3 (edit, 266 Wörter, vorher 283, Fix als eine Kette: Grund → neue Ads auf dem Grund → nächster Grund → eigener Funnel)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -59,7 +59,9 @@ Und dann suchst du dir den nächsten Grund… Stress, Energie und so weiter.
 
 Jeder davon bekommt seinen eigenen Ugly Funnel… also ein eigenes Listicle oder Advertorial.
 
-Heißt, es hängt nicht mehr alles an 2, 3 Ads… und wenn mal eine ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
+Heißt, es hängt nicht mehr alles an 2, 3 Ads… sondern an mehreren Gründen, die gleichzeitig für dich verkaufen.
+
+Und wenn mal eine Ad ausbrennt, bricht nicht gleich dein ganzer Umsatz ein.
 
 Genauso haben wir bei Iron Media allein dieses Jahr über 30 Brands auf 8 stellig gebracht.
 
