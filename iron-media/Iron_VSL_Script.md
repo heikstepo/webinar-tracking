@@ -78,4 +78,22 @@ Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
 Und genau so kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
+
+[BLOCK 4: PROOF]
+
+Klingt vielleicht erst mal nach viel…
+
+Aber im Schnitt machen Brands, die mit uns arbeiten, in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
+
+Die Zahl hab ich mir auch nicht aus dem Arsch gezogen… das kommt raus, wenn wir alle unsere Accounts auswerten.
+
+Das geht halt, weil so eine VSL Ad mit dem passenden Funnel locker 100 bis 200k Adspend aushält, ohne auszubrennen…
+
+Und mit den Upsells bist du schon bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
+
+Das klappt übrigens auch nicht nur bei Supplements…
+
+[CASE: Brand außerhalb von Supplements] zum Beispiel von X auf X im Monat… in X Monaten.
+
+Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 ```
