@@ -316,7 +316,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 5.3 (edit, 376 Wörter, vorher 387)
+## Creative 5.3 (edit, 390 Wörter, vorher 387)
 
 ```
 Jeder in der Ecom Szene will dir gerade irgendein Geheimnis oder Shiny Object verkaufen…
@@ -349,9 +349,9 @@ Und die landen dann nicht auf der Produktseite… sondern auf so hässlichen Dir
 
 Die sehen zwar scheiße aus, konvertieren aber wie Sau…
 
-Erst 5 Minuten Video Ad… dann 10 Minuten Advertorial… dann Checkout.
+Weil die Leute da erst 5 Minuten deine Video Ad schauen… dann 10 Minuten das Advertorial lesen… und erst dann im Checkout landen.
 
-Und plötzlich kauft jemand, der morgens noch nicht mal wusste, dass er dein Produkt braucht.
+Und so kauft auf einmal jemand, der morgens noch nicht mal wusste, dass er dein Produkt braucht.
 
 Vorne holst du damit über 100 € AOV, bist mit 20 bis 25 % Marge schon im Frontend profitabel…
 
