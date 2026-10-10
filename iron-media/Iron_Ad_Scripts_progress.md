@@ -129,7 +129,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 6.3: Straight outcome based offer + mechanism (Entwurf v1)
+## Creative 6.3: Straight outcome based offer + mechanism (Entwurf v1, neuer CTA)
 
 ```
 Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
@@ -158,7 +158,7 @@ Und während das läuft, holen wir dir aus unserem Pool die Leute für Media Buy
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
-Klick auf die Ad und check ab, ob deine Brand reinpasst.
+Dann klick auf die Ad… und ich zeig dir genau, wie wir dich da hinbringen.
 ```
 
 ## Creative 8.1: Keine Zeit / leanes Team (Entwurf v11, grobe Schritte mit weil)
