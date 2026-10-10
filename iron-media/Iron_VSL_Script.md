@@ -5,9 +5,13 @@
 
 Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
 
-Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat zu skalieren… mit unserem Ugly Funnel System.
+Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat zu skalieren mit unserem Ugly Funnel System…
 
 Und dir parallel dein eigenes Team aufzubauen… damit die 1 Mio am Ende auch bleibt.
+
+In diesem Video zeig ich dir ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
+
+Ohne 3 geheime Steps, ohne magischen ROAS… und ohne langes Gelaber.
 
 [PROOF]
 
@@ -36,8 +40,6 @@ Unter diesem Video kannst du dir direkt einen Termin buchen… da schaut sich ei
 Keine Sorge… da belabert dich keiner eine Dreiviertelstunde in irgendeine Ratenzahlung.
 
 Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
-
-Ich zeig dir jetzt ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
