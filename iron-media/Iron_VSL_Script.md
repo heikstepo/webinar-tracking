@@ -37,7 +37,7 @@ Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann 
 
 Unter diesem Video kannst du dir direkt einen Termin buchen… da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das bei dir funktioniert.
 
-Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran, ich erklär dir jetzt, warum du gerade feststeckst und wie wir dich da rausholen.
+Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt ganz genau, wie das funktioniert.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
