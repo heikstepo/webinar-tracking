@@ -43,7 +43,11 @@ Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio
 
 Denn jeder schlechte Kunde schadet mir mehr als dem Kunden selbst.
 
-Falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
+Also, buche gerne den Call…
+
+Aber falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt ganz genau, wie die Zusammenarbeit mit Iron Media funktioniert…
+
+Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächsten 3 Monaten.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
@@ -55,9 +59,9 @@ Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
 
 Die Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
-Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer.
+Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer…
 
-Das Ding ist… das Problem liegt ganz woanders.
+Wobei das Problem eigentlich ganz woanders liegt.
 
 Bis jetzt holen deine Ads fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
 
@@ -81,11 +85,13 @@ Das sind im Grunde 3 Phasen, die aufeinander aufbauen.
 
 Phase 1 ist Research…
 
-Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst.
+Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst…
 
-Phase 2 ist das Fundament…
+Und welche Angles man für die Ads und die Funnels benutzen könnte.
 
-Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihre eigene Seite.
+Phase 2 ist dann das Fundament…
+
+Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihren eigenen Direct Response Funnel.
 
 Wer dich noch nicht kennt, landet auf einem langen Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
 
@@ -105,7 +111,11 @@ Und genau so kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat
 
 [BLOCK 4: PROOF]
 
-Klingt vielleicht erst mal nach viel…
+Es ist immer wieder derselbe Prozess…
+
+Und ich mach da auch überhaupt kein Geheimnis draus und verkauf dir irgendwelche random Ebooks…
+
+Das meiste zeig ich auch auf YouTube und Instagram, wo wir mit die größten in der deutschen Ecom Szene sind…
 
 Aber im Schnitt machen Brands, die mit uns arbeiten, in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
 
@@ -115,15 +125,15 @@ Das geht halt, weil so eine VSL Ad mit dem passenden Funnel locker 100 bis 200k 
 
 Und mit den Upsells bist du schon bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
 
-Das klappt übrigens auch nicht nur bei Supplements…
-
-[CASE: Brand außerhalb von Supplements] zum Beispiel von X auf X im Monat… in X Monaten.
+Das Ganze haben wir auch in allen möglichen Nischen und Märkten gemacht…
 
 Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
+[CASE: Brand außerhalb von Supplements] zum Beispiel von X auf X im Monat… in X Monaten.
+
 [BLOCK 5: GENAUE UMSETZUNG]
 
-Und so laufen die 3 Monate bei dir dann ganz konkret ab…
+Und damit das bei dir genauso schnell geht… sieht die Zusammenarbeit in den 3 Monaten so aus.
 
 [DELIVERABLES: was du in den 3 Monaten genau bekommst und wie die Zusammenarbeit läuft… am Ende eine Heißt-Line, die das zusammenfasst und an "eigenes Team aufbauen… damit die 1 Mio am Ende auch bleibt" aus Block 1 anknüpft]
 
