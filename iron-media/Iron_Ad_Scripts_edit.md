@@ -316,7 +316,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 5.3 (edit, 390 Wörter, vorher 387)
+## Creative 5.3 (edit, 397 Wörter, vorher 387)
 
 ```
 Jeder in der Ecom Szene will dir gerade irgendein Geheimnis oder Shiny Object verkaufen…
@@ -357,7 +357,9 @@ Vorne holst du damit über 100 € AOV, bist mit 20 bis 25 % Marge schon im Fron
 
 Und mit den Upsells und Downsells dahinter landest du bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
 
-Heißt, du kannst 2 bis 3 mal so viel für einen Kunden ausgeben wie deine Konkurrenz… und reichst mit 3 bis 5 neuen Ads die Woche, statt jede Woche 30 neue Batches rauszuballern.
+Heißt, du kannst 2 bis 3 mal so viel für einen Kunden ausgeben wie deine Konkurrenz…
+
+Und weil jede Ad dadurch viel mehr Budget aushält, reichen dir 3 bis 5 neue Ads die Woche… statt ständig 30 neue Batches rauszuballern.
 
 Das war's. Kein Geheimnis, kein Hack… einfach saubere Arbeit in der richtigen Reihenfolge.
 
