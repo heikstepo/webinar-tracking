@@ -3,15 +3,17 @@
 ```
 [BLOCK 1: EINSTIEG MIT DEM OFFER]
 
-Wenn deine Ecom Brand gerade zwischen 100 und 500k im Monat macht… dann bringen wir dich in den nächsten 3 Monaten auf 1 Million im Monat.
+Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
 
-Was geht ab, mein Name ist Sebastian Szalinski… und mit meiner Firma Iron Media machen wir eigentlich nichts anderes.
+Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat zu skalieren… mit unserem Ugly Funnel System.
 
-Du bist wahrscheinlich hier, weil du eine Ad von mir gesehen hast… und ich will dich auch gar nicht lange langweilen.
+Und dir parallel dein eigenes Team aufzubauen… damit du am Ende nicht von uns abhängig bist.
 
-Hier gibt's keine 3 geheimen Steps, keinen magischen ROAS… und auch keinen Call, in dem dich irgendwer eine Dreiviertelstunde in Ratenzahlung belabert.
+Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media machen wir eigentlich den ganzen Tag nichts anderes.
 
-Ich sag dir in den nächsten paar Minuten ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
+Und keine Sorge… hier kommen jetzt keine 3 geheimen Steps, kein magischer ROAS… und auch kein Call, in dem dich irgendwer eine Dreiviertelstunde in Ratenzahlung belabert.
+
+Ich zeig dir in den nächsten paar Minuten einfach, wie wir das machen, für wen das ist… und für wen halt auch nicht.
 
 [SOFT CTA]
 
@@ -43,5 +45,5 @@ Und wenn das so bleibt, hängst du in 12 Monaten immer noch bei denselben 300k�
 
 Das Ding ist nur… an deinem Produkt liegt's fast nie.
 
-Es liegt daran, was passiert, nachdem jemand auf deine Ad klickt… und genau da setzen wir an, wenn wir dich in den nächsten 3 Monaten auf 1 Million bringen.
+Es liegt daran, was passiert, nachdem jemand auf deine Ad klickt… und genau da setzen wir an, um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 ```
