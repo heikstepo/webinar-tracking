@@ -39,7 +39,9 @@ Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt di
 
 Wir können uns die Kunden mittlerweile zum Glück aussuchen…
 
-Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio bringen.
+Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio bringen…
+
+Denn jeder schlechte Kunde schadet mir mehr als dem Kunden selbst.
 
 Falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
 
@@ -144,8 +146,6 @@ Und falls ich dich damit gerade disqualifiziert hab… tut mir nicht leid.
 Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst.
 
 Wir haben es auch überhaupt nicht nötig, jeden zu nehmen…
-
-Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
 
 Weil am Ende mein Name an jeder Brand hängt, mit der wir arbeiten.
 
