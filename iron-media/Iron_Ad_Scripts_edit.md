@@ -67,3 +67,51 @@ Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten 
 
 Klick auf die Ad und schau dir an, wie wir dir so ein System aufbauen können.
 ```
+
+## Creative 2.2 (edit, 285 Wörter, vorher 280)
+
+```
+Q4 macht die einen Ecom Brands richtig reich… und die anderen broke…
+
+Weil jetzt jede Brand gleichzeitig anfängt zu skalieren… und die Ads so teuer werden wie nie im ganzen Jahr.
+
+Und am Ende gewinnt halt nur, wer sich diese teuren Klicks auch leisten kann.
+
+Und das können die allermeisten Brands zwischen 100 und 500k im Monat nicht…
+
+Weil die an jedem Kunden einfach zu wenig verdienen.
+
+Vorne nur so ein paar UGCs… dann eine leicht optimierte Produktseite… und hinten raus kommt gar nichts mehr.
+
+Das funktioniert ja so schon schwer…
+
+Aber jetzt im Q4, wo die Ads teurer werden, rutschen die direkt unter Break Even…
+
+Und müssen ihr Budget genau dann runterfahren, wenn die Leute am meisten kaufen.
+
+Was du stattdessen brauchst, ist gar nicht so kompliziert…
+
+Vorne VSL Ads statt nur ein paar UGCs… dahinter ein fettes Listicle oder Advertorial statt der Produktseite…
+
+Ein Cold Traffic Offer, das schon vorne über 100 € AOV holt…
+
+Upsells und Downsells, die hinten raus noch mal 20 bis 30 € drauflegen…
+
+Und ein Backend, das aus deinen Q4 Käufern Wiederkäufer macht.
+
+Damit verdienst du an jedem Kunden so viel mehr als deine Konkurrenz, dass dir die teuren Klicks eigentlich scheiß egal sein können.
+
+Heißt, während die anderen ihr Budget runterfahren… ballerst du drauf.
+
+Genau das machen wir in meiner Firma Iron Media den ganzen Tag.
+
+Eine Brand von 50k auf über 750k im Monat, mit 25 % Profitmarge…
+
+Eine von 60k auf 600k im Monat in 9 Monaten…
+
+Und eine von 500k auf über 2,3 Millionen im Monat.
+
+Also… wenn du deine Brand dieses Q4 von 7 auf 8 stellig skalieren willst…
+
+Dann klick auf die Ad und check ab, wie wir bei Iron dir dabei helfen können.
+```
