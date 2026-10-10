@@ -56,4 +56,26 @@ Und wenn das so bleibt, stehst du in 12 Monaten immer noch da, wo du heute bist�
 Das Ding ist… an deinem Produkt liegt's fast nie.
 
 Es liegt daran, dass dein ganzes Setup nur die Leute abholt, die eh schon kaufen wollen… und genau da setzen wir an, um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
+
+[BLOCK 3: WIE WIR DICH DAHIN BRINGEN]
+
+Und das machen wir mit dem, was wir intern Ugly Funnels nennen…
+
+Als Erstes schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst.
+
+Darauf bauen wir dann VSL Ads, die genau dieses Problem ansprechen… und so auch Leute abholen, die deine Brand noch nie gesehen haben.
+
+Und die schicken wir dann nicht auf die Produktseite… sondern auf eine Seite, die genau dazu passt, wo diese Leute gerade stehen.
+
+Wer dich noch nicht kennt, bekommt ein langes Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
+
+Wer dich schon kennt, eine kurze Seite, die nur noch die letzten Einwände ausräumt.
+
+Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
+
+Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, die hinten raus noch mal was drauflegen.
+
+Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
+
+Und genau so kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
 ```
