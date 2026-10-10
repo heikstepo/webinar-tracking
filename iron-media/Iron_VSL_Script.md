@@ -9,13 +9,13 @@ Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat z
 
 Und dir parallel dein eigenes Team aufzubauen… damit die 1 Mio am Ende auch bleibt.
 
-In diesem Video zeig ich dir ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
+In diesem Video zeig ich dir ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht…
 
-Ohne 3 geheime Steps, ohne magischen ROAS… und ohne langes Gelaber.
+Aber keine Sorge, ich halt mich kurz und werde dich nicht zulabern mit den neuesten Shiny Objects oder irgendwelchen geheimen Prozessen.
 
 [PROOF]
 
-Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir mittlerweile über 500 Ecom Brands skaliert…
+Also, kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir mittlerweile über 500 Ecom Brands skaliert…
 
 Allein dieses Jahr über 30 davon auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
 
@@ -33,13 +33,15 @@ Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.
 
 [SOFT CTA]
 
-Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann musst du dir den Rest hier eigentlich gar nicht mehr angucken.
+Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen…
 
-Unter diesem Video kannst du dir direkt einen Termin buchen… da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das bei dir funktioniert.
+Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das mit uns ein guter Fit wäre.
 
-Keine Sorge… da belabert dich keiner eine Dreiviertelstunde in irgendeine Ratenzahlung.
+Wir können uns die Kunden mittlerweile zum Glück aussuchen…
 
-Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
+Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio bringen.
+
+Falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran.
 
 [BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
 
@@ -167,7 +169,7 @@ Und sagt dir ehrlich, ob du ein Fit bist… und wenn ja, wie genau das bei dir a
 
 Falls nicht, sagen wir dir das auch… und du weißt danach trotzdem, wo's gerade hakt.
 
-Und wie versprochen… da belabert dich auch keiner.
+Und nein… da belabert dich auch keiner eine Dreiviertelstunde in irgendeine Ratenzahlung.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
