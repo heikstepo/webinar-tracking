@@ -272,7 +272,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und von 7 auf 8 ste
 Klick auf die Ad und check ab, wie wir das bei deiner Brand aufsetzen würden.
 ```
 
-## Creative 5.1 (edit, 291 Wörter, vorher 276)
+## Creative 5.1 (edit, 301 Wörter, vorher 276)
 
 ```
 Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?
@@ -297,9 +297,11 @@ Und genau das ist das Problem mit den 100 Ads… wenn die alle dasselbe sagen, z
 
 Neue Leute erreichst du nur mit einer neuen Message…
 
-Bei einem Supplement zum Beispiel einmal für Leute im Gym… einmal für Leute mit Darmproblemen… einmal für Leute, die abnehmen wollen.
+Bei einem Supplement zum Beispiel eine Message für Leute im Gym… eine für Leute mit Darmproblemen… und eine für Leute, die abnehmen wollen.
 
-Und jede dieser Messages bekommt ihre eigene VSL Ad und ihren eigenen Funnel… nur so hält eine Ad auch 200k Adspend aus.
+Und jede davon bekommt ihre eigene VSL Ad und ihren eigenen Funnel…
+
+Weil jemand mit Darmproblemen halt was ganz anderes lesen will als jemand, der im Gym mehr Leistung will.
 
 Erst wenn eine davon richtig läuft, machst du daraus mit AI 15 Varianten.
 
