@@ -13,11 +13,11 @@ Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Medi
 
 Und keine Sorge… hier kommen jetzt keine 3 geheimen Steps, kein magischer ROAS… und auch kein Call, in dem dich irgendwer eine Dreiviertelstunde in Ratenzahlung belabert.
 
-Ich zeig dir gleich ganz stumpf, wie wir das machen… genau so, wie wir's auch bei IM8 von David Beckham gemacht haben.
+Ich zeig dir gleich ganz stumpf, wie wir das machen, für wen das ist… und für wen halt auch nicht.
 
 [PROOF]
 
-Die haben wir von Tag 1 mit aufgebaut… im ersten Jahr knapp 100 Millionen Umsatz, steht so auch in deren Pressemitteilung.
+Wir haben das by the way auch bei IM8 von David Beckham gemacht… von Tag 1 an, im ersten Jahr knapp 100 Millionen Umsatz, steht so auch in deren Pressemitteilung.
 
 Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Supplement Brand in Deutschland.
 
