@@ -36,7 +36,7 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und auf 8 stellig w
 Klick auf die Ad und schau dir an, wie wir mit Ugly Funnels genau das bei deiner Brand umsetzen können.
 ```
 
-## Creative 1.3 (edit, 227 Wörter, vorher 283, Fix-Teil sprechbar gemacht)
+## Creative 1.3 (edit, 249 Wörter, vorher 283, Fix-Teil sprechbar und konkret)
 
 ```
 Meistens sind es so 2, 3 Winning Ads, die die meisten Ecom Brands auf 100 bis 500k Monatsumsatz bringen…
@@ -55,7 +55,11 @@ Lag's an der Hook? Am Argument? Oder am Offer?
 
 Und wenn wir das wissen, bauen wir genau darauf die nächsten Ads auf.
 
-So hängt am Ende nicht mehr alles an 2, 3 Ads… sondern an mehreren Angles gleichzeitig.
+So hängt am Ende nicht mehr alles an 2, 3 Ads…
+
+Sondern du hast mehrere Gründe, warum Leute bei dir kaufen… und für jeden laufen eigene Ads.
+
+Bei einem Supplement zum Beispiel einmal Schlaf… einmal Stress… einmal Energie.
 
 Und jeder davon bekommt seinen eigenen Ugly Funnel… also ein eigenes Listicle oder Advertorial.
 
