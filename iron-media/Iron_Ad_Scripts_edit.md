@@ -349,7 +349,7 @@ Und die landen dann nicht auf der Produktseite… sondern auf so hässlichen Dir
 
 Die sehen zwar scheiße aus, konvertieren aber wie Sau…
 
-Weil jemand da erst 5 Minuten deine Video Ad schaut… dann 10 Minuten das Advertorial liest… seine Einwände ausgeräumt bekommt… und dann direkt im Checkout landet.
+Weil jemand da erst 5 Minuten deine Video Ad schaut… dann 10 Minuten das Advertorial liest… seine Einwände ausgeräumt bekommt… und dann direkt im Checkout landet…
 
 Obwohl er morgens noch nicht mal wusste, dass er dein Produkt braucht.
 
