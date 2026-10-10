@@ -119,3 +119,49 @@ Wenn du deine Brand also dieses Q4 von 7 auf 8 stellig skalieren willst…
 
 Dann klick auf die Ad und check ab, wie wir bei Iron dir dabei helfen können.
 ```
+
+## Creative 2.3 (edit, 304 Wörter, vorher 306)
+
+```
+Jeder in der Ecom Szene weiß, dass Q4 die mit Abstand beste Zeit des Jahres ist…
+
+Aber das Witzige ist, dass die meisten Brands absolut nicht drauf vorbereitet sind.
+
+Was sie halt nicht checken ist, dass nicht nur deren Zielgruppe… sondern einfach der komplette Markt kaufen wird.
+
+Leute, die das ganze Jahr nichts online bestellen, suchen jetzt Geschenke…
+
+Warten auf Black Friday… und hauen ihr Weihnachtsgeld raus.
+
+Und genau diese Leute verpassen die meisten Brands zwischen 100 und 500k im Monat komplett.
+
+Weil ihr ganzes Setup nur für die gebaut ist, die eh schon kaufen wollen.
+
+Vorne ein paar UGCs… hinten die Produktseite… 20 % Rabatt drauf und fertig ist der Black Friday.
+
+Das holt halt die paar Leute ab, die dich eh schon kennen…
+
+Aber jemand, der dich zum ersten Mal sieht, klickt drauf… sieht Produktbild, Preis und Warenkorb Button… und ist direkt wieder weg.
+
+Und kauft dann bei den Brands, die genau auf diese Leute vorbereitet sind…
+
+Und wenn du da jetzt nicht schnell nachziehst, nehmen die dich im Q4 absolut auseinander…
+
+Weil die halt viel mehr auf ihre ads spenden können als du.
+
+Deshalb würde ich jetzt schleunigst 3 Sachen bei dir aufsetzen.
+
+VSL Ads, die auch kalten Leuten in 3 bis 5 Minuten erklären, warum sie dein Produkt brauchen…
+
+Ein Listicle oder Advertorial statt der Produktseite… sieht hässlich aus, konvertiert aber wie Sau…
+
+Und ein Cold Traffic Offer mit über 100 € AOV schon bei der ersten Bestellung.
+
+Heißt, auf einmal bist du derjenige, der mehr auf seine Ads spenden kann.
+
+Genau so ist [CASE: Brand] in meiner Firma Iron letztes Q4 von X auf X im Monat gegangen.
+
+Also… wenn du dein Ecom Brand in Q4 von 7 auf 8 stellig skalieren willst…
+
+Klick auf die Ad… da siehst du, wie wir das mit dir noch vor Black Friday aufbauen.
+```
