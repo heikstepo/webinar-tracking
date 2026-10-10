@@ -101,23 +101,7 @@ Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
 Und so laufen die 3 Monate bei dir dann ganz konkret ab…
 
-Am Anfang gehen wir einmal durch deine Ads, deine Funnels und deine echten Zahlen.
-
-Daraus bekommst du eine Roadmap, in der genau drinsteht, was bei dir wann dran ist.
-
-Bei der Umsetzung bist du dann aber nicht allein…
-
-Du hast einen festen Customer Success Manager, der 1 zu 1 mit dir arbeitet… also kein Gruppencoaching, wo du mit 20 anderen in einem Call sitzt.
-
-Der geht jede Woche mit dir deine Zahlen und Creatives durch… und sagt dir, was als Nächstes zu tun ist.
-
-Und alles, was du dazwischen baust, schaut er sich im Slack an… so lange, bis es sitzt.
-
-Heißt, du hast einen echten Sparringpartner, der deine Brand wirklich kennt… und nicht irgendeine Agentur, die dir nur einen schönen Report schickt.
-
-Sobald das läuft, holst du dir die Leute dazu, die du dafür brauchst… direkt aus unserem Pool.
-
-So baust du dir nebenbei dein eigenes Team auf… und bist am Ende eben nicht von uns abhängig.
+[DELIVERABLES: was du in den 3 Monaten genau bekommst und wie die Zusammenarbeit läuft… am Ende eine Heißt-Line, die das zusammenfasst und an "eigenes Team aufbauen, nicht von uns abhängig" aus Block 1 anknüpft]
 
 Und ganz wichtig… wir schalten nichts ab, was bei dir gerade funktioniert.
 
