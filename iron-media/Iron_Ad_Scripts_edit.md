@@ -271,3 +271,45 @@ Also… wenn du gerade zwischen 100 und 500k im Monat machst und von 7 auf 8 ste
 
 Klick auf die Ad und check ab, wie wir das bei deiner Brand aufsetzen würden.
 ```
+
+## Creative 5.1 (edit, 291 Wörter, vorher 276)
+
+```
+Wie viele Creatives brauchst du WIRKLICH pro Woche, um von 300k auf 1 Million im Monat zu kommen?
+
+Weil wenn du der Ecom Szene Glauben schenkst, sinds 50, 100 oder sogar mehr…
+
+Am besten gleich mit AI gebaut oder mit dutzenden echten Creators.
+
+Und genau das machen gerade die meisten Brands zwischen 100 und 500k im Monat…
+
+Was auch der Grund ist, warum sie es nicht schaffen, auf 1 Mio im Monat zu skalieren.
+
+Ich meine, lass uns mal Folgendes anschauen…
+
+Wir haben mit meiner Firma Iron allein dieses Jahr schon 30 Brands von 7 auf 8 stellig gebracht…
+
+Und meistens haben dafür 3 bis 5 Ads die Woche völlig gereicht.
+
+Weil solange jede dieser Ads wirklich neue Leute erreicht, kannst du easy mal 200k auf nur eine Ad profitabel spenden.
+
+Und genau das ist das Problem mit den 100 Ads… wenn die alle dasselbe sagen, zeigt Meta die auch immer denselben Leuten.
+
+Neue Leute erreichst du nur mit einer neuen Message…
+
+Bei einem Supplement zum Beispiel einmal für Leute im Gym… einmal für Leute mit Darmproblemen… einmal für Leute, die abnehmen wollen.
+
+Und jede dieser Messages bekommt ihre eigene VSL Ad und ihren eigenen Funnel… nur so hält eine Ad auch 200k Adspend aus.
+
+Erst wenn eine davon richtig läuft, machst du daraus mit AI 15 Varianten.
+
+Heißt, ein paar Ads mit neuen Messages bringen dir mehr als 100 Ads, die alle dasselbe sagen.
+
+So haben wir [CASE: Brand] von X auf X im Monat gebracht… mit X Ads die Woche.
+
+Also… falls du deine Ecom brand von 7 auf 8 stellig skalieren willst…
+
+Ohne hunderte neue ads immer ins Leere zu launchen…
+
+Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
+```
