@@ -242,6 +242,8 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 
 **"Kürzer" heißt nicht Telegrammstil (Heik, 5.3):** Wenn Heik "kürzer" sagt, fliegt Inhalt raus (ein Punkt der Aufzählung, eine doppelte Info), aber die Verbindungswörter bleiben: "Weil die Leute da…", "und erst dann…", "Und so… auf einmal". Abgehackt: "Erst 5 Minuten Video Ad… dann 10 Minuten Advertorial… dann Checkout." Richtig: "Weil die Leute da erst 5 Minuten deine Video Ad schauen… dann 10 Minuten das Advertorial lesen… und erst dann im Checkout landen."
 
+**Nur Wörter, die Seb wirklich benutzt (Heik, VSL Block 2):** Keine random Wörter, die gut klingen, aber nie aus Sebs Mund kommen würden ("wird's zäh", "was drauflegen", "auf mich zurückfällt"). Im Zweifel in den Transkripten checken. Seb sagt zum Beispiel: "sobald du Spend hochdrehst", "hinten raus", "ganz stumpf", "wie Sau", "Dinger", "No Brainer", "aus dem Arsch gezogen", "belabern", "wo's hakt", "jeder Käufer lässt noch mal mehr Geld bei dir".
+
 ## 8. Case Study 2.3 "Im Q4 kauft der ganze Markt" (AG2)
 
 | V | Was ich gemacht habe | Heiks Reaktion | Lektion |

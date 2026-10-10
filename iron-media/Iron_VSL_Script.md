@@ -47,7 +47,7 @@ Wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich so aus wi
 
 Das Produkt funktioniert… die Ads bringen Umsatz… und eigentlich passt das ja auch.
 
-Aber sobald du das Budget hochdrehst, wird's zäh… der CPA geht hoch und die Marge runter.
+Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
 
 Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
@@ -75,7 +75,7 @@ Wer dich schon kennt, eine kurze Seite, die nur noch die letzten Einwände ausr�
 
 Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
 
-Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, die hinten raus noch mal was drauflegen.
+Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, damit jeder Käufer hinten raus noch mal mehr Geld bei dir lässt.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
@@ -135,7 +135,7 @@ Wir haben es auch überhaupt nicht nötig, jeden zu nehmen…
 
 Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
 
-Weil am Ende jede Brand, die bei uns nicht läuft, auf mich zurückfällt.
+Weil am Ende mein Name an jeder Brand hängt, mit der wir arbeiten.
 
 Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study wirst.
 
