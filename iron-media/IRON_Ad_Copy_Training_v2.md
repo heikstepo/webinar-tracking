@@ -124,7 +124,7 @@ Heiks System: 1 CBO, 1 Broad-Adset, 5–8 Ads (Post-IDs), jede Ad hat einen Job 
 - 5.1: "Wir haben mit meiner Firma Iron allein dieses Jahr schon 30 Brands von 7 auf 8 stellig gebracht…" mitten in der Ad als Beweis gegen den Glauben, unten nur kurz "So haben wir [CASE]… mit X Ads die Woche"
 - 5.3: "Und das sag ich dir nicht einfach so…"
 - 7.2: Case-Salve
-- Noch frei: **"Woher ich das weiß?"**, die Marken-Liste (More Nutrition, ESN…), "Ich weiß, das klingt großkotzig… ist aber die Realität".
+- Noch frei: ~~"Woher ich das weiß?"~~ (Heik, 3.2: **keine Fragen** als Authority-Zeile, lieber "Und das weiß ich so genau, weil…"), die Marken-Liste (More Nutrition, ESN…), "Ich weiß, das klingt großkotzig… ist aber die Realität".
 
 **Seb's Funnel-Seiten (aus YT, nicht nur Advertorial und Listicle):** "Jede Awareness Stufe braucht die richtige Page." Kalt: Longform Page oder Advertorial, die aufklärt. Für mehr Scale ein Listicle davor. Mitte: Vergleichsseite, auch fürs Retargeting. Warm: Shortform Offer Page, die Einwände killt. Am Ende eine Checkout Page mit Upsells und Downsells, dazu Quiz Funnels und Presell Pages. Name in Ads: lieber **"Ugly Funnels"** (Heik, 8.2).
 
