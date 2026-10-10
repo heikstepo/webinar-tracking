@@ -68,7 +68,7 @@ Also… wenn dein Umsatz schon mal höher war und du in den nächsten 3 Monaten 
 Klick auf die Ad und schau dir an, wie wir dir so ein System aufbauen können.
 ```
 
-## Creative 2.2 (edit, 285 Wörter, vorher 280)
+## Creative 2.2 (edit, 297 Wörter, vorher 280)
 
 ```
 Q4 macht die einen Ecom Brands richtig reich… und die anderen broke…
@@ -85,7 +85,9 @@ Vorne nur so ein paar UGCs… dann eine leicht optimierte Produktseite… und hi
 
 Das funktioniert ja so schon schwer…
 
-Aber jetzt im Q4, wo die Ads teurer werden, rutschen die direkt unter Break Even…
+Und jetzt im Q4 kommen auch noch die teuren Klicks dazu…
+
+Dann zahlen die für jeden Kunden auf einmal mehr, als sie an ihm verdienen…
 
 Und müssen ihr Budget genau dann runterfahren, wenn die Leute am meisten kaufen.
 
