@@ -316,7 +316,7 @@ Ohne hunderte neue ads immer ins Leere zu launchen…
 Klick mal auf die Ad hier und ich zeig dir genau wie wir dir dabei helfen werden.
 ```
 
-## Creative 5.3 (edit, 380 Wörter, vorher 387)
+## Creative 5.3 (edit, 376 Wörter, vorher 387)
 
 ```
 Jeder in der Ecom Szene will dir gerade irgendein Geheimnis oder Shiny Object verkaufen…
@@ -343,11 +343,13 @@ Und bei jeder einzelnen lief es am Ende genau darauf hinaus.
 
 Am Anfang steht immer Research… warum deine Kunden wirklich kaufen und was sie vorher schon alles ausprobiert haben.
 
-Und darauf bauen wir dann VSL Ads, die richtig tief psychologisch reingehen… und die Leute innerhalb von 3 bis 5 Minuten zu zahlenden Kunden machen.
+Darauf bauen wir VSL Ads, die richtig tief psychologisch reingehen… und auch Leute abholen, die dich noch nie gesehen haben.
 
-Die landen dann nicht auf der Produktseite, sondern auf so hässlichen Direct Response Funnels… Advertorials, Listicles, die natürlich scheiße aussehen, aber konvertieren wie Sau.
+Und die landen dann nicht auf der Produktseite… sondern auf so hässlichen Direct Response Funnels.
 
-Heißt, 5 Minuten Video Ad, 10 Minuten Advertorial, 5 Minuten Einwandbehandlung, Checkout…
+Advertorials, Listicles… sehen scheiße aus, konvertieren aber wie Sau.
+
+Also 5 Minuten Video Ad… 10 Minuten Advertorial… 5 Minuten Einwandbehandlung… Checkout.
 
 Und plötzlich kauft jemand, der morgens aufgestanden ist und noch nicht mal wusste, dass er dein Produkt braucht.
 
