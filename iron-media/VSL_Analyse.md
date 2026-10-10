@@ -71,3 +71,15 @@ Frame: Das Offer ("in den nächsten 3 Monaten von 100–500k auf 1 Mio im Monat"
 | 5 | Genaue Umsetzung | 4:00–5:00 | Analyse → Roadmap → Sparringpartner 1:1 → Pool. Wir schalten nichts ab, was läuft. Preis-Frame | Was in den 3 Monaten passiert |
 | 6 | Für wen es ist und für wen nicht | 5:00–6:00 | Exclusivity mit Begründung | Für wen das Offer gilt |
 | 7 | CTA + was im Call passiert | 6:00–7:00 | Analyse-Call mit CSM, Fit-Check, Roadmap | Dein erster Schritt zur 1 Mio |
+
+## Struktur v3 (aktueller Stand)
+
+1. **Einstieg mit Offer:** 100–500k → 1 Mio/Monat in 3 Monaten mit dem Ugly Funnel System, dazu das eigene Team. Was das Video zeigt: wie, für wen, für wen nicht. "Ich halt mich kurz."
+2. **Proof:** 500+ Brands, 30 dieses Jahr auf 8 stellig, FT/Statista → IM8, More, ESN, Kinobody, The Oodie → NoMisk, 60k auf 600k.
+3. **Soft CTA:** Termin unter dem Video, CSM checkt den Fit. Exclusivity: "Wir können uns die Kunden aussuchen… schlechter Kunde schadet mir mehr." Oder: bleib dran.
+4. **Situation und Konsequenz:** PMF ist da, aber beim Hochdrehen steigt der CPA, Winner brennen aus, mehr Volumen wird nur teurer. Ursache: nur eine Bewusstseinsstufe, kalte Leute landen auf der Produktseite. Konsequenz: du bleibst stehen.
+5. **Lösung, Ugly Funnels in 3 Phasen:** Research → Fundament (Funnel pro Bewusstseinsstufe, Offer + Upsells) → Skalieren mit VSL Ads.
+6. **Ergebnis-Proof:** Ø 1,4 Mio extra in 3 Monaten, Ads halten 100–200k Adspend, 30–35 % Marge, klappt in jeder Nische [CASE].
+7. **Umsetzung:** [DELIVERABLES], wir schalten nichts ab, Preis 4–5 stellig = No Brainer.
+8. **Für wen und für wen nicht:** min. 100k, Bock auf 3 Monate, Produkt funktioniert. Nicht für unter 100k oder Trick-Sucher. "Tut mir nicht leid." Geiler Fit → Case Study.
+9. **CTA und Call:** Formular (URL, Zahlen, Team) → CSM-Analyse → Fit oder ehrliches Nein, kein Belabern → Offer-CTA → "ich bin raus hier".
