@@ -136,4 +136,30 @@ Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
 Weil am Ende jede Brand, die bei uns nicht läuft, auf mich zurückfällt.
 
 Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study wirst.
+
+[BLOCK 7: CTA UND WAS IM CALL PASSIERT]
+
+Und ob du das bist, finden wir im Call raus…
+
+Den buchst du dir direkt hier unter dem Video.
+
+Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen und wie dein Team gerade aussieht.
+
+Und bitte sei da ehrlich, gerade bei der Marge… sonst bringt das keinem von uns was.
+
+So können wir uns alles schon vorher anschauen… und fangen nicht bei null an, sondern direkt bei deinem Account.
+
+Im Call geht dann einer unserer Customer Success Manager mit dir durch, wo deine Brand gerade steht…
+
+Und sagt dir ehrlich, ob du ein Fit bist… und wenn ja, wie genau das bei dir aussehen würde.
+
+Falls nicht, sagen wir dir das auch… und du weißt danach trotzdem, wo's gerade hakt.
+
+Und wie versprochen… da belabert dich auch keiner.
+
+Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
+
+Dann buch dir jetzt unter diesem Video deinen Termin.
+
+Sebastian Szalinski, Iron Media… ich bin raus hier.
 ```
