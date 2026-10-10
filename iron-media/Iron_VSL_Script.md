@@ -55,15 +55,15 @@ Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, n
 
 Das Ding ist… das Problem liegt ganz woanders.
 
-Bis jetzt haben deine Ads fast nur Leute erreicht, die dein Produkt eh schon wollten… deine kleine Käuferblase.
+Bis jetzt holen deine Ads fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
 
-Sobald du aber das Budget hochdrehst, gehst du raus aus dieser Blase… und rein in die Masse.
+Sobald du aber das Budget hochdrehst, kommen auf einmal viel kältere Leute dazu…
 
-Die kennt dich nicht, ist skeptisch und hat Einwände…
+Die kennen dich nicht, sind skeptisch und haben Einwände…
 
-Und genau die schickst du dann auf dieselbe Produktseite wie vorher… und die ist halt nur für Leute gebaut, die schon überzeugt sind.
+Und genau die schickst du dann auf dieselbe Produktseite wie vorher… die halt nur für Leute gebaut ist, die schon überzeugt sind.
 
-Heißt, da können deine Ads so gut sein, wie sie wollen… die Masse kauft da trotzdem nicht.
+Heißt, da können deine Ads so gut sein, wie sie wollen… die kaufen da trotzdem nicht.
 
 Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal, wie viel Geld du noch reinsteckst.
 
@@ -77,7 +77,7 @@ Als Erstes schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… als
 
 Darauf bauen wir dann VSL Ads, die genau dieses Problem ansprechen… und so auch Leute abholen, die deine Brand noch nie gesehen haben.
 
-Und die schicken wir dann nicht auf die Produktseite… sondern auf eine Seite, die genau dazu passt, wo diese Leute gerade stehen.
+Und die schicken wir dann nicht auf die Produktseite… sondern auf eine Seite, die genau zu ihrer Bewusstseinsstufe passt.
 
 Wer dich noch nicht kennt, bekommt ein langes Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
 
