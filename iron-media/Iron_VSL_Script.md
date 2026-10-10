@@ -43,11 +43,11 @@ Und falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… i
 
 Wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich so aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
-Das Produkt funktioniert… die Ads laufen… und eigentlich läuft's ja auch ganz gut.
+Das Produkt funktioniert… die Ads bringen Umsatz… und eigentlich passt das ja auch.
 
 Aber sobald du das Budget hochdrehst, wird's zäh… der CPA geht hoch und die Marge runter.
 
-Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen laufen nicht mehr so wie die alten.
+Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
 Also machst du mehr… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer.
 
