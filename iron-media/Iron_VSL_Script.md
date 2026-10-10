@@ -11,7 +11,11 @@ Und dir parallel dein eigenes Team aufzubauen… damit die 1 Mio am Ende auch bl
 
 [PROOF]
 
-Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir unter anderem IM8 von David Beckham von Tag 1 mit aufgebaut…
+Kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir mittlerweile über 500 Ecom Brands skaliert…
+
+Allein dieses Jahr über 30 davon auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
+
+Darunter zum Beispiel IM8 von David Beckham, die wir von Tag 1 mit aufgebaut haben…
 
 Im ersten Jahr knapp 100 Millionen Umsatz… steht so auch in deren Pressemitteilung.
 
@@ -22,8 +26,6 @@ Aber eben auch Brands, die genau da angefangen haben, wo du jetzt stehst…
 NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leuten im Team.
 
 Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.
-
-Allein dieses Jahr über 30 Brands auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
 
 [SOFT CTA]
 
