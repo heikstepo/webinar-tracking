@@ -177,21 +177,19 @@ Aber wenn im Schnitt 1,4 Mio zusätzlich in den ersten 3 Monaten reinkommen… i
 
 Das gilt aber halt nur, wenn deine Brand auch ein Fit ist…
 
-Heißt, du machst schon mindestens 100k im Monat… und hast Bock, das die nächsten 3 Monate richtig durchzuziehen.
+Heißt, du machst schon mindestens 100k im Monat… und dein Produkt funktioniert, zaubern können wir nämlich auch nicht.
 
-Und dein Produkt muss funktionieren… zaubern können wir nämlich auch nicht.
+Und du willst selbst verstehen, was in deinem Account passiert… statt alles an die nächste Agentur abzugeben und zu hoffen, dass es diesmal klappt.
 
-Wenn du noch unter 100k bist… oder einfach den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt…
-
-Dann sind wir für dich ehrlich gesagt nicht die Richtigen.
+Wenn du dagegen nur den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt… dann sind wir für dich ehrlich gesagt nicht die Richtigen.
 
 Und falls ich dich damit gerade disqualifiziert hab… tut mir nicht leid.
 
 Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst.
 
-Wir haben es auch überhaupt nicht nötig, jeden zu nehmen…
+Wir haben es auch überhaupt nicht nötig, dass du Kunde wirst…
 
-Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
+Passt es nicht, nehmen wir dich nicht… egal, wie viel du zahlen willst.
 
 Weil am Ende mein Name an jeder Brand hängt, mit der wir arbeiten.
 
