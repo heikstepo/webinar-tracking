@@ -83,3 +83,20 @@ Frame: Das Offer ("in den nächsten 3 Monaten von 100–500k auf 1 Mio im Monat"
 7. **Umsetzung:** [DELIVERABLES], wir schalten nichts ab, Preis 4–5 stellig = No Brainer.
 8. **Für wen und für wen nicht:** min. 100k, Bock auf 3 Monate, Produkt funktioniert. Nicht für unter 100k oder Trick-Sucher. "Tut mir nicht leid." Geiler Fit → Case Study.
 9. **CTA und Call:** Formular (URL, Zahlen, Team) → CSM-Analyse → Fit oder ehrliches Nein, kein Belabern → Offer-CTA → "ich bin raus hier".
+
+## Abgleich Block 4 mit Sales und CSM Calls (11.10.2026)
+
+Grundlage: Sales Calls 1–5 (alle mit Edis), CSM Calls (hea-rs, Serotalin, Swiss Tallow), ICP Dossiers.
+
+| Aussage in der VSL | Befund |
+|---|---|
+| Product Market Fit ist da | bestätigt, fast alle |
+| CPA steigt beim Hochdrehen, Marge sinkt | bestätigt (Myricals: „da bricht alles ein“, Sedat, Serotalin: „Spend verdreifacht… Profitabilität deutlich runter“); oft auch Plateau oder Einbruch |
+| Winner brennen aus, neue kommen nicht ran | bestätigt (Tom: „die Ad ist immer schlechter als die vorige“, Jakob, Selurewear: „always depending on the new ad that's ripping“) |
+| Mehr Creatives, neue Agentur, Media Buyer | Creatives und Agenturwechsel ja; Media Buyer nicht gesehen, Media Buying gilt als der einfache Teil |
+| Traffic auf die Produktseite | teilweise (ca. 6 ja, 3 haben schon Funnels oder Quiz) |
+| Nur eine Bewusstseinsstufe | in eigenen Worten: „immer die gleichen Leute bespielen“, „ganz kleines Stück vom Kuchen“, „creative isn't reaching net new audiences“; „Bewusstseinsstufe“ ist Irons Wort |
+
+Fehlte in Block 4 (häufigster Schmerz): keine Creative Strategy und kein Testing-System („immer die gleichen Angles“, „Spray and Pray“, „Schießen in den Wald“), kein Copywriter oder Creative Strategist, der Founder ist das Bottleneck, Agenturen liefern Einzelteile. Prospects benutzen „Angles“ selbst, das Wort kann also bleiben.
+
+Was Iron bei Copy und Creative Strategy macht (laut Edis und CSMs): Research → Angles und Message, Feedback auf Skripte und Briefings vor dem Livegang, Testen nach Hook, Lead, Body, CTA („Scientific Creative Process“), Winner zerlegen und daraus den nächsten bauen, Creative Strategists und Cutter aus dem Pool. Gehört in den [DELIVERABLES]-Teil.

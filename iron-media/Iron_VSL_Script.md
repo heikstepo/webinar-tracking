@@ -69,7 +69,7 @@ Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächs
 
 [4. CURRENT SITUATION + PROBLEME]
 
-Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir genauso aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
+Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich genauso aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
 Product Market Fit ist da… die Ads bringen Umsatz… und eigentlich passt das ja auch.
 
@@ -77,19 +77,23 @@ Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
 
 Die Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
-Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch einen Media Buyer… und am Ende wird's einfach nur teurer…
+Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch ein Freelancer…
 
-Wobei das Problem eigentlich ganz woanders liegt.
+Aber am Ende sind's immer die gleichen Angles, nur ein bisschen anders verpackt… weil eine echte Creative Strategy dahinter fehlt.
 
-Bis jetzt holen deine Ads fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
+Und genau das ist das Problem…
+
+Damit holen deine Ads nämlich fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
 
 Sobald du aber das Budget hochdrehst, kommen auf einmal viel kältere Leute dazu…
 
 Die kennen dich nicht, sind skeptisch und haben Einwände…
 
-Und genau die schickst du dann auf dieselbe Produktseite wie vorher… die halt nur für Leute gebaut ist, die schon überzeugt sind.
+Deine Ads reden mit denen aber immer noch genauso wie mit den Warmen…
 
-Heißt, da können deine Ads so gut sein, wie sie wollen… die kaufen da trotzdem nicht.
+Und dann schickst du die auch noch auf dieselbe Produktseite wie vorher… die halt nur für Leute gebaut ist, die schon überzeugt sind.
+
+Heißt, da können deine Ads so gut aussehen, wie sie wollen… die kaufen da trotzdem nicht.
 
 Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal, wie viel Geld du noch reinsteckst.
 
@@ -105,7 +109,7 @@ Phase 1 ist Research…
 
 Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst…
 
-Und welche angles man für die ads und die funnels benutzen könnte.
+Und daraus bauen wir deine Creative Strategy… also mit welchen Angles du kalte und warme Leute abholst.
 
 Phase 2 ist dann das Fundament…
 
@@ -119,11 +123,17 @@ Und so weiter
 
 Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
 
+Weil da nicht das Design verkauft… sondern die Copy.
+
 Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, damit jeder Käufer hinten raus noch mal mehr Geld bei dir lässt.
 
 Erst in Phase 3 skalieren wir dann…
 
 Mit VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
+
+Und die testen wir nicht mehr random… sondern Hook, Lead und Body einzeln.
+
+So weißt du bei jedem Winner genau, warum er funktioniert… und wie du daraus den nächsten baust.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
