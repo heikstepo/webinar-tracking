@@ -15,9 +15,9 @@ Structure:
 8. Für wen die Zusammenarbeit gedacht ist (und für wen nicht)
 9. CTA
 
-VSL Script:
+________________
 
-[1. OFFER]
+VSL Script:
 
 Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
 
@@ -25,11 +25,9 @@ Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat z
 
 Und dir parallel dein eigenes Team aufzubauen… damit das Ganze am Ende auch ohne uns läuft.
 
-Wie genau wir das machen, für wen das ist… und für wen halt auch nicht… zeig ich dir jetzt ganz stumpf in den nächsten 5 minuten hier…
+Wie genau wir das machen, für wen das ist… und für wen halt auch nicht… zeig ich dir jetzt ganz stumpf in den nächsten paar minuten hier…
 
 Aber keine Sorge, ich halt mich kurz und werde dich nicht zulabern mit den neuesten Shiny Objects oder irgendwelchen geheimen Prozessen.
-
-[2. PROOF]
 
 Also, kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir mittlerweile über 500 Ecom Brands skaliert…
 
@@ -49,8 +47,6 @@ NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leu
 
 (Und 3. CASE STUDY)
 
-[3. SOFT CTA]
-
 Und wenn dir das schon reicht und du Bock hast, mit unserer Hilfe auf 1 Mio im Monat zu skalieren…
 
 Dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen.
@@ -67,9 +63,7 @@ Falls du vorher noch ein bisschen mehr wissen willst… dann bleib kurz dran...
 
 Ich erklär dir jetzt mal ganz genau, wie wir deine Brand in den nächsten 3 Monaten auf 1 Mio im Monat bringen…
 
-Und wie die Zusammenarbeit mit uns bei Iron Media gestaltet ist.
-
-[4. CURRENT SITUATION + PROBLEME]
+Und wie die Zusammenarbeit mit uns bei Iron Media aussieht.
 
 Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich genauso aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
@@ -98,8 +92,6 @@ Heißt, da können deine Ads so gut aussehen, wie sie wollen… die kaufen da tr
 Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal, wie viel Geld du noch reinsteckst.
 
 Und genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
-
-[5. CREATIVE STRATEGY + UGLY FUNNELS ALS LÖSUNG]
 
 Und dafür brauchts im Grunde 2 Sachen…
 
@@ -137,8 +129,6 @@ Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und k
 
 Und mit dem Ganzen kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
 
-[6. MEHR PROOF]
-
 Es ist immer wieder derselbe Prozess…
 
 Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos auf YouTube.
@@ -157,9 +147,7 @@ Das klappt übrigens auch nicht nur bei Supplements…
 
 [CASE: Brand aus einer unscheinbaren Nische] zum Beispiel von X auf X im Monat… in X Monaten.
 
-Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
-
-[7. UMSETZUNG MIT IRON + DELIVERABLES]
+Einfach weil der Prozess funktioniert, egal was du verkaufst.
 
 Und damit das bei dir genauso schnell geht… sieht die Zusammenarbeit in den 3 Monaten so aus.
 
@@ -174,8 +162,6 @@ Klar… günstig sind wir nicht.
 Je nach Umfang liegst du da irgendwo im 4 bis 5 stelligen Bereich im Monat…
 
 Aber wenn im Schnitt 1,4 Mio zusätzlich in den ersten 3 Monaten reinkommen… ist das eher ein No Brainer.
-
-[8. FÜR WEN DIE ZUSAMMENARBEIT GEDACHT IST (UND FÜR WEN NICHT)]
 
 Das gilt aber halt nur, wenn deine Brand auch wirklich ein guter Fit ist…
 
@@ -197,8 +183,6 @@ Weil am Ende nämlich mein Name an jeder Brand hängt, mit der wir arbeiten.
 
 Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study bei Iron Media wirst.
 
-[9. CTA]
-
 Und ob du das bist, finden wir im Call raus…
 
 Den buchst du dir direkt hier unter dem Video.
@@ -207,7 +191,7 @@ Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen 
 
 So können wir uns alles schon vorher anschauen… und fangen nicht bei null an, sondern direkt bei deinem Account.
 
-Und selbst wenn wir am Ende nicht zusammenarbeiten… weißt du nach dem call mit unserm CSM trotzdem, wo es bei dir gerade hakt.
+Und selbst wenn wir am Ende nicht zusammenarbeiten… weißt du nach dem call mit unserm team trotzdem, wo es bei dir gerade hakt.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
