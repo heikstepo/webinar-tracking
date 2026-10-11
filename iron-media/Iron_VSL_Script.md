@@ -9,7 +9,7 @@ Structure:
 2. Proof
 3. Soft CTA
 4. Current Situation + Probleme
-5. Ugly Funnels als Lösung
+5. Creative Strategy + Ugly Funnels als Lösung
 6. Mehr Proof
 7. Umsetzung mit Iron + Deliverables
 8. Für wen die Zusammenarbeit gedacht ist (und für wen nicht)
@@ -99,11 +99,13 @@ Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal
 
 Genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 
-[5. UGLY FUNNELS ALS LÖSUNG]
+[5. CREATIVE STRATEGY + UGLY FUNNELS ALS LÖSUNG]
 
-Und das machen wir mit dem, was wir intern Ugly Funnels nennen…
+Und dafür braucht's im Grunde 2 Sachen…
 
-Das sind im Grunde 3 Phasen, die aufeinander aufbauen.
+Eine Creative Strategy, die auch die kalten Leute richtig anspricht… und Funnels, auf denen die dann auch kaufen.
+
+Intern nennen wir das unser Ugly Funnel System… und das läuft in 3 Phasen ab, die aufeinander aufbauen.
 
 Phase 1 ist Research…
 
