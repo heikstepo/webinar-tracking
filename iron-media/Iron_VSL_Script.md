@@ -203,19 +203,15 @@ Und ob du das bist, finden wir im Call raus…
 
 Den buchst du dir direkt hier unter dem Video.
 
-Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen und wie dein Team gerade aussieht.
+Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen, dein Team und so weiter.
 
-Und bitte sei da ehrlich, gerade bei der Marge… sonst bringt das keinem von uns was.
+So fangen wir im Call nicht bei null an… sondern direkt bei deinem Account.
 
-So können wir uns alles schon vorher anschauen… und fangen nicht bei null an, sondern direkt bei deinem Account.
+Da geht einer unserer Customer Success Manager mit dir durch, wo's gerade hakt…
 
-Im Call geht dann einer unserer Customer Success Manager mit dir durch, wo deine Brand gerade steht…
+Und sagt dir ehrlich, ob wir dich auf 1 Mio bringen können… oder eben nicht.
 
-Und sagt dir ehrlich, ob du ein Fit bist… und wenn ja, wie genau das bei dir aussehen würde.
-
-Falls nicht, sagen wir dir das auch… und du weißt danach trotzdem, wo's gerade hakt.
-
-Und wie versprochen… da belabert dich auch keiner.
+Wie versprochen… da belabert dich keiner.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
