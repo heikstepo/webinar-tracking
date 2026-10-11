@@ -203,15 +203,11 @@ Und ob du das bist, finden wir im Call raus…
 
 Den buchst du dir direkt hier unter dem Video.
 
-Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen, dein Team und so weiter.
+Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen und wie dein Team gerade aussieht, usw…
 
-So fangen wir im Call nicht bei null an… sondern direkt bei deinem Account.
+So können wir uns alles schon vorher anschauen… und fangen nicht bei null an, sondern direkt bei deinem Account.
 
-Da geht einer unserer Customer Success Manager mit dir durch, wo's gerade hakt…
-
-Und sagt dir ehrlich, ob wir dich auf 1 Mio bringen können… oder eben nicht.
-
-Wie versprochen… da belabert dich keiner.
+Und selbst wenn wir am Ende nicht zusammenarbeiten… weißt du danach trotzdem, wo's bei dir gerade hakt.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
