@@ -177,7 +177,9 @@ Und du willst selbst verstehen, was in deinem Account passiert… statt alles an
 
 Klar, ein bisschen Zeit musst du dafür reinstecken… aber die steckst du wahrscheinlich eh schon rein, nur gerade an den falschen Stellen.
 
-Wenn du dagegen nur den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt… dann sind wir für dich ehrlich gesagt nicht die Richtigen.
+Wenn du da keinen Bock drauf hast… und lieber den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt…
+
+Dann sind wir für dich ehrlich gesagt nicht die Richtigen.
 
 Und falls ich dich damit gerade disqualifiziert hab… tut mir nicht leid.
 
