@@ -77,8 +77,6 @@ Product Market Fit ist da… die Ads bringen Umsatz… und eigentlich passt das 
 
 Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
 
-Vielleicht warst du sogar schon mal weiter… und jetzt geht's eher wieder runter.
-
 Die Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
 Also versuchst du mehr Volumen zu pushen… mehr Creatives, eine neue Agentur, noch ein Freelancer…
@@ -87,7 +85,7 @@ Aber am Ende sind's immer die gleichen Angles, nur ein bisschen anders verpackt�
 
 Und genau das ist das Problem…
 
-Damit holen deine Ads nämlich fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
+Damit holen deine Ads nämlich fast nur eine Bewusstseinsstufe ab… und zwar die, die dein Produkt eh schon kaufen wollen.
 
 Sobald du aber das Budget hochdrehst, kommen auf einmal viel kältere Leute dazu…
 
@@ -99,11 +97,11 @@ Heißt, da können deine Ads so gut aussehen, wie sie wollen… die kaufen da tr
 
 Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal, wie viel Geld du noch reinsteckst.
 
-Genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
+Und genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 
 [5. CREATIVE STRATEGY + UGLY FUNNELS ALS LÖSUNG]
 
-Und dafür braucht's im Grunde 2 Sachen…
+Und dafür brauchts im Grunde 2 Sachen…
 
 Eine Creative Strategy, die auch die kalten Leute richtig anspricht… und Funnels, auf denen die dann auch kaufen.
 
@@ -113,7 +111,7 @@ Phase 1 ist Research…
 
 Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst…
 
-Und daraus bauen wir deine Creative Strategy und direct response funnels… also mit welchen Angles du kalte und warme Leute abholst.
+Und daraus bauen wir deine Creative Strategy… also mit welchen Angles du kalte und warme Leute abholst.
 
 Phase 2 ist dann das Fundament…
 
@@ -123,7 +121,7 @@ Wer dich noch nicht kennt, landet auf einem langen Advertorial, das erst mal erk
 
 Wer dich schon kennt, auf einer kurzen Seite, die nur noch die letzten Einwände ausräumt…
 
-Und so weiter
+Und so weiter.
 
 Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau…
 
@@ -131,19 +129,19 @@ Weil da nicht das Design verkauft… sondern die Copy.
 
 Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, damit jeder Käufer hinten raus noch mal mehr Geld bei dir lässt.
 
-Erst in Phase 3 skalieren wir dann…
+Erst sobald das alles passt, skalieren wir dann in Phase 3…
 
-Mit VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
+Wir benutzen VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
-Und genau so kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
+Und mit dem Ganzen kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
 
 [6. MEHR PROOF]
 
 Es ist immer wieder derselbe Prozess…
 
-Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos.
+Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos auf YouTube…
 
 Aber im Schnitt machen Brands, die mit uns arbeiten, in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
 
@@ -155,7 +153,9 @@ Und mit den Upsells bist du schon bei 30 bis 35 % Marge, bevor du überhaupt ska
 
 Das ganze haben wir auch in allen möglichen nischen und märkten gemacht…
 
-Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
+Wie z.B. bei CASE in X UNSCHEINBARE NISCHE.
+
+Der Prozess immer der gleiche ist… egal, was du verkaufst.
 
 [7. UMSETZUNG MIT IRON + DELIVERABLES]
 
@@ -207,7 +207,7 @@ Vorher fragen wir noch kurz ein paar Sachen ab… deine Store URL, deine Zahlen 
 
 So können wir uns alles schon vorher anschauen… und fangen nicht bei null an, sondern direkt bei deinem Account.
 
-Und selbst wenn wir am Ende nicht zusammenarbeiten… weißt du danach trotzdem, wo's bei dir gerade hakt.
+Und selbst wenn wir am Ende nicht zusammenarbeiten… weißt du nach dem call mit unserm CSM trotzdem, wo es bei dir gerade hakt.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
