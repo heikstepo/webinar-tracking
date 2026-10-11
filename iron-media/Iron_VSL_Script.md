@@ -51,23 +51,23 @@ NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leu
 
 [3. SOFT CTA]
 
-Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast mit unserer Hilfe auf 8-stelig zu skalieren…
+Und wenn dir das schon reicht und du Bock hast, mit unserer Hilfe auf 1 Mio im Monat zu skalieren…
 
-Dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen…
+Dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen.
 
-Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das mit uns ein guter fit wäre.
+Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das mit uns ein guter Fit wäre…
 
-Wir können uns die Kunden mittlerweile zum Glück aussuchen…
+Weil wir uns die Kunden mittlerweile zum Glück aussuchen können… und nur die nehmen, bei denen wir sicher sind, dass das klappt.
 
-Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio im Monat bringen…
+Jeder schlechte Kunde schadet mir nämlich mehr als dem Kunden selbst.
 
-Denn jeder schlechte Kunde schadet mir mehr als dem Kunden selbst.
+Aber…
 
-Also, buche gerne den call…
+Falls du vorher noch ein bisschen mehr wissen willst… dann bleib kurz dran...
 
-Aber falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt mal ganz genau, wie die Zusammenarbeit mit Iron Media funktioniert…
+Ich erklär dir jetzt mal ganz genau, wie wir deine Brand in den nächsten 3 Monaten auf 1 Mio im Monat bringen…
 
-Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächsten 3 monaten.
+Und wie die Zusammenarbeit mit uns bei Iron Media gestaltet ist.
 
 [4. CURRENT SITUATION + PROBLEME]
 
@@ -129,9 +129,9 @@ Weil da nicht das Design verkauft… sondern die Copy.
 
 Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € holt… plus Upsells, damit jeder Käufer hinten raus noch mal mehr Geld bei dir lässt.
 
-Erst sobald das alles passt, skalieren wir dann in Phase 3…
+Erst wenn das alles passt, skalieren wir dann in Phase 3.
 
-Wir benutzen VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
+Dafür benutzen wir VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
@@ -141,21 +141,23 @@ Und mit dem Ganzen kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im
 
 Es ist immer wieder derselbe Prozess…
 
-Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos auf YouTube…
+Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos auf YouTube.
 
-Aber im Schnitt machen Brands, die mit uns arbeiten, in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
+Aber wissen ist halt das eine… umsetzen das andere.
+
+Und Brands, die das mit uns umsetzen, machen im Schnitt in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
 
 Die Zahl hab ich mir auch nicht aus dem Arsch gezogen… das kommt raus, wenn wir alle unsere Accounts auswerten.
 
-Das geht halt, weil so eine VSL Ad mit dem passenden Funnel locker 100 bis 200k Adspend aushält, ohne auszubrennen…
+Bei denen hält eine VSL Ad mit dem passenden Funnel locker 100 bis 200k Adspend aus, ohne auszubrennen…
 
-Und mit den Upsells bist du schon bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
+Und mit den Upsells liegen die schon bei 30 bis 35 % Marge, bevor sie überhaupt skalieren.
 
-Das ganze haben wir auch in allen möglichen nischen und märkten gemacht…
+Das klappt übrigens auch nicht nur bei Supplements…
 
-Wie z.B. bei CASE in X UNSCHEINBARE NISCHE.
+[CASE: Brand aus einer unscheinbaren Nische] zum Beispiel von X auf X im Monat… in X Monaten.
 
-Der Prozess immer der gleiche ist… egal, was du verkaufst.
+Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
 [7. UMSETZUNG MIT IRON + DELIVERABLES]
 
@@ -175,7 +177,7 @@ Aber wenn im Schnitt 1,4 Mio zusätzlich in den ersten 3 Monaten reinkommen… i
 
 [8. FÜR WEN DIE ZUSAMMENARBEIT GEDACHT IST (UND FÜR WEN NICHT)]
 
-Das gilt aber halt nur, wenn deine Brand auch ein Fit ist…
+Das gilt aber halt nur, wenn deine Brand auch wirklich ein guter Fit ist…
 
 Heißt, du machst schon mindestens 100k im Monat… und dein Produkt funktioniert, zaubern können wir nämlich auch nicht.
 
@@ -185,15 +187,15 @@ Wenn du dagegen nur den nächsten Trick suchst, der dir über Nacht den ROAS ver
 
 Und falls ich dich damit gerade disqualifiziert hab… tut mir nicht leid.
 
-Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst.
+Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst…
 
-Wir haben es auch überhaupt nicht nötig, dass du Kunde wirst…
+Wir haben es auch überhaupt nicht nötig, dass du Kunde wirst.
 
-Passt es nicht, nehmen wir dich nicht… egal, wie viel du zahlen willst.
+Wenn es nicht passt dann nehmen wir dich nicht… Ganz einfach… egal, wie viel du zahlen willst…
 
-Weil am Ende mein Name an jeder Brand hängt, mit der wir arbeiten.
+Weil am Ende nämlich mein Name an jeder Brand hängt, mit der wir arbeiten.
 
-Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study wirst.
+Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study bei Iron Media wirst.
 
 [9. CTA]
 
