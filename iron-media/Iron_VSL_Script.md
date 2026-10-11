@@ -9,7 +9,7 @@ Structure:
 2. Proof
 3. Soft CTA
 4. Current Situation + Probleme
-5. Creative Strategy + Ugly Funnels als Lösung
+5. Ugly Funnels als Lösung
 6. Mehr Proof
 7. Umsetzung mit Iron + Deliverables
 8. Für wen die Zusammenarbeit gedacht ist (und für wen nicht)
@@ -25,7 +25,7 @@ Wollen wir dir helfen, die Brand in den nächsten 3 Monaten auf 1 Mio im Monat z
 
 Und dir parallel dein eigenes Team aufzubauen… damit das Ganze am Ende auch ohne uns läuft.
 
-Wie genau wir das machen, für wen das ist… und für wen halt auch nicht… zeig ich dir jetzt ganz stumpf in diesem Video.
+Wie genau wir das machen, für wen das ist… und für wen halt auch nicht… zeig ich dir jetzt ganz stumpf in den nächsten 5 minuten hier…
 
 Aber keine Sorge, ich halt mich kurz und werde dich nicht zulabern mit den neuesten Shiny Objects oder irgendwelchen geheimen Prozessen.
 
@@ -35,21 +35,23 @@ Also, kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iro
 
 Allein dieses Jahr über 30 davon auf 8 stellig… und laut Financial Times und Statista sind wir der am schnellsten wachsende Ecom Growth Partner Europas.
 
-Darunter zum Beispiel IM8 von David Beckham, die wir von Tag 1 mit aufgebaut haben…
+Wir haben mit Brands gearbeitet, wie zum Beispiel IM8 von David Beckham, die wir von Tag 1 mit aufgebaut haben…
 
 Im ersten Jahr knapp 100 Millionen Umsatz… steht so auch in deren Pressemitteilung.
 
-Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Supplement Brand in Deutschland.
+Dazu More Nutrition, ESN, Kinobody, The Oodie… und so ziemlich jede größere Health, Beauty, und Supplement Brand im Dach Raum.
 
 Aber eben auch Brands, die genau da angefangen haben, wo du jetzt stehst…
 
 NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leuten im Team.
 
-Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.
+(2. CASE STUDY: Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.)
+
+(Und 3. CASE STUDY)
 
 [3. SOFT CTA]
 
-Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast…
+Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast mit unserer Hilfe auf 8-stelig zu skalieren…
 
 Dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen…
 
@@ -57,13 +59,13 @@ Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt di
 
 Wir können uns die Kunden mittlerweile zum Glück aussuchen…
 
-Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio bringen…
+Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio im Monat bringen…
 
 Denn jeder schlechte Kunde schadet mir mehr als dem Kunden selbst.
 
 Also, buche gerne den call…
 
-Aber falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt ganz genau, wie die Zusammenarbeit mit Iron Media funktioniert…
+Aber falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt mal ganz genau, wie die Zusammenarbeit mit Iron Media funktioniert…
 
 Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächsten 3 monaten.
 
@@ -74,6 +76,8 @@ Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir wahrscheinlich gen
 Product Market Fit ist da… die Ads bringen Umsatz… und eigentlich passt das ja auch.
 
 Aber sobald du das Budget hochdrehst… geht der CPA hoch und die Marge runter.
+
+Vielleicht warst du sogar schon mal weiter… und jetzt geht's eher wieder runter.
 
 Die Ads, die gerade noch richtig gut liefen, brennen aus… und die neuen kommen da nicht mehr ran.
 
@@ -86,8 +90,6 @@ Und genau das ist das Problem…
 Damit holen deine Ads nämlich fast nur eine Bewusstseinsstufe ab… die, die dein Produkt eh schon kaufen wollen.
 
 Sobald du aber das Budget hochdrehst, kommen auf einmal viel kältere Leute dazu…
-
-Die kennen dich nicht, sind skeptisch und haben Einwände…
 
 Deine Ads reden mit denen aber immer noch genauso wie mit den Warmen…
 
@@ -111,7 +113,7 @@ Phase 1 ist Research…
 
 Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst…
 
-Und daraus bauen wir deine Creative Strategy… also mit welchen Angles du kalte und warme Leute abholst.
+Und daraus bauen wir deine Creative Strategy und direct response funnels… also mit welchen Angles du kalte und warme Leute abholst.
 
 Phase 2 ist dann das Fundament…
 
@@ -123,7 +125,7 @@ Wer dich schon kennt, auf einer kurzen Seite, die nur noch die letzten Einwände
 
 Und so weiter
 
-Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
+Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau…
 
 Weil da nicht das Design verkauft… sondern die Copy.
 
@@ -132,10 +134,6 @@ Und dahinter kommt ein Offer, das schon bei der ersten Bestellung über 100 € 
 Erst in Phase 3 skalieren wir dann…
 
 Mit VSL Ads, die genau das Problem aus dem Research ansprechen… und so auch die kalten Leute abholen, die deine Brand noch nie gesehen haben.
-
-Und die testen wir nicht mehr random… sondern Hook, Lead und Body einzeln.
-
-So weißt du bei jedem Winner genau, warum er funktioniert… und wie du daraus den nächsten baust.
 
 Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und kannst das Budget hochdrehen, ohne dass dir die Marge wegbricht.
 
