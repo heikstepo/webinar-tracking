@@ -1,7 +1,23 @@
 # Iron VSL Script (in Arbeit)
 
 ```
-[BLOCK 1: EINSTIEG MIT DEM OFFER]
+Iron - VSL Script Oktober 2026
+
+Structure:
+
+1. Offer
+2. Proof
+3. Soft CTA
+4. Current Situation + Probleme
+5. Ugly Funnels als Lösung
+6. Mehr Proof
+7. Umsetzung mit Iron + Deliverables
+8. Für wen die Zusammenarbeit gedacht ist (und für wen nicht)
+9. CTA
+
+VSL Script:
+
+[1. OFFER]
 
 Falls du eine Ecom Brand hast, die gerade bei 100 bis 500k Monatsumsatz ist…
 
@@ -13,7 +29,7 @@ Wie genau wir das machen, für wen das ist… und für wen halt auch nicht… ze
 
 Aber keine Sorge, ich halt mich kurz und werde dich nicht zulabern mit den neuesten Shiny Objects oder irgendwelchen geheimen Prozessen.
 
-[PROOF]
+[2. PROOF]
 
 Also, kurz zu mir… mein Name ist Sebastian Szalinski, und mit meiner Firma Iron Media haben wir mittlerweile über 500 Ecom Brands skaliert…
 
@@ -31,11 +47,13 @@ NoMisk zum Beispiel von 100k auf 2,6 Millionen im Monat… mit weniger als 6 Leu
 
 Oder eine Brand von 60k auf über 600k im Monat, mit 25 % Marge.
 
-[SOFT CTA]
+[3. SOFT CTA]
 
-Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast… dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen…
+Und wenn dir das schon reicht und du weißt, dass du da Bock drauf hast…
 
-Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das mit uns ein guter Fit wäre.
+Dann kannst du dir eigentlich jetzt schon direkt unter diesem Video einen Termin buchen…
+
+Da schaut sich einer unserer Customer Success Manager deine Brand an und sagt dir ehrlich, ob das mit uns ein guter fit wäre.
 
 Wir können uns die Kunden mittlerweile zum Glück aussuchen…
 
@@ -43,13 +61,13 @@ Und nehmen nur die Brands, bei denen wir uns sicher sind, dass wir sie auf 1 Mio
 
 Denn jeder schlechte Kunde schadet mir mehr als dem Kunden selbst.
 
-Also, buche gerne den Call…
+Also, buche gerne den call…
 
 Aber falls du vorher noch ein bisschen mehr wissen willst… dann bleib dran… ich erklär dir jetzt ganz genau, wie die Zusammenarbeit mit Iron Media funktioniert…
 
-Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächsten 3 Monaten.
+Und wie genau wir deine Brand von 7 auf 8 stellig skalieren werden in den nächsten 3 monaten.
 
-[BLOCK 2: SITUATIONSANALYSE UND KONSEQUENZEN]
+[4. CURRENT SITUATION + PROBLEME]
 
 Also, wenn du bei 100 bis 500k im Monat bist, sieht's bei dir genauso aus wie bei fast jeder Brand, die bei uns auf den Call kommt…
 
@@ -77,7 +95,7 @@ Solange sich daran nichts ändert, bleibst du genau da, wo du jetzt bist… egal
 
 Genau da setzen wir an… um dich in den nächsten 3 Monaten auf 1 Mio im Monat zu bringen.
 
-[BLOCK 3: WIE WIR DICH DAHIN BRINGEN]
+[5. UGLY FUNNELS ALS LÖSUNG]
 
 Und das machen wir mit dem, was wir intern Ugly Funnels nennen…
 
@@ -87,7 +105,7 @@ Phase 1 ist Research…
 
 Da schauen wir uns an, warum deine Kunden wirklich bei dir kaufen… also welches Problem du für die eigentlich löst…
 
-Und welche Angles man für die Ads und die Funnels benutzen könnte.
+Und welche angles man für die ads und die funnels benutzen könnte.
 
 Phase 2 ist dann das Fundament…
 
@@ -95,7 +113,9 @@ Statt alles auf die Produktseite zu schicken, bekommt jede Bewusstseinsstufe ihr
 
 Wer dich noch nicht kennt, landet auf einem langen Advertorial, das erst mal erklärt, warum er dein Produkt überhaupt braucht…
 
-Wer dich schon kennt, auf einer kurzen Seite, die nur noch die letzten Einwände ausräumt.
+Wer dich schon kennt, auf einer kurzen Seite, die nur noch die letzten Einwände ausräumt…
+
+Und so weiter
 
 Die Dinger sehen zwar nicht schön aus, daher auch der Name… aber die verkaufen wie Sau.
 
@@ -109,13 +129,11 @@ Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und k
 
 Und genau so kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
 
-[BLOCK 4: PROOF]
+[6. MEHR PROOF]
 
 Es ist immer wieder derselbe Prozess…
 
-Und ich mach da auch überhaupt kein Geheimnis draus und verkauf dir irgendwelche random Ebooks…
-
-Das meiste zeig ich auch auf YouTube und Instagram, wo wir mit die größten in der deutschen Ecom Szene sind…
+Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos.
 
 Aber im Schnitt machen Brands, die mit uns arbeiten, in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
 
@@ -125,17 +143,15 @@ Das geht halt, weil so eine VSL Ad mit dem passenden Funnel locker 100 bis 200k 
 
 Und mit den Upsells bist du schon bei 30 bis 35 % Marge, bevor du überhaupt skalierst.
 
-Das Ganze haben wir auch in allen möglichen Nischen und Märkten gemacht…
+Das ganze haben wir auch in allen möglichen nischen und märkten gemacht…
 
 Einfach weil der Prozess immer der gleiche ist… egal, was du verkaufst.
 
-[CASE: Brand außerhalb von Supplements] zum Beispiel von X auf X im Monat… in X Monaten.
-
-[BLOCK 5: GENAUE UMSETZUNG]
+[7. UMSETZUNG MIT IRON + DELIVERABLES]
 
 Und damit das bei dir genauso schnell geht… sieht die Zusammenarbeit in den 3 Monaten so aus.
 
-[DELIVERABLES: was du in den 3 Monaten genau bekommst und wie die Zusammenarbeit läuft… am Ende eine Heißt-Line, die das zusammenfasst und an "eigenes Team aufbauen… damit das Ganze am Ende auch ohne uns läuft" aus Block 1 anknüpft]
+[DELIVERABLES]
 
 Und ganz wichtig… wir schalten nichts ab, was bei dir gerade funktioniert.
 
@@ -143,11 +159,11 @@ Die neuen Funnels testen wir daneben… und erst wenn die mehr bringen, stellen 
 
 Klar… günstig sind wir nicht.
 
-Je nach Umfang kostet dich das [PREIS: X bis X] im Monat…
+Je nach Umfang liegst du da irgendwo im 4 bis 5 stelligen Bereich im Monat…
 
 Aber wenn im Schnitt 1,4 Mio zusätzlich in den ersten 3 Monaten reinkommen… ist das eher ein No Brainer.
 
-[BLOCK 6: FÜR WEN DAS IST UND FÜR WEN NICHT]
+[8. FÜR WEN DIE ZUSAMMENARBEIT GEDACHT IST (UND FÜR WEN NICHT)]
 
 Das gilt aber halt nur, wenn deine Brand auch ein Fit ist…
 
@@ -165,11 +181,13 @@ Bringt halt keinem was, wenn ich dir was anbiete, was du nicht brauchst.
 
 Wir haben es auch überhaupt nicht nötig, jeden zu nehmen…
 
+Im Gegenteil… jeder schlechte Kunde schadet mir mehr als dem Kunden selbst…
+
 Weil am Ende mein Name an jeder Brand hängt, mit der wir arbeiten.
 
 Wenn du aber ein geiler Fit bist… setzen wir alles daran, dass du die nächste geile Case Study wirst.
 
-[BLOCK 7: CTA UND WAS IM CALL PASSIERT]
+[9. CTA]
 
 Und ob du das bist, finden wir im Call raus…
 
@@ -187,7 +205,7 @@ Und sagt dir ehrlich, ob du ein Fit bist… und wenn ja, wie genau das bei dir a
 
 Falls nicht, sagen wir dir das auch… und du weißt danach trotzdem, wo's gerade hakt.
 
-Und nein… da belabert dich auch keiner eine Dreiviertelstunde in irgendeine Ratenzahlung.
+Und wie versprochen… da belabert dich auch keiner.
 
 Also… wenn deine Brand gerade bei 100 bis 500k steht und du in den nächsten 3 Monaten die 1 Mio knacken willst…
 
