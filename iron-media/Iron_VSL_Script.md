@@ -129,11 +129,15 @@ Heißt, du verdienst an jedem Kunden deutlich mehr als deine Konkurrenz… und k
 
 Und mit dem Ganzen kommst du in 3 Monaten von da, wo du jetzt bist, auf 1 Mio im Monat.
 
+Und dafür brauchst du auch kein riesiges Team… NoMisk hat das zum Beispiel mit weniger als 6 Leuten geschafft.
+
 Es ist immer wieder derselbe Prozess…
 
 Und ich mach da auch überhaupt kein Geheimnis draus… das meiste davon zeig ich eh kostenlos auf YouTube.
 
 Aber wissen ist halt das eine… umsetzen das andere.
+
+Deswegen gibt's bei uns auch keinen Kurs und kein Gruppencoaching… sondern wir bauen das direkt mit dir zusammen, für deine Brand.
 
 Und Brands, die das mit uns umsetzen, machen im Schnitt in den ersten 3 Monaten 1,4 Mio zusätzlichen Umsatz.
 
@@ -157,6 +161,8 @@ Und ganz wichtig… wir schalten nichts ab, was bei dir gerade funktioniert.
 
 Die neuen Funnels testen wir daneben… und erst wenn die mehr bringen, stellen wir um.
 
+Heißt, du riskierst keinen Umsatzeinbruch… auch nicht kurz vor Q4.
+
 Klar… günstig sind wir nicht.
 
 Je nach Umfang liegst du da irgendwo im 4 bis 5 stelligen Bereich im Monat…
@@ -168,6 +174,8 @@ Das gilt aber halt nur, wenn deine Brand auch wirklich ein guter Fit ist…
 Heißt, du machst schon mindestens 100k im Monat… und dein Produkt funktioniert, zaubern können wir nämlich auch nicht.
 
 Und du willst selbst verstehen, was in deinem Account passiert… statt alles an die nächste Agentur abzugeben und zu hoffen, dass es diesmal klappt.
+
+Klar, ein bisschen Zeit musst du dafür reinstecken… aber die steckst du wahrscheinlich eh schon rein, nur gerade an den falschen Stellen.
 
 Wenn du dagegen nur den nächsten Trick suchst, der dir über Nacht den ROAS verdoppelt… dann sind wir für dich ehrlich gesagt nicht die Richtigen.
 
