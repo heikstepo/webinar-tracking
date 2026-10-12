@@ -27,8 +27,9 @@ Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] 
 5 · Catch-22
 - "LinkedIn only works if I post every week… and I can't post every week because I'm running the company."
 
-6 · Mechanism
-- [Authority Engine] = Impact Cards get you seen, thought leadership gets you trusted, the Media Engine puts both in front of your buyers, and you get a weekly list of who's warm
+6 · How we do it (not named in ads, we sell done-for-you, not a method)
+- we capture how you think in 1 hour, we write your posts in your voice, our network gets them in front of your buyers, you get a weekly list of who's warm
+- each ad opens on their exact problem, then we come in and do it for them. Only explain the part of "how" that fixes that ad's problem
 
 7 · Analogy (Alex's own, from the calls)
 - a snowball down a hill / jump-starting a car: hard to get moving, compounds once it rolls
@@ -56,9 +57,11 @@ Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] 
 
 Keep out of hooks: impressions, likes, followers. That's the commodity part and it pulls creators and coaches.
 
-## Ad Group 1: Problems they hit trying to grow on LinkedIn (Selfie-style iPhone video)
+## Ad Group 1
 
 ```
+Ad Group 1: Problems they hit trying to grow on LinkedIn (Selfie-style iPhone video)
+
 Filming Idea: Film yourself walking outside with your phone in one hand… talking to it like you're on FaceTime with a founder friend who just told you they stopped posting again. Normal pace. Don't redo a take over small stumbles, raw works better here.
 
 
@@ -67,54 +70,241 @@ Creative 1.1 - No Time
 
 "I know I should be posting on LinkedIn… I just don't have the time."
 
-
 If you run a B2B company… I hear that on almost every call.
-
 
 And it usually goes the same way…
 
-
 You post for 2 or 3 weeks… then a big client needs you… a deal needs closing…
-
 
 And LinkedIn's the first thing to go.
 
-
 Which makes sense… the business comes first.
-
 
 Problem is… LinkedIn's a bit like getting a snowball down a hill.
 
-
 Hard to get moving… but once it rolls, it speeds up on its own.
-
 
 So every time you stop for a couple months… you're back at the top, pushing it again.
 
+And there's always gonna be another busy month.
 
-Look… you don't need to find more time…
+So we just do it for you.
 
+You spend one hour with my team… we get how you think, how you sell, the stories you tell clients…
 
-You ACTUALLY need your LinkedIn to keep running without you.
+Then we write 5 posts a week for you… in your voice…
 
-
-My clients use something I call the [Authority Engine] for that.
-
-
-You spend one hour telling my team how you think and how you sell…
-
-
-And from then on, posts go out every week in your voice… you just approve them… about 10 minutes a month.
-
+And all you do is approve them… which takes about 10 minutes a month.
 
 So even in your busiest month… the snowball keeps rolling.
 
-
 Now just so you know… this is only for founders of B2B companies doing over [$1M] a year… who already know LinkedIn works… but can't be the one running it.
 
+If that's you, click the link below and watch a short video where I show you how we get you [30 warm, qualified leads in your first 30 days]… without you writing a single post.
 
-If that's you, click the link below and watch a short video where I show you how to get [30 warm, qualified leads from LinkedIn in 30 days]… without writing a single post yourself.
+[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
 
+
+Creative 1.2 - 12 Likes
+
+
+You finally post something on LinkedIn about your company… something you actually put thought into…
+
+And it gets 12 likes.
+
+9 of them from your own team.
+
+[SHOW: a post with 12 reactions, mostly people from your own company]
+
+So you figure the post wasn't good enough… and you stop.
+
+But most of the time, the post was fine.
+
+The problem is who saw it.
+
+When you post, LinkedIn first shows it to a small group… mostly people you're already connected to.
+
+Your team… a few old colleagues… some friends.
+
+And if nobody engages early… LinkedIn just stops showing it.
+
+So your buyers never even see it.
+
+That's why when we run a founder's LinkedIn… writing the posts is only half of it.
+
+The other half is getting them seen.
+
+We have our own network of LinkedIn pages and creators… whose followers are the kind of buyers you sell to.
+
+Within about 15 minutes of your post going live… they engage with it…
+
+So LinkedIn reads it as relevant… and pushes it to more of the right people.
+
+On average, our clients get about 10x the engagement within their first 12 weeks.
+
+Now just so you know… this is only for B2B founders doing over [$1M] a year… who've posted before and got nothing back.
+
+If that's you, click the link below and watch a short video where I show you how we get your posts in front of the right buyers… and turn that into [30 warm, qualified leads in your first 30 days].
+
+[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+
+
+Creative 1.3 - Didn't Sound Like You
+
+
+"In today's fast-paced business world… leadership matters more than ever."
+
+[SHOW: a generic LinkedIn post that opens with this line]
+
+If you run a B2B company and your LinkedIn posts sound anything like that… your buyers stopped reading after the first line.
+
+And I get how it happens.
+
+You don't have time to write… so you hand it to someone.
+
+A ghostwriter… ChatGPT… someone on your team…
+
+And what comes back could've been written for any company in your space.
+
+Generic… about stuff your buyers don't care about… and nothing in it sounds like you.
+
+And people can tell.
+
+Because the reason buyers follow a founder… is to hear how YOU think about the work.
+
+So when we write for you… we start with one hour where we get all of that out of your head.
+
+Your opinions… the stories you tell on sales calls… the stuff you'd push back on if a client said it.
+
+Then my team writes every post in your voice… no AI-speak, no buzzwords…
+
+And nothing goes live until you've approved it.
+
+95% of what we write gets approved the first time.
+
+Now just so you know… this is only for founders of B2B companies doing over [$1M] a year… who've tried handing off their LinkedIn before and hated how it sounded.
+
+If that's you, click the link below and watch a short video where I show you how we write posts that actually sound like you… and turn them into [30 warm, qualified leads in your first 30 days].
+
+[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+```
+
+## Ad Group 2
+
+```
+Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the car)
+
+Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
+
+
+Creative 2.1 - Only Referrals
+
+
+"Most of our clients come from referrals."
+
+If you run a B2B company… that's probably what you'd say too.
+
+Which is great… it means people trust you.
+
+But it also means your growth depends on people remembering to mention you.
+
+One founder told me 90% of their business is referrals… and they're scared that one day it just dries up.
+
+Because the only people who can send you work… are people who already know you.
+
+So how do you get people who've never met you to trust you like that?
+
+By letting them watch how you think on LinkedIn… every week… so by the time they reach out, they already trust you.
+
+And we do all of it for you.
+
+One hour to get how you think… then we write your posts every week and get them in front of the buyers you want.
+
+And every week, you get a list of the people in your market who are already engaging with you.
+
+Scott runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
+
+[ON SCREEN: Documented example. Scott, IT consulting]
+
+Now just so you know… this is only for B2B founders doing over [$1M] a year… who live on referrals and want a second way in.
+
+If that's you, click the link below and watch a short video where I show you how we get you [30 warm, qualified leads in your first 30 days]… from people who've never been referred to you.
+
+[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+
+
+Creative 2.2 - The Worse Competitor Wins
+
+
+If you run a B2B company… there's probably a competitor who's not as good as you…
+
+And they still win clients you should've won.
+
+And it's frustrating… because you know your work is better.
+
+But most buyers don't pick the best company… they pick the one they've already seen.
+
+Before they ever get on a call… they've looked around.
+
+They check LinkedIn… they see who's been posting about their problem every week…
+
+And by the time they reach out… they've pretty much made up their mind.
+
+So you don't need to get better at what you do.
+
+You ACTUALLY need your buyers to see how good you are… before they ever talk to you.
+
+And that's what we do.
+
+One hour with my team… then we write your posts every week, in your voice…
+
+And our network gets them in front of the buyers in your market… so when they start looking, you're the one they've been reading.
+
+Ryan's in GovTech… a really niche, regulated market… and got 61 warm leads in the first month.
+
+[ON SCREEN: Documented example. Ryan, GovTech]
+
+Now just so you know… this is only for B2B founders doing over [$1M] a year… who know they're better than the competition… but aren't the name buyers think of first.
+
+If that's you, click the link below and watch a short video where I show you how we make you the one buyers have already seen… and get you [30 warm, qualified leads in your first 30 days].
+
+[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+
+
+Creative 2.3 - Cold Leads Go Quiet
+
+
+If you run a B2B company and your cold leads keep going quiet after the first call…
+
+Chances are they looked you up.
+
+They go on your LinkedIn… and find a profile that hasn't posted in months.
+
+Nothing about how you work… nothing that tells them you know your stuff.
+
+So they go with someone they feel like they know better.
+
+And honestly… you can't blame them.
+
+They met you 30 minutes ago.
+
+I see it on my own calls all the time… when someone's been reading my posts for a few weeks, they already trust me before we even start.
+
+So you don't need more leads.
+
+You ACTUALLY need leads who've seen you before the call.
+
+And that's what we do.
+
+We write your posts every week… in your voice… and our network gets them in front of the buyers in your market.
+
+So by the time someone gets on a call with you… they've been reading you for weeks.
+
+And every week, you get a list of the decision-makers who are already engaging with you… so you're not reaching out cold.
+
+Now just so you know… this is only for B2B founders doing over [$1M] a year… who are tired of leads that go quiet after the first call.
+
+If that's you, click the link below and watch a short video where I show you how we get you [30 warm, qualified leads in your first 30 days]… people who already know who you are.
 
 [ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
 ```
