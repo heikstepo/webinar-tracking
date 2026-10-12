@@ -68,9 +68,9 @@ Filming Idea: Film yourself walking outside with your phone in one hand… talki
 Creative 1.1 - No Time
 
 
-"I know I should be posting on LinkedIn… I just don't have the time."
+"I know I should be posting on LinkedIn… I'm just too busy running the company."
 
-If you run a B2B company… I hear that on almost every call.
+I hear that from B2B founders on almost every sales call I take.
 
 And it usually goes the same way…
 
@@ -92,11 +92,11 @@ So we just do it for you.
 
 You spend one hour with my team… we get how you think, how you sell, the stories you tell clients…
 
-Then we write 5 posts a week for you… in your voice…
+Then we write 5 posts a week… in your voice…
 
-And all you do is approve them… which takes about 10 minutes a month.
+And all you do is approve them… about 10 minutes a month.
 
-So even in your busiest month… the snowball keeps rolling.
+So even in your busiest month… the snowball keeps rolling… and your buyers keep seeing you.
 
 Now just so you know… this is only for founders of B2B companies doing over [$1M] a year… who already know LinkedIn works… but can't be the one running it.
 
