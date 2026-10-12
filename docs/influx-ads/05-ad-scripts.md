@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v3). 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v4). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -67,32 +67,24 @@ Ad Group 1: Problems they hit trying to grow on LinkedIn (Selfie-style iPhone vi
 Filming Idea: Film yourself walking outside with your phone in one hand… talking to it like you're on FaceTime with a founder friend who just told you they stopped posting again. Normal pace. Don't redo a take over small stumbles, raw works better here.
 
 
-Creative 1.1 - No Time (v3, rebuilt on the rules in influx-copy-rules.html)
+Creative 1.1 - Stop Writing Your Own Posts (v4)
 
 
-"I'll start posting on LinkedIn properly… once things calm down."
+Stop writing your own LinkedIn posts.
 
-I hear that from almost every B2B founder doing 1 to 10 million a year…
+If you run a B2B company doing 1 to 10 million a year… you're the last person who should be writing them.
 
-And things never calm down.
+Because it never lasts.
 
-You probably posted 3 weeks in a row…
-
-Then a big client needed you… and it stopped.
+You post 3 weeks in a row… then a big client needs you… and it stops.
 
 And now your last post is 4 months old.
 
-But the problem was never your time…
+The problem is… every single post needs YOU.
 
-It's that every single post needed YOU.
+Your ideas… and an hour on a Sunday you don't have.
 
-Your ideas… and an hour on a Sunday to write it.
-
-And the fix is pretty simple.
-
-The posts that work for founders aren't about what happened this week…
-
-They're about how you see your industry… and the stories you tell on sales calls.
+But the posts that work for founders are about how you see your industry… and the stories you tell on sales calls.
 
 And that stuff doesn't change week to week.
 
@@ -100,19 +92,23 @@ So you only need to get it out of your head once… and that's months of posts.
 
 That's how we do it at my company Influx.
 
-We spend one hour with you to get it all out… then my team writes your posts every week, in your voice.
+We spend one hour with you… then my team writes your posts every week.
 
-You just approve them… about 10 minutes a month.
+You approve them in about 10 minutes a month.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to 43 warm leads in the first month.
+And when the right people start engaging… my team reaches out and books them into your calendar.
+
+So all that's left for you… is the calls.
+
+That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
-So if you run a B2B company doing over [$1M] a year… you know LinkedIn works… you're just never gonna be the one writing the posts…
+So if you're doing over a million a year… you know LinkedIn works… but you'll never be the one writing the posts…
 
-Click below and watch how we'd run your LinkedIn for you… and get you [30 warm, qualified leads in your first 30 days].
+Click below and watch how we'd run your LinkedIn for you… and get you 30 qualified calls booked in the next 90 days.
 
-[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
 Creative 1.2 - 12 Likes
