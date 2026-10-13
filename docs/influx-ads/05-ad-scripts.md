@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v2). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -225,40 +225,50 @@ Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the ca
 Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
 
 
-Creative 2.1 - Only Referrals
+Creative 2.1 - Only Referrals (v2)
 
 
 "Most of our clients come from referrals."
 
-If you run a B2B company… that's probably what you'd say too.
+Almost every founder I talk to says that.
 
-Which is great… it means people trust you.
+And honestly… that's a great sign. It means people trust you.
 
-But it also means your growth depends on people remembering to mention you.
+But it also means you can't really turn it up.
 
-One founder told me 90% of their business is referrals… and they're scared that one day it just dries up.
+Referrals only come from people who already know you… so you can only grow as fast as your network does.
 
-Because the only people who can send you work… are people who already know you.
+One founder told me 90% of their business was referrals… and they were scared that one day it'd just dry up.
 
-So how do you get people who've never met you to trust you like that?
+So most founders try going cold… outbound, ads, that kind of thing.
 
-By letting them watch how you think on LinkedIn… every week… so by the time they reach out, they already trust you.
+But cold leads don't know you… so they don't trust you… so they don't close.
 
-And we do all of it for you.
+That same founder ran Meta ads for six months… got around 2,000 leads… and less than 3% turned into anything.
 
-One hour to get how you think… then we write your posts every week and get them in front of the buyers you want.
+So you end up stuck between referrals you can't control… and cold leads that won't close.
 
-And every week, you get a list of the people in your market who are already engaging with you.
+And that's where LinkedIn comes in.
 
-Scott runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
+Because when the right people see your posts every week… by the time they actually talk to you… they already trust you.
+
+Almost like they were referred.
+
+But that only works if the right posts get seen by people outside your network… and someone follows up with the ones who engage.
+
+That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
-Now just so you know… this is only for B2B founders doing over [$1M] a year… who live on referrals and want a second way in.
+So if you're running a B2B company doing over a million a year… and most of your clients still come from referrals…
 
-If that's you, click the link below and watch a short video where I show you how we get you [30 warm, qualified leads in your first 30 days]… from people who've never been referred to you.
+Click below and I'll show you how we'd build that for you…
 
-[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
 Creative 2.2 - The Worse Competitor Wins
