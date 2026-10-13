@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v2). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v3). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,50 +165,46 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Didn't Sound Like You (v2)
+Creative 1.3 - Handed It Off (v3)
 
 
-Ghostwriter… ChatGPT… or someone on your team.
+You knew you needed to be on LinkedIn…
 
-Who should be writing your LinkedIn posts?
+You just didn't have the time to do it yourself.
 
-Honestly… it doesn't matter which one you pick.
+So you did the smart thing and handed it off.
 
-They all run into the same problem.
+A marketing hire… a ghostwriter… or someone on your team with ChatGPT.
 
-They don't know what's in your head.
+And a few months later… nothing's really come from it.
 
-So you give them a quick brief…
+Because whoever's writing your posts doesn't know what you know.
 
-And they fill in the rest with generic stuff… or let ChatGPT do it.
+How you see your industry… the problems you see clients run into… what you'd actually say on a sales call.
 
-So the post comes out sounding like every other company in your space.
+So they guess.
 
-And people can tell it's not you.
+And when they guess… it comes out generic.
 
-And if they can tell it's not you… they don't trust it.
+And when it's generic… your buyers can tell it's not you… and they scroll right past.
 
-And if they don't trust it… they scroll right past.
+And the only way to fix that is to sit with them every week and tell them what to say…
 
-So if you want posts that sound like you… and actually get you calls… it comes down to 2 things.
+Which is the exact time you hired them to save.
 
-First… whoever writes them needs what's in your head before they write a single word.
+So the fix isn't finding a better writer.
 
-Not a brief… a proper hour on how you think… the stories you tell clients on sales calls.
+It's getting what's in your head out once… properly… so whoever's writing doesn't need you every week.
 
-And second… a real person writing it the way you talk… not ChatGPT.
+One proper hour on how you think… turned into a document every single post gets written from.
 
-That hour becomes a voice document… basically the rulebook for how you think and talk…
+After that… you just look over the posts once a month… about 10 minutes.
 
-And nothing gets written until you've signed off on it.
+That's how we write for our clients… and 95% of the posts get approved the first time.
 
-That's how we write for our clients… and 95% of it gets approved the first time.
+So if you're running a B2B company doing over a million a year… and you've already tried handing off your LinkedIn…
 
-So you're not stuck rewriting every post yourself.
-
-So if you're running a B2B company doing over a million a year… and you've handed off your LinkedIn before and hated how it sounded…
-
-Click below and I'll show you how we'd write your LinkedIn for you…
+Click below and I'll show you how we'd take it off your plate for good…
 
 Grow your LinkedIn brand in your own voice…
 
