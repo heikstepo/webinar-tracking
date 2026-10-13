@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -379,7 +379,7 @@ Ad Group 4: Straight offer (Talking head)
 Filming Idea: Phone on a tripod at eye level, plain wall or office behind you. Talk straight into the lens like you're laying out the offer to a founder on a call. Calm, direct, no walking.
 
 
-Creative 4.1 - Straight Offer + Proof + Mechanism (v1)
+Creative 4.1 - Straight Offer + Proof + Mechanism (v2, Heik's edit)
 
 
 If you're running a B2B company doing over a million a year…
@@ -394,11 +394,9 @@ Real quick about me…
 
 My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients…
 
-I've been a LinkedIn Top Voice twice myself…
+And I've also done it for myself… been a LinkedIn Top Voice twice… and built a 60k+ ICP following that actually drives over 7 figures in annual revenue.
 
-And just to give you an example… [CLIENT], who runs a [INDUSTRY] company… closed $[X] in new deals from LinkedIn in the first [X] months.
-
-[ON SCREEN: Documented example. [CLIENT], [INDUSTRY]. Source for the $[X]]
+[ON SCREEN: LinkedIn Top Voice 2019 & 2020]
 
 Now… it basically works like this.
 
@@ -410,11 +408,13 @@ Then our media engine… over 20 brands with more than 3 million followers combi
 
 And when those buyers start engaging… we reach out and book them straight into your calendar.
 
-Meaning… by the time someone gets on a call with you… they already know who you are.
+Meaning… by the time someone gets on a call with you… they already know, like, and trust your company.
 
 So if you're doing over a million a year… and you want 30 qualified calls in the next 90 days without writing a single post yourself…
 
 Click below… I'll show you exactly how we'd do it for you… and you can book a call with me right there.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
+
+Open before filming: sources for "well over 8 figures" and "over 7 figures in annual revenue", and whether the 60k following is mostly ICP.
 ```
