@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v4). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v5). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -109,48 +109,56 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.2 - Company News (v4)
+Creative 1.2 - Every Post Is A Pitch (v5)
 
 
-[SHOW: Scott's old post, a reshared company blog article with 2 engagements]
+[SHOW: three typical company posts flashing up… a new hire, a product update, a "book a demo" post]
 
-This post got 2 engagements.
+"Excited to welcome our new Head of Sales…"
 
-And it's from the CEO of an IT consulting firm.
+"Our new feature is live…"
 
-Honestly… this is what most B2B founders' LinkedIn looks like.
+"Book a call with our team today."
 
-A company announcement… a blog article… a "we're hiring" post.
+If that's most of what your company posts on LinkedIn… I'm guessing nothing's really coming from it.
 
-And then you wonder why nobody engages.
+And it's not because you're not posting enough.
 
-But nobody engaged because nobody had a reason to.
+It's because every post is either about your company… or asking for the sale.
 
-It's company news… and nobody comments on company news.
+But most of the people you want as clients don't know you yet.
 
-What people actually respond to… is what YOU think.
+And nobody books a call with someone they've never heard of.
 
-Your take on where your industry's going… the mistakes you see clients make… the stuff you'd say on a sales call.
+What gets them there is seeing how you think… week after week… before you ever ask for anything.
 
-[SHOW: Scott's post after Influx, 207 engagements]
+That's the biggest thing we change for founders at my company Influx.
 
-Same CEO… 207.
+Most of the posts we write for them aren't selling anything.
 
-That's Scott… one of our clients at my company Influx.
+Some are just one sharp take on their industry… so the right people notice them.
 
-And Scott didn't start posting more… the posts were just about something people actually cared about.
+Some show how they think… the stuff they'd normally only say on a sales call.
 
-We spent an hour getting Scott's opinions and stories out… and now my team turns them into posts every week.
+And about once a week… one asks for the conversation.
 
-Three of Scott's old posts got 8 engagements combined… three of the posts we wrote got 512.
+So by the time someone's ready to talk… they already know who you are.
 
-And it turned into 43 warm leads in the first month.
+Ryan runs sales at a GovTech company… and their LinkedIn was already active.
 
-[ON SCREEN: Documented example. Scott, IT consulting]
+Case studies… stock photos… hiring posts.
 
-So if you're running a B2B company doing over a million a year… and your LinkedIn is mostly company updates…
+Four of those got 79 engagements combined… four of the posts we wrote got 1,059.
 
-Click below and I'll show you how we'd turn what's in your head into posts your buyers actually respond to… and get you 30 qualified calls booked in the next 90 days.
+[SHOW: Ryan's before and after posts from the case study]
+
+And it turned into 61 warm leads in the first month.
+
+[ON SCREEN: Documented example. Ryan, GovTech]
+
+So if you're running a B2B company doing over a million a year… you're already posting… and nothing's coming from it…
+
+Click below and I'll show you how we'd plan out your LinkedIn for you… and get you 30 qualified calls booked in the next 90 days.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
