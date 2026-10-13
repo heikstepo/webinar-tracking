@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -465,7 +465,7 @@ AND get you 30 qualified calls booked in the next 90 days… for about 10 minute
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 4.3 - My LinkedIn, Built For You (v1)
+Creative 4.3 - My LinkedIn, Built For You (v2, Heik's edit)
 
 
 [SHOW: Alex's LinkedIn profile, scrolling]
@@ -476,25 +476,21 @@ My LinkedIn posts.
 
 I've been a LinkedIn Top Voice twice… built up over 60k followers… and a lot of the founders I end up working with found me just from reading my posts.
 
-One of them literally said to me on a call…
-
-"I'm probably not the only person that's ever reached out to you based off your posts."
-
-And honestly… that's exactly how it works.
-
-Now… if you're running a B2B company doing over a million a year… you already know LinkedIn can do the same for you.
+Now… if you're running a B2B company doing over a million dollars a year… you already know LinkedIn can do the same for you.
 
 But let's be real… you're not going to sit down and write a post every day while you're running a company.
 
 So here's the offer.
 
-We take everything that works on my LinkedIn… and do it on yours… and get you 30 qualified calls booked in the next 90 days.
+We take everything that works on my LinkedIn and has generated well over 8 figures in revenue across our B2B clients…
 
-Posts every day… in your voice… on the stuff your buyers actually care about.
+And do it on yours… and get you 30 qualified calls booked in the next 90 days guaranteed.
 
-Our media engine… over 20 brands with more than 3 million followers combined… reacting to every post in the first 15 minutes… so LinkedIn shows it to way more of your buyers.
+Basically… we write and post for you every day… in your voice.
 
-And a team reaching out to everyone who engages… and booking them straight into your calendar.
+Our media engine… 20+ brands with over 3 million followers… jumps on every post in the first 15 minutes.
+
+And everyone who engages… we book straight into your calendar.
 
 After the first month… all you do is look over your posts… about 10 minutes a month.
 
@@ -508,5 +504,5 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
-Open before filming: Alex's OK on "over 7 figures a year" from LinkedIn, and on quoting the Tony line.
+Open before filming: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls), and sources for "over 7 figures a year" and "well over 8 figures".
 ```
