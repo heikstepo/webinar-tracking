@@ -396,9 +396,9 @@ My name's Alex, and at my company Influx we've generated well over 8 figures for
 
 I've been a LinkedIn Top Voice twice myself…
 
-And just to give you an example… Ryan, who runs sales at a GovTech company… had 61 potential clients showing interest in the first month.
+And just to give you an example… [CLIENT], who runs a [INDUSTRY] company… closed $[X] in new deals from LinkedIn in the first [X] months.
 
-[ON SCREEN: Documented example. Ryan, GovTech]
+[ON SCREEN: Documented example. [CLIENT], [INDUSTRY]. Source for the $[X]]
 
 Now… it basically works like this.
 
