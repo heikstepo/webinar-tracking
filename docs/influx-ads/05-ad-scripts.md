@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -10,7 +10,7 @@ Open items before filming (kept out of the ads):
 - 2.3, 4.1, 4.3: a source for "well over 8 figures" across B2B clients.
 - 4.1, 4.3: a source for "over 7 figures a year" from Alex's LinkedIn, and whether the 60k following is mostly ICP.
 - 4.3: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls).
-- 3.1: Ryan's revenue (only modelled figures exist) and the post formats named.
+- 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
 - 3.2: Scott's revenue, or the line comes out.
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
@@ -264,7 +264,7 @@ Grow your LinkedIn brand…
 AND get you 30 qualified calls booked in the next 90 days… from people who've never been referred to you.
 
 
-Creative 2.2 - The Worse Competitor Wins (v4)
+Creative 2.2 - The Worse Competitor Wins (v5)
 
 
 If a competitor you know you're better than keeps winning deals you should've won… here's probably why.
@@ -273,33 +273,39 @@ Before a buyer ever gets on a call with anyone… they look you up.
 
 And these days that usually means LinkedIn… or asking ChatGPT, which pulls a ton from LinkedIn.
 
-It's actually the second most quoted site in AI answers, ahead of Wikipedia.
+Semrush actually found it's the second most quoted site in AI answers… ahead of Wikipedia.
 
 So if your competitor's posting every week and you're not… they're the one the buyer finds.
 
 And by the time anyone gets to you… they've usually already picked.
 
-Which means you're losing deals before you even get a shot… and it's got nothing to do with how good you are.
+So you're losing deals before you even get a shot… and it's got nothing to do with how good you are.
 
-The fix is pretty simple… show up where your buyers look, every single week.
+Now… if you want to win those deals back… you've got to be the one they find when they look.
 
-But that's exactly the part you don't have time for.
+Which means showing up on LinkedIn EVERY single week.
 
-So let us do it.
+And look… when you're running a 7 figure business… that's usually the first thing that gets dropped.
 
-We sit down with you for an hour… write and post for you every week… our media engine gets those posts in front of the right people…
+And that's exactly what we take off your plate at my company Influx.
 
-And when they start engaging… we book them straight into your calendar.
+We write and post for you every day… in your voice… for your ICP.
 
-That's what we did for Ryan, who runs sales at a GovTech company… a really niche, regulated market… 61 potential clients showing interest in the first month.
+Then over 20 big business brands we've partnered with react to every post within the first 15 minutes… so LinkedIn pushes it out to your buyers.
 
-So if you're doing over a million dollars a year… and you're tired of losing deals to people you know you're better than…
+And when they start engaging… our team books them straight into your calendar.
 
-Click below and I'll show you how we'd make you the one they find first…
+That's how Ryan, who runs sales at a GovTech company… in a really niche, regulated market… got 61 potential clients showing interest in the first month…
 
-Grow your LinkedIn brand…
+And [$X] in revenue.
 
-AND get you 30 qualified calls booked in the next 90 days on the backend.
+So if you want to be the one your buyers find first…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
 
 
 Creative 2.3 - They Look You Up (v5, Heik's final)
