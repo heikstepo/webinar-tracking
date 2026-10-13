@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v1.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -417,4 +417,46 @@ Click below… I'll show you exactly how we'd do it for you… and you can book 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 Open before filming: sources for "well over 8 figures" and "over 7 figures in annual revenue", and whether the 60k following is mostly ICP.
+
+
+Creative 4.2 - 10 Minutes A Month (v1)
+
+
+How much time do you actually need to spend on LinkedIn… to get 30 qualified calls booked in the next 90 days?
+
+With us… about 10 minutes a month.
+
+So if you're running a B2B company doing over a million a year… and you already know you should be on LinkedIn… you just don't have the time…
+
+We take the whole thing off your plate… and get you 30 qualified calls booked in the next 90 days.
+
+Here's what that actually looks like for you.
+
+First… we sit down with you once for about an hour… and get everything out of your head.
+
+The first month you'll be a bit more involved while we get your voice down.
+
+After that… we write and post for you every day… in your voice… for your ICP.
+
+Our media engine… over 20 brands with more than 3 million followers combined… reacts to EVERY post within 15 minutes… so LinkedIn pushes it out to way more of your buyers.
+
+Every week… we reach out to the buyers who engage… and book them straight into your calendar.
+
+And once a month… you look over your posts. That's about 10 minutes.
+
+Most of the time you'll just hit approve… 95% of our posts get approved the first time.
+
+We don't even need your password… and we've had zero account bans.
+
+That means all that's left for you… is those 10 minutes… and the calls.
+
+So if you're doing over a million a year… and you want LinkedIn bringing in calls without it eating into your week…
+
+Click below and I'll show you exactly how we'd run it for you…
+
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days… for about 10 minutes a month.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 ```
