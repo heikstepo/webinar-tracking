@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v2). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,44 +165,56 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Didn't Sound Like You
+Creative 1.3 - Didn't Sound Like You (v2)
 
 
-"In today's fast-paced business world… leadership matters more than ever."
+Ghostwriter… ChatGPT… or someone on your team.
 
-[SHOW: a generic LinkedIn post that opens with this line]
+Who should be writing your LinkedIn posts?
 
-If you run a B2B company and your LinkedIn posts sound anything like that… your buyers stopped reading after the first line.
+Honestly… it doesn't matter which one you pick.
 
-And I get how it happens.
+They all run into the same problem.
 
-You don't have time to write… so you hand it to someone.
+They don't know what's in your head.
 
-A ghostwriter… ChatGPT… someone on your team…
+So you give them a quick brief… maybe a few bullet points…
 
-And what comes back could've been written for any company in your space.
+And they fill in the rest with generic stuff… or let ChatGPT do it.
 
-Generic… about stuff your buyers don't care about… and nothing in it sounds like you.
+So the post comes out sounding like every other company in your space.
 
-And people can tell.
+And people can tell it's not you.
 
-Because the reason buyers follow a founder… is to hear how YOU think about the work.
+And if they can tell it's not you… they don't trust it.
 
-So when we write for you… we start with one hour where we get all of that out of your head.
+And if they don't trust it… they scroll right past.
 
-Your opinions… the stories you tell on sales calls… the stuff you'd push back on if a client said it.
+So if you want posts that actually sound like you… so the right people trust you enough to book a call… it comes down to 2 things.
 
-Then my team writes every post in your voice… no AI-speak, no buzzwords…
+First… whoever writes them needs what's in your head before they write a single word.
 
-And nothing goes live until you've approved it.
+Not a brief… a proper hour on how you think… your opinions… the stories you tell clients on sales calls.
 
-95% of what we write gets approved the first time.
+And second… a real person writing it the way you talk… not ChatGPT.
 
-Now just so you know… this is only for founders of B2B companies doing over [$1M] a year… who've tried handing off their LinkedIn before and hated how it sounded.
+That hour becomes a voice document… basically the rulebook for how you think and talk…
 
-If that's you, click the link below and watch a short video where I show you how we write posts that actually sound like you… and turn them into [30 warm, qualified leads in your first 30 days].
+And nothing gets written until you've signed off on it.
 
-[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+That's how we write for every founder we work with… and 95% of what we write gets approved the first time.
+
+So you're not stuck rewriting every post yourself.
+
+So if you're running a B2B company doing over a million a year… and you've handed off your LinkedIn before and hated how it sounded…
+
+Click below and I'll show you how we'd write your LinkedIn for you…
+
+Grow your LinkedIn brand in your own voice…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 ```
 
 ## Ad Group 2
