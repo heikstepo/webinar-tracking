@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v6). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,38 +165,36 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Hired To Post (v6)
+Creative 1.3 - Hired To Post (v7)
 
 
-You're paying someone every month to post on your LinkedIn…
+Every time I talk to founders that outsourced their LinkedIn posts to someone from their team or AI or some random freelancer…
 
-And you couldn't name a single client it's brought in.
+They pretty much tell me the same thing.
 
-Maybe it's your marketing person… a ghostwriter… or someone on your team throwing it into ChatGPT.
-
-And honestly… handing it off made total sense.
-
-You knew you needed to be on there… you just didn't have the time.
-
-But the posts go out… they get a few likes… and that's about it.
+"The posts go out… we get a few likes… and that's about it."
 
 No calls… no real conversations with buyers.
 
-And the reason's pretty simple.
+And look… handing it off made total sense.
 
-The person you hired was hired to post… so they post.
+They knew they needed to be on there… they just didn't have the time.
+
+But the reason it doesn't work is pretty simple.
+
+The person they hired was hired to post… so they post.
 
 Company updates… some generic stuff… whatever they can come up with that week.
 
-But nobody's really thinking about what your buyers actually care about…
+But nobody's really thinking about what their buyers actually care about…
 
 Nobody's making sure the right people even see it…
 
 And nobody's going after the people who do engage.
 
-Because posting on its own was never going to get anyone clients.
+And posting on its own was never going to get anyone clients.
 
-You need the whole thing working together.
+If you want LinkedIn to actually bring in clients… you need the whole thing working together.
 
 Posts your buyers actually care about…
 
