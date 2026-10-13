@@ -194,10 +194,6 @@ Nobody's making sure the right people even see it…
 
 And nobody's going after the people who do engage.
 
-I actually had a founder tell me this on a call last week…
-
-Their marketing person ran their LinkedIn… and it never really turned into conversations with the people they wanted to sell to.
-
 Because posting on its own was never going to get anyone clients.
 
 You need the whole thing working together.
