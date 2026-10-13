@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v2). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v3). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -109,48 +109,42 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.2 - 10 Likes (v2)
+Creative 1.2 - Liked By Your Own Team (v3)
 
 
-If you run a B2B company doing 1 to 10 million a year… and you've tried posting on LinkedIn…
+[SHOW: a founder's LinkedIn post with 12 reactions… all from people at the same company]
 
-You probably got about 10 likes.
+If your LinkedIn posts look like this… 12 likes, and every single one from someone on your payroll…
 
-And half of them were from your own team.
+It's probably not because your posts are bad.
 
-[SHOW: a post with a handful of reactions, mostly people from the same company]
+It's because nobody else ever saw them.
 
-So you figured LinkedIn just doesn't work for a company like yours.
+See… LinkedIn doesn't show your post to your whole network.
 
-But your posts probably weren't the problem.
+It shows it to a small group first… and for most B2B founders, that's their team and a few people they already know.
 
-When you post, LinkedIn only shows it to a few people first… mostly people you're already connected to.
+If that group doesn't react in the first hour or so… LinkedIn decides it's not worth showing to anyone else.
 
-Your team… some old colleagues… a few friends.
+So the post stops at 12 likes… before a single buyer ever sees it.
 
-And if they don't react quickly… LinkedIn just stops showing it.
+And it doesn't matter how good it was.
 
-So the people you actually want as clients… never even saw it.
+So at my company Influx… writing our clients' posts is only half the job.
 
-I see this all the time… I run a company called Influx, and we handle LinkedIn for B2B founders.
+The other half is making sure the right people actually see them.
 
-And for the founders we work with… writing the posts is only half of it.
+We've got our own network of LinkedIn pages and creators… whose followers are the kind of people our clients sell to.
 
-The other half is getting them in front of the right people.
+When a post goes live, they engage with it in the first 15 minutes…
 
-We've got our own network of LinkedIn pages and creators… with followers in the industries our clients sell to.
+So LinkedIn reads it as worth showing… and pushes it out to a lot more of the right people.
 
-So when a post goes live… they engage with it in the first 15 minutes or so…
+On average, our clients get about 10 times the engagement within their first 12 weeks… and not just from their own team.
 
-And LinkedIn starts showing it to a lot more of the right people.
+So if you're running a company doing over a million a year… and your posts mostly get likes from people who already work for you…
 
-On average, our clients get about 10 times the engagement within their first 12 weeks.
-
-And once the right people start engaging… we reach out and book the calls into their calendar.
-
-So if you're doing over a million a year… and you've posted before and got nothing back…
-
-Click below and I'll show you how we'd run it for you… and get you 30 qualified calls booked in the next 90 days.
+Click below and I'll show you how we'd get your posts in front of your buyers… and turn that into 30 qualified calls booked in the next 90 days.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
