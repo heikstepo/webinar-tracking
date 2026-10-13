@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v3). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v4). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -109,42 +109,48 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.2 - Liked By Your Own Team (v3)
+Creative 1.2 - Company News (v4)
 
 
-[SHOW: a founder's LinkedIn post with 12 reactions… all from people at the same company]
+[SHOW: Scott's old post, a reshared company blog article with 2 engagements]
 
-If your LinkedIn posts look like this… 12 likes, and every single one from someone on your payroll…
+This post got 2 engagements.
 
-It's probably not because your posts are bad.
+And it's from the CEO of an IT consulting firm.
 
-It's because nobody else ever saw them.
+Honestly… this is what most B2B founders' LinkedIn looks like.
 
-See… LinkedIn doesn't show your post to your whole network.
+A company announcement… a blog article… a "we're hiring" post.
 
-It shows it to a small group first… and for most B2B founders, that's their team and a few people they already know.
+And then you wonder why nobody engages.
 
-If that group doesn't react in the first hour or so… LinkedIn decides it's not worth showing to anyone else.
+But nobody engaged because nobody had a reason to.
 
-So the post stops at 12 likes… before a single buyer ever sees it.
+It's company news… and nobody comments on company news.
 
-And it doesn't matter how good it was.
+What people actually respond to… is what YOU think.
 
-So at my company Influx… writing our clients' posts is only half the job.
+Your take on where your industry's going… the mistakes you see clients make… the stuff you'd say on a sales call.
 
-The other half is making sure the right people actually see them.
+[SHOW: Scott's post after Influx, 207 engagements]
 
-We've got our own network of LinkedIn pages and creators… whose followers are the kind of people our clients sell to.
+Same CEO… 207.
 
-When a post goes live, they engage with it in the first 15 minutes…
+That's Scott… one of our clients at my company Influx.
 
-So LinkedIn reads it as worth showing… and pushes it out to a lot more of the right people.
+And Scott didn't start posting more… the posts were just about something people actually cared about.
 
-On average, our clients get about 10 times the engagement within their first 12 weeks… and not just from their own team.
+We spent an hour getting Scott's opinions and stories out… and now my team turns them into posts every week.
 
-So if you're running a company doing over a million a year… and your posts mostly get likes from people who already work for you…
+Three of Scott's old posts got 8 engagements combined… three of the posts we wrote got 512.
 
-Click below and I'll show you how we'd get your posts in front of your buyers… and turn that into 30 qualified calls booked in the next 90 days.
+And it turned into 43 warm leads in the first month.
+
+[ON SCREEN: Documented example. Scott, IT consulting]
+
+So if you're running a B2B company doing over a million a year… and your LinkedIn is mostly company updates…
+
+Click below and I'll show you how we'd turn what's in your head into posts your buyers actually respond to… and get you 30 qualified calls booked in the next 90 days.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
