@@ -106,8 +106,6 @@ So if you're doing over a million dollars a year… you know you should be on Li
 
 Click below and I'll show you how we'd run it for you… and get you 30 qualified calls booked in the next 90 days.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 
 Creative 1.2 - No Early Engagement (v9, Heik's edit)
 
@@ -162,8 +160,6 @@ Help you grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 
 Creative 1.3 - Hired To Post (v7)
 
@@ -213,8 +209,6 @@ Click below and I'll show you how we'd run the whole thing for you…
 Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
-
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 ```
 
 ## Ad Group 2
@@ -268,8 +262,6 @@ Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days… from people who've never been referred to you.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 
 Creative 2.2 - The Worse Competitor Wins (v4)
 
@@ -311,8 +303,6 @@ Click below and I'll show you how we'd make you the one they find first…
 Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
-
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
 Creative 2.3 - They Look You Up (v5, Heik's final)
@@ -366,8 +356,6 @@ Click below and I'll show you how we'd grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 Open before filming: source for "well over 8 figures", Alex's OK on the media engine numbers and the 15-minute line, source for the [X]% stat.
 ```
 
@@ -420,8 +408,6 @@ Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
 ```
 
@@ -467,8 +453,6 @@ Meaning… by the time someone gets on a call with you… they already know, lik
 So if you're doing over a million dollars a year… and you want 30 qualified calls in the next 90 days without writing a single post yourself…
 
 Click below… I'll show you exactly how we'd do it for you… and you can book a call with me right there.
-
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 Open before filming: sources for "well over 8 figures" and "over 7 figures in annual revenue", and whether the 60k following is mostly ICP.
 
@@ -516,8 +500,6 @@ Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days… for about 10 minutes a month.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
-
 
 Creative 4.3 - My LinkedIn, Built For You (v2, Heik's edit)
 
@@ -555,8 +537,6 @@ Click below and I'll show you exactly how we'd do it for you…
 Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
-
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 Open before filming: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls), and sources for "over 7 figures a year" and "well over 8 figures".
 ```
