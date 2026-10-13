@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is rebuilt (v2).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is rebuilt (v3).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -315,12 +315,14 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.3 - They Look You Up (v2)
+Creative 2.3 - They Look You Up (v3)
 
 
 Here's what a prospect does right after a good first call with you…
 
 They look you up.
+
+[STAT: X% of B2B buyers check a vendor's LinkedIn before they buy, source]
 
 Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
 
@@ -348,9 +350,11 @@ One hour with you… then we write and post every week… and our media engine g
 
 And when people start engaging… we book them straight into your calendar.
 
-That's what we did with Scott's company page… 4 comments in the three months before… 167 in the three months after.
+I see it on my own calls all the time… one founder told me last week they'd been following my posts for months before they ever reached out.
 
-[ON SCREEN: Documented example. Scott, IT consulting. Company page, Jan-Apr vs Apr-Jul 2026]
+And [CLIENT], who runs a [INDUSTRY] company… went from [X] to [X] booked calls a month… and closed [X] of them in the first [X] weeks.
+
+[ON SCREEN: Documented example. [CLIENT], [INDUSTRY]]
 
 So if you're doing over a million a year… and you're tired of good calls going quiet…
 
