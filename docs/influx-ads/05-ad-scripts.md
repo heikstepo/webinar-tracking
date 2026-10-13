@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v4 (Heik's draft, Influx named on purpose).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -315,7 +315,7 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.3 - They Look You Up (v4, Heik's draft)
+Creative 2.3 - They Look You Up (v5, Heik's final)
 
 Angle: cold leads ghost you or don't close… because when they look you up, there's nothing there.
 
@@ -348,27 +348,25 @@ There's not really any more time left in the day to write LinkedIn posts.
 
 And that's where we step in.
 
-My name's Alex, and at my company Influx we've helped [X] B2B founders book [X] qualified calls from LinkedIn…
+My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients…
 
-[SHOW: client result screenshots, e.g. Ryan's old posts vs ours]
+Without them ever having to write a single post themselves or step in front of a camera.
 
-We write and post daily on your behalf… in your voice… for your ICP…
+We basically write and post daily on your behalf… in your voice… for your ICP…
 
-Our media engine… over 20 brands with more than 3 million followers combined… react to it within 15 minutes so it gets pushed in the algorithm…
+Our media engine with over 20 brands and more than 3 million followers combined react to it within 15 minutes so it gets pushed in the algorithm…
 
 And when people start engaging… we book them straight into your calendar.
 
-I do this for myself as well… it's how I became a LinkedIn Top Voice twice… built up around 60k followers… and [X]% of my own clients find me through my posts.
-
-[ON SCREEN: LinkedIn Top Voice 2019 & 2020]
-
 So if you're doing over a million a year…
 
-And want LinkedIn to be an actual acquisition channel for your business…
+And want LinkedIn to be an actual reliable acquisition channel for your business…
 
 Click below and I'll show you how we'd grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
+
+Open before filming: source for "well over 8 figures", Alex's OK on the media engine numbers and the 15-minute line, source for the [X]% stat.
 ```
