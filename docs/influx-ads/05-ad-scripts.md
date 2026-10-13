@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v3 (Heik's draft).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -367,7 +367,7 @@ Ad Group 3: Mechanism (Whiteboard)
 Filming Idea: Alex at a whiteboard, drawing one diagram as he talks, built up line by line. Every video explains the whole thing. Keep the drawing simple: boxes, circles, arrows, a few words.
 
 
-Creative 3.1 - The Media Engine (v3, Heik's draft)
+Creative 3.1 - The Media Engine (v4, Heik's draft + new CTA)
 
 
 [DRAW: one post in the middle of the board, small circle around it labelled "your network"]
@@ -378,15 +378,19 @@ Because only a few people in their network react to their post.
 
 See, LinkedIn pushes your post in the algorithm based on how many early engagements it gets…
 
+And if you're starting out with a small audience… yeah… it's gonna be rough…
+
 That's why we run what we call a media engine.
 
-We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
+We've basically partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
 [DRAW: 20+ brands around the post, arrows pointing in]
 
-And EVERY time one of our clients posts… they all react to it within the first 15 minutes so it gets pushed by LinkedIn.
+And EVERY time we publish a post we've written for our clients…
 
-And because they're business brands… it pushes it out to more business people. Which means your ICP.
+They all react to it within the first 15 minutes so it gets pushed by LinkedIn.
+
+And because they're business brands… it pushes it out to more business people… Which means your ICP.
 
 [DRAW: arrow out to a big circle labelled "your ICP"]
 
@@ -402,11 +406,9 @@ And used our media engine to push them straight away so he didn't have to spend 
 
 So if you're running a 7 figure business… and your posts aren't going anywhere…
 
-Click below and I'll show you how we'd do the whole thing for you… from writing every post to getting it pushed…
+Click below and I'll show you how we'd build and run your whole LinkedIn brand completely done for you…
 
-Grow your LinkedIn brand…
-
-AND get you 30 qualified calls booked in the next 90 days on the backend.
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
 Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
 ```
