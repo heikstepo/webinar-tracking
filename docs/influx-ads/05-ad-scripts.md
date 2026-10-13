@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v2 (Heik's hook).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -379,48 +379,38 @@ Ad Group 3: Mechanism (Whiteboard)
 Filming Idea: Alex at a whiteboard, drawing one diagram as he talks, built up line by line. Every video explains the whole thing. Keep the drawing simple: boxes, circles, arrows, a few words.
 
 
-Creative 3.1 - The Media Engine (v1)
+Creative 3.1 - The Media Engine (v2, Heik's hook)
 
 
 [DRAW: one post in the middle of the board]
 
-We run over 20 brand pages on LinkedIn… with more than 3 million followers combined.
+You know why most B2B founders never grow on LinkedIn?
 
-And EVERY time one of our clients posts… all of them react to it within 15 minutes.
+Because only a few people in their network react to their post.
+
+[DRAW: small circle around the post, labelled "your network"]
+
+See, LinkedIn pushes your post in the algorithm based on how many early engagements it gets…
+
+That's why we run a media engine… over 20 LinkedIn brands we've partnered with… with more than 3 million followers combined.
 
 [DRAW: 20+ brands around the post, arrows pointing in]
 
-Now… why would that matter?
+And EVERY time one of our clients posts… they react to it within the first 15 minutes.
 
-Because LinkedIn decides how far your post goes based on the first reactions it gets.
-
-If people react fast… it shows it to more people. If they don't… it stops right there.
-
-And for most founders… those first reactions are their own team and a few old contacts.
-
-So the post stops there.
-
-[DRAW: small circle around the post, labelled "your team + old contacts"]
-
-And that's the catch… you need an audience to get reach… but you need reach to get an audience.
-
-A freelancer or an AI tool can write you a good post… but they can't get 20 big pages to react to it.
-
-That's what our media engine does.
-
-When those pages react in the first 15 minutes… LinkedIn sees the post is worth pushing…
-
-And because they're business pages… it pushes it out to more business people. Which means your buyers.
+Which tells LinkedIn the post is worth pushing… and because they're business brands… it pushes it out to more business people. Which means your buyers.
 
 [DRAW: arrow out to a big circle labelled "your buyers"]
 
-So you don't need an audience to start… you're using ours from day one.
+And that's the part nobody else can give you… a freelancer or an AI tool can write you a good post… but they can't get 20 big brands to react to it.
+
+So you don't need your own audience to start… you're using theirs from day one.
 
 That's how Ryan, who runs sales at a GovTech company… went from 79 engagements across four old posts… to 1,059 across four of ours.
 
 [ON SCREEN: Documented example. Ryan, GovTech]
 
-So the whole thing basically looks like this… we write your posts in your voice… our media engine pushes every one… and we book the buyers who engage straight into your calendar.
+Basically… we write your posts in your voice… our media engine pushes every one… and we book the buyers who engage straight into your calendar.
 
 So if you're doing over a million a year… and your posts aren't going anywhere…
 
