@@ -12,7 +12,7 @@ Open items before filming (kept out of the ads):
 - 4.3: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls).
 - 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
 - 3.2, 2.1, 5.1: Scott's revenue, or the line comes out. 5.2: Ryan's revenue.
-- 5.1, 5.2: Alex's OK on the 12-week numbers (532, 721). His offer doc only clears the month-1 numbers (43, 61).
+- All proof lines: real numbers for [X] new followers, [X] booked calls, [$X] in revenue and the timeframe, for Scott (1.1, 2.1, 3.2, 5.1) and Ryan (2.2, 5.2).
 - 5.3: Alex's OK on telling Tony's story (no name, '8 figure company').
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
@@ -55,7 +55,7 @@ Open items before filming (kept out of the ads):
 - a post goes out that sounds like AI, and in a small industry people notice
 
 9 · Support after the win
-- weekly list of potential clients who engaged, to start conversations with
+- weekly list of buyers who engaged, to start conversations with
 - optional: a dedicated setter books the conversations (never a call number)
 
 10 · Risk removal
@@ -111,7 +111,7 @@ And once the right people start engaging… we reach out and book the calls into
 
 So the only part they actually do… is the calls.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to 43 potential clients showing interest in the first month.
+That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
 So if you're doing over a million dollars a year… you know you should be on LinkedIn… but you're never going to be the one doing it…
 
@@ -265,7 +265,7 @@ Our media engine gets every post in front of your buyers… with over 20 big bus
 
 And everyone who engages… our team reaches out to and books into your calendar.
 
-That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
+That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
@@ -309,7 +309,7 @@ Then over 20 big business brands we've partnered with react to every post within
 
 And when they start engaging… our team books them straight into your calendar.
 
-That's how Ryan, who runs sales at a GovTech company… in a really niche, regulated market… got 61 potential clients showing interest in the first month…
+That's how Ryan, who runs sales at a GovTech company… in a really niche, regulated market… got [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
@@ -443,7 +443,7 @@ In the middle of the funnel we have long form posts in your voice where you take
 
 And at the bottom we've got posts that show your results and invite them to talk.
 
-That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
+That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
@@ -598,7 +598,7 @@ Ad Group 5: Proof
 Creative 5.1 - Scott: From Almost Zero (v1)
 
 
-This IT consulting CEO went from almost no LinkedIn following… to 532 potential clients showing interest in 12 weeks.
+This IT consulting CEO went from almost no LinkedIn following… to [X] new followers… [X] booked calls… and [$X] in revenue in [X] weeks.
 
 Here's exactly what changed.
 
@@ -616,9 +616,7 @@ Three of our posts got 512 engagements.
 
 The company page went from 4 comments in three months… to 167 in the next three.
 
-43 potential clients showed interest in the first month… and 532 by week 12.
-
-And [$X] in revenue.
+[X] new followers… [X] booked calls… and [$X] in revenue.
 
 All Scott had to do… was look over the posts.
 
@@ -650,9 +648,7 @@ And who saw it… over 20 big business brands we've partnered with reacted to ev
 
 Four of our posts got 1,059 engagements.
 
-61 potential clients showed interest in the first month… and by week 12… 721 across their two execs.
-
-And [$X] in revenue.
+[X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
 And that's in a niche, regulated market… where most people think LinkedIn doesn't even work.
 
