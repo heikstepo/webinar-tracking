@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v2). 2.3 below is an old draft that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v3). 2.3 below is an old draft that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -271,30 +271,28 @@ AND get you 30 qualified calls booked in the next 90 days… from people who've 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.2 - The Worse Competitor Wins (v2)
+Creative 2.2 - The Worse Competitor Wins (v3)
 
 
-If I was buying what you sell right now… I'd probably end up going with your competitor.
+You just lost a deal to a competitor you know you're better than.
 
-Even if you're better.
+And it probably happened before you ever got on a call.
 
-Because here's what I'd do before I ever got on a call with either of you…
+Because before a buyer talks to anyone… they check you out.
 
-I'd look you both up on LinkedIn.
+They look you both up on LinkedIn.
 
 Your last post is from March… theirs is from this morning.
 
-And honestly… I'd probably ask ChatGPT too.
-
-Which pulls a ton from LinkedIn… it's actually the second most quoted site in AI answers, ahead of Wikipedia.
+And a lot of them ask ChatGPT too… which pulls a ton from LinkedIn. It's actually the second most quoted site in AI answers, ahead of Wikipedia.
 
 [ON SCREEN: Semrush, March 2026]
 
 So guess whose name comes up.
 
-And by the time anyone gets on a call with you… they've usually already picked.
+And by the time anyone gets to you… they've usually already picked.
 
-Which means you're losing deals before you even get a shot… and it's got nothing to do with how good you are.
+Which means you're losing deals you never even got a shot at… and it's got nothing to do with how good you are.
 
 The fix is pretty simple… show up where your buyers look, every single week.
 
