@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v5). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v6). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,52 +165,58 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Handed It Off (v5)
+Creative 1.3 - Hired To Post (v6)
 
 
 You're paying someone every month to post on your LinkedIn…
 
 And you couldn't name a single client it's brought in.
 
-Maybe it's a marketing person… a ghostwriter… or someone on your team using ChatGPT.
+Maybe it's your marketing person… a ghostwriter… or someone on your team throwing it into ChatGPT.
 
 And honestly… handing it off made total sense.
 
 You knew you needed to be on there… you just didn't have the time.
 
-But the posts go out… you get a couple of likes… and that's about it.
+But the posts go out… they get a few likes… and that's about it.
 
-And it's not because the person you hired is bad at their job.
+No calls… no real conversations with buyers.
 
-It's because they're not you.
+And the reason's pretty simple.
 
-They don't know how you think… or what you'd say to a client on a sales call…
+The person you hired was hired to post… so they post.
 
-So they kind of have to guess.
+Company updates… some generic stuff… whatever they can come up with that week.
 
-And when someone's guessing… it ends up sounding like every other company out there.
+But nobody's really thinking about what your buyers actually care about…
 
-And your buyers just scroll right past it.
+Nobody's making sure the right people even see it…
 
-Now… the only real way to fix that is sitting down with them every week and telling them what to say…
+And nobody's going after the people who do engage.
 
-Which is the exact time you were trying to save in the first place.
+I actually had a founder tell me this on a call last week…
 
-The way around it… is getting it all out of your head once… properly.
+Their marketing person ran their LinkedIn… and it never really turned into conversations with the people they wanted to sell to.
 
-One real conversation… about an hour…
+Because posting on its own was never going to get anyone clients.
 
-And then every single post gets written from that.
+You need the whole thing working together.
 
-That way nobody needs you every week… you just look over the posts once a month.
+Posts your buyers actually care about…
 
-That's how we write for our clients… and 95% of it gets approved first time.
+Getting those posts in front of the right people…
+
+And then someone reaching out to the people who engage… and booking them into your calendar.
+
+That's what we do for our clients… start to finish.
+
+And it's why we can actually put a number on it.
 
 So if you're running a B2B company doing over a million a year… and you've already tried handing off your LinkedIn…
 
-Click below and I'll show you how we'd take it off your plate properly…
+Click below and I'll show you how we'd run the whole thing for you…
 
-Grow your LinkedIn brand in your own voice…
+Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
