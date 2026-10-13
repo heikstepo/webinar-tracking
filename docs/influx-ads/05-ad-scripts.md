@@ -616,8 +616,6 @@ Three of our posts got 512 engagements.
 
 The company page went from 4 comments in three months… to 167 in the next three.
 
-[X] new followers… [X] booked calls… and [$X] in revenue.
-
 All Scott had to do… was look over the posts.
 
 So if you're running a 7 figure business… and you're starting from almost nothing on LinkedIn too…
