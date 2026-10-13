@@ -42,7 +42,7 @@ Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] 
 - a post goes out that sounds like AI, and in a small industry people notice
 
 9 · Support after the win
-- weekly list of warm leads to start conversations with
+- weekly list of potential clients who engaged, to start conversations with
 - optional: a dedicated setter books the conversations (never a call number)
 
 10 · Risk removal
@@ -98,7 +98,7 @@ And once the right people start engaging… we reach out and book the calls into
 
 So the only part they actually do… is the calls.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to 43 warm leads in the first month.
+That's how Scott, who runs an IT consulting firm, went from almost no following to 43 potential clients showing interest in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
@@ -256,7 +256,7 @@ Pretty much like a referral… except this time you can actually make more of th
 
 But that only happens if the right people actually see your posts… and someone follows up with the ones who engage.
 
-That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
+That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 potential clients showing interest in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
@@ -300,7 +300,7 @@ We sit down with you for an hour… write and post for you every week… our med
 
 And when they start engaging… we book them straight into your calendar.
 
-That's what we did for Ryan, who runs sales at a GovTech company… a really niche, regulated market… 61 warm leads in the first month.
+That's what we did for Ryan, who runs sales at a GovTech company… a really niche, regulated market… 61 potential clients showing interest in the first month.
 
 [ON SCREEN: Documented example. Ryan, GovTech]
 
@@ -348,7 +348,7 @@ There's not really any more time left in the day to write LinkedIn posts.
 
 And that's where we step in.
 
-My name's Alex, and at my company Influx we've helped [X] B2B founders get [X] warm leads on LinkedIn…
+My name's Alex, and at my company Influx we've helped [X] B2B founders book [X] qualified calls from LinkedIn…
 
 [SHOW: client result screenshots, e.g. Ryan's old posts vs ours]
 
