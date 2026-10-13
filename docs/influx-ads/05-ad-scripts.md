@@ -454,7 +454,7 @@ A clear system for turning the people who engage into calls.
 
 Every week we see who from your ICP engaged with your posts or checked out your profile… and our team reaches out and books them straight into your calendar.
 
-[DRAW: arrow from the buyer figures to a calendar]
+[DRAW: arrow from the bottom of the funnel to a calendar]
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
 
