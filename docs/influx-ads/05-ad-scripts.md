@@ -322,9 +322,11 @@ Here's what a prospect does right after a good first call with you…
 
 They look you up.
 
-[STAT: X% of B2B buyers check a vendor's LinkedIn before they buy, source]
-
 Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
+
+In fact… [X]% of B2B buyers check a vendor out on LinkedIn before they ever buy.
+
+[ON SCREEN: source for the [X]% stat]
 
 And if there's barely anything there… nothing that shows you actually know your stuff…
 
