@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v5). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v6). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -67,7 +67,7 @@ Ad Group 1: Problems they hit trying to grow on LinkedIn (Selfie-style iPhone vi
 Filming Idea: Film yourself walking outside with your phone in one hand… talking to it like you're on FaceTime with a founder friend who just told you they stopped posting again. Normal pace. Don't redo a take over small stumbles, raw works better here.
 
 
-Creative 1.1 - Last Thing On The List (v5)
+Creative 1.1 - Last Thing On The List (v6)
 
 
 If you run a B2B company doing 1 to 10 million a year… you've probably told yourself you need to be posting on LinkedIn.
@@ -80,21 +80,21 @@ And it's always the last thing on there.
 
 Which makes sense… you've got clients and a team to look after. LinkedIn's never going to come first.
 
-So the answer isn't finding more time for it… it's getting it off your plate completely.
+I hear this from almost every founder I talk to… I run a company called Influx, and we handle LinkedIn for B2B founders.
 
-That's what we do at my company Influx.
+And with the founders we work with… we don't even try to get them to find the time.
 
-We sit down with you for one hour… and get how you think, the stuff you'd tell a client on a sales call.
+We sit down with them once, for about an hour… and get how they think, the stuff they'd tell a client on a sales call.
 
-From there, my team writes and posts for you every week.
+From there, my team writes and posts for them every week.
 
-All you do is look over the posts once a month… takes about 10 minutes.
+They look over the posts once a month… takes about 10 minutes.
 
-And once the right people start engaging with you… we reach out and book them into your calendar.
+And once the right people start engaging… we reach out to them and book the calls straight into the founder's calendar.
 
-So the only part you actually do is the calls.
+So the only part they actually do… is the calls.
 
-We did that for Scott, who runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
+That's how Scott, who runs an IT consulting firm, went from almost no following to 43 warm leads in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
