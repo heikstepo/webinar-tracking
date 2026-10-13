@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v2.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -413,7 +413,7 @@ And get you 30 qualified booked inbound calls in the next 90 days on the backend
 Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
 
 
-Creative 3.2 - Built To Convert (v1)
+Creative 3.2 - Built To Convert (v2)
 
 
 [DRAW: one post labelled "VIRAL" with a crowd of random stick figures around it]
@@ -432,13 +432,21 @@ And a lot of views don't mean a lot of money.
 
 So instead… we treat your LinkedIn like an acquisition channel.
 
-[DRAW: new post, small group of buyer figures labelled "your ICP"]
+[DRAW: a funnel with three levels: top, middle, bottom]
 
-Every post we write is for your ICP… the exact people you want as clients.
+Which means every post we write has a job… and every single one is written for your ICP.
+
+At the top… we've got what we call impact cards. One sharp idea on a designed card… so your buyers stop scrolling and notice you.
+
+In the middle… longer posts in your voice where you take a clear stand on your industry… so they start to trust you.
+
+And at the bottom… posts that show your results and invite them to talk… so the ones who are ready put their hand up.
+
+That way people actually move from never having heard of you… to ready to talk.
 
 Then our media engine kicks in.
 
-Over 20 big business brands react to it within the first 15 minutes… so LinkedIn pushes it out to more people just like them.
+Over 20 big business brands react to every post within the first 15 minutes… so LinkedIn pushes it out to more people just like them.
 
 And then comes the part almost everyone's missing…
 
