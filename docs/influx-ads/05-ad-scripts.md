@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2, 5.3 are v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v2 (straight flex).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -13,7 +13,7 @@ Open items before filming (kept out of the ads):
 - 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
 - 3.2, 2.1, 5.1: Scott's revenue, or the line comes out. 5.2: Ryan's revenue.
 - All proof lines: real numbers for [X] new followers, [X] booked calls, [$X] in revenue and the timeframe, for Scott (1.1, 2.1, 3.2, 5.1) and Ryan (2.2, 5.2).
-- 5.3: Alex's OK on telling Tony's story (no name, '8 figure company').
+- 5.3: Influx's own yearly revenue and the % of Influx clients who find it on LinkedIn.
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
@@ -659,34 +659,30 @@ And get you 30 qualified booked inbound calls in the next 90 days on the backend
 Click the link below and I'll show you how.
 
 
-Creative 5.3 - Alex: They Found Me (v1)
+Creative 5.3 - Alex: Straight Flex (v2)
 
 
-Recently… the founder of an 8 figure company booked a call with me… and one of the first things they said was…
+We've generated well over 8 figures for B2B founders on LinkedIn…
 
-"I'm probably not the only person that's ever reached out to you based off your posts."
+And my own LinkedIn brings in over 7 figures a year on top of that.
 
-And they're right.
+Real quick… my name's Alex, and I run Influx.
 
-My LinkedIn brings in over 7 figures a year for my business.
+I've been a LinkedIn Top Voice twice… I've built a 60k+ following that's mostly my ICP… and before Influx, I ran an 8 figure team.
 
-I've been a LinkedIn Top Voice twice… and built a 60k+ following that's mostly my ICP.
+And Influx itself does [$X] a year… with [X]% of our own clients finding us on LinkedIn.
 
-So buyers like that founder read my posts… and then they come to me.
+Now… here's why I'm telling you this.
 
-Now… that founder was still bringing in most of the company's sales personally.
-
-And what they wanted was a system that consistently brings in new qualified conversations with their ICP.
-
-That's exactly what we build for our clients at my company Influx.
+Everything that works on my LinkedIn… we now do for B2B founders who don't have the time to do it themselves.
 
 We write and post for you every day… in your voice.
 
-Then our partner brands jump on every post in the first 15 minutes… so LinkedIn shows it to way more of your buyers.
+Over 20 big business brands we've partnered with jump on every post in the first 15 minutes… so LinkedIn pushes it out to your buyers.
 
 And when those buyers engage… our team books them straight into your calendar.
 
-So if you're running a 7 figure business… and you want buyers coming to you first…
+So if you're running a 7 figure business… and you want LinkedIn doing for you what it does for me…
 
 We'll build and run your whole LinkedIn brand completely done for you…
 
