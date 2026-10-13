@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v8). No company name in ads. 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -109,12 +109,12 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.2 - No Early Engagement (v8)
+Creative 1.2 - No Early Engagement (v9, Heik's edit)
 
+
+[SHOW: three typical company posts flashing up… a new hire, a product update, a "book a demo" post]
 
 Most founders just never grow on LinkedIn simply because they're only posting stuff about their company, like…
-
-[SHOW: the three posts flashing up as they're read out]
 
 "Excited to welcome our new Head of Sales…"
 
@@ -128,19 +128,25 @@ And if nobody cares… nobody is going to react…
 
 And if nobody reacts to them, LinkedIn won't push it.
 
-That simple… that's how LinkedIn works.
+That simple… that's just how the LinkedIn algorithm works.
 
-So if you want LinkedIn to actually push your posts… you need two things.
+So if you want LinkedIn to actually push your posts so you can get qualified calls coming in… you need 2 things.
 
-First… posts your buyers actually care about. Your take on your industry… the problems you see clients run into… the stuff you'd normally only say on a sales call.
+First… posts your ICP actually care about.
+
+Your take on your industry… the problems you see clients run into… the stuff you'd normally only say on a sales call.
 
 And second… people reacting to them right when they go live.
 
-Because the first 15 minutes or so are what tell LinkedIn whether a post is worth pushing.
+Because the first 15 minutes are what tell LinkedIn whether a post is worth pushing.
 
-Get a bunch of big pages reacting in that window… and LinkedIn starts showing it to a lot more of the right people.
+I call this the media engine…
 
-That's exactly what we did for Ryan, who runs sales at a GovTech company… we wrote the posts, and our own network of big pages reacted to every one of them in the first 15 minutes.
+Because if a bunch of big pages react in that window… LinkedIn starts showing it to a lot more of the right people.
+
+That's exactly what we did for Ryan, who runs sales at a GovTech company…
+
+We wrote and published the posts, and our own network of big pages reacted to every one of them in the first 15 minutes.
 
 Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.
 
@@ -150,7 +156,11 @@ Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.
 
 So if you're running a B2B company doing over a million a year… and your posts barely go anywhere…
 
-Click below and I'll show you how we'd do both for you… and get you 30 qualified calls booked in the next 90 days.
+Click below and I'll show you how we'd do both for you…
+
+Help you grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
