@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v3). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v4). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,46 +165,50 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Handed It Off (v3)
+Creative 1.3 - Handed It Off (v4)
 
 
-You knew you needed to be on LinkedIn…
+So you finally hired someone to handle your LinkedIn…
 
-You just didn't have the time to do it yourself.
+Because you knew you needed to be on there… you just didn't have the time.
 
-So you did the smart thing and handed it off.
+Maybe it's a marketing person… a ghostwriter… or someone on your team using ChatGPT.
 
-A marketing hire… a ghostwriter… or someone on your team with ChatGPT.
+And honestly… that makes total sense.
 
-And a few months later… nothing's really come from it.
+But let's be real… a few months in, nothing's really come from it, right?
 
-Because whoever's writing your posts doesn't know what you know.
+The posts go out… you get a couple of likes… and that's about it.
 
-How you see your industry… the problems you see clients run into… what you'd actually say on a sales call.
+And it's not because the person you hired is bad at their job.
 
-So they guess.
+It's because they're not you.
 
-And when they guess… it comes out generic.
+They don't know how you think… or what you'd say to a client on a sales call…
 
-And when it's generic… your buyers can tell it's not you… and they scroll right past.
+So they kind of have to guess.
 
-And the only way to fix that is to sit with them every week and tell them what to say…
+And when someone's guessing… it ends up sounding like every other company out there.
 
-Which is the exact time you hired them to save.
+And your buyers just scroll right past it.
 
-So the fix isn't finding a better writer.
+Now… the only real way to fix that is sitting down with them every week and telling them what to say…
 
-It's getting what's in your head out once… properly… so whoever's writing doesn't need you every week.
+Which is the exact time you were trying to save in the first place.
 
-One proper hour on how you think… turned into a document every single post gets written from.
+The way around it… is getting it all out of your head once… properly.
 
-After that… you just look over the posts once a month… about 10 minutes.
+One real conversation… about an hour…
 
-That's how we write for our clients… and 95% of the posts get approved the first time.
+And then every single post gets written from that.
+
+That way nobody needs you every week… you just look over the posts once a month.
+
+That's how we write for our clients… and 95% of it gets approved first time.
 
 So if you're running a B2B company doing over a million a year… and you've already tried handing off your LinkedIn…
 
-Click below and I'll show you how we'd take it off your plate for good…
+Click below and I'll show you how we'd take it off your plate properly…
 
 Grow your LinkedIn brand in your own voice…
 
