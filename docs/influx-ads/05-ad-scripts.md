@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v3 (Heik's draft).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -396,7 +396,7 @@ Click below and I'll show you how we'd build and run your whole LinkedIn brand c
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
 
-Creative 3.2 - Built To Convert (v3, Heik's draft)
+Creative 3.2 - Built To Convert (v4, Heik's final)
 
 Angle: most people only optimize for growth. You've got to have a clear conversion mechanism if you want your LinkedIn to be an acquisition channel.
 
@@ -437,19 +437,13 @@ You shouldn't be looking for that anyways.
 
 What you should be looking for… is calls with the people who can actually buy from you.
 
-And that's the last piece almost everyone's missing.
+And that's exactly what we'll do for you at my company Influx.
 
-Every week… we look at who from your ICP engaged with your posts or checked out your profile…
-
-And our team reaches out and books them straight into your calendar.
-
-We do all of it for you… all you do is look over your posts once a month.
-
-So if you're doing over a million dollars a year… and you'd rather have 30 calls than a million views…
-
-Click below and I'll show you how we'd build and run your whole LinkedIn brand completely done for you…
+We'll build and run your whole LinkedIn brand completely done for you…
 
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
 ```
 
 ## Ad Group 4
