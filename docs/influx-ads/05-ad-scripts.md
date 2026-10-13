@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is rebuilt (v3).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v4 (Heik's draft, Influx named on purpose).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -315,12 +315,14 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.3 - They Look You Up (v3)
+Creative 2.3 - They Look You Up (v4, Heik's draft)
+
+Angle: cold leads ghost you or don't close… because when they look you up, there's nothing there.
 
 
-Here's what a prospect does right after a good first call with you…
+Every time a prospect books a call with your B2B company…
 
-They look you up.
+They are going to look you up…
 
 Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
 
@@ -328,41 +330,43 @@ In fact… [X]% of B2B buyers check a vendor out on LinkedIn before they ever bu
 
 [ON SCREEN: source for the [X]% stat]
 
-And if there's barely anything there… nothing that shows you actually know your stuff…
+Now…
 
-Then all they've got to go on is that one call.
+Think about what's going to happen if there's barely anything there.
 
-And one call usually isn't enough to hand someone a big contract.
+It's going to be very hard for you to actually close them.
 
-So they go quiet… or they go with someone they've been seeing around for months.
+And not only that…
 
-And you never really find out why.
+They'd probably even go with your competitor who HAS been active on LinkedIn.
 
-The fix is making sure there's something worth finding when they look.
+So yes… building a LinkedIn brand really is THAT important if you want to close deals outside of your referral network.
 
-Posts every week on how you think… the problems you solve… the stuff you'd tell a client.
+But sure… your company is doing over a million dollars a year… you're busy…
 
-So when they look you up after that call… it backs up everything you said.
+There's not really any more time left in the day to write LinkedIn posts.
 
-Problem is… that's a lot of posting when you're running a company.
+And that's where we step in.
 
-So we just do it for you.
+My name's Alex, and at my company Influx we've helped [X] B2B founders get [X] warm leads on LinkedIn…
 
-One hour with you… then we write and post every week… and our media engine gets those posts in front of the right people.
+[SHOW: client result screenshots, e.g. Ryan's old posts vs ours]
+
+We write and post [daily] on your behalf… in your voice… for your ICP…
+
+Our media engine… [dozens of] brands with [X] million followers combined… react to it within 15 minutes so it gets pushed in the algorithm…
 
 And when people start engaging… we book them straight into your calendar.
 
-I see it on my own calls all the time… one founder told me last week they'd been following my posts for months before they ever reached out.
+I do this for myself as well… it's how I became a LinkedIn Top Voice twice… built up around 60k followers… and [X]% of my own clients find me through my posts.
 
-And [CLIENT], who runs a [INDUSTRY] company… went from [X] to [X] booked calls a month… and closed [X] of them in the first [X] weeks.
+[ON SCREEN: LinkedIn Top Voice 2019 & 2020]
 
-[ON SCREEN: Documented example. [CLIENT], [INDUSTRY]]
+So if you're doing over a million a year…
 
-So if you're doing over a million a year… and you're tired of good calls going quiet…
+And want LinkedIn to be an actual acquisition channel for your business…
 
-Click below and I'll show you how we'd make sure they like what they find…
-
-Grow your LinkedIn brand…
+Click below and I'll show you how we'd grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 
