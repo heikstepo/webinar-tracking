@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -11,7 +11,7 @@ Open items before filming (kept out of the ads):
 - 4.1, 4.3: a source for "over 7 figures a year" from Alex's LinkedIn, and whether the 60k following is mostly ICP.
 - 4.3: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls).
 - 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
-- 3.2: Scott's revenue, or the line comes out.
+- 3.2, 2.1: Scott's revenue, or the line comes out.
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
@@ -222,10 +222,10 @@ Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the ca
 Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
 
 
-Creative 2.1 - Only Referrals (v4)
+Creative 2.1 - Only Referrals (v5)
 
 
-Almost every B2B founder doing a few million a year has the exact same growth plan…
+Almost every B2B founder running a 7 figure business has the exact same growth plan…
 
 Wait for the next referral.
 
@@ -233,11 +233,13 @@ And look… I get it. Referrals are the best clients you'll ever get. They alrea
 
 But you can't really make more of them.
 
-So when founders want to grow faster… they usually try going cold.
+I spoke to a founder recently who gets about 90% of their business from referrals… and they told me straight up…
 
-I spoke to one recently… about 90% of their business came from referrals… so they ran Meta ads for six months.
+"One day… might be six months, might be three years, might be five years from now… that referral pipeline might dry up."
 
-Got around 2,000 leads.
+So they did what most founders do… they went cold.
+
+Ran Meta ads for six months… got around 2,000 leads…
 
 And less than 3% of them turned into anything.
 
@@ -245,23 +247,33 @@ Because cold leads have never heard of you… so they don't trust you… so they
 
 So you end up stuck between referrals you can't turn up… and cold leads that won't close.
 
-And that's exactly the gap LinkedIn fills.
+Now… that's exactly the gap LinkedIn fills.
 
-When the right people see your posts every week… by the time they talk to you, they already feel like they know you.
+When your buyers see your posts every week… by the time they talk to you, they already feel like they know you.
 
 Pretty much like a referral… except this time you can actually make more of them.
 
-But that only happens if the right people actually see your posts… and someone follows up with the ones who engage.
+But that only works if you're posting every single week… and honestly… with a company to run, that's just not happening.
 
-That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 potential clients showing interest in the first month.
+And that's where my company Influx comes in.
 
-So if you're doing over a million dollars a year… and you're tired of waiting on the next referral…
+We write and post for you every day… in your voice… for your ICP.
 
-Click below and I'll show you how we'd set this up for you…
+Our media engine gets every post in front of your buyers… with over 20 big business brands we've partnered with reacting to it in the first 15 minutes.
 
-Grow your LinkedIn brand…
+And everyone who engages… our team reaches out to and books into your calendar.
 
-AND get you 30 qualified calls booked in the next 90 days… from people who've never been referred to you.
+That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
+
+And [$X] in revenue.
+
+So if you're tired of waiting on the next referral…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
 
 
 Creative 2.2 - The Worse Competitor Wins (v5)
