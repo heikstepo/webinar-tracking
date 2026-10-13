@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v2). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v3). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -225,12 +225,12 @@ Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the ca
 Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
 
 
-Creative 2.1 - Only Referrals (v2)
+Creative 2.1 - Only Referrals (v3)
 
 
-"Most of our clients come from referrals."
+What happens to your company if your referrals slow down next quarter?
 
-Almost every founder I talk to says that.
+Because if you're like most B2B founders I talk to… that's where most of your clients come from.
 
 And honestly… that's a great sign. It means people trust you.
 
