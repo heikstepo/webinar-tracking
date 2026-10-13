@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v3). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -225,48 +225,48 @@ Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the ca
 Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
 
 
-Creative 2.1 - Only Referrals (v3)
+Creative 2.1 - Only Referrals (v4)
 
 
-What happens to your company if your referrals slow down next quarter?
+Almost every B2B founder doing a few million a year has the exact same growth plan…
 
-Because if you're like most B2B founders I talk to… that's where most of your clients come from.
+Wait for the next referral.
 
-And honestly… that's a great sign. It means people trust you.
+And look… I get it. Referrals are the best clients you'll ever get. They already trust you… they close easy…
 
-But it also means you can't really turn it up.
+But you can't really make more of them.
 
-Referrals only come from people who already know you… so you can only grow as fast as your network does.
+So when founders want to grow faster… they usually try going cold.
 
-One founder told me 90% of their business was referrals… and they were scared that one day it'd just dry up.
+I spoke to one recently… about 90% of their business came from referrals… so they ran Meta ads for six months.
 
-So most founders try going cold… outbound, ads, that kind of thing.
+Got around 2,000 leads.
 
-But cold leads don't know you… so they don't trust you… so they don't close.
+And less than 3% of them turned into anything.
 
-That same founder ran Meta ads for six months… got around 2,000 leads… and less than 3% turned into anything.
+Because cold leads have never heard of you… so they don't trust you… so they don't close.
 
-So you end up stuck between referrals you can't control… and cold leads that won't close.
+So you end up stuck between referrals you can't turn up… and cold leads that won't close.
 
-And that's where LinkedIn comes in.
+And that's exactly the gap LinkedIn fills.
 
-Because when the right people see your posts every week… by the time they actually talk to you… they already trust you.
+When the right people see your posts every week… by the time they talk to you, they already feel like they know you.
 
-Almost like they were referred.
+Pretty much like a referral… except this time you can actually make more of them.
 
-But that only works if the right posts get seen by people outside your network… and someone follows up with the ones who engage.
+But that only happens if the right people actually see your posts… and someone follows up with the ones who engage.
 
 That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 warm leads in the first month.
 
 [ON SCREEN: Documented example. Scott, IT consulting]
 
-So if you're running a B2B company doing over a million a year… and most of your clients still come from referrals…
+So if you're doing over a million a year… and you're tired of waiting on the next referral…
 
-Click below and I'll show you how we'd build that for you…
+Click below and I'll show you how we'd set this up for you…
 
 Grow your LinkedIn brand…
 
-AND get you 30 qualified calls booked in the next 90 days on the backend.
+AND get you 30 qualified calls booked in the next 90 days… from people who've never been referred to you.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
