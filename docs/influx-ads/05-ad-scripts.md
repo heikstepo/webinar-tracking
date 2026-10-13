@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v6 (rainmaker angle, nothing against Meta). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v3 (straight flex, Iron 7.2 shape). 6.1, 6.3 are v1. 6.2 is v2 (nothing against Meta).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v7 (referrals, capped at your network, nothing against Meta). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v3 (straight flex, Iron 7.2 shape). 6.1, 6.3 are v1. 6.2 is v2 (nothing against Meta).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -224,36 +224,42 @@ Ad Group 2: What it costs them to not have a LinkedIn presence (Selfie in the ca
 Filming Idea: Sit in your car, parked, phone in your hand or on the dash… like you're telling a founder friend about this between two meetings. Same energy as a voice note. No lights, no setup.
 
 
-Creative 2.1 - The Rainmaker (v6)
+Creative 2.1 - Only Referrals (v7)
 
 
-Who brings in most of the new business at your company?
+Referrals are the best thing that can happen to a B2B company…
 
-If the honest answer is… you… you're in the same spot as almost every founder running a 7 figure business.
+And the most dangerous thing to rely on.
 
-Because referrals come to you. People refer you… because they know you.
+Because you can't decide when the next one comes… how many you get… or who they're from.
 
-I spoke to the founder of an 8 figure company recently who was still bringing in about 70% of the sales personally.
+I spoke to a founder recently who gets about 90% of their business from referrals… and they told me straight up…
 
-Their team was great with existing clients… but in their words… "where they struggle is opening new doors."
+"One day… might be six months, might be three years, might be five years from now… that referral pipeline might dry up."
 
-And that's the trap.
+And here's the other problem…
 
-Your team can look after clients… but nobody out there knows who they are.
+Every referral comes from someone who already knows you.
 
-So every new deal still has to come through you.
+So your company can only grow as fast as your network does.
 
-Which means your company can only grow as far as your own network… and your own calendar.
+Now… think about what happens if the two or three people who send you most of your work… change jobs… retire… or just stop.
 
-Now… LinkedIn is the one place that changes that.
+Your pipeline goes quiet… and there's nothing you can do to turn it back on.
 
-Because when your buyers see your posts every week… new buyers start coming to you without you chasing them.
+That's why every 7 figure founder needs a way to bring in new business that doesn't depend on who refers them next.
+
+And LinkedIn is the closest thing to a referral you can actually control.
+
+When your buyers see your posts every week… they show up to the call already trusting you.
+
+Pretty much like a referral… except this time you decide how many you get.
 
 And that's exactly what we do for you at my company Influx.
 
 We write and post for you every day… in your voice.
 
-Over 20 big business brands we've partnered with react to every post in the first 15 minutes… so LinkedIn pushes it out to buyers who've never met you.
+Over 20 big business brands we've partnered with react to every post in the first 15 minutes… so LinkedIn pushes it out to buyers outside your network.
 
 And when they engage… our team books them straight into your calendar.
 
@@ -261,7 +267,7 @@ That's how Scott, who runs an IT consulting firm… went from almost no followin
 
 And [$X] in revenue.
 
-So if you're tired of being the only one who can open new doors…
+So if you want new business that doesn't depend on the next referral…
 
 We'll build and run your whole LinkedIn brand completely done for you…
 
