@@ -124,15 +124,15 @@ So you figured LinkedIn just doesn't work for a company like yours.
 
 But your posts probably weren't the problem.
 
-When you post, LinkedIn only shows it to a handful of people first… mostly the ones you're already connected to.
+When you post, LinkedIn only shows it to a few people first… mostly people you're already connected to.
 
 Your team… some old colleagues… a few friends.
 
-And if they don't react to it pretty quickly… LinkedIn stops showing it to anyone else.
+And if they don't react quickly… LinkedIn just stops showing it.
 
 So the people you actually want as clients… never even saw it.
 
-We see this with almost every founder who comes to us… I run a company called Influx, and we handle LinkedIn for B2B founders.
+I see this all the time… I run a company called Influx, and we handle LinkedIn for B2B founders.
 
 And for the founders we work with… writing the posts is only half of it.
 
