@@ -178,7 +178,7 @@ They all run into the same problem.
 
 They don't know what's in your head.
 
-So you give them a quick brief… maybe a few bullet points…
+So you give them a quick brief…
 
 And they fill in the rest with generic stuff… or let ChatGPT do it.
 
@@ -190,11 +190,11 @@ And if they can tell it's not you… they don't trust it.
 
 And if they don't trust it… they scroll right past.
 
-So if you want posts that actually sound like you… so the right people trust you enough to book a call… it comes down to 2 things.
+So if you want posts that sound like you… and actually get you calls… it comes down to 2 things.
 
 First… whoever writes them needs what's in your head before they write a single word.
 
-Not a brief… a proper hour on how you think… your opinions… the stories you tell clients on sales calls.
+Not a brief… a proper hour on how you think… the stories you tell clients on sales calls.
 
 And second… a real person writing it the way you talk… not ChatGPT.
 
@@ -202,7 +202,7 @@ That hour becomes a voice document… basically the rulebook for how you think a
 
 And nothing gets written until you've signed off on it.
 
-That's how we write for every founder we work with… and 95% of what we write gets approved the first time.
+That's how we write for our clients… and 95% of it gets approved the first time.
 
 So you're not stuck rewriting every post yourself.
 
