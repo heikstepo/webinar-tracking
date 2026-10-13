@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v3 (straight flex, Iron 7.2 shape).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v3 (straight flex, Iron 7.2 shape). 6.1, 6.2, 6.3 are v1.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -693,4 +693,115 @@ We'll build and run your whole LinkedIn brand completely done for you…
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
 Click the link below and I'll show you exactly how… and what working with us looks like.
+```
+
+
+## Ad Group 6
+
+```
+Ad Group 6: Objections (Podcast style)
+
+
+Creative 6.1 - Won't It Sound Like AI (v1)
+
+
+I'll be honest with you… if your LinkedIn posts sound like AI… you're better off not posting at all.
+
+Because in a small industry… people notice.
+
+And one post that reads like ChatGPT can cost you more credibility than any amount of reach is worth.
+
+So it makes total sense that the first thing founders ask me is… "won't this sound like AI… and not like me?"
+
+Here's how we make sure it doesn't.
+
+We sit down with you for about an hour… and get your real stories… your opinions… the stuff you'd only ever say to a client on a sales call.
+
+Then our writers turn that into posts… in the way you actually talk… with no buzzwords and no AI-speak.
+
+And nothing goes live until you've signed off on it.
+
+That's why 95% of our posts get approved the first time.
+
+Which means you're not rewriting anything… you read it, and it already sounds like you.
+
+So if you're running a 7 figure business… and you want posts your buyers actually believe came from you…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
+
+
+Creative 6.2 - Will These Turn Into Clients (v1)
+
+
+Everyone knows you can get a ton of leads from ads…
+
+But the funny thing is… almost none of them ever turn into clients.
+
+I spoke to a founder who ran Meta ads for six months… got around 2,000 leads… and less than 3% of them turned into anything.
+
+Because those people had never heard of them… so they didn't trust them… so they didn't buy.
+
+So when founders ask me if LinkedIn leads actually turn into clients… it's a fair question.
+
+And the answer comes down to who's on the other end of the call.
+
+We write and post for you every day… and over 20 big business brands we've partnered with push every post out to your ICP.
+
+So by the time someone from your ICP gets on a call with you… they've already been seeing you in their feed.
+
+They know how you think… they've seen your results… and they've already decided they want to talk to you.
+
+That's exactly how most of my own clients find me.
+
+And our team books every one of those calls straight into your calendar… so all you do is show up.
+
+That's how Scott, who runs an IT consulting firm… got [X] booked calls and [$X] in revenue in the first [X] weeks.
+
+So if you're running a 7 figure business… and you want calls with people who already know you…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
+
+
+Creative 6.3 - Does It Work In My Industry (v1)
+
+
+I've got a real problem with the idea that LinkedIn only works for certain industries.
+
+Because the more niche your market is… the easier it actually is to stand out.
+
+Think about it… in most B2B industries, almost nobody is posting anything worth reading.
+
+So if you show up every week with real opinions… you're the one your buyers remember.
+
+Ryan runs sales at a GovTech company… selling to government… about as niche and regulated as it gets.
+
+Four of their old posts got 79 engagements… four of ours got 1,059… and [X] booked calls in the first [X] weeks.
+
+Scott runs an IT consulting firm… [X] booked calls and [$X] in revenue in [X] weeks.
+
+And [CLIENT] runs a [INDUSTRY] company… [X] booked calls and [$X] in revenue.
+
+The process is the same every time… no matter how niche you are.
+
+We write and post for you every day… in your voice… about the stuff your buyers actually care about.
+
+Over 20 big business brands we've partnered with react to every post in the first 15 minutes… so LinkedIn pushes it out to your buyers.
+
+And when they engage… our team books them straight into your calendar.
+
+So if you're running a 7 figure business… in a market you think is too niche for LinkedIn…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
 ```
