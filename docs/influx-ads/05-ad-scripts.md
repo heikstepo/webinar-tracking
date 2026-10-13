@@ -392,11 +392,13 @@ Because only a few people in their network react to their post.
 
 See, LinkedIn pushes your post in the algorithm based on how many early engagements it gets…
 
-That's why we run a media engine… over 20 LinkedIn brands we've partnered with… with more than 3 million followers combined.
+That's why we run what we call a media engine.
+
+We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
 [DRAW: 20+ brands around the post, arrows pointing in]
 
-And EVERY time one of our clients posts… they react to it within the first 15 minutes.
+And EVERY time one of our clients posts… they all react to it within the first 15 minutes.
 
 Which tells LinkedIn the post is worth pushing… and because they're business brands… it pushes it out to more business people. Which means your buyers.
 
