@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v1.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -369,4 +369,52 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 Open before filming: source for "well over 8 figures", Alex's OK on the media engine numbers and the 15-minute line, source for the [X]% stat.
+```
+
+## Ad Group 4
+
+```
+Ad Group 4: Straight offer (Talking head)
+
+Filming Idea: Phone on a tripod at eye level, plain wall or office behind you. Talk straight into the lens like you're laying out the offer to a founder on a call. Calm, direct, no walking.
+
+
+Creative 4.1 - Straight Offer + Proof + Mechanism (v1)
+
+
+If you're running a B2B company doing over a million a year…
+
+We want to get you 30 qualified calls booked in the next 90 days… straight from LinkedIn.
+
+Without you ever having to write a SINGLE post… or step in front of a camera.
+
+And on top of that… build you a LinkedIn brand that keeps bringing people in after those 90 days.
+
+Real quick about me…
+
+My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients…
+
+I've been a LinkedIn Top Voice twice myself…
+
+And just to give you an example… Ryan, who runs sales at a GovTech company… had 61 potential clients showing interest in the first month.
+
+[ON SCREEN: Documented example. Ryan, GovTech]
+
+Now… it basically works like this.
+
+We sit down with you once… for about an hour… and get everything out of your head.
+
+From there we write and post daily on your behalf… in your voice… for your ICP… and you just look over them once a month.
+
+Then our media engine… over 20 brands with more than 3 million followers combined… reacts to EVERY post within 15 minutes… so LinkedIn pushes it out to way more of your buyers.
+
+And when those buyers start engaging… we reach out and book them straight into your calendar.
+
+Meaning… by the time someone gets on a call with you… they already know who you are.
+
+So if you're doing over a million a year… and you want 30 qualified calls in the next 90 days without writing a single post yourself…
+
+Click below… I'll show you exactly how we'd do it for you… and you can book a call with me right there.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 ```
