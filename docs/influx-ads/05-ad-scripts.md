@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v2 (straight flex).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2 are v1. 5.3 is v3 (straight flex, Iron 7.2 shape).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -13,7 +13,7 @@ Open items before filming (kept out of the ads):
 - 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
 - 3.2, 2.1, 5.1: Scott's revenue, or the line comes out. 5.2: Ryan's revenue.
 - All proof lines: real numbers for [X] new followers, [X] booked calls, [$X] in revenue and the timeframe, for Scott (1.1, 2.1, 3.2, 5.1) and Ryan (2.2, 5.2).
-- 5.3: Influx's own yearly revenue and the % of Influx clients who find it on LinkedIn.
+- 5.3: Influx's own yearly revenue, one more real client result for the [CLIENT] line, and Alex's OK on the 10x average.
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
@@ -659,34 +659,38 @@ And get you 30 qualified booked inbound calls in the next 90 days on the backend
 Click the link below and I'll show you how.
 
 
-Creative 5.3 - Alex: Straight Flex (v2)
+Creative 5.3 - Alex: Straight Flex (v3, Iron 7.2 shape)
 
 
-We've generated well over 8 figures for B2B founders on LinkedIn…
+I've been named a LinkedIn Top Voice twice…
 
-And my own LinkedIn brings in over 7 figures a year on top of that.
+And honestly… that's the least impressive thing I can show you.
 
-Real quick… my name's Alex, and I run Influx.
+Because of what we keep doing for B2B founders at my company Influx.
 
-I've been a LinkedIn Top Voice twice… I've built a 60k+ following that's mostly my ICP… and before Influx, I ran an 8 figure team.
+Let me just show you a few.
 
-And Influx itself does [$X] a year… with [X]% of our own clients finding us on LinkedIn.
+Scott runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in [X] weeks.
 
-Now… here's why I'm telling you this.
+Ryan runs sales at a GovTech company… four of their old posts got 79 engagements… four of ours got 1,059… and [X] booked calls in the first [X] weeks.
 
-Everything that works on my LinkedIn… we now do for B2B founders who don't have the time to do it themselves.
+[CLIENT] runs a [INDUSTRY] company… went from [X] to [X] booked calls a month… and [$X] in new revenue.
 
-We write and post for you every day… in your voice.
+And then the usual stuff… like an average of 10x more engagement in the first 12 weeks… but that happens so often I don't even bring it up anymore.
 
-Over 20 big business brands we've partnered with jump on every post in the first 15 minutes… so LinkedIn pushes it out to your buyers.
+In total… we've generated well over 8 figures for our B2B clients… and Influx itself does [$X] a year.
 
-And when those buyers engage… our team books them straight into your calendar.
+My own LinkedIn brings in over 7 figures a year… from a 60k+ following that's mostly my ICP.
 
-So if you're running a 7 figure business… and you want LinkedIn doing for you what it does for me…
+I know… that sounds pretty cocky.
+
+But it's just the reality.
+
+So… if you're running a 7 figure business… and you want results like that too…
 
 We'll build and run your whole LinkedIn brand completely done for you…
 
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
-Click the link below and I'll show you how.
+Click the link below and I'll show you exactly how… and what working with us looks like.
 ```
