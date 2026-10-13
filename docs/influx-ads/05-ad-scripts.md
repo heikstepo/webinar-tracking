@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v1.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v2.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -419,16 +419,16 @@ Click below… I'll show you exactly how we'd do it for you… and you can book 
 Open before filming: sources for "well over 8 figures" and "over 7 figures in annual revenue", and whether the 60k following is mostly ICP.
 
 
-Creative 4.2 - 10 Minutes A Month (v1)
+Creative 4.2 - 10 Minutes A Month (v2)
 
 
-How much time do you actually need to spend on LinkedIn… to get 30 qualified calls booked in the next 90 days?
+I'll be honest with you… if you're running a B2B company doing over a million a year… you're probably never going to write your own LinkedIn posts.
 
-With us… about 10 minutes a month.
+And that's completely fine.
 
-So if you're running a B2B company doing over a million a year… and you already know you should be on LinkedIn… you just don't have the time…
+Because we'll do the whole thing for you… and get you 30 qualified calls booked in the next 90 days…
 
-We take the whole thing off your plate… and get you 30 qualified calls booked in the next 90 days.
+For about 10 minutes a month of your time.
 
 Here's what that actually looks like for you.
 
