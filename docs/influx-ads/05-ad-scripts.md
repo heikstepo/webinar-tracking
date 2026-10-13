@@ -78,11 +78,11 @@ Because the people you want as clients are on there every day…
 
 And if they see you there every week… they show up to the call already knowing who you are.
 
-But it's been on your to-do list for months… maybe years.
+But it's been on your to-do list for months.
 
 And it's always the last thing on there.
 
-Which makes sense… you've got clients and a team to look after. LinkedIn's never going to come first.
+Which makes sense… your clients and your team come first.
 
 I hear this on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
 
