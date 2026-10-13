@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 and 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v2). 2.3 below is an old draft that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -271,42 +271,54 @@ AND get you 30 qualified calls booked in the next 90 days… from people who've 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.2 - The Worse Competitor Wins
+Creative 2.2 - The Worse Competitor Wins (v2)
 
 
-If you run a B2B company… there's probably a competitor who's not as good as you…
+If I was buying what you sell right now… I'd probably end up going with your competitor.
 
-And they still win clients you should've won.
+Even if you're better.
 
-And it's frustrating… because you know your work is better.
+Because here's what I'd do before I ever got on a call with either of you…
 
-But most buyers don't pick the best company… they pick the one they've already seen.
+I'd look you both up on LinkedIn.
 
-Before they ever get on a call… they've looked around.
+Your last post is from March… theirs is from this morning.
 
-They check LinkedIn… they see who's been posting about their problem every week…
+And honestly… I'd probably ask ChatGPT too.
 
-And by the time they reach out… they've pretty much made up their mind.
+Which pulls a ton from LinkedIn… it's actually the second most quoted site in AI answers, ahead of Wikipedia.
 
-So you don't need to get better at what you do.
+[ON SCREEN: Semrush, March 2026]
 
-You ACTUALLY need your buyers to see how good you are… before they ever talk to you.
+So guess whose name comes up.
 
-And that's what we do.
+And by the time anyone gets on a call with you… they've usually already picked.
 
-One hour with my team… then we write your posts every week, in your voice…
+Which means you're losing deals before you even get a shot… and it's got nothing to do with how good you are.
 
-And our network gets them in front of the buyers in your market… so when they start looking, you're the one they've been reading.
+The fix is pretty simple… show up where your buyers look, every single week.
 
-Ryan's in GovTech… a really niche, regulated market… and got 61 warm leads in the first month.
+But that's exactly the part you don't have time for.
+
+So let us do it.
+
+We sit down with you for an hour… write and post for you every week… our media engine gets those posts in front of the right people…
+
+And when they start engaging… we book them straight into your calendar.
+
+That's what we did for Ryan, who runs sales at a GovTech company… a really niche, regulated market… 61 warm leads in the first month.
 
 [ON SCREEN: Documented example. Ryan, GovTech]
 
-Now just so you know… this is only for B2B founders doing over [$1M] a year… who know they're better than the competition… but aren't the name buyers think of first.
+So if you're doing over a million a year… and you're tired of losing deals to people you know you're better than…
 
-If that's you, click the link below and watch a short video where I show you how we make you the one buyers have already seen… and get you [30 warm, qualified leads in your first 30 days].
+Click below and I'll show you how we'd make you the one they find first…
 
-[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
 Creative 2.3 - Cold Leads Go Quiet
