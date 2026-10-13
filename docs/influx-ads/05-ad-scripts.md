@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v6). 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is rebuilt (v7). No company name in ads. 1.3 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -84,9 +84,9 @@ And it's always the last thing on there.
 
 Which makes sense… your clients and your team come first.
 
-I hear this on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
+I hear this on almost every call.
 
-And with the founders we work with… we don't even try to get them to find the time.
+And with the founders I work with… we don't even try to get them to find the time.
 
 We sit down with them for one hour… and get how they think, the stuff they'd tell a client on a sales call.
 
@@ -109,7 +109,7 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.2 - No Early Engagement (v6)
+Creative 1.2 - No Early Engagement (v7)
 
 
 [SHOW: three typical company posts flashing up… a new hire, a product update, a "book a demo" post]
@@ -132,21 +132,19 @@ If nobody engages early… it stops showing it.
 
 So it never gets in front of anyone new.
 
-I see this all the time with founders who come to us at my company Influx.
+The fix is two things.
 
-So we fix both sides of it.
+First… post stuff your buyers actually care about. Your take on your industry… the problems you see clients run into… not company news.
 
-First, the posts… we sit down with you for one hour and turn how you think into posts your buyers actually want to read.
+And second… get engagement in the first 15 minutes.
 
-And then the part almost nobody has…
+Like a bunch of big pages with the right audience reacting to it right when it goes live.
 
-We've got our own network of big LinkedIn pages… and when your post goes live, they react to it within the first 15 minutes.
+Then LinkedIn sees all that early engagement… and pushes it out to a lot more of the people you actually want to reach.
 
-So LinkedIn sees all that early engagement… and starts pushing your post out to a lot more of the people you actually want to reach.
+That's exactly what we did for Ryan, who runs sales at a GovTech company… we've got our own network of big pages that handles that second part.
 
-Ryan runs sales at a GovTech company… four of their old posts got 79 engagements combined.
-
-Four of the posts we did for them got 1,059.
+Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.
 
 [SHOW: Ryan's before and after posts from the case study]
 
@@ -154,7 +152,7 @@ Four of the posts we did for them got 1,059.
 
 So if you're running a B2B company doing over a million a year… and your posts barely get seen…
 
-Click below and I'll show you how we'd get your posts in front of the right people… and get you 30 qualified calls booked in the next 90 days.
+Click below and I'll show you how we'd do both for you… and get you 30 qualified calls booked in the next 90 days.
 
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
