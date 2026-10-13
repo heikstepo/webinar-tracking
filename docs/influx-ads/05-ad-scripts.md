@@ -80,17 +80,17 @@ And it's always the last thing on there.
 
 Which makes sense… you've got clients and a team to look after. LinkedIn's never going to come first.
 
-I hear this from almost every founder I talk to… I run a company called Influx, and we handle LinkedIn for B2B founders.
+I hear this on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
 
 And with the founders we work with… we don't even try to get them to find the time.
 
-We sit down with them once, for about an hour… and get how they think, the stuff they'd tell a client on a sales call.
+We sit down with them for one hour… and get how they think, the stuff they'd tell a client on a sales call.
 
 From there, my team writes and posts for them every week.
 
 They look over the posts once a month… takes about 10 minutes.
 
-And once the right people start engaging… we reach out to them and book the calls straight into the founder's calendar.
+And once the right people start engaging… we reach out and book the calls into their calendar.
 
 So the only part they actually do… is the calls.
 
