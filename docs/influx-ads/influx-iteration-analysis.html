@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Influx Iteration Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+<style>
+:root{
+  /* Layout: sticky contents rail on the left, one reading column on the right; the rail becomes a chip row under 900px */
+  --bg:#F6F5F9;--surface:#FFFFFF;--sunken:#EFECF5;--ink:#18151F;--muted:#5E586D;--line:#E1DDE9;
+  --accent:#6A3ED2;--accent-soft:#EEE8FB;
+  --good:#1C7047;--good-soft:#E2F2E9;--warn:#8A5800;--warn-soft:#FAEFD8;--bad:#B3261E;--bad-soft:#FBE5E2;
+  --font-display:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --font-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E0C13;--surface:#17141F;--sunken:#1F1B29;--ink:#EFECF6;--muted:#A69FB7;--line:#2C2739;
+  --accent:#B092F8;--accent-soft:#261E3F;
+  --good:#62C99A;--good-soft:#13271D;--warn:#E6B354;--warn-soft:#2A2110;--bad:#F27D70;--bad-soft:#2D1614;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E0C13;--surface:#17141F;--sunken:#1F1B29;--ink:#EFECF6;--muted:#A69FB7;--line:#2C2739;
+  --accent:#B092F8;--accent-soft:#261E3F;
+  --good:#62C99A;--good-soft:#13271D;--warn:#E6B354;--warn-soft:#2A2110;--bad:#F27D70;--bad-soft:#2D1614;
+  color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:clamp(16px,4vw,44px);padding-block:48px 96px}
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(32px,5vw,64px);align-items:start}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);max-height:calc(100vh - 48px);overflow:auto;padding-bottom:8px}
+.toc-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px 10px}
+.toc ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc a{display:block;padding:6px 10px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:14px;line-height:1.35}
+.toc a:hover{color:var(--ink);background:var(--sunken)}
+.toc a.active{color:var(--accent);background:var(--accent-soft)}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:28px}
+  .toc{position:static;max-height:none}
+  .toc-label{margin-left:0}
+  .toc ul{display:flex;flex-wrap:wrap;gap:6px}
+  .toc a{border:1px solid var(--line);font-size:13px;padding:4px 10px;border-radius:999px}
+}
+main{min-width:0}
+.doc-head{display:grid;gap:18px;padding-bottom:40px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0}
+h1,h2,h3{text-wrap:balance}
+h1{font-family:var(--font-display);font-weight:650;font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.06;letter-spacing:-.015em;margin:0;max-width:21ch}
+.lead{font-size:1.16rem;line-height:1.55;color:var(--muted);margin:0;max-width:64ch}
+.meta{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;margin:0}
+section{padding-block:52px 4px;border-top:1px solid var(--line);scroll-margin-top:16px}
+h2{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.005em}
+.intro{color:var(--muted);margin:0 0 26px;max-width:66ch;font-size:1.04rem}
+h3{font-size:1.02rem;font-weight:600;margin:0 0 10px;line-height:1.35}
+h4{font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+p{margin:0 0 14px;max-width:68ch}
+p:last-child{margin-bottom:0}
+.stack{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+.stack>*{min-width:0}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.grid-2,.grid-3{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;min-width:0}
+ul.list{margin:0;padding-left:1.15em;display:grid;gap:8px}
+ul.list li::marker{color:var(--accent)}
+ul.list.tight{gap:4px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.pill{display:inline-block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;vertical-align:2px;white-space:nowrap;background:var(--sunken);color:var(--muted)}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.accent{background:var(--accent-soft);color:var(--accent)}
+blockquote{margin:0;padding:2px 0 2px 16px;border-left:2px solid var(--accent);font-family:var(--font-display);font-size:1.06rem;line-height:1.45;max-width:62ch}
+blockquote cite{display:block;font-family:var(--font-mono);font-style:normal;font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4}
+.note{background:var(--warn-soft);border-radius:var(--radius);padding:16px 18px}
+.note>strong:first-child{color:var(--warn);display:block;margin-bottom:6px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.note.info{background:var(--accent-soft)}
+.note.info>strong:first-child{color:var(--accent)}
+.note.bad{background:var(--bad-soft)}
+.note.bad>strong:first-child{color:var(--bad)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.5}
+th{text-align:left;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--sunken);padding:10px 14px;white-space:nowrap}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+td b{font-weight:600}
+table.wide{min-width:720px}
+table.mid{min-width:560px}
+/* thesis */
+.thesis{font-family:var(--font-display);font-size:clamp(1.35rem,2.7vw,1.8rem);line-height:1.3;font-weight:500;margin:0;max-width:38ch;letter-spacing:-.005em}
+.thesis b{font-weight:650;color:var(--accent)}
+/* numbered steps for real sequences */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;min-width:0}
+ol.steps>li::before{content:counter(s,decimal-leading-zero);font-family:var(--font-mono);font-size:12px;color:var(--accent);display:block;margin-bottom:6px;letter-spacing:.06em}
+ol.steps>li b{display:block;margin-bottom:4px;line-height:1.3}
+ol.steps>li span{font-size:14px;color:var(--muted);display:block;line-height:1.5}
+/* campaign structure diagram */
+.tree{display:grid;gap:10px}
+.node{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:14px 16px;min-width:0}
+.node .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.node .ttl{font-weight:600;margin:2px 0 2px}
+.node .sub{font-size:14px;color:var(--muted)}
+.node.campaign{border-color:var(--accent)}
+.indent-1{margin-left:clamp(10px,3vw,28px)}
+.indent-2{margin-left:clamp(20px,6vw,56px)}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.ad{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:10px 12px;font-size:13.5px;min-width:0}
+.ad b{display:block;font-family:var(--font-mono);font-size:11px;font-weight:500;color:var(--accent);letter-spacing:.06em}
+.ad i{font-style:normal;color:var(--muted);display:block;font-size:12.5px;margin-top:4px}
+.creatives{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.creatives span{font-family:var(--font-mono);font-size:11px;padding:2px 7px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+/* metric table arrows */
+.up,.down{font-family:var(--font-mono);font-weight:500}
+.up{color:var(--accent)}
+.down{color:var(--muted)}
+.foot{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:grid;gap:6px}
+
+/* rule cards on the short-version screen */
+ol.rules{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;counter-reset:r}
+@media (max-width:760px){ol.rules{grid-template-columns:minmax(0,1fr)}}
+ol.rules>li{counter-increment:r;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 16px 56px;position:relative;min-width:0}
+ol.rules>li::before{content:counter(r,decimal-leading-zero);position:absolute;left:18px;top:16px;font-family:var(--font-mono);font-size:13px;color:var(--accent)}
+ol.rules>li b{display:block;margin-bottom:3px;line-height:1.35}
+ol.rules>li span{display:block;font-size:14.5px;color:var(--muted);line-height:1.5}
+/* beat rows: label on the left, reference line + our line on the right */
+.beats{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.beat{display:grid;grid-template-columns:170px minmax(0,1fr);gap:18px;padding:16px 20px;border-top:1px solid var(--line)}
+.beat:first-child{border-top:0}
+.beat .tag{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);padding-top:3px;line-height:1.45}
+.beat .tag small{display:block;text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:13px;color:var(--muted);margin-top:4px}
+.beat .ex{display:grid;gap:10px;min-width:0}
+.ex .ref,.ex .ours{margin:0;max-width:none;font-size:15px;line-height:1.55}
+.ex .ref{color:var(--muted)}
+.ex .ref::before,.ex .ours::before{display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;padding:1px 6px;border-radius:4px;margin-right:8px;vertical-align:1px}
+.ex .ref::before{content:"Iron";background:var(--sunken);color:var(--muted)}
+.ex .ours::before{content:"Influx";background:var(--accent-soft);color:var(--accent)}
+.ex .ref.pm::before{content:"PM"}
+.ex .ref.ecom::before{content:"Ecom MBA"}
+@media (max-width:640px){.beat{grid-template-columns:minmax(0,1fr);gap:8px;padding:14px 16px}}
+/* script blocks: one spoken line per row */
+.script{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:8px 0}
+.script .row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;padding:7px 20px;align-items:baseline}
+.script .row.start{border-top:1px dashed var(--line);margin-top:6px;padding-top:13px}
+.script .row:first-child.start{border-top:0;margin-top:0;padding-top:7px}
+.script .b{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.script .l{font-size:15.5px;line-height:1.5}
+.script .l.note{font-family:var(--font-mono);font-size:12.5px;color:var(--muted)}
+@media (max-width:640px){.script .row{grid-template-columns:minmax(0,1fr);gap:2px;padding:6px 16px}.script .b:empty{display:none}}
+/* before / after */
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.cmp{grid-template-columns:minmax(0,1fr)}}
+.cmp>div{border-radius:var(--radius);padding:14px 16px;min-width:0}
+.cmp .cut{background:var(--bad-soft)}
+.cmp .keep{background:var(--good-soft)}
+.cmp h4{margin-bottom:6px}
+.cmp .cut h4{color:var(--bad)}
+.cmp .keep h4{color:var(--good)}
+.cmp p{font-size:15px;margin:0}
+/* checklist */
+.checks{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.checks{grid-template-columns:minmax(0,1fr)}}
+.checks label{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:15px;line-height:1.45;cursor:pointer}
+.checks input{margin-top:3px;accent-color:var(--accent);width:16px;height:16px;flex:none}
+/* journey row */
+.journey{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+@media (max-width:980px){.journey{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.journey{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.journey .ad{padding:12px}
+.journey .ad .fmt{display:block;margin-top:8px;font-family:var(--font-mono);font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.stage{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+q{quotes:"\201C" "\201D"}
+.log{display:grid;gap:10px}
+.log .item{display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.log .n{font-family:var(--font-mono);font-size:13px;color:var(--accent)}
+.log .item p{margin:0 0 4px}
+.log .item .muted{font-size:14px}
+
+@media (max-width:640px){
+  table.stackable{min-width:0}
+  table.stackable thead{display:none}
+  table.stackable tr{display:block;border-top:1px solid var(--line);padding:10px 0}
+  table.stackable tbody tr:first-child{border-top:0}
+  table.stackable td{display:block;border:0;padding:3px 16px}
+  table.stackable td[data-l]:not([data-l=""])::before{content:attr(data-l);display:block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:1px}
+}
+.script .l i{font-style:italic}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="layout">
+<nav class="toc" aria-label="Contents">
+  <p class="toc-label">Contents</p>
+  <ul>
+    <li><a href="#short">The short version</a></li>
+    <li><a href="#t11">1.1, version by version</a></li>
+    <li><a href="#t12">1.2, version by version</a></li>
+    <li><a href="#final">The end versions</a></li>
+    <li><a href="#flow">Flow</a></li>
+    <li><a href="#lingo">Lingo</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#mistakes">My repeat mistakes</a></li>
+    <li><a href="#template">How I write 1.3</a></li>
+  </ul>
+</nav>
+
+<main>
+<header class="doc-head">
+  <p class="eyebrow">Influx · iteration analysis · 1.1 and 1.2</p>
+  <h1>What 16 drafts taught me</h1>
+  <p class="lead">Every version of 1.1 and 1.2, what you said about each one, and what changed. Then the end versions broken down by flow, lingo and style, so 1.3 starts where 1.2 ended.</p>
+  <p class="meta"><span>1.1: 7 versions</span><span>1.2: 9 versions, the last one yours</span><span>13 Oct 2026</span></p>
+</header>
+
+<section id="short">
+  <h2>The short version</h2>
+  <p class="intro">If I only keep ten things from this, it's these.</p>
+  <ol class="rules">
+    <li><b>One chain, nothing else.</b><span>What they do wrong, why that kills it, the fix. Every extra idea got cut, by you or by me after you complained.</span></li>
+    <li><b>Build the chain like a staircase.</b><span>"If nobody cares… nobody reacts. And if nobody reacts… LinkedIn won't push it." Each line picks up the last line's ending.</span></li>
+    <li><b>The fix mirrors the problem.</b><span>Each step of the fix answers one link in the chain. "2 things" because there were 2 broken links.</span></li>
+    <li><b>Tie the fix to their goal straight away.</b><span>"So if you want LinkedIn to push your posts so you can get qualified calls coming in…"</span></li>
+    <li><b>No company name.</b><span>The fix gets explained on its own. "We" comes in late, at the proof or the CTA.</span></li>
+    <li><b>Name only the unique piece.</b><span>"I call this the media engine…" right where it's explained, then "Because…" to say what it does.</span></li>
+    <li><b>Every reason needs a source.</b><span>Alex, a call, a case study or Semrush. "First hour" was mine and it got caught.</span></li>
+    <li><b>Talk, don't write.</b><span>No analogies, no dramatic lines, no clever endings. If it sounds like a voiceover, it's wrong.</span></li>
+    <li><b>Every ad opens differently.</b><span>Different hook type, different reason, different proof. Never the same opener twice in a group.</span></li>
+    <li><b>Give the copy, not an essay.</b><span>When you ask for the ad, you get the ad. Explanations only when you ask "what are you trying to say".</span></li>
+  </ol>
+</section>
+
+<section id="t11">
+  <h2>1.1, version by version</h2>
+  <p class="intro">Angle from your doc: "Couldn't stay consistent because they're busy."</p>
+  <div class="table-wrap">
+    <table class="wide stackable">
+      <thead><tr><th>Version</th><th>What I wrote</th><th>What you said</th><th>What it taught me</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Version"><b>v1</b></td><td data-l="What I wrote">"I know I should be posting on LinkedIn… I just don't have the time." A snowball analogy. "My clients use something I call the Authority Engine."</td><td data-l="What you said">"The authority engine is not good… we dont sell info… in the beginning we talk about their exact thing, then we come in as the solution."</td><td data-l="What it taught me">Done-for-you, not info. The method isn't the hero.</td></tr>
+        <tr><td data-l="Version"><b>v2</b></td><td data-l="What I wrote">Dropped the name: "So we just do it for you." Then I wrote all six of AG1 and AG2 in one go.</td><td data-l="What you said">"Lets go 1 by 1."</td><td data-l="What it taught me">One creative at a time, so each round of feedback lands before the next one.</td></tr>
+        <tr><td data-l="Version"><b>v2b</b></td><td data-l="What I wrote">Tightened the hook ("too busy running the company"), added "your buyers keep seeing you", and scored it 82/100.</td><td data-l="What you said">"Your ad isn't following our best practices."</td><td data-l="What it taught me">I'd patched lines instead of checking the shape. That led to the rules page and Iron as the template.</td></tr>
+        <tr><td data-l="Version"><b>v3</b></td><td data-l="What I wrote">Iron shape: "I'll start posting properly… once things calm down." "Every single post needed YOU." "My company Influx." Scott as proof.</td><td data-l="What you said">Offer is 30 booked calls in 90 days, no system name, no lingo that pulls broke buyers.</td><td data-l="What it taught me">Locked the offer, the CTA and who it's for.</td></tr>
+        <tr><td data-l="Version"><b>v4</b></td><td data-l="What I wrote">"Stop writing your own LinkedIn posts… you're the last person who should be writing them. Because it never lasts." Plus capture once, plus booking calls.</td><td data-l="What you said">"I don't get your argument." Then: "a busy month killed it… sounds like AI generated bullshit."</td><td data-l="What it taught me">Three half-arguments in one ad. Dramatic phrasing reads as AI. Explain the argument in plain talk first.</td></tr>
+        <tr><td data-l="Version"><b>(check)</b></td><td data-l="What I wrote">Explained the argument.</td><td data-l="What you said">"You got any proof this is happening from the sales calls?"</td><td data-l="What it taught me">"No time, always last on the list" was backed. "Posted 3 weeks then stopped" wasn't. Only say what the calls show.</td></tr>
+        <tr><td data-l="Version"><b>v5</b></td><td data-l="What I wrote">"You've probably told yourself you need to be posting… And you're right… you do… always the last thing on there… So the answer isn't finding more time… That's what we do at my company Influx."</td><td data-l="What you said">"Way too fast you come in… sounds like straight up TV ad… do it more smoothly, we'll still have straight offer ads."</td><td data-l="What it taught me">No hard pivot from the problem to us. The hard pitch is AG4's job.</td></tr>
+        <tr><td data-l="Version"><b>v6</b></td><td data-l="What I wrote">"I hear this on almost every call… with the founders we work with… we don't even try to get them to find the time."</td><td data-l="What you said">"And you're right… you do <i>because</i>… sell on what LinkedIn can do for them really quick, not too much."</td><td data-l="What it taught me">One or two lines of upside right after you agree with them, then move on.</td></tr>
+        <tr><td data-l="Version"><b>v7</b></td><td data-l="What I wrote">"Because the people you want as clients are on there every day… And if they see you there every week… they show up to the call already knowing who you are."</td><td data-l="What you said">Moved on to 1.2. Later: no company name, so "I run a company called Influx" came out.</td><td data-l="What it taught me">Done. Smooth because "we" comes in through Alex's own calls, not a pitch.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="t12">
+  <h2>1.2, version by version</h2>
+  <p class="intro">Angle from your doc: "Weren't getting engagement because of XYZ." Most of the work was finding a real XYZ.</p>
+  <div class="table-wrap">
+    <table class="wide stackable">
+      <thead><tr><th>Version</th><th>What I wrote</th><th>What you said</th><th>What it taught me</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Version"><b>v1</b></td><td data-l="What I wrote">"You finally post something… 12 likes… 9 from your own team." LinkedIn shows it to a small group first. Our network of pages engages in 15 minutes.</td><td data-l="What you said">Covered by the 1.1 feedback (one at a time, best practices).</td><td data-l="What it taught me">None yet.</td></tr>
+        <tr><td data-l="Version"><b>v2</b></td><td data-l="What I wrote">"If you run a B2B company doing 1 to 10 million a year… and you've tried posting… you probably got about 10 likes…"</td><td data-l="What you said">"We can't start each hook like that… we need more engaging hooks and also variety… each ad is genuinely unique."</td><td data-l="What it taught me">Never the same opener twice. Different hook type, reframe and proof in every creative.</td></tr>
+        <tr><td data-l="Version"><b>v3</b></td><td data-l="What I wrote">[SHOW] "12 likes, and every single one from someone on your payroll…" LinkedIn shows it to a small group first, and if they don't react "in the first hour or so" it stops.</td><td data-l="What you said">"Where's the info from why their methods didn't work?"</td><td data-l="What it taught me">"First hour" was mine. Every why-it-failed line needs a source.</td></tr>
+        <tr><td data-l="Version"><b>v4</b></td><td data-l="What I wrote">Scott's real before and after: "This post got 2 engagements… nobody comments on company news… what people respond to is what YOU think."</td><td data-l="What you said">"Yours sounded like generic reasons."</td><td data-l="What it taught me">Even with real proof, "post your opinions" is guru advice. The reason has to lead to something only we fix.</td></tr>
+        <tr><td data-l="Version"><b>(research)</b></td><td data-l="What I wrote">Options A, B, C with sources. Then Tony's call, the Semrush study, and Alex's two voice memos.</td><td data-l="What you said">"Wait what do you mean" (about the network). Then you sent the material.</td><td data-l="What it taught me">Alex's own #1 reason: they repost and pitch. The media engine is the unique fix. Alex says to frame it carefully.</td></tr>
+        <tr><td data-l="Version"><b>v5</b></td><td data-l="What I wrote">Company posts read out, then: every post is about you or a pitch, buyers don't know you, take them on a journey, some posts notice, some trust, one a week asks. Ryan as proof.</td><td data-l="What you said">"Too many ideas. Just say what they're doing wrong, then that's why no early engagement, no later push. Then the system that fixes it, especially the media thing."</td><td data-l="What it taught me">One causal chain. The media engine is the hero of this ad, not the posting calendar.</td></tr>
+        <tr><td data-l="Version"><b>v6</b></td><td data-l="What I wrote">Chain: nobody cares, nobody reacts, LinkedIn stops showing it. "I see this all the time with founders who come to us at my company Influx. So we fix both sides."</td><td data-l="What you said">"Fuck influx dont mention influx. Mention the fix and then at very end, even if then not every time."</td><td data-l="What it taught me">The fix stands on its own. "We" only at the end.</td></tr>
+        <tr><td data-l="Version"><b>v7</b></td><td data-l="What I wrote">"The fix is two things. First… Second… get engagement in the first 15 minutes… That's exactly what we did for Ryan."</td><td data-l="What you said">You wrote the opening yourself: "Most founders just never grow on LinkedIn simply because…" and said "start like this".</td><td data-l="What it taught me">The hook is a confident, sweeping claim, and the chain repeats each link ("if nobody cares… if nobody reacts…").</td></tr>
+        <tr><td data-l="Version"><b>v8</b></td><td data-l="What I wrote">Your opening word for word, then my continuation.</td><td data-l="What you said">You rewrote the back half.</td><td data-l="What it taught me">See the changes below.</td></tr>
+        <tr><td data-l="Version"><b>v9</b></td><td data-l="What I wrote">Your edit. Final.</td><td data-l="What you said">"See where I'm going with this?"</td><td data-l="What it taught me">Fix tied to the goal, named unique piece, "we wrote and published", a two-layer CTA.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 style="margin-top:28px">What you changed between v8 and v9</h3>
+  <div class="cmp" style="margin-top:10px">
+    <div class="cut"><h4>Mine (v8)</h4><p>That simple… that's how LinkedIn works.</p></div>
+    <div class="keep"><h4>Yours (v9)</h4><p>That simple… that's just how the LinkedIn <b>algorithm</b> works.</p></div>
+    <div class="cut"><h4>Mine</h4><p>So if you want LinkedIn to actually push your posts… you need two things.</p></div>
+    <div class="keep"><h4>Yours</h4><p>…push your posts <b>so you can get qualified calls coming in</b>… you need 2 things.</p></div>
+    <div class="cut"><h4>Mine</h4><p>Because the first 15 minutes <b>or so</b> are what tell LinkedIn…</p></div>
+    <div class="keep"><h4>Yours</h4><p>Because the first 15 minutes are what tell LinkedIn…</p></div>
+    <div class="cut"><h4>Mine</h4><p>Get a bunch of big pages reacting in that window…</p></div>
+    <div class="keep"><h4>Yours</h4><p><b>I call this the media engine…</b> Because if a bunch of big pages react in that window…</p></div>
+    <div class="cut"><h4>Mine</h4><p>…we wrote the posts, and our own network…</p></div>
+    <div class="keep"><h4>Yours</h4><p>We wrote <b>and published</b> the posts, and our own network…</p></div>
+    <div class="cut"><h4>Mine</h4><p>Click below and I'll show you how we'd do both for you… and get you 30 qualified calls booked in the next 90 days.</p></div>
+    <div class="keep"><h4>Yours</h4><p>…how we'd do both for you… <b>Help you grow your LinkedIn brand… AND</b> get you 30 qualified calls booked in the next 90 days <b>on the backend.</b></p></div>
+  </div>
+</section>
+
+<section id="final">
+  <h2>The end versions</h2>
+  <p class="intro">Each line tagged with the job it does.</p>
+  <div class="stack">
+    <div>
+      <h3>1.2 (v9, yours)</h3>
+      <div class="script">
+        <div class="row start"><span class="b">Hook</span><span class="l">Most founders just never grow on LinkedIn simply because they're only posting stuff about their company, like…</span></div>
+        <div class="row start"><span class="b">Their world</span><span class="l">"Excited to welcome our new Head of Sales…" / "Our new feature is live…" / "Book a call with our team today."</span></div>
+        <div class="row start"><span class="b">Chain</span><span class="l">The problem with that is that nobody outside your company cares about those posts…</span></div>
+        <div class="row"><span class="b"></span><span class="l">And if nobody cares… nobody is going to react…</span></div>
+        <div class="row"><span class="b"></span><span class="l">And if nobody reacts to them, LinkedIn won't push it.</span></div>
+        <div class="row"><span class="b"></span><span class="l">That simple… that's just how the LinkedIn algorithm works.</span></div>
+        <div class="row start"><span class="b">Fix + goal</span><span class="l">So if you want LinkedIn to actually push your posts so you can get qualified calls coming in… you need 2 things.</span></div>
+        <div class="row start"><span class="b">Fix 1</span><span class="l">First… posts your ICP actually care about.</span></div>
+        <div class="row"><span class="b"></span><span class="l">Your take on your industry… the problems you see clients run into… the stuff you'd normally only say on a sales call.</span></div>
+        <div class="row start"><span class="b">Fix 2</span><span class="l">And second… people reacting to them right when they go live.</span></div>
+        <div class="row"><span class="b"></span><span class="l">Because the first 15 minutes are what tell LinkedIn whether a post is worth pushing.</span></div>
+        <div class="row start"><span class="b">Name</span><span class="l">I call this the media engine…</span></div>
+        <div class="row"><span class="b"></span><span class="l">Because if a bunch of big pages react in that window… LinkedIn starts showing it to a lot more of the right people.</span></div>
+        <div class="row start"><span class="b">Proof + we</span><span class="l">That's exactly what we did for Ryan, who runs sales at a GovTech company…</span></div>
+        <div class="row"><span class="b"></span><span class="l">We wrote and published the posts, and our own network of big pages reacted to every one of them in the first 15 minutes.</span></div>
+        <div class="row"><span class="b"></span><span class="l">Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.</span></div>
+        <div class="row start"><span class="b">Qualifier</span><span class="l">So if you're running a B2B company doing over a million a year… and your posts barely go anywhere…</span></div>
+        <div class="row start"><span class="b">CTA</span><span class="l">Click below and I'll show you how we'd do both for you…</span></div>
+        <div class="row"><span class="b"></span><span class="l">Help you grow your LinkedIn brand…</span></div>
+        <div class="row"><span class="b"></span><span class="l">AND get you 30 qualified calls booked in the next 90 days on the backend.</span></div>
+      </div>
+    </div>
+    <div>
+      <h3>1.1 (v7)</h3>
+      <div class="script">
+        <div class="row start"><span class="b">Hook</span><span class="l">If you run a B2B company doing 1 to 10 million a year… you've probably told yourself you need to be posting on LinkedIn.</span></div>
+        <div class="row start"><span class="b">Agree + upside</span><span class="l">And you're right… you do.</span></div>
+        <div class="row"><span class="b"></span><span class="l">Because the people you want as clients are on there every day…</span></div>
+        <div class="row"><span class="b"></span><span class="l">And if they see you there every week… they show up to the call already knowing who you are.</span></div>
+        <div class="row start"><span class="b">Their world</span><span class="l">But it's been on your to-do list for months. And it's always the last thing on there.</span></div>
+        <div class="row"><span class="b"></span><span class="l">Which makes sense… your clients and your team come first.</span></div>
+        <div class="row start"><span class="b">Soft turn</span><span class="l">I hear this on almost every call.</span></div>
+        <div class="row"><span class="b"></span><span class="l">And with the founders I work with… we don't even try to get them to find the time.</span></div>
+        <div class="row start"><span class="b">Fix</span><span class="l">We sit down with them for one hour… my team writes and posts for them every week… they look over it once a month, about 10 minutes… we book the calls into their calendar.</span></div>
+        <div class="row"><span class="b"></span><span class="l">So the only part they actually do… is the calls.</span></div>
+        <div class="row start"><span class="b">Proof</span><span class="l">That's how Scott, who runs an IT consulting firm, went from almost no following to 43 warm leads in the first month.</span></div>
+        <div class="row start"><span class="b">Qualifier</span><span class="l">So if you're doing over a million a year… you know you should be on LinkedIn… but you're never going to be the one doing it…</span></div>
+        <div class="row start"><span class="b">CTA</span><span class="l">Click below and I'll show you how we'd run it for you… and get you 30 qualified calls booked in the next 90 days.</span></div>
+      </div>
+      <p class="small muted" style="margin-top:10px">1.1 predates the v9 lessons. Its CTA could take the same two layers (grow your LinkedIn brand AND calls on the backend). Your call.</p>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>Flow</h2>
+  <p class="intro">The shape your 1.2 settled into. For problem ads, this is the shape until you say otherwise.</p>
+  <ol class="steps">
+    <li><b>Sweeping claim</b><span>"Most founders just never grow on LinkedIn simply because…" Confident, about them, no setup.</span></li>
+    <li><b>Their world, read out</b><span>Two or three things they actually post or say, in quotes, on screen.</span></li>
+    <li><b>The staircase</b><span>"The problem with that is… And if… And if… That simple… that's just how it works."</span></li>
+    <li><b>Fix tied to their goal</b><span>"So if you want X so you can get qualified calls coming in… you need 2 things."</span></li>
+    <li><b>First / second</b><span>Each step answers one link of the staircase. A second line under each to make it concrete.</span></li>
+    <li><b>Name the unique piece</b><span>"I call this the media engine…" then "Because…" to say what it does.</span></li>
+    <li><b>Proof, with "we"</b><span>"That's exactly what we did for Ryan…" What we did, then the before and after numbers.</span></li>
+    <li><b>Qualifier</b><span>"So if you're running a B2B company doing over a million a year… and [their problem]…"</span></li>
+    <li><b>Two-layer CTA</b><span>"…how we'd do both for you… [the front-end win]… AND 30 qualified calls booked in the next 90 days on the backend."</span></li>
+  </ol>
+  <div class="note info" style="margin-top:18px"><strong>Seam test</strong>Every line hands off to the next through a connector: "like…", "The problem with that is…", "And if…", "So if…", "First…", "And second…", "Because…", "That's exactly what…", "So if…". Read the last word of one line and the first word of the next, and the join should be obvious.</div>
+</section>
+
+<section id="lingo">
+  <h2>Lingo</h2>
+  <p class="intro">Your words next to the ones I kept reaching for.</p>
+  <div class="table-wrap">
+    <table class="mid stackable">
+      <thead><tr><th>You say</th><th>I said</th><th>Why yours works</th></tr></thead>
+      <tbody>
+        <tr><td data-l="You say">"Most founders just never grow on LinkedIn simply because…"</td><td data-l="I said">"If you run a B2B company doing 1 to 10 million a year…" (every time)</td><td data-l="Why yours works">A claim pulls people in. A callout every time reads like a form.</td></tr>
+        <tr><td data-l="You say">"stuff about their company"</td><td data-l="I said">"company news", "company updates"</td><td data-l="Why yours works">Said, not written.</td></tr>
+        <tr><td data-l="You say">"nobody outside your company cares"</td><td data-l="I said">"nobody had a reason to engage"</td><td data-l="Why yours works">Blunter, and it's their own world.</td></tr>
+        <tr><td data-l="You say">"LinkedIn won't push it"</td><td data-l="I said">"LinkedIn stops showing it to anyone else"</td><td data-l="Why yours works">"Push" is shorter, and it pays off later in "pushing".</td></tr>
+        <tr><td data-l="You say">"that's just how the LinkedIn algorithm works"</td><td data-l="I said">"See… LinkedIn doesn't show your post to your whole network"</td><td data-l="Why yours works">States a rule, so it doesn't need a defence.</td></tr>
+        <tr><td data-l="You say">"so you can get qualified calls coming in"</td><td data-l="I said">(the goal only appeared in the CTA)</td><td data-l="Why yours works">The goal arrives before the fix.</td></tr>
+        <tr><td data-l="You say">"your ICP"</td><td data-l="I said">"your buyers"</td><td data-l="Why yours works">Your choice. B2B founders know the term.</td></tr>
+        <tr><td data-l="You say">"I call this the media engine"</td><td data-l="I said">"our own network of LinkedIn pages and creators"</td><td data-l="Why yours works">A name to remember, said casually.</td></tr>
+        <tr><td data-l="You say">"big pages", "react", "in that window"</td><td data-l="I said">"engage with it", "relevance signals"</td><td data-l="Why yours works">Plain words for the same thing.</td></tr>
+        <tr><td data-l="You say">"we wrote and published"</td><td data-l="I said">"my team writes"</td><td data-l="Why yours works">Says done-for-you without saying "done-for-you".</td></tr>
+        <tr><td data-l="You say">"grow your LinkedIn brand… AND… on the backend"</td><td data-l="I said">"get you 30 qualified calls"</td><td data-l="Why yours works">Two layers. The calls feel like a bonus on top.</td></tr>
+        <tr><td data-l="You say">(never)</td><td data-l="I said">"snowball down a hill", "a busy month killed it", "the trap", "Not here"</td><td data-l="Why yours works">Analogies and drama read as AI.</td></tr>
+        <tr><td data-l="You say">(never)</td><td data-l="I said">"my company Influx", "Authority Engine"</td><td data-l="Why yours works">No company or system name.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="style">
+  <h2>Style</h2>
+  <div class="grid-2">
+    <div class="panel">
+      <h3>What your lines do</h3>
+      <ul class="list tight small">
+        <li>One thought per line. Long ideas get split across two lines.</li>
+        <li>"…" at the end of a line when the thought carries on, and a full stop when it lands ("LinkedIn won't push it.").</li>
+        <li>Each line repeats the end of the last one: "nobody cares… / if nobody cares… nobody is going to react… / if nobody reacts…"</li>
+        <li>Digits for numbers ("2 things", "15 minutes", "1,059").</li>
+        <li>CAPS on one word in the whole ad ("AND").</li>
+        <li>Certain, no hedging: "the first 15 minutes", not "15 minutes or so".</li>
+        <li>Casual words: "stuff", "just", "simply", "that simple".</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>What gets cut every time</h3>
+      <ul class="list tight small">
+        <li>Analogies and metaphors.</li>
+        <li>Lines that sound like a voiceover ("a busy month killed it").</li>
+        <li>A second or third idea in the same ad.</li>
+        <li>The company name, and pivots like "that's what we do".</li>
+        <li>Claims I can't point to a source for.</li>
+        <li>The same hook opener, Influx line or proof as another creative in the group.</li>
+        <li>Long notes after the copy when you only asked for the copy.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="mistakes">
+  <h2>My repeat mistakes</h2>
+  <p class="intro">The patterns behind most of your corrections, and the check I now run for each.</p>
+  <div class="table-wrap">
+    <table class="mid stackable">
+      <thead><tr><th>Pattern</th><th>Where it showed up</th><th>Check before sending</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Pattern"><b>Stacking ideas</b></td><td data-l="Where it showed up">1.1 v4 (three arguments), 1.2 v5 (pitch + journey + calendar)</td><td data-l="Check before sending">Can I say the chain in one sentence with "because"? If I need "and also", cut.</td></tr>
+        <tr><td data-l="Pattern"><b>Writing, not talking</b></td><td data-l="Where it showed up">"a busy month killed it", the snowball, "The problem is… every single post needs YOU"</td><td data-l="Check before sending">Would Alex say this line to a founder over coffee?</td></tr>
+        <tr><td data-l="Pattern"><b>Filling gaps with plausible facts</b></td><td data-l="Where it showed up">"first hour", "posted 3 weeks then stopped"</td><td data-l="Check before sending">Every why-it-failed line has a source in the notes.</td></tr>
+        <tr><td data-l="Pattern"><b>Pitching too early</b></td><td data-l="Where it showed up">1.1 v5 "That's what we do at my company Influx", 1.2 v6</td><td data-l="Check before sending">Is the fix explained before any "we"? Is the company name gone?</td></tr>
+        <tr><td data-l="Pattern"><b>Generic reasons</b></td><td data-l="Where it showed up">1.2 v4 "post your opinions"</td><td data-l="Check before sending">Does the reason lead to something only we fix (the media engine, done-for-you, booked calls)?</td></tr>
+        <tr><td data-l="Pattern"><b>Same template every time</b></td><td data-l="Where it showed up">1.2 v2 used 1.1's opener</td><td data-l="Check before sending">Hook type, reason, proof and CTA tie-back all different from the rest of the group.</td></tr>
+        <tr><td data-l="Pattern"><b>Over-explaining in chat</b></td><td data-l="Where it showed up">Long notes after drafts</td><td data-l="Check before sending">Copy only, unless you asked why.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="template">
+  <h2>How I write 1.3</h2>
+  <p class="intro">Angle from your doc: "Hired help, didn't sound like you" (ghostwriter, AI tool, someone on the team). This is the plan before I write a line.</p>
+  <div class="stack">
+    <div class="script">
+      <div class="row start"><span class="b">Claim</span><span class="l">A different hook type from 1.1 (callout) and 1.2 (sweeping claim). For example their own quote or a "show this".</span></div>
+      <div class="row start"><span class="b">Their world</span><span class="l">Who they handed it to: a ghostwriter, ChatGPT, someone on the team (Tony's marketing manager: "the messaging wasn't great and I just didn't have time to really manage it").</span></div>
+      <div class="row start"><span class="b">Staircase</span><span class="l">It doesn't sound like you… so people can tell… so nobody trusts it… so nothing comes from it. Sources: Alex's table, Mahdi ("LinkedIn has become full of very AI posts"), Tony.</span></div>
+      <div class="row start"><span class="b">Fix + goal</span><span class="l">"So if you want posts that actually sound like you so you can get qualified calls…" The fix mirrors each link.</span></div>
+      <div class="row start"><span class="b">Unique piece</span><span class="l">One hour where we get your thinking out, written by people, not AI, and nothing goes live without your OK. A name only if it's natural.</span></div>
+      <div class="row start"><span class="b">Proof + we</span><span class="l">95% approved first time. A different proof from Scott (1.1) and Ryan (1.2).</span></div>
+      <div class="row start"><span class="b">Qualifier</span><span class="l">Over a million a year, and they've tried handing it off before.</span></div>
+      <div class="row start"><span class="b">CTA</span><span class="l">Two layers: grow your LinkedIn brand in your own voice AND 30 qualified calls on the backend.</span></div>
+    </div>
+    <div class="note"><strong>Still open</strong>Alex's OK on describing the big pages (1.2). One line on screen defining a "qualified call". Whether 1.1's CTA gets the two-layer ending too.</div>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Built from this chat's drafts of 1.1 (v1 to v7) and 1.2 (v1 to v9), your feedback word for word, and the notes in batches 1 to 5.</span>
+  <span>Internal working document for Sol Twenty. Contains Influx client material.</span>
+</footer>
+</main>
+</div>
+</div>
+
+<script>
+(function(){try{var links=[].slice.call(document.querySelectorAll('.toc a'));var byId={};links.forEach(function(a){byId[a.getAttribute('href').slice(1)]=a});if(!('IntersectionObserver' in window))return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active')});var a=byId[e.target.id];if(a)a.classList.add('active');}})},{rootMargin:'-15% 0px -75% 0px'});document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s)})}catch(err){}})();
+</script>
+</body>
+</html>
