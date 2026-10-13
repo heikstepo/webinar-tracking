@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is v5 (rebuilt with the training-page rules). 2.2 is v5 (rebuilt with the training-page rules). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v4 (Heik's final). 5.1, 5.2, 5.3 are v1.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -11,7 +11,9 @@ Open items before filming (kept out of the ads):
 - 4.1, 4.3: a source for "over 7 figures a year" from Alex's LinkedIn, and whether the 60k following is mostly ICP.
 - 4.3: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls).
 - 3.1, 2.2: Ryan's revenue (only modelled figures exist). 3.1: the post formats named.
-- 3.2, 2.1: Scott's revenue, or the line comes out.
+- 3.2, 2.1, 5.1: Scott's revenue, or the line comes out. 5.2: Ryan's revenue.
+- 5.1, 5.2: Alex's OK on the 12-week numbers (532, 721). His offer doc only clears the month-1 numbers (43, 61).
+- 5.3: Alex's OK on telling Tony's story (no name, '8 figure company').
 - 2.3: a source for the [X]% buyer stat.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
@@ -584,4 +586,117 @@ Click below and I'll show you exactly how we'd do it for you…
 Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
+```
+
+
+## Ad Group 5
+
+```
+Ad Group 5: Proof
+
+
+Creative 5.1 - Scott: From Almost Zero (v1)
+
+
+This IT consulting CEO went from almost no LinkedIn following… to 532 potential clients showing interest in 12 weeks.
+
+Here's exactly what changed.
+
+Before working with us… Scott's LinkedIn was mostly reposts of company articles and product announcements.
+
+Three of those posts got 8 engagements… combined.
+
+Nobody was responding… because nobody had a reason to.
+
+So we sat down with Scott for about an hour… and from then on, our team wrote every post in Scott's voice… about the stuff their buyers actually care about.
+
+Then over 20 big business brands we've partnered with reacted to every post within the first 15 minutes… so LinkedIn pushed it out to more of those buyers.
+
+Three of our posts got 512 engagements.
+
+The company page went from 4 comments in three months… to 167 in the next three.
+
+43 potential clients showed interest in the first month… and 532 by week 12.
+
+And [$X] in revenue.
+
+All Scott had to do… was look over the posts.
+
+So if you're running a 7 figure business… and you're starting from almost nothing on LinkedIn too…
+
+We'll do exactly the same for you… build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
+
+
+Creative 5.2 - Ryan: Already Posting (v1)
+
+
+Ryan runs sales at a GovTech company… and before working with us, their LinkedIn looked like most B2B companies' LinkedIn.
+
+A case study graphic… a stock photo… a webinar clip… a hiring post.
+
+Four posts… 79 engagements combined.
+
+The problem was who saw them… mostly people who already knew them.
+
+So we changed two things… what they posted… and who saw it.
+
+What they posted… our team wrote every post in Ryan's voice… about what their government buyers actually care about.
+
+And who saw it… over 20 big business brands we've partnered with reacted to every post within the first 15 minutes… so LinkedIn pushed it way past their own network.
+
+Four of our posts got 1,059 engagements.
+
+61 potential clients showed interest in the first month… and by week 12… 721 across their two execs.
+
+And [$X] in revenue.
+
+And that's in a niche, regulated market… where most people think LinkedIn doesn't even work.
+
+So if you're running a 7 figure business… and you're already posting but it's going nowhere…
+
+We'll do for you exactly what we did for Ryan… build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
+
+
+Creative 5.3 - Alex: They Found Me (v1)
+
+
+Recently… the founder of an 8 figure company booked a call with me… and one of the first things they said was…
+
+"I'm probably not the only person that's ever reached out to you based off your posts."
+
+And they're right.
+
+My LinkedIn brings in over 7 figures a year for my business.
+
+I've been a LinkedIn Top Voice twice… and built a 60k+ following that's mostly my ICP.
+
+So buyers like that founder read my posts… and then they come to me.
+
+Now… that founder was still bringing in most of the company's sales personally.
+
+And what they wanted was a system that consistently brings in new qualified conversations with their ICP.
+
+That's exactly what we build for our clients at my company Influx.
+
+We write and post for you every day… in your voice.
+
+Then our partner brands jump on every post in the first 15 minutes… so LinkedIn shows it to way more of your buyers.
+
+And when those buyers engage… our team books them straight into your calendar.
+
+So if you're running a 7 figure business… and you want buyers coming to you first…
+
+We'll build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Click the link below and I'll show you how.
 ```
