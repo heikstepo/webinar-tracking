@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA).
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v1.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -411,6 +411,58 @@ Click below and I'll show you how we'd build and run your whole LinkedIn brand c
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
 Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
+
+
+Creative 3.2 - Built To Convert (v1)
+
+
+[DRAW: one post labelled "VIRAL" with a crowd of random stick figures around it]
+
+Going viral on LinkedIn is THE worst thing that could happen to any B2B founder looking to get clients from it…
+
+Let me explain…
+
+When a post goes viral… LinkedIn shows it to pretty much everyone.
+
+Students… job seekers… other creators… people who are never going to buy from you.
+
+So you get thousands of views… a bunch of new followers… and not a single call.
+
+And a lot of views don't mean a lot of money.
+
+So instead… we treat your LinkedIn like an acquisition channel.
+
+[DRAW: new post, small group of buyer figures labelled "your ICP"]
+
+Every post we write is for your ICP… the exact people you want as clients.
+
+Then our media engine kicks in.
+
+Over 20 big business brands react to it within the first 15 minutes… so LinkedIn pushes it out to more people just like them.
+
+And then comes the part almost everyone's missing…
+
+A clear system for turning the people who engage into calls.
+
+Every week we see who from your ICP engaged with your posts or checked out your profile… and our team reaches out and books them straight into your calendar.
+
+[DRAW: arrow from the buyer figures to a calendar]
+
+That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
+
+And [$X] in revenue.
+
+[ON SCREEN: Documented example. Scott, IT consulting. Source for the $[X]]
+
+And we do all of it for you… you just look over your posts once a month.
+
+So if you're running a 7 figure business… and you want LinkedIn to actually bring in clients…
+
+Click below and I'll show you how we'd build and run your whole LinkedIn brand completely done for you…
+
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+
+Open before running: Scott's revenue needs a real number from Alex, or the line comes out.
 ```
 
 ## Ad Group 4
