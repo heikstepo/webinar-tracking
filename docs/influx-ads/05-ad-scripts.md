@@ -4,6 +4,17 @@ Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no s
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
+Ads contain spoken lines only. No [DRAW], [SHOW] or [ON SCREEN] directions.
+
+Open items before filming (kept out of the ads):
+- 2.3, 4.1, 4.3: a source for "well over 8 figures" across B2B clients.
+- 4.1, 4.3: a source for "over 7 figures a year" from Alex's LinkedIn, and whether the 60k following is mostly ICP.
+- 4.3: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls).
+- 3.1: Ryan's revenue (only modelled figures exist) and the post formats named.
+- 3.2: Scott's revenue, or the line comes out.
+- 2.3: a source for the [X]% buyer stat.
+- 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
+
 ## The 12 slots for Influx
 
 ```
@@ -100,8 +111,6 @@ So the only part they actually do… is the calls.
 
 That's how Scott, who runs an IT consulting firm, went from almost no following to 43 potential clients showing interest in the first month.
 
-[ON SCREEN: Documented example. Scott, IT consulting]
-
 So if you're doing over a million dollars a year… you know you should be on LinkedIn… but you're never going to be the one doing it…
 
 Click below and I'll show you how we'd run it for you… and get you 30 qualified calls booked in the next 90 days.
@@ -109,8 +118,6 @@ Click below and I'll show you how we'd run it for you… and get you 30 qualifie
 
 Creative 1.2 - No Early Engagement (v9, Heik's edit)
 
-
-[SHOW: three typical company posts flashing up… a new hire, a product update, a "book a demo" post]
 
 Most founders just never grow on LinkedIn simply because they're only posting stuff about their company, like…
 
@@ -147,10 +154,6 @@ That's exactly what we did for Ryan, who runs sales at a GovTech company…
 We wrote and published the posts, and our own network of big pages reacted to every one of them in the first 15 minutes.
 
 Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.
-
-[SHOW: Ryan's before and after posts from the case study]
-
-[ON SCREEN: Documented example. Ryan, GovTech]
 
 So if you're running a B2B company doing over a million dollars a year… and your posts barely go anywhere…
 
@@ -252,8 +255,6 @@ But that only happens if the right people actually see your posts… and someone
 
 That's what we did for Scott, who runs an IT consulting firm… started with almost no following… and got 43 potential clients showing interest in the first month.
 
-[ON SCREEN: Documented example. Scott, IT consulting]
-
 So if you're doing over a million dollars a year… and you're tired of waiting on the next referral…
 
 Click below and I'll show you how we'd set this up for you…
@@ -274,8 +275,6 @@ And these days that usually means LinkedIn… or asking ChatGPT, which pulls a t
 
 It's actually the second most quoted site in AI answers, ahead of Wikipedia.
 
-[ON SCREEN: Semrush, March 2026]
-
 So if your competitor's posting every week and you're not… they're the one the buyer finds.
 
 And by the time anyone gets to you… they've usually already picked.
@@ -293,8 +292,6 @@ We sit down with you for an hour… write and post for you every week… our med
 And when they start engaging… we book them straight into your calendar.
 
 That's what we did for Ryan, who runs sales at a GovTech company… a really niche, regulated market… 61 potential clients showing interest in the first month.
-
-[ON SCREEN: Documented example. Ryan, GovTech]
 
 So if you're doing over a million dollars a year… and you're tired of losing deals to people you know you're better than…
 
@@ -317,8 +314,6 @@ They are going to look you up…
 Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
 
 In fact… [X]% of B2B buyers check a vendor out on LinkedIn before they ever buy.
-
-[ON SCREEN: source for the [X]% stat]
 
 Now…
 
@@ -355,8 +350,6 @@ And want LinkedIn to be an actual reliable acquisition channel for your business
 Click below and I'll show you how we'd grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
-
-Open before filming: source for "well over 8 figures", Alex's OK on the media engine numbers and the 15-minute line, source for the [X]% stat.
 ```
 
 ## Ad Group 3
@@ -370,8 +363,6 @@ Filming Idea: Alex at a whiteboard, drawing one diagram as he talks, built up li
 Creative 3.1 - The Media Engine (v4, Heik's draft + new CTA)
 
 
-[DRAW: one post in the middle of the board, small circle around it labelled "your network"]
-
 You know why most B2B founders never grow on LinkedIn?
 
 Because only a few people in their network react to their post.
@@ -384,21 +375,15 @@ That's why we run what we call a media engine.
 
 We've basically partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
-[DRAW: 20+ brands around the post, arrows pointing in]
-
 And EVERY time we publish a post we've written for our clients…
 
 They all react to it within the first 15 minutes so it gets pushed by LinkedIn.
 
 And because they're business brands… it pushes it out to more business people… Which means your ICP.
 
-[DRAW: arrow out to a big circle labelled "your ICP"]
-
 That's how Ryan, who runs sales at a GovTech company… went from 79 engagements across 4 old posts… to 1,059 across 4 of ours…
 
 And [$X] in revenue.
-
-[ON SCREEN: Documented example. Ryan, GovTech. Source for the $[X]]
 
 We wrote and published all of these posts, including infographics, impact cards, long forms, and more…
 
@@ -410,15 +395,11 @@ Click below and I'll show you how we'd build and run your whole LinkedIn brand c
 
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
-Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
-
 
 Creative 3.2 - Built To Convert (v3, Heik's draft)
 
 Angle: most people only optimize for growth. You've got to have a clear conversion mechanism if you want your LinkedIn to be an acquisition channel.
 
-
-[DRAW: one post labelled "VIRAL" with a crowd of random stick figures around it]
 
 Going viral on LinkedIn is THE worst thing that could happen to any B2B founder looking to get clients from it…
 
@@ -434,8 +415,6 @@ That's why instead we treat your LinkedIn like an acquisition channel…
 
 Which means every post we write has a job… and every single one is written for your ICP.
 
-[DRAW: a funnel with three levels: top, middle, bottom]
-
 At the top of the funnel… we've got what we call impact cards.
 
 One sharp idea on a designed card… so your ICP stop scrolling and notice you.
@@ -447,8 +426,6 @@ And at the bottom we've got posts that show your results and invite them to talk
 That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
 
 And [$X] in revenue.
-
-[ON SCREEN: Documented example. Scott, IT consulting. Source for the $[X]]
 
 Now sure… Are you going to go viral with this process and get millions of views?
 
@@ -466,8 +443,6 @@ Every week… we look at who from your ICP engaged with your posts or checked ou
 
 And our team reaches out and books them straight into your calendar.
 
-[DRAW: arrow from the bottom of the funnel to a calendar]
-
 We do all of it for you… all you do is look over your posts once a month.
 
 So if you're doing over a million dollars a year… and you'd rather have 30 calls than a million views…
@@ -475,8 +450,6 @@ So if you're doing over a million dollars a year… and you'd rather have 30 cal
 Click below and I'll show you how we'd build and run your whole LinkedIn brand completely done for you…
 
 And get you 30 qualified booked inbound calls in the next 90 days on the backend.
-
-Open before running: Scott's revenue needs a real number from Alex, or the line comes out.
 ```
 
 ## Ad Group 4
@@ -504,8 +477,6 @@ My name's Alex, and at my company Influx we've generated well over 8 figures for
 
 And I've also done it for myself… been a LinkedIn Top Voice twice… and built a 60k+ ICP following that actually drives over 7 figures in annual revenue.
 
-[ON SCREEN: LinkedIn Top Voice 2019 & 2020]
-
 Now… it basically works like this.
 
 We sit down with you once… for about an hour… and get everything out of your head.
@@ -521,8 +492,6 @@ Meaning… by the time someone gets on a call with you… they already know, lik
 So if you're doing over a million dollars a year… and you want 30 qualified calls in the next 90 days without writing a single post yourself…
 
 Click below… I'll show you exactly how we'd do it for you… and you can book a call with me right there.
-
-Open before filming: sources for "well over 8 figures" and "over 7 figures in annual revenue", and whether the 60k following is mostly ICP.
 
 
 Creative 4.2 - 10 Minutes A Month (v4)
@@ -572,8 +541,6 @@ AND get you 30 qualified calls booked in the next 90 days… for about 10 minute
 Creative 4.3 - My LinkedIn, Built For You (v2, Heik's edit)
 
 
-[SHOW: Alex's LinkedIn profile, scrolling]
-
 Over 7 figures a year in my business comes from ONE place…
 
 My LinkedIn posts.
@@ -605,6 +572,4 @@ Click below and I'll show you exactly how we'd do it for you…
 Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
-
-Open before filming: Alex's OK on "guaranteed" (his offer doc says Influx never guarantees a number of calls), and sources for "over 7 figures a year" and "well over 8 figures".
 ```
