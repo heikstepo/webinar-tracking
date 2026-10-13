@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v4). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v5). 2.1 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -165,20 +165,20 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 1.3 - Handed It Off (v4)
+Creative 1.3 - Handed It Off (v5)
 
 
-So you finally hired someone to handle your LinkedIn…
+You're paying someone every month to post on your LinkedIn…
 
-Because you knew you needed to be on there… you just didn't have the time.
+And you couldn't name a single client it's brought in.
 
 Maybe it's a marketing person… a ghostwriter… or someone on your team using ChatGPT.
 
-And honestly… that makes total sense.
+And honestly… handing it off made total sense.
 
-But let's be real… a few months in, nothing's really come from it, right?
+You knew you needed to be on there… you just didn't have the time.
 
-The posts go out… you get a couple of likes… and that's about it.
+But the posts go out… you get a couple of likes… and that's about it.
 
 And it's not because the person you hired is bad at their job.
 
