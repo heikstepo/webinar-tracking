@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 below is an old draft that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is rebuilt (v2).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -315,40 +315,50 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 [ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 
 
-Creative 2.3 - Cold Leads Go Quiet
+Creative 2.3 - They Look You Up (v2)
 
 
-If you run a B2B company and your cold leads keep going quiet after the first call…
+Here's what a prospect does right after a good first call with you…
 
-Chances are they looked you up.
+They look you up.
 
-They go on your LinkedIn… and find a profile that hasn't posted in months.
+Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
 
-Nothing about how you work… nothing that tells them you know your stuff.
+And if there's barely anything there… nothing that shows you actually know your stuff…
 
-So they go with someone they feel like they know better.
+Then all they've got to go on is that one call.
 
-And honestly… you can't blame them.
+And one call usually isn't enough to hand someone a big contract.
 
-They met you 30 minutes ago.
+So they go quiet… or they go with someone they've been seeing around for months.
 
-I see it on my own calls all the time… when someone's been reading my posts for a few weeks, they already trust me before we even start.
+And you never really find out why.
 
-So you don't need more leads.
+The fix is making sure there's something worth finding when they look.
 
-You ACTUALLY need leads who've seen you before the call.
+Posts every week on how you think… the problems you solve… the stuff you'd tell a client.
 
-And that's what we do.
+So when they look you up after that call… it backs up everything you said.
 
-We write your posts every week… in your voice… and our network gets them in front of the buyers in your market.
+Problem is… that's a lot of posting when you're running a company.
 
-So by the time someone gets on a call with you… they've been reading you for weeks.
+So we just do it for you.
 
-And every week, you get a list of the decision-makers who are already engaging with you… so you're not reaching out cold.
+One hour with you… then we write and post every week… and our media engine gets those posts in front of the right people.
 
-Now just so you know… this is only for B2B founders doing over [$1M] a year… who are tired of leads that go quiet after the first call.
+And when people start engaging… we book them straight into your calendar.
 
-If that's you, click the link below and watch a short video where I show you how we get you [30 warm, qualified leads in your first 30 days]… people who already know who you are.
+That's what we did with Scott's company page… 4 comments in the three months before… 167 in the three months after.
 
-[ON SCREEN at CTA: "Warm lead = a decision-maker in your market who's already engaging with you on LinkedIn"]
+[ON SCREEN: Documented example. Scott, IT consulting. Company page, Jan-Apr vs Apr-Jul 2026]
+
+So if you're doing over a million a year… and you're tired of good calls going quiet…
+
+Click below and I'll show you how we'd make sure they like what they find…
+
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+
+[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
 ```
