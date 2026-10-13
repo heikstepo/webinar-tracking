@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v2.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 is v9 (Heik's edit). No company name in ads. 1.3 is rebuilt (v7). 2.1 is rebuilt (v4). 2.2 is rebuilt (v4). 2.3 is v5 (Heik's final, Influx named on purpose). Training reference: influx-ad-training.html. 4.1 is v2 (Heik's edit). 4.2 is v4. 4.3 is v2 (Heik's edit). 3.1 is v4 (Heik's draft, new CTA). 3.2 is v3 (Heik's draft).
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -413,7 +413,9 @@ And get you 30 qualified booked inbound calls in the next 90 days on the backend
 Open before running: Alex's OK (most explicit description of the media engine in any ad). Ryan's revenue: only modelled figures exist, so the $[X] needs a real number from Alex.
 
 
-Creative 3.2 - Built To Convert (v2)
+Creative 3.2 - Built To Convert (v3, Heik's draft)
+
+Angle: most people only optimize for growth. You've got to have a clear conversion mechanism if you want your LinkedIn to be an acquisition channel.
 
 
 [DRAW: one post labelled "VIRAL" with a crowd of random stick figures around it]
@@ -422,39 +424,25 @@ Going viral on LinkedIn is THE worst thing that could happen to any B2B founder 
 
 Let me explain…
 
-When a post goes viral… LinkedIn shows it to pretty much everyone.
+When a post goes viral… LinkedIn shows it to pretty much everyone…
 
-Students… job seekers… other creators… people who are never going to buy from you.
+And the majority of them are going to be people who are never going to buy from you.
 
 So you get thousands of views… a bunch of new followers… and not a single call.
 
-And a lot of views don't mean a lot of money.
-
-So instead… we treat your LinkedIn like an acquisition channel.
-
-[DRAW: a funnel with three levels: top, middle, bottom]
+That's why instead we treat your LinkedIn like an acquisition channel…
 
 Which means every post we write has a job… and every single one is written for your ICP.
 
-At the top… we've got what we call impact cards. One sharp idea on a designed card… so your buyers stop scrolling and notice you.
+[DRAW: a funnel with three levels: top, middle, bottom]
 
-In the middle… longer posts in your voice where you take a clear stand on your industry… so they start to trust you.
+At the top of the funnel… we've got what we call impact cards.
 
-And at the bottom… posts that show your results and invite them to talk… so the ones who are ready put their hand up.
+One sharp idea on a designed card… so your ICP stop scrolling and notice you.
 
-That way people actually move from never having heard of you… to ready to talk.
+In the middle of the funnel we have long form posts in your voice where you take a clear stand on your industry… so they start to trust you.
 
-Then our media engine kicks in.
-
-Over 20 big business brands react to every post within the first 15 minutes… so LinkedIn pushes it out to more people just like them.
-
-And then comes the part almost everyone's missing…
-
-A clear system for turning the people who engage into calls.
-
-Every week we see who from your ICP engaged with your posts or checked out your profile… and our team reaches out and books them straight into your calendar.
-
-[DRAW: arrow from the bottom of the funnel to a calendar]
+And at the bottom we've got posts that show your results and invite them to talk.
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
 
@@ -462,9 +450,27 @@ And [$X] in revenue.
 
 [ON SCREEN: Documented example. Scott, IT consulting. Source for the $[X]]
 
-And we do all of it for you… you just look over your posts once a month.
+Now sure… Are you going to go viral with this process and get millions of views?
 
-So if you're running a 7 figure business… and you want LinkedIn to actually bring in clients…
+Probably not.
+
+But if you want to treat LinkedIn as an ACTUAL acquisition channel for your 7 figure business…
+
+You shouldn't be looking for that anyways.
+
+What you should be looking for… is calls with the people who can actually buy from you.
+
+And that's the last piece almost everyone's missing.
+
+Every week… we look at who from your ICP engaged with your posts or checked out your profile…
+
+And our team reaches out and books them straight into your calendar.
+
+[DRAW: arrow from the bottom of the funnel to a calendar]
+
+We do all of it for you… all you do is look over your posts once a month.
+
+So if you're doing over a million dollars a year… and you'd rather have 30 calls than a million views…
 
 Click below and I'll show you how we'd build and run your whole LinkedIn brand completely done for you…
 
