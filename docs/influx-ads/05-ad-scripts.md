@@ -1,6 +1,6 @@
 # Influx ad scripts (working draft)
 
-Status: 1.1 is rebuilt (v6). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
+Status: 1.1 is rebuilt (v7). Offer is 30 qualified booked calls in 90 days, no system name. 1.2 to 2.3 below are old drafts that break the rules in influx-copy-rules.html. They get rebuilt one at a time.
 
 Rules: Spoken Copy Playbook. One creative at a time. Placeholders in [brackets] until confirmed.
 
@@ -67,12 +67,16 @@ Ad Group 1: Problems they hit trying to grow on LinkedIn (Selfie-style iPhone vi
 Filming Idea: Film yourself walking outside with your phone in one hand… talking to it like you're on FaceTime with a founder friend who just told you they stopped posting again. Normal pace. Don't redo a take over small stumbles, raw works better here.
 
 
-Creative 1.1 - Last Thing On The List (v6)
+Creative 1.1 - Last Thing On The List (v7)
 
 
 If you run a B2B company doing 1 to 10 million a year… you've probably told yourself you need to be posting on LinkedIn.
 
 And you're right… you do.
+
+Because the people you want as clients are on there every day…
+
+And if they see you there every week… they show up to the call already knowing who you are.
 
 But it's been on your to-do list for months… maybe years.
 
