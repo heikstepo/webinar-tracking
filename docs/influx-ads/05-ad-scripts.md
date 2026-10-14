@@ -138,13 +138,11 @@ And then having a backend that actually converts those ICP leads into qualified 
 
 See how that’s much more different than just hiring some random ghostwriter trying to get engagement?
 
-So if you're running a B2B company doing over a million a year… and you've already tried handing off your LinkedIn…
+So if you're running a B2B company doing over a million dollars a year… and you've already tried handing off your LinkedIn…
 
-Click below and I'll show you how we'd run the whole thing for you…
+Click the link below and I'll show you how we'd run your LinkedIn for leads…
 
-Grow your LinkedIn brand…
-
-AND get you 30 qualified calls booked in the next 90 days on the backend.
+And book 30 qualified calls into your calendar in the next 90 days.
 
 Ad Group 2 - Consequences of not having a linkedin Personal Brand (selfie or talking head)
 
