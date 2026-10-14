@@ -80,17 +80,15 @@ That simple… that's just how the LinkedIn algorithm works.
 
 So if you want LinkedIn to actually push your posts so you can get qualified calls coming in…
 
-You need 2 things.
+You have to post a variety of formats with stuff your ICP actually cares about...
 
-First, posts your ICP actually cares about.
-
-And second, people reacting to them right when they go live.
+And you need people reacting to them right when they go live.
 
 Now sure, posting every day takes a lot of time, and building that initial network takes even longer…
 
 But that's where we come in at my company Influx.
 
-First, we write infographics, impact cards and long-form posts in your voice, all about the stuff your ICP actually cares about…
+First, we write infographics, impact cards, long forms, and more in your voice…
 
 And second, to make sure they get seen outside your own network…
 
@@ -98,7 +96,7 @@ We've partnered up with over 20 big LinkedIn brands with more than 3 million fol
 
 And within 15 minutes of your post going live, they all react to it…
 
-So LinkedIn pushes it straight out to way more of your buyers…
+So LinkedIn pushes it straight out to way more of your ICP buyers.
 
 And once those buyers start engaging, our team books them right into your calendar.
 
@@ -106,7 +104,7 @@ That's how Ryan, who runs sales at a GovTech company, went from 79 engagements a
 
 And [X] booked calls in the first [X] weeks.
 
-So if you're running a B2B company doing over a million dollars a year, and your posts barely go anywhere…
+So if you're running a B2B company doing over a million dollars a year, and your LinkedIn posts barely go anywhere…
 
 Click below and I'll show you how we'd do both for you…
 
