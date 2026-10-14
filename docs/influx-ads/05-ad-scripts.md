@@ -30,39 +30,39 @@ Not only is it gonna help you get more clients outside of your referrals…
 
 You’ll also be seen as an authority in the space, cold leads will convert faster…
 
-Linkedin is just a must have nowadays.
+LinkedIn is just a must have nowadays.
 
-Now sure… doing it properly means posting pretty much every day…
+But now… if you want it to actually work… you've gotta be posting pretty much every day.
 
-And when you're running a company… where are you supposed to find the hours for that?
+And when you're running a company… where are you supposed to find the time for that?
 
 Your clients and your team come first… as they should.
 
-So it just doesn't get done.
+So LinkedIn just keeps getting pushed back.
 
-I mean… I hear this on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
+I mean… I hear this on almost every single call.
 
-So with the founders we work with… we take the whole thing off their plate.
+I run a company called Influx… and we handle LinkedIn for B2B founders.
 
-We sit down with them for one hour… and get how they think, the stuff they'd tell a client on a sales call.
+So with the founders we work with… we just take the whole thing off their plate.
 
-From there, my team writes and posts for them every week.
+We sit down with them once… for about an hour… and get how they think… the stuff they'd tell a client on a sales call.
 
-They look over the posts once a month… takes about 10 minutes.
+From there… my team writes and posts for them every day… in their voice.
 
-And once the right people start engaging… we reach out and book the calls into their calendar.
+And once their buyers start engaging… we reach out and book the calls straight into their calendar.
 
-So the only part they actually do… is the calls.
+All they do is look over the posts once a month… which takes about 10 minutes… and show up to the calls.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to 43 warm leads in the first month.
+That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
-[ON SCREEN: Documented example. Scott, IT consulting]
+So if you know you should be on LinkedIn… but you're never gonna be the one doing it…
 
-So if you're doing over a million a year… you know you should be on LinkedIn… but you're never going to be the one doing it…
+We'll build and run your whole LinkedIn brand completely done for you…
 
-Click below and I'll show you how we'd run it for you… and get you 30 qualified calls booked in the next 90 days.
+And get you 30 qualified booked inbound calls in the next 90 days on the backend.
 
-[ON SCREEN at CTA: "Qualified call = [definition to confirm with Alex]"]
+Click the link below and I'll show you how.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
