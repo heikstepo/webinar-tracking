@@ -26,13 +26,13 @@ If you run a B2B company doing over a million dollars a year… you've probably 
 
 And it makes sense… right?
 
-It brings in clients outside your referrals… makes you an authority in your space… and cold leads close way faster.
+It brings in clients outside your referrals… makes you an authority in your space… cold leads close way faster, and so on…
 
 But for any of that to happen… you've got to be posting pretty much every day.
 
 And when you're running a company… where are you supposed to find the time for that?
 
-I mean… your clients and your team come first… as they should.
+I mean… Your clients and your team come first… as they should.
 
 So LinkedIn just keeps getting pushed back.
 
@@ -42,11 +42,11 @@ We sit down with them once for about an hour…
 
 And from there we write and post for them every day, in their voice…
 
-So they're in front of their buyers every single day without doing anything.
+So they're in front of their ICP buyers every single day without doing anything.
 
-That builds their LinkedIn brand… and once those buyers start engaging, we reach out and book the calls straight into their calendar.
+Not only does that build their LinkedIn brand which is going to get you incredible connections…
 
-So the only time they actually spend on LinkedIn… is on calls with buyers.
+But once their buyers start engaging, we reach out and book the calls straight into their calendar.
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
