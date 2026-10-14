@@ -1,6 +1,6 @@
 # Influx ad scripts (master)
 
-Source of truth: Heik's "Influx - Ad Scripts" strategy doc. 1.1 is signed off (edit round 1, 14 Oct). 2.1 approved ("sooo much better"). 3.2 is Heik's own version (edit round 2). The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
+Source of truth: Heik's "Influx - Ad Scripts" strategy doc. 1.1 is signed off (edit round 1, 14 Oct). 2.1 approved ("sooo much better"). 3.2 is Heik's own version (edit round 2). 5.2 approved ("this good"). The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
 
 Rules: spoken lines only (no [DRAW], [SHOW] or [ON SCREEN]). Nothing against Meta. Placeholders in [brackets] until confirmed. Full rule set: influx-copy-rules.html and influx-ad-training.html.
 
@@ -485,7 +485,7 @@ Which turned into [X] new followers, [X] booked calls and [$X] in revenue in the
 
 And that's in GovTech, a niche, regulated market where most people think LinkedIn doesn't even work.
 
-So if you're already posting and it's going nowhere…
+So if you've already been posting on LinkedIn and it's going nowhere…
 
 Click the link below and I'll show you how we'd do the same for you…
 
