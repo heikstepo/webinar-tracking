@@ -42,15 +42,11 @@ I run a company called Influx… and we handle LinkedIn for B2B founders.
 
 So with the founders we work with… we just take the whole thing off their plate.
 
-We sit down with them once for about an hour… and that's all we need to write exactly the way they talk.
+We sit down with them once for about an hour… then we write and post for them every day in their voice… without them writing a word.
 
-From there we write and post for them every day… in their voice… so they're in front of their buyers every single day without writing a word.
+When their buyers engage… we book them straight into their calendar… so every call is with someone who already knows them.
 
-And once those buyers start engaging… we reach out and book them straight into their calendar… which means every call is with someone who already knows who they are.
-
-All they do is look over the posts once a month… about 10 minutes… and show up to the calls.
-
-So the only time they actually spend on LinkedIn… is time spent talking to buyers.
+And apart from 10 minutes a month looking over posts… the only time they spend on LinkedIn is on those calls.
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
