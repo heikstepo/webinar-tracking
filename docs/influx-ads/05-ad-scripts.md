@@ -100,13 +100,13 @@ And when those buyers start engaging… our team books them straight into your c
 
 That's how Ryan, who runs sales at a GovTech company… went from 79 engagements across 4 old posts… to 1,059 across 4 of ours… and [X] booked calls in the first [X] weeks.
 
-So if you're running a B2B company doing over a million a year… and your posts barely go anywhere…
+So if you're running a B2B company doing over a million dollars a year… and your posts barely go anywhere…
 
 Click below and I'll show you how we'd do both for you…
 
-Help you grow your Linkedin Brand…
+Help you grow your LinkedIn brand…
 
-AND get you 30 qualified booked calls booked in the next 90 days on the backend.
+AND get you 30 qualified calls booked in the next 90 days on the backend.
 
 Creative 1.3: Hired help, didn't sound like you
 
