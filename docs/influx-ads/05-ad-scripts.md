@@ -32,11 +32,13 @@ But for any of that to happen… you've got to be posting pretty much every day.
 
 And when you're running a company… where are you supposed to find the time for that?
 
-I mean… Your clients and your team come first… as they should.
+I mean… Your clients and your team come first… as they should…
 
-So LinkedIn just keeps getting pushed back.
+So LinkedIn just keeps getting pushed back…
 
-That's why, with the B2B founders we work with at my company Influx… we just take the whole thing off their plate.
+Which is why, with the B2B founders we work with at my company Influx…
+
+We just take the whole thing off their plate.
 
 We sit down with them once for about an hour…
 
