@@ -191,17 +191,31 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 2.2: Competitors with better Linkedin Market Presence & Brand win clients, even though you’re better
 
-If you keep losing deals to competitors you know you're better than…
+Ever lost a deal to a competitor you know isn't as good as you…
 
-It's probably because your buyers see them on LinkedIn every week, and they never see you…
+And thought, how did THEY win that?
 
-So when they're finally ready to buy, who do you think they call?
+Well, most of the time they didn't win it on the call…
 
-Them, even though you're the better choice.
+They won it months before, every time that buyer scrolled past one of their LinkedIn posts.
+
+And look, I know what you're thinking. Their posts aren't even that good.
+
+And you might be right…
+
+But your buyer doesn't need great posts to remember a name. They just need to keep seeing it.
+
+So when they finally need what you sell, who do you think they call first?
+
+Them. And you never even get the chance to show them you're better.
+
+Which means being better isn't enough anymore…
+
+You also have to be the one they keep seeing.
 
 Now sure, posting every week is hard when you're running a 7 figure business…
 
-That's why at my company Influx, we make sure your buyers see you instead.
+That's why at my company Influx, we make sure your buyers see you every single week.
 
 We write and post for you every day, in your voice…
 
@@ -213,7 +227,7 @@ That's how Ryan, who runs sales at a GovTech company, got [X] new followers and 
 
 And [$X] in revenue.
 
-So if you want to be the one your buyers see first…
+So if you want to be the name your buyers see first…
 
 Click the link below and I'll show you how we'd get you in front of them every day…
 
