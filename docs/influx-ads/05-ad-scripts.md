@@ -58,7 +58,7 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
-Most founders just never grow on LinkedIn simply because they're only posting stuff about their company, like…
+If you're a B2B founder posting on LinkedIn… and nothing's really happening… I can probably guess what your posts look like.
 
 "Excited to welcome our new Head of Sales…"
 
@@ -66,11 +66,15 @@ Most founders just never grow on LinkedIn simply because they're only posting st
 
 "Book a call with our team today."
 
-The problem with that is that nobody outside your company cares about those posts…
+Sound familiar?
 
-And if nobody cares… nobody is going to react…
+And look… I get why you post that stuff… it's what's going on in your company.
 
-And if nobody reacts to them, LinkedIn won't push it.
+But think about it… who outside your company actually cares about your new hire?
+
+Nobody… right?
+
+So nobody reacts… and if nobody reacts… LinkedIn won't push it.
 
 That simple… that's just how the LinkedIn algorithm works.
 
@@ -84,15 +88,19 @@ And second… people reacting to them right when they go live.
 
 Because the first 15 minutes are what tell LinkedIn whether a post is worth pushing.
 
-I call this the media engine…
+And that's exactly what we do for our clients at my company Influx.
 
-Because if a bunch of big pages react in that window… LinkedIn starts showing it to a lot more of the right people.
+We write the posts for you… in your voice… about the stuff your buyers actually care about.
 
-That's exactly what we did for Ryan, who runs sales at a GovTech company…
+And then we run what we call a media engine.
 
-We wrote and published the posts, and our own network of big pages reacted to every one of them in the first 15 minutes.
+We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
-Four of Ryan's old posts got 79 engagements combined… four of ours got 1,059.
+And every time we publish one of your posts… they all react to it in the first 15 minutes… so LinkedIn pushes it out to way more of your buyers.
+
+And when those buyers start engaging… our team books them straight into your calendar.
+
+That's how Ryan, who runs sales at a GovTech company… went from 79 engagements across 4 old posts… to 1,059 across 4 of ours… and [X] booked calls in the first [X] weeks.
 
 So if you're running a B2B company doing over a million a year… and your posts barely go anywhere…
 
