@@ -191,45 +191,36 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 2.2: Competitors with better Linkedin Market Presence & Brand win clients, even though you’re better
 
-If a competitor you know you're better than keeps winning deals you should've won… here's probably why.
+If you keep losing deals to competitors you know you're better than…
 
-Before a buyer ever gets on a call with anyone… they look you up.
+It's probably because of what buyers find when they look you up before the call…
 
-And these days that usually means LinkedIn… or asking ChatGPT, which pulls a ton from LinkedIn.
+On LinkedIn, or by asking ChatGPT, which quotes LinkedIn more than almost any other site.
 
-Adobe actually found it's the second most quoted site in AI answers… ahead of Wikipedia.
+So if your competitor shows up there every week, and you don't…
 
-So if your competitor's posting every week and you're not… they're the one the buyer finds.
+They're the one the buyer picks, before you even get a shot.
 
-And by the time anyone gets to you… they've usually already picked.
+Now sure, showing up every week is hard when you're running a 7 figure business…
 
-So you're losing deals before you even get a shot… and it's got nothing to do with how good you are.
+That's why at my company Influx, we make sure you're the one they find.
 
-Now… if you want to win those deals back… you've got to be the one they find when they look.
+We write and post for you every day, in your voice…
 
-Which means showing up on LinkedIn EVERY single week.
+Over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to your buyers…
 
-And look… when you're running a 7 figure business… that's usually the first thing that gets dropped.
+And once they start engaging, our team books them straight into your calendar.
 
-And that's exactly what we take off your plate at my company Influx.
-
-We write and post for you every day… in your voice… for your ICP.
-
-Then over 20 big business brands we've partnered with react to every post within the first 15 minutes… so LinkedIn pushes it out to your buyers.
-
-And when they start engaging… our team books them straight into your calendar.
-
-That's how Ryan, who runs sales at a GovTech company… in a really niche, regulated market… got 61 potential clients showing interest in the first month…
+That's how Ryan, who runs sales at a GovTech company, got [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
 So if you want to be the one your buyers find first…
 
-We'll build and run your whole LinkedIn brand completely done for you…
+Click the link below and I'll show you how we'd get you in front of them every day…
 
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+And book 30 qualified calls into your calendar in the next 90 days.
 
-Click the link below and I'll show you how.
 
 Creative 2.3: Cold Leads ghost you / Don’t Close because you’re not a market authority - They don’t find anything about you online
 
