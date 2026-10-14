@@ -58,17 +58,17 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
-If you're a B2B founder posting on LinkedIn… and nothing's really happening… I can probably guess what your posts look like.
+If you're a B2B founder posting on LinkedIn… and nothing's really happening… I'd bet your posts look something like…
 
 "Excited to welcome our new Head of Sales…"
 
 "Our new feature is live…"
 
-"Book a call with our team today."
+Or "Book a call with our team today…"
 
 Sound familiar?
 
-And look… I get why you post that stuff… it's what's going on in your company.
+And look… I get why you post that stuff… it's what's going on in your company…
 
 But think about it… who outside your company actually cares about your new hire?
 
@@ -88,13 +88,11 @@ And second… people reacting to them right when they go live.
 
 Because the first 15 minutes are what tell LinkedIn whether a post is worth pushing.
 
-And that's exactly what we do for our clients at my company Influx.
+And that's exactly what we do for our clients at my company Influx…
 
-We write the posts for you… in your voice… about the stuff your buyers actually care about.
+We write the posts for you… in your voice… about the stuff your buyers actually care about…
 
-And then we run what we call a media engine.
-
-We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
+And then we run what we call a media engine… where we've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
 And every time we publish one of your posts… they all react to it in the first 15 minutes… so LinkedIn pushes it out to way more of your buyers.
 
