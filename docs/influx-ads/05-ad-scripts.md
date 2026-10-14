@@ -50,13 +50,9 @@ And apart from 10 minutes a month looking over posts… the only time they spend
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
-So if you know you should be on LinkedIn… but you're never gonna be the one doing it…
+So if you know you need LinkedIn… but you're never gonna be the one doing it…
 
-We'll build and run your whole LinkedIn brand completely done for you…
-
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
-
-Click the link below and I'll show you how.
+Click the link below and I'll show you how we'd run it all for you… and get you 30 qualified inbound calls booked in the next 90 days.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
