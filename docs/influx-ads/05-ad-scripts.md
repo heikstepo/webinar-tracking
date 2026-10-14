@@ -316,21 +316,25 @@ When a post goes viral… LinkedIn shows it to pretty much everyone…
 
 And the majority of them are going to be people who are never going to buy from you.
 
-So you get thousands of views… a bunch of new followers… and not a single call.
+So you get thousands of views… a bunch of new followers… and not a single call booked.
 
-That's why instead we treat your LinkedIn like an acquisition channel…
+I mean… why would you not just treat your LinkedIn like an acquisition channel instead?
 
-Which means every post we write has a job… and every single one is written for your ICP.
+And that's exactly how we run LinkedIn for every founder we work with at my company Influx…
 
-At the top of the funnel… we've got what we call impact cards.
+So every post we write for you has a job, and every single one is written for your ICP…
 
-One sharp idea on a designed card… so your ICP stop scrolling and notice you.
+At the top of the funnel, we've got what we call impact cards…
 
-In the middle of the funnel we have long form posts in your voice where you take a clear stand on your industry… so they start to trust you.
+One sharp idea on a designed card, so your ICP stops scrolling and notices you.
 
-And at the bottom we've got posts that show your results and invite them to talk.
+In the middle, long-form posts in your voice where you take a clear stand on your industry, so they start to trust you.
 
-That's how Scott, who runs an IT consulting firm… went from almost no following to 43 potential clients showing interest in the first month…
+And at the bottom, posts that show your results and invite them to talk…
+
+Then our team reaches out to everyone from your ICP who engages, and books them straight into your calendar.
+
+That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
@@ -344,13 +348,9 @@ You shouldn't be looking for that anyways.
 
 What you should be looking for… is calls with the people who can actually buy from you.
 
-And that's exactly what we’ll do for you at my company Influx.
+So if you want 30 of those calls booked in the next 90 days…
 
-We’ll build and run your whole LinkedIn brand completely done for you…
-
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
-
-Click the link below and I’ll show you how.
+Click the link below and I'll show you how.
 
 Ad Group 4 - Offer (talking head)
 
