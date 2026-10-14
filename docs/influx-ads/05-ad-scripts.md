@@ -191,13 +191,11 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 2.2: Competitors with better Linkedin Market Presence & Brand win clients, even though you’re better
 
-Ever lost a deal to a competitor you know isn't as good as you…
+Some of your worst competitors are winning deals that should've been yours…
 
-And thought, how did THEY win that?
+And most of the time, they didn't win them on the call…
 
-Well, most of the time they didn't win it on the call…
-
-They won it months before, every time that buyer scrolled past one of their LinkedIn posts.
+They won them months before, every time that buyer scrolled past one of their LinkedIn posts.
 
 And look, I know what you're thinking. Their posts aren't even that good.
 
@@ -205,9 +203,9 @@ And you might be right…
 
 But your buyer doesn't need great posts to remember a name. They just need to keep seeing it.
 
-So when they finally need what you sell, who do you think they call first?
+So when they finally need what you sell, they call the name they've been seeing for months…
 
-Them. And you never even get the chance to show them you're better.
+Even if you're the better choice.
 
 Which means being better isn't enough anymore…
 
