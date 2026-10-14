@@ -494,37 +494,39 @@ And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 5.3: Alex & Influx
 
-Recently… the founder of an 8 figure company booked a call with me… and one of the first things they said was…
+Recently, the founder of an 8 figure company booked a call with me…
+
+And one of the first things they said was…
 
 "I'm probably not the only person that's ever reached out to you based off your posts."
 
-And they're right.
+And honestly, they're right…
 
-My LinkedIn brings in over 7 figures a year for my business.
+My LinkedIn brings in over 7 figures a year for my company Influx.
 
-I've been a LinkedIn Top Voice twice… and built a 60k+ following that's mostly my ICP.
+I've been a LinkedIn Top Voice twice, and built a 60k+ following that's mostly my ICP…
 
-So buyers like that founder read my posts… and then they come to me.
+Which means my buyers read my posts, and then they reach out to me…
 
-Now… that founder was still bringing in most of the company's sales personally.
+And by the time we get on a call, they already know, like, and trust me.
 
-And what they wanted was a system that consistently brings in new qualified conversations with their ICP.
+Now, that founder was still bringing in most of their company's sales personally…
 
-That's exactly what we build for our clients at my company Influx.
+And what they wanted was exactly that, buyers reaching out to them first.
 
-We write and post for you every day… in your voice.
+That's what we build for you.
 
-Then our partner brands jump on every post in the first 15 minutes… so LinkedIn shows it to way more of your buyers.
+We write and post for you every day, in your voice…
 
-And when those buyers engage… our team books them straight into your calendar.
+Over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to way more of your buyers…
 
-So if you're running a 7 figure business… and you want buyers coming to you first…
+And when those buyers engage, our team books them straight into your calendar.
 
-We'll build and run your whole LinkedIn brand completely done for you…
+So if you want buyers coming to you first…
 
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+Click the link below and I'll show you how we'd build it for you…
 
-Click the link below and I'll show you how.
+And book 30 qualified calls into your calendar in the next 90 days.
 
 Ad Group 6 - Objections (podcast style)
 
