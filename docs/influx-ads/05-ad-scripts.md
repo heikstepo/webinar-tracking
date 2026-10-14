@@ -346,35 +346,34 @@ Ad Group 4 - Offer (talking head)
 
 Creative 4.1: Straight Offer + Proof + Mechanism
 
-If you're running a B2B company doing over a million a year…
+If you're running a B2B company doing over a million dollars a year…
 
-We want to get you 30 qualified calls booked in the next 90 days… straight from LinkedIn.
+We'll build your LinkedIn brand and book 30 qualified calls into your calendar in the next 90 days…
 
-Without you ever having to write a SINGLE post… or step in front of a camera.
-
-And on top of that… build you a LinkedIn brand that keeps bringing people in after those 90 days.
+Completely done for you, without you ever having to write a SINGLE post or step in front of a camera.
 
 Real quick about me…
 
-My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients…
+My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients through LinkedIn…
 
-And I've also done it for myself… been a LinkedIn Top Voice twice… and built a 60k+ ICP following that actually drives over 7 figures in annual revenue.
+And I've done the same for myself, as a two-time LinkedIn Top Voice with a 60k+ ICP following that brings in over 7 figures a year.
 
-Now… it basically works like this.
+Now, it basically works like this…
 
-We sit down with you once… for about an hour… and get everything out of your head.
+We sit down with you once for about an hour and get everything out of your head…
 
-From there we write and post daily on your behalf… in your voice… for your ICP… and you just look over them once a month.
+Then we write and post for you every day, in your voice, and you just look over the posts once a month…
 
-Then our media engine… over 20 brands with more than 3 million followers combined… reacts to EVERY post within 15 minutes… so LinkedIn pushes it out to way more of your buyers.
+Our media engine, over 20 big LinkedIn brands we've partnered with, reacts to every post within 15 minutes, so LinkedIn pushes it out to way more of your buyers…
 
-And when those buyers start engaging… we reach out and book them straight into your calendar.
+And when those buyers start engaging, we reach out and book them straight into your calendar.
 
-Meaning… by the time someone gets on a call with you… they already know, like, and trust your company.
+Meaning by the time someone gets on a call with you, they already know, like and trust you.
 
-So if you're doing over a million a year… and you want 30 qualified calls in the next 90 days without writing a single post yourself…
+So if you want those 30 calls without writing a single post yourself…
 
-Click below… I'll show you exactly how we'd do it for you… and you can book a call with me right there.
+Click the link below and I'll show you exactly how we'd do it, and you can book a call with me right there.
+
 
 Creative 4.2: Lead with Alex’ Linkedin + Pitch DFY angle for busy founders that are already sold on Linkedin
 
