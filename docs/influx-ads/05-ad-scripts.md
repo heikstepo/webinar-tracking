@@ -152,25 +152,31 @@ Referrals are the best thing that can happen to a B2B company…
 
 But at the same time the most dangerous thing to rely on.
 
-Because you never know when they're gonna stop.
-
 I spoke to a founder recently who gets about 90% of their business from referrals… and they told me straight up…
 
 "One day… might be 6 months, might be 3 or 5 years from now… that referral pipeline might dry up."
 
-And when it does, there's nothing you can do to turn it back on.
+And honestly, they're right…
 
-That's why you need a pipeline you can actually control…
+Because you can't control when the next referral comes, or if it even comes at all.
 
-And for a B2B company, that's inbound from LinkedIn.
+So what are you supposed to do?
 
-So at my company Influx, we turn your LinkedIn into exactly that…
+Well, you build a pipeline you can actually control…
+
+And for a B2B company, the easiest place to build one is LinkedIn.
+
+Because when your buyers see your posts every week, they start coming to you…
+
+Without anyone having to refer them.
+
+So at my company Influx, we build that pipeline for you…
 
 We write and post for you every day, in your voice…
 
 Over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to buyers who've never heard of you…
 
-And when they engage, our team books them straight into your calendar.
+And once they start engaging, our team books them straight into your calendar.
 
 That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
