@@ -50,7 +50,7 @@ And apart from 10 minutes a month looking over posts… the only time they spend
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
-So if you know you need LinkedIn… but you're never gonna be the one doing it…
+So if you want the results of posting every day… without ever writing a post yourself…
 
 Click the link below and I'll show you how we'd run it all for you… and get you 30 qualified inbound calls booked in the next 90 days.
 
