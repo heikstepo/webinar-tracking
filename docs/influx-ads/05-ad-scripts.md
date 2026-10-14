@@ -1,6 +1,6 @@
 # Influx ad scripts (master)
 
-Source of truth: Heik's "Influx - Ad Scripts" strategy doc. 1.1 is signed off (edit round 1, 14 Oct). 2.1 approved ("sooo much better"). The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
+Source of truth: Heik's "Influx - Ad Scripts" strategy doc. 1.1 is signed off (edit round 1, 14 Oct). 2.1 approved ("sooo much better"). 3.2 is Heik's own version (edit round 2). The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
 
 Rules: spoken lines only (no [DRAW], [SHOW] or [ON SCREEN]). Nothing against Meta. Placeholders in [brackets] until confirmed. Full rule set: influx-copy-rules.html and influx-ad-training.html.
 
@@ -320,17 +320,13 @@ So you get thousands of views… a bunch of new followers… and not a single ca
 
 That's why we deliberately don't optimize for views…
 
-We treat your LinkedIn as a proper acquisition channel instead.
+And instead treat your LinkedIn as a proper acquisition channel…
 
-At the top of the funnel, we've got impact cards…
+That's designed to attract a bunch of ICP prospects, nurture them through your content, and get them to book a call.
 
-One sharp idea on a designed card, so your ICP stops scrolling and notices you.
+For that we use a mix of top of funnel, MOF, and BOF content with various different formats…
 
-In the middle, long-form posts in your voice that take a clear stand on your industry, so they start to trust you.
-
-And at the bottom, posts that show your results and invite them to talk.
-
-That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers, [X] booked calls and [$X] in revenue in the first [X] weeks.
+Which is exactly how [CASE STUDY].
 
 Now sure… Are you going to go viral with this process and get millions of views?
 
@@ -342,9 +338,9 @@ You shouldn't be looking for that anyways.
 
 What you should be looking for is qualified sales calls with the people who can actually buy from you.
 
-So if you want 30 of those calls booked in the next 90 days…
+So if you want us to help you build your LinkedIn brand and get 30 of those calls booked in the next 90 days…
 
-Click the link below and I'll show you how we'd run all of this for you at my company Influx.
+Click the link below and I'll show you how.
 
 Ad Group 4 - Offer (talking head)
 
