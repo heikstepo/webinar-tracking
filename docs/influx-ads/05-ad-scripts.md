@@ -512,11 +512,9 @@ Or Ryan, who runs sales at a GovTech company, where our posts got 13x the engage
 
 Or [CLIENT 3], who runs a [INDUSTRY] company, and went from [X] to [X] booked calls a month…
 
-So if you want LinkedIn doing the same for your company…
+So if you want us to build your LinkedIn brand and get you 30 qualified calls in the next 90 days…
 
-Click the link below and I'll show you exactly how we'd do it for you…
-
-And book 30 qualified calls into your calendar in the next 90 days.
+Click the link below and I'll show you how.
 
 Ad Group 6 - Objections (podcast style)
 
