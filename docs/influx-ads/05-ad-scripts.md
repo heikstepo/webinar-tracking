@@ -52,7 +52,7 @@ That's how Scott, who runs an IT consulting firm… went from almost no followin
 
 So if you want the results of posting every day… without ever writing a post yourself…
 
-Click the link below and I'll show you how we'd run it all for you… and get you 30 qualified inbound calls booked in the next 90 days.
+Click the link below and I'll show you exactly how we'd run your LinkedIn for you… and book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
