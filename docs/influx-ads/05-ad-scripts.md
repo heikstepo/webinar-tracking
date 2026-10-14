@@ -118,9 +118,11 @@ Every time I talk to business owners that outsourced their LinkedIn posts to som
 
 They never get any actual ICP leads coming in…
 
-Because these people only optimize for generic engagement.
+Because these people only optimize for generic engagement…
 
-In all honesty, sometimes their posts can even harm your business if your ICP sees them and thinks what is this dude talking about?
+And in all honesty, that can even hurt your business…
+
+Imagine your ICP seeing one of those posts and thinking, "what is this dude even talking about?"
 
 That’s why I’m saying, if you’d optimize for leads, you’d approach LinkedIn completely differently.
 
