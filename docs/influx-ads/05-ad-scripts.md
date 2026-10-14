@@ -150,51 +150,38 @@ Creative 2.1: Only Referrals / Capped at your network
 
 Referrals are the best thing that can happen to a B2B company…
 
-And the most dangerous thing to rely on.
+But at the same time the most dangerous thing to rely on.
 
-Because you can't decide when the next one comes… how many you get… or who they're from.
+Because you never know when they're gonna stop.
 
 I spoke to a founder recently who gets about 90% of their business from referrals… and they told me straight up…
 
-"One day… might be six months, might be three years, might be five years from now… that referral pipeline might dry up."
+"One day… might be 6 months, might be 3 or 5 years from now… that referral pipeline might dry up."
 
-And here's the other problem…
+And when it does, there's nothing you can do to turn it back on.
 
-Every referral comes from someone who already knows you.
+That's why you need a pipeline you can actually control…
 
-So your company can only grow as fast as your network does.
+And for a B2B company, that's inbound from LinkedIn.
 
-Now… think about what happens if the two or three people who send you most of your work… change jobs… retire… or just stop.
+So at my company Influx, we turn your LinkedIn into exactly that…
 
-Your pipeline goes quiet… and there's nothing you can do to turn it back on.
+We write and post for you every day, in your voice…
 
-That's why every 7 figure founder needs a way to bring in new business that doesn't depend on who refers them next.
+Over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to buyers who've never heard of you…
 
-And LinkedIn is the closest thing to a referral you can actually control.
+And when they engage, our team books them straight into your calendar.
 
-When your buyers see your posts every week… they show up to the call already trusting you.
-
-Pretty much like a referral… except this time you decide how many you get.
-
-And that's exactly what we do for you at my company Influx.
-
-We write and post for you every day… in your voice.
-
-Over 20 big business brands we've partnered with react to every post in the first 15 minutes… so LinkedIn pushes it out to buyers outside your network.
-
-And when they engage… our team books them straight into your calendar.
-
-That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
+That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
-So if you want new business that doesn't depend on the next referral…
+So if you're running a 7 figure B2B company, and you don't want your growth depending on the next referral…
 
-We'll build and run your whole LinkedIn brand completely done for you…
+Click the link below and I'll show you how we'd build your LinkedIn into an inbound pipeline…
 
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+And book 30 qualified calls into your calendar in the next 90 days.
 
-Click the link below and I'll show you how.
 
 Creative 2.2: Competitors with better Linkedin Market Presence & Brand win clients, even though you’re better
 
