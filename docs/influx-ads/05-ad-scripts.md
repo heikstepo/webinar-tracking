@@ -376,9 +376,11 @@ And once those buyers start engaging, our team books them right into your calend
 
 So by the time someone gets on a call with you, they already know, like, and trust your company.
 
-And if you want those 30 qualified calls in the next 90 days without writing a single post yourself…
+So again, if you're running a B2B company doing over 7 figures a year…
 
-Click the link below and I'll show you exactly how we'd do it, and you can book a call with me right there.
+And you want us to build your LinkedIn brand and book 30 qualified calls in the next 90 days, completely done for you…
+
+Click the link below and I'll show you exactly how, and you can book a call with me right there.
 
 
 Creative 4.2: Lead with Alex’ Linkedin + Pitch DFY angle for busy founders that are already sold on Linkedin
