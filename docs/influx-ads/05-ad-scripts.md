@@ -12,7 +12,7 @@ Open items before filming (kept out of the ads):
 - 3.2, 2.1, 5.1, 6.2: Scott's revenue, or the line comes out. 5.2: Ryan's revenue.
 - All proof lines: real numbers for [X] new followers, [X] booked calls, [$X] in revenue and the timeframe, for Scott (1.1, 2.1, 3.2, 5.1) and Ryan (2.2, 5.2).
 - 5.3: Influx's own yearly revenue, one more real client result for the [CLIENT] line, and Alex's OK on the 10x average.
-- 2.3: a source for the [X]% buyer stat.
+- 2.3: the 84% stat is IDC's "Social Buying Meets Social Selling" white paper (IDC #247829, April 2014, sponsored by LinkedIn): 75% of B2B buyers and 84% of C-level/VP executives use social media to support purchase decisions. It's 12 years old. Backups: LinkedIn's own "4 out of 5 members use LinkedIn to inform business decisions" (current, verified). "81% of B2B buyers value LinkedIn as a research source before purchase" only traces to a secondary roundup (Oktopost via Fronetics), so don't film it without the primary.
 - 2.1: "130 million decision makers… 10 million C-level executives" is LinkedIn's own 2025 marketing figure (business.linkedin.com/marketing-solutions/cx/25/01/only-on-linkedin-ads-mofu: 1B members, 180M senior-level influencers, 130M decision makers, 10M C-level executives). Older third-party roundups cite 63-65M decision makers.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
@@ -229,11 +229,11 @@ Creative 2.3: Cold Leads ghost you / Don’t Close because you’re not a market
 
 Every time a prospect books a call with your B2B company…
 
-They are going to look you up…
+Better believe they are going to look you up…
 
-Your LinkedIn… your company page… and more and more of them ask ChatGPT about you too.
+Especially your LinkedIn and your company page…
 
-In fact… [X]% of B2B buyers check a vendor out on LinkedIn before they ever buy.
+In fact… 84% of B2B executives use social media like LinkedIn to help decide who they buy from.
 
 Now…
 
