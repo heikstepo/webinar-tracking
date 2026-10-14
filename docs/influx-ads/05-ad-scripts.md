@@ -13,6 +13,7 @@ Open items before filming (kept out of the ads):
 - All proof lines: real numbers for [X] new followers, [X] booked calls, [$X] in revenue and the timeframe, for Scott (1.1, 2.1, 3.2, 5.1) and Ryan (2.2, 5.2).
 - 5.3: Influx's own yearly revenue, one more real client result for the [CLIENT] line, and Alex's OK on the 10x average.
 - 2.3: a source for the [X]% buyer stat.
+- 2.1: "4 out of 5 people on LinkedIn use it to help make business decisions" is LinkedIn's own claim (business.linkedin.com marketing page: "4 out of 5 members use LinkedIn to inform business decisions").
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
 ## Ads (from Heik's doc)
@@ -160,11 +161,11 @@ And honestly, they're right…
 
 Because you can't control when the next referral comes, or if it even comes at all.
 
-So what are you supposed to do?
+That's why it makes so much sense to build a pipeline of inbound leads ON TOP of your referrals…
 
-Well, you build a pipeline you can actually control…
+And for a B2B company like yours, the easiest place to build one is LinkedIn.
 
-And for a B2B company, the easiest place to build one is LinkedIn.
+In fact, 4 out of 5 people on LinkedIn use it to help make business decisions…
 
 Because when your buyers see your posts every week, they start coming to you…
 
