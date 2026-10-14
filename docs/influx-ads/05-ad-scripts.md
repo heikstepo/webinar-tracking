@@ -1,6 +1,6 @@
 # Influx ad scripts (master)
 
-Source of truth: Heik's "Influx - Ad Scripts" strategy doc. The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
+Source of truth: Heik's "Influx - Ad Scripts" strategy doc. 1.1 is signed off (edit round 1, 14 Oct). The ads below mirror it word for word, as synced on 14 Oct 2026. From here on, edits happen passage by passage on Heik's feedback, and every change lands here first.
 
 Rules: spoken lines only (no [DRAW], [SHOW] or [ON SCREEN]). Nothing against Meta. Placeholders in [brackets] until confirmed. Full rule set: influx-copy-rules.html and influx-ad-training.html.
 
@@ -42,11 +42,11 @@ We just take the whole thing off their plate.
 
 We sit down with them once for about an hour…
 
-And from there we write and post for them every day, in their voice…
+And from there we write and post for them every day in their voice.
 
 Not only does that build their LinkedIn brand which is going to get you incredible connections…
 
-But once their buyers start engaging, we reach out and book the calls straight into their calendar.
+But once their ICP buyers start engaging, we reach out and book the calls straight into their calendar.
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
