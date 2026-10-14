@@ -26,13 +26,9 @@ If you run a B2B company doing over a million dollars a year… you've probably 
 
 And it makes sense… right?
 
-Not only is it gonna help you get more clients outside of your referrals…
+It brings in clients outside your referrals… makes you an authority in your space… and cold leads close way faster.
 
-You’ll also be seen as an authority in the space, cold leads will convert faster…
-
-LinkedIn is just a must have nowadays.
-
-But now… if you want it to actually work… you've gotta be posting pretty much every day.
+But for any of that to happen… you've gotta be posting pretty much every day.
 
 And when you're running a company… where are you supposed to find the time for that?
 
