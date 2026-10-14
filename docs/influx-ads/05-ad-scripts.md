@@ -219,7 +219,9 @@ And once they start engaging, our team books them straight into your calendar.
 
 That's how [CASE STUDY].
 
-Click the link below and I'll show you how we'd get you 30 qualified calls in the next 90 days.
+So if you want 30 qualified calls booked in the next 90 days…
+
+Click the link below and I'll show you how.
 
 
 Creative 2.3: Cold Leads ghost you / Don’t Close because you’re not a market authority - They don’t find anything about you online
