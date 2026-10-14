@@ -320,11 +320,11 @@ So you get thousands of views… a bunch of new followers… and not a single ca
 
 I mean… why would you not just treat your LinkedIn like an acquisition channel instead?
 
-And that's exactly how we run LinkedIn for every founder we work with at my company Influx…
+Because when you do, every post has a job…
 
-So every post we write for you has a job, and every single one is written for your ICP…
+And every single one is written for your ICP.
 
-At the top of the funnel, we've got what we call impact cards…
+At the top of the funnel, you've got what we call impact cards…
 
 One sharp idea on a designed card, so your ICP stops scrolling and notices you.
 
@@ -332,9 +332,9 @@ In the middle, long-form posts in your voice where you take a clear stand on you
 
 And at the bottom, posts that show your results and invite them to talk…
 
-Then our team reaches out to everyone from your ICP who engages, and books them straight into your calendar.
+And everyone from your ICP who engages gets booked straight into your calendar.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
+That's how we took Scott, who runs an IT consulting firm, from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
 
 And [$X] in revenue.
 
@@ -350,7 +350,7 @@ What you should be looking for… is calls with the people who can actually buy 
 
 So if you want 30 of those calls booked in the next 90 days…
 
-Click the link below and I'll show you how.
+Click the link below and I'll show you how we do it at my company Influx.
 
 Ad Group 4 - Offer (talking head)
 
