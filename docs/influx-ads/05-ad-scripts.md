@@ -22,37 +22,39 @@ Ad Group 1 - Problems while trying to grow on linkedin in the past (selfie)
 
 Creative 1.1:  Doesn’t have the time
 
-If you run a B2B company doing over a million dollars a year… you've probably told yourself you need to be posting on LinkedIn.
+If you run a B2B company doing over a million dollars a year… you've probably told yourself you need to be posting on LinkedIn…
 
 And it makes sense… right?
 
 It brings in clients outside your referrals… makes you an authority in your space… and cold leads close way faster.
 
-But for any of that to happen… you've gotta be posting pretty much every day.
+But for any of that to happen… you've got to be posting pretty much every day.
 
 And when you're running a company… where are you supposed to find the time for that?
 
-Your clients and your team come first… as they should.
+I mean… your clients and your team come first… as they should.
 
 So LinkedIn just keeps getting pushed back.
 
-I mean… I hear this on almost every single call.
+That's why, with the B2B founders we work with at my company Influx… we just take the whole thing off their plate.
 
-I run a company called Influx… and we handle LinkedIn for B2B founders.
+We sit down with them once for about an hour…
 
-So with the founders we work with… we just take the whole thing off their plate.
+And from there we write and post for them every day, in their voice…
 
-We sit down with them once for about an hour… then we write and post for them every day in their voice… without them writing a word.
+So they're in front of their buyers every single day without doing anything.
 
-When their buyers engage… we book them straight into their calendar… so every call is with someone who already knows them.
+That builds their LinkedIn brand… and once those buyers start engaging, we reach out and book the calls straight into their calendar.
 
-And apart from 10 minutes a month looking over posts… the only time they spend on LinkedIn is on those calls.
+So the only time they actually spend on LinkedIn… is on calls with buyers.
 
 That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
 
 So if you want the results of posting every day… without ever writing a post yourself…
 
-Click the link below and I'll show you exactly how we'd run your LinkedIn for you… and book 30 qualified calls into your calendar in the next 90 days.
+Click the link below and I'll show you exactly how we'd run your LinkedIn for you…
+
+And book 30 qualified calls into your calendar in the next 90 days.
 
 Creative 1.2: Weren’t getting engagement because of XYZ
 
