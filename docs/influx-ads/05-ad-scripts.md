@@ -455,35 +455,38 @@ Click the link below and I'll show you how.
 
 Creative 5.2: Ryan Already Posting
 
-Ryan runs sales at a GovTech company… and before working with us, their LinkedIn looked like most B2B companies' LinkedIn.
+Ryan runs sales at a GovTech company… and before working with us, their LinkedIn looked like most B2B companies' LinkedIn…
 
-A case study graphic… a stock photo… a webinar clip… a hiring post.
+A case study graphic… a stock photo… a webinar clip… and a hiring post… that's it.
 
-Four posts… 79 engagements combined.
+They had 4 posts in total and just 79 engagements combined.
 
-The problem was who saw them… mostly people who already knew them.
+Which makes sense, because nobody outside their company really cares about a hiring post…
 
-So we changed two things… what they posted… and who saw it.
+So nobody engaged, and LinkedIn never showed those posts to anyone new.
 
-What they posted… our team wrote every post in Ryan's voice… about what their government buyers actually care about.
+That's why the first thing we changed was what they posted…
 
-And who saw it… over 20 big business brands we've partnered with reacted to every post within the first 15 minutes… so LinkedIn pushed it way past their own network.
+Our team started writing posts in Ryan's voice about what their government buyers actually care about.
 
-Four of our posts got 1,059 engagements.
+Then we made sure those posts got seen…
 
-61 potential clients showed interest in the first month… and by week 12… 721 across their two execs.
+Over 20 big LinkedIn brands we've partnered with reacted to every one in the first 15 minutes, so LinkedIn pushed them way past their own network…
 
-And [$X] in revenue.
+Four of those posts got 1,059 engagements, compared to 79 before.
 
-And that's in a niche, regulated market… where most people think LinkedIn doesn't even work.
+And once their buyers started engaging, our team booked them straight into Ryan's calendar…
 
-So if you're running a 7 figure business… and you're already posting but it's going nowhere…
+Which turned into [X] new followers, [X] booked calls and [$X] in revenue in the first [X] weeks.
 
-We'll do for you exactly what we did for Ryan… build and run your whole LinkedIn brand completely done for you…
+And that's in GovTech, a niche, regulated market where most people think LinkedIn doesn't even work.
 
-And get you 30 qualified booked inbound calls in the next 90 days on the backend.
+So if you're already posting and it's going nowhere…
 
-Click the link below and I'll show you how.
+Click the link below and I'll show you how we'd do the same for you…
+
+And book 30 qualified calls into your calendar in the next 90 days.
+
 
 Creative 5.3: Alex & Influx
 
