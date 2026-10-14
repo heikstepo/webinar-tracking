@@ -314,43 +314,37 @@ Let me explain…
 
 When a post goes viral… LinkedIn shows it to pretty much everyone…
 
-And the majority of them are going to be people who are never going to buy from you.
+And most of them are never going to buy from you.
 
 So you get thousands of views… a bunch of new followers… and not a single call booked.
 
-I mean… why would you not just treat your LinkedIn like an acquisition channel instead?
+That's why we deliberately don't optimize for views…
 
-Because when you do, every post has a job…
+We treat your LinkedIn as a proper acquisition channel instead.
 
-And every single one is written for your ICP.
-
-At the top of the funnel, you've got what we call impact cards…
+At the top of the funnel, we've got impact cards…
 
 One sharp idea on a designed card, so your ICP stops scrolling and notices you.
 
-In the middle, long-form posts in your voice where you take a clear stand on your industry, so they start to trust you.
+In the middle, long-form posts in your voice that take a clear stand on your industry, so they start to trust you.
 
-And at the bottom, posts that show your results and invite them to talk…
+And at the bottom, posts that show your results and invite them to talk.
 
-And everyone from your ICP who engages gets booked straight into your calendar.
-
-That's how we took Scott, who runs an IT consulting firm, from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
-
-And [$X] in revenue.
+That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers, [X] booked calls and [$X] in revenue in the first [X] weeks.
 
 Now sure… Are you going to go viral with this process and get millions of views?
 
 Probably not.
 
-But if you want to treat LinkedIn as an ACTUAL acquisition channel for your 7 figure business…
+But if you want LinkedIn to be an ACTUAL acquisition channel for your 7 figure business…
 
 You shouldn't be looking for that anyways.
 
-What you should be looking for… is calls with the people who can actually buy from you.
+What you should be looking for is qualified sales calls with the people who can actually buy from you.
 
 So if you want 30 of those calls booked in the next 90 days…
 
-Click the link below and I'll show you how we do it at my company Influx.
+Click the link below and I'll show you how we'd run all of this for you at my company Influx.
 
 Ad Group 4 - Offer (talking head)
 
