@@ -32,17 +32,13 @@ You’ll also be seen as an authority in the space, cold leads will convert fast
 
 Linkedin is just a must have nowadays.
 
-But it's been on your to-do list for months… maybe years.
+The catch is… doing it properly means a post every day… and that's hours every week that should be going into your clients and your team.
 
-And it's always the last thing on there.
+So for most founders… it just doesn't get done.
 
-Which makes sense… you've got clients and a team to look after…
+I hear that on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
 
-LinkedIn's never going to come first… It just never does.
-
-I hear this on almost every call… I run a company called Influx, and we handle LinkedIn for B2B founders.
-
-And with the founders we work with… we don't even try to get them to find the time.
+And for the founders we work with… we take the whole thing off their plate.
 
 We sit down with them for one hour… and get how they think, the stuff they'd tell a client on a sales call.
 
