@@ -5,7 +5,6 @@ v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page
 Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
 
 Open before filming:
-- [X] number of founders' LinkedIn profiles Alex has looked at (Situation + Reframe).
 - Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
 - Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
@@ -75,22 +74,47 @@ Your buyers are decision makers who are on LinkedIn…
 
 And every new client is worth a lot to you.
 
-Most of your new business probably comes from referrals and your network, and you're still the one closing a big part of it.
-
 If that's you, we can help.
 
 If you're not there yet, or you're just after followers and views, this isn't for you.
 
-And look, we're both running companies…
 
-So I'm not going to spend the next few minutes telling you why LinkedIn matters…
+Situation + Reframe
 
-You already know it does, or you wouldn't be watching this.
+But if you are, chances are your company's doing well, and most of your new clients come from referrals or ads…
 
-So let me show you exactly how the Authority Engine works…
+And you've probably seen what LinkedIn does for other founders in your space…
+
+Buyers reaching out to them first…
+
+Already trusting them before the first call…
+
+And new deals coming in without waiting on the next referral.
+
+But when you're running a company, there's just no time to post every day…
+
+So maybe you've tried posting whenever you found a spare hour, handing it to your team, or even a ghostwriter…
+
+And all you got was a few likes from your own employees, and not one buyer.
+
+And even the founders who do post are usually missing the same 3 things.
+
+First, they post stuff only their own company cares about, like new hires and product updates…
+
+Second, nobody reacts in the first few minutes, so LinkedIn never pushes it past their own network…
+
+And third, even when a buyer does engage, nothing turns that into a booked call.
+
+That's why what you ACTUALLY need isn't more posts…
+
+It's those 3 things fixed for you, without it taking up any of your time…
+
+And that's exactly what the Authority Engine does.
 
 
 How It Works
+
+So let me show you exactly how it works…
 
 Step 1 is the content.
 
