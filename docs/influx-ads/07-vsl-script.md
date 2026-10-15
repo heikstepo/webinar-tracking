@@ -3,7 +3,7 @@
 v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
 Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed.
-- What It Costs uses Alex's current card (10 Oct doc, Tony call 9 Oct): one LinkedIn $4,900/month on a 3-month proof of value paid upfront ($14,700) or $3,900/month on 12 months paid monthly; a second brand (company page) $4,000 or $3,000. Alex's doc says the card is "not for ads" and his own VSL leaves price to the call, so he has to OK putting exact numbers in the VSL. The guarantee line is out of the script until Alex decides it.
+- What It Costs uses Alex's current card (10 Oct doc, Tony call 9 Oct): one LinkedIn $4,900/month on a 3-month proof of value paid upfront ($14,700) or $3,900/month on 12 months paid monthly; a second brand (company page) $4,000 or $3,000. Alex's doc says the card is "not for ads" and his own VSL leaves price to the call, so he has to OK putting exact numbers in the VSL. The guarantee line is out of the script until Alex decides it. Heik (15 Oct): one option only, the 90 days. Optional extra line if wanted: "And if you'd rather commit to 12 months, it comes down to $3,900 a month."
 - What Working With Us is Heik's own version (15 Oct). The SHOW EXAMPLE lines are production notes for the split screen: a real TOF, MOF and BOF post from a client, each broken down on screen. Need 3 example posts from Alex.
 - Check with Alex: "approve the posts which is optional" (his materials and ad 6.1 say nothing goes live without sign-off); "we'll install SDRs into your DMs" (the setter is an optional paid add-on in his 10 Oct doc, and DM access sits next to "we never need your password"); "promise you… 30 qualified booked calls" (same guarantee question as the ads); "dozens of B2B founders".
  What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
@@ -202,15 +202,9 @@ What It Costs
 
 Now, as for what it costs…
 
-We work with you on either a 3-month proof of value, or a 12-month partnership.
+The first 90 days with us are $4,900 a month, paid upfront, so $14,700 in total…
 
-The proof of value is $4,900 a month, paid upfront, so $14,700 for the full 90 days…
-
-And the 12-month partnership comes down to $3,900 a month, paid monthly.
-
-If you want us to run your company page on top of your own LinkedIn, that's an extra $4,000 a month on the proof of value, or $3,000 a month on the 12 months.
-
-So if a single new client is worth more than $14,700 to your company…
+And if a single new client is worth more than that to your company…
 
 Then one of those 30 calls closing already pays for the whole 90 days.
 
