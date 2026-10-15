@@ -6,7 +6,8 @@ Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Ale
 
 Open before filming:
 - [X] number of founders' LinkedIn profiles Alex has looked at (Situation + Reframe).
-- Scott and Ryan: booked calls, revenue, timeframe (Proof).
+- Scott and Ryan: booked calls, revenue, timeframe (Proof). "I'm not guessing" only holds once those numbers are in.
+- Proof v2 adds (all from Alex's 10 Oct doc and the case studies, need his OK to say on camera): "EVP at Brace, where I led an 8 figure team", "on average, our clients get 10 times the engagement in their first 12 weeks", Scott's firm being a Microsoft partner (the case study is anonymised), Scott's 3 old posts 8 engagements vs 512 on our first 3, Ryan's 79 vs 1,059.
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
 - Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
 - Who books the calls, and what a qualified call is: Alex (same open items as the ads).
@@ -32,19 +33,37 @@ And in the next few minutes, I'll walk you through exactly how it works, who it'
 
 Proof
 
-First off, my name's Alex…
+First off, my name's Alex, I’m the founder of Influx…
 
-And my LinkedIn brings in over 7 figures a year for my own B2B company, Influx.
+And before that, I was an EVP at Brace, where I led an 8 figure team.
 
-I've been a LinkedIn Top Voice twice, with over 60 thousand followers…
+Today, my own LinkedIn brings in over 7 figures a year for Influx…
 
-And the system behind that is the exact same one we run for our clients…
+I've been named a LinkedIn Top Voice twice, with over 60 thousand followers…
+
+And the system behind all of that is the exact same one we run for our clients…
 
 Which has generated well over 8 figures in revenue for B2B founders…
 
-Like Scott, who runs an IT consulting firm, and went from almost no following to [X] booked calls and [$X] in revenue in [X] weeks…
+And on average, our clients get 10 times the engagement in their first 12 weeks.
 
-Or Ryan, who runs sales at a GovTech company, where our posts got 13 times the engagement and turned into [X] booked calls and [$X] in revenue.
+Like Scott, who runs an IT consulting firm that's a Microsoft partner…
+
+His last 3 posts before working with us got 8 engagements combined…
+
+Our first 3 got 512…
+
+And in [X] weeks, that turned into [X] booked calls and [$X] in revenue.
+
+Or Ryan, who runs sales at a GovTech company, selling to government…
+
+We took their posts from 79 engagements to over a thousand…
+
+And turned that into [X] booked calls and [$X] in revenue.
+
+So when I say 30 qualified calls in 90 days…
+
+I'm not guessing.
 
 
 Who It's For
