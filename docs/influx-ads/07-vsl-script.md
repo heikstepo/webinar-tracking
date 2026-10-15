@@ -2,7 +2,10 @@
 
 v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
-Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed. What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
+Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed.
+- What Working With Us is Heik's own version (15 Oct). The SHOW EXAMPLE lines are production notes for the split screen: a real TOF, MOF and BOF post from a client, each broken down on screen. Need 3 example posts from Alex.
+- Check with Alex: "approve the posts which is optional" (his materials and ad 6.1 say nothing goes live without sign-off); "we'll install SDRs into your DMs" (the setter is an optional paid add-on in his 10 Oct doc, and DM access sits next to "we never need your password"); "promise you… 30 qualified booked calls" (same guarantee question as the ads); "dozens of B2B founders".
+ What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
 
 Open before filming:
 - Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
@@ -130,47 +133,69 @@ And here's exactly what working with us looks like.
 
 What Working With Us Looks Like
 
-It runs in 3 phases…
+So, as soon as we onboard you…
 
-Phase 1 is the content.
-
-We sit down with you once for about an hour, and get your offer, your ICP, your stories, and how you talk about what you do…
+We’ll sit down with you once for about an hour, and get your offer, your ICP, your stories, and how you talk about what you do…
 
 That's the only real time we need from you.
 
-From there, our team builds your content plan and writes your posts every weekday, in your voice…
+From there, our team builds your content plan and writes your posts every weekday, in your voice.
 
-Impact cards that get your ICP to notice you, longer posts that build their trust, and posts that get them to book a call…
+The content strategy is designed to attract cold leads, nurture them, and get them to show interest and book a call with your company..
 
-And nothing goes live until you've looked it over, which takes about 10 minutes a month.
+And for that we use a system that includes top of funnel content, middle of funnel content, and bottom of funnel content.
 
-Phase 2 is getting it seen.
+Top of funnel content could look something like this:
 
-Every post goes out through our media engine…
+SHOW EXAMPLE TOF POST AND QUICKLY BREAK IT DOWN (end it by explaining how these types of posts attract cold leads that have never heard of you before - and now they follow you)
 
-Over 20 big LinkedIn brands we've partnered with react to it within the first 15 minutes…
+So now that we’ve got the attention of those new ICP prospects, we’ve got to nurture them so they consider working with your company…
 
-So LinkedIn pushes it way past your own network, straight to the decision makers you want to reach.
+And for that we use our middle of funnel content:
 
-And in that first month, we test everything, so we know exactly which posts bring in your ICP.
+SHOW EXAMPLE MOF POST AND QUICKLY BREAK IT DOWN (end it by explaining how the cold prospects now start to resonate with you and start reading all of their posts which builds trust and nurtures them)
 
-Phase 3 is converting those leads into booked calls.
+And now, all that’s left for us to do to get those people to want to work with your company…
 
-Every week, we pull a list of the ICP leads who engaged with your posts or looked at your profile…
+And for that we’ll use bottom of funnel content:
 
-And our team reaches out and books them straight into your calendar.
+SHOW EXAMPLE BOF POST AND QUICKLY BREAK IT DOWN (end it by explaining how our leads that have been in our ecosystem now go ahead and message us)
 
-From there, we double down on what's working, so the calls keep coming after those 90 days too.
+Now we’ve got a flow of inbound leads coming in and messaging you asking to work with your company…
 
-So by the time someone gets on a call with you…
+And to convert that demand into booked calls, we’ll install SDRs into your DMs that’ll handle the conversations for you.
 
-They already know, like, and trust your company.
+See how hands off this is on your end?
 
-And all you or your sales team have to do is take the calls.
+All you’ll have to do is just approve the posts which is optional and take about 10 minutes a month… 
 
-None of this changes how you sell right now…
+Linkedin will truly become an asset for you that just grows passively…
 
-It runs on top of whatever's already bringing in clients, and we never need your password.
+And talking about growth…
+
+On top of that content strategy being validated by us and the dozens of B2B founders we’ve used it for to generate well over 8 figures in extra revenue through Linkedin…
+
+We created a media engine that accelerates your Brand’s growth exponentially.
+
+Let me explain…
+
+The way the LinkedIn algorithm works is that you need a lot of people reacting to your posts fast…
+
+So it understands that your post is worth pushing in the algorithm and get lots of engagement.
+
+But for that, you’d usually have to build an initial audience which can already take months of consistent posting.
+
+That’s why we’ve partnered up with over 20 big business LinkedIn brands with over 3 million followers combined…
+
+So they can react to your posts within the first 15 minutes…
+
+So LinkedIn pushes it way past your own network, straight to the ICP leads you want to reach.
+
+That means the posts will have near immediate impact on your brand because we won’t have to spend months trying to build your initial little audience.
+
+That’s the whole authority engine and how working with us will turn your Linkedin into an inbound lead generating machine…
+
+And also why we’re able to promise you rather aggressive results like 30 qualified booked calls in the next 90 days.
 
 
 What It Costs
