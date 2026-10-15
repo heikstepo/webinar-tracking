@@ -7,13 +7,25 @@ Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Ale
 Open before filming:
 - [X] number of founders' LinkedIn profiles Alex has looked at (Situation + Reframe).
 - Scott and Ryan: booked calls, revenue, timeframe (Proof). "I'm not guessing" only holds once those numbers are in.
-- Proof v2 adds (all from Alex's 10 Oct doc and the case studies, need his OK to say on camera): "EVP at Brace, where I led an 8 figure team", "on average, our clients get 10 times the engagement in their first 12 weeks", Scott's firm being a Microsoft partner (the case study is anonymised), Scott's 3 old posts 8 engagements vs 512 on our first 3, Ryan's 79 vs 1,059.
+- Proof v2 adds (all from Alex's 10 Oct doc and the case studies, need his OK to say on camera): "EVP at Braze, a publicly traded marketing automation company, where I led an 8 figure global team" (Alex's own VSL: "Former Executive Vice President at Braze, a 2000 person Publicly Traded Marketing Automation company where I led an 8-figure Global team"), "on average, our clients get 10 times the engagement in their first 12 weeks", Scott's firm being a Microsoft partner (the case study is anonymised), Scott's 3 old posts 8 engagements vs 512 on our first 3, Ryan's 79 vs 1,059.
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
 - Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
 - Who books the calls, and what a qualified call is: Alex (same open items as the ads).
 - Mechanism name: "the Authority Engine" is Alex's name (10 Oct doc, deck V3). He's thinking of switching to "the Authority Flywheel" because a competitor uses Authority Engine. Confirm before filming.
 - Sources for "over 7 figures a year" from Alex's LinkedIn and "well over 8 figures" for clients.
 - "Zero account bans to date" and "we never need your password": from Alex's 10 Oct doc.
+
+From Alex's own VSL ("Influx | Meta VSL Script + Confirmation Call", received 15 Oct). Offer is the old 30 warm ICP leads in 30 days or you don't pay. Usable facts:
+- Braze, not "Brace": "Former Executive Vice President at Braze, a 2000 person Publicly Traded Marketing Automation company where I led an 8-figure Global team."
+- Why Influx exists, in Alex's words: "After LinkedIn played such a critical role in revenue generated throughout my career, Influx was created…"
+- Scott: "He continues to be a client with us today, and we have since expanded to looking after his LinkedIn company page too." Ryan: "we have since expanded to additional Executives within their organizations."
+- Media engine "built in-house over several years". Engagement "from real, organic LinkedIn members from your ICP, never any kind of fake volume."
+- "We only take a limited number of clients at a time, because done-for-you, voice-accurate work does not scale linearly like software." So the selectivity line is Alex's own.
+- Two ways to engage: "your Executive brand alone, or with your Executive Brand plus your Company Page".
+- Pricing: Alex's version says pricing is covered on the Discovery Call, not in the video. Our v2 gives a range. Needs his OK.
+- The call: "schedule some time either with me directly or a member of my team". Our v2 says "book a call with me".
+- Guarantee in his version: 30 warm ICP leads in 30 days "or you do not pay" (leads, not calls).
+- There's a confirmation / thank-you video after booking: accept the invite, how the call runs (company and goals, honest yes or no, how the system works for you, pricing), what to bring (your ideal customer, your current LinkedIn approach, the growth outcome you care about most). Needs a new version for the 30 calls in 90 days offer.
 
 ```
 Offer
@@ -35,7 +47,7 @@ Proof
 
 First off, my name's Alex, I’m the founder of Influx…
 
-And before that, I was an EVP at Brace, where I led an 8 figure team.
+And before that, I was an EVP at Braze, a publicly traded marketing automation company, where I led an 8 figure global team.
 
 Today, my own LinkedIn brings in over 7 figures a year for Influx…
 
