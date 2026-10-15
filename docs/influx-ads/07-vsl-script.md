@@ -1,8 +1,8 @@
 # Influx VSL script (master)
 
-v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, how it works, your part, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
+v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
-Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
+Placeholders in [brackets] until confirmed. What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
 
 Open before filming:
 - Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
@@ -109,58 +109,43 @@ It's those 3 things fixed for you, without it taking up any of your time…
 
 And that's exactly what the Authority Engine does.
 
-How It Works
+What Working With Us Looks Like
 
-So let me show you exactly how it works…
+So here's what working with us actually looks like…
 
-Step 1 is the content.
+It starts with one call, about an hour, where we get your offer, your buyers, and how you talk about what you do…
 
-We sit down with you once for about an hour, and get your stories, your opinions, your offer, and who your buyers are…
+That's the only real time we need from you.
 
-And from there, our team writes and posts for you every weekday, in your voice…
+From there, our team builds your content plan around those buyers…
 
-Impact cards that get new buyers to notice you, longer posts that build their trust, and posts that get them to book a call…
+Posts that get new decision makers to notice you, posts that build their trust, and posts that get them to book a call…
 
-Each one mapped to where your buyer is in their decision.
+And we write and post them for you every weekday, in your voice.
 
-And nothing goes live until you've signed off on it.
+You just look over them before they go live, which takes about 10 minutes a month.
 
-Step 2 is our media engine.
+Then our media engine pushes every post out…
 
-We've partnered with over 20 big LinkedIn brands with more than 3 million followers between them…
+Over 20 big LinkedIn brands with more than 3 million followers, reacting within the first 15 minutes…
 
-And within 15 minutes of your post going live, they all react to it…
+So it reaches the decision makers you want, not just your own network.
 
-So LinkedIn pushes it way past your own network, straight to the decision makers you want to reach.
+Every week, we track who in your market engages with you, their company, their role, and what they read…
 
-Step 3 is turning that into calls.
+And our team reaches out to the ones who fit, and books them straight into your calendar.
 
-Every week, we pull a list of the people in your market who engaged with your posts or looked at your profile…
+So all you do is take calls with people who already know, like, and trust your company.
 
-With their company, their role, and what they engaged with…
+Your first posts go live within [X] days of that first call…
 
-And our team reaches out and books them straight into your calendar.
+Most clients see their first booked calls within [X] weeks…
 
-So by the time someone gets on a call with you…
-
-They already know, like, and trust your company.
-
-
-Your Part
-
-And all you have to do is that one-hour call, about 10 minutes a month to look over your posts…
-
-And then you or your sales team take the calls.
-
-The first month is about launching and testing, so we find out fast which posts bring in your buyers…
-
-And from there, we double down on what works, so the calls keep coming after those 90 days too.
+And you get a report every week, so you always see who engaged and which calls got booked.
 
 None of this changes how you sell right now…
 
-It runs on top of your referrals, not instead of them.
-
-And we never need your password, with zero account bans to date.
+It runs on top of whatever's already bringing in clients.
 
 
 What It Costs
