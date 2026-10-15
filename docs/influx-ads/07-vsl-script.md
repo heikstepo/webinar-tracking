@@ -113,6 +113,8 @@ What Working With Us Looks Like
 
 So here's what working with us actually looks like…
 
+Step 1 is the content.
+
 It starts with one call, about an hour, where we get your offer, your buyers, and how you talk about what you do…
 
 That's the only real time we need from you.
@@ -125,11 +127,13 @@ And we write and post them for you every weekday, in your voice.
 
 You just look over them before they go live, which takes about 10 minutes a month.
 
-Then our media engine pushes every post out…
+Step 2 is our media engine.
 
-Over 20 big LinkedIn brands with more than 3 million followers, reacting within the first 15 minutes…
+Over 20 big LinkedIn brands we've partnered with react to every post within the first 15 minutes…
 
-So it reaches the decision makers you want, not just your own network.
+So LinkedIn pushes it way past your own network, straight to the decision makers you want to reach.
+
+Step 3 is turning that into calls.
 
 Every week, we track who in your market engages with you, their company, their role, and what they read…
 
