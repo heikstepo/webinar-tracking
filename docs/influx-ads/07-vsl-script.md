@@ -2,7 +2,7 @@
 
 v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
-Soft CTA approved by Heik (15 Oct). Placeholders in [brackets] until confirmed. What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
+Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed. What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
 
 Open before filming:
 - Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
