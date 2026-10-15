@@ -113,19 +113,22 @@ Second, nobody engages in the first few minutes, so LinkedIn never pushes it pas
 
 And third, even when ICP leads do engage, there's no system to convert them into booked calls.
 
-That's why what you ACTUALLY need isn't more posts…
+That's why their LinkedIn never goes anywhere, and sometimes even harms the business…
 
-It's those 3 things fixed for you, without it taking up any of your time…
+Because when a prospect looks them up before a call, and all they find is reposts and hiring posts…
 
-No writing, no filming, no chasing leads…
+The company looks a lot smaller than it actually is.
 
-So you can keep running your company, while your LinkedIn converts ICP leads into booked calls in the background…
+So what we do at Influx is essentially fix all of these things, without it taking up any of your time…
 
-And that's exactly what the Authority Engine does.
+So you can keep running your company, while your LinkedIn converts ICP leads into booked calls in the background.
+
+Again, we call that the Authority Engine…
+
+And here's exactly what working with us looks like.
+
 
 What Working With Us Looks Like
-
-So here's what working with us actually looks like…
 
 Step 1 is the content.
 
