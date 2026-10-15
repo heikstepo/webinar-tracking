@@ -204,9 +204,9 @@ On the call, I'll show you the companies we've worked with that are closest to y
 
 
 
-FAQ 8: We've tried a ghostwriter or an agency before, or someone on our team already posts. How is this different?
+FAQ 8: How is this different from a ghostwriter or an agency?
 
-We've tried a ghostwriter or an agency before, or someone on our team already posts, so how is this different?
+How is this different from a ghostwriter or an agency?
 
 They write posts, and we run the whole system that gets you booked calls from LinkedIn.
 
