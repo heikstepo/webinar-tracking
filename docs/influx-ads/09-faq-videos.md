@@ -61,7 +61,7 @@ Left out on purpose:
 
 ## Scripts v1 (15 Oct)
 
-Heik's call on the list: drop "Will these calls actually turn into clients?", make the cost video cost only, split timeline and guarantee into "What's the average result?" and "How does the guarantee work?". Lines in CAPS are split-screen notes. Placeholders in [brackets] until Alex fills them.
+Heik's call on the list: drop "Will these calls actually turn into clients?", make the cost video cost only, split timeline and guarantee into "What's the average result?" and "How does the guarantee work?". Placeholders in [brackets] until Alex fills them.
 
 ```
 FAQ 1: How much of my time does this actually take, and do I have to write or film anything?
@@ -112,8 +112,6 @@ Then our writers turn that into posts in the way you actually talk, with no buzz
 
 You can look over every post before it goes live, and 95% get approved the first time.
 
-SHOW A CLIENT POST NEXT TO THE ONBOARDING NOTES IT CAME FROM
-
 On the call, I'll show you a few posts we've written for founders in a market like yours.
 
 
@@ -132,8 +130,6 @@ Normally you'd need months of posting to build that kind of early engagement you
 
 Which is why Scott could start with almost no following at all.
 
-SHOW A CLIENT POST AND ITS REACTIONS IN THE FIRST 15 MINUTES
-
 And yes, it's completely safe.
 
 We never need your password, everything runs within LinkedIn's terms, and we've had zero account bans since we started.
@@ -147,8 +143,6 @@ FAQ 5: What's the average result?
 What's the average result?
 
 Our average client, not the best one, gets [X] new followers, [X] booked calls, and [$X] in extra revenue in their first 90 days.
-
-SHOW AVERAGE NUMBERS ON SCREEN
 
 Like Scott in IT consulting, [X] booked calls and [$X] in revenue in [X] weeks…
 
@@ -194,23 +188,17 @@ Yes, and the more niche your market is, the easier it actually is to stand out.
 
 In most B2B industries, almost nobody is posting anything worth reading…
 
-So if you show up every day with genuinely good posts, you become the market authority pretty fast.
+So if you show up every day with genuinely good posts, you become the market authority in your space pretty fast.
 
-Ryan's company sells to government, about as niche and regulated as it gets…
+Like Ryan, whose company sells to government, about as niche and regulated as it gets, with [X] booked calls and [$X] in revenue…
 
-[RESULT].
+Or Scott in IT consulting, who started with almost no following, and got [X] booked calls and [$X] in revenue in [X] weeks.
 
-Scott runs an IT consulting firm and started with almost no following…
+And whether you're doing 1 million a year or 20, it's the same system.
 
-[RESULT].
+As long as your ICP is on LinkedIn, it works…
 
-And [CLIENT 3] in [INDUSTRY]…
-
-[RESULT].
-
-SHOW CASE STUDIES
-
-As long as your ICP is on LinkedIn, it works, and with over 130 million decision makers on there, for most B2B companies they are.
+And with over 130 million decision makers on there, for most B2B companies they are.
 
 On the call, I'll show you the companies we've worked with that are closest to yours.
 
@@ -246,5 +234,5 @@ Open for Alex:
 - FAQ 4: his sign-off on the media engine wording, word for word ("in theory it isn't a practice LinkedIn supports"). "No ad spend, all included" is from the sales calls (Rachel's question).
 - FAQ 5: average followers, calls, revenue; days to first posts; week of first calls.
 - FAQ 6: the qualified call definition and the contract terms.
-- FAQ 7: Ryan, Scott and [CLIENT 3] results.
+- FAQ 7: Ryan's and Scott's results; Alex's OK that it's the same system from 1 to 20 million a year (Tony is at about $18.8M).
 - FAQ 8: whether Influx sells part of the system (e.g. the media engine only). His old VSL says "whether you need the full Authority System or Media Engine distribution".
