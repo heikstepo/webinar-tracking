@@ -10,6 +10,7 @@ Open before filming:
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
 - Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
 - Who books the calls, and what a qualified call is: Alex (same open items as the ads).
+- Mechanism name: "the Authority Engine" is Alex's name (10 Oct doc, deck V3). He's thinking of switching to "the Authority Flywheel" because a competitor uses Authority Engine. Confirm before filming.
 - Sources for "over 7 figures a year" from Alex's LinkedIn and "well over 8 figures" for clients.
 - "Zero account bans to date" and "we never need your password": from Alex's 10 Oct doc.
 
@@ -22,7 +23,9 @@ We'll build your LinkedIn brand and book 30 qualified calls into your calendar i
 
 Completely done for you, without you ever having to write a single post or step in front of a camera.
 
-The way we do that is a simple 3-step system, with what we call our media engine right at the center of it…
+The way we do that is with what we call the Authority Engine…
+
+A simple 3-step system, with our media engine right at the center of it…
 
 And in the next few minutes, I'll show you exactly how it works, who I am, and what working with us looks like.
 
@@ -85,7 +88,7 @@ That's why what you ACTUALLY need isn't more posts…
 
 It's those 3 things fixed for you…
 
-And that's exactly what our 3-step system does.
+And that's exactly what the Authority Engine does.
 
 
 Mechanism
