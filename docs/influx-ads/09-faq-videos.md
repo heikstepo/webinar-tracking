@@ -204,13 +204,13 @@ On the call, I'll show you the companies we've worked with that are closest to y
 
 
 
-FAQ 8: How is this different from a ghostwriter or an agency?
+FAQ 8: How are you different from other LinkedIn agencies?
 
-How is this different from a ghostwriter or an agency?
+How are you different from other LinkedIn agencies?
 
-They write posts, and we run the whole system that gets you booked calls from LinkedIn.
+Most LinkedIn agencies and ghostwriters write posts, and we run the whole system that gets you booked calls from LinkedIn.
 
-Most ghostwriters and agencies only optimize for generic engagement…
+They only optimize for generic engagement…
 
 So you get a few likes, maybe some followers, and not a single new client.
 
