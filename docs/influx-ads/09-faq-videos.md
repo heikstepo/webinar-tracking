@@ -68,27 +68,15 @@ FAQ 1: How much of my time does this actually take, and do I have to write or fi
 
 How much of my time does this actually take, and do I have to write or film anything?
 
-Honestly, that's the first thing almost every founder asks me.
+Short answer, almost none, and no, you'll never have to write a post or get in front of a camera.
 
-And I get it, most of the founders I speak to have tried posting themselves at some point…
+We sit down with you once for about an hour to get your offer, your ICP, and your stories…
 
-And it always dies after a few weeks, because the business comes first.
+And from there, our team writes and posts for you every weekday, in your voice.
 
-So the short answer is that it takes almost none of your time, and no, you'll never have to write a post or get in front of a camera.
+If you want to look over your posts before they go live, that takes about 10 minutes a month…
 
-Here's what it actually looks like on your end.
-
-We sit down with you once for about an hour, and get your offer, your ICP, your stories, and how you talk about what you do.
-
-That's the only real time we need from you.
-
-From there, our team writes and posts for you every weekday, in your voice…
-
-And if you want to look over your posts before they go live, that takes about 10 minutes a month.
-
-The content plan, the media engine, and the SDRs handling your DMs all run on our side.
-
-The one thing we do need from you is that you or your sales team actually take the calls we book.
+And all you or your sales team have to do is take the calls we book.
 
 On the call, I'll show you exactly what your first month would look like on your end.
 
