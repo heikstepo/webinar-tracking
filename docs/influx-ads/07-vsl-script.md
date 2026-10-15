@@ -3,7 +3,7 @@
 v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
 Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed.
-- What It Costs (Heik, 15 Oct): Iron's range, not exact prices. "Mid to high four figures a month" covers Alex's card: $3,900-$4,900/month for one LinkedIn, $6,900-$8,900 with the company page. [$X] = average extra revenue in clients' first 90 days (Alex). If there's no average, fallback: "But if those 30 qualified calls turn into even one new client… / It pretty much pays for itself." Alex has to OK a price range in the VSL (his own VSL leaves price to the call). The guarantee line is out until Alex decides it.
+- What It Costs (Heik, 15 Oct): Iron's range, not exact prices. "Mid to high four figures a month" covers Alex's card: $3,900-$4,900/month for one LinkedIn, $6,900-$8,900 with the company page. [$X] = average extra revenue in clients' first 90 days (Alex). If there's no average, fallback: "But if those 30 qualified calls turn into even one new client… / It pretty much pays for itself." Alex has to OK a price range in the VSL (his own VSL leaves price to the call). Guarantee (Heik, 15 Oct): "If we don't book you 30 qualified calls in the next 90 days… We keep working for you, at no extra cost, until we do." Alex has to sign off the terms: his 10 Oct doc says no guaranteed call numbers, his own VSL guaranteed 30 warm leads in 30 days "or you do not pay".
 - What Working With Us is Heik's own version (15 Oct). The SHOW EXAMPLE lines are production notes for the split screen: a real TOF, MOF and BOF post from a client, each broken down on screen. Need 3 example posts from Alex.
 - Check with Alex: "approve the posts which is optional" (his materials and ad 6.1 say nothing goes live without sign-off); "we'll install SDRs into your DMs" (the setter is an optional paid add-on in his 10 Oct doc, and DM access sits next to "we never need your password"); "promise you… 30 qualified booked calls" (same guarantee question as the ads); "dozens of B2B founders".
  What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
@@ -209,6 +209,12 @@ Depending on the scope, you're looking at somewhere in the mid to high four figu
 But when our clients make [$X] in extra revenue on average in their first 90 days…
 
 It's pretty much a no-brainer.
+
+And on top of that, it's fully guaranteed…
+
+If we don't book you 30 qualified calls in the next 90 days…
+
+We keep working for you, at no extra cost, until we do.
 
 
 Who It's For
