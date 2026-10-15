@@ -1,6 +1,6 @@
 # Influx VSL script (master)
 
-v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Built like a walkthrough of the engagement: offer, proof, who it's for, how it works, your part, what it costs, CTA. No pain section: the ICP is already sold on LinkedIn ("we're both running companies… you already know it does"). Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
+v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, how it works, your part, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
 Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
 
@@ -30,13 +30,13 @@ Offer
 
 If you're running a B2B company doing over a million dollars a year…
 
-We'll build your LinkedIn brand and book 30 qualified calls into your calendar in the next 90 days…
+We'll build your LinkedIn brand to position you as THE market authority in your niche…
+
+And book 30 qualified calls into your calendar in the next 90 days on the backend…
 
 Completely done for you, without you ever having to write a single post or step in front of a camera.
 
 The way we do that is with what we call the Authority Engine…
-
-A simple 3-step system, with our media engine right at the center of it…
 
 And in the next few minutes, I'll walk you through exactly how it works, who it's for, and what it costs.
 
@@ -61,23 +61,25 @@ Ryan in GovTech, [X] new followers, [X] booked calls and [$X] in revenue…
 
 And [CLIENT 4] in [INDUSTRY], [RESULT]…
 
-And that's exactly what we want to build for your company too.
+And that's exactly what we want to build for your company too…
 
 
-Who It's For
+Soft CTA
 
-Now, this isn't for every company…
+Now, if you've already heard enough…
 
-If you're under a million dollars a year, or you're just after followers and views, it's not for you.
+You can book a call with me right below this video.
 
-It's for B2B companies doing over a million a year, selling to decision makers who are on LinkedIn…
+But if you'd like to understand a bit more first, that's completely fine…
 
-Where every new client is worth a lot.
+Just stay with me for a few more minutes.
+
+Because chances are, your LinkedIn looks a lot like most of the founders I speak to every week…
 
 
 Situation + Reframe
 
-And if that's you, chances are your company's doing well, and most of your new clients come from referrals or ads…
+Your company's doing well, and most of your new clients come from referrals or ads…
 
 And you've probably seen what LinkedIn does for other founders in your space…
 
@@ -106,7 +108,6 @@ That's why what you ACTUALLY need isn't more posts…
 It's those 3 things fixed for you, without it taking up any of your time…
 
 And that's exactly what the Authority Engine does.
-
 
 How It Works
 
@@ -178,12 +179,22 @@ So if one new client is worth more than that to you…
 
 The math on 30 qualified calls is pretty simple.
 
+Who It's For
+
+But this only works for a certain type of company…
+
+If you're under a million dollars a year, or you're just after followers and views, it's not for you.
+
+It's for B2B companies doing over a million a year, selling to decision makers who are on LinkedIn…
+
+Where every new client is worth a lot.
+
 
 CTA
 
 So there you have it…
 
-The offer, how it works, what you do, and what it costs.
+The offer, how it works, what it costs, and who it's for.
 
 If that sounds like a fit, book a call with me right below this video.
 
