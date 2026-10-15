@@ -6,7 +6,7 @@ Placeholders in [brackets] until confirmed. v2 adds: [X] days to onboarding (Ale
 
 Open before filming:
 - [X] number of founders' LinkedIn profiles Alex has looked at (Situation + Reframe).
-- Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough. "I'm not guessing" only holds once the numbers are in.
+- Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
 - Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
 - Who books the calls, and what a qualified call is: Alex (same open items as the ads).
@@ -54,17 +54,15 @@ And the system behind that is the exact same one we run for our clients…
 
 Which has generated well over 8 figures in revenue for B2B founders…
 
-Like Scott in IT consulting, [X] booked calls and [$X] in revenue in [X] weeks…
+Like Scott in IT consulting, [X] new followers, [X] booked calls and [$X] in revenue in [X] weeks…
 
-Ryan in GovTech, [X] booked calls and [$X] in revenue…
+Ryan in GovTech, [X] new followers, [X] booked calls and [$X] in revenue…
 
 [CLIENT 3] in [INDUSTRY], [RESULT]…
 
 And [CLIENT 4] in [INDUSTRY], [RESULT]…
 
-So when I say 30 qualified calls in 90 days…
-
-I'm not guessing.
+And that's exactly what we want to build for your company too.
 
 
 Who It's For
