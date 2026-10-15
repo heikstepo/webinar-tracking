@@ -66,22 +66,18 @@ And that's exactly what we want to build for your company too.
 
 Who It's For
 
-Now, this only works for a certain type of company…
+Now, this isn't for every company…
 
-You're doing over a million dollars a year, and you sell to other businesses…
+If you're under a million dollars a year, or you're just after followers and views, it's not for you.
 
-Your buyers are decision makers who are on LinkedIn…
+It's for B2B companies doing over a million a year, selling to decision makers who are on LinkedIn…
 
-And every new client is worth a lot to you.
-
-If that's you, we can help.
-
-If you're not there yet, or you're just after followers and views, this isn't for you.
+Where every new client is worth a lot.
 
 
 Situation + Reframe
 
-But if you are, chances are your company's doing well, and most of your new clients come from referrals or ads…
+And if that's you, chances are your company's doing well, and most of your new clients come from referrals or ads…
 
 And you've probably seen what LinkedIn does for other founders in your space…
 
