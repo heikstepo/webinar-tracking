@@ -3,6 +3,7 @@
 v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
 
 Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed.
+- What It Costs uses Alex's current card (10 Oct doc, Tony call 9 Oct): one LinkedIn $4,900/month on a 3-month proof of value paid upfront ($14,700) or $3,900/month on 12 months paid monthly; a second brand (company page) $4,000 or $3,000. Alex's doc says the card is "not for ads" and his own VSL leaves price to the call, so he has to OK putting exact numbers in the VSL. The guarantee line is out of the script until Alex decides it.
 - What Working With Us is Heik's own version (15 Oct). The SHOW EXAMPLE lines are production notes for the split screen: a real TOF, MOF and BOF post from a client, each broken down on screen. Need 3 example posts from Alex.
 - Check with Alex: "approve the posts which is optional" (his materials and ad 6.1 say nothing goes live without sign-off); "we'll install SDRs into your DMs" (the setter is an optional paid add-on in his 10 Oct doc, and DM access sits next to "we never need your password"); "promise you… 30 qualified booked calls" (same guarantee question as the ads); "dozens of B2B founders".
  What Working With Us: [X] days to first posts live and [X] weeks to first booked calls (Alex). v2 adds: [X] days to onboarding (Alex), "every weekday" (Alex's plan is 5 posts a week), the weekly list of who engaged (Alex's conversion layer), and the two ways to start (3-month proof of value or 12-month term). Section labels are for editing only, not spoken.
@@ -10,7 +11,6 @@ Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brack
 Open before filming:
 - Proof (v4, Heik): Influx results only, fast, one line per client. Fill each case line in the same shape: industry, booked calls, revenue, timeframe. [CLIENT 3] and [CLIENT 4] are extra B2B clients, cut a line if there aren't enough.
 - Guarantee line in Working With Us: Alex's call (his 10 Oct doc says no guaranteed call numbers). Keep, change or cut.
-- Price range "somewhere around 4 to 5 thousand dollars a month": Alex's OK. Card: $3,900/month on 12 months, $4,900/month for a 3-month proof of value. Covers one LinkedIn profile only; a company page on top costs more.
 - Who books the calls, and what a qualified call is: Alex (same open items as the ads).
 - Mechanism name: "the Authority Engine" is Alex's name (10 Oct doc, deck V3). He's thinking of switching to "the Authority Flywheel" because a competitor uses Authority Engine. Confirm before filming.
 - Sources for "over 7 figures a year" from Alex's LinkedIn and "well over 8 figures" for clients.
@@ -202,17 +202,18 @@ What It Costs
 
 Now, as for what it costs…
 
-There are 2 ways to start with us…
+We work with you on either a 3-month proof of value, or a 12-month partnership.
 
-A 3-month proof of value, or a 12-month term that works out cheaper per month.
+The proof of value is $4,900 a month, paid upfront, so $14,700 for the full 90 days…
 
-For your LinkedIn, you're looking at somewhere around 4 to 5 thousand dollars a month.
+And the 12-month partnership comes down to $3,900 a month, paid monthly.
 
-[And if we don't get you to 30 qualified calls in 90 days, we keep working for you until we do.]
+If you want us to run your company page on top of your own LinkedIn, that's an extra $4,000 a month on the proof of value, or $3,000 a month on the 12 months.
 
-So if one new client is worth more than that to you…
+So if a single new client is worth more than $14,700 to your company…
 
-The math on 30 qualified calls is pretty simple.
+Then one of those 30 calls closing already pays for the whole 90 days.
+
 
 Who It's For
 
