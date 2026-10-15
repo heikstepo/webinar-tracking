@@ -130,43 +130,47 @@ And here's exactly what working with us looks like.
 
 What Working With Us Looks Like
 
-Step 1 is the content.
+It runs in 3 phases…
 
-It starts with one call, about an hour, where we get your offer, your ideal clients, and how you talk about what you do…
+Phase 1 is the content.
+
+We sit down with you once for about an hour, and get your offer, your ICP, your stories, and how you talk about what you do…
 
 That's the only real time we need from you.
 
-From there, our team builds your content plan around your ICP…
+From there, our team builds your content plan and writes your posts every weekday, in your voice…
 
-Posts that get new decision makers to notice you, posts that build their trust, and posts that get them to book a call…
+Impact cards that get your ICP to notice you, longer posts that build their trust, and posts that get them to book a call…
 
-And we write and post them for you every weekday, in your voice.
+And nothing goes live until you've looked it over, which takes about 10 minutes a month.
 
-You just look over them before they go live, which takes about 10 minutes a month.
+Phase 2 is getting it seen.
 
-Step 2 is our media engine.
+Every post goes out through our media engine…
 
-Over 20 big LinkedIn brands we've partnered with react to every post within the first 15 minutes…
+Over 20 big LinkedIn brands we've partnered with react to it within the first 15 minutes…
 
 So LinkedIn pushes it way past your own network, straight to the decision makers you want to reach.
 
-Step 3 is turning that into calls.
+And in that first month, we test everything, so we know exactly which posts bring in your ICP.
 
-Every week, we track who in your market engages with you, their company, their role, and what they read…
+Phase 3 is converting those leads into booked calls.
 
-And our team reaches out to the ones who fit, and books them straight into your calendar.
+Every week, we pull a list of the ICP leads who engaged with your posts or looked at your profile…
 
-So all you do is take calls with people who already know, like, and trust your company.
+And our team reaches out and books them straight into your calendar.
 
-Your first posts go live within [X] days of that first call…
+From there, we double down on what's working, so the calls keep coming after those 90 days too.
 
-Most clients see their first booked calls within [X] weeks…
+So by the time someone gets on a call with you…
 
-And you get a report every week, so you always see who engaged and which calls got booked.
+They already know, like, and trust your company.
+
+And all you or your sales team have to do is take the calls.
 
 None of this changes how you sell right now…
 
-It runs on top of whatever's already bringing in clients.
+It runs on top of whatever's already bringing in clients, and we never need your password.
 
 
 What It Costs
