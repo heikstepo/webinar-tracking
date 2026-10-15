@@ -204,17 +204,17 @@ On the call, I'll show you the companies we've worked with that are closest to y
 
 
 
-FAQ 8: How are you different from other LinkedIn agencies?
+FAQ 8: I've tried ghostwriters in the past, how is this different?
 
-How are you different from other LinkedIn agencies?
+I've tried ghostwriters in the past, how is this different?
 
-Most LinkedIn agencies and ghostwriters just write your posts, and optimize for generic engagement…
+A ghostwriter writes your posts…
 
-So you get a few likes, maybe some followers, and not a single new client.
+We run the whole system that gets you booked calls from LinkedIn.
 
-We run the whole system that gets you booked calls from LinkedIn…
+Most ghostwriters only optimize for generic engagement, so you get a few likes, maybe some followers, and not a single new client.
 
-The content plan is built to attract, nurture, and convert your ICP…
+With us, the content plan is built to attract, nurture, and convert your ICP…
 
 The media engine gets every post in front of the ICP leads you want to reach…
 
@@ -222,9 +222,7 @@ And our SDRs convert that interest into booked calls in your DMs.
 
 That's why we can guarantee 30 qualified calls in 90 days.
 
-And if someone on your team already posts and it's working, you can keep that.
-
-On the call, we'll look at what you've got right now, and whether you need the whole Authority Engine or just part of it.
+On the call, we'll look at what you tried before, and show you exactly what we'd do differently for your company.
 ```
 
 Open for Alex:
@@ -235,4 +233,3 @@ Open for Alex:
 - FAQ 5: average followers, calls, revenue; days to first posts; week of first calls.
 - FAQ 6: the qualified call definition and the contract terms.
 - FAQ 7: Ryan's and Scott's results; Alex's OK that it's the same system from 1 to 20 million a year (Tony is at about $18.8M).
-- FAQ 8: whether Influx sells part of the system (e.g. the media engine only). His old VSL says "whether you need the full Authority System or Media Engine distribution".
