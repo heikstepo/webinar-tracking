@@ -1,6 +1,6 @@
 # Influx ad scripts (master)
 
-Source of truth: Heik's "Influx - Ad Scripts October 2026" doc. The ads below mirror it word for word, synced on 15 Oct 2026 (his own edits since round 2 included, e.g. 1.1's "you probably don't have the time for that", 6.2 is now "Does LinkedIn really work in my industry?"). From here on, edits happen passage by passage on Heik's feedback, and every change lands here first. The VSL brief (influx-vsl-brief.html) is built against this version.
+Source of truth: "Influx Ad Scripts | V2" (Alex's edits on Heik's October doc), synced word for word on 16 Oct 2026. V2 fills in the real case numbers (Scott: 4,000 new followers, 34 booked calls, $120,000 in 12 weeks; Ryan: 37 booked calls, $245,000), adds new cases (Devon 2.2, John 3.2, Colin and Jane 4.1), renames 5.2 to Tony, changes the media engine from "partnered with" to "we've built / we operate", and 2.1's stat from 130M to 65M decision makers. The VSL (07), TY video (08) and FAQs (09) were written against the October doc.
 
 Rules: spoken lines only (no [DRAW], [SHOW] or [ON SCREEN]). Nothing against Meta. Placeholders in [brackets] until confirmed. Full rule set: influx-copy-rules.html and influx-ad-training.html.
 
@@ -16,7 +16,7 @@ Open items before filming (kept out of the ads):
 - 2.1: "130 million decision makers… 10 million C-level executives" is LinkedIn's own 2025 marketing figure (business.linkedin.com/marketing-solutions/cx/25/01/only-on-linkedin-ads-mofu: 1B members, 180M senior-level influencers, 130M decision makers, 10M C-level executives). Older third-party roundups cite 63-65M decision makers.
 - 1.2, 2.3, 3.1, AG4: Alex's OK on how the media engine is described (20+ brands, 3M+ followers, 15 minutes).
 
-## Ads (from Heik's October doc)
+## Ads (Influx Ad Scripts V2, Alex's edits, 16 Oct)
 
 ```
 Ad Group 1 - Problems while trying to grow on linkedin in the past (selfie)
@@ -39,13 +39,13 @@ We just take the whole thing off their plate.
 
 We sit down with them once for about an hour…
 
-And from there we write and post for them every day in their voice.
+And from there, we write and post for them every day in their voice.
 
-Not only does that build their linkedin brand which is going to position them as the market authority…
+Not only does that build their Linkedin brand which is going to position them as the market authority…
 
 But once their ICP buyers start engaging, we reach out and book the calls straight into their calendar.
 
-That's how Scott, who runs an IT consulting firm… went from almost no following to [X] new followers… [X] booked calls… and [$X] in revenue in the first [X] weeks.
+That's how Scott, who runs an IT consulting firm… went from almost no following to 4,000 new followers… 34 booked calls… and $120,000 in revenue in the first 12 weeks.
 
 So if you want the results of posting every day… without ever writing a post yourself…
 
@@ -53,7 +53,7 @@ Click the link below and I'll show you exactly how we'd run your LinkedIn for yo
 
 And book 30 qualified calls into your calendar in the next 90 days.
 
-Creative 1.2: Weren’t getting engagement because of XYZ
+Creative 1.2: Weren’t getting engagement because of posting company news nobody outside the company cares about
 
 It's funny to me how most B2B founders who get nothing out of LinkedIn…
 
@@ -71,23 +71,23 @@ Nobody… right?
 
 That's why nobody reacts… and if nobody reacts… LinkedIn won't push it.
 
-That simple… that's just how the LinkedIn algorithm works.
+It’s that simple… that's just how the LinkedIn algorithm works.
 
 That’s why at my company Influx, that has generated well over 8 figures in sales for our B2B clients through linkedin…
 
-We focus on posting a variety of formats on your behalf with stuff your ICP actually cares about...
+We focus on posting a variety of formats on your behalf with content your ICP actually cares about...
 
-And to make sure they get seen outside your own network…
+To make sure you get seen outside of your own network…
 
-We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
+We operate over 20 big LinkedIn brands with more than 3 million followers between them…
 
 And within 15 minutes of your post going live, they all react to it…
 
-So LinkedIn pushes it straight out to way more of your ICP buyers.
+So LinkedIn pushes your content out to way more of your ICP buyers.
 
 And once those buyers start engaging, our team books them right into your calendar.
 
-That's how Ryan, who runs sales at a GovTech company, went from 79 engagements across 4 old posts to [X] booked calls in the first [X] weeks.
+That's how Ryan, who runs sales at a GovTech company, went from 79 engagements across 4 old posts to 37 booked calls in the first 12 weeks.
 
 So if you're running a B2B company doing over a million dollars a year, and your LinkedIn posts barely go anywhere…
 
@@ -97,9 +97,9 @@ AND get you 30 qualified calls booked in the next 90 days on the backend.
 
 Creative 1.3: Hired help, didn't sound like you
 
-As a business owner you and I both know how great LinkedIn is to get new deals coming in outside of your referalls…
+As a business owner you and I both know how great LinkedIn is to get new deals coming in outside of your referals…
 
-So with that in mind why would you ever outsource it to someone who’s trying to just “grow your linkedin”?
+So with that in mind why would you ever outsource it to someone who’s trying to just “grow your Linkedin”?
 
 Like think about it…
 
@@ -111,7 +111,7 @@ Because these people only optimize for generic engagement.
 
 And in all honesty, that can even hurt your business…
 
-Because imagine your ICP seeing one of those posts and thinking, "what is this dude even talking about?"
+Because imagine your ICP seeing one of those posts and thinking, "what is this person even talking about?"
 
 That’s why I’m saying, if you’d optimize for qualified sales calls, you’d approach LinkedIn completely differently.
 
@@ -119,13 +119,13 @@ Like us for example at Influx…
 
 We’ve generated well over 8 figures in extra revenue from Linkedin for B2B founders…
 
-And all we do is post stuff on your behalf about topics your ICP actually cares about…
+And all we do is post content on your behalf about topics your ICP actually cares about…
 
 Getting those posts in front of the right people…
 
 And then having a backend that actually converts those ICP leads into qualified booked calls.
 
-See how that’s much more different than just hiring some random ghostwriter trying to get engagement and followers?
+See how that’s much different than just hiring a random ghostwriter trying to get engagement and followers?
 
 So if you're running a B2B company doing over a million dollars a year… and you've already tried handing off your LinkedIn…
 
@@ -141,7 +141,7 @@ Referrals are the best thing that can happen to a B2B company…
 
 But at the same time the most dangerous thing to rely on.
 
-I spoke to a founder recently who gets about 90% of their business from referrals… and they told me straight up…
+I spoke to a Founder recently who gets about 90% of their business from referrals… and they told me straight up…
 
 "One day… might be 6 months, might be 3 or 5 years from now… that referral pipeline might dry up."
 
@@ -153,29 +153,29 @@ That’s why it makes so much sense to build a pipeline of inbound leads ON TOP 
 
 And for a B2B company like yours, the easiest place to build one is LinkedIn…
 
-There are over 130 million decision makers on LinkedIn…
+There are over 65 million decision makers on LinkedIn…
 
 Including more than 10 million C-level executives.
 
-But sure… posting on Linkedin and building a brand that brings inbound sales calls takes a lot of time most founders like you don’t have…
+But sure… posting on Linkedin and building a brand that brings inbound sales calls takes a lot of time most Founders like you don’t have…
 
-And that's exactly why at my company Influx do it completely DFY.
+And that's exactly why, at my company Influx, we do it completely DFY.
 
 We write and post for you every day, in your voice…
 
-Over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to buyers who've never heard of you…
+Over 20 big LinkedIn brands we’ve built will react to every post in the first 15 minutes, so LinkedIn pushes it out to buyers who've never heard of you…
 
 And once they start engaging, our team books them straight into your calendar.
 
-That's how Scott, who runs an IT consulting firm, went from almost no following to [X] new followers and [X] booked calls in the first [X] weeks…
+That's how Scott, who runs an IT consulting firm, went from almost no following to 4,000 new followers and 34 booked calls in the first 12 weeks…
 
-And [$X] in revenue.
+And $120,000 in revenue.
 
 So if you're running a 7 figure B2B company, and you don't want your growth depending on the next referral…
 
-Click the link below and I'll show you how we'd build your LinkedIn into an inbound pipeline…
+Click the link below and I'll show you how we'd turn your LinkedIn into an inbound pipeline…
 
-And book 30 qualified calls into your calendar in the next 90 days.
+And book 30 qualified calls onto your calendar in the next 90 days.
 
 Creative 2.2: Competitors with better Linkedin Market Presence & Brand win clients, even though you’re better
 
@@ -199,13 +199,13 @@ And you really need to be putting serious work in if you want LinkedIn to be an 
 
 And that's why at my company Influx, we handle it for you.
 
-We write and post for you every day, in your voice, about the stuff your buyers actually care about…
+We write and post for you every day, in your voice, about the content your buyers actually care about…
 
-Then, over 20 big LinkedIn brands we've partnered with react to every post in the first 15 minutes, so LinkedIn pushes it out to your buyers…
+Then, over 20 big LinkedIn brands we've built will react to every post in the first 15 minutes, so LinkedIn pushes it out to your buyers…
 
 And once they start engaging, our team books them straight into your calendar.
 
-That's how CASE STUDY.
+That's how Devon, who runs a 25-person Electrical Installation company we work with, went from losing deals to a louder competitor to 32 booked calls from qualified prospects in their first 90 days.
 
 So if you want us to build your linkedin brand completely DFY…
 
@@ -273,21 +273,21 @@ And if you’re starting out with a small audience… yeah… it’s gonna be ro
 
 That's why we run what we call a media engine at my company Influx.
 
-We've basically partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
+We've basically built up with over 20 big LinkedIn brands with more than 3 million followers between them…
 
 And EVERY time we publish a post we’ve written for our clients…
 
 They all react to it within the first 15 minutes so it gets pushed by LinkedIn.
 
-And because they're business brands… it pushes it out to more business people... Which means your ICP.
+And because they're business brands… it pushes it out to more corporate decision makers people... Which means your ICP.
 
-That's how Ryan, who runs sales at a GovTech company… went from 79 engagements across 4 old posts… to 1,059 across 4 of ours…
+That's how Ryan, who runs Sales at a GovTech company… went from 79 engagements across 4 old posts… to 1,059 across 4 posts we created of ours…
 
-And [$X] in revenue.
+And generating over $245,000 in revenue through the process.
 
-We wrote and published all of these posts, including infographics, impact cards, long forms, and more…
+We wrote and published all of these posts, including infographics, long forms content and more…
 
-And used our media engine to push them straight away so he didn't have to spend months building an initial audience.
+And we used our media engine to push them straight away, so he didn't have to spend months building an initial audience.
 
 So if you're running a 7 figure business and want to build your linkedin into an inbound lead machine…
 
@@ -315,7 +315,7 @@ That’s designed to attract a bunch of ICP prospects, nurture them through your
 
 For that we use a mix of top of funnel, MOF, and BOF content with various different formats…
 
-Which is exactly how CASE STUDY.
+Which is exactly how John, the Founder of a 20-person Managed Service Provider went from one viral post with zero buyers in the comments to generating 33 qualified booked calls each and every month from LinkedIn alone … Which has created more than $180,000 in net new pipeline
 
 Now sure… Are you going to go viral with this process and get millions of views?
 
@@ -345,23 +345,23 @@ Real quick about us…
 
 My name's Alex, and at my company Influx we've generated well over 8 figures for our B2B clients through linkedin…
 
-Like CASE STUDY 1 WHO WENT FROM X TO Y
+Like Colin, Founder of a Data Analytics consultancy, who went from reposting company content twice a month to booking 15 qualified calls from LinkedIn each and every month
 
-Or CASE STUDY 2. WHO WENT FROM X TO Y
+Or Jane, the Founder of a 27-person Engineering company, who went from under 1,000 followers to her ideal buyers commenting and engaging on her content daily, leading to over $135,000 in net new pipeline generated within 90 days
 
 The reason we get results like these repeatedly is because our system requires minimal effort on your end.
 
-First, we write and post infographics, impact cards, long forms, and more in your voice completely DFY…
+First, we write and post infographics and long form content and more in your voice completely DFY…
 
 And second, to make sure they get seen outside your own network…
 
-We've partnered up with over 20 big LinkedIn brands with more than 3 million followers between them…
+Over the years we’ve built over 20 big LinkedIn brands with more than 3 million followers between them…
 
 And within 15 minutes of your post going live, they all react to it…
 
 So LinkedIn pushes it straight out to way more of your ICP buyers.
 
-And once those buyers start engaging, our team books them right into your calendar…
+And once those buyers start engaging, our team books them right onto your calendar…
 
 Meaning by the time someone gets on a call with you… they already know, like, and trust your company.
 
@@ -377,7 +377,7 @@ Over 7 figures a year in my B2B business comes from ONE place…
 
 My LinkedIn posts.
 
-I've been a LinkedIn Top Voice twice… built up over 60k followers… and a lot of the B2B founders I end up working with found me just from reading my posts.
+I've been a LinkedIn Top Voice twice… built up over 60k followers… and a lot of the B2B Founders I end up working with found me just from reading my posts.
 
 Now… if you're running a B2B company doing over a million dollars a year… you already know LinkedIn can do the same for you.
 
@@ -387,7 +387,7 @@ So here's our offer.
 
 We take everything that works on my LinkedIn and has generated well over 8 figures in revenue across dozens of our B2B clients…
 
-And do it on yours, completely Done For you.
+And we’ll implement it on yours, completely Done For you.
 
 Not only is it going to build your brand and position you as the market authority…
 
@@ -397,13 +397,13 @@ The way it works is this…
 
 We write and post for you every day… in your voice.
 
-Then our media engine… 20+ brands with over 3 million followers… reacts on every post in the first 15 minutes to push it in the algorithm…
+Then our media engine… which has over 20+ brands with over 3 million followers… reacts on every post in the first 15 minutes to push it in the algorithm…
 
 And everyone who engages… we book straight into your calendar.
 
 All you do is look over your posts… That’s it…
 
-Takes about 10 minutes a month.
+It takes about 10 minutes a month.
 
 So if you're doing over a million a year… you know LinkedIn works… and you just don't have the time to do it yourself…
 
@@ -417,7 +417,7 @@ Ad Group 5 - Results/Proof
 
 Creative 5.1: Scott From Almost Zero
 
-This IT consulting CEO went from almost no LinkedIn following… to 532 potential clients showing interest in 12 weeks.
+This IT Consulting CEO went from almost no LinkedIn following… to 532 potential clients showing interest in 12 weeks.
 
 Here’s how…
 
@@ -429,9 +429,9 @@ Nobody was responding… because nobody had a reason to.
 
 So we sat down with Scott for about an hour…
 
-And from then on, our team wrote every post in Scott's voice… about the stuff their buyers actually care about.
+And from then on, our team wrote every post in Scott's voice… about the content their buyers actually care about.
 
-Then over 20 big business brands we've partnered with reacted to every post within the first 15 minutes… so LinkedIn pushed it out to more of those buyers.
+Then over 20 big business brands we've built with reacted to every post within the first 15 minutes… so LinkedIn pushed it out to more of those buyers.
 
 3 of our posts got 512 engagements.
 
@@ -439,9 +439,9 @@ The company page went from 4 comments in 3 months… to 167 in the next 3.
 
 43 potential clients showed interest in the first month… and 532 by week 12.
 
-And [$X] in revenue were generated.
+And $120,000 in revenue was generated.
 
-And all Scott had to do… was look over the posts… that’s it, took him like 10 minutes per month.
+And all Scott had to do… was look over the posts… that’s it, it took him no more than 10 minutes per month.
 
 So if you're running a 7 figure business… and you're starting from almost nothing on LinkedIn too…
 
@@ -451,13 +451,13 @@ And get you 30 qualified booked inbound calls in the next 90 days on the backend
 
 Click the link below and I'll show you how.
 
-Creative 5.2: Ryan Already Posting
+Creative 5.2: Tony Already Posting
 
-Ryan runs sales at a GovTech company… and before working with us, their LinkedIn looked like most B2B companies' LinkedIn…
+Tony runs sales at a GovTech company… and before working with us, their LinkedIn looked like most B2B companies' LinkedIn…
 
-A case study graphic… a stock photo… a webinar clip… and a hiring post… that's it.
+A case study graphic… a stock photo… a company repost… and a hiring post… that's it.
 
-They had 4 posts in total and just 79 engagements combined.
+They had 4 posts in total and just 29 engagements combined.
 
 Which makes sense, because nobody outside their company really cares about a hiring post…
 
@@ -465,21 +465,21 @@ So nobody engaged, and LinkedIn never showed those posts to anyone new.
 
 That's why the first thing we changed was what they posted…
 
-Our team started writing posts in Ryan's voice about what their government buyers actually care about…
+Our team started writing posts in Tony’s voice about what their government buyers actually care about…
 
-Stuff like impact cards, infographics, long forms, case studies, and so on…
+Content like impact cards, infographics, long form text, case studies, and so on…
 
 Then we made sure those posts got seen…
 
 Because the faster people react to a post, the further LinkedIn pushes it…
 
-So over 20 big LinkedIn brands we've partnered with reacted to every one in the first 15 minutes, and LinkedIn pushed them way past their own network.
+So over 20 big LinkedIn brands we've built with reacted to every one in the first 15 minutes, and LinkedIn pushed them way past their own network.
 
-4 of those posts got 1,059 engagements, compared to 79 before.
+4 of those posts got 1,078 engagements, compared to 29 before.
 
-And once their buyers started engaging, our team booked them straight into Ryan's calendar…
+And once their buyers started engaging, our team booked them straight into Tony’s calendar…
 
-Which turned into [X] new followers, [X] booked calls and [$X] in revenue in the first [X] weeks.
+Which turned into over 3,000 new followers, 38 booked calls and $102,000 in revenue in the first 12 weeks.
 
 And that's in GovTech, a niche, regulated market where most people think LinkedIn doesn't even work.
 
@@ -495,15 +495,15 @@ My LinkedIn brings in over 7 figures a year for my B2B company Influx…
 
 I've been named a LinkedIn Top Voice twice, and built a 60k+ following that's mostly my ICP…
 
-And a lot of the founders I work with found me just from reading my posts.
+And a lot of the Founders I work with found me just from reading my posts.
 
 But not only that…
 
 We’ve also used that exact DFY system across dozens of B2B founders…
 
-Like Scott, who runs an IT consulting firm, and went from almost no following to [X] new followers, [X] booked calls and [$X] in revenue in [X] weeks…
+Like Scott, who runs an IT consulting firm, and went from almost no following to 4,000 new followers, 34 booked calls and $120,000 in revenue in 12 weeks…
 
-Or Ryan, who runs sales at a GovTech company, where our posts got 13x the engagement and turned into [X] booked calls and [$X] in revenue…
+Or Ryan, who runs sales at a GovTech company, where our posts got 13x the engagement and turned into 37 booked calls and $245,000 in revenue…
 
 We basically created and posted content for them every day…
 
@@ -561,19 +561,19 @@ So if your account shows up every single day with genuinely good posts…
 
 You’ll become the market authority in no time and can build LinkedIn into an actual inbound acquisition channel.
 
-Just look at ryan…
+Just look at Ryan…
 
-He runs sales at a GovTech company… selling to government… about as niche and regulated as it gets.
+He runs Sales at a GovTech company… selling to the government… about as niche and regulated as it gets.
 
-We helped him go FROM X TO Z in X TIME.
+We helped him go from 29 engagements across 4 old posts to over 2,000 new followers and 850,000+ impressions in about 3 months.
 
-Or let’s look at Scott who runs an IT consulting firm… [X] booked calls and [$X] in revenue in [X] weeks.
+Or let’s look at Scott who runs an IT consulting firm… 34 booked calls and $120,000 in revenue in 12 weeks.
 
 The process is the same every time… no matter how niche you are.
 
-We write and post for you every day… in your voice… about the stuff your buyers actually care about.
+We write and post for you every day… in your voice… about the content your buyers actually care about.
 
-Over 20 big business brands we've partnered with react to every post in the first 15 minutes… so LinkedIn pushes it out to your buyers.
+Over 20 big business brands we've built react to every post in the first 15 minutes… so LinkedIn pushes it out to your buyers.
 
 And when they engage… our team books them straight into your calendar.
 
