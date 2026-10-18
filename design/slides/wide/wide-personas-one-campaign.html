@@ -2,59 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Several personas, one campaign</title>
+<title>Many personas, one campaign</title>
 <link rel="stylesheet" href="../../4pi.css">
 <link rel="stylesheet" href="../../voice-quiet.css">
 <style>
 /* ============================================================================
-   Three personas, one campaign.
-
-   The three figures are identical and the labels carry the difference. Drawing
-   them at three slightly different heights read as a drafting slip rather than
-   as three different people, which is a worse thing to say than nothing.
-
-   The lines converge before they reach the box and enter it as one arrow. Three
-   arrows arriving separately would say three campaigns in one frame; merging
-   them first is the whole argument.
-
-   The campaign is the same box the spend graphic uses: a border with its name
-   sitting on it, ads inside. Two ads rather than three, so the set inside does
-   not pair off one-to-one with the three personas outside.
-
-   Class names are prefixed fan__; neither shared sheet uses them.
+   See build-personas-campaign.py. Ten different silhouettes, no labels, and
+   one arrow into the campaign: the crowd is a quantity to see, not a list.
    ========================================================================= */
 @page { size: 1920px 1080px; margin: 0; }
 
 .slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
 
-.fan { display: flex; align-items: center; justify-content: center; }
+.fan { position: relative; width: 1700px; height: 900px; }
 
-/* ---- the personas -------------------------------------------------------- */
-.fan__who { flex: none; width: 300px; }
+.per { position: absolute; }
+.per svg { display: block; fill: var(--ink); }
 
-.per { display: flex; align-items: center; gap: 30px; height: 146px; }
-.per + .per { margin-top: 80px; }
-
-/* Solid ink, with real gaps left between the arms and the torso — overlapped,
-   they merge into one lump and the silhouette stops reading as a figure. */
-.per svg { display: block; flex: none; fill: var(--ink); }
-.per__name {
-  margin: 0;
-  font-size: 36px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink);
-}
-
-/* ---- the routing --------------------------------------------------------- */
-.fan__lines { flex: none; }
+/* The routing. Behind everything, so a line that grazes a figure passes under
+   it instead of cutting across the silhouette. */
+.fan__lines { position: absolute; inset: 0; z-index: 0; }
 .fan__lines svg {
-  display: block; width: 480px; height: 598px;
-  fill: none; stroke: #B6C2D0; stroke-width: 3.4;
+  display: block; width: 100%; height: 100%;
+  fill: none; stroke: #B6C2D0; stroke-width: 2.6;
   stroke-linecap: round; stroke-linejoin: round;
 }
 /* The open paths above would otherwise take the default fill and flood. */
 .fan__lines svg .tip { fill: #B6C2D0; stroke: none; }
 
 /* ---- the campaign -------------------------------------------------------- */
-.fan__camp { flex: none; position: relative; }
+.fan__camp { position: absolute; left: 1262px; top: 301px; }
 
 /* Its name sits on the border, so the box needs no header row. */
 .fan__box {
@@ -83,58 +60,33 @@
 
   <div class="fan">
 
-    <div class="fan__who">
-
-      <div class="per">
-        <svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true">
-          <circle cx="33" cy="16" r="14"/>
-          <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
-                   L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
-          <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
-          <rect x="52" y="46" width="11" height="44" rx="5.5"/>
-          <rect x="19" y="88" width="12" height="58" rx="6"/>
-          <rect x="35" y="88" width="12" height="58" rx="6"/>
-        </svg>
-        <p class="per__name">ICP 1</p>
-      </div>
-
-      <div class="per">
-        <svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true">
-          <circle cx="33" cy="16" r="14"/>
-          <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
-                   L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
-          <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
-          <rect x="52" y="46" width="11" height="44" rx="5.5"/>
-          <rect x="19" y="88" width="12" height="58" rx="6"/>
-          <rect x="35" y="88" width="12" height="58" rx="6"/>
-        </svg>
-        <p class="per__name">ICP 2</p>
-      </div>
-
-      <div class="per">
-        <svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true">
-          <circle cx="33" cy="16" r="14"/>
-          <path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90
-                   L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/>
-          <rect x="3"  y="46" width="11" height="44" rx="5.5"/>
-          <rect x="52" y="46" width="11" height="44" rx="5.5"/>
-          <rect x="19" y="88" width="12" height="58" rx="6"/>
-          <rect x="35" y="88" width="12" height="58" rx="6"/>
-        </svg>
-        <p class="per__name">ICP 3</p>
-      </div>
-
-    </div>
-
     <div class="fan__lines">
-      <svg viewBox="0 0 480 598" aria-hidden="true">
-        <path d="M10 73  C 190 73,  210 299, 400 299"/>
-        <path d="M10 299 H 400"/>
-        <path d="M10 525 C 190 525, 210 299, 400 299"/>
-        <path d="M400 299 H 440"/>
-        <path class="tip" d="M440 283 L 476 299 L 440 315 Z"/>
+      <svg viewBox="0 0 1700 900" aria-hidden="true">
+        <path d="M80.0 73.0 C 561.5 73.0, 668.5 450.0, 1150.0 450.0"/>
+        <path d="M276.0 155.0 C 669.3 155.0, 756.7 450.0, 1150.0 450.0"/>
+        <path d="M80.0 238.0 C 561.5 238.0, 668.5 450.0, 1150.0 450.0"/>
+        <path d="M282.0 320.0 C 672.6 320.0, 759.4 450.0, 1150.0 450.0"/>
+        <path d="M80.0 400.5 C 561.5 400.5, 668.5 450.0, 1150.0 450.0"/>
+        <path d="M270.0 488.0 C 666.0 488.0, 754.0 450.0, 1150.0 450.0"/>
+        <path d="M82.0 567.0 C 562.6 567.0, 669.4 450.0, 1150.0 450.0"/>
+        <path d="M276.0 650.0 C 669.3 650.0, 756.7 450.0, 1150.0 450.0"/>
+        <path d="M80.0 733.0 C 561.5 733.0, 668.5 450.0, 1150.0 450.0"/>
+        <path d="M276.0 806.0 C 669.3 806.0, 756.7 450.0, 1150.0 450.0"/>
+        <path d="M1150 450 H 1198"/>
+        <path class="tip" d="M1198 433 L 1234 450 L 1198 467 Z"/>
       </svg>
     </div>
+
+    <div class="per" style="left:0px; top:0px"><svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="52" y="46" width="11" height="44" rx="5.5"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:196px; top:82px"><svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true"><rect x="16" y="8" width="34" height="48" rx="17"/><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="52" y="46" width="11" height="44" rx="5.5"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:0px; top:165px"><svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><path d="M15 46 L 2 70 L 16 88 L 23 84 L 10 69 L 21 50 Z"/><path d="M51 46 L 64 70 L 50 88 L 43 84 L 56 69 L 45 50 Z"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:196px; top:247px"><svg width="70" height="146" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 32 C 21 32, 14 40, 14 52 L 14 85 C 14 89, 18 91, 23 91 L 43 91 C 48 91, 52 89, 52 85 L 52 52 C 52 40, 45 32, 33 32 Z"/><rect x="0" y="45" width="12" height="46" rx="6"/><rect x="54" y="45" width="12" height="46" rx="6"/><rect x="17" y="89" width="13" height="57" rx="6.5"/><rect x="36" y="89" width="13" height="57" rx="6.5"/></svg></div>
+    <div class="per" style="left:0px; top:330px"><svg width="64" height="141" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M45 11 C 55 14, 59 26, 54 37 L 46 32 C 50 24, 49 17, 45 11 Z"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="52" y="46" width="11" height="44" rx="5.5"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:196px; top:412px"><svg width="58" height="152" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 25 34, 20 41, 20 51 L 20 84 C 20 88, 23 90, 27 90 L 39 90 C 43 90, 46 88, 46 84 L 46 51 C 46 41, 41 34, 33 34 Z"/><rect x="7" y="46" width="10" height="44" rx="5"/><rect x="49" y="46" width="10" height="44" rx="5"/><rect x="21" y="88" width="11" height="60" rx="5.5"/><rect x="34" y="88" width="11" height="60" rx="5.5"/></svg></div>
+    <div class="per" style="left:0px; top:495px"><svg width="66" height="144" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 10 97 L 56 97 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="52" y="46" width="11" height="44" rx="5.5"/><rect x="21" y="95" width="9" height="51" rx="4.5"/><rect x="36" y="95" width="9" height="51" rx="4.5"/></svg></div>
+    <div class="per" style="left:196px; top:577px"><svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="40" y="34" width="5" height="40" rx="2.5" transform="rotate(-24 42.5 34)"/><rect x="46" y="66" width="16" height="21" rx="4"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:0px; top:660px"><svg width="64" height="146" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="4" y="46" width="11" height="26" rx="5.5"/><rect x="51" y="46" width="11" height="26" rx="5.5"/><rect x="8" y="64" width="50" height="11" rx="5.5"/><rect x="19" y="88" width="12" height="58" rx="6"/><rect x="35" y="88" width="12" height="58" rx="6"/></svg></div>
+    <div class="per" style="left:196px; top:742px"><svg width="64" height="128" viewBox="0 0 66 150" aria-hidden="true"><circle cx="33" cy="16" r="14"/><path d="M33 34 C 23 34, 17 41, 17 51 L 17 84 C 17 88, 21 90, 25 90 L 41 90 C 45 90, 49 88, 49 84 L 49 51 C 49 41, 43 34, 33 34 Z"/><rect x="3" y="46" width="11" height="44" rx="5.5"/><rect x="52" y="46" width="11" height="44" rx="5.5"/><rect x="19" y="88" width="12" height="40" rx="6"/><rect x="35" y="88" width="12" height="40" rx="6"/></svg></div>
 
     <div class="fan__camp">
       <p class="fan__name">Campaign</p>
