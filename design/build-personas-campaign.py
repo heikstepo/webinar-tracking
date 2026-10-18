@@ -35,8 +35,9 @@ LEGS = ('<rect x="19" y="88" width="12" height="58" rx="6"/>'
 FIGURES = [
     # plain
     (64, 146, HEAD + TORSO + ARMS + LEGS),
-    # long hair, falling to the shoulders
-    (64, 146, '<rect x="16" y="8" width="34" height="48" rx="17"/>'
+    # long hair: a crown, then two falls past the jaw. A single rounded
+    # slab here swallowed the head and read as a hood instead.
+    (64, 146, '<path d="M19 20 C 19 8, 26 3, 33 3 C 40 3, 47 8, 47 20 L 50 54 L 41 54 L 41 36 L 25 36 L 25 54 L 16 54 Z"/>'
               + HEAD + TORSO + ARMS + LEGS),
     # hands on hips: the triangle of ground between arm and torso is what makes
     # this one carry at a glance. A cap sat here first and read as a frying pan:
