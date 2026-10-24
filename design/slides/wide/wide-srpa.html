@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Situation, Reframe, Proof, Ask</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The four beats, and what each one is for.
+
+   The initials carry the accent and a size up, so S R P A reads down the left
+   edge as an acronym without being set as a separate column. Spelling it out
+   twice (letters in one column, words in another) would say the same thing in
+   two places.
+
+   Real braces rather than square brackets or a plain rule. The brace is the
+   whole point of the rough: it says several lines are one thing. Each one is
+   drawn to its own height, so the middle nub lands at the centre of the group
+   it holds and not at a fixed offset.
+
+   Class names are prefixed srpa; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.srpa { position: relative; width: 600px; height: 512px; text-align: left; }
+
+/* ---- the four beats ------------------------------------------------------ */
+.srpa__beat {
+  position: absolute; left: 0; width: 360px; height: 128px; margin: 0;
+  display: flex; align-items: baseline;
+  color: var(--ink);
+}
+.srpa__cap {
+  font-size: 90px; font-weight: 600; letter-spacing: -0.03em; color: var(--blue);
+}
+.srpa__rest {
+  font-size: 68px; font-weight: 600; letter-spacing: -0.02em;
+}
+
+/* ---- the braces and what they name --------------------------------------- */
+/* Close to the words: the brace has to look like it is holding them. */
+.srpa__brace { position: absolute; left: 370px; }
+.srpa__brace svg {
+  display: block; width: 26px;
+  fill: none; stroke: #B6C2D0; stroke-width: 3;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.srpa__group {
+  position: absolute; left: 436px; margin: 0; transform: translateY(-50%);
+  font-size: 48px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="srpa">
+
+    <p class="srpa__beat" style="top:0px">
+      <span class="srpa__cap">S</span><span class="srpa__rest">ituation</span>
+    </p>
+    <p class="srpa__beat" style="top:128px">
+      <span class="srpa__cap">R</span><span class="srpa__rest">eframe</span>
+    </p>
+    <p class="srpa__beat" style="top:256px">
+      <span class="srpa__cap">P</span><span class="srpa__rest">roof</span>
+    </p>
+    <p class="srpa__beat" style="top:384px">
+      <span class="srpa__cap">A</span><span class="srpa__rest">sk</span>
+    </p>
+
+    <!-- one row: the nub sits at 64 -->
+    <div class="srpa__brace" style="top:14px">
+      <svg viewBox="0 0 26 100" height="100" aria-hidden="true">
+        <path d="M0 2 C 8 2, 10 5, 10 12 L 10 38
+                 C 10 45, 14 50, 22 50
+                 C 14 50, 10 55, 10 62 L 10 88
+                 C 10 95, 8 98, 0 98"/>
+      </svg>
+    </div>
+    <p class="srpa__group" style="top:64px">Hook</p>
+
+    <!-- two rows: the nub sits at 256, between Reframe and Proof -->
+    <div class="srpa__brace" style="top:142px">
+      <svg viewBox="0 0 26 228" height="228" aria-hidden="true">
+        <path d="M0 2 C 8 2, 10 5, 10 12 L 10 102
+                 C 10 109, 14 114, 22 114
+                 C 14 114, 10 119, 10 126 L 10 216
+                 C 10 223, 8 226, 0 226"/>
+      </svg>
+    </div>
+    <p class="srpa__group" style="top:256px">Body</p>
+
+    <div class="srpa__brace" style="top:398px">
+      <svg viewBox="0 0 26 100" height="100" aria-hidden="true">
+        <path d="M0 2 C 8 2, 10 5, 10 12 L 10 38
+                 C 10 45, 14 50, 22 50
+                 C 14 50, 10 55, 10 62 L 10 88
+                 C 10 95, 8 98, 0 98"/>
+      </svg>
+    </div>
+    <p class="srpa__group" style="top:448px">CTA</p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
