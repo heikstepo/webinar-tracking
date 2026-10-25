@@ -108,3 +108,15 @@ Sub:       All it takes from you is one hour to get started and 10 minutes a mon
 Other versions:
 1. One hour to get started, then about 10 minutes a month, and you never have to post or step in front of a camera.
 2. Just one hour to get started and 10 minutes a month after that, without ever posting or stepping in front of a camera.
+
+## Sub v8 (Heik: our team does X, you do 10 min a month, no writing or camera)
+
+```
+Eyebrow:   For B2B founders doing over $1M a year
+Headline:  We'll build your LinkedIn brand completely DFY & book 30 qualified sales calls in 90 days. Guaranteed.
+Sub:       Our team writes, posts, and books the calls. You spend 10 minutes a month, without ever writing a word or stepping in front of a camera.
+```
+
+Other versions:
+1. Our team writes, posts, and books the calls, while you spend 10 minutes a month, without ever writing a word or stepping in front of a camera.
+2. Our team handles the posts and the booked calls. All you do is 10 minutes a month, without ever writing a word or getting on camera.
