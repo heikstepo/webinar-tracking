@@ -37,3 +37,16 @@ Sub:       Completely done for you. You never write, post or record a single thi
 One-line versions:
 1. We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days, Without You Writing, Posting or Recording a Thing
 2. Your LinkedIn Brand, Built For You, and 30 Qualified Sales Calls in 90 Days, Without Writing, Posting or Recording a Thing
+
+## v3 (Heik, 25 Oct)
+
+```
+Headline:  We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days. Guaranteed.
+Sub:       For B2B founders doing over $1M a year. We handle everything, from your posts to the booked calls, and if we don't hit 30 in 90 days, we keep working at no extra cost until we do.
+```
+
+Other subheaders:
+1. Built for 7 and 8 figure B2B founders. You never write, post or record a thing, and all you do is take the calls.
+2. We write and post in your voice every weekday, push every post out to your ICP, and book the calls straight into your calendar. All you do is show up.
+
+"Guaranteed" in the headline needs Alex's contract terms signed off before the page goes live.
