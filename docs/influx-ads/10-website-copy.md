@@ -130,3 +130,15 @@ Eyebrow:   For B2B founders doing over $1M a year
 Headline:  We'll build your LinkedIn brand completely DFY & book 30 qualified sales calls in 90 days. Guaranteed.
 Sub:       Our team turns your expertise into written content & booked calls, while you only spend 10 minutes a month, without ever writing a word or stepping in front of a camera.
 ```
+
+## Proof section header (Heik's vibe: "Some of the people we've worked with")
+
+Recommended:
+```
+Some of the B2B founders we've built LinkedIn brands for
+```
+
+Others:
+1. Some of the 7 and 8 figure B2B founders we've worked with
+2. Some of the B2B founders whose LinkedIn now books their sales calls
+3. Some of the B2B founders getting qualified calls from LinkedIn with us
