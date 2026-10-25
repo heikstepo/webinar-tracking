@@ -96,3 +96,15 @@ Different angles, one idea each:
 - Mechanism: Content your ICP actually cares about, pushed out by 20+ LinkedIn brands we've built, and every interested lead booked straight into your calendar.
 - The guarantee spelled out: And if we don't hit 30 in 90 days, we keep working at no extra cost until we do.
 - Alex: The same system that brings in over 7 figures a year from my own LinkedIn.
+
+## Sub v7 (Heik: time + without posting or camera)
+
+```
+Eyebrow:   For B2B founders doing over $1M a year
+Headline:  We'll build your LinkedIn brand completely DFY & book 30 qualified sales calls in 90 days. Guaranteed.
+Sub:       All it takes from you is one hour to get started and 10 minutes a month, without ever posting or stepping in front of a camera.
+```
+
+Other versions:
+1. One hour to get started, then about 10 minutes a month, and you never have to post or step in front of a camera.
+2. Just one hour to get started and 10 minutes a month after that, without ever posting or stepping in front of a camera.
