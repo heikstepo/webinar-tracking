@@ -70,3 +70,20 @@ Eyebrow:   For B2B founders doing over $1M a year
 Headline:  We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days. Guaranteed.
 Sub:       Without you writing, posting, or recording anything
 ```
+
+## Hero v5 (Heik, 25 Oct): sentence case, DFY moves into the headline
+
+```
+Eyebrow:   For B2B founders doing over $1M a year
+Headline:  We'll build your LinkedIn brand completely DFY & book 30 qualified sales calls in 90 days. Guaranteed.
+Sub:       Inbound calls on top of your referrals, from decision makers in your ICP who already trust you before the first call.
+```
+
+Why this sub (from the calls):
+- Referrals are where their clients come from today, and the fear is that they dry up (Mario: "About a 90% referral rate… one day that referral pipeline might dry up").
+- Lead quality is the doubt: cold leads don't close (Mario: about 2,000 leads, under 3% converted), and trust is what closes (Nicola: "The trust forms before sales conversations").
+- The headline already covers done for you and the guarantee, so the sub covers what the calls are worth.
+
+Other subs:
+1. A steady flow of new clients that doesn't depend on the next referral.
+2. Calls with decision makers in your ICP who already know, like, and trust you before they ever get on the phone.
