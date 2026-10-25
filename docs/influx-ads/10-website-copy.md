@@ -22,3 +22,18 @@ Alternatives:
 Notes:
 - The number goes first because it's the offer and the reason to read on. The callout sits in the eyebrow so the headline stays short.
 - "Guaranteed" stays out of the headline until the contract terms are signed off.
+
+## v2 (Heik's direction, 25 Oct)
+
+His draft: "We'll help you build your linkedin Brand completely DFY & book 30 qualified sales calls in 90 days, without you writing, posting or recording anything"
+
+Recommended:
+
+```
+Headline:  We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days
+Sub:       Completely done for you. You never write, post or record a single thing.
+```
+
+One-line versions:
+1. We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days, Without You Writing, Posting or Recording a Thing
+2. Your LinkedIn Brand, Built For You, and 30 Qualified Sales Calls in 90 Days, Without Writing, Posting or Recording a Thing
