@@ -87,3 +87,12 @@ Why this sub (from the calls):
 Other subs:
 1. A steady flow of new clients that doesn't depend on the next referral.
 2. Calls with decision makers in your ICP who already know, like, and trust you before they ever get on the phone.
+
+## Sub options v6 (Heik: "nah that's stupid, has to be something else")
+
+Different angles, one idea each:
+- Time, in numbers: All it takes from you is one hour to get started and about 10 minutes a month after that.
+- Proof: The same system that's generated well over 8 figures in revenue for our B2B clients.
+- Mechanism: Content your ICP actually cares about, pushed out by 20+ LinkedIn brands we've built, and every interested lead booked straight into your calendar.
+- The guarantee spelled out: And if we don't hit 30 in 90 days, we keep working at no extra cost until we do.
+- Alex: The same system that brings in over 7 figures a year from my own LinkedIn.
