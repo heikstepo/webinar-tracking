@@ -120,3 +120,13 @@ Sub:       Our team writes, posts, and books the calls. You spend 10 minutes a m
 Other versions:
 1. Our team writes, posts, and books the calls, while you spend 10 minutes a month, without ever writing a word or stepping in front of a camera.
 2. Our team handles the posts and the booked calls. All you do is 10 minutes a month, without ever writing a word or getting on camera.
+
+## Hero v9 (Heik's sub, cleaned)
+
+His: "Our team turns your expertise into written content & booked calls - While You only spend 10min/mo, without ever writing a word or stepping in front of a camera."
+
+```
+Eyebrow:   For B2B founders doing over $1M a year
+Headline:  We'll build your LinkedIn brand completely DFY & book 30 qualified sales calls in 90 days. Guaranteed.
+Sub:       Our team turns your expertise into written content & booked calls, while you only spend 10 minutes a month, without ever writing a word or stepping in front of a camera.
+```
