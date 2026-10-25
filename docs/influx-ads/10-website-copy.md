@@ -50,3 +50,15 @@ Other subheaders:
 2. We write and post in your voice every weekday, push every post out to your ICP, and book the calls straight into your calendar. All you do is show up.
 
 "Guaranteed" in the headline needs Alex's contract terms signed off before the page goes live.
+
+## v4 (Heik, 25 Oct): the eyebrow does the callout, the subheader completes the headline
+
+```
+Eyebrow:   For B2B founders doing over $1M a year
+Headline:  We'll Build Your LinkedIn Brand and Book You 30 Qualified Sales Calls in 90 Days. Guaranteed.
+Sub:       Completely done for you, from the first post to the booked call. You never write, post or record a single thing.
+```
+
+Other subheaders:
+1. From the content to the booked calls, we handle everything, so all you have to do is show up.
+2. Completely done for you, and if we don't hit 30 in 90 days, we keep working at no extra cost until we do.
