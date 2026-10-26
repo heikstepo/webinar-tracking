@@ -44,3 +44,8 @@ Fit
 
 ### Email 2: Engager
 - v1 sent 26 Oct. Kept to the reference shape on purpose: one line, "Sent from my iPhone".
+- Heik asked for email 3 next with no changes, so v1 stands.
+
+### Email 3: Alex's own proof
+- v1 sent 26 Oct.
+- What it did: Ecom MBA's "before you trust anyone, see what they've built themselves" opener, numbers first (30 calls in 90 days, $1M+ pipeline, 27 calls a month, 8 in 10 clients from DMs), two short "before" lines that mirror the ICP (posting with no system, still living on referrals), the Authority Engine named, open loop into email 4, video 1 in the P.S.

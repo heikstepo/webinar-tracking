@@ -76,7 +76,7 @@ And I'll see you soon.
 - Alex
 ```
 
-### Email 2: Engager (v1, 26 Oct)
+### Email 2: Engager (v1, 26 Oct, Heik moved on to email 3 without changes)
 
 Same as both reference sequences, word for word in shape, because its whole job is a reply: a one-line question from Alex's own inbox gets answered, and once they've replied, the rest of the sequence lands in their main inbox, not promotions. "Our call" to match email 1. Goes out a few hours after email 1, or the next morning if the call is more than two days out.
 
@@ -91,6 +91,50 @@ Sent from my iPhone
 ```
 
 Needs: replies go to Alex's real inbox (or someone answering as Alex, same day).
+
+### Email 3: Alex's own proof (v1, 26 Oct)
+
+Ecom MBA's founder proof shape ("before you put your capital into building a brand with anyone, you should see what they've actually built themselves"), with the numbers from Alex's own case video (video 1). The two "before" lines are kept short on purpose: Alex used to post like the ICP does now and still lived on referrals and cold outreach, which is the ICP's exact situation. Ends on an open loop into email 4, and the video goes in the P.S.
+
+Numbers: video 1 says $1M+ in pipeline in 12 months; the VSL says "My LinkedIn brings in over 7 figures a year for my own B2B company". The email uses the video's pipeline wording. "Well over 8 figures in revenue for B2B founders" is the VSL's line.
+
+```
+SL: what my own LinkedIn brings in
+
+Hey {{first_name}}, real quick…
+
+Before you hand your LinkedIn over to anyone, you should see what their own LinkedIn actually brings in…
+
+So here's mine.
+
+In the first 90 days of running our system on my own LinkedIn, I booked 30 qualified calls…
+
+12 months in, it's brought in over $1 million in pipeline for Influx…
+
+And today, it books me about 27 qualified calls a month, with 8 in 10 of our new clients starting in my DMs.
+
+Now, before we built this, I was posting like most B2B founders…
+
+Company updates, a bit of motivation, and no real system behind it…
+
+And it looked busy, but the comments came from my peers, and new clients still came from referrals and cold outreach.
+
+What changed is we built a system where every post has a job…
+
+Reaching founders who could actually hire us, building their trust, and getting them to book a call in my DMs.
+
+That's the Authority Engine…
+
+And it's the exact same system we run for our clients, which has generated well over 8 figures in revenue for B2B founders so far.
+
+In my next email, I'll show you exactly how we'd run it for your company, and how little of your time it actually takes.
+
+See you on our call.
+
+- Alex
+
+P.S. If you want to see it for yourself, I recorded a short video where I break down my own posts, the numbers, and a typical week of booked calls in my calendar: [LINK: VIDEO 1]
+```
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
