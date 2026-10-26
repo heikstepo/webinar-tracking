@@ -26,3 +26,52 @@ Sent in this order. If the call is close, the later ones drop out, but the day-b
 | 16 | Check us out yourself | Everything in one place: Alex's LinkedIn, client posts, case studies | Ecom MBA due diligence hub |
 | 17 | Day before: who should be on the call | Bring the co-founder, head of sales or finance person who decides with you, and what to have ready | Mario's accounting manager; Gary's board; Alex's old TY video |
 | 18 | Day of: see you today | Short reminder with the time and link | Show rate |
+
+## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
+
+Every video opens on the client's objection, gives the before and after, and ends with "if you've already booked a call, make sure you show up". Built for pre-call.
+
+| # | Client | Company | Their objection going in | First 90 days | Later |
+|---|---|---|---|---|---|
+| 1 | Alex (Influx) | Influx | "Does it actually make money?" | 30 qualified calls | $1M+ pipeline in 12 months; ~27 qualified calls a month now; 8 in 10 new clients start in his DMs |
+| 2 | John | 20-person managed IT services | Already posting 3-5x a week for a year, ~200 impressions, comments from other IT vendors | 30 qualified calls, $180k pipeline | Month 6: 33 calls a month, $650k pipeline, hiring a 2nd sales engineer |
+| 3 | Marcus | 45-person commercial construction | "My buyers aren't on LinkedIn" | 30 qualified calls with developers and facility directors | Month 9: $1.4M signed contracts across 3 projects ($620k job from a developer who found him through a post) |
+| 4 | Priya | 8-person fractional CFO firm (partner) | "I just don't have time to create content" | 30 qualified calls, $120k pipeline | Month 6: LinkedIn brings in 40% of new clients, $310k pipeline |
+| 5 | Dave | 60-person industrial packaging | "I sell boxes. Nobody wants to read about boxes" | 28 qualified calls, $260k pipeline | 12 months: $1.1M pipeline incl. a 3-year supply contract |
+| 6 | Rachel | 25-person cybersecurity consultancy | "I posted for a whole year and got nothing" | 38 qualified calls, $210k pipeline, 412k impressions | Month 5: 14 calls a month; 4,000+ profile viewers, top titles CFO, CEO, COO |
+| 7 | Kevin | 30-person logistics software (co-founder) | "We already have SDRs doing outbound" | 30 qualified demos | Month 8: $480k pipeline, 3 deals closed; SDRs open calls with "did you see Kevin's post?" |
+| 8 | Elena | 120-person commercial cleaning | "LinkedIn is for tech people, not local service businesses" | 30 qualified calls with facility and property managers | Month 4: $190k in new annual contracts, 4 multi-year |
+| 9 | Tom | 12-person CPA firm for dental practices | "Referrals already keep us busy" | 30 qualified calls; ideal-fit calls 25% → 65% | Month 7: $260k in new annual fees, 11 new practices |
+| 10 | Laura | 80-person engineering firm (principal) | "We win our work through RFPs" | 30 qualified calls with developers and architects | Month 10: 2 private RFP invitations, $520k won |
+| 11 | James | Legal tech (founder) | "Lawyers won't buy software from LinkedIn" | 41 qualified demos | Month 4: 15 demos a month |
+| 12 | Mike | 18-person tech recruiting and consulting | "LinkedIn is flooded with recruiters" | 52 qualified calls | Month 7: ~31 calls a month, $500k placement fees pipeline, 2 new recruiters. Alex: "Mike's results are on the high end… most clients land closer to 30 calls in about 90 days" |
+
+Same in every video: one hour of onboarding, about 10 minutes a month approving content (John's transcript says "10 hours", a slip); impact cards (one sharp idea) + long-form thought leadership; the media engine, "a network we spent years building in-house", engaging in the first 15 minutes; "a simple DM process" guiding every conversation to a qualified call.
+
+To check with Alex: these are real clients and OK to name; how they relate to the earlier cases (Scott, Ryan, Devon, Colin, Jane are not in the videos, and V2's Jane is a 27-person engineering firm while Laura's is 80-person); "a simple DM process" vs the VSL's "SDRs in your DMs"; pipeline vs signed revenue is labelled per case.
+
+## Proposed structure v2 (with the case study bank)
+
+Objection emails are told through the client who had that objection, with their video linked. Same order rule: later ones drop out if the call is close, the last two always go.
+
+| # | Email | Built on |
+|---|---|---|
+| 1 | Gameplan | The call with Alex, selective, either way a plan, accept the invite, more emails coming |
+| 2 | Engager | "Any questions before the call?" |
+| 3 | Alex's own proof | Video 1: 30 qualified calls in his own first 90 days, $1M+ pipeline in 12 months, 8 in 10 new clients start in his DMs |
+| 4 | How it's structured and what you do | The one hour, impact cards + long-form, the funnel, the media engine, the DM process, 10 minutes a month |
+| 5 | Case study 1: "I posted for a whole year and got nothing" | Rachel (video 6). The ICP's "got nothing when they tried" |
+| 6 | Objection 1: "I don't have time" | Priya (video 4) |
+| 7 | Price and costs | VSL range, what it covers, one client paying for it |
+| 8 | Case study 2: "Referrals already keep us busy" | Tom (video 9). The ICP's "lives on referrals" |
+| 9 | Objection 2: "My clients aren't on LinkedIn" | Marcus, Elena, Dave (videos 3, 8, 5) |
+| 10 | The guarantee | Terms, what counts as a qualified call, Mike's honest "most clients land closer to 30 calls in about 90 days" |
+| 11 | Objection 3: "Will it sound like me?" | Onboarding hour, approval, 95% first time |
+| 12 | Objection 4: "We already have SDRs / outbound" | Kevin (video 7) |
+| 13 | The media engine and account safety | Why, how, no password, zero bans |
+| 14 | Case study 3: "We already post every week" | John (video 2) |
+| 15 | Big contracts, not just calls | Laura (RFPs, $520k), Marcus ($1.4M), Dave (3-year contract) |
+| 16 | Comparing vendors | What to ask any LinkedIn agency |
+| 17 | Every case study in one place | All 12 videos |
+| 18 | Day before: who should be on the call | Co-founder, head of sales, finance |
+| 19 | Day of: see you today | Time and link |
