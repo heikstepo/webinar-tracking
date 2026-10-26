@@ -668,12 +668,12 @@ See you there.
 P.S. If you want to see Kevin's posts and numbers for yourself, I broke down his whole case in a short video: [LINK: KEVIN VIDEO]
 ```
 
-### Email 14: The media engine and account safety (v1, 26 Oct)
+### Email 14: The media engine and account safety (v2, 26 Oct: Heik, "not enough context with this SL")
 
 FAQ 4's answer, with V2's "we've built" wording (as in email 4) and Rachel's per-post jump as the proof (340 impressions a post before, 34,000 on one post after). Left out on purpose: "everything runs within LinkedIn's terms" (FAQ 4 v1 says it, but Alex warned "in theory it isn't a practice LinkedIn supports", so it can't go in writing until he signs off). Added: "real accounts, not bots" (Rachel asked if it was bots or ads), the access line (DM access next to "no password"), and "no ad spend on top" (from the sales calls).
 
 ```
-SL: "is this safe for my LinkedIn account?"
+SL: how our media engine pushes your posts to your ICP (and why it's safe)
 
 Hey {{first_name}},
 

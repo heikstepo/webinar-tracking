@@ -31,6 +31,7 @@ Fit
 
 1. Case study subject lines lead with the outcome, not the objection (email 9). The client's name plus their result, tied to the doubt the email answers: "how Tom added $260,000 in new fees on top of his referrals", not "referrals already keep us busy". The objection lives in the body.
 2. A subject line says plainly what's in the email (email 5). "11 client case studies + answers to your questions before our call", not "every case study in one place": the number, what they get, and that it's for the call. No vague or clever wording.
+3. A subject line has to make sense on its own, cold, in an inbox (email 14). Name the thing: "how our media engine pushes your posts to your ICP (and why it's safe)", not "is this safe for my LinkedIn account?", where "this" points at nothing. A quoted question only works when the question already says what it's about.
 
 ## Log
 
@@ -98,4 +99,5 @@ Fit
 - 13 SDRs (Kevin): case study shape, outcome subject line (rule 1), an ending worded differently from Tom's so the two don't read the same. About 330 words.
 - 14 Media engine and safety: FAQ 4 with V2 wording, Rachel's per-post jump as proof (per post against per post, not per post against a 90-day total). Left out "within LinkedIn's terms" until Alex signs off, since he warned it isn't a practice LinkedIn supports. About 260 words.
 - 15 Already posting (John): case study shape, outcome subject line (rule 1), a different turn from Rachel's (posting more never fixes it). No "last email" line. About 370 words.
+- Heik on 14: "not enough context with this SL". v2 subject: "how our media engine pushes your posts to your ICP (and why it's safe)". Body unchanged. Learned rule 3. Check 12's subject against it too ("will the posts actually sound like me?" names the posts, so it stands).
 - Self-checks that caught something: a 340-per-post vs 412,000-total comparison (misleading, swapped for 34,000 on one post); "supply chain leaders" twice in two lines (13); "actually" three times in three lines (12); two endings in a row on "keep them…" (9 and 13).
