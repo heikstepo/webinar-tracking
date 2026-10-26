@@ -232,12 +232,12 @@ See you there.
 
 Needs: all 11 client case videos and the FAQ videos on the confirmation page, and Alex's OK to name the clients.
 
-### Email 6: Case study 1, Rachel (v1, 26 Oct, Heik moved on to email 7 without changes)
+### Email 6: Case study 1, Rachel (v2, 26 Oct: outcome subject line, rules 1 and 2)
 
 The ICP's "got nothing when they tried", told through Rachel (video 6). App Acc's "let me tell you about Simon" story shape, in the order of Alex's video: her objection in her own words, why her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time. Alex's line "that's not the same as LinkedIn not working" is the turn. Ends on the reader ("if you've already tried LinkedIn and got nothing"), closes on the call, video in the P.S.
 
 ```
-SL: "I posted for a whole year and got nothing"
+SL: how Rachel booked 38 qualified calls in 90 days after a year of nothing
 
 Hey {{first_name}},
 

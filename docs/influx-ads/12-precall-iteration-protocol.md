@@ -67,6 +67,7 @@ Fit
 - v1 sent 26 Oct.
 - What it did: App Acc's "let me tell you about…" story shape in the order of Alex's video (objection in her words, the real reason her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time), Alex's own turn ("that's not the same as LinkedIn not working"), ends on the reader, video in the P.S. About 300 words.
 - Heik asked for email 7 next with no changes, so v1 stands.
+- Heik asked for a good SL for Rachel. v2 subject: "how Rachel booked 38 qualified calls in 90 days after a year of nothing" (rules 1 and 2). Body unchanged.
 
 ### Email 7: Objection 1, "I don't have time" (Priya)
 - v1 sent 26 Oct.
