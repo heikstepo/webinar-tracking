@@ -194,12 +194,12 @@ See you there.
 
 Same open items as the VSL: "SDRs in your DMs" vs the case videos' "a simple DM process", and approval as optional vs nothing goes live without sign-off.
 
-### Email 5: All case studies and FAQ videos (v1, 26 Oct, Heik moved on to email 6 without changes)
+### Email 5: All case studies and FAQ videos (v2, 26 Oct: Heik, "a better SL, more clear and straight")
 
 Heik: "just a quick email sending them to the page with all case studies and FAQ videos, the confirmation page". Ecom MBA's due diligence hub shape, cut down: one link, three cases named by the doubt they had (so they can find themselves), the range of industries, the FAQ topics, one ask. Rachel, Marcus and Tom get their own emails later (6, 10, 9), so here they only get one line each.
 
 ```
-SL: every case study in one place
+SL: 11 client case studies + answers to your questions before our call
 
 Hey {{first_name}}, real quick…
 

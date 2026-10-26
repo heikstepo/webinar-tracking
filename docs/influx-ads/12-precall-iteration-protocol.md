@@ -30,6 +30,7 @@ Fit
 ## Learned from Heik
 
 1. Case study subject lines lead with the outcome, not the objection (email 9). The client's name plus their result, tied to the doubt the email answers: "how Tom added $260,000 in new fees on top of his referrals", not "referrals already keep us busy". The objection lives in the body.
+2. A subject line says plainly what's in the email (email 5). "11 client case studies + answers to your questions before our call", not "every case study in one place": the number, what they get, and that it's for the call. No vague or clever wording.
 
 ## Log
 
@@ -59,6 +60,7 @@ Fit
 ### Email 5: All case studies and FAQ videos
 - v1 sent 26 Oct.
 - What it did: one link to the confirmation page, three cases named by the doubt they had going in (Rachel, Marcus, Tom), the range of industries so they look for theirs, the FAQ topics, one ask (pick the one closest to your company). About 170 words.
+- Heik: "I need a better SL, more clear and straight." v2 subject: "11 client case studies + answers to your questions before our call". Body unchanged. Learned rule 2.
 - Heik asked for email 6 next with no changes, so v1 stands.
 
 ### Email 6: Case study 1, Rachel
