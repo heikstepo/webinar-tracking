@@ -76,3 +76,8 @@ Fit
 - v1 sent 26 Oct.
 - What it did: Ecom MBA's capital email shape, FAQ 2's range and scope, Heik's VSL pricing and guarantee lines word for word, the marketing hire comparison from Tony's and Mario's calls, the under-a-million honest line, a forward-to-finance line, FAQ 2's close. About 330 words.
 - Rule used: when Heik has already written or approved the lines for a topic (VSL, FAQ), the email reuses them word for word and only adds what the email needs on top.
+- Heik asked for email 9 next with no changes, so v1 stands.
+
+### Email 9: Case study 2, Tom
+- v1 sent 26 Oct.
+- What it did: Rachel's story shape, the turn from Alex's video (busy with the wrong clients, because with referrals you don't pick who comes in), the before, niche positioning, one post and the same-day DM, the numbers (25% to 65% ideal-fit calls, $260,000 in new annual fees), his time, an ending that keeps referrals instead of knocking them, a close about which clients they want more of. About 370 words.

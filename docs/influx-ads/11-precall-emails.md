@@ -346,7 +346,7 @@ See you there.
 P.S. If you want to see Priya's posts and her inbox for yourself, I broke down her whole case in a short video: [LINK: PRIYA VIDEO]
 ```
 
-### Email 8: Price and costs (v1, 26 Oct)
+### Email 8: Price and costs (v1, 26 Oct, Heik moved on to email 9 without changes)
 
 Ecom MBA's capital email shape ("a rough idea… so nothing on the call catches you off guard", ballpark, what it covers, the honest not-the-right-time line, close on the call), filled with what's already approved: FAQ 2's range, scope and two ways to start, and Heik's VSL pricing lines word for word (not cheap, put it next to what 30 qualified calls can bring, the no-brainer line with [$X], the contractual guarantee). New from the calls: the marketing hire comparison (Tony set the price against his marketing manager's salary, Mario called it "the full marketing budget") and the forward-to-finance line (Mario's accounting manager signs off).
 
@@ -397,6 +397,68 @@ See you there.
 ```
 
 Same open items as the VSL and FAQ 2: Alex's OK on the range in writing, the 12-month price being lower per month, [$X], the guarantee terms, SDRs. New: Alex's OK on "about what they'd pay one marketing hire" (his card is $3,900-$8,900 a month).
+
+### Email 9: Case study 2, Tom (v1, 26 Oct)
+
+The ICP's "lives on referrals", told through Tom (video 9). Same story shape as Rachel's email, in the order of Alex's video. The turn is Alex's own: Tom wasn't short on work, he was busy with the wrong clients, because with referrals you don't pick who comes in. The ending doesn't knock referrals (the ICP likes them): keep them, LinkedIn decides who comes in next. $260,000 is "new annual fees", signed, as the video says.
+
+```
+SL: "referrals already keep us busy"
+
+Hey {{first_name}},
+
+Let me tell you about Tom…
+
+He runs a 12-person CPA firm for dental practices, and when he first came to us, he wasn't sure he even needed LinkedIn.
+
+His referrals already kept the firm busy…
+
+So why put time and money into anything else?
+
+But when we looked closer, he was busy with the wrong clients.
+
+Most of the clients referrals brought in were small, one-off tax returns…
+
+And not the multi-location practices he actually wanted, the ones that would let him grow the firm.
+
+Because with referrals, you don't get to pick who comes in next.
+
+And his LinkedIn wasn't helping either…
+
+He posted deadline reminders and general tax tips, which got about 290 impressions each, mostly from other accountants.
+
+So we changed who he was writing for…
+
+Instead of tax tips for anyone with a tax return, every post was written for dental practice owners only.
+
+And our media engine reacted to every post in the first 15 minutes, so they reached practice owners, not just other CPAs.
+
+Like one post on why dentists overpay on tax…
+
+It got almost 15,000 impressions, and a practice owner with two locations commented, messaged Tom the same day, and got on a call with him.
+
+In his first 90 days, Tom booked 30 qualified calls…
+
+And the share of calls with practices he actually wanted went from 25% to 65%.
+
+By his seventh month, that was $260,000 in new annual fees and 11 new practices signed…
+
+And now, practice owners reach out to him first, asking about entity setups, buying another location, or switching CPAs.
+
+All it took from Tom was one hour of onboarding, and about 10 minutes a month looking over his posts.
+
+So if referrals already keep your company busy, keep them…
+
+LinkedIn just makes sure the next clients who come in are the ones you actually want.
+
+On our call, we'll look at which clients you want more of, and how we'd go after them on LinkedIn.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see Tom's posts and his inbox for yourself, I broke down his whole case in a short video: [LINK: TOM VIDEO]
+```
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
