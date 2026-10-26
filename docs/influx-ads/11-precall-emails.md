@@ -288,7 +288,7 @@ See you there.
 P.S. If you want to see Rachel's posts and numbers for yourself, I broke down her whole case in a short video: [LINK: RACHEL VIDEO]
 ```
 
-### Email 7: Objection 1, "I don't have time" (v1, 26 Oct)
+### Email 7: Objection 1, "I don't have time" (v1, 26 Oct, Heik moved on to email 8 without changes)
 
 The objection Alex hears most (7 of 9 calls; Priya's video calls it "the one that I hear the most"), answered first, then proved with Priya (video 4). Objection anatomy: the question in their words, the short answer, why it's true for them, the proof story, the time it took her, a reframe, the close. Email 4 already covered the mechanics, so this one only uses the pieces that take time off their plate (the onboarding hour, no blank page, the media engine keeping her visible without being online). Close reuses FAQ 1's.
 
@@ -345,6 +345,58 @@ See you there.
 
 P.S. If you want to see Priya's posts and her inbox for yourself, I broke down her whole case in a short video: [LINK: PRIYA VIDEO]
 ```
+
+### Email 8: Price and costs (v1, 26 Oct)
+
+Ecom MBA's capital email shape ("a rough idea… so nothing on the call catches you off guard", ballpark, what it covers, the honest not-the-right-time line, close on the call), filled with what's already approved: FAQ 2's range, scope and two ways to start, and Heik's VSL pricing lines word for word (not cheap, put it next to what 30 qualified calls can bring, the no-brainer line with [$X], the contractual guarantee). New from the calls: the marketing hire comparison (Tony set the price against his marketing manager's salary, Mario called it "the full marketing budget") and the forward-to-finance line (Mario's accounting manager signs off).
+
+```
+SL: roughly what it costs to work with us
+
+Hey {{first_name}},
+
+Before our call, I want to give you a rough idea of what it costs to work with us…
+
+So nothing on the call catches you off guard.
+
+Depending on the scope, it's somewhere in the mid to high four figures a month.
+
+Where exactly you land depends on whether we run just your LinkedIn, or your company page as well…
+
+And that covers everything, from your content plan and every post, to the media engine and the SDRs booking calls into your calendar.
+
+You can start with a 3-month proof of value paid upfront, or a 12-month partnership paid monthly, at a lower monthly price.
+
+Now, I know that's not cheap…
+
+But for most founders we talk to, it's about what they'd pay one marketing hire…
+
+Except instead of one person who still has to figure LinkedIn out, you get a whole team that's already done it for dozens of B2B founders.
+
+And when you put that next to what 30 qualified calls can bring a company like yours…
+
+It really becomes a no-brainer for most of the 7 and 8 figure founders we work with…
+
+Especially with our clients making [$X] in extra revenue on average in their first 90 days.
+
+And on top of that, it's fully contractually guaranteed…
+
+If we don't book you 30 qualified calls in the next 90 days…
+
+We keep working for you, at no extra cost, until we do.
+
+Just so you know, if your company is doing under a million dollars a year, we're probably not the right fit yet, and that's completely fine.
+
+And if someone else signs off on budget with you, like a co-founder or your finance person, feel free to forward them this email.
+
+On our call, we'll work out the exact number for your company, once we know what you actually need.
+
+See you there.
+
+- Alex
+```
+
+Same open items as the VSL and FAQ 2: Alex's OK on the range in writing, the 12-month price being lower per month, [$X], the guarantee terms, SDRs. New: Alex's OK on "about what they'd pay one marketing hire" (his card is $3,900-$8,900 a month).
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 

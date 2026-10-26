@@ -70,3 +70,9 @@ Fit
 - v1 sent 26 Oct.
 - What it did: the objection in their words as the first line, the short answer straight after, why it's true for a 7 or 8 figure founder, Priya's story in the order of Alex's video, only the parts that take time off their plate (email 4 already did the mechanics), a reframe ("if you don't have time for LinkedIn, this was built for you"), FAQ 1's close, video in the P.S. About 330 words.
 - Self-check that caught something: "exactly" was in four lines; cut to one.
+- Heik asked for email 8 next with no changes, so v1 stands.
+
+### Email 8: Price and costs
+- v1 sent 26 Oct.
+- What it did: Ecom MBA's capital email shape, FAQ 2's range and scope, Heik's VSL pricing and guarantee lines word for word, the marketing hire comparison from Tony's and Mario's calls, the under-a-million honest line, a forward-to-finance line, FAQ 2's close. About 330 words.
+- Rule used: when Heik has already written or approved the lines for a topic (VSL, FAQ), the email reuses them word for word and only adds what the email needs on top.
