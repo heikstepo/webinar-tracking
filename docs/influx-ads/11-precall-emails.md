@@ -460,7 +460,7 @@ See you there.
 P.S. If you want to see Tom's posts and his inbox for yourself, I broke down his whole case in a short video: [LINK: TOM VIDEO]
 ```
 
-### Email 10: Objection 2, "My clients aren't on LinkedIn" (v1, 26 Oct)
+### Email 10: Objection 2, "My clients aren't on LinkedIn" (v1, 26 Oct, Heik asked for all the rest without changes)
 
 Answer first (they almost always are, they just never see you), then three founders who said it in their own words: Marcus in full (Alex's "he was half right" turn), Elena and Dave in two or three lines each. Subject line leads with the outcome (learned rule 1). 65 million decision makers is V2's stat (ad 2.1); FAQ 7 still says 130 million and needs the same update. Honest line from the VSL's Who It's For (B2B, selling to businesses on LinkedIn). About 420 words, long because it carries three cases.
 
@@ -524,6 +524,252 @@ See you there.
 - Alex
 
 P.S. If you want to see their posts and numbers for yourself, I broke down all three cases in short videos: [LINK: MARCUS VIDEO], [LINK: ELENA VIDEO], [LINK: DAVE VIDEO]
+```
+
+### Email 11: The guarantee (v1, 26 Oct)
+
+Ecom MBA's guarantee shape: the promise as the subject line, "something most… won't put in writing", the terms, why we do it, what counts, what we need from them, close. Terms in Heik's VSL words ("If we don't book you 30 qualified calls in the next 90 days… We keep working for you, at no extra cost, until we do"), the rest from FAQ 6. The honest line is Alex's own from Mike's video: Mike's 52 is the high end, most land closer to 30.
+
+```
+SL: we keep working until you get your 30 calls
+
+Hey {{first_name}},
+
+I want to tell you about something most LinkedIn agencies won't put in writing…
+
+If we don't book you 30 qualified calls in the next 90 days…
+
+We keep working for you, at no extra cost, until we do.
+
+And that's written into your contract.
+
+The way I see it, booked calls are the whole reason you'd work with us…
+
+So if they're not there yet, we don't send you a report full of impressions and move on.
+
+We keep going until they are.
+
+A qualified call means [DEFINITION, e.g. a decision maker who fits your ICP, books a call with you, and shows up]…
+
+And we agree on what your ICP looks like together in onboarding, so there's no grey area later.
+
+Now, most of our clients land right around 30 calls in their first 90 days, same as I did on my own LinkedIn…
+
+Some go way past it, like Mike, who runs a tech recruiting agency and booked 52 qualified calls with hiring managers in his first 90 days…
+
+But that's on the high end, and 30 is the number we put in writing.
+
+All we need from you is that you or your sales team actually take the calls we book.
+
+And just so we're clear, we guarantee the calls, not the deals…
+
+But when every one of them already knows, likes and trusts your company, that's a very different call than a cold lead.
+
+On our call, I'll walk you through exactly how the guarantee would work for your company.
+
+See you there.
+
+- Alex
+```
+
+Alex: the qualified call definition, the contract terms, and "most LinkedIn agencies won't put in writing".
+
+### Email 12: Objection 3, "Will it sound like me?" (v1, 26 Oct)
+
+FAQ 3's answer, now with proof: Dave (video 5), whose 30 years in packaging became the posts, and the comment that became a three-year contract. Shikha's "showing off every day" worry gets one line. Same opening pattern as email 7 (their question, why it comes up, the short answer).
+
+```
+SL: "will the posts actually sound like me?"
+
+Hey {{first_name}},
+
+"Will the posts actually sound like me, and not like AI?"
+
+It's one of the first things founders ask me on our calls…
+
+And the short answer is yes, because they're written by our team, from your own stories and opinions, not by AI.
+
+We sit down with you once, for about an hour, and get the stuff you'd only ever say to a client on a sales call…
+
+Your stories, your opinions, and how you actually explain what you do.
+
+Then our writers write every post from that, in the way you talk, with no buzzwords and no AI-speak.
+
+Like with Dave, who runs a 60-person industrial packaging company…
+
+We took his 30 years in packaging and wrote posts about what his clients lose money on, like damaged shipments, freight costs and margins…
+
+Stuff nobody could write without 30 years in that business.
+
+And a VP of operations at a food manufacturer commented on one of them, asking to compare notes…
+
+Which later became a three-year supply contract.
+
+It won't read like you're showing off every day either…
+
+Most of your posts are about the problems your ICP deals with, not about you.
+
+And you can look over every post before it goes live, and 95% get approved the first time.
+
+On our call, I'll show you a few posts we've written for founders in a market like yours.
+
+See you there.
+
+- Alex
+```
+
+### Email 13: Objection 4, "We already have SDRs" (v1, 26 Oct)
+
+Kevin (video 7), told as a case study, so the subject line leads with the outcome (rule 1). Alex's turn from the video: his SDRs were cold-emailing VPs who'd never heard of him. The ending is worded differently from Tom's ("keep them") so the two don't read the same. Note for the SDR question: in Kevin's case, his own SDRs worked the warm DMs.
+
+```
+SL: how Kevin added $480,000 in pipeline on top of his outbound
+
+Hey {{first_name}},
+
+Let me tell you about Kevin…
+
+He's the co-founder of a 30-person logistics software company, and when he first came to us, his SDRs were already doing outbound.
+
+So he wasn't sure why he'd need LinkedIn on top of that.
+
+But his SDRs were sending thousands of cold emails to VPs of logistics who'd never heard of him…
+
+And his LinkedIn wasn't helping, because all he posted was product updates, release notes and team celebrations, which got about 500 impressions each, mostly from his own team.
+
+So we made Kevin the voice on freight costs, not just his product…
+
+Because people trust a person long before they trust a feature list.
+
+And our media engine reacted to every post in the first 15 minutes, so they reached the logistics leaders he sells to, not just his own team.
+
+Like one post on why freight spend is so high…
+
+It got over 25,000 impressions, with supply chain leaders asking for the data in the comments.
+
+In his first 90 days, Kevin booked 30 qualified demos…
+
+By his eighth month, LinkedIn had built $480,000 in pipeline, and three of those deals have already closed…
+
+And his SDRs now open half their calls with, "Did you see Kevin's post?"
+
+All it took from Kevin was one hour of onboarding, and about 10 minutes a month looking over his posts.
+
+So if you already have SDRs doing outbound, LinkedIn doesn't replace them…
+
+It makes sure the people they reach out to already know who you are.
+
+On our call, we'll look at how you're doing outbound right now, and how LinkedIn would fit in next to it.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see Kevin's posts and numbers for yourself, I broke down his whole case in a short video: [LINK: KEVIN VIDEO]
+```
+
+### Email 14: The media engine and account safety (v1, 26 Oct)
+
+FAQ 4's answer, with V2's "we've built" wording (as in email 4) and Rachel's per-post jump as the proof (340 impressions a post before, 34,000 on one post after). Left out on purpose: "everything runs within LinkedIn's terms" (FAQ 4 v1 says it, but Alex warned "in theory it isn't a practice LinkedIn supports", so it can't go in writing until he signs off). Added: "real accounts, not bots" (Rachel asked if it was bots or ads), the access line (DM access next to "no password"), and "no ad spend on top" (from the sales calls).
+
+```
+SL: "is this safe for my LinkedIn account?"
+
+Hey {{first_name}},
+
+Founders ask me two things about our media engine…
+
+How it works, and whether it's safe for their LinkedIn account.
+
+So let me answer both.
+
+LinkedIn decides how far to push a post based on how many people react to it in the first few minutes…
+
+And normally, you'd need months of posting to build an audience big enough to do that.
+
+So over the years, we've built over 20 big LinkedIn brands with more than 3 million followers between them…
+
+These are real accounts with real followers, not bots…
+
+And they react to every one of your posts within the first 15 minutes, which tells LinkedIn your post is worth pushing…
+
+So it goes way past your own network, straight to the ICP leads you want to reach.
+
+That's how Rachel went from about 340 impressions a post to posts getting 34,000…
+
+Without spending months building an audience first.
+
+And yes, it's safe.
+
+We never need your password, and we've had zero account bans since we started…
+
+Any access our team needs runs through a secure login you control, and you can switch it off any time.
+
+It's also all included, so there's no ad spend on top.
+
+On our call, I'll show you exactly how the media engine would work for your posts.
+
+See you there.
+
+- Alex
+```
+
+Alex, word for word: the whole safety section (no password, zero bans, the access line, real accounts), and whether anything can be said about LinkedIn's terms.
+
+### Email 15: Case study 3, John (v1, 26 Oct)
+
+The "someone on my team already posts" segment, told through John (video 2). Outcome subject line tied to the doubt (rule 1). Different turn from Rachel's: John posted a lot, so the point is that posting more never fixes it; who you write for, distribution and a next step on every post do. "10 hours a month" in the transcript is written as 10 minutes, like every other case. No "last email" line, since the sequence stops whenever the call happens.
+
+```
+SL: how John went from posting 5 times a week to 33 qualified calls a month
+
+Hey {{first_name}},
+
+Let me tell you about John…
+
+He runs a 20-person managed IT services firm, and he wasn't new to LinkedIn at all.
+
+He'd been posting 3 to 5 times a week for about a year, mostly cybersecurity tips…
+
+But his posts got about 200 impressions each, and the only people commenting were other IT providers, and vendors trying to sell him something.
+
+So posting more was never going to fix it…
+
+Because the problem wasn't how often he posted, it was who he was writing for.
+
+He was writing for other IT people, so the CEOs and COOs of 20 to 200 person companies he wanted to work with never saw a thing.
+
+So we started writing about what those decision makers actually lose sleep over, like downtime, cyber insurance and compliance…
+
+And every post had a clear next step, so the ones who were interested knew exactly what to do.
+
+Our media engine pushed every post out in the first 15 minutes…
+
+And from there, every conversation in his DMs was guided toward a qualified call.
+
+Like one post that said, "Your IT provider is not your security plan."
+
+It got over 38,000 impressions, and a COO at a 140-person logistics company commented, then messaged John and asked him for an audit.
+
+In his first 90 days, John booked 30 qualified calls, with over $180,000 in pipeline…
+
+By his sixth month, he was booking 33 qualified calls every month, with over $650,000 in pipeline…
+
+And now he's hiring a second sales engineer just to keep up.
+
+All it took from John was one hour of onboarding, and about 10 minutes a month looking over his posts.
+
+So if you or your team are already posting every week, you don't need to post more…
+
+You need your ICP to actually see it, and a clear next step when they do.
+
+On our call, we'll go through a few of your recent posts, and show you what we'd change so they start bringing in calls.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see John's posts and numbers for yourself, I broke down his whole case in a short video: [LINK: JOHN VIDEO]
 ```
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)

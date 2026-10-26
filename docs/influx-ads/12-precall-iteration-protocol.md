@@ -87,3 +87,12 @@ Fit
 - v1 sent 26 Oct.
 - What it did: objection in their words, short answer first ("they almost always are, they just never see you there"), Marcus in full with Alex's "half right" turn, Elena and Dave in two or three lines each with their own quotes, V2's 65 million decision makers, an honest line for B2C, a close about getting in front of their ICP, all three videos in the P.S. About 420 words.
 - Rule 1 applied: outcome subject line ("how Marcus signed $1.4 million from clients who "aren't on LinkedIn"").
+- Heik: "write all rest", no changes to 10.
+
+### Emails 11-15 (written in one go, 26 Oct)
+- 11 Guarantee: Ecom MBA's guarantee shape, Heik's VSL terms word for word, FAQ 6 for the rest, Mike's "high end, most land closer to 30" as the honest line. About 280 words.
+- 12 Sounds like me: email 7's opening pattern, FAQ 3's answer, Dave as proof, Shikha's "showing off" worry in one line. About 270 words.
+- 13 SDRs (Kevin): case study shape, outcome subject line (rule 1), an ending worded differently from Tom's so the two don't read the same. About 330 words.
+- 14 Media engine and safety: FAQ 4 with V2 wording, Rachel's per-post jump as proof (per post against per post, not per post against a 90-day total). Left out "within LinkedIn's terms" until Alex signs off, since he warned it isn't a practice LinkedIn supports. About 260 words.
+- 15 Already posting (John): case study shape, outcome subject line (rule 1), a different turn from Rachel's (posting more never fixes it). No "last email" line. About 370 words.
+- Self-checks that caught something: a 340-per-post vs 412,000-total comparison (misleading, swapped for 34,000 on one post); "supply chain leaders" twice in two lines (13); "actually" three times in three lines (12); two endings in a row on "keep them…" (9 and 13).
