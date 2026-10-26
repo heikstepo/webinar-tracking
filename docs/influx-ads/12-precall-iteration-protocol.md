@@ -59,3 +59,8 @@ Fit
 ### Email 5: All case studies and FAQ videos
 - v1 sent 26 Oct.
 - What it did: one link to the confirmation page, three cases named by the doubt they had going in (Rachel, Marcus, Tom), the range of industries so they look for theirs, the FAQ topics, one ask (pick the one closest to your company). About 170 words.
+- Heik asked for email 6 next with no changes, so v1 stands.
+
+### Email 6: Case study 1, Rachel
+- v1 sent 26 Oct.
+- What it did: App Acc's "let me tell you about…" story shape in the order of Alex's video (objection in her words, the real reason her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time), Alex's own turn ("that's not the same as LinkedIn not working"), ends on the reader, video in the P.S. About 300 words.

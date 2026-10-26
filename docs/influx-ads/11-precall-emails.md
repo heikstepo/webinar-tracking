@@ -194,7 +194,7 @@ See you there.
 
 Same open items as the VSL: "SDRs in your DMs" vs the case videos' "a simple DM process", and approval as optional vs nothing goes live without sign-off.
 
-### Email 5: All case studies and FAQ videos (v1, 26 Oct)
+### Email 5: All case studies and FAQ videos (v1, 26 Oct, Heik moved on to email 6 without changes)
 
 Heik: "just a quick email sending them to the page with all case studies and FAQ videos, the confirmation page". Ecom MBA's due diligence hub shape, cut down: one link, three cases named by the doubt they had (so they can find themselves), the range of industries, the FAQ topics, one ask. Rachel, Marcus and Tom get their own emails later (6, 10, 9), so here they only get one line each.
 
@@ -231,6 +231,62 @@ See you there.
 ```
 
 Needs: all 11 client case videos and the FAQ videos on the confirmation page, and Alex's OK to name the clients.
+
+### Email 6: Case study 1, Rachel (v1, 26 Oct)
+
+The ICP's "got nothing when they tried", told through Rachel (video 6). App Acc's "let me tell you about Simon" story shape, in the order of Alex's video: her objection in her own words, why her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time. Alex's line "that's not the same as LinkedIn not working" is the turn. Ends on the reader ("if you've already tried LinkedIn and got nothing"), closes on the call, video in the P.S.
+
+```
+SL: "I posted for a whole year and got nothing"
+
+Hey {{first_name}},
+
+Let me tell you about Rachel…
+
+She runs a 25-person cybersecurity consultancy, and when she first came to us, she was pretty skeptical.
+
+She told me, "Look, I've already tried LinkedIn. I posted for a whole year and got nothing."
+
+And she wasn't wrong…
+
+She was writing detailed threat analysis, which is great content, but it was written for other security people…
+
+So her posts got about 340 impressions each, and the comments came from engineers at other firms, not from the CEOs and CFOs who actually hire her.
+
+Now, that's not the same as LinkedIn not working…
+
+It's a year of posting to the wrong audience, with nothing pushing those posts out.
+
+So we kept all of her expertise, and just changed the angle…
+
+Instead of threats and exploits, her posts talked about risk, insurance and compliance, in words a CFO actually understands.
+
+And our media engine reacted to every post in the first 15 minutes, so LinkedIn showed them to executives instead of burying them.
+
+Like one of her posts that just said, "Your cyber insurance renewal is now a security audit."
+
+It got 34,000 impressions, and a CFO with a renewal 60 days out commented on it, and then sent her a DM.
+
+In her first 90 days, Rachel booked 38 qualified calls, with over $210,000 in pipeline…
+
+Over 4,000 people viewed her profile, and the top job titles were CFO, CEO and COO, exactly who she sells to…
+
+And by her fifth month, she was booking 14 qualified calls every month.
+
+Her part in all of this was one hour of onboarding, and about 10 minutes a month looking over her posts.
+
+So if you've already tried LinkedIn and got nothing, like Rachel did…
+
+It doesn't mean it won't work for your company.
+
+On our call, we'll look at what you've posted so far, and show you exactly what we'd change for your company.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see Rachel's posts and numbers for yourself, I broke down her whole case in a short video: [LINK: RACHEL VIDEO]
+```
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
