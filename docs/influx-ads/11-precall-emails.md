@@ -232,7 +232,7 @@ See you there.
 
 Needs: all 11 client case videos and the FAQ videos on the confirmation page, and Alex's OK to name the clients.
 
-### Email 6: Case study 1, Rachel (v1, 26 Oct)
+### Email 6: Case study 1, Rachel (v1, 26 Oct, Heik moved on to email 7 without changes)
 
 The ICP's "got nothing when they tried", told through Rachel (video 6). App Acc's "let me tell you about Simon" story shape, in the order of Alex's video: her objection in her own words, why her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time. Alex's line "that's not the same as LinkedIn not working" is the turn. Ends on the reader ("if you've already tried LinkedIn and got nothing"), closes on the call, video in the P.S.
 
@@ -286,6 +286,64 @@ See you there.
 - Alex
 
 P.S. If you want to see Rachel's posts and numbers for yourself, I broke down her whole case in a short video: [LINK: RACHEL VIDEO]
+```
+
+### Email 7: Objection 1, "I don't have time" (v1, 26 Oct)
+
+The objection Alex hears most (7 of 9 calls; Priya's video calls it "the one that I hear the most"), answered first, then proved with Priya (video 4). Objection anatomy: the question in their words, the short answer, why it's true for them, the proof story, the time it took her, a reframe, the close. Email 4 already covered the mechanics, so this one only uses the pieces that take time off their plate (the onboarding hour, no blank page, the media engine keeping her visible without being online). Close reuses FAQ 1's.
+
+```
+SL: "I just don't have time to create content"
+
+Hey {{first_name}},
+
+"I just don't have time to create content."
+
+That's what I hear more than anything else on our calls…
+
+And the short answer is, with us you won't have to create any.
+
+Because when you're running a 7 or 8 figure company, writing posts at 11 at night is just never going to happen…
+
+That's why our team does all of it for you.
+
+Let me tell you about Priya…
+
+She's a partner at an 8-person fractional CFO firm, and she runs month-end close for a dozen clients…
+
+So before us, she'd share an economic outlook article on LinkedIn every now and then, whenever she remembered…
+
+And her posts got about 180 impressions each, mostly from other accountants.
+
+Then she gave us one hour.
+
+In that onboarding call, we pulled out her stories, her opinions, and how she actually thinks about cash flow…
+
+And from there, our team wrote every single post, so she never had to start from a blank page.
+
+Like one that said, "Your P&L says you're profitable, but your bank account disagrees."
+
+It got over 22,000 impressions, and the comments came from founders of 3 to 20 million dollar companies.
+
+And because our media engine pushed every post out in the first 15 minutes, she stayed visible without ever having to be online.
+
+In her first 90 days, Priya booked 30 qualified calls, with $120,000 in pipeline…
+
+By her sixth month, LinkedIn was bringing in 40% of her new clients…
+
+And now, founders reach out to her first, asking about cash flow, fundraising and board reporting, exactly the clients she wants.
+
+All she spends on it is about 10 minutes a month, looking over her posts.
+
+So if you don't have time for LinkedIn, this was built for you.
+
+On our call, I'll show you what your first month would look like on your end.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see Priya's posts and her inbox for yourself, I broke down her whole case in a short video: [LINK: PRIYA VIDEO]
 ```
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)

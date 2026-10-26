@@ -64,3 +64,9 @@ Fit
 ### Email 6: Case study 1, Rachel
 - v1 sent 26 Oct.
 - What it did: App Acc's "let me tell you about…" story shape in the order of Alex's video (objection in her words, the real reason her year of posting got nothing, what we changed, one post and the DM it brought in, the numbers, her time), Alex's own turn ("that's not the same as LinkedIn not working"), ends on the reader, video in the P.S. About 300 words.
+- Heik asked for email 7 next with no changes, so v1 stands.
+
+### Email 7: Objection 1, "I don't have time" (Priya)
+- v1 sent 26 Oct.
+- What it did: the objection in their words as the first line, the short answer straight after, why it's true for a 7 or 8 figure founder, Priya's story in the order of Alex's video, only the parts that take time off their plate (email 4 already did the mechanics), a reframe ("if you don't have time for LinkedIn, this was built for you"), FAQ 1's close, video in the P.S. About 330 words.
+- Self-check that caught something: "exactly" was in four lines; cut to one.
