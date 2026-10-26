@@ -49,3 +49,8 @@ Fit
 ### Email 3: Alex's own proof
 - v1 sent 26 Oct.
 - What it did: Ecom MBA's "before you trust anyone, see what they've built themselves" opener, numbers first (30 calls in 90 days, $1M+ pipeline, 27 calls a month, 8 in 10 clients from DMs), two short "before" lines that mirror the ICP (posting with no system, still living on referrals), the Authority Engine named, open loop into email 4, video 1 in the P.S.
+- Heik asked for email 4 next with no changes, so v1 stands.
+
+### Email 4: How it's structured and what you do
+- v1 sent 26 Oct.
+- What it did: opens by paying off email 3's open loop, gives the short version first (team does the work, one hour plus about 10 minutes a month), then follows the order of Heik's How It Works in the VSL, with the media engine in V2's "we've built" wording and their part in FAQ 1's wording. About 330 words.

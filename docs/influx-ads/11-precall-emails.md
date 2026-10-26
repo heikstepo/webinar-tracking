@@ -92,7 +92,7 @@ Sent from my iPhone
 
 Needs: replies go to Alex's real inbox (or someone answering as Alex, same day).
 
-### Email 3: Alex's own proof (v1, 26 Oct)
+### Email 3: Alex's own proof (v1, 26 Oct, Heik moved on to email 4 without changes)
 
 Ecom MBA's founder proof shape ("before you put your capital into building a brand with anyone, you should see what they've actually built themselves"), with the numbers from Alex's own case video (video 1). The two "before" lines are kept short on purpose: Alex used to post like the ICP does now and still lived on referrals and cold outreach, which is the ICP's exact situation. Ends on an open loop into email 4, and the video goes in the P.S.
 
@@ -135,6 +135,64 @@ See you on our call.
 
 P.S. If you want to see it for yourself, I recorded a short video where I break down my own posts, the numbers, and a typical week of booked calls in my calendar: [LINK: VIDEO 1]
 ```
+
+### Email 4: How it's structured and what you do (v1, 26 Oct)
+
+Pays off email 3's open loop ("how we'd run it for your company, and how little of your time it actually takes"). Ecom MBA's program structure shape (short version first, then step by step, then the close), told in the order of Heik's How It Works in the VSL so it all matches: onboarding hour, content plan every weekday, top/middle/bottom of funnel, media engine, SDRs in the DMs, their part, why we can guarantee 30. Media engine in V2's wording ("over the years we've built over 20 big LinkedIn brands"). Their part in FAQ 1's wording. No SHOW lines, no post examples (those live in the VSL).
+
+```
+SL: what working with us looks like, and your part in it
+
+Hey {{first_name}},
+
+Like I promised, I want to walk you through exactly what working with us looks like…
+
+So you know what to expect before our call.
+
+The short version is, our team does all of the work, and your part is one hour to start, and about 10 minutes a month after that.
+
+It all starts with one onboarding call…
+
+We sit down with you for about an hour and get your offer, your ICP, your stories, and how you talk about what you do.
+
+That's the only real time we need from you.
+
+From there, our team builds your content plan and writes your posts every weekday, in your voice…
+
+And every post has a job.
+
+Top of funnel posts get in front of ICP leads who've never heard of you, so they start following you…
+
+Middle of funnel posts build their trust, with your stories, your opinions, and your results…
+
+And bottom of funnel posts get them to message you about working with your company.
+
+Then, to make sure those posts actually reach your ICP, our media engine kicks in…
+
+Over the years, we've built over 20 big LinkedIn brands with more than 3 million followers between them…
+
+And they react to every one of your posts within the first 15 minutes, which tells LinkedIn your post is worth pushing…
+
+So it goes way past your own network, straight to the decision makers you want to reach, without you having to spend months building an audience first.
+
+And once ICP leads start messaging you, our SDRs handle those conversations in your DMs and book qualified calls straight into your calendar.
+
+If you want to look over your posts before they go live, that takes about 10 minutes a month…
+
+And all you or your sales team have to do is take the calls we book.
+
+That's the whole Authority Engine…
+
+And it's why we can guarantee 30 qualified calls in your first 90 days.
+
+On our call, I'll show you exactly what your content plan would look like, and which ICP leads we'd go after for your company.
+
+See you there.
+
+- Alex
+```
+
+Same open items as the VSL: "SDRs in your DMs" vs the case videos' "a simple DM process", and approval as optional vs nothing goes live without sign-off.
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
