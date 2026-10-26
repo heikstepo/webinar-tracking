@@ -29,7 +29,7 @@ Fit
 
 ## Learned from Heik
 
-(Nothing yet. First feedback round is email 1.)
+1. Case study subject lines lead with the outcome, not the objection (email 9). The client's name plus their result, tied to the doubt the email answers: "how Tom added $260,000 in new fees on top of his referrals", not "referrals already keep us busy". The objection lives in the body.
 
 ## Log
 
@@ -81,3 +81,4 @@ Fit
 ### Email 9: Case study 2, Tom
 - v1 sent 26 Oct.
 - What it did: Rachel's story shape, the turn from Alex's video (busy with the wrong clients, because with referrals you don't pick who comes in), the before, niche positioning, one post and the same-day DM, the numbers (25% to 65% ideal-fit calls, $260,000 in new annual fees), his time, an ending that keeps referrals instead of knocking them, a close about which clients they want more of. About 370 words.
+- Heik: "make the SL outcome based". v2 subject: "how Tom added $260,000 in new fees on top of his referrals". Body unchanged. Learned rule 1.

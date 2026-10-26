@@ -398,12 +398,12 @@ See you there.
 
 Same open items as the VSL and FAQ 2: Alex's OK on the range in writing, the 12-month price being lower per month, [$X], the guarantee terms, SDRs. New: Alex's OK on "about what they'd pay one marketing hire" (his card is $3,900-$8,900 a month).
 
-### Email 9: Case study 2, Tom (v1, 26 Oct)
+### Email 9: Case study 2, Tom (v2, 26 Oct: Heik, "make the SL outcome based")
 
 The ICP's "lives on referrals", told through Tom (video 9). Same story shape as Rachel's email, in the order of Alex's video. The turn is Alex's own: Tom wasn't short on work, he was busy with the wrong clients, because with referrals you don't pick who comes in. The ending doesn't knock referrals (the ICP likes them): keep them, LinkedIn decides who comes in next. $260,000 is "new annual fees", signed, as the video says.
 
 ```
-SL: "referrals already keep us busy"
+SL: how Tom added $260,000 in new fees on top of his referrals
 
 Hey {{first_name}},
 
