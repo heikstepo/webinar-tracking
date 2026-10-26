@@ -460,6 +460,72 @@ See you there.
 P.S. If you want to see Tom's posts and his inbox for yourself, I broke down his whole case in a short video: [LINK: TOM VIDEO]
 ```
 
+### Email 10: Objection 2, "My clients aren't on LinkedIn" (v1, 26 Oct)
+
+Answer first (they almost always are, they just never see you), then three founders who said it in their own words: Marcus in full (Alex's "he was half right" turn), Elena and Dave in two or three lines each. Subject line leads with the outcome (learned rule 1). 65 million decision makers is V2's stat (ad 2.1); FAQ 7 still says 130 million and needs the same update. Honest line from the VSL's Who It's For (B2B, selling to businesses on LinkedIn). About 420 words, long because it carries three cases.
+
+```
+SL: how Marcus signed $1.4 million from clients who "aren't on LinkedIn"
+
+Hey {{first_name}},
+
+"My clients aren't really on LinkedIn."
+
+I hear that a lot, especially from founders in construction, manufacturing, or local services…
+
+And the short answer is, they almost always are…
+
+They just never see you there.
+
+Like Marcus, who runs a 45-person commercial construction company.
+
+On our first call, he told me construction runs on relationships and bids, not LinkedIn…
+
+And he was half right.
+
+It does run on relationships, but the developers and facility directors he wanted are on LinkedIn every single day…
+
+They just never saw him there, because all he posted was project photos and thank-yous to his crew.
+
+So we started writing about what those owners actually worry about, like budgets, schedules and change orders…
+
+And in his first 90 days, he booked 30 qualified calls with developers and facility directors.
+
+By his ninth month, LinkedIn had brought in over $1.4 million in signed contracts…
+
+Including a $620,000 job from a developer who found him through one of his posts.
+
+It's the same with Elena, who runs a 120-person commercial cleaning company.
+
+She told me, "LinkedIn is for tech people, not local service businesses like mine."
+
+But the facility and property managers who hire her are on there every day…
+
+So in her first 90 days, she booked 30 qualified calls with them, and by month four, she'd signed $190,000 in new annual contracts.
+
+And Dave, who runs a 60-person industrial packaging company, told me, "I sell boxes. Nobody wants to read about boxes on LinkedIn."
+
+But his clients lose real money on damaged shipments and freight costs…
+
+So once his posts were about that, he booked 28 qualified calls in his first 90 days…
+
+And 12 months in, he's at over $1.1 million in pipeline, including a three-year supply contract.
+
+So with over 65 million decision makers on LinkedIn, your ICP is almost always on there…
+
+The only question is whether they ever see you.
+
+Now, if you sell to consumers and not to other businesses, we're probably not the right fit, and I'd rather tell you that now.
+
+On our call, we'll look at who your ICP is, and exactly how we'd get in front of them on LinkedIn.
+
+See you there.
+
+- Alex
+
+P.S. If you want to see their posts and numbers for yourself, I broke down all three cases in short videos: [LINK: MARCUS VIDEO], [LINK: ELENA VIDEO], [LINK: DAVE VIDEO]
+```
+
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
 Every video opens on the client's objection, gives the before and after, and ends with "if you've already booked a call, make sure you show up". Built for pre-call.

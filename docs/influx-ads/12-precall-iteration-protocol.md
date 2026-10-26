@@ -82,3 +82,8 @@ Fit
 - v1 sent 26 Oct.
 - What it did: Rachel's story shape, the turn from Alex's video (busy with the wrong clients, because with referrals you don't pick who comes in), the before, niche positioning, one post and the same-day DM, the numbers (25% to 65% ideal-fit calls, $260,000 in new annual fees), his time, an ending that keeps referrals instead of knocking them, a close about which clients they want more of. About 370 words.
 - Heik: "make the SL outcome based". v2 subject: "how Tom added $260,000 in new fees on top of his referrals". Body unchanged. Learned rule 1.
+
+### Email 10: Objection 2, "My clients aren't on LinkedIn" (Marcus, Elena, Dave)
+- v1 sent 26 Oct.
+- What it did: objection in their words, short answer first ("they almost always are, they just never see you there"), Marcus in full with Alex's "half right" turn, Elena and Dave in two or three lines each with their own quotes, V2's 65 million decision makers, an honest line for B2C, a close about getting in front of their ICP, all three videos in the P.S. About 420 words.
+- Rule 1 applied: outcome subject line ("how Marcus signed $1.4 million from clients who "aren't on LinkedIn"").
