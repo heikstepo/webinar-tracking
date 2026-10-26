@@ -54,3 +54,8 @@ Fit
 ### Email 4: How it's structured and what you do
 - v1 sent 26 Oct.
 - What it did: opens by paying off email 3's open loop, gives the short version first (team does the work, one hour plus about 10 minutes a month), then follows the order of Heik's How It Works in the VSL, with the media engine in V2's "we've built" wording and their part in FAQ 1's wording. About 330 words.
+- Heik asked for email 5 next with no changes, so v1 stands.
+
+### Email 5: All case studies and FAQ videos
+- v1 sent 26 Oct.
+- What it did: one link to the confirmation page, three cases named by the doubt they had going in (Rachel, Marcus, Tom), the range of industries so they look for theirs, the FAQ topics, one ask (pick the one closest to your company). About 170 words.

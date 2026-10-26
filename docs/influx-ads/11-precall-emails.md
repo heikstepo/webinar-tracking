@@ -136,7 +136,7 @@ See you on our call.
 P.S. If you want to see it for yourself, I recorded a short video where I break down my own posts, the numbers, and a typical week of booked calls in my calendar: [LINK: VIDEO 1]
 ```
 
-### Email 4: How it's structured and what you do (v1, 26 Oct)
+### Email 4: How it's structured and what you do (v1, 26 Oct, Heik moved on to email 5 without changes)
 
 Pays off email 3's open loop ("how we'd run it for your company, and how little of your time it actually takes"). Ecom MBA's program structure shape (short version first, then step by step, then the close), told in the order of Heik's How It Works in the VSL so it all matches: onboarding hour, content plan every weekday, top/middle/bottom of funnel, media engine, SDRs in the DMs, their part, why we can guarantee 30. Media engine in V2's wording ("over the years we've built over 20 big LinkedIn brands"). Their part in FAQ 1's wording. No SHOW lines, no post examples (those live in the VSL).
 
@@ -193,6 +193,44 @@ See you there.
 ```
 
 Same open items as the VSL: "SDRs in your DMs" vs the case videos' "a simple DM process", and approval as optional vs nothing goes live without sign-off.
+
+### Email 5: All case studies and FAQ videos (v1, 26 Oct)
+
+Heik: "just a quick email sending them to the page with all case studies and FAQ videos, the confirmation page". Ecom MBA's due diligence hub shape, cut down: one link, three cases named by the doubt they had (so they can find themselves), the range of industries, the FAQ topics, one ask. Rachel, Marcus and Tom get their own emails later (6, 10, 9), so here they only get one line each.
+
+```
+SL: every case study in one place
+
+Hey {{first_name}}, real quick…
+
+I put all of our case studies, and the answers to the questions I get asked the most, in one place for you:
+
+[LINK: CONFIRMATION PAGE]
+
+In there, you'll find short breakdowns of founders who weren't sure this would work for them either…
+
+Like Rachel, who posted for a whole year and got nothing, and then booked 38 qualified calls in her first 90 days with us…
+
+Marcus, who was sure his clients in commercial construction weren't on LinkedIn…
+
+Or Tom, whose referrals already kept his CPA firm busy.
+
+There are 11 of them, from IT services and cybersecurity to packaging, commercial cleaning and legal tech…
+
+So there's a good chance one of them looks a lot like your company.
+
+And there are also short videos where I answer things like how much of your time this takes, what it costs, and how the guarantee works.
+
+Just pick the one closest to your company, it only takes a few minutes…
+
+And if anything in there raises a question, bring it to our call.
+
+See you there.
+
+- Alex
+```
+
+Needs: all 11 client case videos and the FAQ videos on the confirmation page, and Alex's OK to name the clients.
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 
