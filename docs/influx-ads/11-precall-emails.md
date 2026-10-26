@@ -28,7 +28,7 @@ What gets better each round: 12-precall-iteration-protocol.md.
 
 ## Emails
 
-### Email 1: Gameplan (v1, 26 Oct, waiting on Heik's feedback)
+### Email 1: Gameplan (v1, 26 Oct, Heik moved on to email 2 without changes)
 
 Goes out right after booking. The VSL soft CTA's description of the call, the VSL CTA's "if it makes sense for both of us… no hard feelings", and the TY video's to-dos, so it all says the same thing. The reason we're selective is the guarantee, not Alex's time (the refs' "I physically can't take on more" doesn't fit a team-run DFY agency). [X] days to onboard is the VSL's placeholder.
 
@@ -75,6 +75,22 @@ And I'll see you soon.
 
 - Alex
 ```
+
+### Email 2: Engager (v1, 26 Oct)
+
+Same as both reference sequences, word for word in shape, because its whole job is a reply: a one-line question from Alex's own inbox gets answered, and once they've replied, the rest of the sequence lands in their main inbox, not promotions. "Our call" to match email 1. Goes out a few hours after email 1, or the next morning if the call is more than two days out.
+
+```
+SL: personal message for {{first_name}}
+
+Hey {{first_name}}, any questions before our call?
+
+- Alex
+
+Sent from my iPhone
+```
+
+Needs: replies go to Alex's real inbox (or someone answering as Alex, same day).
 
 ## Case study bank (Alex's 12 breakdown videos, received 26 Oct)
 

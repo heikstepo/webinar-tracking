@@ -39,4 +39,8 @@ Fit
 - Takeaway: one hub email early beats a hub email at the end, since later emails don't go out if the call comes first. No day-before or day-of email in this sequence.
 
 ### Email 1: Gameplan
-- v1 sent 26 Oct. Waiting on Heik's redone version.
+- v1 sent 26 Oct. Heik asked for email 2 next with no changes, so v1 stands for now.
+- What it did: the call described in the VSL soft CTA's words, the selective reason is the guarantee (not Alex's time), the VSL CTA's "no hard feelings" line, two to-dos (accept or forward the invite, bring the other decision makers), confirmation page videos, more emails coming.
+
+### Email 2: Engager
+- v1 sent 26 Oct. Kept to the reference shape on purpose: one line, "Sent from my iPhone".
