@@ -1,6 +1,6 @@
 # Influx VSL script (master)
 
-v2, 15 Oct 2026 (B2B pass after the split-screen VSL). Plays on the booking page, above the calendar. Alex to camera. Order (Heik, 15 Oct): offer, proof, soft CTA, situation + reframe, what working with us looks like, what it costs, who it's for, CTA. Open loop on the Authority Engine, closed in How It Works. v1 is kept below for reference.
+Source of truth: Heik's "Influx - VSL Script October 2026" doc, synced word for word on 26 Oct 2026 (his edits: the Situation benefits lines, "7 to 8 figure company", the CTA "I invite you to book a call with me personally"). Order: offer, proof, soft CTA, situation + reframe, how it works, what it costs, who it's for, CTA.
 
 Soft CTA and the reframe close approved by Heik (15 Oct). Placeholders in [brackets] until confirmed.
 - What It Costs (Heik, 15 Oct): Iron's range, not exact prices. "Mid to high four figures a month" covers Alex's card: $3,900-$4,900/month for one LinkedIn, $6,900-$8,900 with the company page. [$X] = average extra revenue in clients' first 90 days (Alex). If there's no average, fallback: "But if those 30 qualified calls turn into even one new client… / It pretty much pays for itself." Alex has to OK a price range in the VSL (his own VSL leaves price to the call). Guarantee (Heik, 15 Oct): "fully contractually guaranteed… If we don't book you 30 qualified calls in the next 90 days… We keep working for you, at no extra cost, until we do." "Contractually" means it has to be in Alex's contract. Alex has to sign off the terms: his 10 Oct doc says no guaranteed call numbers, his own VSL guaranteed 30 warm leads in 30 days "or you do not pay".
@@ -43,7 +43,6 @@ The way we do that is with what we call the Authority Engine…
 
 And in the next few minutes, I'll walk you through exactly how it works, who it's for, and what it costs.
 
-
 Proof
 
 First off, my name's Alex, I’m the founder of Influx…
@@ -63,9 +62,6 @@ Ryan in GovTech, [X] new followers, [X] booked calls and [$X] in revenue…
 [CLIENT 3] in [INDUSTRY], [RESULT]…
 
 And [CLIENT 4] in [INDUSTRY], [RESULT]…
-
-And that's exactly what we want to build for your company too…
-
 
 Soft CTA
 
@@ -89,24 +85,25 @@ And what working with us actually looks like.
 
 Because chances are, your company looks a lot like most of the ones we work with…
 
-
 Situation + Reframe
 
 Your company's doing well, and most of your new clients come from referrals or ads…
 
 And you've probably seen what LinkedIn does for other founders in your space…
 
-Prospects reaching out to them first…
+Inbound leads reaching out to them first…
 
-Already trusting them before the first call…
+A lot of trust being built with their leads…
 
-And new deals coming in without waiting on the next referral.
+Becoming a market authority which gets them incredible connections…
 
-But when you're running a company, there's just no time to post every day…
+And so on.
+
+But when you're running a 7 to 8 figure company, there's just no time to post every day…
 
 So maybe you've tried posting whenever you found a spare hour, handing it to your team, or even a ghostwriter…
 
-And all you got was a few likes from your own employees, and not one new client.
+And all you got was a few likes from your own employees, and not one buyer.
 
 And even the founders who do post usually make the same 3 mistakes.
 
@@ -130,8 +127,7 @@ Again, we call that the Authority Engine…
 
 And here's exactly what working with us looks like.
 
-
-What Working With Us Looks Like
+How It Works
 
 So, as soon as we onboard you…
 
@@ -167,7 +163,7 @@ And to convert that demand into booked calls, we’ll install SDRs into your DMs
 
 See how hands off this is on your end?
 
-All you’ll have to do is just approve the posts which is optional and take about 10 minutes a month… 
+All you’ll have to do is just approve the posts which is optional and take about 10 minutes a month…
 
 Linkedin will truly become an asset for you that just grows passively…
 
@@ -197,7 +193,6 @@ That’s the whole authority engine and how working with us will turn your Linke
 
 And also why we’re able to promise you rather aggressive results like 30 qualified booked calls in the next 90 days.
 
-
 What It Costs
 
 Now, as for what it costs…
@@ -222,7 +217,6 @@ We keep working for you, at no extra cost, until we do.
 
 But talking about the people we work with…
 
-
 Who It's For
 
 If you're under a million dollars a year, or you're just after followers and views, it's not for you.
@@ -231,12 +225,11 @@ It's for B2B companies doing over a million a year, selling to other businesses 
 
 Where every new client has a high LTV.
 
-
 CTA
 
-And if that sounds like your company…
+So if that sounds like you and you fall into that category of clients we work with at influx…
 
-Book a call with me right below this video.
+I invite you to book a call with me personally right below this video.
 
 You'll answer a few quick questions first, so I can look at your company and your LinkedIn before we talk…
 
@@ -244,7 +237,7 @@ Then on the call, we'll go through where you're at right now, and map out exactl
 
 If it makes sense for both of us, we'll get you onboarded within [X] days…
 
-And if it doesn't, I'll tell you that straight, no hard feelings.
+And if it doesn't, I'll tell you that as well, no hard feelings.
 
 So if you want us to build your LinkedIn brand to position you as THE market authority in your niche…
 
