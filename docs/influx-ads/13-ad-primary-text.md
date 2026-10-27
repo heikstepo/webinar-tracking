@@ -366,7 +366,7 @@ B2B founders:
 
 I've been named a LinkedIn Top Voice, and a lot of the founders I work with first found me through my posts.
 
-At my company Influx, we run the same approach for other B2B founders, completely done for you…
+At my company Influx, we also run LinkedIn for other B2B founders, completely done for you…
 
 Like Scott, who runs an IT consulting firm…
 
@@ -376,7 +376,7 @@ We sit down with them once, write and post for them in their voice, and our team
 
 All they do is look over their posts, which takes a few minutes a month.
 
-So if you want the same approach on your LinkedIn…
+So if you'd like to see how we'd run your LinkedIn…
 
 Click the link below and I'll show you how it works.
 
