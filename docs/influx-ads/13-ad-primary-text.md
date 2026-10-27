@@ -426,9 +426,11 @@ So the more niche your market is, the easier it can be to stand out.
 
 Like Ryan, who runs sales at a GovTech company, selling to government, about as niche and regulated as it gets…
 
-The first 4 posts we wrote for them got 1,059 engagements, compared to 79 on their last 4.
+We started writing his posts about what government decision makers actually care about…
 
-The process is the same no matter how niche you are.
+And those posts started conversations with people in his market.
+
+The process is the same no matter how niche you are…
 
 We write and post for you in your voice, about what your ICP cares about.
 
