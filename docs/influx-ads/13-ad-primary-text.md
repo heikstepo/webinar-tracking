@@ -4,8 +4,10 @@ One primary text and one headline per creative in "Influx - Ad Scripts October 2
 
 v2, 27 Oct 2026. Heik on v1: "'So if you want the results of posting every day, without ever writing a post yourself…' this is already pushing it, too unsafe. Also don't use language like 'will book them on your calendar'. We gotta be extra safe. You can also cut some stuff to make these shorter."
 
-The rules for these (copy rules 136 and 137):
-- Say what we do, never what they'll get. We write and post in your voice, our media engine reacts within 15 minutes to help posts reach people outside your network, our team handles the conversations with the people who engage, you spend about 10 minutes a month. Nothing about results, booked calls, clients, closing faster or becoming the authority.
+v3, 27 Oct 2026. Heik: "Never use media engine, that's unsafe, and the whole concept too." No media engine, no brands reacting to posts, no pushing posts in the algorithm or "reaching people outside your network", in any primary text or headline.
+
+The rules for these (copy rules 136, 137, 138):
+- Say what we do, never what they'll get. We sit down with you for an hour, we write and post in your voice about what your ICP cares about, our team handles the conversations with the people who engage, you spend about 10 minutes a month. Nothing about results, booked calls, clients, closing faster or becoming the authority.
 - No "book", "booked calls" or "into your calendar" for what we do (the only "book" left is the reader booking a call with Alex in 4.1). No 30 calls in 90 days, no "guaranteed".
 - No money: no revenue callouts, no "7/8 figures", no [$X], no income. Callout is "B2B founders:".
 - Proof only as engagement numbers from the scripts, and only in the case study ads and 5.3 and 6.2 (Scott: 8 to 512 engagements on 3 posts; Ryan: 79 to 1,059 on 4). Scott's "532 potential clients showing interest" is out.
@@ -15,7 +17,7 @@ The rules for these (copy rules 136 and 137):
 Disclaimer:
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 
-Open: "decision makers" in 2.1 is 65 million (LinkedIn's own figure, Alex's V2), not the script's 130 million. The media engine is "partnered with" to match these scripts; the pre-call emails use V2's "we've built". One version for everything (Alex).
+Open: "decision makers" in 2.1 is 65 million (LinkedIn's own figure, Alex's V2), not the script's 130 million. 3.1's video is about the media engine, so its primary text now talks about a small following instead (the same problem, without the concept).
 
 ## Ad Group 1: Problems growing on LinkedIn
 
@@ -66,7 +68,7 @@ So nobody reacts, and LinkedIn rarely shows those posts to anyone new.
 
 At my company Influx, we write and post for you about the topics your ICP actually cares about…
 
-And our media engine, over 20 big LinkedIn brands, reacts to every post within the first 15 minutes, to help it reach people outside your own network.
+Posts that give them a reason to stop scrolling and read.
 
 So if your LinkedIn posts barely go anywhere…
 
@@ -90,9 +92,7 @@ It's usually because they were writing for likes and followers.
 
 At my company Influx, we write for your ICP instead…
 
-Posts in your voice, about the topics they actually care about.
-
-Our media engine helps those posts reach people outside your own network…
+Posts in your voice, about the topics they actually care about…
 
 And our team handles the conversations with the ICP leads who engage.
 
@@ -122,7 +122,7 @@ But building a LinkedIn brand takes time most founders don't have…
 
 So at my company Influx, we do it completely done for you.
 
-We write and post for you in your voice, help those posts reach people outside your network, and our team handles the conversations with the people who engage.
+We write and post for you in your voice, and our team handles the conversations with the people who engage.
 
 So if you don't want your growth depending only on referrals…
 
@@ -189,26 +189,30 @@ Click the link below and I'll show you how we'd run it for you.
 
 ## Ad Group 3: Mechanism
 
-### 3.1 Media engine
+### 3.1 Media engine (video), primary text on a small following
 
-Headline: How Our Media Engine Gets Your Posts Seen
+Headline: Small LinkedIn Following? Why It Matters Less Than You Think
 
 ```
 B2B founders:
 
-LinkedIn decides how far to push a post partly based on how many people engage with it early…
+A lot of founders hold off on LinkedIn because they don't have much of a following yet…
 
-So if you're starting out with a small audience, your posts often don't get far.
+But for a B2B company, a big following isn't the point.
 
-That's why at my company Influx, we run what we call a media engine.
+What matters is whether your posts are worth reading for your ICP.
 
-We've partnered with over 20 big LinkedIn brands with more than 3 million followers between them…
+So at my company Influx, we sit down with you once for about an hour…
 
-And they react to every post we publish for our clients within the first 15 minutes, to help it reach more people outside their own network.
+And from there, our team writes and posts for you in your voice, about the topics your ICP actually cares about…
 
-So you don't have to spend months building an audience first.
+And handles the conversations with the people who engage.
 
-Click the link below and I'll show you how the media engine works, and how we'd run your LinkedIn, completely done for you.
+All you do is look over your posts, which takes about 10 minutes a month.
+
+So if you've been holding off on LinkedIn because your following is small…
+
+Click the link below and I'll show you how we'd run it for you, completely done for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -258,9 +262,7 @@ Here's how it works.
 
 We sit down with you once for about an hour…
 
-Then our team writes and posts for you in your voice, from impact cards and infographics to long-form posts.
-
-Our media engine reacts to every post within the first 15 minutes, to help it reach people outside your own network…
+Then our team writes and posts for you in your voice, from impact cards and infographics to long-form posts…
 
 And our team handles the conversations with the people who engage.
 
@@ -288,7 +290,7 @@ So here's what we do.
 
 We take what works on my LinkedIn and run it on yours, completely done for you.
 
-Our team writes and posts in your voice, our media engine helps every post reach people outside your network, and our team handles the conversations with the people who engage.
+Our team writes and posts in your voice, and handles the conversations with the people who engage.
 
 All you do is look over your posts, which takes about 10 minutes a month.
 
@@ -314,9 +316,7 @@ Before working with us, his LinkedIn was mostly reposts of company articles and 
 
 So we sat down with Scott for about an hour, and from then on, our team wrote every post in his voice, about what his ICP cares about.
 
-Our media engine reacted to every post in the first 15 minutes…
-
-And 3 of our posts got 512 engagements.
+3 of our posts got 512 engagements.
 
 All Scott had to do was look over his posts, about 10 minutes a month.
 
@@ -338,15 +338,13 @@ Ryan runs sales at a GovTech company, and before working with us, their LinkedIn
 
 A case study graphic, a stock photo, a webinar clip and a hiring post, with 79 engagements combined.
 
-So first, we changed what they posted…
+So we changed what they posted…
 
-Our team wrote posts in Ryan's voice about what government decision makers actually care about.
+Our team wrote posts in Ryan's voice about what government decision makers actually care about…
 
-Then our media engine reacted to every one in the first 15 minutes.
+And the first 4 of those posts got 1,059 engagements.
 
-The first 4 of those posts got 1,059 engagements.
-
-And that's in GovTech, a niche, regulated market.
+That's in GovTech, a niche, regulated market.
 
 So if you've been posting on LinkedIn and it's going nowhere…
 
@@ -426,7 +424,7 @@ The first 4 posts we wrote for them got 1,059 engagements, compared to 79 on the
 
 The process is the same no matter how niche you are.
 
-We write and post for you in your voice, about what your ICP cares about, and our media engine helps every post reach people outside your network.
+We write and post for you in your voice, about what your ICP cares about.
 
 So if you think your market is too niche for LinkedIn…
 
