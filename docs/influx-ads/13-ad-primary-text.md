@@ -1,17 +1,21 @@
 # Influx ad primary text + headlines (master)
 
-27 Oct 2026. One primary text and one headline per creative in "Influx - Ad Scripts October 2026 (3)". Heik's brief: about the ad (the script is the inspiration), extra safe, no income or dollar figures (no "$X", no "8 figures", no revenue callouts), shorter, a clear disclaimer at the end of each. Length and shape from his example: a callout line, short lines, one client or one idea, the offer, "click the link below", disclaimer.
+One primary text and one headline per creative in "Influx - Ad Scripts October 2026 (3)".
 
-What was taken out of the scripts to keep them safe:
-- Every revenue or income line: "over a million dollars a year", "7 figure business", "well over 8 figures", "[$X] in revenue", "over 7 figures a year comes from my LinkedIn". The callout is "B2B founders:" instead.
-- "Guaranteed". The 30 qualified calls in 90 days stays only in the two offer ads (4.1, 4.2), said as the offer, not as a guarantee.
-- [X] placeholders. Case proof only uses non-money numbers already in the scripts (Scott: 8 to 512 engagements, 532 potential clients showing interest in 12 weeks; Ryan: 79 to 1,059 engagements).
-- 2.1's "130 million decision makers" is now 65 million (LinkedIn's own figure, and Alex's V2).
+v2, 27 Oct 2026. Heik on v1: "'So if you want the results of posting every day, without ever writing a post yourself…' this is already pushing it, too unsafe. Also don't use language like 'will book them on your calendar'. We gotta be extra safe. You can also cut some stuff to make these shorter."
 
-Same disclaimer on every ad:
+The rules for these (copy rules 136 and 137):
+- Say what we do, never what they'll get. We write and post in your voice, our media engine reacts within 15 minutes to help posts reach people outside your network, our team handles the conversations with the people who engage, you spend about 10 minutes a month. Nothing about results, booked calls, clients, closing faster or becoming the authority.
+- No "book", "booked calls" or "into your calendar" for what we do (the only "book" left is the reader booking a call with Alex in 4.1). No 30 calls in 90 days, no "guaranteed".
+- No money: no revenue callouts, no "7/8 figures", no [$X], no income. Callout is "B2B founders:".
+- Proof only as engagement numbers from the scripts, and only in the case study ads and 5.3 and 6.2 (Scott: 8 to 512 engagements on 3 posts; Ryan: 79 to 1,059 on 4). Scott's "532 potential clients showing interest" is out.
+- Claims about LinkedIn are hedged ("partly based on", "often", "can be easier").
+- About 100-140 words plus the disclaimer. Same disclaimer on every ad.
+
+Disclaimer:
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 
-Open: the media engine is "partnered with" here to match these scripts; the pre-call emails use V2's "we've built". One version for everything (Alex).
+Open: "decision makers" in 2.1 is 65 million (LinkedIn's own figure, Alex's V2), not the script's 130 million. The media engine is "partnered with" to match these scripts; the pre-call emails use V2's "we've built". One version for everything (Alex).
 
 ## Ad Group 1: Problems growing on LinkedIn
 
@@ -22,97 +26,79 @@ Headline: Your LinkedIn, Done For You (See How It Works)
 ```
 B2B founders:
 
-You already know you should be posting on LinkedIn…
+You know you should be posting on LinkedIn…
 
-It brings in clients outside your referrals, makes you the authority in your space, and cold leads close a lot faster.
-
-But for any of that to happen, you've got to post pretty much every day…
-
-And when you're running a company, there's just no time for that.
+But when you're running a company, there's just no time to post every day.
 
 So at my company Influx, we take the whole thing off your plate.
 
 We sit down with you once for about an hour…
 
-And from there, our team writes and posts for you every day, in your voice.
+And from there, our team writes and posts for you in your voice.
 
-That builds your LinkedIn brand and positions you as the authority in your market…
-
-And once your ICP starts engaging, we reach out and book the calls straight into your calendar.
+When your ICP engages, our team follows up with them in your DMs.
 
 All you do is look over your posts, which takes about 10 minutes a month.
 
-So if you want the results of posting every day, without ever writing a post yourself…
+So if you want to stay active on LinkedIn without writing a single post yourself…
 
-Click the link below and I'll show you exactly how we'd run your LinkedIn for you.
+Click the link below and I'll show you how we'd run it for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
 
 ### 1.2 Not getting engagement
 
-Headline: Why Your LinkedIn Posts Go Nowhere (And the Fix)
+Headline: Why Most Company Posts on LinkedIn Go Nowhere
 
 ```
 B2B founders:
 
-Most founders who get nothing out of LinkedIn post the same kind of thing…
+Most company posts on LinkedIn look the same…
 
 "Excited to welcome our new Head of Sales…"
 
 Or "Book a call with our team today…"
 
-And it makes sense, it's what's going on in your company…
+It's what's going on in your company, but outside of it, nobody really cares.
 
-But outside your company, nobody really cares about it.
+So nobody reacts, and LinkedIn rarely shows those posts to anyone new.
 
-So nobody reacts, and when nobody reacts, LinkedIn doesn't show your post to anyone new.
+At my company Influx, we write and post for you about the topics your ICP actually cares about…
 
-That's why at my company Influx, we write and post for you about the things your ICP actually cares about…
-
-And to make sure it gets seen outside your own network, we've partnered with over 20 big LinkedIn brands that react to your posts within the first 15 minutes.
-
-That tells LinkedIn your post is worth pushing, so it reaches way more of your ICP.
-
-Like Ryan, who runs sales at a GovTech company…
-
-His company's last 4 posts got 79 engagements combined, and the first 4 we wrote got 1,059.
+And our media engine, over 20 big LinkedIn brands, reacts to every post within the first 15 minutes, to help it reach people outside your own network.
 
 So if your LinkedIn posts barely go anywhere…
 
-Click the link below and I'll show you how we'd fix that, completely done for you.
+Click the link below and I'll show you how we'd run it for you, completely done for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
 
 ### 1.3 Hired help, didn't sound like you
 
-Headline: LinkedIn That Books Sales Calls, Not Just Likes
+Headline: Tried Outsourcing LinkedIn? See What We Do Differently
 
 ```
 B2B founders:
 
-If you've handed your LinkedIn off to someone on your team, to AI, or to a freelancer…
+If you've handed your LinkedIn to someone on your team, to AI, or to a freelancer…
 
-And it never brought in any actual business…
+And it never brought in any real business…
 
-It's because most of them only optimize for likes and followers.
+It's usually because they were writing for likes and followers.
 
-And that can even hurt you, because your ICP sees those posts and thinks, "what is this person even talking about?"
+At my company Influx, we write for your ICP instead…
 
-When you're after qualified sales calls, you approach LinkedIn completely differently.
+Posts in your voice, about the topics they actually care about.
 
-At my company Influx, we write and post for you about the topics your ICP actually cares about…
+Our media engine helps those posts reach people outside your own network…
 
-We get those posts in front of your ICP, not just your own network…
+And our team handles the conversations with the ICP leads who engage.
 
-And our team books the ICP leads who engage straight into your calendar.
+So if you've already tried handing off your LinkedIn…
 
-That's the difference between a ghostwriter chasing engagement, and a LinkedIn that brings in sales calls.
-
-So if you've already tried handing off your LinkedIn and it didn't work…
-
-Click the link below and I'll show you what we'd do differently for your company.
+Click the link below and I'll show you what we'd do differently.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -121,32 +107,26 @@ Click the link below and I'll show you what we'd do differently for your company
 
 ### 2.1 Only referrals
 
-Headline: Grow Beyond Referrals With LinkedIn (Done For You)
+Headline: Beyond Referrals: Your LinkedIn, Done For You
 
 ```
 B2B founders:
 
 Referrals are the best thing that can happen to a B2B company…
 
-But they're also the most dangerous thing to rely on.
+But you can't control when the next one comes, or if it comes at all.
 
-A founder I spoke to recently gets about 90% of their business from referrals, and told me, "One day, that referral pipeline might dry up."
+That's why a lot of founders look at LinkedIn, with over 65 million decision makers on there.
 
-And they're right, because you can't control when the next referral comes, or if it comes at all.
-
-That's why it makes sense to build a pipeline of inbound leads on top of your referrals…
-
-And for a B2B company, the easiest place to do that is LinkedIn, with over 65 million decision makers on there.
-
-But building a LinkedIn brand that brings in calls takes time most founders don't have…
+But building a LinkedIn brand takes time most founders don't have…
 
 So at my company Influx, we do it completely done for you.
 
-We write and post for you every day in your voice, get those posts in front of ICP leads who've never heard of you, and book the ones who engage straight into your calendar.
+We write and post for you in your voice, help those posts reach people outside your network, and our team handles the conversations with the people who engage.
 
-So if you don't want your growth depending on the next referral…
+So if you don't want your growth depending only on referrals…
 
-Click the link below and I'll show you how we'd build your LinkedIn into an inbound pipeline.
+Click the link below and I'll show you how it works.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -158,27 +138,23 @@ Headline: Be the Name Your ICP Sees Every Week
 ```
 B2B founders:
 
-Some of your competitors are winning deals that should've been yours…
+When a prospect sees a competitor's posts in their feed every week…
 
-Simply because they're active on LinkedIn and you're not.
+After a while, they start to know, like and trust them.
 
-When a prospect sees your competitor's posts in their feed every week, after a while they know, like and trust them…
+So when they need what you sell, that's who they think of first, even if your company is the better choice.
 
-So when they finally need what you sell, they book a call with them, even if your company is the better choice.
+Staying active on LinkedIn is hard when you're running a company…
 
-Now, staying active on LinkedIn is hard when you're running a company…
+So at my company Influx, we handle it for you.
 
-That's why at my company Influx, we handle it for you.
+We write and post for you in your voice, about what your ICP actually cares about…
 
-We write and post for you every day, in your voice, about what your ICP actually cares about…
-
-We make sure those posts reach your ICP outside your own network…
-
-And when they start engaging, our team books them straight into your calendar.
+And our team handles the conversations with the people who engage.
 
 So if you want to be the one your ICP sees every week…
 
-Click the link below and I'll show you how we'd build your LinkedIn brand, completely done for you.
+Click the link below and I'll show you how we'd run your LinkedIn, completely done for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -190,29 +166,23 @@ Headline: What Prospects See When They Look You Up
 ```
 B2B founders:
 
-Every time a prospect books a call with you, they look you up first…
+Before a prospect gets on a call with you, they'll usually look you up…
 
 Especially your LinkedIn and your company page.
 
 In fact, 84% of B2B executives use social media like LinkedIn to help decide who they buy from.
 
-So think about what happens if there's barely anything there…
+So what do they find when there's barely anything there?
 
-It gets a lot harder to close them, and they might even go with a competitor who has been active on LinkedIn.
+At my company Influx, we write and post for you in your voice, for your ICP…
 
-But when you're running a company, there's no time left in the day to write posts.
+Without you ever writing a post or stepping in front of a camera.
 
-That's where we come in.
+All you do is look over your posts, which takes about 10 minutes a month.
 
-At my company Influx, we write and post for you every day, in your voice, for your ICP, without you ever writing a post or stepping in front of a camera.
+So if you want your LinkedIn to reflect the company you've built…
 
-Our media engine helps every post reach more of your ICP…
-
-And when people start engaging, we book them straight into your calendar.
-
-So if you want your LinkedIn to back you up when prospects look you up…
-
-Click the link below and I'll show you how we'd build it for you.
+Click the link below and I'll show you how we'd run it for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -226,29 +196,19 @@ Headline: How Our Media Engine Gets Your Posts Seen
 ```
 B2B founders:
 
-Ever wonder why most founders never grow on LinkedIn?
+LinkedIn decides how far to push a post partly based on how many people engage with it early…
 
-Because only a few people in their network react to their posts.
-
-LinkedIn decides how far to push a post based on how many people engage with it early…
-
-So if you start out with a small audience, it's going to be rough.
+So if you're starting out with a small audience, your posts often don't get far.
 
 That's why at my company Influx, we run what we call a media engine.
 
 We've partnered with over 20 big LinkedIn brands with more than 3 million followers between them…
 
-And every time we publish a post for a client, they react to it within the first 15 minutes, so LinkedIn pushes it out to way more business people, which means your ICP.
+And they react to every post we publish for our clients within the first 15 minutes, to help it reach more people outside their own network.
 
-Like Ryan, who runs sales at a GovTech company…
+So you don't have to spend months building an audience first.
 
-His company's last 4 posts got 79 engagements combined, and the first 4 we wrote and published got 1,059…
-
-Without spending months building an audience first.
-
-So if you want to build your LinkedIn into an inbound acquisition channel…
-
-Click the link below and I'll show you how we'd run it for you, completely done for you.
+Click the link below and I'll show you how the media engine works, and how we'd run your LinkedIn, completely done for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -260,27 +220,23 @@ Headline: Why We Don't Chase Viral Posts on LinkedIn
 ```
 B2B founders:
 
-Going viral on LinkedIn is the worst thing that can happen if you want clients from it…
+Going viral on LinkedIn isn't the goal if you run a B2B company…
 
 When a post goes viral, LinkedIn shows it to pretty much everyone, and most of them will never become a client.
 
-So you get thousands of views, a bunch of new followers, and not a single call booked.
+That's why at my company Influx, we don't write for views…
 
-That's why at my company Influx, we don't optimize for views…
+We write for your ICP, with a mix of top, middle and bottom of funnel content…
 
-We treat your LinkedIn as a proper acquisition channel, built to attract ICP prospects, nurture them through your content, and get them to book a call.
+Designed to get their attention, build their trust, and invite them to start a conversation with you.
 
-For that, we use a mix of top, middle and bottom of funnel content in different formats.
+Will you go viral with this? Probably not…
 
-Now, will you go viral and get millions of views with this? Probably not…
+But views aren't what you're after anyway.
 
-But if you want LinkedIn to be an actual acquisition channel for your company, that's not what you should be looking for anyway.
+So if you want a LinkedIn built around your ICP instead of views…
 
-What you want is qualified sales calls with people who can actually hire you.
-
-So if that's what you're after…
-
-Click the link below and I'll show you how we'd build that for you, completely done for you.
+Click the link below and I'll show you how we'd run it for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -289,32 +245,28 @@ Click the link below and I'll show you how we'd build that for you, completely d
 
 ### 4.1 Straight offer + mechanism
 
-Headline: LinkedIn Brand + Booked Calls, Done For You
+Headline: Done-For-You LinkedIn for B2B Founders
 
 ```
 B2B founders:
 
-We'll build your LinkedIn brand and book 30 qualified calls into your calendar in the next 90 days…
+We build and run your LinkedIn brand completely done for you…
 
-Completely done for you, without you ever writing a single post or stepping in front of a camera.
+Without you ever writing a single post or stepping in front of a camera.
 
 Here's how it works.
 
-First, we write and post for you in your voice, from infographics and impact cards to long-form posts.
+We sit down with you once for about an hour…
 
-Second, to make sure they're seen outside your own network, we've partnered with over 20 big LinkedIn brands that react to every post within the first 15 minutes…
+Then our team writes and posts for you in your voice, from impact cards and infographics to long-form posts.
 
-So LinkedIn pushes it out to way more of your ICP.
+Our media engine reacts to every post within the first 15 minutes, to help it reach people outside your own network…
 
-And once they start engaging, our team books them straight into your calendar…
-
-So by the time someone gets on a call with you, they already know, like and trust your company.
+And our team handles the conversations with the people who engage.
 
 All you do is look over your posts, which takes about 10 minutes a month.
 
-So if you want us to build your LinkedIn brand and book those calls for you…
-
-Click the link below to see exactly how it works, and book a call with me.
+Click the link below to see exactly how it works, and book a call with me if it sounds like a fit.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -326,27 +278,19 @@ Headline: What Works on My LinkedIn, Done on Yours
 ```
 B2B founders:
 
-Most of my company's new clients come from one place…
+I've been a LinkedIn Top Voice twice, with over 60,000 followers…
 
-My LinkedIn posts.
+And a lot of the founders I work with first found me through my posts.
 
-I've been a LinkedIn Top Voice twice, built up over 60,000 followers, and a lot of the founders I work with found me just from reading my posts.
+But you're not going to write a post every day while you're running a company.
 
-You probably already know LinkedIn can do the same for you…
+So here's what we do.
 
-But you're not going to sit down and write a post every day while you're running a company.
+We take what works on my LinkedIn and run it on yours, completely done for you.
 
-So here's our offer.
-
-We take everything that works on my LinkedIn and do it on yours, completely done for you…
-
-And book 30 qualified calls into your calendar in the next 90 days.
-
-We write and post for you every day in your voice, our media engine pushes every post out in the first 15 minutes, and our team books the people who engage straight into your calendar.
+Our team writes and posts in your voice, our media engine helps every post reach people outside your network, and our team handles the conversations with the people who engage.
 
 All you do is look over your posts, which takes about 10 minutes a month.
-
-So if you know LinkedIn works, and you just don't have the time to do it yourself…
 
 Click the link below and I'll show you exactly how we'd do it for you.
 
@@ -362,29 +306,23 @@ Headline: How Scott Grew His LinkedIn From Almost Zero
 ```
 B2B founders:
 
-This IT consulting CEO went from almost no LinkedIn following to 532 potential clients showing interest in 12 weeks.
+Here's what we did for Scott, the CEO of an IT consulting firm.
 
-Here's how.
-
-Before working with us, Scott's LinkedIn was mostly reposts of company articles and product announcements…
+Before working with us, his LinkedIn was mostly reposts of company articles and product announcements…
 
 3 of those posts got 8 engagements combined.
 
-So we sat down with Scott for about an hour…
+So we sat down with Scott for about an hour, and from then on, our team wrote every post in his voice, about what his ICP cares about.
 
-And from then on, our team wrote every post in his voice, about what his ICP actually cares about.
+Our media engine reacted to every post in the first 15 minutes…
 
-Then our media engine reacted to every post in the first 15 minutes, so LinkedIn pushed it out to more of his ICP.
+And 3 of our posts got 512 engagements.
 
-3 of our posts got 512 engagements…
-
-43 potential clients showed interest in the first month, and 532 by week 12.
-
-And all Scott had to do was look over his posts, about 10 minutes a month.
+All Scott had to do was look over his posts, about 10 minutes a month.
 
 So if you're starting from almost nothing on LinkedIn too…
 
-Click the link below and I'll show you how we'd build your LinkedIn the same way, completely done for you.
+Click the link below and I'll show you how we'd run yours.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -398,53 +336,45 @@ B2B founders:
 
 Ryan runs sales at a GovTech company, and before working with us, their LinkedIn looked like most B2B companies'…
 
-A case study graphic, a stock photo, a webinar clip and a hiring post.
-
-4 posts in total, with just 79 engagements combined.
-
-Nobody outside the company cares about a hiring post, so nobody engaged, and LinkedIn never showed those posts to anyone new.
+A case study graphic, a stock photo, a webinar clip and a hiring post, with 79 engagements combined.
 
 So first, we changed what they posted…
 
 Our team wrote posts in Ryan's voice about what government decision makers actually care about.
 
-Then we made sure those posts got seen, with over 20 big LinkedIn brands reacting to every one in the first 15 minutes.
+Then our media engine reacted to every one in the first 15 minutes.
 
-4 of those posts got 1,059 engagements, compared to 79 before…
+The first 4 of those posts got 1,059 engagements.
 
-And once their ICP started engaging, our team booked them straight into Ryan's calendar.
+And that's in GovTech, a niche, regulated market.
 
-That's in GovTech, a niche, regulated market where most people think LinkedIn doesn't even work.
+So if you've been posting on LinkedIn and it's going nowhere…
 
-So if you've already been posting on LinkedIn and it's going nowhere…
-
-Click the link below and I'll show you how we'd do it for you.
+Click the link below and I'll show you how we'd run yours.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
 
 ### 5.3 Alex and Influx
 
-Headline: The LinkedIn System Behind My Company, Done For You
+Headline: The LinkedIn System I Run on My Own Company
 
 ```
 B2B founders:
 
-My LinkedIn brings in most of the new clients for my company, Influx…
+I've been named a LinkedIn Top Voice twice, with a following of over 60,000 that's mostly my ICP…
 
-I've been named a LinkedIn Top Voice twice, and built a following of over 60,000 that's mostly my ICP.
+And a lot of the founders I work with first found me through my posts.
 
-And we've used that exact done-for-you system for dozens of B2B founders…
+We run that same system for dozens of B2B founders, completely done for you…
 
-Like Scott, who runs an IT consulting firm, and went from almost no following to 532 potential clients showing interest in 12 weeks…
+Like Scott, who runs an IT consulting firm, where 3 of our posts got 512 engagements, compared to 8 on his last 3…
 
 Or Ryan, who runs sales at a GovTech company, where our posts got 13 times the engagement of their old ones.
 
-We create and post content for them every day, build up their LinkedIn brand, and run it as an inbound acquisition channel that books calls straight into their calendar.
+So if you want that same system running on your LinkedIn…
 
-So if you want the same system running on your LinkedIn…
-
-Click the link below and I'll show you exactly how we'd build it for you, completely done for you.
+Click the link below and I'll show you how it works.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
@@ -458,11 +388,9 @@ Headline: LinkedIn Posts That Sound Like You, Not AI
 ```
 B2B founders:
 
-If your LinkedIn posts sound like AI, you're better off not posting at all…
+If your LinkedIn posts sound like AI, people notice…
 
-People notice, and one post that reads like ChatGPT can cost you more credibility than any amount of reach is worth.
-
-So it makes sense that the first thing founders ask me is, "Won't this sound like AI, and not like me?"
+So the first thing founders ask me is, "Won't this sound like AI, and not like me?"
 
 Here's how we make sure it doesn't.
 
@@ -472,9 +400,7 @@ Then our writers write your posts from that, in the way you actually talk, with 
 
 Nothing goes live until you've signed off on it, and 95% of our posts get approved the first time.
 
-So you're not rewriting anything, you read it, and it already sounds like you.
-
-So if you want posts your ICP actually believes came from you…
+So if you want posts that actually sound like you…
 
 Click the link below and I'll show you how we'd run your LinkedIn, completely done for you.
 
@@ -483,34 +409,28 @@ Click the link below and I'll show you how we'd run your LinkedIn, completely do
 
 ### 6.2 "Does LinkedIn really work in my industry?"
 
-Headline: Why Niche B2B Markets Win on LinkedIn
+Headline: LinkedIn for Niche B2B Markets (See How It Works)
 
 ```
 B2B founders:
 
-I've got a real problem with the idea that LinkedIn only works for certain industries…
+A lot of founders think LinkedIn only works in certain industries…
 
-Because the more niche your market is, the easier it is to stand out.
+But in most B2B markets, almost nobody is posting anything worth reading…
 
-In most B2B industries, almost nobody is posting anything worth reading…
+So the more niche your market is, the easier it can be to stand out.
 
-So if you show up every day with genuinely good posts, you can become the authority in your market pretty fast.
-
-Just look at Ryan, who runs sales at a GovTech company, selling to government, about as niche and regulated as it gets…
+Like Ryan, who runs sales at a GovTech company, selling to government, about as niche and regulated as it gets…
 
 The first 4 posts we wrote for them got 1,059 engagements, compared to 79 on their last 4.
 
-The process is the same every time, no matter how niche you are.
+The process is the same no matter how niche you are.
 
-We write and post for you every day, in your voice, about what your ICP cares about…
-
-Our media engine pushes every post out in the first 15 minutes…
-
-And when your ICP engages, our team books them straight into your calendar.
+We write and post for you in your voice, about what your ICP cares about, and our media engine helps every post reach people outside your network.
 
 So if you think your market is too niche for LinkedIn…
 
-Click the link below and I'll show you how we'd build it for you, completely done for you.
+Click the link below and I'll show you how we'd run it for you.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
