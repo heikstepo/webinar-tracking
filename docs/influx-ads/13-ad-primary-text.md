@@ -301,52 +301,56 @@ Click the link below and I'll show you exactly how we'd do it for you.
 
 ## Ad Group 5: Results / proof
 
-### 5.1 Scott, from almost zero
+v4 (27 Oct), Heik: "redo the ad group 5 ones, headlines and copy, for no numbers, even softer and more safe". No numbers at all: no engagement counts, no followers, no "twice", no hour or minutes (one call, a few minutes a month). The client part is what we changed, and the only outcome is a soft one ("people in his market started engaging").
 
-Headline: How Scott Grew His LinkedIn From Almost Zero
+### 5.1 Scott
+
+Headline: How We Run LinkedIn for an IT Consulting CEO
 
 ```
 B2B founders:
 
-Here's what we did for Scott, the CEO of an IT consulting firm.
+Here's how we run LinkedIn for Scott, the CEO of an IT consulting firm.
 
 Before working with us, his LinkedIn was mostly reposts of company articles and product announcements…
 
-3 of those posts got 8 engagements combined.
+And not many people were engaging with them.
 
-So we sat down with Scott for about an hour, and from then on, our team wrote every post in his voice, about what his ICP cares about.
+So we sat down with Scott once…
 
-3 of our posts got 512 engagements.
+And from then on, our team wrote his posts in his voice, about the topics his ICP actually cares about.
 
-All Scott had to do was look over his posts, about 10 minutes a month.
+And people in his market started engaging with them.
 
-So if you're starting from almost nothing on LinkedIn too…
+All Scott does is look over his posts, which takes a few minutes a month.
+
+So if your LinkedIn is mostly reposts and announcements too…
 
 Click the link below and I'll show you how we'd run yours.
 
 (Disclaimer: Results vary depending on your company, market and offer. Past client results don't guarantee future results. Not affiliated with or endorsed by LinkedIn.)
 ```
 
-### 5.2 Ryan, already posting
+### 5.2 Ryan
 
-Headline: From 79 to 1,059 Engagements in GovTech
+Headline: How We Run LinkedIn for a GovTech Company
 
 ```
 B2B founders:
 
 Ryan runs sales at a GovTech company, and before working with us, their LinkedIn looked like most B2B companies'…
 
-A case study graphic, a stock photo, a webinar clip and a hiring post, with 79 engagements combined.
+A case study graphic, a stock photo, a webinar clip and a hiring post.
 
 So we changed what they posted…
 
-Our team wrote posts in Ryan's voice about what government decision makers actually care about…
+Our team started writing posts in Ryan's voice about what government decision makers actually care about…
 
-And the first 4 of those posts got 1,059 engagements.
+And those posts started conversations with people in their market.
 
-That's in GovTech, a niche, regulated market.
+That's in GovTech, a niche, regulated market where a lot of people think LinkedIn doesn't work.
 
-So if you've been posting on LinkedIn and it's going nowhere…
+So if you're already posting on LinkedIn and want it to speak to your ICP…
 
 Click the link below and I'll show you how we'd run yours.
 
@@ -355,22 +359,24 @@ Click the link below and I'll show you how we'd run yours.
 
 ### 5.3 Alex and Influx
 
-Headline: The LinkedIn System I Run on My Own Company
+Headline: How We Run LinkedIn for B2B Founders (Real Examples)
 
 ```
 B2B founders:
 
-I've been named a LinkedIn Top Voice twice, with a following of over 60,000 that's mostly my ICP…
+I've been named a LinkedIn Top Voice, and a lot of the founders I work with first found me through my posts.
 
-And a lot of the founders I work with first found me through my posts.
+At my company Influx, we run the same approach for other B2B founders, completely done for you…
 
-We run that same system for dozens of B2B founders, completely done for you…
+Like Scott, who runs an IT consulting firm…
 
-Like Scott, who runs an IT consulting firm, where 3 of our posts got 512 engagements, compared to 8 on his last 3…
+Or Ryan, who runs sales at a GovTech company.
 
-Or Ryan, who runs sales at a GovTech company, where our posts got 13 times the engagement of their old ones.
+We sit down with them once, write and post for them in their voice, and our team handles the conversations with the people who engage.
 
-So if you want that same system running on your LinkedIn…
+All they do is look over their posts, which takes a few minutes a month.
+
+So if you want the same approach on your LinkedIn…
 
 Click the link below and I'll show you how it works.
 
