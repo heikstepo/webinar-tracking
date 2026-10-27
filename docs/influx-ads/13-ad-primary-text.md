@@ -133,7 +133,7 @@ Click the link below and I'll show you how it works.
 
 ### 2.2 Competitors with a better LinkedIn presence
 
-Headline: Be the Name Your ICP Sees Every Week
+Headline: Competitors Posting on LinkedIn? We Write & Post Yours
 
 ```
 B2B founders:
@@ -161,7 +161,7 @@ Click the link below and I'll show you how we'd run your LinkedIn, completely do
 
 ### 2.3 Prospects look you up and find nothing
 
-Headline: What Prospects See When They Look You Up
+Headline: 84% of B2B Execs Check Social Media Before Buying
 
 ```
 B2B founders:
