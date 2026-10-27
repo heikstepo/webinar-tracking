@@ -275,7 +275,7 @@ Click the link below to see exactly how it works, and book a call with me if it 
 
 ### 4.2 Alex's LinkedIn + done for you
 
-Headline: What Works on My LinkedIn, Done on Yours
+Headline: The Way I Run My LinkedIn, Done For You
 
 ```
 B2B founders:
@@ -288,7 +288,7 @@ But you're not going to write a post every day while you're running a company.
 
 So here's what we do.
 
-We take what works on my LinkedIn and run it on yours, completely done for you.
+So we run your LinkedIn the way I run mine, completely done for you.
 
 Our team writes and posts in your voice, and handles the conversations with the people who engage.
 
