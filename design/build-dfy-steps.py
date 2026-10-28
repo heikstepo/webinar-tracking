@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""The Amazon example: every step, and the done-for-you element on each.
+"""The Amazon example: the first few steps in full, then the rest trailing off.
 
-Two rows against one gutter. The row labels are said once on the left rather
-than repeated on all five cards, and both of them are words from the script.
+Three tiers, getting smaller left to right. The first four steps are shown in
+full because they are the ones that explain the idea. Paid ads is named but
+drawn smaller and without a card, and after it the track carries plain dots
+that shrink and fade: there are more steps, and this is not a list of them.
 
-The fifth card is empty on purpose. The paid ads step is named but its
-done-for-you element is never stated, so there is nothing to put there. A
-dashed outline says the slot exists and is waiting, where writing a plausible
-line would put words in the mouth of someone who did not say them.
+That also settles a slot that could not be filled honestly. Paid ads is named
+in the script but its done-for-you element is never stated, and an empty card
+under it read as a mistake where a smaller marker reads as the tail starting.
 
     ./build-dfy-steps.py    writes the 16:9 slide
 """
@@ -18,15 +19,20 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # (step, done-for-you element, disc colour). The ramp is one thing increasing,
 # matching the step map this sits next to.
-STEPS = [
+SHOWN = [
     ('Pick Product', 'We pick 3 proven products, you choose one', '#C5DDFA'),
     ('Branding', 'AI branding templates', '#A7CCF7'),
     ('Build Store', 'We build the store with AI', '#7CB2F3'),
     ('Influencers', 'We connect you to our influencer network', '#4A97EF'),
-    ('Paid Ads', '', '#0071E3'),
 ]
+TAIL = ('Paid Ads', '#2E87E8')
 
-COL, GAP, GUTTER = 254, 30, 290
+# (centre, radius, colour) — closing up and fading as they go.
+DOTS = [(1496, 16, '#9DBCE0'), (1558, 13, '#AFC6E4'),
+        (1612, 10.5, '#BFD2E8'), (1658, 8.5, '#CBDAEC'), (1690, 7, '#D6E1F0')]
+
+COL, GAP, GUTTER = 240, 28, 290
+TAIL_X = 1412
 
 TPL = '''<!doctype html>
 <html lang="en">
@@ -37,8 +43,8 @@ TPL = '''<!doctype html>
 <link rel="stylesheet" href="../../voice-quiet.css">
 <style>
 /* ============================================================================
-   See build-dfy-steps.py. Two rows against one gutter, so "Steps" and "Done
-   for you" are each said once instead of five times.
+   See build-dfy-steps.py. Three tiers getting smaller: the steps that explain
+   the idea, the one that starts the tail, and the dots that say it goes on.
    ========================================================================= */
 @page { size: 1920px 1080px; margin: 0; }
 
@@ -53,7 +59,7 @@ TPL = '''<!doctype html>
   font-size: 34px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-3);
 }
 
-/* Behind the discs, from the first centre to the last. */
+/* Behind the discs, from the first centre out to the last dot. */
 .dfy__line {
   position: absolute; left: __L0__px; width: __LW__px; top: 41px; height: 3px;
   background: #D2D8E0; border-radius: 2px;
@@ -71,21 +77,27 @@ TPL = '''<!doctype html>
   font-size: 34px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
 }
 
-/* The done-for-you element. One fixed height, so the five bottoms line up
+/* The step that starts the tail: same thing, one size down and no card. */
+.dfy__tail { position: absolute; top: 9px; width: 220px; transform: translateX(-50%); }
+.dfy__tail .dfy__n { width: 64px; height: 64px; font-size: 30px; }
+.dfy__tail .dfy__step { margin-top: 16px; font-size: 28px; color: var(--ink-2); }
+
+/* No number, no name. They are a quantity, not entries. */
+.dfy__dot { position: absolute; border-radius: 50%; }
+
+/* The done-for-you element. One fixed height, so the four bottoms line up
    however long the line inside is. */
 .dfy__card {
   position: absolute; top: 186px; width: __COL__px; height: 170px;
   box-sizing: border-box;
   display: flex; align-items: center; justify-content: center;
-  padding: 22px 26px; border-radius: 20px;
+  padding: 22px 24px; border-radius: 20px;
   background: #E4EFFD;
 }
 .dfy__card p {
   margin: 0; text-align: center;
   font-size: 25px; font-weight: 500; line-height: 1.36; color: #1E4E8C;
 }
-/* The slot that was never filled in. */
-.dfy__card--open { background: none; border: 3px dashed #BFD6F7; }
 </style>
 </head>
 <body>
@@ -102,6 +114,10 @@ TPL = '''<!doctype html>
 
 __COLS__
 
+__TAIL__
+
+__DOTS__
+
   </div>
 
 </section>
@@ -114,7 +130,7 @@ COLUMN = '''    <div class="dfy__col" style="left:%(x)dpx">
       <span class="dfy__n" style="background:%(chip)s">%(n)d</span>
       <h3 class="dfy__step">%(step)s</h3>
     </div>
-    <div class="dfy__card%(mod)s" style="left:%(x)dpx">%(body)s</div>'''
+    <div class="dfy__card" style="left:%(x)dpx"><p>%(body)s</p></div>'''
 
 
 def _check_class_collisions():
@@ -129,20 +145,28 @@ def _check_class_collisions():
 
 _check_class_collisions()
 
-cols = []
-for i, (step, dfy, chip) in enumerate(STEPS):
-    cols.append(COLUMN % dict(
-        x=GUTTER + i * (COL + GAP), n=i + 1, chip=chip, step=step,
-        mod='' if dfy else ' dfy__card--open',
-        body='<p>%s</p>' % dfy if dfy else ''))
+cols = '\n\n'.join(
+    COLUMN % dict(x=GUTTER + i * (COL + GAP), n=i + 1, chip=chip,
+                  step=step, body=dfy)
+    for i, (step, dfy, chip) in enumerate(SHOWN))
+
+tail = ('    <div class="dfy__tail" style="left:%dpx">\n'
+        '      <span class="dfy__n" style="background:%s">%d</span>\n'
+        '      <h3 class="dfy__step">%s</h3>\n'
+        '    </div>' % (TAIL_X, TAIL[1], len(SHOWN) + 1, TAIL[0]))
+
+dots = '\n'.join(
+    '    <span class="dfy__dot" style="left:%gpx; top:%gpx; width:%gpx; '
+    'height:%gpx; background:%s"></span>' % (x - r, 42.5 - r, r * 2, r * 2, c)
+    for x, r, c in DOTS)
 
 first = GUTTER + COL // 2
-last = GUTTER + (len(STEPS) - 1) * (COL + GAP) + COL // 2
-
 out = (TPL.replace('__COL__', str(COL))
           .replace('__L0__', str(first))
-          .replace('__LW__', str(last - first))
-          .replace('__COLS__', '\n\n'.join(cols)))
+          .replace('__LW__', str(DOTS[-1][0] - first))
+          .replace('__COLS__', cols)
+          .replace('__TAIL__', tail)
+          .replace('__DOTS__', dots))
 
 path = 'slides/wide/wide-dfy-steps.html'
 open(path, 'w').write(out)

@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="../../voice-quiet.css">
 <style>
 /* ============================================================================
-   See build-dfy-steps.py. Two rows against one gutter, so "Steps" and "Done
-   for you" are each said once instead of five times.
+   See build-dfy-steps.py. Three tiers getting smaller: the steps that explain
+   the idea, the one that starts the tail, and the dots that say it goes on.
    ========================================================================= */
 @page { size: 1920px 1080px; margin: 0; }
 
@@ -23,13 +23,13 @@
   font-size: 34px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-3);
 }
 
-/* Behind the discs, from the first centre to the last. */
+/* Behind the discs, from the first centre out to the last dot. */
 .dfy__line {
-  position: absolute; left: 417px; width: 1136px; top: 41px; height: 3px;
+  position: absolute; left: 410px; width: 1280px; top: 41px; height: 3px;
   background: #D2D8E0; border-radius: 2px;
 }
 
-.dfy__col { position: absolute; top: 0; width: 254px; }
+.dfy__col { position: absolute; top: 0; width: 240px; }
 
 .dfy__n {
   display: flex; align-items: center; justify-content: center;
@@ -41,21 +41,27 @@
   font-size: 34px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
 }
 
-/* The done-for-you element. One fixed height, so the five bottoms line up
+/* The step that starts the tail: same thing, one size down and no card. */
+.dfy__tail { position: absolute; top: 9px; width: 220px; transform: translateX(-50%); }
+.dfy__tail .dfy__n { width: 64px; height: 64px; font-size: 30px; }
+.dfy__tail .dfy__step { margin-top: 16px; font-size: 28px; color: var(--ink-2); }
+
+/* No number, no name. They are a quantity, not entries. */
+.dfy__dot { position: absolute; border-radius: 50%; }
+
+/* The done-for-you element. One fixed height, so the four bottoms line up
    however long the line inside is. */
 .dfy__card {
-  position: absolute; top: 186px; width: 254px; height: 170px;
+  position: absolute; top: 186px; width: 240px; height: 170px;
   box-sizing: border-box;
   display: flex; align-items: center; justify-content: center;
-  padding: 22px 26px; border-radius: 20px;
+  padding: 22px 24px; border-radius: 20px;
   background: #E4EFFD;
 }
 .dfy__card p {
   margin: 0; text-align: center;
   font-size: 25px; font-weight: 500; line-height: 1.36; color: #1E4E8C;
 }
-/* The slot that was never filled in. */
-.dfy__card--open { background: none; border: 3px dashed #BFD6F7; }
 </style>
 </head>
 <body>
@@ -76,29 +82,34 @@
     </div>
     <div class="dfy__card" style="left:290px"><p>We pick 3 proven products, you choose one</p></div>
 
-    <div class="dfy__col" style="left:574px">
+    <div class="dfy__col" style="left:558px">
       <span class="dfy__n" style="background:#A7CCF7">2</span>
       <h3 class="dfy__step">Branding</h3>
     </div>
-    <div class="dfy__card" style="left:574px"><p>AI branding templates</p></div>
+    <div class="dfy__card" style="left:558px"><p>AI branding templates</p></div>
 
-    <div class="dfy__col" style="left:858px">
+    <div class="dfy__col" style="left:826px">
       <span class="dfy__n" style="background:#7CB2F3">3</span>
       <h3 class="dfy__step">Build Store</h3>
     </div>
-    <div class="dfy__card" style="left:858px"><p>We build the store with AI</p></div>
+    <div class="dfy__card" style="left:826px"><p>We build the store with AI</p></div>
 
-    <div class="dfy__col" style="left:1142px">
+    <div class="dfy__col" style="left:1094px">
       <span class="dfy__n" style="background:#4A97EF">4</span>
       <h3 class="dfy__step">Influencers</h3>
     </div>
-    <div class="dfy__card" style="left:1142px"><p>We connect you to our influencer network</p></div>
+    <div class="dfy__card" style="left:1094px"><p>We connect you to our influencer network</p></div>
 
-    <div class="dfy__col" style="left:1426px">
-      <span class="dfy__n" style="background:#0071E3">5</span>
+    <div class="dfy__tail" style="left:1412px">
+      <span class="dfy__n" style="background:#2E87E8">5</span>
       <h3 class="dfy__step">Paid Ads</h3>
     </div>
-    <div class="dfy__card dfy__card--open" style="left:1426px"></div>
+
+    <span class="dfy__dot" style="left:1480px; top:26.5px; width:32px; height:32px; background:#9DBCE0"></span>
+    <span class="dfy__dot" style="left:1545px; top:29.5px; width:26px; height:26px; background:#AFC6E4"></span>
+    <span class="dfy__dot" style="left:1601.5px; top:32px; width:21px; height:21px; background:#BFD2E8"></span>
+    <span class="dfy__dot" style="left:1649.5px; top:34px; width:17px; height:17px; background:#CBDAEC"></span>
+    <span class="dfy__dot" style="left:1683px; top:35.5px; width:14px; height:14px; background:#D6E1F0"></span>
 
   </div>
 
