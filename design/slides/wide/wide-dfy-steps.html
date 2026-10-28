@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Every step, done for you</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-dfy-steps.py. Two rows against one gutter, so "Steps" and "Done
+   for you" are each said once instead of five times.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.dfy { position: relative; width: 1700px; height: 356px; text-align: left; }
+
+/* Named once, on the left, for the whole row. */
+.dfy__side {
+  position: absolute; left: 0; width: 250px; margin: 0;
+  transform: translateY(-50%); text-align: right;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-3);
+}
+
+/* Behind the discs, from the first centre to the last. */
+.dfy__line {
+  position: absolute; left: 417px; width: 1136px; top: 41px; height: 3px;
+  background: #D2D8E0; border-radius: 2px;
+}
+
+.dfy__col { position: absolute; top: 0; width: 254px; }
+
+.dfy__n {
+  display: flex; align-items: center; justify-content: center;
+  width: 84px; height: 84px; margin: 0 auto; border-radius: 50%;
+  font-size: 38px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+.dfy__step {
+  margin: 20px 0 0; text-align: center;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+
+/* The done-for-you element. One fixed height, so the five bottoms line up
+   however long the line inside is. */
+.dfy__card {
+  position: absolute; top: 186px; width: 254px; height: 170px;
+  box-sizing: border-box;
+  display: flex; align-items: center; justify-content: center;
+  padding: 22px 26px; border-radius: 20px;
+  background: #E4EFFD;
+}
+.dfy__card p {
+  margin: 0; text-align: center;
+  font-size: 25px; font-weight: 500; line-height: 1.36; color: #1E4E8C;
+}
+/* The slot that was never filled in. */
+.dfy__card--open { background: none; border: 3px dashed #BFD6F7; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="dfy">
+
+    <div class="dfy__line"></div>
+
+    <p class="dfy__side" style="top:73px">Steps</p>
+    <p class="dfy__side" style="top:271px">Done for you</p>
+
+    <div class="dfy__col" style="left:290px">
+      <span class="dfy__n" style="background:#C5DDFA">1</span>
+      <h3 class="dfy__step">Pick Product</h3>
+    </div>
+    <div class="dfy__card" style="left:290px"><p>We pick 3 proven products, you choose one</p></div>
+
+    <div class="dfy__col" style="left:574px">
+      <span class="dfy__n" style="background:#A7CCF7">2</span>
+      <h3 class="dfy__step">Branding</h3>
+    </div>
+    <div class="dfy__card" style="left:574px"><p>AI branding templates</p></div>
+
+    <div class="dfy__col" style="left:858px">
+      <span class="dfy__n" style="background:#7CB2F3">3</span>
+      <h3 class="dfy__step">Build Store</h3>
+    </div>
+    <div class="dfy__card" style="left:858px"><p>We build the store with AI</p></div>
+
+    <div class="dfy__col" style="left:1142px">
+      <span class="dfy__n" style="background:#4A97EF">4</span>
+      <h3 class="dfy__step">Influencers</h3>
+    </div>
+    <div class="dfy__card" style="left:1142px"><p>We connect you to our influencer network</p></div>
+
+    <div class="dfy__col" style="left:1426px">
+      <span class="dfy__n" style="background:#0071E3">5</span>
+      <h3 class="dfy__step">Paid Ads</h3>
+    </div>
+    <div class="dfy__card dfy__card--open" style="left:1426px"></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
