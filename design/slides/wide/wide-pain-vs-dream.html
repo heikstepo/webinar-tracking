@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Running from pain, walking to the dream</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-pain-vs-dream.py. Both figures run the same way across the frame,
+   so the only difference left is what is moving them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 0; background: var(--ground); }
+
+.scene { width: 1920px; height: 1080px; }
+.scene svg { display: block; width: 100%; height: 100%; }
+
+/* The split itself. */
+.scene .split { stroke: #B9C0C9; stroke-width: 3; }
+
+/* ---- people -------------------------------------------------------------- */
+.scene .ink { stroke: var(--ink); }
+.scene .ink-fill { fill: var(--ink); }
+
+/* ---- the half that is on fire -------------------------------------------- */
+.scene .house { stroke: #6E7681; stroke-width: 6; fill: none;
+                stroke-linecap: round; stroke-linejoin: round; }
+.scene .fire { fill: var(--red); }
+.scene .fire-2 { fill: #F2748B; }
+.scene .smoke { fill: #C9CFD8; }
+.scene .debris { fill: #CBD2DB; }
+.scene .spark { stroke: #E8899C; stroke-width: 4; stroke-linecap: round; }
+.scene .crack { stroke: #AEB6C1; stroke-width: 4; stroke-linecap: round;
+                stroke-linejoin: round; fill: none; }
+.scene .dirt { stroke: #9AA3AF; stroke-width: 5; stroke-linecap: round;
+               stroke-linejoin: round; fill: none; }
+
+/* ---- the half that is not ------------------------------------------------ */
+.scene .turf { stroke: #AEB6C1; stroke-width: 4; stroke-linecap: round; }
+.scene .hill { fill: #E6EEF9; }
+.scene .trunk { stroke: #9AA3AF; }
+.scene .leaf { fill: #C8DEF8; }
+.scene .grass { stroke: #9FC0E6; }
+.scene .blue-fill { fill: var(--blue); }
+.scene .blue-line { stroke: var(--blue); }
+.scene .trail { stroke: var(--blue); stroke-width: 4; fill: none;
+                stroke-linecap: round; stroke-dasharray: 2 18; opacity: 0.55; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+  <div class="scene">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <!-- ---------- the fire ---------- -->
+      <g transform="translate(342 196)"><circle class="smoke" cx="0" cy="0" r="28"/><circle class="smoke" cx="-19.6" cy="8.4" r="20.16"/><circle class="smoke" cx="21" cy="6.72" r="18.48"/></g>
+      <g transform="translate(404 150)"><circle class="smoke" cx="0" cy="0" r="38"/><circle class="smoke" cx="-26.6" cy="11.4" r="27.36"/><circle class="smoke" cx="28.5" cy="9.12" r="25.08"/></g>
+      <g transform="translate(486 108)"><circle class="smoke" cx="0" cy="0" r="48"/><circle class="smoke" cx="-33.6" cy="14.4" r="34.56"/><circle class="smoke" cx="36" cy="11.52" r="31.68"/></g>
+      <g transform="translate(596 70)"><circle class="smoke" cx="0" cy="0" r="58"/><circle class="smoke" cx="-40.6" cy="17.4" r="41.76"/><circle class="smoke" cx="43.5" cy="13.92" r="38.28"/></g>
+      <g transform="translate(730 38)"><circle class="smoke" cx="0" cy="0" r="68"/><circle class="smoke" cx="-47.6" cy="20.4" r="48.96"/><circle class="smoke" cx="51" cy="16.32" r="44.88"/></g>
+      <g transform="rotate(-4 300 420)"><path class="house" d="M186 330 V 486 H 420 V 330"/><path class="house" d="M156 338 L 303 232 L 450 338"/><path class="house" d="M288 486 V 406 H 346 V 486"/><path class="house" d="M214 356 H 260 V 398 H 214 Z"/></g>
+      <g transform="translate(244 250) rotate(-10) scale(2.2)"><path class="fire" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <g transform="translate(300 238) rotate(4) scale(2.7)"><path class="fire" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <g transform="translate(364 268) rotate(18) scale(1.7)"><path class="fire" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <g transform="translate(276 232) rotate(0) scale(1.5)"><path class="fire-2" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <g transform="translate(336 250) rotate(12) scale(1.3)"><path class="fire-2" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <g transform="translate(224 396) rotate(-14) scale(1.1)"><path class="fire-2" d="M0 0 C 16 -20, 1 -33, 9 -58 C 30 -40, 40 -16, 26 0 Z"/></g>
+      <path class="spark" d="M430 262 L 470 230"/>
+      <path class="spark" d="M452 318 L 500 300"/>
+      <path class="spark" d="M406 196 L 438 160"/>
+      <path class="spark" d="M470 372 L 512 362"/>
+      <path class="spark" d="M390 140 L 408 104"/>
+      <path class="spark" d="M502 238 L 546 214"/>
+      <!-- ---------- what the blast threw ---------- -->
+      <rect class="debris" x="486" y="196" width="54" height="72" rx="5" transform="rotate(-34 513 232)"/>
+      <rect class="debris" x="604" y="322" width="42" height="58" rx="5" transform="rotate(62 625 351)"/>
+      <rect class="debris" x="560" y="120" width="38" height="50" rx="5" transform="rotate(18 579 145)"/>
+      <rect class="debris" x="700" y="232" width="60" height="44" rx="5" transform="rotate(-58 730 254)"/>
+      <rect class="debris" x="812" y="150" width="46" height="62" rx="5" transform="rotate(41 835 181)"/>
+      <rect class="debris" x="868" y="338" width="36" height="50" rx="5" transform="rotate(-22 886 363)"/>
+      <rect class="debris" x="948" y="108" width="52" height="40" rx="5" transform="rotate(74 974 128)"/>
+      <rect class="debris" x="744" y="404" width="44" height="34" rx="5" transform="rotate(15 766 421)"/>
+      <rect class="debris" x="1012" y="258" width="40" height="54" rx="5" transform="rotate(-47 1032 285)"/>
+      <rect class="debris" x="1380" y="150" width="44" height="58" rx="5" transform="rotate(29 1402 179)"/>
+      <rect class="debris" x="1486" y="300" width="36" height="48" rx="5" transform="rotate(-63 1504 324)"/>
+      <rect class="debris" x="1560" y="96" width="50" height="38" rx="5" transform="rotate(12 1585 115)"/>
+      <rect class="debris" x="1664" y="232" width="42" height="56" rx="5" transform="rotate(-25 1685 260)"/>
+      <rect class="debris" x="1760" y="376" width="38" height="46" rx="5" transform="rotate(54 1779 399)"/>
+      <rect class="debris" x="540" y="262" width="118" height="18" rx="4" transform="rotate(-28 599 271)"/>
+      <rect class="debris" x="760" y="112" width="96" height="16" rx="4" transform="rotate(52 808 120)"/>
+      <rect class="debris" x="1024" y="392" width="110" height="18" rx="4" transform="rotate(12 1079 401)"/>
+      <rect class="debris" x="1436" y="208" width="102" height="16" rx="4" transform="rotate(-41 1487 216)"/>
+      <rect class="debris" x="1690" y="118" width="92" height="18" rx="4" transform="rotate(24 1736 127)"/>
+      <rect class="debris" x="880" y="230" width="104" height="16" rx="4" transform="rotate(-66 932 238)"/>
+      <g transform="translate(648 176) rotate(22) scale(1.4)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <g transform="translate(908 410) rotate(-48) scale(1.1)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <g transform="translate(1150 130) rotate(64) scale(1.3)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <g transform="translate(1536 386) rotate(-18) scale(1.2)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <g transform="translate(1778 268) rotate(38) scale(1)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <g transform="translate(470 410) rotate(-72) scale(1.1)"><path class="debris" d="M0 0 L 34 10 L 12 32 Z"/></g>
+      <path class="dirt" d="M0 492 H 300 M344 487 L 520 496 M566 492 H 884 M930 498 L 1180 489 M1232 494 H 1520 M1566 486 L 1920 496"/>
+      <path class="crack" d="M612 490 L 636 458 L 620 430 M1040 488 L 1016 462 L 1042 434 M1420 490 L 1400 452"/>
+      <!-- ---------- the runner ---------- -->
+      <g transform="translate(1066 206) scale(2.1)"><circle class="ink-fill" cx="88" cy="22" r="15"/><path class="ink" d="M82 42 L58 92" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M80 48 L106 36 L113 13" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M78 50 L54 40 L32 27" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M58 92 L93 105 L97 136" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M58 92 L31 115 L9 103" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+      <path class="split" d="M0 540 H 1920"/>
+      <!-- ---------- the sky ---------- -->
+      <circle class="hill" cx="236" cy="668" r="62"/>
+      <g transform="translate(470 672) scale(1)"><circle class="hill" cx="0" cy="0" r="34"/><circle class="hill" cx="-38" cy="10" r="26"/><circle class="hill" cx="36" cy="12" r="24"/><rect class="hill" x="-38" y="0" width="76" height="24" rx="12"/></g>
+      <g transform="translate(846 636) scale(0.78)"><circle class="hill" cx="0" cy="0" r="34"/><circle class="hill" cx="-38" cy="10" r="26"/><circle class="hill" cx="36" cy="12" r="24"/><rect class="hill" x="-38" y="0" width="76" height="24" rx="12"/></g>
+      <!-- ---------- the field ---------- -->
+      <path class="hill" d="M0 1010 C 180 930, 420 946, 620 1010 Z"/>
+      <path class="hill" d="M520 1010 C 700 952, 860 964, 980 1010 Z"/>
+      <g transform="translate(1546 1010) scale(1)"><path class="trunk" d="M0 0 V -74" stroke-width="15" stroke-linecap="round" fill="none"/><circle class="leaf" cx="-30" cy="-96" r="36"/><circle class="leaf" cx="28" cy="-90" r="32"/><circle class="leaf" cx="0" cy="-126" r="42"/></g>
+      <g transform="translate(1700 1010) scale(0.82)"><path class="trunk" d="M0 0 V -74" stroke-width="15" stroke-linecap="round" fill="none"/><circle class="leaf" cx="-30" cy="-96" r="36"/><circle class="leaf" cx="28" cy="-90" r="32"/><circle class="leaf" cx="0" cy="-126" r="42"/></g>
+      <g transform="translate(1826 1010) scale(1.06)"><path class="trunk" d="M0 0 V -74" stroke-width="15" stroke-linecap="round" fill="none"/><circle class="leaf" cx="-30" cy="-96" r="36"/><circle class="leaf" cx="28" cy="-90" r="32"/><circle class="leaf" cx="0" cy="-126" r="42"/></g>
+      <g transform="translate(286 1010) scale(0.62)"><path class="trunk" d="M0 0 V -74" stroke-width="15" stroke-linecap="round" fill="none"/><circle class="leaf" cx="-30" cy="-96" r="36"/><circle class="leaf" cx="28" cy="-90" r="32"/><circle class="leaf" cx="0" cy="-126" r="42"/></g>
+      <g transform="translate(690 1010) scale(0.46)"><path class="trunk" d="M0 0 V -74" stroke-width="15" stroke-linecap="round" fill="none"/><circle class="leaf" cx="-30" cy="-96" r="36"/><circle class="leaf" cx="28" cy="-90" r="32"/><circle class="leaf" cx="0" cy="-126" r="42"/></g>
+      <path class="turf" d="M0 1010 H 1920"/>
+      <g transform="translate(120 1010) scale(1)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(402 1010) scale(0.9)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(640 1010) scale(1.1)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(900 1010) scale(0.95)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1040 1010) scale(1.05)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1420 1010) scale(1.1)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1500 1010) scale(0.9)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1648 1010) scale(1.05)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1792 1010) scale(0.95)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1896 1010) scale(1.1)"><path class="grass" d="M0 0 C -2 -14, -8 -20, -13 -24 M0 0 C 0 -16, 0 -22, 1 -29 M0 0 C 2 -14, 8 -19, 13 -23" stroke-width="3.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1470 1010) scale(1)"><path class="grass" d="M0 0 C -1 -16, 1 -24, 0 -34" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle class="leaf" cx="0" cy="-40" r="8"/></g>
+      <g transform="translate(1620 1010) scale(0.85)"><path class="grass" d="M0 0 C -1 -16, 1 -24, 0 -34" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle class="leaf" cx="0" cy="-40" r="8"/></g>
+      <g transform="translate(1770 1010) scale(1.05)"><path class="grass" d="M0 0 C -1 -16, 1 -24, 0 -34" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle class="leaf" cx="0" cy="-40" r="8"/></g>
+      <g transform="translate(1884 1010) scale(0.9)"><path class="grass" d="M0 0 C -1 -16, 1 -24, 0 -34" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle class="leaf" cx="0" cy="-40" r="8"/></g>
+      <g transform="translate(960 1010) scale(0.8)"><path class="grass" d="M0 0 C -1 -16, 1 -24, 0 -34" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle class="leaf" cx="0" cy="-40" r="8"/></g>
+      <!-- ---------- the walker, and the one leading him ---------- -->
+      <g transform="translate(1118 701) scale(2.1)"><circle class="ink-fill" cx="40" cy="20" r="15"/><path class="ink" d="M40 38 L40 92" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M40 48 L19 70 L15 90" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M40 48 L61 70 L65 88" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M40 92 L53 118 L58 146" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path class="ink" d="M40 92 L29 118 L21 146" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+      <path class="trail" d="M1268 828 C 1318 792, 1362 786, 1404 804"/>
+      <path class="trail" d="M1452 800 C 1512 776, 1562 788, 1618 762"/>
+      <g transform="translate(1428 802) rotate(-12) scale(1.5)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1548 764) rotate(14) scale(0.78)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1676 700) rotate(-20) scale(0.62)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1820 788) rotate(8) scale(0.7)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1612 880) rotate(-6) scale(0.55)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1762 902) rotate(22) scale(0.5)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+      <g transform="translate(1884 690) rotate(-14) scale(0.58)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/><g transform="scale(-1 1)"><path class="blue-fill" d="M0 0 C -7 -21, -29 -26, -33 -11 C -36 -1, -17 5, 0 0 ZM0 2 C -5 11, -21 19, -27 9 C -31 2, -13 0, 0 2 Z"/></g><ellipse class="blue-fill" cx="0" cy="0" rx="3.4" ry="12"/><path class="blue-line" d="M-2 -10 C -7 -18, -11 -20, -14 -21 M2 -10 C 7 -18, 11 -20, 14 -21" stroke-width="2.4" stroke-linecap="round" fill="none"/></g>
+    </svg>
+  </div>
+</section>
+
+</body>
+</html>
