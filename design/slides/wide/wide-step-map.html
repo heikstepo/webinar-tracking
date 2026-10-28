@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Starting point to desired outcome</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The two ends, and every step between them.
+
+   Only the two ends are named, because in this passage they are the only two
+   things named. The steps are numerals on a track: that says "every step they
+   have to take" without putting one offer's steps on a slide about any offer's
+   steps, and without inventing copy to fill five discs.
+
+   The discs ramp pale to full blue. It is one thing increasing, not five
+   categories, and the ramp lands the darkest disc next to the flag so the
+   track reads as arriving somewhere.
+
+   Class names are prefixed route; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.route { position: relative; width: 1700px; height: 300px; }
+
+/* Behind the discs, from the first marker to the flag. */
+.route__line {
+  position: absolute; left: 170px; width: 1330px; top: 148px; height: 3px;
+  background: #D2D8E0; border-radius: 2px;
+}
+
+.route__stop {
+  position: absolute; top: 100px; transform: translateX(-50%);
+  display: flex; align-items: center; justify-content: center;
+  width: 96px; height: 96px; border-radius: 50%;
+  font-size: 44px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+
+/* The start: an open ring, because nothing has happened yet. */
+.route__ring {
+  position: absolute; left: 170px; top: 114px; transform: translateX(-50%);
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--ground); border: 6px solid #A9B6C6;
+}
+
+/* The finish. The pennant points on past the last step rather than back at
+   it, so the track reads as arriving rather than as stopping. */
+.route__flag { position: absolute; left: 1500px; top: 36px; }
+.route__flag svg { display: block; width: 110px; height: 118px; }
+.route__flag .pole { stroke: #6E7681; stroke-width: 7; stroke-linecap: round; fill: none; }
+.route__flag .cloth { fill: var(--blue); }
+
+.route__end {
+  position: absolute; top: 212px; transform: translateX(-50%); margin: 0;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="route">
+
+    <div class="route__line"></div>
+
+    <span class="route__ring"></span>
+    <p class="route__end" style="left:170px">Starting Point</p>
+
+    <span class="route__stop" style="left:392px;  background:#C5DDFA">1</span>
+    <span class="route__stop" style="left:613px;  background:#A7CCF7">2</span>
+    <span class="route__stop" style="left:835px;  background:#7CB2F3">3</span>
+    <span class="route__stop" style="left:1057px; background:#4A97EF">4</span>
+    <span class="route__stop" style="left:1278px; background:#0071E3">5</span>
+
+    <div class="route__flag">
+      <svg viewBox="0 0 110 118" aria-hidden="true">
+        <path class="pole" d="M6 114 V 6"/>
+        <path class="cloth" d="M10 10 L 96 34 L 10 58 Z"/>
+      </svg>
+    </div>
+    <p class="route__end" style="left:1506px">Desired Outcome</p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
