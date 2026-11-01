@@ -83,21 +83,21 @@ TPL = '''<!doctype html>
 
 /* ---- the headline -------------------------------------------------------- */
 .bd__h {
-  position: absolute; left: 46px; top: 44px; margin: 0;
-  font-size: 82px; font-weight: 700; letter-spacing: -0.038em; line-height: 1.02;
+  position: absolute; left: 44px; top: 40px; width: 880px; margin: 0;
+  font-size: 70px; font-weight: 700; letter-spacing: -0.036em; line-height: 1.04;
   color: var(--ink);
 }
 .bd__sum {
   color: var(--blue);
   background: linear-gradient(to top, #C6DDFA 0 0.17em, transparent 0.17em);
 }
-.bd__sub {
-  position: absolute; left: 50px; top: 232px; margin: 0;
-  font-size: 40px; font-weight: 600; letter-spacing: -0.016em; color: var(--ink-2);
-}
+/* The channel is part of the headline now, same size, in the accent. The
+   break falls after the figure so the long line runs the full width of the
+   panel rather than stopping halfway across it. */
+.bd__chan { color: var(--blue); }
 
 /* ---- the board ----------------------------------------------------------- */
-.bd { position: absolute; left: 40px; top: 322px; width: 880px; height: 700px; }
+.bd { position: absolute; left: 40px; top: 252px; width: 880px; height: 700px; }
 
 .bd__wires { position: absolute; inset: 0; }
 /* Over the cards: a ring drawn under them is a ring behind a card. */
@@ -187,8 +187,8 @@ TPL = '''<!doctype html>
 
 <section class="slide">
 
-  <h1 class="bd__h">Scale Info to<br><span class="bd__sum">$100k/mo</span></h1>
-  <p class="bd__sub">(Meta Ads)</p>
+  <h1 class="bd__h">Scale Info to <span class="bd__sum">$100k/mo</span><br>
+    <span class="bd__chan">(Meta Ads)</span></h1>
 
   <div class="bd">
 
