@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Offer Line</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The offer line, as a template.
+
+   The four brackets are the only accent on the slide. They are the parts that
+   change from offer to offer, and colouring them is what turns a sentence into
+   a form to fill in. The brackets themselves stay: without them the blue words
+   read as emphasis rather than as slots.
+
+   The line is broken after the time, where the promise ends and the terms
+   begin. Left to wrap on its own it broke mid-clause at this size.
+
+   Class names are prefixed stmt; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.stmt { width: 1700px; text-align: center; }
+
+.stmt__eyebrow {
+  margin: 0 0 54px;
+  font-size: 40px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-3);
+}
+
+.stmt__line {
+  margin: 0;
+  font-size: 82px; font-weight: 600; letter-spacing: -0.024em; line-height: 1.26;
+  color: var(--ink);
+}
+.stmt__slot { color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="stmt">
+
+    <p class="stmt__eyebrow">Offer Line</p>
+
+    <p class="stmt__line">
+      We&rsquo;ll help you get <span class="stmt__slot">[Result]</span>
+      in <span class="stmt__slot">[Time]</span><br>
+      Without <span class="stmt__slot">[Pain]</span>,
+      or <span class="stmt__slot">[Guarantee]</span>
+    </p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
