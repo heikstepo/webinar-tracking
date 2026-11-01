@@ -32,10 +32,14 @@
   background: linear-gradient(to top, #C6DDFA 0 0.17em, transparent 0.17em);
 }
 /* The channel is part of the headline now, same size, in the accent. The
-   whole promise is held on one line, which is what sets the size: at 70px
+   whole promise is held on one line, which is what sets its size: at 70px
    "Scale Info Products to $100k/mo" wrapped, and the break has to fall after
-   the figure, not inside it. */
-.bd__chan { color: var(--blue); }
+   the figure, not inside it. The channel is its own centred line underneath
+   and larger, so it reads as the second beat rather than as a tail. */
+.bd__chan {
+  display: block; text-align: center;
+  font-size: 84px; line-height: 1.02; letter-spacing: -0.038em; color: var(--blue);
+}
 
 /* ---- the board ----------------------------------------------------------- */
 .bd { position: absolute; left: 40px; top: 252px; width: 880px; height: 700px; }
