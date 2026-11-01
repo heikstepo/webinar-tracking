@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Speed to Lead</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Three words, so they get size rather than colour.
+
+   The other statement slides carry one accent because they are long enough to
+   need a way in. This one is the whole sentence at a glance, and colouring any
+   part of it would single out a word the line does not single out.
+
+   Class names are prefixed say__ with a local .says wrapper; voice-quiet.css
+   owns .say and .say__mark, which is why neither is reused here.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.says { width: 1700px; text-align: center; }
+.says p {
+  margin: 0;
+  font-size: 164px; font-weight: 600; letter-spacing: -0.04em; line-height: 1.1;
+  color: var(--ink);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+  <div class="says">
+    <p>Speed to Lead</p>
+  </div>
+</section>
+
+</body>
+</html>
