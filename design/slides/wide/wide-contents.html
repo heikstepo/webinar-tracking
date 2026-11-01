@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contents</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The running order.
+
+   The three parts of Meta Ads are indented behind a rule rather than set as
+   four equal lines with different numbers. A reader should be able to count
+   five sections at a glance and only then see that one of them opens up.
+
+   No heading. Nothing was given for one, and a list this shape does not need
+   to be told it is a list.
+
+   Class names are prefixed toc; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.toc { width: max-content; margin: 0 auto; text-align: left; }
+
+.toc__row { display: flex; align-items: baseline; gap: 30px; }
+.toc__row + .toc__row { margin-top: 34px; }
+
+/* Right aligned, so single digits hang on the same edge as the words. */
+.toc__n {
+  flex: none; width: 54px; text-align: right;
+  font-size: 58px; font-weight: 600; letter-spacing: -0.02em; color: var(--blue);
+}
+.toc__t {
+  font-size: 58px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink);
+}
+
+/* The parts of section four, held off the main column by a rule. */
+.toc__kids {
+  margin: 30px 0 34px 84px; padding-left: 40px;
+  border-left: 3px solid #D2D8E0;
+}
+.toc__srow { display: flex; align-items: baseline; gap: 20px; }
+.toc__srow + .toc__srow { margin-top: 22px; }
+.toc__sn {
+  flex: none; width: 72px;
+  font-size: 38px; font-weight: 600; letter-spacing: -0.012em; color: #7CB2F3;
+}
+.toc__st {
+  font-size: 38px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink-2);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="toc">
+
+    <div class="toc__row">
+      <span class="toc__n">1</span><span class="toc__t">ICP Analysis</span>
+    </div>
+    <div class="toc__row">
+      <span class="toc__n">2</span><span class="toc__t">Offer</span>
+    </div>
+    <div class="toc__row">
+      <span class="toc__n">3</span><span class="toc__t">Funnel</span>
+    </div>
+    <div class="toc__row">
+      <span class="toc__n">4</span><span class="toc__t">Meta Ads</span>
+    </div>
+
+    <div class="toc__kids">
+      <div class="toc__srow">
+        <span class="toc__sn">4.1</span><span class="toc__st">Meta Ads Strategy</span>
+      </div>
+      <div class="toc__srow">
+        <span class="toc__sn">4.2</span><span class="toc__st">Scripting Meta Ads</span>
+      </div>
+      <div class="toc__srow">
+        <span class="toc__sn">4.3</span><span class="toc__st">Pixel Conditioning</span>
+      </div>
+    </div>
+
+    <div class="toc__row">
+      <span class="toc__n">5</span><span class="toc__t">Sales &amp; Ops</span>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
