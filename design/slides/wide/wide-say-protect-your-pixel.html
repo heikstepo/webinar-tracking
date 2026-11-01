@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statement</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   A statement on its own, set the way the offer line is set: one accent on the
+   words the sentence turns on, and nothing else.
+
+   Class names are prefixed say__ with a local .says wrapper; voice-quiet.css
+   owns .say and .say__mark, which is why neither is reused here.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.says { width: 1700px; text-align: center; }
+.says p {
+  margin: 0;
+  font-size: 86px; font-weight: 600; letter-spacing: -0.026em; line-height: 1.24;
+  color: var(--ink);
+}
+.says .say__hot { color: var(--red); }
+.says .say__cool { color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+  <div class="says">
+    <p>Protect your Pixel &amp; Ad Account<br>from <span class="say__hot">Broke Leads</span>!</p>
+  </div>
+</section>
+
+</body>
+</html>
