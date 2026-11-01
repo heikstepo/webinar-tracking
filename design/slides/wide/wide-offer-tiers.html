@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3 Offer Tiers</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Three tiers, with the middle one carrying the weight.
+
+   The middle card is wider, taller and the only one in the accent. Three
+   equal cards would make this a menu, and the one in the middle is the one
+   being sold, so it stands up out of the row the way a priced plan does.
+
+   Ranges are set with en dashes rather than hyphens. Same numbers, read as
+   one span instead of two figures joined.
+
+   Class names are prefixed tier; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.wrap { width: 1700px; text-align: left; }
+
+.tier__h {
+  margin: 0 0 58px;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+
+.tiers { display: flex; align-items: center; justify-content: center; gap: 60px; }
+
+.tier {
+  box-sizing: border-box;
+  width: 420px; height: 360px;
+  background: var(--surface); border: 1px solid var(--hairline); border-radius: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.tier__n {
+  margin: 0;
+  font-size: 76px; font-weight: 600; letter-spacing: -0.03em; color: var(--ink);
+}
+.tier__p {
+  margin: 22px 0 0;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink-2);
+}
+
+/* The one being sold. */
+.tier--main {
+  width: 480px; height: 448px;
+  border: 3px solid var(--blue);
+  box-shadow: 0 6px 22px rgba(0, 113, 227, 0.12);
+}
+.tier--main .tier__n { font-size: 92px; color: var(--blue); }
+.tier--main .tier__p { margin-top: 26px; font-size: 48px; color: var(--ink); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="wrap">
+
+    <h1 class="tier__h">3 Offer Tiers</h1>
+
+    <div class="tiers">
+
+      <div class="tier">
+        <p class="tier__n">DIY</p>
+        <p class="tier__p">3&ndash;7.5k</p>
+      </div>
+
+      <div class="tier tier--main">
+        <p class="tier__n">DWY</p>
+        <p class="tier__p">7.5k&ndash;15k</p>
+      </div>
+
+      <div class="tier">
+        <p class="tier__n">DFY</p>
+        <p class="tier__p">25&ndash;30k+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
