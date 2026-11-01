@@ -56,10 +56,11 @@ def up(x, y1, y2):
 
 
 # ------------------------------------------------------------------ parts --
-def box(x, y, w, h, title, chip='', cls='map__box'):
+def box(x, y, w, h, title, chip='', event='', cls='map__box'):
     c = ('<span class="map__chip">%s</span>' % chip) if chip else ''
+    e = ('<p class="map__ev">%s</p>' % event) if event else ''
     return ('<div class="%s" style="left:%gpx; top:%gpx; width:%gpx; height:%gpx">'
-            '<p class="map__t">%s</p>%s</div>' % (cls, x, y, w, h, title, c))
+            '<p class="map__t">%s</p>%s%s</div>' % (cls, x, y, w, h, title, c, e))
 
 
 def pill(x, y, w, text):
@@ -90,6 +91,12 @@ TPL = '''<!doctype html>
 @page { size: 1920px 1080px; margin: 0; }
 
 .slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.wrap { width: __SW__px; text-align: left; }
+.map__h {
+  margin: 0 0 46px;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
 
 .map { position: relative; width: __SW__px; height: __SH__px; }
 
@@ -127,6 +134,13 @@ TPL = '''<!doctype html>
   font-size: 26px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink);
 }
 
+/* Which event it is. Under the chip rather than inside it, so the chip stays
+   the same label on both funnels and only this line changes. */
+.map__ev {
+  margin: 10px 0 0;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.006em; color: var(--blue);
+}
+
 /* The rest of the funnel: present, and plainly not the subject. */
 .map__pill {
   position: absolute; box-sizing: border-box; height: 58px;
@@ -152,7 +166,10 @@ TPL = '''<!doctype html>
 <!-- no-autofit: its own canvas, not a panel. -->
 <section class="slide slide--center slide--mid">
 
-  <div class="map">
+  <div class="wrap">
+    <h1 class="map__h">__TITLE__</h1>
+
+    <div class="map">
 
     <div class="map__wires">
       <svg viewBox="0 0 __SW__ __SH__" aria-hidden="true">
@@ -162,6 +179,7 @@ __WIRES__
 
 __PARTS__
 
+    </div>
   </div>
 
 </section>
@@ -202,7 +220,8 @@ AY, BY = 300, 590                         # the two thank you pages' centres
 mains = [(0, 260, 'Ads'), (380, 260, 'Opt-in Page'), (760, 260, 'VSL Page')]
 parts = [box(x, MID - BH / 2, w, BH, t) for x, w, t in mains]
 parts += [
-    box(1400, AY - 100, 300, 200, 'TY Page A', 'Conversion Event', 'map__won'),
+    box(1400, AY - 100, 300, 200, 'TY Page A', 'Conversion Event',
+        'Schedule', 'map__won'),
     box(1400, BY - 75, 300, 150, 'TY Page B'),
     pixel(1430, 10, 240, 130),
 ]
@@ -212,13 +231,14 @@ wires = [
     up(1550, AY - 100, 140),
 ]
 parts.append('<p class="map__note" style="left:1140px; top:%dpx">Call</p>' % (AY + 6))
-write('vsl', 'VSL funnel', wires, parts)
+write('vsl', 'VSL Funnel', wires, parts)
 
 # ======================================================== the webinar map ==
 mains = [(0, 210, 'Ads'), (268, 210, 'Opt-in Page'), (536, 210, 'VIP Upsell')]
 parts = [box(x, MID - BH / 2, w, BH, t) for x, w, t in mains]
 parts += [
-    box(836, AY - 100, 250, 200, 'TY Page A', 'Conversion Event', 'map__won'),
+    box(836, AY - 100, 250, 200, 'TY Page A', 'Conversion Event',
+        'Purchase', 'map__won'),
     box(836, BY - 75, 250, 150, 'TY Page B'),
     pixel(846, 10, 230, 130),
 ]
@@ -238,4 +258,4 @@ wires = [
     bend(1086, AY, 1150, MID), bend(1086, BY, 1150, MID),
     straight(1347, 1377, MID), straight(1513, 1543, MID),
 ]
-write('webinar', 'Webinar funnel', wires, parts)
+write('webinar', 'Webinar Funnel', wires, parts)
