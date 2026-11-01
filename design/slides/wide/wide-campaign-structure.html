@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Campaign structure</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The campaign structure on its own.
+
+   Nested boxes rather than a tree: one campaign holds one ad set holds the
+   ads, and drawing them inside each other says that without a single arrow.
+
+   The ads are rectangles here rather than the circles in the rough, because
+   each one now has to hold its three creatives and a circle cannot hold three
+   tiles without them touching its edge. The three sit side by side inside a
+   bordered ad rather than stacked: inside their own box they read as "three of
+   this ad", where an offset stack next to seven other stacks reads as mess.
+
+   Three of the eight are dashed and empty, which is the range. Filling them
+   would say eight, and leaving them out would say five.
+
+   Class names are prefixed cst; 4pi.css already owns .ad and .ads.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+/* ---- the campaign -------------------------------------------------------- */
+.cst {
+  width: max-content; margin: 0 auto;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 32px; padding: 46px 46px 50px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.cst__name {
+  margin: 0 0 30px; text-align: center;
+  font-size: 48px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink-2);
+}
+
+/* ---- the ad set ---------------------------------------------------------- */
+.cst__set {
+  background: #E4EFFD; border-radius: 26px; padding: 38px 42px 34px;
+}
+.cst__sname {
+  margin: 0 0 30px; text-align: center;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.012em; color: #1E4E8C;
+}
+
+/* ---- the ads ------------------------------------------------------------- */
+/* Four across and two down rather than eight in a line. Eight in a line made
+   the whole card a letterbox, and the ads had to shrink to fit it. */
+.cst__row {
+  display: grid; grid-template-columns: repeat(4, 240px);
+  column-gap: 32px; row-gap: 30px;
+}
+
+.cst__ad {
+  width: 240px; height: 162px; box-sizing: border-box;
+  border-radius: 18px; border: 2px solid #BFD6F7; background: var(--surface);
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+}
+/* The headroom in "5 to 8": outlined, and holding nothing. */
+.cst__ad--open { background: none; border-style: dashed; }
+
+.cst__cr { width: 54px; height: 84px; border-radius: 11px; background: #4A97EF; }
+/* The three are one ad's creatives, so they are one colour, not three. */
+
+.cst__count {
+  margin: 34px 0 0; text-align: center;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.012em; color: #1E4E8C;
+}
+.cst__per {
+  margin: 10px 0 0; text-align: center;
+  font-size: 32px; font-weight: 600; letter-spacing: -0.008em; color: #5E93D4;
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="cst">
+
+    <p class="cst__name">1 CBO Campaign</p>
+
+    <div class="cst__set">
+      <p class="cst__sname">1 Control Ad Set</p>
+
+      <div class="cst__row">
+        <div class="cst__ad">
+          <span class="cst__cr"></span><span class="cst__cr"></span><span class="cst__cr"></span>
+        </div>
+        <div class="cst__ad">
+          <span class="cst__cr"></span><span class="cst__cr"></span><span class="cst__cr"></span>
+        </div>
+        <div class="cst__ad">
+          <span class="cst__cr"></span><span class="cst__cr"></span><span class="cst__cr"></span>
+        </div>
+        <div class="cst__ad">
+          <span class="cst__cr"></span><span class="cst__cr"></span><span class="cst__cr"></span>
+        </div>
+        <div class="cst__ad">
+          <span class="cst__cr"></span><span class="cst__cr"></span><span class="cst__cr"></span>
+        </div>
+        <div class="cst__ad cst__ad--open"></div>
+        <div class="cst__ad cst__ad--open"></div>
+        <div class="cst__ad cst__ad--open"></div>
+      </div>
+
+      <p class="cst__count">5&ndash;8 Unique Ads</p>
+      <p class="cst__per">3 Creatives per Ad</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
