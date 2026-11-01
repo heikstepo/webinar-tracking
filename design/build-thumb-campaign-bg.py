@@ -78,9 +78,9 @@ TPL = '''<!doctype html>
 }
 
 .cb__h {
-  position: absolute; left: 0; top: 34px; width: __W__px; margin: 0;
+  position: absolute; left: 0; top: 24px; width: __W__px; margin: 0;
   text-align: center;
-  font-size: 118px; font-weight: 700; letter-spacing: -0.042em; line-height: 1;
+  font-size: 152px; font-weight: 900; letter-spacing: -0.046em; line-height: 1;
   color: var(--ink);
 }
 .cb__h b { color: var(--blue); font-weight: 700; }
@@ -97,12 +97,12 @@ TPL = '''<!doctype html>
 .cb__card {
   position: absolute; box-sizing: border-box;
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 22px; padding: 20px 24px;
+  border-radius: 20px; padding: 17px 21px;
   box-shadow: 0 3px 14px rgba(20, 30, 50, 0.08);
 }
 .cb__t {
-  margin: 0 0 16px;
-  font-size: 31px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+  margin: 0 0 13px;
+  font-size: 27px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
 }
 .cb__t i { font-style: normal; color: var(--blue); }
 
@@ -115,41 +115,54 @@ TPL = '''<!doctype html>
 .cb__g .f { fill: var(--blue); stroke: none; }
 
 .cb__chip {
-  padding: 7px 14px; border-radius: 10px;
+  padding: 6px 12px; border-radius: 9px;
   background: #E4EFFD; color: #1E4E8C;
-  font-size: 19px; font-weight: 600; white-space: nowrap;
+  font-size: 17px; font-weight: 600; white-space: nowrap;
 }
-.cb__cap { margin: 8px 0 0; font-size: 18px; font-weight: 600; color: var(--ink-3); }
-.cb__lab { width: 92px; flex: none; font-size: 17px; font-weight: 600; color: var(--ink-3); }
-.cb__sq { width: 30px; height: 30px; border-radius: 7px; background: #CFE2FA; }
+.cb__cap { margin: 7px 0 0; font-size: 16px; font-weight: 600; color: var(--ink-3); }
+.cb__lab { width: 84px; flex: none; font-size: 16px; font-weight: 600; color: var(--ink-3); }
+.cb__sq { width: 27px; height: 27px; border-radius: 7px; background: #CFE2FA; }
+/* an ad set, drawn as a tray of ads */
+.cb__set {
+  display: flex; align-items: center; gap: 7px;
+  padding: 9px 11px; border-radius: 12px; background: #E4EFFD;
+}
+.cb__set--off { background: none; border: 2px dashed #CBD3DD; padding: 7px 9px; }
+.cb__pin { width: 22px; height: 22px; border-radius: 50%; background: var(--surface); }
+.cb__set--off .cb__pin { background: #DDE2E9; }
+.cb__coin {
+  width: 38px; height: 38px; border-radius: 50%; background: var(--blue);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 700; color: #fff;
+}
 
 /* the campaign */
-.cb__camp { background: #E4EFFD; border-radius: 16px; padding: 14px 16px; }
-.cb__camp p { margin: 0 0 12px; text-align: center;
-              font-size: 20px; font-weight: 600; color: #1E4E8C; }
-.cb__ads { display: grid; grid-template-columns: repeat(4, 52px);
-           gap: 14px; justify-content: center; }
-.cb__ad { width: 52px; height: 52px; border-radius: 50%; background: var(--surface); }
+.cb__camp { background: #E4EFFD; border-radius: 14px; padding: 12px 14px; }
+.cb__camp p { margin: 0 0 10px; text-align: center;
+              font-size: 18px; font-weight: 600; color: #1E4E8C; }
+.cb__ads { display: grid; grid-template-columns: repeat(4, 46px);
+           gap: 12px; justify-content: center; }
+.cb__ad { width: 46px; height: 46px; border-radius: 50%; background: var(--surface); }
 .cb__ad--open { background: none; border: 2px dashed #BFD6F7; box-sizing: border-box; }
 
 /* little boxes and rails reused across the cards */
 .cb__box {
-  box-sizing: border-box; padding: 8px 0; width: 78px; text-align: center;
+  box-sizing: border-box; padding: 7px 0; width: 70px; text-align: center;
   border: 1px solid var(--hairline); border-radius: 10px; background: var(--surface);
-  font-size: 17px; font-weight: 600; color: var(--ink);
+  font-size: 16px; font-weight: 600; color: var(--ink);
 }
 .cb__arr { width: 18px; height: 2px; background: #B6C2D0; flex: none; }
-.cb__cr { width: 34px; height: 58px; border-radius: 8px; background: #4A97EF; }
+.cb__cr { width: 30px; height: 52px; border-radius: 8px; background: #4A97EF; }
 .cb__dot { width: 16px; height: 16px; border-radius: 50%; background: #9DC2EE; }
 .cb__dot--on { background: var(--blue); }
 .cb__tick {
-  width: 42px; height: 42px; border-radius: 50%;
+  width: 38px; height: 38px; border-radius: 50%;
   background: #E7F5E3; border: 3px solid #34A518;
   display: flex; align-items: center; justify-content: center;
   font-size: 22px; line-height: 1; color: #248A13;
 }
 .cb__n {
-  width: 34px; height: 34px; border-radius: 50%;
+  width: 30px; height: 30px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 17px; font-weight: 700; color: #fff; background: #5BA1F0;
 }
@@ -310,46 +323,74 @@ PIXEL = ('<div class="cb__row" style="justify-content:center; gap:10px">'
          '<span class="cb__chip">Conversion Event</span>'
          '<span class="cb__chip">Schedule</span></div>')
 
-column(40, 180, 600, 14, [
-    (296, -1.2, '1 CBO Campaign', CAMP),
-    (150, 0.9, '3 Creatives per <i>Ad</i>', CREATIVES),
-    (198, -0.6, '1 Ad = 1 <i>Purpose</i>', PURPOSE),
-    (168, 0.8, 'Map the Purchase <i>Journey</i>', JOURNEY),
+# The three questions the deck asks about this structure. They sit in the
+# middle because a question reads even half covered, where a diagram does not.
+BROAD = ('<div class="cb__row" style="justify-content:center; gap:16px">'
+         + glyph('target', 62)
+         + '<div class="cb__arr" style="width:24px"></div>'
+         + '<div class="cb__row" style="gap:7px">'
+         + '<span class="cb__ad" style="width:34px;height:34px;'
+           'background:#CFE2FA"></span>' * 5
+         + '</div></div>')
+
+ONESET = ('<div class="cb__row" style="justify-content:center; gap:14px">'
+          '<div class="cb__set"><span class="cb__pin"></span><span class="cb__pin"></span>'
+          '<span class="cb__pin"></span><span class="cb__pin"></span></div>'
+          '<div class="cb__tick">&#10003;</div></div>'
+          '<div class="cb__row" style="margin-top:12px; justify-content:center; gap:8px">'
+          + '<div class="cb__set cb__set--off"><span class="cb__pin"></span>'
+            '<span class="cb__pin"></span></div>' * 3
+          + '</div>')
+
+SPEND = ('<div class="cb__row" style="justify-content:center; gap:10px">'
+         + '<span class="cb__coin">$</span>' * 3
+         + '<div class="cb__arr" style="width:24px"></div>'
+         + glyph('ad', 56) + '</div>'
+         '<div class="cb__row" style="margin-top:12px; justify-content:center">'
+         '<span class="cb__chip">Spend is earned</span></div>')
+
+DIVERSITY = ('<div class="cb__row" style="justify-content:center; gap:10px">'
+             + ''.join('<span class="cb__cr" style="width:26px;height:44px;'
+                       'background:%s"></span>' % c
+                       for c in ('#9DC2EE', '#6FA8E8', '#4A97EF', '#2E87E8', '#0071E3'))
+             + '</div>')
+
+column(40, 214, 600, 14, [
+    (286, -1.2, '1 CBO Campaign', CAMP),
+    (146, 0.9, '3 Creatives per <i>Ad</i>', CREATIVES),
+    (192, -0.6, '1 Ad = 1 <i>Purpose</i>', PURPOSE),
+    (162, 0.8, 'Map the Purchase <i>Journey</i>', JOURNEY),
 ])
 
-column(1280, 180, 600, 14, [
-    (210, 1.1, 'Sequence <i>Learning</i>', SEQUENCE),
-    (206, -0.9, 'Fewer Ads, More <i>Creative</i>', CONSOLIDATE),
-    (200, 0.7, 'Concept <i>Testing</i>', CONCEPTS),
-    (196, -0.5, 'Pixel Conditioning', PIXEL),
+column(664, 214, 592, 14, [
+    (200, 0.8, 'Why a <i>Broad</i> Ad Set?', BROAD),
+    (200, -1.0, 'Why 1 <i>Control</i> Ad Set?', ONESET),
+    (200, 0.6, 'Scaling &amp; <i>Testing</i>', SPEND),
+    (190, -0.7, 'Creative <i>Diversity</i>?', DIVERSITY),
 ])
 
-# ========================================================== middle strip ==
-# Texture, and pale: whatever the cut-out covers here costs nothing.
-for x, y, g in ((676, 236, 'play'), (676, 392, 'image'), (676, 548, 'target'),
-                (1108, 236, 'target'), (1108, 392, 'chart'), (1108, 548, 'play')):
-    parts.append('<div class="cb__tile" style="left:%dpx; top:%dpx">%s</div>'
-                 % (x, y, glyph(g, 58)))
-for x, y, sz in ((686, 730, 68), (1118, 730, 68)):
-    parts.append('<div class="cb__meta" style="left:%dpx; top:%dpx">'
-                 '<svg viewBox="%s" style="width:%dpx;height:%dpx" aria-hidden="true">%s</svg>'
-                 '</div>' % (x, y, META_BOX, sz, sz, META))
+column(1280, 214, 600, 14, [
+    (202, 1.1, 'Sequence <i>Learning</i>', SEQUENCE),
+    (200, -0.9, 'Fewer Ads, More <i>Creative</i>', CONSOLIDATE),
+    (196, 0.7, 'Concept <i>Testing</i>', CONCEPTS),
+    (192, -0.5, 'Pixel Conditioning', PIXEL),
+])
 
 wires = [
-    wire(644, 300, 672, 276, -90),
-    wire(1216, 276, 1274, 300),
-    wire(340, 490, 340, 522, 90),
-    wire(340, 656, 340, 688, 90),
-    wire(340, 870, 340, 902, 90),
-    wire(1580, 402, 1580, 434, 90),
-    wire(1580, 622, 1580, 654, 90),
-    wire(1580, 846, 1580, 878, 90),
+    wire(644, 330, 660, 330),
+    wire(1260, 330, 1276, 330),
+    wire(340, 504, 340, 530, 90),
+    wire(340, 664, 340, 690, 90),
+    wire(340, 870, 340, 896, 90),
+    wire(1580, 418, 1580, 444, 90),
+    wire(1580, 646, 1580, 672, 90),
+    wire(1580, 870, 1580, 896, 90),
 ]
 
 # Tight enough to ring the count and nothing else: at full width it ran over
 # the card below and took the chip beside it with it.
-ink = ['<ellipse class="ring" cx="268" cy="454" rx="126" ry="31" '
-       'transform="rotate(-2 268 454)"/>']
+ink = ['<ellipse class="ring" cx="262" cy="476" rx="120" ry="29" '
+       'transform="rotate(-2 262 476)"/>']
 
 out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
           .replace('__WIRES__', '\n'.join('      ' + w for w in wires))
