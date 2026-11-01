@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Webinar funnel</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-funnel-maps.py. Left to right, splitting at the thank you pages.
+   Only the page with the conversion event has an arrow up to the pixel.
+
+   Class names are prefixed map; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.map { position: relative; width: 1700px; height: 680px; }
+
+/* The connectors, under the boxes so a head stops at an edge rather than on
+   top of one. */
+.map__wires { position: absolute; inset: 0; }
+.map__wires svg { display: block; width: 100%; height: 100%; }
+.map__wires .flow { fill: none; stroke: #B6C2D0; stroke-width: 3; stroke-linecap: round; }
+.map__wires .tip { fill: #B6C2D0; }
+
+.map__box, .map__won, .map__pixel {
+  position: absolute; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--hairline); border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.map__t {
+  margin: 0; padding: 0 16px; text-align: center;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.18;
+  color: var(--ink);
+}
+
+/* The page that reports back. The border is the accent, so the arrow leaving
+   it has something to leave from. */
+.map__won { border: 3px solid var(--blue); }
+.map__chip {
+  margin: 14px 0 0; padding: 7px 18px; border-radius: 999px;
+  background: var(--blue); color: #fff;
+  font-size: 21px; font-weight: 600; letter-spacing: -0.004em;
+}
+
+.map__pixel svg { display: block; width: 54px; height: 54px; fill: var(--ink); }
+.map__px {
+  margin: 12px 0 0;
+  font-size: 26px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink);
+}
+
+/* The rest of the funnel: present, and plainly not the subject. */
+.map__pill {
+  position: absolute; box-sizing: border-box; height: 58px;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 12px; border-radius: 14px;
+  background: #EAEFF5; color: var(--ink-3);
+  font-size: 19px; font-weight: 600; letter-spacing: -0.004em; text-align: center;
+}
+.map__dots {
+  position: absolute; display: flex; align-items: center; gap: 10px;
+}
+.map__dots i { display: block; width: 9px; height: 9px; border-radius: 50%;
+               background: #C3CAD4; }
+
+.map__note {
+  position: absolute; margin: 0;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-3);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+
+  <div class="map">
+
+    <div class="map__wires">
+      <svg viewBox="0 0 1700 680" aria-hidden="true">
+        <path class="flow" d="M210.0 430.0 H 242.0"/><g transform="translate(268.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M478.0 430.0 H 510.0"/><g transform="translate(536.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M746.0 430.0 C 791.0 430.0, 791.0 300.0, 810.0 300.0"/><g transform="translate(836.0 300.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M746.0 430.0 C 791.0 430.0, 791.0 590.0, 810.0 590.0"/><g transform="translate(836.0 590.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M961.0 200.0 V 166.0"/><g transform="translate(961.0 140.0) rotate(-90)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M1086.0 300.0 C 1118.0 300.0, 1118.0 430.0, 1124.0 430.0"/><g transform="translate(1150.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M1086.0 590.0 C 1118.0 590.0, 1118.0 430.0, 1124.0 430.0"/><g transform="translate(1150.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M1347.0 430.0 H 1351.0"/><g transform="translate(1377.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+        <path class="flow" d="M1513.0 430.0 H 1517.0"/><g transform="translate(1543.0 430.0) rotate(0)"><path class="tip" d="M0 0 L -26 -10 L -26 10 Z"/></g>
+      </svg>
+    </div>
+
+    <div class="map__box" style="left:0px; top:355px; width:210px; height:150px"><p class="map__t">Ads</p></div>
+    <div class="map__box" style="left:268px; top:355px; width:210px; height:150px"><p class="map__t">Opt-in Page</p></div>
+    <div class="map__box" style="left:536px; top:355px; width:210px; height:150px"><p class="map__t">VIP Upsell</p></div>
+    <div class="map__won" style="left:836px; top:200px; width:250px; height:200px"><p class="map__t">TY Page A</p><span class="map__chip">Conversion Event</span></div>
+    <div class="map__box" style="left:836px; top:515px; width:250px; height:150px"><p class="map__t">TY Page B</p></div>
+    <div class="map__pixel" style="left:846px; top:10px; width:230px; height:130px"><svg viewBox="0 0 24 24" aria-hidden="true"><title>Meta</title><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg><p class="map__px">Meta Pixel</p></div>
+    <div class="map__pill" style="left:1150px; top:401px; width:197px">Pre Webinar Nurture</div>
+    <div class="map__pill" style="left:1377px; top:401px; width:136px">Live Webinar</div>
+    <div class="map__pill" style="left:1543px; top:401px; width:97px">Pre Call</div>
+    <div class="map__dots" style="left:1656px; top:426px"><i></i><i></i><i></i></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
