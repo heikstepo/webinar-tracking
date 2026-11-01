@@ -9,9 +9,9 @@
 /* ============================================================================
    Three words, so they get size rather than colour.
 
-   The other statement slides carry one accent because they are long enough to
-   need a way in. This one is the whole sentence at a glance, and colouring any
-   part of it would single out a word the line does not single out.
+   The accent is on the three marks rather than on a word. They are not part of
+   the phrase, so colouring them raises the voice without singling out any one
+   word, which at three words would be arbitrary.
 
    Class names are prefixed say__ with a local .says wrapper; voice-quiet.css
    owns .say and .say__mark, which is why neither is reused here.
@@ -26,6 +26,9 @@
   font-size: 164px; font-weight: 600; letter-spacing: -0.04em; line-height: 1.1;
   color: var(--ink);
 }
+/* Tucked in a little: at this size the default gap after the d reads as a
+   space before the marks rather than as part of the phrase. */
+.says .say__bang { margin-left: -0.02em; color: var(--blue); }
 </style>
 </head>
 <body>
@@ -33,7 +36,7 @@
 <!-- no-autofit: its own canvas, not a panel. -->
 <section class="slide slide--center slide--mid">
   <div class="says">
-    <p>Speed to Lead</p>
+    <p>Speed to Lead<span class="say__bang">!!!</span></p>
   </div>
 </section>
 
