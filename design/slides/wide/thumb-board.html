@@ -23,8 +23,8 @@
 
 /* ---- the headline -------------------------------------------------------- */
 .bd__h {
-  position: absolute; left: 44px; top: 40px; width: 880px; margin: 0;
-  font-size: 70px; font-weight: 700; letter-spacing: -0.036em; line-height: 1.04;
+  position: absolute; left: 40px; top: 44px; width: 884px; margin: 0;
+  font-size: 56px; font-weight: 700; letter-spacing: -0.034em; line-height: 1.06;
   color: var(--ink);
 }
 .bd__sum {
@@ -32,8 +32,9 @@
   background: linear-gradient(to top, #C6DDFA 0 0.17em, transparent 0.17em);
 }
 /* The channel is part of the headline now, same size, in the accent. The
-   break falls after the figure so the long line runs the full width of the
-   panel rather than stopping halfway across it. */
+   whole promise is held on one line, which is what sets the size: at 70px
+   "Scale Info Products to $100k/mo" wrapped, and the break has to fall after
+   the figure, not inside it. */
 .bd__chan { color: var(--blue); }
 
 /* ---- the board ----------------------------------------------------------- */
@@ -127,7 +128,7 @@
 
 <section class="slide">
 
-  <h1 class="bd__h">Scale Info to <span class="bd__sum">$100k/mo</span><br>
+  <h1 class="bd__h">Scale Info Products to <span class="bd__sum">$100k/mo</span><br>
     <span class="bd__chan">(Meta Ads)</span></h1>
 
   <div class="bd">
