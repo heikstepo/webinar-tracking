@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Webinar Funnel</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-webinar-roadmap.py. One road, doubling back four times, because
+   twenty stops in a line leaves no room for labels that are sentences.
+
+   Class names are prefixed rm; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.rm__h {
+  position: absolute; left: 110px; top: 44px; margin: 0;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+
+/* The road itself, under the stops so it runs into the discs. */
+.rm__road { position: absolute; inset: 0; }
+.rm__road svg { display: block; width: 100%; height: 100%; }
+.rm__road .lane { fill: none; stroke: #D2D8E0; stroke-width: 7;
+                  stroke-linecap: round; stroke-linejoin: round; }
+.rm__road .tip { fill: #BAC3CF; }
+
+.rm__stop {
+  position: absolute; width: 290px; transform: translateX(-50%);
+  text-align: center;
+}
+.rm__n {
+  display: flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; margin: 0 auto; border-radius: 50%;
+  border: 4px solid var(--ground);
+  font-size: 23px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+.rm__t {
+  margin: 10px 0 0;
+  font-size: 21px; font-weight: 600; letter-spacing: -0.008em; line-height: 1.22;
+  color: var(--ink);
+}
+.rm__note {
+  margin: 5px 0 0;
+  font-size: 17px; font-weight: 600; line-height: 1.2; color: var(--ink-3);
+}
+
+/* The one week-by-week commitment. */
+.rm__stop--key .rm__n { width: 64px; height: 64px; font-size: 26px;
+                        box-shadow: 0 0 0 4px #BFD6F7; }
+.rm__stop--key .rm__t { color: var(--blue); }
+.rm__stop--key .rm__note { color: #4A8BD6; }
+
+/* The way out of the funnel, not a step along it. */
+.rm__stop--off .rm__n { background: #AEB8C6 !important; }
+.rm__stop--off .rm__t,
+.rm__stop--off .rm__note { color: var(--ink-3); }
+
+/* The sale. */
+.rm__stop--end .rm__n { background: #34A518 !important; }
+.rm__stop--end .rm__t { color: #248A13; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+
+  <h1 class="rm__h">Webinar Funnel</h1>
+
+  <div class="rm__road">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <path class="lane" d="M 290 216 H 1740 A 50 50 0 0 1 1790 266 V 388 A 50 50 0 0 1 1740 438 H 160 A 50 50 0 0 0 110 488 V 610 A 50 50 0 0 0 160 660 H 1740 A 50 50 0 0 1 1790 710 V 832 A 50 50 0 0 1 1740 882 H 290"/>
+      <g transform="translate(455 216) rotate(0)"><path class="tip" d="M0 0 L -22 -11 L -22 11 Z"/></g>
+      <g transform="translate(1445 438) rotate(180)"><path class="tip" d="M0 0 L -22 -11 L -22 11 Z"/></g>
+      <g transform="translate(455 660) rotate(0)"><path class="tip" d="M0 0 L -22 -11 L -22 11 Z"/></g>
+      <g transform="translate(1445 882) rotate(180)"><path class="tip" d="M0 0 L -22 -11 L -22 11 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="rm__stop" style="left:290px; top:189px"><span class="rm__n" style="background:#8FC0F5">1</span><p class="rm__t">Ads</p><p class="rm__note">starting 3 days out</p></div>
+  <div class="rm__stop" style="left:620px; top:189px"><span class="rm__n" style="background:#87BCF4">2</span><p class="rm__t">Opt-in Page</p></div>
+  <div class="rm__stop" style="left:950px; top:189px"><span class="rm__n" style="background:#80B8F3">3</span><p class="rm__t">OTO Purchase</p></div>
+  <div class="rm__stop" style="left:1280px; top:189px"><span class="rm__n" style="background:#78B4F2">4</span><p class="rm__t">Opt-in Confirmation Page</p></div>
+  <div class="rm__stop" style="left:1610px; top:189px"><span class="rm__n" style="background:#71AFF1">5</span><p class="rm__t">Pre-Webinar Emails</p></div>
+  <div class="rm__stop" style="left:1610px; top:411px"><span class="rm__n" style="background:#69ABF0">6</span><p class="rm__t">YouTube Videos</p></div>
+  <div class="rm__stop" style="left:1280px; top:411px"><span class="rm__n" style="background:#62A7EF">7</span><p class="rm__t">Telegram Nurture</p></div>
+  <div class="rm__stop" style="left:950px; top:411px"><span class="rm__n" style="background:#5AA3EE">8</span><p class="rm__t">SMS Nurture</p></div>
+  <div class="rm__stop" style="left:620px; top:411px"><span class="rm__n" style="background:#539FED">9</span><p class="rm__t">Pre-Webinar Nurture Ads</p></div>
+  <div class="rm__stop rm__stop--key" style="left:290px; top:406px"><span class="rm__n" style="background:#4B9BEC">10</span><p class="rm__t">Live Webinar Presentation</p><p class="rm__note">the only thing you&rsquo;re in each week</p></div>
+  <div class="rm__stop rm__stop--off" style="left:290px; top:633px"><span class="rm__n" style="background:#4496EC">11</span><p class="rm__t">Applied &amp; Unqualified</p><p class="rm__note">&rarr; Downsell</p></div>
+  <div class="rm__stop" style="left:620px; top:633px"><span class="rm__n" style="background:#3C92EB">12</span><p class="rm__t">Applied &amp; Qualified</p><p class="rm__note">&rarr; Booked Call</p></div>
+  <div class="rm__stop" style="left:950px; top:633px"><span class="rm__n" style="background:#358EEA">13</span><p class="rm__t">Call Confirmation Page</p></div>
+  <div class="rm__stop" style="left:1280px; top:633px"><span class="rm__n" style="background:#2D8AE9">14</span><p class="rm__t">Pre-Call Emails</p></div>
+  <div class="rm__stop" style="left:1610px; top:633px"><span class="rm__n" style="background:#2686E8">15</span><p class="rm__t">Setters Reaching Out</p></div>
+  <div class="rm__stop" style="left:1610px; top:855px"><span class="rm__n" style="background:#1E82E7">16</span><p class="rm__t">YouTube Nurture</p></div>
+  <div class="rm__stop" style="left:1280px; top:855px"><span class="rm__n" style="background:#177DE6">17</span><p class="rm__t">SMS Nurture</p></div>
+  <div class="rm__stop" style="left:950px; top:855px"><span class="rm__n" style="background:#0F79E5">18</span><p class="rm__t">Pre-Call Ads</p></div>
+  <div class="rm__stop" style="left:620px; top:855px"><span class="rm__n" style="background:#0875E4">19</span><p class="rm__t">Sales Call with Closer</p></div>
+  <div class="rm__stop rm__stop--end" style="left:290px; top:855px"><span class="rm__n" style="background:#0071E3">20</span><p class="rm__t">Closed Deal</p></div>
+
+</section>
+
+</body>
+</html>
