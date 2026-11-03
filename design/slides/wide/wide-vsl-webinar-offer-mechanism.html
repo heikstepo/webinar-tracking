@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VSL or webinar</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The same two halves as the VSL and webinar pair, each naming what it turns
+   on: the VSL sells the offer, the webinar sells the mechanism.
+
+   The second word takes the accent and a size down. It is the answer rather
+   than the subject, and setting both at one size would make the slide read as
+   four things instead of two.
+
+   Class names are prefixed duo; voice-quiet.css already owns .split, which is
+   why the rule down the middle is duo__rule.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 0; background: var(--ground); }
+
+.duo { position: relative; width: 1920px; height: 1080px; }
+
+/* Inset top and bottom rather than full bleed: a rule that runs off both
+   edges cuts the slide in two where this divides it. */
+.duo__rule {
+  position: absolute; left: 50%; top: 190px; bottom: 190px;
+  width: 3px; margin-left: -1.5px; background: #D2D8E0; border-radius: 2px;
+}
+
+.duo__half {
+  position: absolute; top: 0; width: 960px; height: 1080px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.duo__half--l { left: 0; }
+.duo__half--r { left: 960px; }
+
+.duo__word {
+  margin: 0;
+  font-size: 118px; font-weight: 600; letter-spacing: -0.032em; color: var(--ink);
+}
+.duo__sub {
+  margin: 20px 0 0;
+  font-size: 64px; font-weight: 600; letter-spacing: -0.022em; color: var(--blue);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <div class="duo">
+    <div class="duo__rule"></div>
+
+    <div class="duo__half duo__half--l">
+      <p class="duo__word">VSL</p>
+      <p class="duo__sub">Offer</p>
+    </div>
+
+    <div class="duo__half duo__half--r">
+      <p class="duo__word">Webinar</p>
+      <p class="duo__sub">Mechanism</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
