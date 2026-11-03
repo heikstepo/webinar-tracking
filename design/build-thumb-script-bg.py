@@ -172,6 +172,12 @@ TPL = '''<!doctype html>
 .sb__screen svg { width: 36%; height: 36%; }
 .sb__cta { border-radius: 6px; background: var(--blue); }
 
+.sb__zoom {
+  position: absolute; z-index: 3; box-sizing: border-box; border-radius: 50%;
+  background: var(--surface); border: 3px solid #BFD6F7;
+  box-shadow: 0 3px 14px rgba(20, 30, 50, 0.1);
+  display: flex; align-items: center; justify-content: center;
+}
 .sb__cash {
   position: absolute; z-index: 2; margin: 0;
   font-weight: 700; letter-spacing: -0.03em; color: #C6CDD7;
@@ -503,7 +509,7 @@ pill(910, 744, 'Organic', 'open', 2)
 pill(1042, 746, 'Converts', '', -1)
 
 # ---- money -----------------------------------------------------------------
-parts.append('<p class="sb__cash" style="left:600px; top:944px; font-size:94px">'
+parts.append('<p class="sb__cash" style="left:1228px; top:916px; font-size:88px">'
              '$$$</p>')
 
 # ---- the page itself, down the middle where it has room --------------------
@@ -519,8 +525,49 @@ parts.append('<div class="sb__n" style="left:876px; top:842px; width:330px;'
 pill(1156, 862, 'Hook', '', 2.5)
 pill(1156, 926, 'Body', '', -2)
 pill(1156, 996, 'CTA', '', 1.5)
-frame(788, 866, 84, 96, 3.5, 'play', 1)
-plain(806, 996, 76, 56, -2)
+
+# ---- the hook, blown up ----------------------------------------------------
+head(650, 776, 'The <i>hook</i>', 21, -1.2)
+parts.append('<div class="sb__zoom" style="left:644px; top:810px; width:216px;'
+             ' height:216px">'
+             '<div style="width:96px; height:156px; border-radius:10px;'
+             ' background:#E2EDFB; display:flex; align-items:center;'
+             ' justify-content:center">%s</div></div>'
+             % svg('play', '40%', '26%'))
+pill(652, 1038, 'first line', '', -1.5, 14)
+pill(762, 1044, '3 cuts', '', 2, 14)
+# the two lines that say this is a close-up of the page beside it
+link(852, 876, 884, 872, 0.05, pale=True, arrow=False)
+link(856, 946, 886, 966, -0.05, pale=True, arrow=False)
+
+# ---- small change, scattered ----------------------------------------------
+frame(1066, 234, 72, 64, -3.5, 'image', 1)
+frame(1076, 430, 158, 146, -2.4, 'image', 2)
+frame(534, 592, 66, 70, 3, 'speech', 1)
+for i, d in enumerate((18, 13, 16)):
+    dot(1568 + i * 4, 858 + i * 44, d, ('#CFE2FA', '#9DC2EE', '#CFE2FA')[i])
+dot(1216, 470, 16, '#CFE2FA')
+dot(1212, 508, 12, '#9DC2EE')
+dot(314, 612, 14, '#CFE2FA')
+frame(1148, 248, 72, 64, 2.8, 'play', 1)
+frame(24, 1004, 62, 64, -3, 'speech', 1)
+frame(98, 1012, 62, 64, 2.6, 'play', 1)
+pill(170, 1032, 'Hook', '', -1.5, 13)
+frame(1424, 912, 74, 66, 3, 'chart', 1)
+plain(1430, 992, 74, 56, -2.5)
+for i in range(5):
+    dot(1598 + i * 26, 588, 17, BLUES[i + 1])
+for i in range(3):
+    dot(366 + i * 26, 800, 16, BLUES[i * 2])
+pill(1066, 620, 'Test', '', -2, 13)
+dot(1162, 622, 20, '#CFE2FA')
+dot(1190, 630, 14, '#9DC2EE')
+pill(880, 778, 'Body', '', 1.5, 13)
+pill(962, 782, 'CTA', '', -1.6, 13)
+disc(1206, 352, 26, '#9DC2EE', '2', 13)
+disc(626, 346, 26, '#9DC2EE', '1', 13)
+dot(336, 944, 16, '#CFE2FA')
+dot(626, 626, 14, '#9DC2EE')
 
 # ---- right: where it lands -------------------------------------------------
 group(1230, 30, 334, 326, '', 0.6)
@@ -531,7 +578,7 @@ frame(1246, 288, 142, 58, -2, 'speech', 1)
 frame(1402, 282, 142, 58, 2.6, 'image', 1)
 
 head(1598, 40, 'Hook <em>rate</em>', 20, -1)
-frame(1594, 78, 302, 146, 1.2, 'chart', 2)
+frame(1594, 78, 302, 178, 1.2, 'chart', 2)
 
 # ---- objection to answer ---------------------------------------------------
 head(1238, 390, 'Objection &rarr; <i>Answer</i>', 20, -0.6)
@@ -596,6 +643,9 @@ link(508, 990, 556, 980, 0.07, dash=True, pale=True)
 
 frame(352, 986, 80, 80, -3, 'image', 1)
 frame(446, 996, 80, 80, 2.4, 'speech', 1)
+link(1138, 266, 1144, 268, 0.0, arrow=False, pale=True)
+link(1222, 940, 1218, 900, 0.06, dash=True, pale=True, arrow=False)
+link(164, 1036, 224, 1032, 0.06, dash=True, pale=True)
 
 # ---- the red marks ---------------------------------------------------------
 ink.append('<ellipse class="mk" cx="260" cy="508" rx="68" ry="26" '

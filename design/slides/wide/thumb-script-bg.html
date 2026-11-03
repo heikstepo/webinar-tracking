@@ -113,6 +113,12 @@
 .sb__screen svg { width: 36%; height: 36%; }
 .sb__cta { border-radius: 6px; background: var(--blue); }
 
+.sb__zoom {
+  position: absolute; z-index: 3; box-sizing: border-box; border-radius: 50%;
+  background: var(--surface); border: 3px solid #BFD6F7;
+  box-shadow: 0 3px 14px rgba(20, 30, 50, 0.1);
+  display: flex; align-items: center; justify-content: center;
+}
 .sb__cash {
   position: absolute; z-index: 2; margin: 0;
   font-weight: 700; letter-spacing: -0.03em; color: #C6CDD7;
@@ -142,6 +148,8 @@
       <path class="ln" d="M880 708 Q 895 708, 910 708"/><g transform="translate(910 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
       <path class="ln" d="M966 708 Q 981 708, 996 708"/><g transform="translate(996 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
       <path class="ln" d="M1048 708 Q 1065 708, 1082 708"/><g transform="translate(1082 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln pale" d="M852 876 Q 868.2 875.6, 884 872"/>
+      <path class="ln pale" d="M856 946 Q 872 954.5, 886 966"/>
       <path class="ln" d="M1400 447 Q 1414.8 450.5, 1430 451"/><g transform="translate(1430 451) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
       <path class="ln" d="M1400 497 Q 1414.8 500.5, 1430 501"/><g transform="translate(1430 501) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
       <path class="ln" d="M1400 547 Q 1414.8 550.5, 1430 551"/><g transform="translate(1430 551) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
@@ -161,6 +169,9 @@
       <path class="ln dash" d="M870 900 Q 874.52 903.8, 880 906"/>
       <path class="ln dash" d="M1212 880 Q 1226.24 879.68, 1240 876"/><g transform="translate(1240 876) rotate(-14.9729)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
       <path class="ln dash pale" d="M508 990 Q 532.7 988.36, 556 980"/><g transform="translate(556 980) rotate(-19.7379)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln pale" d="M1138 266 Q 1141 267, 1144 268"/>
+      <path class="ln dash pale" d="M1222 940 Q 1222.4 919.76, 1218 900"/>
+      <path class="ln dash pale" d="M164 1036 Q 194.24 1037.6, 224 1032"/><g transform="translate(224 1032) rotate(-10.6568)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
     </svg>
   </div>
 
@@ -307,14 +318,57 @@
   <span class="sb__pill" style="left:654px; top:746px; font-size:15px; transform:rotate(-1.5deg);">Ads</span>
   <span class="sb__pill sb__pill--open" style="left:910px; top:744px; font-size:15px; transform:rotate(2deg);">Organic</span>
   <span class="sb__pill" style="left:1042px; top:746px; font-size:15px; transform:rotate(-1deg);">Converts</span>
-  <p class="sb__cash" style="left:600px; top:944px; font-size:94px">$$$</p>
+  <p class="sb__cash" style="left:1228px; top:916px; font-size:88px">$$$</p>
   <p class="sb__h" style="left:880px; top:806px; font-size:22px; transform:rotate(-1.2deg);">The <i>script</i></p>
   <div class="sb__n" style="left:876px; top:842px; width:330px; height:206px; padding:16px 18px; transform:rotate(-1.4deg)"><div class="sb__ln--b" style="margin-top:0px; height:7px; width:62%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:96%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:88%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:74%"></div><div class="sb__ln--b" style="margin-top:12px; height:7px; width:54%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:92%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:80%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:96%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:46%"></div></div>
   <span class="sb__pill" style="left:1156px; top:862px; font-size:15px; transform:rotate(2.5deg);">Hook</span>
   <span class="sb__pill" style="left:1156px; top:926px; font-size:15px; transform:rotate(-2deg);">Body</span>
   <span class="sb__pill" style="left:1156px; top:996px; font-size:15px; transform:rotate(1.5deg);">CTA</span>
-  <div class="sb__n" style="left:788px; top:866px; width:84px; height:96px; transform:rotate(3.5deg);"><div class="sb__th" style="height:75px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
-  <div class="sb__n" style="left:806px; top:996px; width:76px; height:56px; transform:rotate(-2deg);"><div class="sb__th" style="height:34px"></div><div class="sb__ln" style="width:78%"></div></div>
+  <p class="sb__h" style="left:650px; top:776px; font-size:21px; transform:rotate(-1.2deg);">The <i>hook</i></p>
+  <div class="sb__zoom" style="left:644px; top:810px; width:216px; height:216px"><div style="width:96px; height:156px; border-radius:10px; background:#E2EDFB; display:flex; align-items:center; justify-content:center"><svg class="sb__g" viewBox="0 0 124 124" style="width:40%;height:26%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div></div>
+  <span class="sb__pill" style="left:652px; top:1038px; font-size:14px; transform:rotate(-1.5deg);">first line</span>
+  <span class="sb__pill" style="left:762px; top:1044px; font-size:14px; transform:rotate(2deg);">3 cuts</span>
+  <div class="sb__n" style="left:1066px; top:234px; width:72px; height:64px; transform:rotate(-3.5deg);"><div class="sb__th" style="height:43px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1076px; top:430px; width:158px; height:146px; transform:rotate(-2.4deg);"><div class="sb__th" style="height:116px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div><div class="sb__ln" style="width:66%"></div></div>
+  <div class="sb__n" style="left:534px; top:592px; width:66px; height:70px; transform:rotate(3deg);"><div class="sb__th" style="height:49px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__dot" style="left:1568px; top:858px; width:18px; height:18px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:1572px; top:902px; width:13px; height:13px; background:#9DC2EE"></div>
+  <div class="sb__dot" style="left:1576px; top:946px; width:16px; height:16px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:1216px; top:470px; width:16px; height:16px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:1212px; top:508px; width:12px; height:12px; background:#9DC2EE"></div>
+  <div class="sb__dot" style="left:314px; top:612px; width:14px; height:14px; background:#CFE2FA"></div>
+  <div class="sb__n" style="left:1148px; top:248px; width:72px; height:64px; transform:rotate(2.8deg);"><div class="sb__th" style="height:43px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:24px; top:1004px; width:62px; height:64px; transform:rotate(-3deg);"><div class="sb__th" style="height:43px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:98px; top:1012px; width:62px; height:64px; transform:rotate(2.6deg);"><div class="sb__th" style="height:43px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <span class="sb__pill" style="left:170px; top:1032px; font-size:13px; transform:rotate(-1.5deg);">Hook</span>
+  <div class="sb__n" style="left:1424px; top:912px; width:74px; height:66px; transform:rotate(3deg);"><div class="sb__th" style="height:45px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M18 16 V 104 H 108"/>
+        <path class="h" d="M32 88 L 56 62 L 74 76 L 102 38"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1430px; top:992px; width:74px; height:56px; transform:rotate(-2.5deg);"><div class="sb__th" style="height:34px"></div><div class="sb__ln" style="width:78%"></div></div>
+  <div class="sb__dot" style="left:1598px; top:588px; width:17px; height:17px; background:#A7CCF7"></div>
+  <div class="sb__dot" style="left:1624px; top:588px; width:17px; height:17px; background:#7CB2F3"></div>
+  <div class="sb__dot" style="left:1650px; top:588px; width:17px; height:17px; background:#4A97EF"></div>
+  <div class="sb__dot" style="left:1676px; top:588px; width:17px; height:17px; background:#2E87E8"></div>
+  <div class="sb__dot" style="left:1702px; top:588px; width:17px; height:17px; background:#0071E3"></div>
+  <div class="sb__dot" style="left:366px; top:800px; width:16px; height:16px; background:#C5DDFA"></div>
+  <div class="sb__dot" style="left:392px; top:800px; width:16px; height:16px; background:#7CB2F3"></div>
+  <div class="sb__dot" style="left:418px; top:800px; width:16px; height:16px; background:#2E87E8"></div>
+  <span class="sb__pill" style="left:1066px; top:620px; font-size:13px; transform:rotate(-2deg);">Test</span>
+  <div class="sb__dot" style="left:1162px; top:622px; width:20px; height:20px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:1190px; top:630px; width:14px; height:14px; background:#9DC2EE"></div>
+  <span class="sb__pill" style="left:880px; top:778px; font-size:13px; transform:rotate(1.5deg);">Body</span>
+  <span class="sb__pill" style="left:962px; top:782px; font-size:13px; transform:rotate(-1.6deg);">CTA</span>
+  <div class="sb__dot" style="left:1206px; top:352px; width:26px; height:26px; background:#9DC2EE; display:flex; align-items:center; justify-content:center; color:#fff; font-size:13px; font-weight:700">2</div>
+  <div class="sb__dot" style="left:626px; top:346px; width:26px; height:26px; background:#9DC2EE; display:flex; align-items:center; justify-content:center; color:#fff; font-size:13px; font-weight:700">1</div>
+  <div class="sb__dot" style="left:336px; top:944px; width:16px; height:16px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:626px; top:626px; width:14px; height:14px; background:#9DC2EE"></div>
   <div class="sb__grp" style="left:1230px; top:30px; width:334px; height:326px; transform:rotate(0.6deg);"></div>
   <p class="sb__h" style="left:1246px; top:40px; font-size:21px; transform:rotate(0.6deg);">Where it <i>lands</i></p>
   <div class="sb__phone" style="left:1248px; top:80px; width:98px; height:186.2px; transform:rotate(2.5deg);"><div class="sb__screen" style="height:102.41px"><svg class="sb__g" viewBox="0 0 124 124" style="width:36%;height:36%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln" style="width:86%"></div><div class="sb__ln" style="width:60%"></div><div class="sb__cta" style="height:17.64px; margin-top:7px"></div></div>
@@ -326,7 +380,7 @@
         <circle class="f" cx="38" cy="46" r="8"/>
         <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
   <p class="sb__h" style="left:1598px; top:40px; font-size:20px; transform:rotate(-1deg);">Hook <em>rate</em></p>
-  <div class="sb__n" style="left:1594px; top:78px; width:302px; height:146px; transform:rotate(1.2deg);"><div class="sb__th" style="height:116px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M18 16 V 104 H 108"/>
+  <div class="sb__n" style="left:1594px; top:78px; width:302px; height:178px; transform:rotate(1.2deg);"><div class="sb__th" style="height:148px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M18 16 V 104 H 108"/>
         <path class="h" d="M32 88 L 56 62 L 74 76 L 102 38"/></svg></div><div class="sb__ln--b" style="width:92%"></div><div class="sb__ln" style="width:66%"></div></div>
   <p class="sb__h" style="left:1238px; top:390px; font-size:20px; transform:rotate(-0.6deg);">Objection &rarr; <i>Answer</i></p>
   <div class="sb__box" style="left:1242px; top:428px; width:152px; height:38px; font-size:15px; transform:rotate(-1.5deg);">&ldquo;Too busy&rdquo;</div>
