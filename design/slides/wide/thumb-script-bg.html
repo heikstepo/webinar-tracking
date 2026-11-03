@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ad Scripts</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-thumb-script-bg.py. A worked-on whiteboard, not a layout: small
+   frames and notes at odd angles with lines running between them.
+
+   Class names are prefixed sb; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide {
+  position: relative;
+  width: 1920px; height: 1080px; padding: 0; background: var(--ground);
+  background-image: radial-gradient(#D9DDE3 1.6px, transparent 1.7px);
+  background-size: 28px 28px; background-position: 8px 8px;
+}
+
+/* ---- lines --------------------------------------------------------------- */
+.sb__w { position: absolute; inset: 0; z-index: 1; }
+.sb__w svg { display: block; width: 100%; height: 100%; }
+.sb__w .ln { fill: none; stroke: #A9B3C0; stroke-width: 2.2; stroke-linecap: round; }
+.sb__w .dash { stroke-dasharray: 8 8; }
+.sb__w .pale { stroke: #C3CBD5; stroke-width: 2; }
+.sb__w .tip { fill: #A9B3C0; }
+.sb__over { z-index: 5; }
+
+.sb__ink { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
+.sb__ink svg { display: block; width: 100%; height: 100%; }
+.sb__ink .mk { fill: none; stroke: var(--red); stroke-width: 3.4;
+               stroke-linecap: round; }
+
+/* ---- nodes --------------------------------------------------------------- */
+.sb__n {
+  position: absolute; box-sizing: border-box; z-index: 3;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 9px; box-shadow: 0 2px 7px rgba(20, 30, 50, 0.07);
+  padding: 6px;
+}
+.sb__th {
+  background: #E2EDFB; border-radius: 5px; width: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.sb__ln { height: 4px; border-radius: 3px; background: #DCE1E8; margin-top: 5px; }
+.sb__ln--b { background: #B9CEEA; }
+
+/* a ring round a cluster */
+.sb__grp {
+  position: absolute; box-sizing: border-box; z-index: 2;
+  border: 2px dashed #C2CBD6; border-radius: 16px;
+}
+.sb__grp--b { border-color: #AFCBEE; }
+.sb__grp--r { border-color: #E9AEB8; }
+
+/* free text on the board */
+.sb__h {
+  position: absolute; z-index: 4; margin: 0; white-space: nowrap;
+  font-weight: 600; letter-spacing: -0.012em; line-height: 1.2; color: var(--ink);
+}
+.sb__h i { font-style: normal; color: var(--blue); }
+.sb__h em { font-style: normal; color: var(--ink-3); font-weight: 600; }
+.sb__h b { font-weight: 600; color: var(--blue); }
+
+.sb__pill {
+  position: absolute; z-index: 4; white-space: nowrap;
+  padding: 4px 9px; border-radius: 7px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 15px; font-weight: 600;
+}
+.sb__pill--open { background: var(--surface); border: 1px dashed #BFD6F7; color: #6E8CB4; }
+.sb__pill--p { background: #FBE4E8; color: #AE3047; }
+.sb__pill--g { background: #E7F5E3; color: #3C7F2C; }
+
+.sb__box {
+  position: absolute; z-index: 3; box-sizing: border-box; white-space: nowrap;
+  background: var(--surface); border: 1.5px solid #C6CED9; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 600; color: var(--ink);
+}
+.sb__box--b { border-color: #8FBDF3; color: #1E4E8C; background: #F2F7FE; }
+
+.sb__bar { position: absolute; z-index: 3; border-radius: 4px; }
+.sb__dot { position: absolute; z-index: 3; border-radius: 50%; }
+
+.sb__g {
+  display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.sb__g .h { stroke: var(--blue); stroke-width: 4.4; }
+.sb__g .f { fill: var(--blue); stroke: none; }
+.sb__g--p { stroke: #D4536B; }
+.sb__g--p .f { fill: #D4536B; }
+.sb__g--g { stroke: #52A33C; }
+
+.sb__brace { position: absolute; z-index: 3; }
+.sb__brace svg { display: block; fill: none; stroke: #9FC3EE; stroke-width: 2.6;
+                 stroke-linecap: round; }
+
+.sb__phone {
+  position: absolute; z-index: 3; box-sizing: border-box;
+  border-radius: 14px; border: 3px solid #C2CAD4; background: var(--surface);
+  padding: 7px 6px; box-shadow: 0 2px 8px rgba(20, 30, 50, 0.07);
+}
+.sb__screen {
+  border-radius: 8px; background: #E2EDFB;
+  display: flex; align-items: center; justify-content: center;
+}
+.sb__screen svg { width: 36%; height: 36%; }
+.sb__cta { border-radius: 6px; background: var(--blue); }
+
+.sb__cash {
+  position: absolute; z-index: 2; margin: 0;
+  font-weight: 700; letter-spacing: -0.03em; color: #C6CDD7;
+}
+.sb__meta { position: absolute; z-index: 2; }
+.sb__meta svg { display: block; fill: #C8CFD8; }
+.sb__tick {
+  position: absolute; z-index: 3; box-sizing: border-box; border-radius: 50%;
+  background: #E7F5E3; border: 2.5px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1; color: #248A13;
+}
+</style>
+</head>
+<body>
+
+<section class="slide">
+
+  <div class="sb__w">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <path class="ln pale" d="M778 126 Q 784 126, 790 126"/><g transform="translate(790 126) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln pale" d="M906 126 Q 912 126, 918 126"/><g transform="translate(918 126) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln pale" d="M1034 126 Q 1040 126, 1046 126"/><g transform="translate(1046 126) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M748 330 Q 769.24 330.52, 790 326"/><g transform="translate(790 326) rotate(-12.2831)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M708 708 Q 723 708, 738 708"/><g transform="translate(738 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M794 708 Q 809 708, 824 708"/><g transform="translate(824 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M880 708 Q 895 708, 910 708"/><g transform="translate(910 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M966 708 Q 981 708, 996 708"/><g transform="translate(996 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M1048 708 Q 1065 708, 1082 708"/><g transform="translate(1082 708) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M1400 447 Q 1414.8 450.5, 1430 451"/><g transform="translate(1430 451) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M1400 497 Q 1414.8 500.5, 1430 501"/><g transform="translate(1430 501) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M1400 547 Q 1414.8 550.5, 1430 551"/><g transform="translate(1430 551) rotate(1.88405)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M342 160 Q 355.88 137.32, 364 112"/><g transform="translate(364 112) rotate(-72.2192)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash pale" d="M300 424 Q 347.36 341.24, 352 246"/><g transform="translate(352 246) rotate(-87.2108)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M352 596 Q 383.6 521.2, 384 440"/><g transform="translate(384 440) rotate(-89.7178)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M616 196 Q 630.28 241.36, 658 280"/><g transform="translate(658 280) rotate(54.3447)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash pale" d="M620 290 Q 647.62 370.76, 652 456"/><g transform="translate(652 456) rotate(87.0585)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M630 696 Q 642 701, 654 706"/><g transform="translate(654 706) rotate(22.6199)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1194 330 Q 1217.92 318, 1244 312"/><g transform="translate(1244 312) rotate(-12.9561)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1116 708 Q 1178.64 690.26, 1234 656"/><g transform="translate(1234 656) rotate(-31.7516)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash pale" d="M1568 176 Q 1582.24 163.92, 1592 148"/><g transform="translate(1592 148) rotate(-58.489)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1580 466 Q 1597.22 444.96, 1608 420"/><g transform="translate(1608 420) rotate(-66.6409)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1744 584 Q 1744 598, 1744 612"/><g transform="translate(1744 612) rotate(90)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1558 898 Q 1570 898, 1582 898"/><g transform="translate(1582 898) rotate(0)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M240 740 Q 208.8 740, 180 752"/><g transform="translate(180 752) rotate(157.38)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M870 900 Q 874.52 903.8, 880 906"/>
+      <path class="ln dash" d="M1212 880 Q 1226.24 879.68, 1240 876"/><g transform="translate(1240 876) rotate(-14.9729)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash pale" d="M508 990 Q 532.7 988.36, 556 980"/><g transform="translate(556 980) rotate(-19.7379)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="sb__grp sb__grp--b" style="left:22px; top:30px; width:320px; height:272px; transform:rotate(-0.8deg);"></div>
+  <p class="sb__h" style="left:38px; top:40px; font-size:20px; transform:rotate(-0.8deg);">Who you&rsquo;re <i>writing to</i></p>
+  <div style="position:absolute; z-index:3; left:44px; top:74px"><svg class="sb__g" viewBox="0 0 124 124" style="width:66px;height:66px" aria-hidden="true"><circle cx="62" cy="38" r="20"/>
+        <path d="M22 110 C 22 82, 40 68, 62 68 C 84 68, 102 82, 102 110"/></svg></div>
+  <p class="sb__h" style="left:52px; top:146px; font-size:15px; transform:rotate(-2deg);">ICP 1</p>
+  <div style="position:absolute; z-index:3; left:132px; top:80px"><svg class="sb__g" viewBox="0 0 124 124" style="width:66px;height:66px" aria-hidden="true"><circle cx="62" cy="38" r="20"/>
+        <path d="M22 110 C 22 82, 40 68, 62 68 C 84 68, 102 82, 102 110"/></svg></div>
+  <p class="sb__h" style="left:140px; top:152px; font-size:15px; transform:rotate(1.5deg);">ICP 2</p>
+  <span class="sb__pill sb__pill--p" style="left:226px; top:92px; font-size:15px; transform:rotate(-3deg);">Pain</span>
+  <span class="sb__pill sb__pill--g" style="left:226px; top:134px; font-size:15px; transform:rotate(2deg);">Dream</span>
+  <p class="sb__h" style="left:46px; top:176px; font-size:15px;">Awareness levels</p>
+  <div class="sb__bar" style="left:46px; top:202px; width:38px; height:12px; background:#C5DDFA"></div>
+  <p class="sb__h" style="left:98px; top:199px; font-size:14px;"><em>Unaware</em></p>
+  <div class="sb__bar" style="left:46px; top:222px; width:58px; height:12px; background:#A7CCF7"></div>
+  <p class="sb__h" style="left:118px; top:219px; font-size:14px;"><em>Curious</em></p>
+  <div class="sb__bar" style="left:46px; top:242px; width:78px; height:12px; background:#7CB2F3"></div>
+  <p class="sb__h" style="left:138px; top:239px; font-size:14px;"><em>Researching</em></p>
+  <div class="sb__bar" style="left:46px; top:262px; width:98px; height:12px; background:#4A97EF"></div>
+  <p class="sb__h" style="left:158px; top:259px; font-size:14px;"><em>Struggling</em></p>
+  <div class="sb__bar" style="left:46px; top:282px; width:118px; height:12px; background:#0071E3"></div>
+  <p class="sb__h" style="left:178px; top:279px; font-size:14px;"><em>Plateaued</em></p>
+  <div style="position:absolute; z-index:3; left:40px; top:332px"><svg class="sb__g sb__g--p" viewBox="0 0 124 124" style="width:72px;height:72px" aria-hidden="true"><path d="M70 10 C 70 36, 52 42, 50 60 C 47 47, 43 42, 38 38
+        C 35 50, 26 58, 26 76 a 36 36 0 0 0 72 0 C 98 54, 86 40, 70 10 Z"/></svg></div>
+  <p class="sb__h" style="left:44px; top:404px; font-size:18px; transform:rotate(-2deg);">Pain</p>
+  <div style="position:absolute; z-index:3; left:146px; top:338px"><svg class="sb__g sb__g--g" viewBox="0 0 124 124" style="width:72px;height:72px" aria-hidden="true"><path d="M62 42 V 94"/>
+        <path d="M62 50 C 40 22, 12 28, 14 54 C 16 78, 44 82, 62 68"/>
+        <path d="M62 50 C 84 22, 112 28, 110 54 C 108 78, 80 82, 62 68"/>
+        <path d="M58 40 L 46 22 M66 40 L 78 22"/></svg></div>
+  <p class="sb__h" style="left:150px; top:404px; font-size:18px; transform:rotate(1.6deg);">Dream</p>
+  <div class="sb__box" style="left:244px; top:350px; width:92px; height:34px; font-size:15px; transform:rotate(2.5deg);">Angle</div>
+  <div class="sb__grp sb__grp--r" style="left:20px; top:444px; width:330px; height:292px; transform:rotate(0.7deg);"></div>
+  <p class="sb__h" style="left:36px; top:452px; font-size:25px; transform:rotate(0.7deg);">S R P A</p>
+  <p class="sb__h" style="left:42px; top:494px; font-size:23px; transform:rotate(-0.6deg);"><b>S</b>ituation</p>
+  <p class="sb__h" style="left:42px; top:546px; font-size:23px; transform:rotate(-0.2deg);"><b>R</b>eframe</p>
+  <p class="sb__h" style="left:42px; top:598px; font-size:23px; transform:rotate(0.2deg);"><b>P</b>roof</p>
+  <p class="sb__h" style="left:42px; top:650px; font-size:23px; transform:rotate(0.6deg);"><b>A</b>sk</p>
+  <div class="sb__brace" style="left:194px; top:488px; transform:rotate(0.5deg);"><svg viewBox="0 0 26 46" height="46" aria-hidden="true"><path d="M0 2 C 8 2, 10 5, 10 12 L 10 11 C 10 18, 14 23, 22 23 C 14 23, 10 28, 10 35 L 10 34 C 10 41, 8 44, 0 44"/></svg></div>
+  <p class="sb__h" style="left:226px; top:498px; font-size:22px;"><i>Hook</i></p>
+  <div class="sb__brace" style="left:194px; top:548px; transform:rotate(-0.4deg);"><svg viewBox="0 0 26 98" height="98" aria-hidden="true"><path d="M0 2 C 8 2, 10 5, 10 12 L 10 37 C 10 44, 14 49, 22 49 C 14 49, 10 54, 10 61 L 10 86 C 10 93, 8 96, 0 96"/></svg></div>
+  <p class="sb__h" style="left:226px; top:584px; font-size:22px;"><i>Body</i></p>
+  <div class="sb__brace" style="left:194px; top:658px; transform:rotate(0.6deg);"><svg viewBox="0 0 26 46" height="46" aria-hidden="true"><path d="M0 2 C 8 2, 10 5, 10 12 L 10 11 C 10 18, 14 23, 22 23 C 14 23, 10 28, 10 35 L 10 34 C 10 41, 8 44, 0 44"/></svg></div>
+  <p class="sb__h" style="left:226px; top:668px; font-size:22px;"><i>CTA</i></p>
+  <p class="sb__h" style="left:30px; top:758px; font-size:21px; transform:rotate(-1.2deg);">Proof</p>
+  <div class="sb__n" style="left:28px; top:794px; width:238px; height:44px; padding:8px 9px; transform:rotate(-1.4deg);"><div class="sb__ln sb__ln--b" style="margin-top:0; width:44%"></div><div class="sb__ln" style="width:86%"></div></div>
+  <div class="sb__tick" style="left:280px; top:802px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <div class="sb__n" style="left:37px; top:848px; width:238px; height:44px; padding:8px 9px; transform:rotate(-0.2deg);"><div class="sb__ln sb__ln--b" style="margin-top:0; width:54%"></div><div class="sb__ln" style="width:78%"></div></div>
+  <div class="sb__tick" style="left:289px; top:856px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <div class="sb__n" style="left:46px; top:902px; width:238px; height:44px; padding:8px 9px; transform:rotate(1deg);"><div class="sb__ln sb__ln--b" style="margin-top:0; width:64%"></div><div class="sb__ln" style="width:70%"></div></div>
+  <div class="sb__tick" style="left:298px; top:910px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <span class="sb__pill" style="left:32px; top:970px; font-size:15px; transform:rotate(-1deg);">8 case studies</span>
+  <p class="sb__h" style="left:368px; top:38px; font-size:23px; transform:rotate(-0.6deg);"><i>Offer</i> line</p>
+  <span class="sb__pill" style="left:366px; top:76px; font-size:16px; transform:rotate(-1.5deg);">[Result]</span>
+  <p class="sb__h" style="left:456px; top:80px; font-size:16px;"><em>in</em></p>
+  <span class="sb__pill" style="left:490px; top:72px; font-size:16px; transform:rotate(1.2deg);">[Time]</span>
+  <p class="sb__h" style="left:570px; top:78px; font-size:16px;"><em>without</em></p>
+  <span class="sb__pill" style="left:366px; top:118px; font-size:16px; transform:rotate(1.8deg);">[Pain]</span>
+  <p class="sb__h" style="left:442px; top:122px; font-size:16px;"><em>or</em></p>
+  <span class="sb__pill" style="left:480px; top:114px; font-size:16px; transform:rotate(-1deg);">[Guarantee]</span>
+  <div class="sb__grp" style="left:354px; top:166px; width:268px; height:152px; transform:rotate(1deg);"></div>
+  <p class="sb__h" style="left:368px; top:176px; font-size:20px; transform:rotate(1deg);">The offer</p>
+  <div class="sb__box sb__box--b" style="left:370px; top:212px; width:34px; height:26px; font-size:13px; transform:rotate(-1deg);">01</div>
+  <p class="sb__h" style="left:414px; top:216px; font-size:17px;"><em>Core Offer</em></p>
+  <div class="sb__box sb__box--b" style="left:370px; top:246px; width:34px; height:26px; font-size:13px; transform:rotate(-0.1deg);">02</div>
+  <p class="sb__h" style="left:414px; top:250px; font-size:17px;"><em>Bonuses</em></p>
+  <div class="sb__box sb__box--b" style="left:370px; top:280px; width:34px; height:26px; font-size:13px; transform:rotate(0.8deg);">03</div>
+  <p class="sb__h" style="left:414px; top:284px; font-size:17px;"><em>Guarantee</em></p>
+  <div class="sb__phone" style="left:388px; top:350px; width:112px; height:212.8px; transform:rotate(-3.5deg);"><div class="sb__screen" style="height:117.04px"><svg class="sb__g" viewBox="0 0 124 124" style="width:36%;height:36%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln" style="width:86%"></div><div class="sb__ln" style="width:60%"></div><div class="sb__cta" style="height:20.16px; margin-top:7px"></div></div>
+  <p class="sb__h" style="left:372px; top:586px; font-size:19px; transform:rotate(-2deg);"><i>Vertical</i> cut</p>
+  <span class="sb__pill" style="left:532px; top:368px; font-size:15px; transform:rotate(2deg);">Hook</span>
+  <span class="sb__pill" style="left:532px; top:422px; font-size:15px; transform:rotate(-1.5deg);">Body</span>
+  <span class="sb__pill" style="left:532px; top:476px; font-size:15px; transform:rotate(1.8deg);">CTA</span>
+  <p class="sb__h" style="left:360px; top:628px; font-size:20px; transform:rotate(0.6deg);">Interest <i>spectrum</i></p>
+  <div class="sb__bar" style="left:366px; top:746px; width:48px; height:22px; background:#C5DDFA"></div>
+  <p class="sb__h" style="left:366px; top:776px; font-size:13px;"><em>Curious</em></p>
+  <div class="sb__bar" style="left:428px; top:728px; width:48px; height:40px; background:#7CB2F3"></div>
+  <p class="sb__h" style="left:428px; top:776px; font-size:13px;"><em>Active</em></p>
+  <div class="sb__bar" style="left:490px; top:706px; width:48px; height:62px; background:#2E87E8"></div>
+  <p class="sb__h" style="left:490px; top:776px; font-size:13px;"><em>Strong</em></p>
+  <div class="sb__bar" style="left:552px; top:684px; width:48px; height:84px; background:#0071E3"></div>
+  <p class="sb__h" style="left:552px; top:776px; font-size:13px;"><em>Convicted</em></p>
+  <p class="sb__h" style="left:614px; top:718px; font-size:30px; transform:rotate(-4deg);">$$$</p>
+  <p class="sb__h" style="left:360px; top:830px; font-size:19px; transform:rotate(-0.7deg);">ICP &rarr; Messaging &rarr; <i>Offer</i></p>
+  <div class="sb__bar" style="left:364px; top:870px; width:58px; height:19px; background:#A7CCF7"></div>
+  <p class="sb__h" style="left:432px; top:870px; font-size:15px;"><em>ICP</em></p>
+  <div class="sb__bar" style="left:364px; top:900px; width:102px; height:19px; background:#4A97EF"></div>
+  <p class="sb__h" style="left:476px; top:900px; font-size:15px;"><em>Messaging</em></p>
+  <div class="sb__bar" style="left:364px; top:930px; width:148px; height:19px; background:#0071E3"></div>
+  <p class="sb__h" style="left:522px; top:930px; font-size:15px;"><em>Offer Positioning</em></p>
+  <div class="sb__n" style="left:566px; top:962px; width:76px; height:60px; transform:rotate(3deg);"><div class="sb__th" style="height:38px"></div><div class="sb__ln" style="width:78%"></div></div>
+  <div class="sb__n" style="left:228px; top:1008px; width:76px; height:58px; transform:rotate(-2.5deg);"><div class="sb__th" style="height:36px"></div><div class="sb__ln" style="width:78%"></div></div>
+  <div class="sb__grp sb__grp--b" style="left:650px; top:28px; width:544px; height:192px; transform:rotate(0.5deg);"></div>
+  <p class="sb__h" style="left:666px; top:38px; font-size:23px; transform:rotate(0.5deg);">1 Ad = 1 <i>Purpose</i></p>
+  <div class="sb__n" style="left:666px; top:78px; width:106px; height:94px; transform:rotate(-3deg);"><div class="sb__th" style="height:73px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><circle cx="62" cy="62" r="44"/><circle cx="62" cy="62" r="26"/>
+        <circle class="f" cx="62" cy="62" r="9"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:670px; top:180px; font-size:14px;"><em>Awareness</em></p>
+  <div class="sb__n" style="left:794px; top:78px; width:106px; height:94px; transform:rotate(-1.2deg);"><div class="sb__th" style="height:73px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:798px; top:180px; font-size:14px;"><em>Education</em></p>
+  <div class="sb__n" style="left:922px; top:78px; width:106px; height:94px; transform:rotate(0.6deg);"><div class="sb__th" style="height:73px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:926px; top:180px; font-size:14px;"><em>Objection</em></p>
+  <div class="sb__n" style="left:1050px; top:78px; width:106px; height:94px; transform:rotate(2.4deg);"><div class="sb__th" style="height:73px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M18 16 V 104 H 108"/>
+        <path class="h" d="M32 88 L 56 62 L 74 76 L 102 38"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:1054px; top:180px; font-size:14px;"><em>Conversion</em></p>
+  <p class="sb__h" style="left:658px; top:244px; font-size:22px; transform:rotate(-0.8deg);">3 creatives per <i>ad</i></p>
+  <div style="position:absolute; z-index:3; left:660px; top:284px"><svg class="sb__g" viewBox="0 0 124 124" style="width:78px;height:78px" aria-hidden="true"><rect x="20" y="8" width="84" height="108" rx="11"/>
+        <path class="h" d="M34 32 H 90"/>
+        <path d="M34 50 H 90 M34 66 H 76 M34 82 H 90 M34 98 H 62"/></svg></div>
+  <div class="sb__n" style="left:798px; top:282px; width:62px; height:104px; transform:rotate(-4deg);"><div class="sb__th" style="height:83px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:872px; top:292px; width:62px; height:104px; transform:rotate(-0.5deg);"><div class="sb__th" style="height:83px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:946px; top:282px; width:62px; height:104px; transform:rotate(3deg);"><div class="sb__th" style="height:83px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:802px; top:400px; font-size:14px; transform:rotate(1deg);"><em>same script, three cuts</em></p>
+  <div class="sb__grp" style="left:648px; top:428px; width:408px; height:178px; transform:rotate(-0.6deg);"></div>
+  <p class="sb__h" style="left:664px; top:438px; font-size:21px; transform:rotate(-0.6deg);">Concept <i>testing</i></p>
+  <p class="sb__h" style="left:664px; top:484px; font-size:14px;"><em>Concept 1</em></p>
+  <div class="sb__dot" style="left:758px; top:478px; width:30px; height:30px; background:#0071E3"></div>
+  <div class="sb__dot" style="left:800px; top:478px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:842px; top:478px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:884px; top:478px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:926px; top:478px; width:30px; height:30px; background:#CFE2FA"></div>
+  <p class="sb__h" style="left:664px; top:524px; font-size:14px;"><em>Concept 2</em></p>
+  <div class="sb__dot" style="left:758px; top:518px; width:30px; height:30px; background:#0071E3"></div>
+  <div class="sb__dot" style="left:800px; top:518px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:842px; top:518px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:884px; top:518px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:926px; top:518px; width:30px; height:30px; background:#CFE2FA"></div>
+  <p class="sb__h" style="left:664px; top:564px; font-size:14px;"><em>Concept 3</em></p>
+  <div class="sb__dot" style="left:758px; top:558px; width:30px; height:30px; background:#0071E3"></div>
+  <div class="sb__dot" style="left:800px; top:558px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:842px; top:558px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:884px; top:558px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__dot" style="left:926px; top:558px; width:30px; height:30px; background:#CFE2FA"></div>
+  <div class="sb__tick" style="left:978px; top:517px; width:30px; height:30px; font-size:16.2px">&#10003;</div>
+  <p class="sb__h" style="left:654px; top:642px; font-size:22px; transform:rotate(0.7deg);">Ad <i>sequence</i></p>
+  <div class="sb__dot" style="left:660px; top:686px; width:44px; height:44px; background:#5BA1F0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:19px; font-weight:700">1</div>
+  <div class="sb__dot" style="left:746px; top:686px; width:44px; height:44px; background:#5BA1F0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:19px; font-weight:700">2</div>
+  <div class="sb__dot" style="left:832px; top:686px; width:44px; height:44px; background:#5BA1F0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:19px; font-weight:700">3</div>
+  <div class="sb__dot" style="left:918px; top:686px; width:44px; height:44px; background:#AEB8C6; display:flex; align-items:center; justify-content:center; color:#fff; font-size:19px; font-weight:700">&#9654;</div>
+  <div class="sb__dot" style="left:1004px; top:686px; width:44px; height:44px; background:#0071E3; display:flex; align-items:center; justify-content:center; color:#fff; font-size:19px; font-weight:700">4</div>
+  <div class="sb__tick" style="left:1090px; top:686px; width:44px; height:44px; font-size:23.76px">&#10003;</div>
+  <span class="sb__pill" style="left:654px; top:746px; font-size:15px; transform:rotate(-1.5deg);">Ads</span>
+  <span class="sb__pill sb__pill--open" style="left:910px; top:744px; font-size:15px; transform:rotate(2deg);">Organic</span>
+  <span class="sb__pill" style="left:1042px; top:746px; font-size:15px; transform:rotate(-1deg);">Converts</span>
+  <p class="sb__cash" style="left:600px; top:944px; font-size:94px">$$$</p>
+  <p class="sb__h" style="left:880px; top:806px; font-size:22px; transform:rotate(-1.2deg);">The <i>script</i></p>
+  <div class="sb__n" style="left:876px; top:842px; width:330px; height:206px; padding:16px 18px; transform:rotate(-1.4deg)"><div class="sb__ln--b" style="margin-top:0px; height:7px; width:62%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:96%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:88%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:74%"></div><div class="sb__ln--b" style="margin-top:12px; height:7px; width:54%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:92%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:80%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:96%"></div><div class="sb__ln" style="margin-top:12px; height:6px; width:46%"></div></div>
+  <span class="sb__pill" style="left:1156px; top:862px; font-size:15px; transform:rotate(2.5deg);">Hook</span>
+  <span class="sb__pill" style="left:1156px; top:926px; font-size:15px; transform:rotate(-2deg);">Body</span>
+  <span class="sb__pill" style="left:1156px; top:996px; font-size:15px; transform:rotate(1.5deg);">CTA</span>
+  <div class="sb__n" style="left:788px; top:866px; width:84px; height:96px; transform:rotate(3.5deg);"><div class="sb__th" style="height:75px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:806px; top:996px; width:76px; height:56px; transform:rotate(-2deg);"><div class="sb__th" style="height:34px"></div><div class="sb__ln" style="width:78%"></div></div>
+  <div class="sb__grp" style="left:1230px; top:30px; width:334px; height:326px; transform:rotate(0.6deg);"></div>
+  <p class="sb__h" style="left:1246px; top:40px; font-size:21px; transform:rotate(0.6deg);">Where it <i>lands</i></p>
+  <div class="sb__phone" style="left:1248px; top:80px; width:98px; height:186.2px; transform:rotate(2.5deg);"><div class="sb__screen" style="height:102.41px"><svg class="sb__g" viewBox="0 0 124 124" style="width:36%;height:36%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln" style="width:86%"></div><div class="sb__ln" style="width:60%"></div><div class="sb__cta" style="height:17.64px; margin-top:7px"></div></div>
+  <div class="sb__phone" style="left:1370px; top:90px; width:98px; height:186.2px; transform:rotate(-2deg);"><div class="sb__screen" style="height:102.41px"><svg class="sb__g" viewBox="0 0 124 124" style="width:36%;height:36%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln" style="width:86%"></div><div class="sb__ln" style="width:60%"></div><div class="sb__cta" style="height:17.64px; margin-top:7px"></div></div>
+  <div class="sb__n" style="left:1246px; top:288px; width:142px; height:58px; transform:rotate(-2deg);"><div class="sb__th" style="height:37px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1402px; top:282px; width:142px; height:58px; transform:rotate(2.6deg);"><div class="sb__th" style="height:37px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:1598px; top:40px; font-size:20px; transform:rotate(-1deg);">Hook <em>rate</em></p>
+  <div class="sb__n" style="left:1594px; top:78px; width:302px; height:146px; transform:rotate(1.2deg);"><div class="sb__th" style="height:116px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M18 16 V 104 H 108"/>
+        <path class="h" d="M32 88 L 56 62 L 74 76 L 102 38"/></svg></div><div class="sb__ln--b" style="width:92%"></div><div class="sb__ln" style="width:66%"></div></div>
+  <p class="sb__h" style="left:1238px; top:390px; font-size:20px; transform:rotate(-0.6deg);">Objection &rarr; <i>Answer</i></p>
+  <div class="sb__box" style="left:1242px; top:428px; width:152px; height:38px; font-size:15px; transform:rotate(-1.5deg);">&ldquo;Too busy&rdquo;</div>
+  <div class="sb__box sb__box--b" style="left:1436px; top:432px; width:140px; height:38px; font-size:15px; transform:rotate(1.2deg);">Proof</div>
+  <div class="sb__box" style="left:1242px; top:478px; width:152px; height:38px; font-size:15px; transform:rotate(-0.2deg);">&ldquo;Tried ads&rdquo;</div>
+  <div class="sb__box sb__box--b" style="left:1436px; top:482px; width:140px; height:38px; font-size:15px; transform:rotate(0.3deg);">Proof</div>
+  <div class="sb__box" style="left:1242px; top:528px; width:152px; height:38px; font-size:15px; transform:rotate(1.1deg);">&ldquo;Too soon&rdquo;</div>
+  <div class="sb__box sb__box--b" style="left:1436px; top:532px; width:140px; height:38px; font-size:15px; transform:rotate(-0.6deg);">Proof</div>
+  <div class="sb__grp sb__grp--b" style="left:1612px; top:258px; width:288px; height:326px; transform:rotate(-0.5deg);"></div>
+  <p class="sb__h" style="left:1628px; top:268px; font-size:20px; transform:rotate(-0.5deg);"><i>Script</i> pass</p>
+  <div class="sb__tick" style="left:1630px; top:306px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <p class="sb__h" style="left:1670px; top:311px; font-size:16px;"><em>Hook first</em></p>
+  <div class="sb__tick" style="left:1630px; top:350px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <p class="sb__h" style="left:1670px; top:355px; font-size:16px;"><em>One idea</em></p>
+  <div class="sb__tick" style="left:1630px; top:394px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <p class="sb__h" style="left:1670px; top:399px; font-size:16px;"><em>Proof in</em></p>
+  <div class="sb__tick" style="left:1630px; top:438px; width:28px; height:28px; font-size:15.12px">&#10003;</div>
+  <p class="sb__h" style="left:1670px; top:443px; font-size:16px;"><em>One ask</em></p>
+  <div class="sb__n" style="left:1630px; top:488px; width:244px; height:82px; transform:rotate(0.8deg);"><div class="sb__th" style="height:61px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="20" y="8" width="84" height="108" rx="11"/>
+        <path class="h" d="M34 32 H 90"/>
+        <path d="M34 50 H 90 M34 66 H 76 M34 82 H 90 M34 98 H 62"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:1238px; top:612px; font-size:20px; transform:rotate(0.8deg);">Creative <i>diversity</i></p>
+  <div class="sb__n" style="left:1242px; top:650px; width:96px; height:108px; transform:rotate(-4deg);"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1354px; top:650px; width:96px; height:108px; transform:rotate(-1.6deg);"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1466px; top:650px; width:96px; height:108px; transform:rotate(0.8deg);"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1242px; top:768px; width:96px; height:108px; transform:rotate(3.2deg);"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1354px; top:768px; width:96px; height:108px; transform:rotate(-2.4deg);"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:1466px; top:768px; width:96px; height:108px;"><div class="sb__th" style="height:87px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <p class="sb__h" style="left:1598px; top:616px; font-size:20px; transform:rotate(-0.7deg);">Scaling &amp; <i>testing</i></p>
+  <div class="sb__bar" style="left:1602px; top:740px; width:26px; height:16px; background:#C5DDFA"></div>
+  <div class="sb__bar" style="left:1636px; top:730px; width:26px; height:26px; background:#A7CCF7"></div>
+  <div class="sb__bar" style="left:1670px; top:720px; width:26px; height:36px; background:#7CB2F3"></div>
+  <div class="sb__bar" style="left:1704px; top:708px; width:26px; height:48px; background:#4A97EF"></div>
+  <div class="sb__bar" style="left:1738px; top:694px; width:26px; height:62px; background:#2E87E8"></div>
+  <div class="sb__bar" style="left:1772px; top:678px; width:26px; height:78px; background:#0071E3"></div>
+  <p class="sb__h" style="left:1602px; top:766px; font-size:14px; transform:rotate(0.5deg);"><em>winners take the budget</em></p>
+  <div class="sb__grp" style="left:1586px; top:806px; width:312px; height:236px; transform:rotate(0.5deg);"></div>
+  <p class="sb__h" style="left:1602px; top:816px; font-size:20px; transform:rotate(0.5deg);">Before it runs</p>
+  <div class="sb__tick" style="left:1604px; top:854px; width:26px; height:26px; font-size:14.04px">&#10003;</div>
+  <p class="sb__h" style="left:1642px; top:858px; font-size:16px;"><em>ICP named</em></p>
+  <div class="sb__tick" style="left:1604px; top:896px; width:26px; height:26px; font-size:14.04px">&#10003;</div>
+  <p class="sb__h" style="left:1642px; top:900px; font-size:16px;"><em>Offer line in</em></p>
+  <div class="sb__tick" style="left:1604px; top:938px; width:26px; height:26px; font-size:14.04px">&#10003;</div>
+  <p class="sb__h" style="left:1642px; top:942px; font-size:16px;"><em>Proof shown</em></p>
+  <div class="sb__tick" style="left:1604px; top:980px; width:26px; height:26px; font-size:14.04px">&#10003;</div>
+  <p class="sb__h" style="left:1642px; top:984px; font-size:16px;"><em>One CTA</em></p>
+  <div class="sb__meta" style="left:1512px; top:1004px"><svg viewBox="0 0 24 24" width="58" aria-hidden="true"><title>Meta</title><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg></div>
+  <div class="sb__n" style="left:352px; top:986px; width:80px; height:80px; transform:rotate(-3deg);"><div class="sb__th" style="height:59px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><rect x="10" y="22" width="104" height="80" rx="12"/>
+        <circle class="f" cx="38" cy="46" r="8"/>
+        <path d="M18 92 L 48 62 L 70 84 L 86 70 L 106 92"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+  <div class="sb__n" style="left:446px; top:996px; width:80px; height:80px; transform:rotate(2.4deg);"><div class="sb__th" style="height:59px"><svg class="sb__g" viewBox="0 0 124 124" style="width:42%;height:46%" aria-hidden="true"><path d="M14 30 a 12 12 0 0 1 12 -12 H 98 a 12 12 0 0 1 12 12
+        V 76 a 12 12 0 0 1 -12 12 H 56 L 32 108 V 88 H 26 a 12 12 0 0 1 -12 -12 Z"/>
+        <path class="h" d="M32 42 H 92"/><path d="M32 58 H 76"/></svg></div><div class="sb__ln--b" style="width:92%"></div></div>
+
+  <div class="sb__w sb__over">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <path class="ln" d="M528 380 Q 510 381.6, 494 390"/><g transform="translate(494 390) rotate(152.301)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M528 434 Q 511.88 438.6, 498 448"/><g transform="translate(498 448) rotate(145.893)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln" d="M528 488 Q 515.44 499.24, 500 506"/><g transform="translate(500 506) rotate(156.355)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M342 232 Q 500.84 193.24, 646 118"/><g transform="translate(646 118) rotate(-27.3988)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1058 128 Q 1145.46 151.46, 1236 150"/><g transform="translate(1236 150) rotate(-0.923841)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash" d="M1060 516 Q 1153.18 491.32, 1236 442"/><g transform="translate(1236 442) rotate(-30.7742)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+      <path class="ln dash pale" d="M892 402 Q 1065.32 392.36, 1236 424"/><g transform="translate(1236 424) rotate(10.5021)"><path class="tip" d="M0 0 L -15 -6 L -15 6 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="sb__ink">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <ellipse class="mk" cx="260" cy="508" rx="68" ry="26" transform="rotate(-3 260 508)"/>
+      <path class="mk" d="M658 272 C 758 262, 858 266, 940 274"/>
+      <ellipse class="mk" cx="1112" cy="708" rx="40" ry="34" transform="rotate(6 1112 708)"/>
+      <path class="mk" d="M890 876 C 950 870, 1010 872, 1066 878"/>
+    </svg>
+  </div>
+
+</section>
+
+</body>
+</html>
