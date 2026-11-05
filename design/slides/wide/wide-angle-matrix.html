@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Angle Matrix</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-angle-matrix.py. One ICP in the middle, the reasons they buy on a
+   ring around it, a spoke to each. Every angle carries three ads, because an
+   angle is an ad group, not a line in a list.
+
+   Class names are prefixed am; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.am__h {
+  position: absolute; left: 110px; top: 44px; margin: 0;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+.am__sub {
+  position: absolute; left: 112px; top: 112px; margin: 0;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-3);
+}
+
+/* the spokes, under everything so they run into the cards */
+.am__sp { position: absolute; inset: 0; }
+.am__sp svg { display: block; width: 100%; height: 100%; }
+.am__sp .rail { fill: none; stroke: #D2D8E0; stroke-width: 3;
+                stroke-linecap: round; }
+.am__sp .tip { fill: #BAC3CF; }
+
+/* ---- the hub ------------------------------------------------------------- */
+.am__hub {
+  position: absolute; box-sizing: border-box;
+  width: 376px; height: 168px;
+  left: 50%; margin-left: -188px;
+  border-radius: 24px; background: #E4EFFD; border: 2px solid #BFD6F7;
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; text-align: center; padding: 0 28px;
+}
+.am__hub p { margin: 0; }
+.am__lab {
+  font-size: 19px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: #5C8ECB;
+}
+.am__who {
+  margin-top: 10px !important;
+  font-size: 27px; font-weight: 600; letter-spacing: -0.014em; line-height: 1.26;
+  color: #1E4E8C;
+}
+
+/* ---- an angle ------------------------------------------------------------ */
+.am__node {
+  position: absolute; box-sizing: border-box;
+  width: 332px; height: 140px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 18px; padding: 15px 19px;
+  box-shadow: 0 3px 14px rgba(20, 30, 50, 0.07);
+}
+.am__t {
+  margin: 0;
+  font-size: 25px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+}
+.am__say {
+  margin: 6px 0 0;
+  font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
+}
+/* the ad group: three ads, which is what the angle turns into */
+.am__ads { display: flex; gap: 7px; margin-top: 12px; }
+.am__ad { width: 34px; height: 22px; border-radius: 6px; background: #CFE2FA; }
+.am__ad--on { background: var(--blue); }
+
+.am__key {
+  position: absolute; right: 110px; bottom: 54px; margin: 0; text-align: right;
+  font-size: 22px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink-3);
+}
+.am__key b { font-weight: 600; color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <h1 class="am__h">Angle Matrix</h1>
+  <p class="am__sub">One ICP, every reason they buy</p>
+
+  <div class="am__sp">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <path class="rail" d="M960 470 L 960 344"/>
+      <g transform="translate(960 344) rotate(-90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1156.39 470 L 1230.81 433.625"/>
+      <g transform="translate(1230.81 433.625) rotate(-26.0502)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1160 566 L 1406 566"/>
+      <g transform="translate(1406 566) rotate(0)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1156.39 662 L 1230.81 698.375"/>
+      <g transform="translate(1230.81 698.375) rotate(26.0502)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M960 662 L 960 788"/>
+      <g transform="translate(960 788) rotate(90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M763.608 662 L 689.194 698.375"/>
+      <g transform="translate(689.194 698.375) rotate(153.95)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M760 566 L 514 566"/>
+      <g transform="translate(514 566) rotate(180)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M763.608 470 L 689.194 433.625"/>
+      <g transform="translate(689.194 433.625) rotate(-153.95)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="am__hub" style="top:482px">
+    <p class="am__lab">ICP</p>
+    <p class="am__who">Sold on ecom,<br>wants a product brand</p>
+  </div>
+
+  <div class="am__node" style="left:794px; top:190px"><p class="am__t">Product Selection</p><p class="am__say">&ldquo;I don&rsquo;t know what to sell&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1236.65px; top:279.625px"><p class="am__t">Suppliers</p><p class="am__say">&ldquo;Where do I source it?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1420px; top:496px"><p class="am__t">Branding</p><p class="am__say">&ldquo;Mine looks like everyone else&rsquo;s&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1236.65px; top:712.375px"><p class="am__t">The Store</p><p class="am__say">&ldquo;Traffic comes, nobody buys&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:794px; top:802px"><p class="am__t">Influencers</p><p class="am__say">&ldquo;How do I get it seen?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:351.351px; top:712.375px"><p class="am__t">Paid Ads</p><p class="am__say">&ldquo;Ads just burn money&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:168px; top:496px"><p class="am__t">Plateaued</p><p class="am__say">&ldquo;Sales stopped growing&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:351.351px; top:279.625px"><p class="am__t">Straight Offer</p><p class="am__say">&ldquo;Just show me the program&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+
+  <p class="am__key">1 angle = <b>1 ad group</b></p>
+
+</section>
+
+</body>
+</html>
