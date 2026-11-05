@@ -5,12 +5,13 @@ One person, one offer, many reasons to say yes. Each reason is an angle, and
 each angle is its own ad group, which is why every node carries its own little
 tray of ads rather than a label saying so.
 
-Every angle carries the objection that comes back at it and the proof that
-answers that objection, because an ad group is not just a theme: it is a
-claim, the push-back, and the thing you show.
+An objection is an angle and a proof element is an angle, so they sit on the
+ring as their own cards rather than inside the others. Every card on the ring
+is one ad group, which is why every card carries its own three ads.
 
 The angles are the ecom example: the steps the programme covers (pick the
-product, suppliers, the store, distribution) and the straight offer.
+product, suppliers, the store, distribution), the straight offer, two
+objections, and two proof elements.
 
     ./build-angle-matrix.py    writes the 16:9 slide
 """
@@ -22,24 +23,24 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 W, H = 1920, 1080
 CX, CY = 960, 572              # the hub, a little below the title
-RX, RY = 640, 330              # the ring the angles sit on
+RX, RY = 652, 336              # the ring the angles sit on
 
 HUB_W, HUB_H = 376, 168
-NODE_W, NODE_H = 424, 178
+NODE_W, NODE_H = 330, 136
 
-# (angle, the reason in their words, the objection that comes back, the proof)
+# (kind, headline, the line under it) clockwise from the top
 ANGLES = [
-    ('Product Selection', '&ldquo;I don&rsquo;t know what to sell&rdquo;',
-     '&ldquo;Everything&rsquo;s saturated&rdquo;', 'Case Study 1'),
-    ('Suppliers', '&ldquo;Where do I source it?&rdquo;',
-     '&ldquo;I&rsquo;ll get burned by a supplier&rdquo;', 'Own Proof'),
-    ('Distribution', '&ldquo;How do I get it seen?&rdquo;',
-     '&ldquo;Ads are too expensive now&rdquo;', 'Case Study 2'),
-    ('The Store', '&ldquo;Traffic comes, nobody buys&rdquo;',
-     '&ldquo;I built one, it didn&rsquo;t convert&rdquo;', 'Case Study 3'),
-    ('Straight Offer', '&ldquo;Just show me the program&rdquo;',
-     '&ldquo;Why you?&rdquo;', 'Own Proof'),
+    ('angle', 'Product Selection', '&ldquo;I don&rsquo;t know what to sell&rdquo;'),
+    ('angle', 'Suppliers', '&ldquo;Where do I source it?&rdquo;'),
+    ('angle', 'Distribution', '&ldquo;How do I get it seen?&rdquo;'),
+    ('angle', 'The Store', '&ldquo;Traffic comes, nobody buys&rdquo;'),
+    ('angle', 'Straight Offer', '&ldquo;Just show me the program&rdquo;'),
+    ('obj', '&ldquo;Everything&rsquo;s saturated&rdquo;', ''),
+    ('proof', 'Case Study 1', 'the one who picked right'),
+    ('obj', '&ldquo;Ads just burn money&rdquo;', ''),
+    ('proof', 'Own Proof', 'our own store'),
 ]
+KIND = {'angle': 'Angle', 'obj': 'Objection', 'proof': 'Proof'}
 
 TPL = '''<!doctype html>
 <html lang="en">
@@ -102,39 +103,38 @@ TPL = '''<!doctype html>
   position: absolute; box-sizing: border-box;
   width: __NODEW__px; height: __NODEH__px;
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 18px; padding: 15px 19px;
+  border-radius: 18px; padding: 14px 18px;
   box-shadow: 0 3px 14px rgba(20, 30, 50, 0.07);
+  display: flex; flex-direction: column; justify-content: center;
 }
+/* the eyebrow is the only thing that says which of the three a card is */
+.am__eye {
+  margin: 0 0 7px;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--blue);
+}
+.am__node--obj .am__eye { color: #C8364F; }
+.am__node--proof .am__eye { color: #248A13; }
+.am__node--obj { border-color: #F0C9D1; }
+.am__node--proof { border-color: #C3E3BA; }
+.am__node--proof .am__t { color: #1F7A10; }
 .am__t {
   margin: 0;
-  font-size: 25px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+  font-size: 24px; font-weight: 600; letter-spacing: -0.014em; line-height: 1.2;
+  color: var(--ink);
 }
 .am__say {
   margin: 6px 0 0;
   font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
 }
-/* below the rule: what comes back, and what answers it */
-.am__rule { height: 1px; background: var(--hairline); margin: 13px 0 12px; }
-.am__r { display: flex; align-items: center; gap: 11px; }
-.am__r + .am__r { margin-top: 9px; }
-.am__k {
-  width: 100px; flex: none;
-  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--ink-3);
-}
-.am__v {
-  font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
-}
-.am__pf {
-  padding: 5px 11px; border-radius: 8px;
-  background: #E4EFFD; color: #1E4E8C;
-  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
-  text-transform: uppercase; white-space: nowrap;
-}
 /* the ad group: three ads, which is what the angle turns into */
-.am__ads { display: flex; gap: 7px; margin-top: 12px; }
-.am__ad { width: 34px; height: 22px; border-radius: 6px; background: #CFE2FA; }
+.am__ads { display: flex; gap: 7px; margin-top: 11px; }
+.am__ad { width: 32px; height: 20px; border-radius: 6px; background: #CFE2FA; }
 .am__ad--on { background: var(--blue); }
+.am__node--obj .am__ad { background: #F6D7DD; }
+.am__node--obj .am__ad--on { background: #C8364F; }
+.am__node--proof .am__ad { background: #D4EDCC; }
+.am__node--proof .am__ad--on { background: #34A518; }
 
 .am__key {
   position: absolute; right: 110px; bottom: 54px; margin: 0; text-align: right;
@@ -197,7 +197,7 @@ def edge(w, h, dx, dy, pad=0):
 
 spokes, nodes = [], []
 
-for i, (title, say, obj, proof) in enumerate(ANGLES):
+for i, (kind, title, say) in enumerate(ANGLES):
     a = math.radians(-90 + i * (360 / len(ANGLES)))
     nx, ny = CX + RX * math.cos(a), CY + RY * math.sin(a)
 
@@ -215,17 +215,13 @@ for i, (title, say, obj, proof) in enumerate(ANGLES):
                   % (x2, y2, math.degrees(math.atan2(y2 - y1, x2 - x1))))
 
     nodes.append(
-        '  <div class="am__node" style="left:%gpx; top:%gpx">'
-        '<p class="am__t">%s</p><p class="am__say">%s</p>'
-        '<div class="am__rule"></div>'
-        '<div class="am__r"><span class="am__k">Objection</span>'
-        '<span class="am__v">%s</span></div>'
-        '<div class="am__r"><span class="am__k">Proof</span>'
-        '<span class="am__pf">%s</span>'
-        '<div class="am__ads" style="margin:0 0 0 auto">'
-        '<span class="am__ad am__ad--on"></span><span class="am__ad"></span>'
-        '<span class="am__ad"></span></div></div></div>'
-        % (nx - NODE_W / 2, ny - NODE_H / 2, title, say, obj, proof))
+        '  <div class="am__node%s" style="left:%gpx; top:%gpx">'
+        '<p class="am__eye">%s</p><p class="am__t">%s</p>%s'
+        '<div class="am__ads"><span class="am__ad am__ad--on"></span>'
+        '<span class="am__ad"></span><span class="am__ad"></span></div></div>'
+        % ('' if kind == 'angle' else ' am__node--' + kind,
+           nx - NODE_W / 2, ny - NODE_H / 2, KIND[kind], title,
+           '<p class="am__say">%s</p>' % say if say else ''))
 
 out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
           .replace('__HUBW__', str(HUB_W)).replace('__HUBH__', str(HUB_H))

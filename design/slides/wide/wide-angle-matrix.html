@@ -57,41 +57,40 @@
 /* ---- an angle ------------------------------------------------------------ */
 .am__node {
   position: absolute; box-sizing: border-box;
-  width: 424px; height: 178px;
+  width: 330px; height: 136px;
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 18px; padding: 15px 19px;
+  border-radius: 18px; padding: 14px 18px;
   box-shadow: 0 3px 14px rgba(20, 30, 50, 0.07);
+  display: flex; flex-direction: column; justify-content: center;
 }
+/* the eyebrow is the only thing that says which of the three a card is */
+.am__eye {
+  margin: 0 0 7px;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--blue);
+}
+.am__node--obj .am__eye { color: #C8364F; }
+.am__node--proof .am__eye { color: #248A13; }
+.am__node--obj { border-color: #F0C9D1; }
+.am__node--proof { border-color: #C3E3BA; }
+.am__node--proof .am__t { color: #1F7A10; }
 .am__t {
   margin: 0;
-  font-size: 25px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+  font-size: 24px; font-weight: 600; letter-spacing: -0.014em; line-height: 1.2;
+  color: var(--ink);
 }
 .am__say {
   margin: 6px 0 0;
   font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
 }
-/* below the rule: what comes back, and what answers it */
-.am__rule { height: 1px; background: var(--hairline); margin: 13px 0 12px; }
-.am__r { display: flex; align-items: center; gap: 11px; }
-.am__r + .am__r { margin-top: 9px; }
-.am__k {
-  width: 100px; flex: none;
-  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--ink-3);
-}
-.am__v {
-  font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
-}
-.am__pf {
-  padding: 5px 11px; border-radius: 8px;
-  background: #E4EFFD; color: #1E4E8C;
-  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
-  text-transform: uppercase; white-space: nowrap;
-}
 /* the ad group: three ads, which is what the angle turns into */
-.am__ads { display: flex; gap: 7px; margin-top: 12px; }
-.am__ad { width: 34px; height: 22px; border-radius: 6px; background: #CFE2FA; }
+.am__ads { display: flex; gap: 7px; margin-top: 11px; }
+.am__ad { width: 32px; height: 20px; border-radius: 6px; background: #CFE2FA; }
 .am__ad--on { background: var(--blue); }
+.am__node--obj .am__ad { background: #F6D7DD; }
+.am__node--obj .am__ad--on { background: #C8364F; }
+.am__node--proof .am__ad { background: #D4EDCC; }
+.am__node--proof .am__ad--on { background: #34A518; }
 
 .am__key {
   position: absolute; right: 110px; bottom: 54px; margin: 0; text-align: right;
@@ -110,16 +109,24 @@
 
   <div class="am__sp">
     <svg viewBox="0 0 1920 1080" aria-hidden="true">
-      <path class="rail" d="M960 476 L 960 345"/>
-      <g transform="translate(960 345) rotate(-90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M1160 538.493 L 1342.68 507.888"/>
-      <g transform="translate(1342.68 507.888) rotate(-9.51082)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M1095.27 668 L 1191.05 735.976"/>
-      <g transform="translate(1191.05 735.976) rotate(35.3632)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M824.731 668 L 728.95 735.976"/>
-      <g transform="translate(728.95 735.976) rotate(144.637)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M760 538.493 L 577.324 507.888"/>
-      <g transform="translate(577.324 507.888) rotate(-170.489)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M960 476 L 960 318"/>
+      <g transform="translate(960 318) rotate(-90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1116.31 476 L 1245.58 396.609"/>
+      <g transform="translate(1245.58 396.609) rotate(-31.5564)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1160 553.826 L 1423.09 529.92"/>
+      <g transform="translate(1423.09 529.92) rotate(-5.19209)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1160 631.506 L 1345.65 686.742"/>
+      <g transform="translate(1345.65 686.742) rotate(16.5693)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1027.8 668 L 1125.08 805.737"/>
+      <g transform="translate(1125.08 805.737) rotate(54.7674)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M892.198 668 L 794.917 805.737"/>
+      <g transform="translate(794.917 805.737) rotate(125.233)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M760 631.506 L 574.351 686.742"/>
+      <g transform="translate(574.351 686.742) rotate(163.431)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M760 553.826 L 496.905 529.92"/>
+      <g transform="translate(496.905 529.92) rotate(-174.808)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M803.688 476 L 674.419 396.609"/>
+      <g transform="translate(674.419 396.609) rotate(-148.444)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
     </svg>
   </div>
 
@@ -128,11 +135,15 @@
     <p class="am__who">Sold on ecom,<br>wants a product brand</p>
   </div>
 
-  <div class="am__node" style="left:748px; top:153px"><p class="am__t">Product Selection</p><p class="am__say">&ldquo;I don&rsquo;t know what to sell&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Everything&rsquo;s saturated&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 1</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
-  <div class="am__node" style="left:1356.68px; top:381.024px"><p class="am__t">Suppliers</p><p class="am__say">&ldquo;Where do I source it?&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;I&rsquo;ll get burned by a supplier&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Own Proof</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
-  <div class="am__node" style="left:1124.18px; top:749.976px"><p class="am__t">Distribution</p><p class="am__say">&ldquo;How do I get it seen?&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Ads are too expensive now&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 2</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
-  <div class="am__node" style="left:371.817px; top:749.976px"><p class="am__t">The Store</p><p class="am__say">&ldquo;Traffic comes, nobody buys&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;I built one, it didn&rsquo;t convert&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 3</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
-  <div class="am__node" style="left:139.324px; top:381.024px"><p class="am__t">Straight Offer</p><p class="am__say">&ldquo;Just show me the program&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Why you?&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Own Proof</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
+  <div class="am__node" style="left:795px; top:168px"><p class="am__eye">Angle</p><p class="am__t">Product Selection</p><p class="am__say">&ldquo;I don&rsquo;t know what to sell&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1214.1px; top:246.609px"><p class="am__eye">Angle</p><p class="am__t">Suppliers</p><p class="am__say">&ldquo;Where do I source it?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1437.09px; top:445.654px"><p class="am__eye">Angle</p><p class="am__t">Distribution</p><p class="am__say">&ldquo;How do I get it seen?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1359.65px; top:672px"><p class="am__eye">Angle</p><p class="am__t">The Store</p><p class="am__say">&ldquo;Traffic comes, nobody buys&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:1018px; top:819.737px"><p class="am__eye">Angle</p><p class="am__t">Straight Offer</p><p class="am__say">&ldquo;Just show me the program&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node am__node--obj" style="left:572.003px; top:819.737px"><p class="am__eye">Objection</p><p class="am__t">&ldquo;Everything&rsquo;s saturated&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node am__node--proof" style="left:230.351px; top:672px"><p class="am__eye">Proof</p><p class="am__t">Case Study 1</p><p class="am__say">the one who picked right</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node am__node--obj" style="left:152.905px; top:445.654px"><p class="am__eye">Objection</p><p class="am__t">&ldquo;Ads just burn money&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node am__node--proof" style="left:375.902px; top:246.609px"><p class="am__eye">Proof</p><p class="am__t">Own Proof</p><p class="am__say">our own store</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
 
   <p class="am__key">1 angle = <b>1 ad group</b></p>
 
