@@ -57,7 +57,7 @@
 /* ---- an angle ------------------------------------------------------------ */
 .am__node {
   position: absolute; box-sizing: border-box;
-  width: 332px; height: 140px;
+  width: 424px; height: 178px;
   background: var(--surface); border: 1px solid var(--hairline);
   border-radius: 18px; padding: 15px 19px;
   box-shadow: 0 3px 14px rgba(20, 30, 50, 0.07);
@@ -69,6 +69,24 @@
 .am__say {
   margin: 6px 0 0;
   font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
+}
+/* below the rule: what comes back, and what answers it */
+.am__rule { height: 1px; background: var(--hairline); margin: 13px 0 12px; }
+.am__r { display: flex; align-items: center; gap: 11px; }
+.am__r + .am__r { margin-top: 9px; }
+.am__k {
+  width: 100px; flex: none;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.am__v {
+  font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
+}
+.am__pf {
+  padding: 5px 11px; border-radius: 8px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; white-space: nowrap;
 }
 /* the ad group: three ads, which is what the angle turns into */
 .am__ads { display: flex; gap: 7px; margin-top: 12px; }
@@ -92,38 +110,29 @@
 
   <div class="am__sp">
     <svg viewBox="0 0 1920 1080" aria-hidden="true">
-      <path class="rail" d="M960 470 L 960 344"/>
-      <g transform="translate(960 344) rotate(-90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M1156.39 470 L 1230.81 433.625"/>
-      <g transform="translate(1230.81 433.625) rotate(-26.0502)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M1160 566 L 1406 566"/>
-      <g transform="translate(1406 566) rotate(0)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M1156.39 662 L 1230.81 698.375"/>
-      <g transform="translate(1230.81 698.375) rotate(26.0502)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M960 662 L 960 788"/>
-      <g transform="translate(960 788) rotate(90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M763.608 662 L 689.194 698.375"/>
-      <g transform="translate(689.194 698.375) rotate(153.95)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M760 566 L 514 566"/>
-      <g transform="translate(514 566) rotate(180)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
-      <path class="rail" d="M763.608 470 L 689.194 433.625"/>
-      <g transform="translate(689.194 433.625) rotate(-153.95)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M960 476 L 960 345"/>
+      <g transform="translate(960 345) rotate(-90)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1160 538.493 L 1342.68 507.888"/>
+      <g transform="translate(1342.68 507.888) rotate(-9.51082)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M1095.27 668 L 1191.05 735.976"/>
+      <g transform="translate(1191.05 735.976) rotate(35.3632)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M824.731 668 L 728.95 735.976"/>
+      <g transform="translate(728.95 735.976) rotate(144.637)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="rail" d="M760 538.493 L 577.324 507.888"/>
+      <g transform="translate(577.324 507.888) rotate(-170.489)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
     </svg>
   </div>
 
-  <div class="am__hub" style="top:482px">
+  <div class="am__hub" style="top:488px">
     <p class="am__lab">ICP</p>
     <p class="am__who">Sold on ecom,<br>wants a product brand</p>
   </div>
 
-  <div class="am__node" style="left:794px; top:190px"><p class="am__t">Product Selection</p><p class="am__say">&ldquo;I don&rsquo;t know what to sell&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:1236.65px; top:279.625px"><p class="am__t">Suppliers</p><p class="am__say">&ldquo;Where do I source it?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:1420px; top:496px"><p class="am__t">Branding</p><p class="am__say">&ldquo;Mine looks like everyone else&rsquo;s&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:1236.65px; top:712.375px"><p class="am__t">The Store</p><p class="am__say">&ldquo;Traffic comes, nobody buys&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:794px; top:802px"><p class="am__t">Influencers</p><p class="am__say">&ldquo;How do I get it seen?&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:351.351px; top:712.375px"><p class="am__t">Paid Ads</p><p class="am__say">&ldquo;Ads just burn money&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:168px; top:496px"><p class="am__t">Plateaued</p><p class="am__say">&ldquo;Sales stopped growing&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
-  <div class="am__node" style="left:351.351px; top:279.625px"><p class="am__t">Straight Offer</p><p class="am__say">&ldquo;Just show me the program&rdquo;</p><div class="am__ads"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div>
+  <div class="am__node" style="left:748px; top:153px"><p class="am__t">Product Selection</p><p class="am__say">&ldquo;I don&rsquo;t know what to sell&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Everything&rsquo;s saturated&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 1</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
+  <div class="am__node" style="left:1356.68px; top:381.024px"><p class="am__t">Suppliers</p><p class="am__say">&ldquo;Where do I source it?&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;I&rsquo;ll get burned by a supplier&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Own Proof</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
+  <div class="am__node" style="left:1124.18px; top:749.976px"><p class="am__t">Distribution</p><p class="am__say">&ldquo;How do I get it seen?&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Ads are too expensive now&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 2</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
+  <div class="am__node" style="left:371.817px; top:749.976px"><p class="am__t">The Store</p><p class="am__say">&ldquo;Traffic comes, nobody buys&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;I built one, it didn&rsquo;t convert&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Case Study 3</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
+  <div class="am__node" style="left:139.324px; top:381.024px"><p class="am__t">Straight Offer</p><p class="am__say">&ldquo;Just show me the program&rdquo;</p><div class="am__rule"></div><div class="am__r"><span class="am__k">Objection</span><span class="am__v">&ldquo;Why you?&rdquo;</span></div><div class="am__r"><span class="am__k">Proof</span><span class="am__pf">Own Proof</span><div class="am__ads" style="margin:0 0 0 auto"><span class="am__ad am__ad--on"></span><span class="am__ad"></span><span class="am__ad"></span></div></div></div>
 
   <p class="am__key">1 angle = <b>1 ad group</b></p>
 

@@ -5,9 +5,12 @@ One person, one offer, many reasons to say yes. Each reason is an angle, and
 each angle is its own ad group, which is why every node carries its own little
 tray of ads rather than a label saying so.
 
+Every angle carries the objection that comes back at it and the proof that
+answers that objection, because an ad group is not just a theme: it is a
+claim, the push-back, and the thing you show.
+
 The angles are the ecom example: the steps the programme covers (pick the
-product, suppliers, branding, the store, influencers, paid ads), the stall
-that brings people in off the awareness levels, and the straight offer.
+product, suppliers, the store, distribution) and the straight offer.
 
     ./build-angle-matrix.py    writes the 16:9 slide
 """
@@ -18,22 +21,24 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 W, H = 1920, 1080
-CX, CY = 960, 566              # the hub, a little below the title
-RX, RY = 626, 306              # the ring the angles sit on
+CX, CY = 960, 572              # the hub, a little below the title
+RX, RY = 640, 330              # the ring the angles sit on
 
 HUB_W, HUB_H = 376, 168
-NODE_W, NODE_H = 332, 140
+NODE_W, NODE_H = 424, 178
 
-# (angle, the reason in their words)
+# (angle, the reason in their words, the objection that comes back, the proof)
 ANGLES = [
-    ('Product Selection', '&ldquo;I don&rsquo;t know what to sell&rdquo;'),
-    ('Suppliers', '&ldquo;Where do I source it?&rdquo;'),
-    ('Branding', '&ldquo;Mine looks like everyone else&rsquo;s&rdquo;'),
-    ('The Store', '&ldquo;Traffic comes, nobody buys&rdquo;'),
-    ('Influencers', '&ldquo;How do I get it seen?&rdquo;'),
-    ('Paid Ads', '&ldquo;Ads just burn money&rdquo;'),
-    ('Plateaued', '&ldquo;Sales stopped growing&rdquo;'),
-    ('Straight Offer', '&ldquo;Just show me the program&rdquo;'),
+    ('Product Selection', '&ldquo;I don&rsquo;t know what to sell&rdquo;',
+     '&ldquo;Everything&rsquo;s saturated&rdquo;', 'Case Study 1'),
+    ('Suppliers', '&ldquo;Where do I source it?&rdquo;',
+     '&ldquo;I&rsquo;ll get burned by a supplier&rdquo;', 'Own Proof'),
+    ('Distribution', '&ldquo;How do I get it seen?&rdquo;',
+     '&ldquo;Ads are too expensive now&rdquo;', 'Case Study 2'),
+    ('The Store', '&ldquo;Traffic comes, nobody buys&rdquo;',
+     '&ldquo;I built one, it didn&rsquo;t convert&rdquo;', 'Case Study 3'),
+    ('Straight Offer', '&ldquo;Just show me the program&rdquo;',
+     '&ldquo;Why you?&rdquo;', 'Own Proof'),
 ]
 
 TPL = '''<!doctype html>
@@ -108,6 +113,24 @@ TPL = '''<!doctype html>
   margin: 6px 0 0;
   font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink-2);
 }
+/* below the rule: what comes back, and what answers it */
+.am__rule { height: 1px; background: var(--hairline); margin: 13px 0 12px; }
+.am__r { display: flex; align-items: center; gap: 11px; }
+.am__r + .am__r { margin-top: 9px; }
+.am__k {
+  width: 100px; flex: none;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.am__v {
+  font-size: 18px; font-weight: 600; letter-spacing: -0.006em; color: var(--ink);
+}
+.am__pf {
+  padding: 5px 11px; border-radius: 8px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 14px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; white-space: nowrap;
+}
 /* the ad group: three ads, which is what the angle turns into */
 .am__ads { display: flex; gap: 7px; margin-top: 12px; }
 .am__ad { width: 34px; height: 22px; border-radius: 6px; background: #CFE2FA; }
@@ -174,7 +197,7 @@ def edge(w, h, dx, dy, pad=0):
 
 spokes, nodes = [], []
 
-for i, (title, say) in enumerate(ANGLES):
+for i, (title, say, obj, proof) in enumerate(ANGLES):
     a = math.radians(-90 + i * (360 / len(ANGLES)))
     nx, ny = CX + RX * math.cos(a), CY + RY * math.sin(a)
 
@@ -194,9 +217,15 @@ for i, (title, say) in enumerate(ANGLES):
     nodes.append(
         '  <div class="am__node" style="left:%gpx; top:%gpx">'
         '<p class="am__t">%s</p><p class="am__say">%s</p>'
-        '<div class="am__ads"><span class="am__ad am__ad--on"></span>'
-        '<span class="am__ad"></span><span class="am__ad"></span></div></div>'
-        % (nx - NODE_W / 2, ny - NODE_H / 2, title, say))
+        '<div class="am__rule"></div>'
+        '<div class="am__r"><span class="am__k">Objection</span>'
+        '<span class="am__v">%s</span></div>'
+        '<div class="am__r"><span class="am__k">Proof</span>'
+        '<span class="am__pf">%s</span>'
+        '<div class="am__ads" style="margin:0 0 0 auto">'
+        '<span class="am__ad am__ad--on"></span><span class="am__ad"></span>'
+        '<span class="am__ad"></span></div></div></div>'
+        % (nx - NODE_W / 2, ny - NODE_H / 2, title, say, obj, proof))
 
 out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
           .replace('__HUBW__', str(HUB_W)).replace('__HUBH__', str(HUB_H))
