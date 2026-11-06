@@ -193,3 +193,111 @@ Grow your LinkedIn brand…
 
 AND get you 30 qualified calls booked in the next 90 days on the backend.
 ```
+
+Heik on v1: "too similar, I need variation in the hook and structure. Only keep the overall picture of own proof hook + step by step how we do it. Hook must have a different angle too, maybe also use other proof points." (Rule 144.)
+
+## Variations v2 (6 Nov)
+
+What stays: Alex's own proof as the hook, and a step-by-step how we do it. Everything else changes per variation: the proof point, the angle of the hook, the order, and the way the steps are told. All proof is from Alex's case video 1. No media engine (rule 138).
+
+| | Proof point | Hook angle | Structure |
+|---|---|---|---|
+| V1 | One impact card: 48,000 impressions, comments from founders who could hire us; 8 in 10 new clients start in his DMs | One post did this | Hook, the system behind it, 4 numbered steps, guarantee, CTA |
+| V2 | Over $1 million in pipeline from his LinkedIn in 12 months, against 60k followers | Contrarian: followers don't pay salaries, pipeline does | Contrarian line, the number, followers vs pipeline, offer and guarantee early, "what it looks like on your end", CTA on pipeline |
+| V3 | His calendar on a normal week, every sales call booked from his DMs | Shown, then explained backwards | Calendar, walk back from the call to the post to the hour with him, then "we run that exact process for you", steps forward, guarantee, CTA |
+
+### V1: one post
+
+```
+One LinkedIn post… one lesson from my first year in business…
+
+48,000 impressions… and the comments weren't from my peers… they were from founders who could actually hire us.
+
+And that's where most of our new clients come from now… 8 out of 10 start in my LinkedIn DMs.
+
+Every one of those posts comes out of the same system…
+
+And we now run it for B2B founders doing over a million dollars a year… completely done for you.
+
+Here's exactly how it works, step by step.
+
+Step one… we sit down with you once, for about an hour, and get your offer, your ICP, and your stories.
+
+Step two… we build your content plan… posts that get your ICP's attention, posts that build their trust, and posts that get them to message you.
+
+Step three… our team writes and posts for you every weekday, in your voice… and all you do is look over them, about 10 minutes a month.
+
+Step four… when your ICP messages you, our team handles the conversation and books the call straight into your calendar.
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+So if you're running a B2B company, and you want your LinkedIn bringing in clients without you writing a single post…
+
+Click below and I'll show you what your first 90 days with us would look like.
+```
+
+### V2: followers don't pay salaries
+
+```
+Followers don't pay salaries… pipeline does.
+
+I've got over 60,000 followers on LinkedIn… but that's not the number I care about.
+
+This one is… over a million dollars in pipeline, from my LinkedIn, in the last 12 months.
+
+Most B2B founders post for likes and followers…
+
+We built a system that posts for pipeline.
+
+And now we run it for B2B founders doing over a million a year… completely done for you…
+
+With 30 qualified calls guaranteed in your first 90 days… and if we don't hit that, we keep working for you at no extra cost until we do.
+
+Here's what that looks like on your end.
+
+First… one call with us, about an hour, so we know your offer, your ICP, and how you talk.
+
+Then… we plan every post around one goal… getting your ICP into your DMs.
+
+Then… our team writes and posts for you every weekday, in your voice.
+
+And when your ICP messages you… our team handles the conversation and books them into your calendar.
+
+Your part is looking over your posts… about 10 minutes a month.
+
+So if you want your LinkedIn bringing in pipeline… not just followers…
+
+Click below and I'll show you exactly how we'd build it for your company.
+```
+
+### V3: my calendar, backwards
+
+```
+This is my calendar on a normal week…
+
+And every one of these sales calls was booked straight from my LinkedIn DMs.
+
+Here's how they get there… backwards.
+
+Every call starts with a DM… from a founder who's been reading my posts for a while.
+
+Every one of those posts is written for one person… my ICP… not my peers.
+
+And every post starts with what I actually know… my stories, my opinions, the stuff I'd say to a client on a sales call.
+
+Now… we run that exact process for B2B founders doing over a million dollars a year… completely done for you.
+
+You give us one hour, so we get your stories and how you think…
+
+Our team writes and posts for you every weekday, in your voice, for your ICP…
+
+And when they message you, our team handles the conversation and books the call into your calendar.
+
+All you do is look over your posts… about 10 minutes a month.
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+So if you want your calendar looking like this…
+
+Click below and I'll show you how we'd build it for your company.
+```
