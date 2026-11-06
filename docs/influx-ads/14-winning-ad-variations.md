@@ -55,3 +55,141 @@ Sources: Alex's case video 1 (his first 90 days, $1M+ pipeline, his calendar) an
 ## First pass (rejected)
 
 Hooks and stories from Alex's LinkedIn ("who writes your posts?", "I used to post like you", "they find me first", "followers don't pay salaries"). Heik: "you have to understand the underlying principle: proof + direct straight offer". Those were story and concept angles, not proof.
+
+## Variations v1 (6 Nov)
+
+Built on the formula above. Each opens on a different result from Alex's own LinkedIn (all from his case video 1); the callout, the time line and the CTA wording change a little; the offer, the guarantee and the 10 minutes a month stay as in 4.2. Two deliberate changes from 4.2:
+- No media engine line (Heik: "never use media engine, that's unsafe, and the whole concept too"). The middle how line is now about writing for their ICP, so the people engaging can hire them. 4.2's line goes back in if the ban is only for primary text.
+- The guarantee line's slip ("book 30 qualified calls booked") is fixed to "book you 30 qualified calls".
+
+### Variation A: his first 90 days (the proof is the offer)
+
+```
+In the first 90 days of running our system on my own LinkedIn… I booked 30 qualified sales calls.
+
+I've been a LinkedIn Top Voice twice… built up over 60k followers… and a lot of the B2B founders I end up working with found me just from reading my posts.
+
+Now… if you're running a B2B company doing over a million dollars a year… you already know LinkedIn can do the same for you.
+
+But let's be real… you're not going to sit down and write a post every day while you're running a company.
+
+So here's our offer.
+
+We take the exact system that booked me those 30 calls… which has generated well over 8 figures in revenue across dozens of our B2B clients…
+
+And run it on your LinkedIn, completely done for you.
+
+Not only is it going to build your brand and position you as the market authority…
+
+But we also guarantee we'll book you 30 qualified calls in the next 90 days.
+
+The way it works is this…
+
+We write and post for you every day… in your voice… about what your ICP actually cares about.
+
+So the people engaging are the ones who can actually hire you…
+
+And everyone who engages… we book straight into your calendar.
+
+All you do is look over your posts… That's it…
+
+Takes about 10 minutes a month.
+
+So if you're doing over a million a year… you know LinkedIn works… and you just don't have the time to do it yourself…
+
+Click below and I'll show you exactly how we'd do it for you…
+
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+```
+
+### Variation B: 8 in 10 new clients start in his DMs
+
+```
+8 out of every 10 new clients my B2B company signs… start in ONE place…
+
+My LinkedIn DMs.
+
+Founders who read my posts… and messaged me first.
+
+I've been a LinkedIn Top Voice twice… built up over 60k followers… and most of the B2B founders I work with found me just from reading my posts.
+
+Now… if you're running a B2B company doing over a million dollars a year… you already know LinkedIn can do the same for you.
+
+But let's be real… between running your company and looking after your clients… there's no time left to write a post every day.
+
+So here's our offer.
+
+We take everything that brings those founders into my DMs… which has generated well over 8 figures in revenue across dozens of our B2B clients…
+
+And do it on your LinkedIn, completely done for you.
+
+Not only is it going to build your brand and position you as the market authority…
+
+But we also guarantee we'll book you 30 qualified calls in the next 90 days.
+
+The way it works is this…
+
+We write and post for you every day… in your voice… about what your ICP actually cares about.
+
+So the people engaging are the ones who can actually hire you…
+
+And everyone who engages… we book straight into your calendar.
+
+All you do is look over your posts… That's it…
+
+Takes about 10 minutes a month.
+
+So if you're doing over a million a year… you know LinkedIn works… and you just don't have the time to do it yourself…
+
+Click below and I'll show you exactly how we'd do it for you…
+
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+```
+
+### Variation C: about 27 qualified calls a month
+
+```
+About 27 qualified sales calls land in my calendar every month… from ONE place…
+
+My LinkedIn.
+
+I've been a LinkedIn Top Voice twice… built up over 60k followers… and a lot of the B2B founders I end up working with found me just from reading my posts.
+
+Now… if you're running a B2B company doing over a million dollars a year… you've probably seen LinkedIn do the same for other founders in your space.
+
+But you're running a company… so sitting down to write a post every single day just isn't going to happen.
+
+So here's our offer.
+
+We take the exact system that fills my calendar… which has generated well over 8 figures in revenue across dozens of our B2B clients…
+
+And run it on your LinkedIn, completely done for you.
+
+Not only is it going to build your brand and position you as the market authority…
+
+But we also guarantee we'll book you 30 qualified calls in the next 90 days.
+
+The way it works is this…
+
+We write and post for you every day… in your voice… about what your ICP actually cares about.
+
+So the people engaging are the ones who can actually hire you…
+
+And everyone who engages… we book straight into your calendar.
+
+All you do is look over your posts… That's it…
+
+Takes about 10 minutes a month.
+
+So if you're doing over a million a year… you know LinkedIn works… and you just don't have the time to do it yourself…
+
+Click below and I'll show you exactly how we'd do it for you…
+
+Grow your LinkedIn brand…
+
+AND get you 30 qualified calls booked in the next 90 days on the backend.
+```
