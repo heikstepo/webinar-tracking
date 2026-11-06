@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Many signals, one person</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   The point is that four signals belong to one person, so the four cards fan
+   out of a single figure rather than sitting in a list on their own. The lines
+   are what makes them one person's; without them this is a bulleted list.
+
+   The closing sentence is the conclusion, so it keeps full ink while the setup
+   line above the cards sits back.
+
+   Class names are prefixed sg; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.sg__lead {
+  position: absolute; left: 110px; top: 74px; width: 1560px; margin: 0;
+  font-size: 46px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.26;
+  color: var(--ink);
+}
+
+.sg__eg {
+  position: absolute; left: 112px; top: 268px; margin: 0;
+  font-size: 26px; font-weight: 600; letter-spacing: -0.008em; color: var(--ink-3);
+}
+
+/* the figure the four signals belong to */
+.sg__who { position: absolute; left: 148px; top: 443px; }
+.sg__who svg {
+  display: block; width: 188px; height: 188px;
+  fill: none; stroke: #7FA8DC; stroke-width: 3.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* the lines, under the cards so they run into them */
+.sg__wires { position: absolute; inset: 0; }
+.sg__wires svg { display: block; width: 100%; height: 100%; }
+.sg__wires .ln { fill: none; stroke: #C6CED8; stroke-width: 3;
+                 stroke-linecap: round; }
+.sg__wires .tip { fill: #B6C0CC; }
+
+.sg__card {
+  position: absolute; box-sizing: border-box; width: 1180px; height: 96px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 18px; padding: 0 28px;
+  box-shadow: 0 3px 14px rgba(20, 30, 50, 0.07);
+  display: flex; align-items: center; gap: 20px;
+}
+.sg__dot { width: 14px; height: 14px; border-radius: 50%; background: var(--blue);
+           flex: none; }
+.sg__t {
+  margin: 0;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.012em; line-height: 1.22;
+  color: var(--ink);
+}
+
+.sg__end {
+  position: absolute; left: 110px; top: 836px; width: 1700px; margin: 0;
+  font-size: 44px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.26;
+  color: var(--ink);
+}
+.sg__end i { font-style: normal; color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <p class="sg__lead">Meta understands that people have multiple interests and that
+    those interests change over time.</p>
+
+  <p class="sg__eg">For example, someone might:</p>
+
+  <div class="sg__wires">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <path class="ln" d="M348 537 C 430 537, 448 360, 528 360"/>
+      <g transform="translate(528 360)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="ln" d="M348 537 C 430 537, 448 478, 528 478"/>
+      <g transform="translate(528 478)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="ln" d="M348 537 C 430 537, 448 596, 528 596"/>
+      <g transform="translate(528 596)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+      <path class="ln" d="M348 537 C 430 537, 448 714, 528 714"/>
+      <g transform="translate(528 714)"><path class="tip" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="sg__who">
+    <svg viewBox="0 0 124 124" aria-hidden="true">
+      <circle cx="62" cy="38" r="21"/>
+      <path d="M20 112 C 20 82, 39 66, 62 66 C 85 66, 104 82, 104 112"/>
+    </svg>
+  </div>
+
+  <div class="sg__card" style="left:544px; top:312px">
+    <span class="sg__dot"></span>
+    <p class="sg__t">Be interested in starting an e-commerce business.</p>
+  </div>
+
+  <div class="sg__card" style="left:544px; top:430px">
+    <span class="sg__dot"></span>
+    <p class="sg__t">Have recently started researching TikTok Shop.</p>
+  </div>
+
+  <div class="sg__card" style="left:544px; top:548px">
+    <span class="sg__dot"></span>
+    <p class="sg__t">Be worried about choosing the wrong product.</p>
+  </div>
+
+  <div class="sg__card" style="left:544px; top:666px">
+    <span class="sg__dot"></span>
+    <p class="sg__t">Already have experience with dropshipping.</p>
+  </div>
+
+  <p class="sg__end">Meta tries to understand all these different signals rather than
+    <i>assigning that person one fixed interest</i>.</p>
+
+</section>
+
+</body>
+</html>
