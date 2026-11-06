@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Andromeda, then and now</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Two halves and a rule, the same shape as the other pairs in the deck.
+
+   The left picture is a pool narrowing to a few: that is retrieval. The right
+   picture is one person's signals arriving at one ad: that is relevance. The
+   difference between the two sides is the whole slide, so neither picture
+   carries anything the other does not need.
+
+   Class names are prefixed an; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.an__lead {
+  position: absolute; left: 110px; top: 70px; width: 1760px; margin: 0;
+  font-size: 38px; font-weight: 600; letter-spacing: -0.018em; line-height: 1.28;
+  color: var(--ink);
+}
+.an__lead i { font-style: normal; color: var(--blue); }
+
+/* the rule down the middle, inset so it divides rather than cuts */
+.an__rule {
+  position: absolute; left: 50%; top: 248px; bottom: 150px;
+  width: 3px; margin-left: -1.5px; background: #D2D8E0; border-radius: 2px;
+}
+
+.an__col { position: absolute; top: 252px; width: 860px; text-align: center; }
+.an__col--l { left: 20px; }
+.an__col--r { left: 1040px; }
+
+.an__k {
+  margin: 0;
+  font-size: 34px; font-weight: 600; letter-spacing: -0.018em; color: var(--ink);
+}
+.an__k em { font-style: normal; color: var(--ink-3); }
+
+.an__pic { position: relative; height: 384px; margin-top: 34px; }
+
+.an__body {
+  margin: 0 auto; width: 740px;
+  font-size: 27px; font-weight: 600; letter-spacing: -0.008em; line-height: 1.34;
+  color: var(--ink-2);
+}
+
+/* ---- the pool ------------------------------------------------------------ */
+.an__pool {
+  width: 352px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(7, 40px); gap: 12px;
+}
+.an__sq { height: 40px; border-radius: 8px; background: #D8DEE6; }
+.an__sq--on { background: var(--blue); }
+
+.an__few { display: flex; justify-content: center; gap: 12px; margin-top: 0; }
+.an__few span { width: 54px; height: 40px; border-radius: 8px; background: var(--blue); }
+
+/* ---- the person and the one ad ------------------------------------------- */
+.an__who {
+  position: absolute; left: 90px; top: 64px;
+  width: 132px; height: 132px;
+  fill: none; stroke: #7FA8DC; stroke-width: 3.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.an__chips {
+  position: absolute; left: 262px; top: 36px;
+  display: flex; flex-direction: column; gap: 16px; align-items: stretch;
+}
+.an__chip {
+  padding: 9px 17px; border-radius: 10px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 23px; font-weight: 600; white-space: nowrap; text-align: center;
+}
+.an__one {
+  position: absolute; left: 660px; top: 96px;
+  width: 84px; height: 70px; border-radius: 12px; background: var(--blue);
+}
+
+/* ---- the arrows ---------------------------------------------------------- */
+.an__w { position: absolute; inset: 0; }
+.an__w svg { display: block; width: 100%; height: 100%; }
+.an__w .ln { fill: none; stroke: #B6C0CC; stroke-width: 3; stroke-linecap: round; }
+.an__w .tip { fill: #B6C0CC; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <p class="an__lead">The biggest difference between Andromeda 1.0 and the newer version
+    is how sophisticated Meta has become at understanding <i>why a particular ad might
+    be relevant to a particular person</i>.</p>
+
+  <div class="an__rule"></div>
+
+  <!-- ---- left: retrieval ---- -->
+  <div class="an__col an__col--l">
+    <p class="an__k">Andromeda <em>1.0</em></p>
+
+    <div class="an__pic">
+      <div class="an__w">
+        <svg viewBox="0 0 860 384" aria-hidden="true">
+          <path class="ln" d="M430 214 V 268"/>
+          <g transform="translate(430 280) rotate(90)">
+            <path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+        </svg>
+      </div>
+
+      <div class="an__pool">
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq an__sq--on"></span><span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq an__sq--on"></span><span class="an__sq"></span>
+        <span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq an__sq--on"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span><span class="an__sq"></span>
+        <span class="an__sq"></span>
+      </div>
+
+      <div class="an__few" style="position:absolute; left:0; right:0; top:296px">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <p class="an__body">The original Andromeda system was primarily about improving ad
+      retrieval: finding promising ads from a massive pool of available ads.</p>
+  </div>
+
+  <!-- ---- right: relevance ---- -->
+  <div class="an__col an__col--r">
+    <p class="an__k">The newer <em>version</em></p>
+
+    <div class="an__pic">
+      <div class="an__w">
+        <svg viewBox="0 0 860 384" aria-hidden="true">
+          <path class="ln" d="M228 130 C 244 130, 244 59, 250 59"/>
+          <g transform="translate(256 59)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+          <path class="ln" d="M228 130 C 244 130, 244 121, 250 121"/>
+          <g transform="translate(256 121)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+          <path class="ln" d="M228 130 C 244 130, 244 183, 250 183"/>
+          <g transform="translate(256 183)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+
+          <path class="ln" d="M574 59 C 614 59, 618 129, 648 131"/>
+          <path class="ln" d="M574 121 C 614 121, 618 130, 648 131"/>
+          <path class="ln" d="M574 183 C 614 183, 618 133, 648 131"/>
+          <g transform="translate(654 131)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+        </svg>
+      </div>
+
+      <svg class="an__who" viewBox="0 0 124 124" aria-hidden="true">
+        <circle cx="62" cy="38" r="21"/>
+        <path d="M20 112 C 20 82, 39 66, 62 66 C 85 66, 104 82, 104 112"/>
+      </svg>
+
+      <div class="an__chips">
+        <span class="an__chip">Interests</span>
+        <span class="an__chip">Behaviors</span>
+        <span class="an__chip">Changing circumstances</span>
+      </div>
+
+      <div class="an__one"></div>
+    </div>
+
+    <p class="an__body">The newer architecture builds on that by using more specialized
+      AI models to understand people&rsquo;s different interests, behaviors, and changing
+      circumstances.</p>
+  </div>
+
+</section>
+
+</body>
+</html>
