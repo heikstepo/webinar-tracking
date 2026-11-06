@@ -2,6 +2,30 @@
 
 6 Nov 2026. Heik: "this is our winning ad, I now need variations. First off, what other similar angles can we use that are not literally the same though?"
 
+## Why 4.2 works, line by line (Heik: "man, understand why this worked")
+
+| Line | What it does |
+|---|---|
+| "Over 7 figures a year in my B2B business comes from ONE place… My LinkedIn posts." | The proof is the speaker's own result, in the exact channel he's selling, in the viewer's own world (a B2B business). Big number, then the reveal. |
+| Top Voice twice, 60k followers, founders found me from my posts | Backs the claim with outside proof, and proves the mechanism: clients came in from posts. |
+| "If you're running a B2B company doing over a million dollars a year… you already know LinkedIn can do the same for you." | Callout, then agreement. It doesn't sell LinkedIn; it says what they already believe, and moves Alex's result onto them ("the same for you"). |
+| "But let's be real… you're not going to sit down and write a post every day while you're running a company." | Names their one real blocker and agrees with it. No blame. The only gap between them and the result is time. |
+| "So here's our offer." | Announces the offer outright. No story, no lesson, no mechanism first. |
+| "We take everything that works on my LinkedIn… [8 figures across dozens of clients]… and do it on yours, completely done for you." | The offer is the proof, handed over: the thing they just saw, done on their LinkedIn. The client line shows it isn't only Alex. |
+| Market authority + "we guarantee we'll book 30 qualified calls in the next 90 days" | Two outcomes (status and a hard number with a deadline) and the risk taken away. |
+| 3 lines of how (write and post daily, media engine, we book the people who engage) | Just enough to make it believable that it happens without them. |
+| "All you do is look over your posts… about 10 minutes a month." | Closes the time blocker from earlier with a tiny, concrete number. |
+| CTA: "over a million a year… you know LinkedIn works… you just don't have the time" + the offer again | The three qualifiers are the ICP in one line, and the offer is repeated word for word. |
+
+So the formula:
+1. Alex's own LinkedIn result is the proof (founder-led, same channel, same world as the viewer).
+2. They're already sold: say it, don't argue it.
+3. One blocker, time, named early and closed with 10 minutes a month.
+4. The offer is a transfer of that proof ("what works on mine, done on yours"), stated straight, with the number, the deadline and the guarantee.
+5. Nothing else. No education, no story, no list of problems.
+
+What a variation keeps: 1-5 and the order. What it can change: which of Alex's own results opens it, how that proof is delivered (said, shown), and the wording of the callout, the time line and the CTA.
+
 ## The principle (Heik: "proof + direct straight offer")
 
 4.2 is two moves: strong proof first, then the straight offer, said plainly.
@@ -22,7 +46,9 @@ A variation changes the proof (whose result, what kind, how it's shown) and keep
 | 6 | Shown on screen | "This is my calendar this week… every one of these sales calls came from my LinkedIn DMs." | Straight offer. Calendar on screen, names blurred. |
 | 7 | 4.2's twin (same proof, different number) | "My LinkedIn has brought over $1 million in pipeline into Influx in the last 12 months." | Straight offer. The lowest-risk test: closest to the winner. |
 
-Recommended first: 1, 2 and 3. 1 because the proof is the offer itself, 2 because one script gives a test per client, 3 because it stacks the most proof into the first seconds.
+Fit with the formula: 1, 6 and 7 (Alex's own LinkedIn is the proof). 2-5 open on a client, so the speaker stops being the proof and the "what works on mine, done on yours" transfer breaks; they're a different ad type (case study), not variations of 4.2.
+
+Earlier recommendation (before the line-by-line): 1, 2 and 3. 1 because the proof is the offer itself, 2 because one script gives a test per client, 3 because it stacks the most proof into the first seconds.
 
 Sources: Alex's case video 1 (his first 90 days, $1M+ pipeline, his calendar) and the case study bank in 11-precall-emails.md (Rachel, John, Priya, Tom, Elena, Marcus). Pipeline is called pipeline, signed is called signed. The primary text for each follows rules 136-141.
 
