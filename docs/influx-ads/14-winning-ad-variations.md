@@ -2,27 +2,30 @@
 
 6 Nov 2026. Heik: "this is our winning ad, I now need variations. First off, what other similar angles can we use that are not literally the same though?"
 
-## Why 4.2 wins
+## The principle (Heik: "proof + direct straight offer")
 
-1. The proof is Alex's own LinkedIn, so it's a founder who does it himself talking, not an agency pitching.
-2. It talks to someone already sold on LinkedIn ("you already know LinkedIn can do the same for you"). No selling LinkedIn.
-3. It names their one real blocker: no time to post every day.
-4. The offer is a transfer: what works on my LinkedIn, done on yours, about 10 minutes a month.
+4.2 is two moves: strong proof first, then the straight offer, said plainly.
+- Proof: "Over 7 figures a year in my B2B business comes from ONE place… my LinkedIn posts."
+- Offer: we build your LinkedIn brand and book 30 qualified calls in the next 90 days, completely done for you, guaranteed. Then a short how it works, 10 minutes a month, CTA.
 
-The variations keep 2, 3 and 4 and change the way in: a different proof point, story or hook from Alex's own LinkedIn. That way each one tests a new opening against the same body.
+A variation changes the proof (whose result, what kind, how it's shown) and keeps the straight offer word for word. It never turns into a story, concept or objection angle.
 
-## Angles
+## Proof variations
 
-| # | Angle | Hook (how it could open) | What's different from 4.2 | Source / check with Alex |
-|---|---|---|---|---|
-| 1 | "Who writes your posts?" | "Every week, founders DM me asking who writes my LinkedIn posts… The answer is my team." | Proof that done for you works, from Alex himself. Turns "outsourcing your LinkedIn feels fake" around: even a two-time Top Voice doesn't write his own. | Alex: his team writes his posts, and founders actually ask him this. |
-| 2 | "I tested it on myself first" | "Before we ever sold this to a client, I ran it on my own LinkedIn… and booked 30 qualified calls in the first 90 days." | The proof is the exact offer (30 calls in 90 days), done on Alex first. | Video 1 (Alex's own case). |
-| 3 | "My calendar this week" | "This is my calendar this week… every one of these sales calls came from LinkedIn." | Shown, not claimed: his calendar on screen as the hook. Easiest to test, since only the first 10 seconds change. | Video 1 ("my calendar in a typical week"). Names blurred. |
-| 4 | "8 in 10 start in my DMs" | "8 out of 10 of our new clients start in one place… my DMs." | Where clients come from, not how much. Speaks straight to the referral-reliant founder: not referrals, not cold outreach. | Video 1. |
-| 5 | "I used to post like you" | "A couple of years ago, my LinkedIn looked like most founders'… company updates, a bit of motivation, and every new client still came from referrals." | Alex's before and after. Mirrors the ICP exactly (lives on referrals, tried LinkedIn, got nothing). | Video 1 ("posting like most B2B founders… new clients were coming from referrals and cold outreach"). |
-| 6 | "They find me first" | "Most founders go looking for clients… a lot of mine find me first, just from reading my posts." | The benefit is being found instead of chasing. Inbound framed as status and ease, not volume. | 4.2's own line. Avoid "I never do outbound" unless it's true. |
-| 7 | "Followers don't pay salaries" | "I've got over 60,000 followers on LinkedIn… and that's the least useful number on my profile." | Gets ahead of "sure, Alex has 60k followers, I don't". Moves the proof from followers to calls. | Video 1 ("followers don't pay salaries, pipeline does"). |
+| # | Proof type | How it opens | Then |
+|---|---|---|---|
+| 1 | Alex's first 90 days (the proof is the offer itself) | "In the first 90 days of running our system on my own LinkedIn… I booked 30 qualified calls." | "Now we do the exact same thing for B2B founders…" into the straight offer. |
+| 2 | One client, one number | "Rachel runs a 25-person cybersecurity consultancy… In her first 90 days with us, she booked 38 qualified calls from LinkedIn." | Straight offer. One template, swap the client per test: John (managed IT, 30 calls), Priya (fractional CFO, 30 calls), Tom (CPA firm, 30 calls), Elena (commercial cleaning, 30 calls). |
+| 3 | Stacked clients | "38 qualified calls for a cybersecurity consultancy… 30 for a managed IT firm… 30 for a fractional CFO firm… All in their first 90 days." | Straight offer. |
+| 4 | Industry-matched client | "A 120-person commercial cleaning company booked 30 qualified calls with facility managers from LinkedIn in 90 days." | Straight offer. Built to run per industry (construction, packaging, CPA, engineering). |
+| 5 | One deal | "A $620,000 contract… signed with a developer who found my client through one LinkedIn post." | Straight offer. Marcus, commercial construction. |
+| 6 | Shown on screen | "This is my calendar this week… every one of these sales calls came from my LinkedIn DMs." | Straight offer. Calendar on screen, names blurred. |
+| 7 | 4.2's twin (same proof, different number) | "My LinkedIn has brought over $1 million in pipeline into Influx in the last 12 months." | Straight offer. The lowest-risk test: closest to the winner. |
 
-Recommended first: 1, 2 and 5. 1 turns the biggest doubt about done for you into proof, 2 ties the proof to the exact offer, 5 is the ICP's own story told by Alex. 3 is the cheapest test if the team wants a quick hook swap first.
+Recommended first: 1, 2 and 3. 1 because the proof is the offer itself, 2 because one script gives a test per client, 3 because it stacks the most proof into the first seconds.
 
-The primary text for any of these follows rules 136-141 (no money, no numbers in case study copy, no media engine, nothing that implies similar results).
+Sources: Alex's case video 1 (his first 90 days, $1M+ pipeline, his calendar) and the case study bank in 11-precall-emails.md (Rachel, John, Priya, Tom, Elena, Marcus). Pipeline is called pipeline, signed is called signed. The primary text for each follows rules 136-141.
+
+## First pass (rejected)
+
+Hooks and stories from Alex's LinkedIn ("who writes your posts?", "I used to post like you", "they find me first", "followers don't pay salaries"). Heik: "you have to understand the underlying principle: proof + direct straight offer". Those were story and concept angles, not proof.
