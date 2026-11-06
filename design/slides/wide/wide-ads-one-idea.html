@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One idea five times</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-ad-sets.py. A row (or two rows) of ad creatives, each one a frame
+   over its line. The frames carry no art: the line is the point.
+
+   Class names are prefixed as; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.as__h {
+  position: absolute; left: 110px; top: 44px; margin: 0;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+.as__h i { font-style: normal; color: var(--blue); }
+.as__h em { font-style: normal; color: var(--ink-3); font-weight: 600; }
+
+.as__row {
+  position: absolute; left: 0; width: 1920px;
+  display: flex; justify-content: center;
+}
+
+.as__card {
+  box-sizing: border-box; flex: none;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 20px; padding: 18px;
+  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.07);
+  display: flex; flex-direction: column;
+}
+.as__th {
+  border-radius: 12px; background: #E4EFFD;
+  display: flex; align-items: center; justify-content: center;
+}
+.as__th svg { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.4;
+              stroke-linecap: round; stroke-linejoin: round; }
+.as__th svg .f { fill: var(--blue); stroke: none; }
+
+.as__n {
+  margin: 15px 0 0;
+  font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.as__t {
+  margin: 8px 0 0;
+  font-weight: 600; letter-spacing: -0.014em; line-height: 1.22; color: var(--ink);
+}
+.as__t i { font-style: normal; color: var(--blue); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <h1 class="as__h">5 Ads <em>-</em> <i>1 Idea 5 Times</i></h1>
+
+  <div class="as__row" style="top:214px; gap:26px"><div class="as__card" style="width:340px; height:660px"><div class="as__th" style="height:520px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:56px;height:56px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 1</p><p class="as__t" style="font-size:26px">Make money with <i>TikTok Shop</i></p></div><div class="as__card" style="width:340px; height:660px"><div class="as__th" style="height:520px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:56px;height:56px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 2</p><p class="as__t" style="font-size:26px"><i>TikTok Shop</i> is exploding</p></div><div class="as__card" style="width:340px; height:660px"><div class="as__th" style="height:520px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:56px;height:56px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 3</p><p class="as__t" style="font-size:26px">Start a <i>TikTok Shop</i> brand</p></div><div class="as__card" style="width:340px; height:660px"><div class="as__th" style="height:520px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:56px;height:56px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 4</p><p class="as__t" style="font-size:26px"><i>TikTok Shop</i> opportunity 2026</p></div><div class="as__card" style="width:340px; height:660px"><div class="as__th" style="height:520px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:56px;height:56px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 5</p><p class="as__t" style="font-size:26px">Why <i>TikTok Shop</i> is huge</p></div></div>
+
+</section>
+
+</body>
+</html>
