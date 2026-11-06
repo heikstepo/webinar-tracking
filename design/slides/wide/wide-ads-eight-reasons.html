@@ -24,34 +24,27 @@
 .as__h i { font-style: normal; color: var(--blue); }
 .as__h em { font-style: normal; color: var(--ink-3); font-weight: 600; }
 
-.as__row {
-  position: absolute; left: 0; width: 1920px;
-  display: flex; justify-content: center;
-}
+.as__list { position: absolute; left: 110px; }
 
 .as__card {
-  box-sizing: border-box; flex: none;
+  box-sizing: border-box; width: 1700px;
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 20px; padding: 18px;
-  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.07);
-  display: flex; flex-direction: column;
+  border-radius: 18px; padding: 0 34px;
+  box-shadow: 0 2px 12px rgba(20, 30, 50, 0.06);
+  display: flex; align-items: center;
 }
-.as__th {
-  border-radius: 12px; background: #E4EFFD;
-  display: flex; align-items: center; justify-content: center;
-}
-.as__th svg { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.4;
-              stroke-linecap: round; stroke-linejoin: round; }
-.as__th svg .f { fill: var(--blue); stroke: none; }
+.as__card + .as__card { margin-top: 12px; }
 
+/* the ad is a label, not a picture */
 .as__n {
-  margin: 15px 0 0;
-  font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
+  width: 104px; flex: none; margin: 0;
+  font-size: 17px; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--ink-3);
 }
+.as__bar { width: 1px; flex: none; background: var(--hairline); margin-right: 30px; }
 .as__t {
-  margin: 8px 0 0;
-  font-weight: 600; letter-spacing: -0.014em; line-height: 1.22; color: var(--ink);
+  margin: 0;
+  font-weight: 600; letter-spacing: -0.018em; line-height: 1.2; color: var(--ink);
 }
 .as__t i { font-style: normal; color: var(--blue); }
 </style>
@@ -63,8 +56,7 @@
 
   <h1 class="as__h">8 Ads <em>-</em> <i>8 Different Reasons to Convert</i></h1>
 
-  <div class="as__row" style="top:206px; gap:28px"><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#E4EFFD"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 1</p><p class="as__t" style="font-size:24px">Tried ecom before and failed</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#DCEAFB"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 2</p><p class="as__t" style="font-size:24px">Can&rsquo;t choose a product</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#D3E4FA"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 3</p><p class="as__t" style="font-size:24px">Already want a brand but don&rsquo;t know the steps</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#CBDFF9"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 4</p><p class="as__t" style="font-size:24px">Need something compatible with existing job/business</p></div></div>
-  <div class="as__row" style="top:576px; gap:28px"><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#C3DAF8"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 5</p><p class="as__t" style="font-size:24px">Skeptical of ecommerce gurus</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#BBD5F7"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 6</p><p class="as__t" style="font-size:24px">Considering wholesale instead</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#B3D0F6"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 7</p><p class="as__t" style="font-size:24px">Overthinking LLC/name/logo</p></div><div class="as__card" style="width:396px; height:336px"><div class="as__th" style="height:176px; background:#AACBF5"><svg viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><path class="f" d="M46 34 L 86 62 L 46 90 Z"/></svg></div><p class="as__n">Ad 8</p><p class="as__t" style="font-size:24px">Direct opportunity</p></div></div>
+  <div class="as__list" style="top:228px"><div class="as__card" style="height:86px"><p class="as__n">Ad 1</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Tried ecom before and failed</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 2</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Can&rsquo;t choose a product</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 3</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Already want a brand but don&rsquo;t know the steps</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 4</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Need something compatible with existing job/business</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 5</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Skeptical of ecommerce gurus</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 6</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Considering wholesale instead</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 7</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Overthinking LLC/name/logo</p></div><div class="as__card" style="height:86px"><p class="as__n">Ad 8</p><div class="as__bar" style="height:39.56px"></div><p class="as__t" style="font-size:34px">Direct opportunity</p></div></div>
 
 </section>
 

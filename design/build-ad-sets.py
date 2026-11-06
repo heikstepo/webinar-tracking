@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Two slides about what a set of ads is actually made of.
 
-The first is one idea written five ways: the repeated phrase is picked out in
-the accent on every card, so the sameness is visible before the title is read.
+Both are the same shape: the lines, stacked, at the size they deserve. The ad
+itself is one small label at the left, because the angle is the content here
+and a video thumbnail beside every line only takes room away from it.
 
-The second is eight ads that each come at the buyer from somewhere else, so
-nothing repeats and each card carries its own tint.
+The first is one idea written five ways, with the repeated phrase picked out
+in the accent so the sameness is visible before the title is read. The second
+is eight ads that each come at the buyer from somewhere else.
 
     ./build-ad-sets.py    writes both 16:9 slides
 """
@@ -65,34 +67,27 @@ TPL = '''<!doctype html>
 .as__h i { font-style: normal; color: var(--blue); }
 .as__h em { font-style: normal; color: var(--ink-3); font-weight: 600; }
 
-.as__row {
-  position: absolute; left: 0; width: __W__px;
-  display: flex; justify-content: center;
-}
+.as__list { position: absolute; left: 110px; }
 
 .as__card {
-  box-sizing: border-box; flex: none;
+  box-sizing: border-box; width: 1700px;
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 20px; padding: 18px;
-  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.07);
-  display: flex; flex-direction: column;
+  border-radius: 18px; padding: 0 34px;
+  box-shadow: 0 2px 12px rgba(20, 30, 50, 0.06);
+  display: flex; align-items: center;
 }
-.as__th {
-  border-radius: 12px; background: #E4EFFD;
-  display: flex; align-items: center; justify-content: center;
-}
-.as__th svg { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.4;
-              stroke-linecap: round; stroke-linejoin: round; }
-.as__th svg .f { fill: var(--blue); stroke: none; }
+.as__card + .as__card { margin-top: __GAP__px; }
 
+/* the ad is a label, not a picture */
 .as__n {
-  margin: 15px 0 0;
-  font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
+  width: 104px; flex: none; margin: 0;
+  font-size: 17px; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--ink-3);
 }
+.as__bar { width: 1px; flex: none; background: var(--hairline); margin-right: 30px; }
 .as__t {
-  margin: 8px 0 0;
-  font-weight: 600; letter-spacing: -0.014em; line-height: 1.22; color: var(--ink);
+  margin: 0;
+  font-weight: 600; letter-spacing: -0.018em; line-height: 1.2; color: var(--ink);
 }
 .as__t i { font-style: normal; color: var(--blue); }
 </style>
@@ -128,43 +123,35 @@ def _check_class_collisions():
 _check_class_collisions()
 
 
-def card(n, text, w, h, th_h, font, tint='#E4EFFD', glyph=56):
-    return ('<div class="as__card" style="width:%gpx; height:%gpx">'
-            '<div class="as__th" style="height:%gpx; background:%s">'
-            '<svg viewBox="0 0 124 124" style="width:%gpx;height:%gpx" '
-            'aria-hidden="true">%s</svg></div>'
+def card(n, text, h, font):
+    return ('<div class="as__card" style="height:%gpx">'
             '<p class="as__n">Ad %d</p>'
+            '<div class="as__bar" style="height:%gpx"></div>'
             '<p class="as__t" style="font-size:%gpx">%s</p></div>'
-            % (w, h, th_h, tint, glyph, glyph, PLAY, n, font, text))
+            % (h, n, h * 0.46, font, text))
 
 
-def write(path, title, head, rows):
+def write(path, title, head, rows, gap):
     out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
               .replace('__TITLE__', title).replace('__HEAD__', head)
+              .replace('__GAP__', str(gap))
               .replace('__ROWS__', '\n'.join(rows)))
     open(path, 'w').write(out)
     print('wrote %s' % path)
 
 
 # ---------------------------------------------------------------------------
-# one idea, five times: five vertical creatives in a row
+# one idea, five times
 # ---------------------------------------------------------------------------
-cards = ''.join(card(i + 1, t, 340, 660, 520, 26) for i, t in enumerate(ONE_IDEA))
+rows = ''.join(card(i + 1, t, 128, 44) for i, t in enumerate(ONE_IDEA))
 write('slides/wide/wide-ads-one-idea.html', 'One idea five times',
       '5 Ads <em>-</em> <i>1 Idea 5 Times</i>',
-      ['  <div class="as__row" style="top:214px; gap:26px">%s</div>' % cards])
+      ['  <div class="as__list" style="top:250px">%s</div>' % rows], 20)
 
 # ---------------------------------------------------------------------------
-# eight reasons: two rows of four, each with its own tint
+# eight reasons
 # ---------------------------------------------------------------------------
-rows = []
-for r in range(2):
-    cards = ''.join(
-        card(r * 4 + i + 1, EIGHT_REASONS[r * 4 + i], 396, 336, 176, 24,
-             TINTS[r * 4 + i], 52)
-        for i in range(4))
-    rows.append('  <div class="as__row" style="top:%dpx; gap:28px">%s</div>'
-                % (206 + r * 370, cards))
-
+rows = ''.join(card(i + 1, t, 86, 34) for i, t in enumerate(EIGHT_REASONS))
 write('slides/wide/wide-ads-eight-reasons.html', 'Eight reasons',
-      '8 Ads <em>-</em> <i>8 Different Reasons to Convert</i>', rows)
+      '8 Ads <em>-</em> <i>8 Different Reasons to Convert</i>',
+      ['  <div class="as__list" style="top:228px">%s</div>' % rows], 12)
