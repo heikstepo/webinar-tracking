@@ -543,3 +543,43 @@ And all you do is look over your posts, about 10 minutes a month.
 
 Click below and I'll show you exactly how it works.
 ```
+
+### Take 2, Heik's version (7 Nov, master)
+
+Heik rewrote take 2: "see what I did, especially to the conversational normal human talking flow?" This is the version that runs. What he changed is rule 147.
+
+```
+It's actually insane to me that most B2B founders still aren't using LinkedIn to get clients….
+
+I mean just look at me…
+
+I run a B2B company, and over 7 figures a year of our revenue comes from my LinkedIn posts.
+
+Sure, we also get clients from referrals…
+
+But really most of the founders we work with now found me just by reading what I post.
+
+And I get why most founders don't do it…
+
+You're running a company, you don't have time to post every day, the few times you tried nothing really happened…
+
+And that's exactly why we want to use the system that works for us right now and run it for your LinkedIn, completely DFY.
+
+Not only are we going to position you as the market authority, like me, I've built a 60k following just from our posts…
+
+But we're also guaranteeing 30 qualified calls in the next 90 days.
+
+Here's how it works:
+
+At the start, you sit down with us for about an hour so we get your stories and how you talk…
+
+Then we write and post for you every weekday, in your voice…
+
+And our team handles your DMs and books the qualified calls straight into your calendar.
+
+You spend about 10 minutes a month looking over your posts… that's it.
+
+So if you're running a B2B company doing over a million a year…
+
+Click below and I'll walk you through exactly how we'd do it for you.
+```
