@@ -384,3 +384,162 @@ Same proof every time (over 7 figures a year from his LinkedIn, Top Voice twice,
 | 7 | Most underrated channel, said as a founder | "LinkedIn is the most underrated way to get B2B clients right now… and I'm not saying that as an agency owner, I'm saying it as a founder who gets over 7 figures a year from it." | "Here's how we'd set it up for you, so it runs while you run your company." |
 
 Check with Alex before any of these go out: "90% of our revenue comes from LinkedIn" (Heik's example) isn't in his material. What is: over 7 figures a year from his LinkedIn (4.2) and 8 in 10 new clients starting in his DMs (case video 1). Idea 5 also needs it to be true that he did referrals and cold outreach before (video 1 says new clients came from referrals and cold outreach).
+
+## Casual takes, written (7 Nov): 1, 2, 5 and 7
+
+Heik picked 1, 2, 5 and 7. Same proof in each (over 7 figures a year from his LinkedIn, Top Voice twice, 60k followers, founders finding him through his posts). Each has its own flow after the hook so they don't read as one ad four times:
+- 1: the feeling, the proof, "you've probably thought about doing the same", where founders give up, we do that part, three lines of how, CTA.
+- 2: the opinion, "like look at me", why founders don't do it (time, and nothing happened when they tried), "working with us looks like this", CTA with the callout.
+- 5: referrals and cold outreach against LinkedIn, why LinkedIn wins (they've read you for weeks before they book), it only works if you show up daily, we do that, CTA tied to referrals.
+- 7: underrated, said as a founder not an agency owner, why it's underrated (most founders post nothing or company news), the straight offer, numbered steps, CTA.
+No media engine (rule 138). No "90% of revenue" (not in Alex's material).
+
+### Take 1: I don't know what I'd be doing without LinkedIn
+
+```
+Look, I run a B2B company…
+
+And I don't even know what I'd be doing without LinkedIn.
+
+Over 7 figures a year for my company comes from my LinkedIn posts…
+
+It's by far the best thing I've ever done for the business.
+
+I've been a LinkedIn Top Voice twice, I've built over 60k followers…
+
+And a lot of the founders I end up working with found me just from reading my posts.
+
+So if you run a B2B company doing over a million a year, you've probably thought about doing the same…
+
+But actually posting every day while you're running a company is where most founders give up.
+
+So that's the part we do for you.
+
+We sit down with you once, for about an hour…
+
+Then our team writes and posts for you every weekday, in your voice, about what your ICP actually cares about…
+
+And when they start messaging you, we handle the conversation and book the call into your calendar.
+
+All you do is look over your posts, about 10 minutes a month…
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+Click below and I'll show you exactly how it works.
+```
+
+### Take 2: it's insane most B2B founders aren't using LinkedIn
+
+```
+It's actually insane to me that most B2B founders still aren't using LinkedIn to get clients.
+
+Like look at me…
+
+I run a B2B company, and over 7 figures a year of our revenue comes from my LinkedIn posts.
+
+I've been a LinkedIn Top Voice twice, I've built over 60k followers…
+
+And most of the founders I work with now found me just by reading what I post.
+
+And I get why most founders don't do it…
+
+You're running a company, you don't have time to post every day, and the few times you tried, nothing really happened.
+
+That's exactly the part we take off your plate.
+
+Working with us looks like this…
+
+One hour with you at the start, so we get your stories and how you talk…
+
+Then we write and post for you every weekday, in your voice…
+
+And our team handles your DMs and books the qualified calls straight into your calendar.
+
+You spend about 10 minutes a month looking over your posts…
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+So if you're running a B2B company doing over a million a year…
+
+Click below and I'll walk you through exactly how we'd do it for you.
+```
+
+### Take 5: nothing comes close
+
+```
+I've tried referrals…
+
+I've tried cold outreach…
+
+And nothing comes close to what my LinkedIn posts bring in.
+
+Over 7 figures a year for my B2B company comes from LinkedIn…
+
+Because referrals come when they come…
+
+And cold outreach goes to people who've never heard of you…
+
+But when someone finds you through your posts, they've been reading you for weeks before they ever book a call.
+
+So by the time we talk, they already know, like, and trust me.
+
+The only problem is, it only works if you show up every day…
+
+And when you're running a company, that's just not realistic.
+
+So that's what we do for B2B founders.
+
+We sit down with you once, for about an hour…
+
+Our team writes and posts for you every weekday, in your voice…
+
+And when people reach out, we book them straight into your calendar.
+
+You look over your posts, about 10 minutes a month…
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+So if you're doing over a million a year, and you want more than waiting on the next referral…
+
+Click below and I'll show you exactly how it works.
+```
+
+### Take 7: the most underrated way to get B2B clients
+
+```
+LinkedIn is the most underrated way to get B2B clients right now…
+
+And I'm not saying that as an agency owner…
+
+I'm saying it as a founder who gets over 7 figures a year from his own LinkedIn posts.
+
+I've been a LinkedIn Top Voice twice, with over 60k followers…
+
+And a lot of the founders I work with found me just from reading my posts.
+
+The reason it's so underrated is that most B2B founders either don't post at all…
+
+Or they post company updates that nobody outside their team cares about.
+
+So if you show up every day with posts your ICP actually wants to read…
+
+You stand out pretty fast.
+
+So if you're running a B2B company doing over a million a year, here's our offer…
+
+We build your LinkedIn brand completely done for you…
+
+And we guarantee 30 qualified calls in the next 90 days.
+
+Here's how it works, step by step.
+
+Step one, one call with us, about an hour, to get your offer, your ICP and your stories.
+
+Step two, our team writes and posts for you every weekday, in your voice.
+
+Step three, when your ICP messages you, we handle the conversation and book the call into your calendar.
+
+And all you do is look over your posts, about 10 minutes a month.
+
+Click below and I'll show you exactly how it works.
+```
