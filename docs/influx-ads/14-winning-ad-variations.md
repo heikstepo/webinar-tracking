@@ -413,7 +413,7 @@ So if you run a B2B company doing over a million a year, you've probably thought
 
 But actually posting every day while you're running a company is where most founders give up.
 
-So that's the part we do for you.
+That's the part we do for you.
 
 We sit down with you once, for about an hour…
 
@@ -525,7 +525,7 @@ So if you show up every day with posts your ICP actually wants to read…
 
 You stand out pretty fast.
 
-So if you're running a B2B company doing over a million a year, here's our offer…
+Now, if you're running a B2B company doing over a million a year, here's our offer…
 
 We build your LinkedIn brand completely done for you…
 
