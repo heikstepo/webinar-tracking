@@ -351,3 +351,18 @@ Click below and I'll walk you through exactly how we'd do it for you…
 
 We'll build your LinkedIn brand, and get you 30 qualified calls booked in the next 90 days.
 ```
+
+Heik on the casual version: "no, like that X clients come from my LinkedIn, I don't want that angle. Before writing the ad give me ideas." (Rule 145.)
+
+## Casual hook ideas (7 Nov, before writing)
+
+Friend to friend, Alex's own proof, then the same direct offer and how. None of them open on where his clients or revenue come from.
+
+| # | Angle | How it could open | Proof it uses | Check |
+|---|---|---|---|---|
+| 1 | Advice to a founder friend | "If you were a friend of mine running a B2B company… I'd tell you one thing about LinkedIn. Stop trying to do it yourself." | Two-time Top Voice, 60k followers: the person telling you this knows | |
+| 2 | The question founders always ask him | "Whenever I'm out with other founders, someone always asks me the same thing… 'how do you find the time to post every day?'" | He posts every day and still runs the company; the answer is the system, which we now run for you | Alex: his team writes and posts for him |
+| 3 | A confession from a Top Voice | "Quick confession… the posts that do best on my LinkedIn aren't the clever ones. They're the boring ones, written for one person." | His impact card: 48,000 impressions, comments from founders who could hire us | |
+| 4 | Save you the time I wasted | "Let me save you the time I wasted on LinkedIn…" | Before: company updates, motivation, comments from his peers. After: Top Voice twice, 60k followers | |
+
+Recommended: 2 and 3. 2 is the time blocker asked the way a peer would ask it, so the offer answers it directly. 3 gives away something useful first, the way a friend would, and the proof is one post.
