@@ -366,3 +366,21 @@ Friend to friend, Alex's own proof, then the same direct offer and how. None of 
 | 4 | Save you the time I wasted | "Let me save you the time I wasted on LinkedIn…" | Before: company updates, motivation, comments from his peers. After: Top Voice twice, 60k followers | |
 
 Recommended: 2 and 3. 2 is the time blocker asked the way a peer would ask it, so the offer answers it directly. 3 gives away something useful first, the way a friend would, and the proof is one post.
+
+Heik: "no, look, another idea, for example: 'Look, I run a B2B company and I don't even know what I'd be doing without LinkedIn. 7 figures of annual revenue come from LinkedIn. It's by far the best…' or 'It's actually insane to me that most B2B founders aren't using LinkedIn to get more clients. Like look at me, I run a 7 figure B2B company and 90% of our revenue comes from our LinkedIn posts. Over the years I've built X followers…' See what I mean. Same proof element, still somehow flowing into how it works, working with us, a quick mini pitch so the VSL does the rest. But it's not 7 times the same ad." (Rule 146.)
+
+## Casual takes on the same proof (7 Nov, ideas before writing)
+
+Same proof every time (over 7 figures a year from his LinkedIn, Top Voice twice, 60k followers). What changes is Alex's take on it, said the way he'd say it to another founder, and how that take bridges into a short pitch (one hour, we write and post every weekday in your voice, our team handles the DMs and books the calls, 30 qualified calls in 90 days guaranteed, about 10 minutes a month), then the VSL.
+
+| # | Take | Opening | Bridge into the pitch |
+|---|---|---|---|
+| 1 | Heik's: can't imagine the company without it | "Look, I run a B2B company… and I don't even know what I'd be doing without LinkedIn." | "And the best part is it barely takes any of my time… which is exactly how we run it for you." |
+| 2 | Heik's: it's insane other founders don't | "It's actually insane to me that most B2B founders still aren't using LinkedIn to get clients." | "And I get why… you're running a company. So that's the part we take off your plate." |
+| 3 | If it disappeared tomorrow | "If LinkedIn shut down tomorrow… my company would lose over 7 figures a year." | "So if your LinkedIn isn't doing anything like that for you yet… here's how we'd change that." |
+| 4 | My best salesperson isn't on payroll | "My best salesperson isn't on my payroll… it's my LinkedIn." | "And you can have the same salesperson working for you… without writing a single post." |
+| 5 | Nothing else comes close | "I've tried referrals… I've tried cold outreach… nothing comes close to what my LinkedIn posts bring in." | "But it only works if you post every day… which is why we do it for you." |
+| 6 | Biggest regret as a founder | "My biggest regret as a founder? Not taking LinkedIn seriously sooner." | "So don't make the same mistake… and you don't even have to write the posts yourself." |
+| 7 | Most underrated channel, said as a founder | "LinkedIn is the most underrated way to get B2B clients right now… and I'm not saying that as an agency owner, I'm saying it as a founder who gets over 7 figures a year from it." | "Here's how we'd set it up for you, so it runs while you run your company." |
+
+Check with Alex before any of these go out: "90% of our revenue comes from LinkedIn" (Heik's example) isn't in his material. What is: over 7 figures a year from his LinkedIn (4.2) and 8 in 10 new clients starting in his DMs (case video 1). Idea 5 also needs it to be true that he did referrals and cold outreach before (video 1 says new clients came from referrals and cold outreach).
