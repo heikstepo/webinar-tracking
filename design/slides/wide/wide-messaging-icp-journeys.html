@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Messaging and ICP journeys</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Two things added together rather than chosen between, so the mark in the
+   middle is a plus and not the rule the VSL and webinar pair uses.
+
+   The plus takes the accent and sits a size down: it joins the two words, it
+   is not a third one.
+
+   Class names are prefixed pls; voice-quiet.css owns .say and .says, which is
+   why neither is reused here.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.pls {
+  width: 1700px;
+  display: flex; align-items: center; justify-content: center; gap: 62px;
+}
+.pls p { margin: 0; }
+
+.pls__w {
+  font-size: 112px; font-weight: 600; letter-spacing: -0.032em; color: var(--ink);
+}
+.pls__p {
+  font-size: 84px; font-weight: 600; letter-spacing: -0.02em; color: var(--blue);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+  <div class="pls">
+    <p class="pls__w">Messaging</p>
+    <p class="pls__p">+</p>
+    <p class="pls__w">ICP Journeys</p>
+  </div>
+</section>
+
+</body>
+</html>
