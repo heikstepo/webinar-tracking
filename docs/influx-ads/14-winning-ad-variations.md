@@ -583,3 +583,47 @@ So if you're running a B2B company doing over a million a year…
 
 Click below and I'll walk you through exactly how we'd do it for you.
 ```
+
+### Take 7, v2 (7 Nov)
+
+Heik rewrote the top ("by far THE most underrated", "I'm saying that as a B2B founder…", the agency-owner line out) and: "everything up until here was beautiful, but I need a smoother connection between the last line and the pitch". The bridge now picks up the last line's own words ("show up every day") as the blocker, then goes straight into the transfer and the "Not only… But" offer (rule 147). The callout moves to the CTA. Steps unchanged.
+
+```
+LinkedIn is by far THE most underrated way to get B2B clients right now…
+
+I'm saying that as a B2B founder who gets over 7 figures a year from his own LinkedIn posts.
+
+I've been a LinkedIn Top Voice twice, with over 60k followers…
+
+And a lot of the founders I work with found me just from reading my posts.
+
+The reason it's so underrated is that most B2B founders either don't post at all…
+
+Or they post company updates that nobody outside their team cares about.
+
+So if you show up every day with posts your ICP actually wants to read…
+
+You stand out pretty fast.
+
+The only hard part is actually showing up every day while you're running a company…
+
+And that's exactly why we take the system that's working on my LinkedIn and run it on yours, completely DFY.
+
+Not only are we going to position you as the market authority in your niche…
+
+But we're also guaranteeing 30 qualified calls in the next 90 days.
+
+Here's how it works, step by step.
+
+Step one, one call with us, about an hour, to get your offer, your ICP and your stories.
+
+Step two, our team writes and posts for you every weekday, in your voice.
+
+Step three, when your ICP messages you, we handle the conversation and book the call into your calendar.
+
+And all you do is look over your posts, about 10 minutes a month.
+
+So if you're running a B2B company doing over a million a year…
+
+Click below and I'll show you exactly how it works.
+```
