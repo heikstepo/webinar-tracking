@@ -584,7 +584,9 @@ So if you're running a B2B company doing over a million a year…
 Click below and I'll walk you through exactly how we'd do it for you.
 ```
 
-### Take 7, v2 (7 Nov)
+### Take 7, v3 (7 Nov)
+
+v3: Heik on the how: "'here's how it works' is a hard cut in flow, step 1 2 3 hard cuts each". The steps now hand over to each other ("the way we get there", "it starts with", "from there", "and once"). Rule 149.
 
 Heik rewrote the top ("by far THE most underrated", "I'm saying that as a B2B founder…", the agency-owner line out) and: "everything up until here was beautiful, but I need a smoother connection between the last line and the pitch". The bridge now picks up the last line's own words ("show up every day") as the blocker, then goes straight into the transfer and the "Not only… But" offer (rule 147). The callout moves to the CTA. Steps unchanged.
 
@@ -613,15 +615,15 @@ Not only are we going to position you as the market authority in your niche…
 
 But we're also guaranteeing 30 qualified calls in the next 90 days.
 
-Here's how it works, step by step.
+And the way we get there is pretty simple…
 
-Step one, one call with us, about an hour, to get your offer, your ICP and your stories.
+It starts with you sitting down with us once, for about an hour, so we get your offer, your ICP and your stories…
 
-Step two, our team writes and posts for you every weekday, in your voice.
+From there, our team writes and posts for you every weekday, in your voice…
 
-Step three, when your ICP messages you, we handle the conversation and book the call into your calendar.
+And once your ICP starts messaging you, we handle the conversation and book the call straight into your calendar.
 
-And all you do is look over your posts, about 10 minutes a month.
+All you do is look over your posts, about 10 minutes a month… that's it.
 
 So if you're running a B2B company doing over a million a year…
 
