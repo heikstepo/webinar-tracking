@@ -671,3 +671,57 @@ So if you're running a B2B company doing over a million a year…
 
 Click below and I'll show you exactly how we'd do it for your company.
 ```
+
+### Take 5, v2 (7 Nov)
+
+Heik: "now this, but more so excluding outreach from the conversation. Also, don't bash referrals. Say I'm running referrals and ads, but why not LinkedIn too. Obviously don't say it like this, just use that as an angle." Cold outreach is out. Referrals and ads both work for Alex; LinkedIn is what's added on top, and it helps the other two (people look you up after a referral or an ad). Same "referrals or ads" as the VSL's situation. Built with rules 147-150. Rule 151.
+
+```
+We get a lot of our clients from referrals…
+
+We run ads too…
+
+And both work really well for us.
+
+But what's added the most on top of both is my LinkedIn…
+
+Over 7 figures a year for my B2B company comes from my posts.
+
+Because when someone finds you through your posts, they've been reading you for weeks before they ever book a call…
+
+So by the time we talk, they already know, like, and trust me.
+
+And it makes everything else work better too…
+
+Because when someone gets referred to you or sees your ad, one of the first things they do is look you up on LinkedIn.
+
+And if you've got referrals coming in, maybe some ads too…
+
+LinkedIn is the easiest one to add on top.
+
+The only thing is, it only works if you show up every day…
+
+And when you're running a company, that's just not realistic.
+
+So that's where we come in.
+
+We take the same system that runs my LinkedIn and run it on yours, completely DFY.
+
+Not only are we going to build your LinkedIn brand so you're the market authority in your niche…
+
+But we're also guaranteeing 30 qualified calls in the next 90 days, on top of everything your referrals and ads already bring in.
+
+And on your end, it's about an hour to start…
+
+You sit down with us once, so we get your offer, your ICP and your stories…
+
+Then our team writes and posts for you every weekday, in your voice…
+
+And when your ICP reaches out, we handle the conversation and book them straight into your calendar.
+
+After that, it's about 10 minutes a month looking over your posts… that's it.
+
+So if you're doing over a million a year, and you want LinkedIn working next to your referrals and ads…
+
+Click below and I'll show you exactly how it works.
+```
