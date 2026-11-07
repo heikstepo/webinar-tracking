@@ -301,3 +301,53 @@ So if you want your calendar looking like this…
 
 Click below and I'll show you how we'd build it for your company.
 ```
+
+## Casual version of 4.2 (7 Nov)
+
+Heik: "how can we smartly redo this so it's similar but sounds more casual and a bit more different, like a friend to friend type of convo". Same order and substance as 4.2 (own proof, already sold, time, offer, how, 10 minutes, CTA). What makes it casual: a coffee-chat frame for the hook ("if you asked me where most of my clients come from"), contractions, "look", "I don't blame you", "pretty simple", "your part is…", "maybe 10 minutes". Market authority said the way a friend would say it ("the go-to name in your niche"). No media engine (rule 138).
+
+```
+If we were grabbing a coffee and you asked me where most of my clients come from…
+
+I'd tell you straight away, it's my LinkedIn posts.
+
+Over 7 figures a year for my B2B company, just from LinkedIn.
+
+I've been a LinkedIn Top Voice twice and I've got over 60k followers…
+
+But what actually matters is that a lot of the founders I work with found me just by reading my posts.
+
+And look, if you're running a B2B company doing over a million a year…
+
+You probably already know LinkedIn could do the same for you.
+
+The problem is, you're running a company…
+
+You're not going to sit down and write a post every day, and I don't blame you.
+
+So here's what we do.
+
+We take everything that works on my LinkedIn, the same stuff that's brought in well over 8 figures for dozens of our B2B clients…
+
+And we just do it on yours, completely done for you.
+
+You become the go-to name in your niche…
+
+And we guarantee we'll book you 30 qualified calls in the next 90 days.
+
+How it works is pretty simple…
+
+We write and post for you every day, in your voice, about the stuff your ICP actually cares about…
+
+And when people engage, we book them straight into your calendar.
+
+Your part is looking over your posts, and that's it…
+
+Maybe 10 minutes a month.
+
+So if you're doing over a million a year, you know LinkedIn works, and you just don't have the time to do it yourself…
+
+Click below and I'll walk you through exactly how we'd do it for you…
+
+We'll build your LinkedIn brand, and get you 30 qualified calls booked in the next 90 days.
+```
