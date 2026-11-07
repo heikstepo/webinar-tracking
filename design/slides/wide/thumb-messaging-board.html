@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Messaging and ICP Journeys</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-thumb-messaging.py. The right half of a 16:9 thumbnail: a headline
+   that has to survive being shrunk, over a board that only has to look like a
+   lot of ground covered.
+
+   Class names are prefixed mb; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 960px 1080px; margin: 0; }
+
+.slide {
+  position: relative;
+  width: 960px; height: 1080px; padding: 0; background: var(--ground);
+  background-image: radial-gradient(#D7DBE2 1.7px, transparent 1.8px);
+  background-size: 30px 30px; background-position: 10px 10px;
+}
+
+/* ---- the headline -------------------------------------------------------- */
+.mb__h {
+  position: absolute; left: 40px; top: 42px; width: 884px; margin: 0;
+  font-size: 76px; font-weight: 700; letter-spacing: -0.038em; line-height: 1.04;
+  color: var(--ink);
+}
+.mb__h i { font-style: normal; color: var(--blue); }
+
+/* ---- the board ----------------------------------------------------------- */
+.mb { position: absolute; left: 40px; top: 236px; width: 880px; height: 800px; }
+
+.mb__wires { position: absolute; inset: 0; }
+.mb__wires svg { display: block; width: 100%; height: 100%; }
+.mb__wires .flow { fill: none; stroke: #AEB8C6; stroke-width: 3;
+                   stroke-linecap: round; stroke-dasharray: 9 9; }
+.mb__wires .tip { fill: #AEB8C6; }
+.mb__ink { z-index: 3; pointer-events: none; }
+.mb__ink .ring { fill: none; stroke: var(--red); stroke-width: 3.4; }
+
+.mb__card {
+  position: absolute; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 20px; padding: 17px 20px;
+  box-shadow: 0 2px 10px rgba(20, 30, 50, 0.07);
+}
+.mb__t {
+  margin: 0 0 14px;
+  font-size: 27px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+}
+.mb__t i { font-style: normal; color: var(--blue); }
+
+.mb__row { display: flex; align-items: center; gap: 10px; }
+.mb__chip {
+  padding: 7px 13px; border-radius: 9px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 19px; font-weight: 600; white-space: nowrap;
+}
+.mb__chip--p { background: #FBE4E8; color: #AE3047; }
+.mb__chip--g { background: #E7F5E3; color: #3C7F2C; }
+.mb__arr { width: 18px; height: 2px; background: #B6C2D0; flex: none; }
+
+.mb__g { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.6;
+         stroke-linecap: round; stroke-linejoin: round; }
+.mb__g--p { stroke: #D4536B; }
+.mb__g--g { stroke: #52A33C; }
+
+/* the angle hub */
+.mb__hub svg { display: block; width: 100%; height: 148px; }
+.mb__hub .spoke { fill: none; stroke: #C6CED8; stroke-width: 2.6; }
+.mb__hub .node { fill: #CFE2FA; }
+.mb__hub .core { fill: #E4EFFD; stroke: #8FBDF3; stroke-width: 3; }
+.mb__hub text { font-family: inherit; font-size: 21px; font-weight: 700;
+                fill: #1E4E8C; text-anchor: middle; }
+
+/* the levels */
+.mb__lvl { display: flex; align-items: center; gap: 12px; }
+.mb__lvl + .mb__lvl { margin-top: 9px; }
+.mb__bar { height: 16px; border-radius: 5px; flex: none; }
+.mb__lab { font-size: 18px; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+
+/* pain and dream */
+.mb__half { flex: 1; border-radius: 14px; padding: 10px 0; text-align: center; }
+.mb__half--p { background: #FBE4E8; }
+.mb__half--g { background: #E7F5E3; }
+.mb__half p { margin: 4px 0 0; font-size: 19px; font-weight: 600; }
+.mb__half--p p { color: #AE3047; }
+.mb__half--g p { color: #3C7F2C; }
+.mb__half svg { margin: 0 auto; width: 50px; height: 50px; }
+
+/* the journeys */
+.mb__lane { display: flex; align-items: center; gap: 8px; }
+.mb__lane + .mb__lane { margin-top: 20px; }
+.mb__who {
+  width: 68px; flex: none;
+  font-size: 18px; font-weight: 700; letter-spacing: 0.04em; color: var(--ink-3);
+}
+.mb__stop {
+  flex: 1; box-sizing: border-box; padding: 9px 0; text-align: center;
+  border-radius: 10px; background: #EDF3FB; color: #44536A;
+  font-size: 17px; font-weight: 600;
+}
+.mb__stop--on { background: var(--blue); color: #fff; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+
+  <h1 class="mb__h">Messaging <i>+</i><br>ICP Journeys</h1>
+
+  <div class="mb">
+
+    <div class="mb__wires">
+      <svg viewBox="0 0 880 800" aria-hidden="true">
+        <path class="flow" d="M428 126 C 438.8 126, 441.2 116, 452 116"/><g transform="translate(452 116) rotate(0)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M212 258 C 212 263.4, 212 264.6, 212 270"/><g transform="translate(212 270) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M212 528 C 212 534.3, 212 535.7, 212 542"/><g transform="translate(212 542) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M668 242 C 668 247.4, 668 248.6, 668 254"/><g transform="translate(668 254) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M668 462 C 668 470.1, 668 471.9, 668 480"/><g transform="translate(668 480) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M430 640 C 430 629.2, 450 626.8, 450 616"/><g transform="translate(450 616) rotate(0)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+      </svg>
+    </div>
+
+    <div class="mb__wires mb__ink">
+      <svg viewBox="0 0 880 800" aria-hidden="true">
+        <ellipse class="ring" cx="212" cy="138" rx="62" ry="46" transform="rotate(-3 212 138)"/>
+      </svg>
+    </div>
+
+    <div class="mb__card" style="left:0px; top:0px; width:424px; height:252px; transform:rotate(-1.2deg)"><p class="mb__t">One ICP, many <i>angles</i></p><div class="mb__hub"><svg viewBox="0 0 380 148" aria-hidden="true"><line class="spoke" x1="190" y1="74" x2="72.7253" y2="37.8376"/><line class="spoke" x1="190" y1="74" x2="43.7608" y2="86.9062"/><line class="spoke" x1="190" y1="74" x2="124.917" y2="126.256"/><line class="spoke" x1="190" y1="74" x2="255.083" y2="126.256"/><line class="spoke" x1="190" y1="74" x2="336.239" y2="86.9062"/><line class="spoke" x1="190" y1="74" x2="307.275" y2="37.8376"/><line class="spoke" x1="190" y1="74" x2="190" y2="16"/><circle class="core" cx="190" cy="74" r="40"/><text x="190" y="82">ICP</text><circle class="node" cx="190" cy="16" r="15"/><circle class="node" cx="307.275" cy="37.8376" r="15"/><circle class="node" cx="336.239" cy="86.9062" r="15"/><circle class="node" cx="255.083" cy="126.256" r="15"/><circle class="node" cx="124.917" cy="126.256" r="15"/><circle class="node" cx="43.7608" cy="86.9062" r="15"/><circle class="node" cx="72.7253" cy="37.8376" r="15"/></svg></div></div>
+    <div class="mb__card" style="left:0px; top:276px; width:424px; height:246px; transform:rotate(0.9deg)"><p class="mb__t">Awareness <i>levels</i></p><div class="mb__lvl"><span class="mb__bar" style="width:40px; background:#C5DDFA"></span><span class="mb__lab">Unaware</span></div><div class="mb__lvl"><span class="mb__bar" style="width:66px; background:#A7CCF7"></span><span class="mb__lab">Curious</span></div><div class="mb__lvl"><span class="mb__bar" style="width:92px; background:#7CB2F3"></span><span class="mb__lab">Researching</span></div><div class="mb__lvl"><span class="mb__bar" style="width:118px; background:#4A97EF"></span><span class="mb__lab">Struggling</span></div><div class="mb__lvl"><span class="mb__bar" style="width:144px; background:#0071E3"></span><span class="mb__lab">Plateaued</span></div></div>
+    <div class="mb__card" style="left:0px; top:548px; width:424px; height:206px; transform:rotate(-0.7deg)"><p class="mb__t">Pain vs <i>Dream</i></p><div class="mb__row" style="gap:14px"><div class="mb__half mb__half--p"><svg class="mb__g mb__g--p" viewBox="0 0 124 124" aria-hidden="true"><path d="M70 10 C 70 36, 52 42, 50 60 C 47 47, 43 42, 38 38
+        C 35 50, 26 58, 26 76 a 36 36 0 0 0 72 0 C 98 54, 86 40, 70 10 Z"/></svg><p>Pain</p></div><div class="mb__half mb__half--g"><svg class="mb__g mb__g--g" viewBox="0 0 124 124" aria-hidden="true"><path d="M62 42 V 94"/>
+        <path d="M62 50 C 40 22, 12 28, 14 54 C 16 78, 44 82, 62 68"/>
+        <path d="M62 50 C 84 22, 112 28, 110 54 C 108 78, 80 82, 62 68"/>
+        <path d="M58 40 L 46 22 M66 40 L 78 22"/></svg><p>Dream</p></div></div></div>
+    <div class="mb__card" style="left:456px; top:24px; width:424px; height:212px; transform:rotate(1deg)"><p class="mb__t"><i>Objection</i> &rarr; Proof</p><div class="mb__row" style="margin-top:0px"><span class="mb__chip mb__chip--p"> &ldquo;Saturated&rdquo;</span><div class="mb__arr"></div><span class="mb__chip mb__chip--g">Case Study 1</span></div><div class="mb__row" style="margin-top:12px"><span class="mb__chip mb__chip--p">&ldquo;Tried ads&rdquo;</span><div class="mb__arr"></div><span class="mb__chip mb__chip--g">Own Proof</span></div></div>
+    <div class="mb__card" style="left:456px; top:260px; width:424px; height:196px; transform:rotate(-0.9deg)"><p class="mb__t">Hook, Body, <i>CTA</i></p><div class="mb__row" style="justify-content:space-between"><span class="mb__chip">Hook</span><div class="mb__arr"></div><span class="mb__chip">Body</span><div class="mb__arr"></div><span class="mb__chip">CTA</span></div><div class="mb__row" style="margin-top:16px; justify-content:space-between"><span class="mb__lab"><b style="color:#1E4E8C">S</b>ituation</span><span class="mb__lab"><b style="color:#1E4E8C">R</b>eframe</span><span class="mb__lab"><b style="color:#1E4E8C">P</b>roof</span><span class="mb__lab"><b style="color:#1E4E8C">A</b>sk</span></div></div>
+    <div class="mb__card" style="left:456px; top:486px; width:424px; height:222px; transform:rotate(0.7deg)"><p class="mb__t">Two ICPs, two <i>journeys</i></p><div class="mb__lane"><span class="mb__who">ICP 1</span><span class="mb__stop">Ad</span><span class="mb__stop">Opt-in</span><span class="mb__stop mb__stop--on">VSL</span><span class="mb__stop">Call</span></div><div class="mb__lane"><span class="mb__who">ICP 2</span><span class="mb__stop">Ad</span><span class="mb__stop mb__stop--on">Organic</span><span class="mb__stop">Webinar</span><span class="mb__stop">Call</span></div></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
