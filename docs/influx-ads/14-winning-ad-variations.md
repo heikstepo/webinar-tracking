@@ -629,3 +629,45 @@ So if you're running a B2B company doing over a million a year…
 
 Click below and I'll show you exactly how it works.
 ```
+
+### Take 1, v2 (7 Nov)
+
+Heik: "I need this redone, from like the 3rd line it talks too much about us, nothing about them". Kept his first two lines and one proof line, then it turns to them: what LinkedIn would do for them, their blocker, their LinkedIn, their calendar. Alex's credentials only come back inside the promise (Top Voice). Built with rules 147-149 (transfer, "Not only… But we're also guaranteeing", a flowing how, "that's it", callout in the CTA). Rule 150.
+
+```
+Look, I run a B2B company…
+
+And I don't even know what I'd be doing without LinkedIn.
+
+Over 7 figures a year for us comes from my LinkedIn posts…
+
+And if you run a B2B company too, I bet you've thought about doing the same.
+
+Because you know what it could do for you…
+
+More clients coming in on top of your referrals, prospects who already trust you before the first call, and being the first name people think of in your niche.
+
+But you're running a company…
+
+So posting every day just isn't going to happen, and the few times you tried, it probably went nowhere.
+
+Which is why we take what's working on my LinkedIn and run it on yours, completely DFY.
+
+Not only are we going to make you the market authority in your niche, the same way it made me a LinkedIn Top Voice twice…
+
+But we're also guaranteeing you 30 qualified calls in the next 90 days.
+
+And it barely takes any of your time…
+
+You sit down with us once, for about an hour, so we get your offer, your ICP and your stories…
+
+After that, our team writes and posts for you every weekday, in your voice…
+
+And when your ICP starts messaging you, we handle the conversation and book the call straight into your calendar.
+
+You just look over your posts, about 10 minutes a month… that's it.
+
+So if you're running a B2B company doing over a million a year…
+
+Click below and I'll show you exactly how we'd do it for your company.
+```
