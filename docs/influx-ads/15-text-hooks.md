@@ -16,7 +16,7 @@ v2 (Heik): "each and every one must be tied to our ICP, have LinkedIn or at leas
 | 1.1 Doesn't have the time | "If you run a B2B company doing over a million dollars a year… you've probably told yourself you need to be posting on LinkedIn…" | No time for LinkedIn? We post for you. | The ICP's no-time blocker, answered |
 | 1.2 Not getting engagement | "It's funny to me how most B2B founders who get nothing out of LinkedIn… all post the same stuff" | posting on LinkedIn but your ICP never sees it? | The ICP who tried and got nothing |
 | 1.3 Hired help | "As a business owner you and I both know how great LinkedIn is…" | hired a LinkedIn ghostwriter and still no booked calls? | The ICP who already tried handing it off |
-| 2.1 Only referrals | "Referrals are the best thing that can happen to a B2B company…" | Your next client shouldn't depend on a referral | The fear the ad answers, without knocking referrals |
+| 2.1 Only referrals | "Referrals are the best thing that can happen to a B2B company…" | What a founder with 90% referrals told me: | The fear the ad answers, without knocking referrals |
 | 2.2 Competitors | "Some of your worst competitors are winning deals that should've been yours…" | your competitor's LinkedIn vs. yours | A side-by-side they want to check |
 | 2.3 Prospects look you up | "Every time a prospect books a call with your B2B company… better believe they are going to look you up…" | what prospects see when they check your LinkedIn before a call | The moment the ad is about, from the ICP's side |
 | 4.1 Straight offer | "If you're running a B2B company doing over 7 figures a year… we'll help you build your LinkedIn brand…" | B2B founders: your LinkedIn brand, done for you | The offer, aimed at the ICP |
@@ -42,7 +42,7 @@ There's no ad group 3 in the November doc, so nothing for it here.
 
 1.3 Hired help, didn't sound like you: hired a LinkedIn ghostwriter and still no booked calls?
 
-2.1 Only Referrals / Capped at your network: Your next client shouldn't depend on a referral
+2.1 Only Referrals / Capped at your network: What a founder with 90% referrals told me:
 
 2.2 Competitors with better Linkedin Market Presence & Brand win clients, even though you're better: your competitor's LinkedIn vs. yours
 
