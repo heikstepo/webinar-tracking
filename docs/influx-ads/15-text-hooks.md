@@ -19,7 +19,7 @@ v2 (Heik): "each and every one must be tied to our ICP, have LinkedIn or at leas
 | 2.1 Only referrals | "Referrals are the best thing that can happen to a B2B company…" | What a founder with 90% referrals told me: | The fear the ad answers, without knocking referrals |
 | 2.2 Competitors | "Some of your worst competitors are winning deals that should've been yours…" | your competitor's LinkedIn vs. yours | A side-by-side they want to check |
 | 2.3 Prospects look you up | "Every time a prospect books a call with your B2B company… better believe they are going to look you up…" | Your LinkedIn pitches before you do | The moment the ad is about, from the ICP's side |
-| 4.1 Straight offer | "If you're running a B2B company doing over 7 figures a year… we'll help you build your LinkedIn brand…" | B2B founders: your LinkedIn brand, done for you | The offer, aimed at the ICP |
+| 4.1 Straight offer | "If you're running a B2B company doing over 7 figures a year… we'll help you build your LinkedIn brand…" | You run the company. We run your LinkedIn. | The offer, aimed at the ICP |
 | 4.2 Winning ad | "Over 7 figures a year in my B2B business comes from ONE place… my LinkedIn posts." | know LinkedIn works but never have time to post? | The ICP in one line: already sold, no time |
 | 5.1 Scott | "This IT consulting CEO went from almost no LinkedIn following…" | starting your LinkedIn from almost zero? | Moves Scott's story onto the viewer |
 | 5.2 Ryan | "Ryan runs sales at a GovTech company… their LinkedIn looked like most B2B companies' LinkedIn…" | already posting on LinkedIn and getting nowhere? | Calls out who Ryan's story is for |
@@ -48,7 +48,7 @@ There's no ad group 3 in the November doc, so nothing for it here.
 
 2.3 Cold Leads ghost you / Don't Close because you're not a market authority - They don't find anything about you online: Your LinkedIn pitches before you do
 
-4.1 Straight Offer + Proof + Mechanism: B2B founders: your LinkedIn brand, done for you
+4.1 Straight Offer + Proof + Mechanism: You run the company. We run your LinkedIn.
 
 4.2 Lead with Alex' Linkedin + Pitch DFY angle for busy founders that are already sold on Linkedin: know LinkedIn works but never have time to post?
 
