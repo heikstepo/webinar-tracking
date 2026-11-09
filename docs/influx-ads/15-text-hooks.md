@@ -13,7 +13,7 @@ v2 (Heik): "each and every one must be tied to our ICP, have LinkedIn or at leas
 
 | Ad | Spoken hook (first line) | Text hook | What it adds |
 |---|---|---|---|
-| 1.1 Doesn't have the time | "If you run a B2B company doing over a million dollars a year… you've probably told yourself you need to be posting on LinkedIn…" | daily LinkedIn posts for B2B founders who don't have time | The ICP's no-time blocker, answered |
+| 1.1 Doesn't have the time | "If you run a B2B company doing over a million dollars a year… you've probably told yourself you need to be posting on LinkedIn…" | No time for LinkedIn? We post for you. | The ICP's no-time blocker, answered |
 | 1.2 Not getting engagement | "It's funny to me how most B2B founders who get nothing out of LinkedIn… all post the same stuff" | posting on LinkedIn but your ICP never sees it? | The ICP who tried and got nothing |
 | 1.3 Hired help | "As a business owner you and I both know how great LinkedIn is…" | hired a LinkedIn ghostwriter and still no booked calls? | The ICP who already tried handing it off |
 | 2.1 Only referrals | "Referrals are the best thing that can happen to a B2B company…" | what happens when your referrals slow down? | The fear the ad answers, without knocking referrals |
@@ -36,7 +36,7 @@ There's no ad group 3 in the November doc, so nothing for it here.
 ## Paste list (doc titles)
 
 ```
-1.1 Doesn't have the time: daily LinkedIn posts for B2B founders who don't have time
+1.1 Doesn't have the time: No time for LinkedIn? We post for you.
 
 1.2 Weren't getting engagement because of XYZ: posting on LinkedIn but your ICP never sees it?
 
