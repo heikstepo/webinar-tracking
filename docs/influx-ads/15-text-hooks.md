@@ -70,3 +70,16 @@ There's no ad group 3 in the November doc, so nothing for it here.
 
 7.4 Linkedin Underrated: why most B2B founders get nothing from LinkedIn
 ```
+
+## 4.1 options (Heik: "gimme 10 options")
+
+1. You run the company. We run your LinkedIn.
+2. The LinkedIn team you never had to hire
+3. 1 hour from you. A LinkedIn brand from us.
+4. Your expertise → LinkedIn posts → booked calls
+5. The LinkedIn you'd build if you had the time
+6. B2B founders: stop writing your own LinkedIn posts
+7. Your LinkedIn, run like a sales channel
+8. A LinkedIn brand that takes you 10 minutes a month
+9. Everything LinkedIn does for B2B founders, minus the posting
+10. Daily LinkedIn posts, zero writing on your end
