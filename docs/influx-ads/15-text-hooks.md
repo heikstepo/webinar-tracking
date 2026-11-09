@@ -37,20 +37,36 @@ There's no ad group 3 in the November doc, so nothing for it here.
 
 ```
 1.1 Doesn't have the time: daily LinkedIn posts for B2B founders who don't have time
+
 1.2 Weren't getting engagement because of XYZ: posting on LinkedIn but your ICP never sees it?
+
 1.3 Hired help, didn't sound like you: hired a LinkedIn ghostwriter and still no booked calls?
+
 2.1 Only Referrals / Capped at your network: what happens when your referrals slow down?
+
 2.2 Competitors with better Linkedin Market Presence & Brand win clients, even though you're better: your competitor's LinkedIn vs. yours
+
 2.3 Cold Leads ghost you / Don't Close because you're not a market authority - They don't find anything about you online: what prospects see when they check your LinkedIn before a call
+
 4.1 Straight Offer + Proof + Mechanism: B2B founders: your LinkedIn brand, done for you
+
 4.2 Lead with Alex' Linkedin + Pitch DFY angle for busy founders that are already sold on Linkedin: know LinkedIn works but never have time to post?
+
 5.1 Scott From Almost Zero: starting your LinkedIn from almost zero?
+
 5.2 Ryan Already Posting: already posting on LinkedIn and getting nowhere?
+
 5.3 Alex & Influx: the LinkedIn system behind my company, now done for you
+
 6.1 "Won't it sound like AI, not like me?": outsourcing your LinkedIn? watch this first
+
 6.2 "Does Linkedin really work in my industry?": think your industry is too boring for LinkedIn?
+
 7.1 No idea what I'd do without Linkedin: LinkedIn clients on top of your referrals (without posting)
+
 7.2 No Linkedin = Insane: too busy to post on LinkedIn? watch this
+
 7.3 Referrals + Linkedin: already getting referrals? add this on top
+
 7.4 Linkedin Underrated: why most B2B founders get nothing from LinkedIn
 ```
