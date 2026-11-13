@@ -16,7 +16,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 W, H = 1080, 1080
-BW, BH = 1000, 856
+BW, BH = 1000, 896
 
 
 def logo(slug):
@@ -52,11 +52,13 @@ G = {
         <circle class="hot-fill" cx="36" cy="52" r="5"/>
         <circle class="hot-fill" cx="52" cy="52" r="5"/>
         <circle class="hot-fill" cx="68" cy="52" r="5"/>''',
-    'page': '''<rect x="10" y="20" width="104" height="84" rx="11"/>
-        <path d="M10 42 H 114"/>
-        <circle class="hot-fill" cx="26" cy="31" r="4"/>
-        <circle cx="40" cy="31" r="4"/>
-        <path class="hot" d="M42 72 L 56 86 L 84 56"/>''',
+    'deck': '''<rect x="8" y="34" width="78" height="60" rx="8"/>
+        <path d="M24 22 H 94 a 8 8 0 0 1 8 8 V 82"/>
+        <path d="M22 54 H 66 M22 70 H 52"/>
+        <path class="hot" d="M100 14 L 104 26 L 116 30 L 104 34 L 100 46
+        L 96 34 L 84 30 L 96 26 Z"/>''',
+    'reel': '''<rect x="8" y="26" width="108" height="72" rx="12"/>
+        <path class="hot-fill" d="M50 46 L 76 62 L 50 78 Z"/>''',
 }
 
 
@@ -96,7 +98,7 @@ TPL = '''<!doctype html>
 .vb__h i { font-style: normal; color: var(--blue); }
 
 /* ---- the board ----------------------------------------------------------- */
-.vb { position: absolute; left: 40px; top: 184px; width: __BW__px; height: __BH__px; }
+.vb { position: absolute; left: 40px; top: 168px; width: __BW__px; height: __BH__px; }
 
 .vb__wires { position: absolute; inset: 0; }
 .vb__wires svg { display: block; width: 100%; height: 100%; }
@@ -150,19 +152,10 @@ TPL = '''<!doctype html>
   text-transform: uppercase; color: var(--blue);
 }
 
-/* the sale */
-.vb__tick {
-  width: 30px; height: 30px; border-radius: 50%; flex: none;
-  background: #E7F5E3; border: 2.5px solid #34A518;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 17px; line-height: 1; color: #248A13;
-}
-.vb__cross {
-  width: 30px; height: 30px; border-radius: 50%; flex: none;
-  background: #EDEFF2; border: 2.5px solid #AEB8C6;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px; line-height: 1; color: #6E6E73;
-}
+/* the length of the VSL, drawn as a scrubber */
+.vb__scrub { flex: 1; height: 10px; border-radius: 5px; background: #DDE3EA; }
+.vb__scrub span { display: block; width: 34%; height: 10px; border-radius: 5px;
+                  background: var(--blue); }
 .vb__bang { color: var(--blue); font-size: 34px; font-weight: 700; }
 </style>
 </head>
@@ -251,8 +244,32 @@ EVENT = ('<div class="vb__row" style="gap:8px">'
          '<div class="vb__arr"></div>'
          '<span class="vb__chip vb__chip--off">View</span>'
          '<div class="vb__arr"></div>'
-         '<span class="vb__chip">Schedule</span></div>'
-         '<p class="vb__lab" style="margin:14px 0 0">As far back as the funnel allows</p>')
+         '<span class="vb__chip">Schedule</span></div>')
+
+# ---- the length of the VSL -------------------------------------------------
+LENGTH = ('<div class="vb__row" style="gap:14px">' + glyph('reel', 52)
+          + '<div class="vb__scrub"><span></span></div></div>')
+
+# ---- speed to lead ---------------------------------------------------------
+SPEED = ('<div class="vb__row" style="gap:16px">' + glyph('clock', 56)
+         + '<span class="vb__bang">!!!</span></div>')
+
+# ---- the offer line --------------------------------------------------------
+OFFER = ('<div class="vb__row" style="gap:8px">'
+         '<span class="vb__chip">[Result]</span><span class="vb__lab">in</span>'
+         '<span class="vb__chip">[Time]</span><span class="vb__lab">without</span>'
+         '<span class="vb__chip">[Pain]</span></div>')
+
+# ---- messaging -------------------------------------------------------------
+MESSAGING = ('<div class="vb__row" style="gap:8px">'
+             '<span class="vb__chip">Hook</span><div class="vb__arr"></div>'
+             '<span class="vb__chip">Body</span><div class="vb__arr"></div>'
+             '<span class="vb__chip">CTA</span></div>'
+             '<div class="vb__row" style="gap:8px; margin-top:14px">'
+             '<span class="vb__chip vb__chip--off">Pain</span>'
+             '<span class="vb__chip vb__chip--off">Dream</span>'
+             '<span class="vb__chip vb__chip--off">Objection</span>'
+             '<span class="vb__chip vb__chip--g">Proof</span></div>')
 
 # ---- the pre-call sequence -------------------------------------------------
 SEQ = ('<div class="vb__row" style="justify-content:space-between">'
@@ -260,45 +277,34 @@ SEQ = ('<div class="vb__row" style="justify-content:space-between">'
        + mark('meta', 42) + glyph('setter', 50) + '</div>'
        '<p class="vb__lab" style="margin:14px 0 0">Emails, SMS, video, ads, setters</p>')
 
-# ---- speed to lead ---------------------------------------------------------
-SPEED = ('<div class="vb__row" style="gap:16px">' + glyph('clock', 62)
-         + '<span class="vb__bang">!!!</span></div>')
-
-# ---- qualified and not -----------------------------------------------------
-SPLIT = ('<div class="vb__row" style="gap:12px"><div class="vb__tick">&#10003;</div>'
-         '<span class="vb__chip vb__chip--g">Qualified &rarr; Booked Call</span></div>'
-         '<div class="vb__row" style="gap:12px; margin-top:12px">'
-         '<div class="vb__cross">&times;</div>'
-         '<span class="vb__chip vb__chip--off">Unqualified &rarr; Downsell</span></div>')
-
-# ---- the confirmation page -------------------------------------------------
-CONFIRM = ('<div class="vb__row" style="gap:16px">' + glyph('page', 64)
-           + '<span class="vb__chip">Confirmed</span></div>')
-
-# ---- the offer line --------------------------------------------------------
-OFFER = ('<div class="vb__row" style="flex-wrap:wrap; gap:8px">'
-         '<span class="vb__chip">[Result]</span><span class="vb__lab">in</span>'
-         '<span class="vb__chip">[Time]</span><span class="vb__lab">without</span>'
-         '<span class="vb__chip">[Pain]</span></div>')
+# ---- the decks -------------------------------------------------------------
+DECKS = ('<div class="vb__row" style="gap:20px">' + glyph('deck', 64)
+         + '<div class="vb__row" style="gap:10px">'
+         + ''.join('<span style="display:block; width:52px; height:38px;'
+                   ' border-radius:7px; background:%s"></span>' % c
+                   for c in ('#CFE2FA', '#CFE2FA', '#E4EFFD'))
+         + '</div></div>')
 
 # ---------------------------------------------------------------------------
 card(0, 0, 1000, 192, -0.6, 'The <i>funnel</i>', MAP)
 
-card(0, 220, 484, 196, 0.9, 'Conversion <i>event</i>', EVENT)
-card(0, 442, 484, 190, -1.0, 'Pre-call <i>sequence</i>', SEQ)
-card(0, 658, 484, 166, 0.7, 'Speed to <i>Lead</i>', SPEED)
+card(0, 220, 484, 152, 0.9, 'Conversion <i>event</i>', EVENT)
+card(0, 392, 484, 152, -1.0, '3&ndash;5 min <i>VSL</i>', LENGTH)
+card(0, 564, 484, 152, 0.7, 'Speed to <i>Lead</i>', SPEED)
+card(0, 736, 484, 152, -0.5, '<i>Offer</i> line', OFFER)
 
-card(516, 228, 484, 186, -0.9, 'Who gets a <i>call</i>', SPLIT)
-card(516, 440, 484, 186, 1.0, 'Call <i>confirmation</i>', CONFIRM)
-card(516, 652, 484, 166, -0.6, '<i>Offer</i> line', OFFER)
+card(516, 228, 484, 206, -0.9, '<i>Messaging</i>', MESSAGING)
+card(516, 455, 484, 206, 1.0, 'Pre-call <i>nurture</i>', SEQ)
+card(516, 682, 484, 206, -0.6, 'AI <i>Pitch Decks</i>', DECKS)
 
 wires = [
     wire(242, 196, 242, 214, 90),
     wire(758, 196, 758, 222, 90),
-    wire(242, 420, 242, 436, 90),
-    wire(242, 636, 242, 652, 90),
-    wire(758, 418, 758, 434, 90),
-    wire(758, 630, 758, 646, 90),
+    wire(242, 376, 242, 386, 90),
+    wire(242, 548, 242, 558, 90),
+    wire(242, 720, 242, 730, 90),
+    wire(758, 438, 758, 449, 90),
+    wire(758, 665, 758, 676, 90),
 ]
 
 ink = ['<ellipse class="ring" cx="616" cy="108" rx="76" ry="56" '
