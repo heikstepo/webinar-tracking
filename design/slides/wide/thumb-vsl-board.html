@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VSL Funnel Tactics</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-thumb-vsl.py. A wider panel: the funnel map across the top, the
+   tactics under it, on the same dotted paper as the other boards.
+
+   Class names are prefixed vb; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1080px 1080px; margin: 0; }
+
+.slide {
+  position: relative;
+  width: 1080px; height: 1080px; padding: 0; background: var(--ground);
+  background-image: radial-gradient(#D7DBE2 1.7px, transparent 1.8px);
+  background-size: 30px 30px; background-position: 10px 10px;
+}
+
+.vb__h {
+  position: absolute; left: 40px; top: 44px; width: 1000px; margin: 0;
+  font-size: 88px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02;
+  color: var(--ink);
+}
+.vb__h i { font-style: normal; color: var(--blue); }
+
+/* ---- the board ----------------------------------------------------------- */
+.vb { position: absolute; left: 40px; top: 184px; width: 1000px; height: 856px; }
+
+.vb__wires { position: absolute; inset: 0; }
+.vb__wires svg { display: block; width: 100%; height: 100%; }
+.vb__wires .flow { fill: none; stroke: #AEB8C6; stroke-width: 3;
+                   stroke-linecap: round; stroke-dasharray: 9 9; }
+.vb__wires .tip { fill: #AEB8C6; }
+.vb__ink { z-index: 3; pointer-events: none; }
+.vb__ink .ring { fill: none; stroke: var(--red); stroke-width: 3.4; }
+
+.vb__card {
+  position: absolute; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 20px; padding: 17px 20px;
+  box-shadow: 0 2px 10px rgba(20, 30, 50, 0.07);
+}
+.vb__t {
+  margin: 0 0 14px;
+  font-size: 27px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+}
+.vb__t i { font-style: normal; color: var(--blue); }
+
+.vb__row { display: flex; align-items: center; gap: 10px; }
+.vb__chip {
+  padding: 7px 13px; border-radius: 9px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 19px; font-weight: 600; white-space: nowrap;
+}
+.vb__chip--off { background: #EDEFF2; color: #6E6E73; }
+.vb__chip--g { background: #E7F5E3; color: #3C7F2C; }
+.vb__arr { width: 16px; height: 2px; background: #B6C2D0; flex: none; }
+.vb__lab { font-size: 18px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+
+.vb__g { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.6;
+         stroke-linecap: round; stroke-linejoin: round; }
+.vb__g .hot { stroke: var(--blue); stroke-width: 4.4; }
+.vb__g .hot-fill { fill: var(--blue); stroke: none; }
+.vb__mark { display: block; fill: var(--ink-2); }
+
+/* the funnel map */
+.vb__box {
+  box-sizing: border-box; padding: 11px 0; width: 132px; text-align: center;
+  border: 1px solid var(--hairline); border-radius: 11px; background: var(--surface);
+  font-size: 21px; font-weight: 600; color: var(--ink);
+}
+.vb__box--on { border: 2px solid var(--blue); color: #1E4E8C; background: #F2F7FE; }
+.vb__box--off { color: var(--ink-3); }
+.vb__pair { display: flex; flex-direction: column; gap: 10px; }
+.vb__ev {
+  margin: 8px 0 0; text-align: center;
+  font-size: 17px; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--blue);
+}
+
+/* the sale */
+.vb__tick {
+  width: 30px; height: 30px; border-radius: 50%; flex: none;
+  background: #E7F5E3; border: 2.5px solid #34A518;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; line-height: 1; color: #248A13;
+}
+.vb__cross {
+  width: 30px; height: 30px; border-radius: 50%; flex: none;
+  background: #EDEFF2; border: 2.5px solid #AEB8C6;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; line-height: 1; color: #6E6E73;
+}
+.vb__bang { color: var(--blue); font-size: 34px; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+
+  <h1 class="vb__h"><i>VSL</i> Funnel Tactics</h1>
+
+  <div class="vb">
+
+    <div class="vb__wires">
+      <svg viewBox="0 0 1000 856" aria-hidden="true">
+        <path class="flow" d="M242 196 C 242 204.1, 242 205.9, 242 214"/><g transform="translate(242 214) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M758 196 C 758 207.7, 758 210.3, 758 222"/><g transform="translate(758 222) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M242 420 C 242 427.2, 242 428.8, 242 436"/><g transform="translate(242 436) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M242 636 C 242 643.2, 242 644.8, 242 652"/><g transform="translate(242 652) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M758 418 C 758 425.2, 758 426.8, 758 434"/><g transform="translate(758 434) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M758 630 C 758 637.2, 758 638.8, 758 646"/><g transform="translate(758 646) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+      </svg>
+    </div>
+
+    <div class="vb__wires vb__ink">
+      <svg viewBox="0 0 1000 856" aria-hidden="true">
+        <ellipse class="ring" cx="616" cy="108" rx="76" ry="56" transform="rotate(-3 616 108)"/>
+      </svg>
+    </div>
+
+    <div class="vb__card" style="left:0px; top:0px; width:1000px; height:192px; transform:rotate(-0.6deg)"><p class="vb__t">The <i>funnel</i></p><div class="vb__row" style="gap:14px"><div class="vb__box">Ads</div><div class="vb__arr"></div><div class="vb__box">Opt-in</div><div class="vb__arr"></div><div class="vb__box">VSL</div><div class="vb__arr"></div><div class="vb__pair"><div><div class="vb__box vb__box--on">TY A</div><p class="vb__ev">Schedule</p></div><div class="vb__box vb__box--off">TY B</div></div><div class="vb__arr"></div><div class="vb__box">Call</div></div></div>
+    <div class="vb__card" style="left:0px; top:220px; width:484px; height:196px; transform:rotate(0.9deg)"><p class="vb__t">Conversion <i>event</i></p><div class="vb__row" style="gap:8px"><span class="vb__chip vb__chip--off">Lead</span><div class="vb__arr"></div><span class="vb__chip vb__chip--off">View</span><div class="vb__arr"></div><span class="vb__chip">Schedule</span></div><p class="vb__lab" style="margin:14px 0 0">As far back as the funnel allows</p></div>
+    <div class="vb__card" style="left:0px; top:442px; width:484px; height:190px; transform:rotate(-1deg)"><p class="vb__t">Pre-call <i>sequence</i></p><div class="vb__row" style="justify-content:space-between"><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><rect x="30" y="24" width="64" height="42" rx="6"/>
+        <rect x="16" y="44" width="80" height="56" rx="7"/>
+        <path class="hot" d="M22 51 L56 77 L90 51"/></svg><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="26" width="88" height="52" rx="12"/>
+        <path d="M34 78 L34 96 L54 78"/>
+        <circle class="hot-fill" cx="36" cy="52" r="5"/>
+        <circle class="hot-fill" cx="52" cy="52" r="5"/>
+        <circle class="hot-fill" cx="68" cy="52" r="5"/></svg><svg class="vb__mark" style="width:50px;height:50px" viewBox="0 0 24 24" aria-hidden="true"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><svg class="vb__mark" style="width:42px;height:42px" viewBox="0 0 24 24" aria-hidden="true"><title>Meta</title><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><path d="M24 102 C 24 82, 41 72, 62 72 C 83 72, 100 82, 100 102"/>
+        <circle cx="62" cy="46" r="17"/>
+        <path class="hot" d="M42 46 a 20 20 0 0 1 40 0"/>
+        <rect class="hot-fill" x="38" y="44" width="9" height="18" rx="4.5"/>
+        <rect class="hot-fill" x="77" y="44" width="9" height="18" rx="4.5"/></svg></div><p class="vb__lab" style="margin:14px 0 0">Emails, SMS, video, ads, setters</p></div>
+    <div class="vb__card" style="left:0px; top:658px; width:484px; height:166px; transform:rotate(0.7deg)"><p class="vb__t">Speed to <i>Lead</i></p><div class="vb__row" style="gap:16px"><svg class="vb__g" style="width:62px;height:62px" viewBox="0 0 124 124" aria-hidden="true"><circle cx="62" cy="66" r="44"/>
+        <path class="hot" d="M62 40 V 66 L 82 78"/>
+        <path d="M48 16 H 76"/><path d="M62 16 V 22"/></svg><span class="vb__bang">!!!</span></div></div>
+    <div class="vb__card" style="left:516px; top:228px; width:484px; height:186px; transform:rotate(-0.9deg)"><p class="vb__t">Who gets a <i>call</i></p><div class="vb__row" style="gap:12px"><div class="vb__tick">&#10003;</div><span class="vb__chip vb__chip--g">Qualified &rarr; Booked Call</span></div><div class="vb__row" style="gap:12px; margin-top:12px"><div class="vb__cross">&times;</div><span class="vb__chip vb__chip--off">Unqualified &rarr; Downsell</span></div></div>
+    <div class="vb__card" style="left:516px; top:440px; width:484px; height:186px; transform:rotate(1deg)"><p class="vb__t">Call <i>confirmation</i></p><div class="vb__row" style="gap:16px"><svg class="vb__g" style="width:64px;height:64px" viewBox="0 0 124 124" aria-hidden="true"><rect x="10" y="20" width="104" height="84" rx="11"/>
+        <path d="M10 42 H 114"/>
+        <circle class="hot-fill" cx="26" cy="31" r="4"/>
+        <circle cx="40" cy="31" r="4"/>
+        <path class="hot" d="M42 72 L 56 86 L 84 56"/></svg><span class="vb__chip">Confirmed</span></div></div>
+    <div class="vb__card" style="left:516px; top:652px; width:484px; height:166px; transform:rotate(-0.6deg)"><p class="vb__t"><i>Offer</i> line</p><div class="vb__row" style="flex-wrap:wrap; gap:8px"><span class="vb__chip">[Result]</span><span class="vb__lab">in</span><span class="vb__chip">[Time]</span><span class="vb__lab">without</span><span class="vb__chip">[Pain]</span></div></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
