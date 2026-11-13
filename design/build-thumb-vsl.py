@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """A thumbnail panel about the VSL funnel.
 
-1080x1080 rather than 960: wider than the other panels, so it carries more and
-still leaves 840px of the 16:9 frame for a talking head.
+1240x1080 rather than 960: wider than the other panels, so it carries more and
+still leaves 680px of the 16:9 frame for a talking head.
 
 The funnel map is the hero across the top, because the shape of the funnel is
 the thing being talked about; the six cards under it are the tactics the deck
@@ -15,8 +15,8 @@ import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-W, H = 1080, 1080
-BW, BH = 1000, 896
+W, H = 1240, 1080
+BW, BH = 1160, 870
 
 
 def logo(slug):
@@ -91,14 +91,14 @@ TPL = '''<!doctype html>
 }
 
 .vb__h {
-  position: absolute; left: 40px; top: 44px; width: 1000px; margin: 0;
-  font-size: 88px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02;
+  position: absolute; left: 40px; top: 42px; width: 1160px; margin: 0;
+  font-size: 112px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02;
   color: var(--ink);
 }
 .vb__h i { font-style: normal; color: var(--blue); }
 
 /* ---- the board ----------------------------------------------------------- */
-.vb { position: absolute; left: 40px; top: 168px; width: __BW__px; height: __BH__px; }
+.vb { position: absolute; left: 40px; top: 190px; width: __BW__px; height: __BH__px; }
 
 .vb__wires { position: absolute; inset: 0; }
 .vb__wires svg { display: block; width: 100%; height: 100%; }
@@ -139,9 +139,9 @@ TPL = '''<!doctype html>
 
 /* the funnel map */
 .vb__box {
-  box-sizing: border-box; padding: 11px 0; width: 132px; text-align: center;
+  box-sizing: border-box; padding: 12px 0; width: 170px; text-align: center;
   border: 1px solid var(--hairline); border-radius: 11px; background: var(--surface);
-  font-size: 21px; font-weight: 600; color: var(--ink);
+  font-size: 23px; font-weight: 600; color: var(--ink);
 }
 .vb__box--on { border: 2px solid var(--blue); color: #1E4E8C; background: #F2F7FE; }
 .vb__box--off { color: var(--ink-3); }
@@ -286,29 +286,30 @@ DECKS = ('<div class="vb__row" style="gap:20px">' + glyph('deck', 64)
          + '</div></div>')
 
 # ---------------------------------------------------------------------------
-card(0, 0, 1000, 192, -0.6, 'The <i>funnel</i>', MAP)
+card(0, 0, 1160, 230, -0.5, 'The <i>funnel</i>', MAP)
 
-card(0, 220, 484, 152, 0.9, 'Conversion <i>event</i>', EVENT)
-card(0, 392, 484, 152, -1.0, '3&ndash;5 min <i>VSL</i>', LENGTH)
-card(0, 564, 484, 152, 0.7, 'Speed to <i>Lead</i>', SPEED)
-card(0, 736, 484, 152, -0.5, '<i>Offer</i> line', OFFER)
+card(0, 252, 568, 148, 0.8, 'Conversion <i>event</i>', EVENT)
+card(0, 408, 568, 148, -0.9, '3&ndash;5 min <i>VSL</i>', LENGTH)
+card(0, 564, 568, 148, 0.6, 'Speed to <i>Lead</i>', SPEED)
+card(0, 720, 568, 148, -0.5, '<i>Offer</i> line', OFFER)
 
-card(516, 228, 484, 206, -0.9, '<i>Messaging</i>', MESSAGING)
-card(516, 455, 484, 206, 1.0, 'Pre-call <i>nurture</i>', SEQ)
-card(516, 682, 484, 206, -0.6, 'AI <i>Pitch Decks</i>', DECKS)
+card(592, 258, 568, 194, -0.8, '<i>Messaging</i>', MESSAGING)
+card(592, 466, 568, 194, 0.9, 'Pre-call <i>nurture</i>', SEQ)
+card(592, 674, 568, 194, -0.6, 'AI <i>Pitch Decks</i>', DECKS)
 
 wires = [
-    wire(242, 196, 242, 214, 90),
-    wire(758, 196, 758, 222, 90),
-    wire(242, 376, 242, 386, 90),
-    wire(242, 548, 242, 558, 90),
-    wire(242, 720, 242, 730, 90),
-    wire(758, 438, 758, 449, 90),
-    wire(758, 665, 758, 676, 90),
+    wire(284, 234, 284, 246, 90),
+    wire(876, 234, 876, 252, 90),
+    wire(284, 402, 284, 403, 90),
+    wire(284, 558, 284, 559, 90),
+    wire(284, 714, 284, 715, 90),
+    wire(876, 456, 876, 460, 90),
+    wire(876, 664, 876, 668, 90),
 ]
 
-ink = ['<ellipse class="ring" cx="616" cy="108" rx="76" ry="56" '
-       'transform="rotate(-3 616 108)"/>']
+# The one red mark, on the event the whole funnel is built to report.
+ink = ['<ellipse class="ring" cx="284" cy="335" rx="78" ry="34" '
+       'transform="rotate(-2 284 335)"/>']
 
 out = (TPL.replace('__W__', str(W)).replace('__H__', str(H))
           .replace('__BW__', str(BW)).replace('__BH__', str(BH))

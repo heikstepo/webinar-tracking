@@ -12,24 +12,24 @@
 
    Class names are prefixed vb; neither shared sheet uses them.
    ========================================================================= */
-@page { size: 1080px 1080px; margin: 0; }
+@page { size: 1240px 1080px; margin: 0; }
 
 .slide {
   position: relative;
-  width: 1080px; height: 1080px; padding: 0; background: var(--ground);
+  width: 1240px; height: 1080px; padding: 0; background: var(--ground);
   background-image: radial-gradient(#D7DBE2 1.7px, transparent 1.8px);
   background-size: 30px 30px; background-position: 10px 10px;
 }
 
 .vb__h {
-  position: absolute; left: 40px; top: 44px; width: 1000px; margin: 0;
-  font-size: 88px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02;
+  position: absolute; left: 40px; top: 42px; width: 1160px; margin: 0;
+  font-size: 112px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02;
   color: var(--ink);
 }
 .vb__h i { font-style: normal; color: var(--blue); }
 
 /* ---- the board ----------------------------------------------------------- */
-.vb { position: absolute; left: 40px; top: 168px; width: 1000px; height: 896px; }
+.vb { position: absolute; left: 40px; top: 190px; width: 1160px; height: 870px; }
 
 .vb__wires { position: absolute; inset: 0; }
 .vb__wires svg { display: block; width: 100%; height: 100%; }
@@ -70,9 +70,9 @@
 
 /* the funnel map */
 .vb__box {
-  box-sizing: border-box; padding: 11px 0; width: 132px; text-align: center;
+  box-sizing: border-box; padding: 12px 0; width: 170px; text-align: center;
   border: 1px solid var(--hairline); border-radius: 11px; background: var(--surface);
-  font-size: 21px; font-weight: 600; color: var(--ink);
+  font-size: 23px; font-weight: 600; color: var(--ink);
 }
 .vb__box--on { border: 2px solid var(--blue); color: #1E4E8C; background: #F2F7FE; }
 .vb__box--off { color: var(--ink-3); }
@@ -99,33 +99,33 @@
   <div class="vb">
 
     <div class="vb__wires">
-      <svg viewBox="0 0 1000 896" aria-hidden="true">
-        <path class="flow" d="M242 196 C 242 204.1, 242 205.9, 242 214"/><g transform="translate(242 214) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M758 196 C 758 207.7, 758 210.3, 758 222"/><g transform="translate(758 222) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M242 376 C 242 380.5, 242 381.5, 242 386"/><g transform="translate(242 386) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M242 548 C 242 552.5, 242 553.5, 242 558"/><g transform="translate(242 558) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M242 720 C 242 724.5, 242 725.5, 242 730"/><g transform="translate(242 730) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M758 438 C 758 442.95, 758 444.05, 758 449"/><g transform="translate(758 449) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
-        <path class="flow" d="M758 665 C 758 669.95, 758 671.05, 758 676"/><g transform="translate(758 676) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+      <svg viewBox="0 0 1160 870" aria-hidden="true">
+        <path class="flow" d="M284 234 C 284 239.4, 284 240.6, 284 246"/><g transform="translate(284 246) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M876 234 C 876 242.1, 876 243.9, 876 252"/><g transform="translate(876 252) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M284 402 C 284 402.45, 284 402.55, 284 403"/><g transform="translate(284 403) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M284 558 C 284 558.45, 284 558.55, 284 559"/><g transform="translate(284 559) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M284 714 C 284 714.45, 284 714.55, 284 715"/><g transform="translate(284 715) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M876 456 C 876 457.8, 876 458.2, 876 460"/><g transform="translate(876 460) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
+        <path class="flow" d="M876 664 C 876 665.8, 876 666.2, 876 668"/><g transform="translate(876 668) rotate(90)"><path class="tip" d="M0 0 L -18 -7 L -18 7 Z"/></g>
       </svg>
     </div>
 
     <div class="vb__wires vb__ink">
-      <svg viewBox="0 0 1000 896" aria-hidden="true">
-        <ellipse class="ring" cx="616" cy="108" rx="76" ry="56" transform="rotate(-3 616 108)"/>
+      <svg viewBox="0 0 1160 870" aria-hidden="true">
+        <ellipse class="ring" cx="284" cy="335" rx="78" ry="34" transform="rotate(-2 284 335)"/>
       </svg>
     </div>
 
-    <div class="vb__card" style="left:0px; top:0px; width:1000px; height:192px; transform:rotate(-0.6deg)"><p class="vb__t">The <i>funnel</i></p><div class="vb__row" style="gap:14px"><div class="vb__box">Ads</div><div class="vb__arr"></div><div class="vb__box">Opt-in</div><div class="vb__arr"></div><div class="vb__box">VSL</div><div class="vb__arr"></div><div class="vb__pair"><div><div class="vb__box vb__box--on">TY A</div><p class="vb__ev">Schedule</p></div><div class="vb__box vb__box--off">TY B</div></div><div class="vb__arr"></div><div class="vb__box">Call</div></div></div>
-    <div class="vb__card" style="left:0px; top:220px; width:484px; height:152px; transform:rotate(0.9deg)"><p class="vb__t">Conversion <i>event</i></p><div class="vb__row" style="gap:8px"><span class="vb__chip vb__chip--off">Lead</span><div class="vb__arr"></div><span class="vb__chip vb__chip--off">View</span><div class="vb__arr"></div><span class="vb__chip">Schedule</span></div></div>
-    <div class="vb__card" style="left:0px; top:392px; width:484px; height:152px; transform:rotate(-1deg)"><p class="vb__t">3&ndash;5 min <i>VSL</i></p><div class="vb__row" style="gap:14px"><svg class="vb__g" style="width:52px;height:52px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="26" width="108" height="72" rx="12"/>
+    <div class="vb__card" style="left:0px; top:0px; width:1160px; height:230px; transform:rotate(-0.5deg)"><p class="vb__t">The <i>funnel</i></p><div class="vb__row" style="gap:14px"><div class="vb__box">Ads</div><div class="vb__arr"></div><div class="vb__box">Opt-in</div><div class="vb__arr"></div><div class="vb__box">VSL</div><div class="vb__arr"></div><div class="vb__pair"><div><div class="vb__box vb__box--on">TY A</div><p class="vb__ev">Schedule</p></div><div class="vb__box vb__box--off">TY B</div></div><div class="vb__arr"></div><div class="vb__box">Call</div></div></div>
+    <div class="vb__card" style="left:0px; top:252px; width:568px; height:148px; transform:rotate(0.8deg)"><p class="vb__t">Conversion <i>event</i></p><div class="vb__row" style="gap:8px"><span class="vb__chip vb__chip--off">Lead</span><div class="vb__arr"></div><span class="vb__chip vb__chip--off">View</span><div class="vb__arr"></div><span class="vb__chip">Schedule</span></div></div>
+    <div class="vb__card" style="left:0px; top:408px; width:568px; height:148px; transform:rotate(-0.9deg)"><p class="vb__t">3&ndash;5 min <i>VSL</i></p><div class="vb__row" style="gap:14px"><svg class="vb__g" style="width:52px;height:52px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="26" width="108" height="72" rx="12"/>
         <path class="hot-fill" d="M50 46 L 76 62 L 50 78 Z"/></svg><div class="vb__scrub"><span></span></div></div></div>
-    <div class="vb__card" style="left:0px; top:564px; width:484px; height:152px; transform:rotate(0.7deg)"><p class="vb__t">Speed to <i>Lead</i></p><div class="vb__row" style="gap:16px"><svg class="vb__g" style="width:56px;height:56px" viewBox="0 0 124 124" aria-hidden="true"><circle cx="62" cy="66" r="44"/>
+    <div class="vb__card" style="left:0px; top:564px; width:568px; height:148px; transform:rotate(0.6deg)"><p class="vb__t">Speed to <i>Lead</i></p><div class="vb__row" style="gap:16px"><svg class="vb__g" style="width:56px;height:56px" viewBox="0 0 124 124" aria-hidden="true"><circle cx="62" cy="66" r="44"/>
         <path class="hot" d="M62 40 V 66 L 82 78"/>
         <path d="M48 16 H 76"/><path d="M62 16 V 22"/></svg><span class="vb__bang">!!!</span></div></div>
-    <div class="vb__card" style="left:0px; top:736px; width:484px; height:152px; transform:rotate(-0.5deg)"><p class="vb__t"><i>Offer</i> line</p><div class="vb__row" style="gap:8px"><span class="vb__chip">[Result]</span><span class="vb__lab">in</span><span class="vb__chip">[Time]</span><span class="vb__lab">without</span><span class="vb__chip">[Pain]</span></div></div>
-    <div class="vb__card" style="left:516px; top:228px; width:484px; height:206px; transform:rotate(-0.9deg)"><p class="vb__t"><i>Messaging</i></p><div class="vb__row" style="gap:8px"><span class="vb__chip">Hook</span><div class="vb__arr"></div><span class="vb__chip">Body</span><div class="vb__arr"></div><span class="vb__chip">CTA</span></div><div class="vb__row" style="gap:8px; margin-top:14px"><span class="vb__chip vb__chip--off">Pain</span><span class="vb__chip vb__chip--off">Dream</span><span class="vb__chip vb__chip--off">Objection</span><span class="vb__chip vb__chip--g">Proof</span></div></div>
-    <div class="vb__card" style="left:516px; top:455px; width:484px; height:206px; transform:rotate(1deg)"><p class="vb__t">Pre-call <i>nurture</i></p><div class="vb__row" style="justify-content:space-between"><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><rect x="30" y="24" width="64" height="42" rx="6"/>
+    <div class="vb__card" style="left:0px; top:720px; width:568px; height:148px; transform:rotate(-0.5deg)"><p class="vb__t"><i>Offer</i> line</p><div class="vb__row" style="gap:8px"><span class="vb__chip">[Result]</span><span class="vb__lab">in</span><span class="vb__chip">[Time]</span><span class="vb__lab">without</span><span class="vb__chip">[Pain]</span></div></div>
+    <div class="vb__card" style="left:592px; top:258px; width:568px; height:194px; transform:rotate(-0.8deg)"><p class="vb__t"><i>Messaging</i></p><div class="vb__row" style="gap:8px"><span class="vb__chip">Hook</span><div class="vb__arr"></div><span class="vb__chip">Body</span><div class="vb__arr"></div><span class="vb__chip">CTA</span></div><div class="vb__row" style="gap:8px; margin-top:14px"><span class="vb__chip vb__chip--off">Pain</span><span class="vb__chip vb__chip--off">Dream</span><span class="vb__chip vb__chip--off">Objection</span><span class="vb__chip vb__chip--g">Proof</span></div></div>
+    <div class="vb__card" style="left:592px; top:466px; width:568px; height:194px; transform:rotate(0.9deg)"><p class="vb__t">Pre-call <i>nurture</i></p><div class="vb__row" style="justify-content:space-between"><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><rect x="30" y="24" width="64" height="42" rx="6"/>
         <rect x="16" y="44" width="80" height="56" rx="7"/>
         <path class="hot" d="M22 51 L56 77 L90 51"/></svg><svg class="vb__g" style="width:50px;height:50px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="26" width="88" height="52" rx="12"/>
         <path d="M34 78 L34 96 L54 78"/>
@@ -136,7 +136,7 @@
         <path class="hot" d="M42 46 a 20 20 0 0 1 40 0"/>
         <rect class="hot-fill" x="38" y="44" width="9" height="18" rx="4.5"/>
         <rect class="hot-fill" x="77" y="44" width="9" height="18" rx="4.5"/></svg></div><p class="vb__lab" style="margin:14px 0 0">Emails, SMS, video, ads, setters</p></div>
-    <div class="vb__card" style="left:516px; top:682px; width:484px; height:206px; transform:rotate(-0.6deg)"><p class="vb__t">AI <i>Pitch Decks</i></p><div class="vb__row" style="gap:20px"><svg class="vb__g" style="width:64px;height:64px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="34" width="78" height="60" rx="8"/>
+    <div class="vb__card" style="left:592px; top:674px; width:568px; height:194px; transform:rotate(-0.6deg)"><p class="vb__t">AI <i>Pitch Decks</i></p><div class="vb__row" style="gap:20px"><svg class="vb__g" style="width:64px;height:64px" viewBox="0 0 124 124" aria-hidden="true"><rect x="8" y="34" width="78" height="60" rx="8"/>
         <path d="M24 22 H 94 a 8 8 0 0 1 8 8 V 82"/>
         <path d="M22 54 H 66 M22 70 H 52"/>
         <path class="hot" d="M100 14 L 104 26 L 116 30 L 104 34 L 100 46
