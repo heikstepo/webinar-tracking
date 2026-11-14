@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>From impression to CPM</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Eight steps in one column, because the chain is the point: every line is
+   caused by the one above it, and a grid would let the eye start anywhere.
+
+   The discs run pale to full so the column reads as a progression even when
+   the words are not being read, and the three things an ad is judged on sit
+   inline as chips rather than as an indented list, which would break the
+   column into two kinds of row.
+
+   The last line is the definition the whole chain exists to reach, so CPM
+   takes the accent and the row sits on the tinted ground.
+
+   Class names are prefixed au; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.au { position: absolute; left: 320px; top: 100px; width: 1280px; }
+
+.au__step {
+  box-sizing: border-box; height: 94px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 18px; padding: 0 26px;
+  box-shadow: 0 2px 12px rgba(20, 30, 50, 0.06);
+  display: flex; align-items: center; gap: 22px;
+}
+.au__n {
+  flex: none; width: 50px; height: 50px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 23px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+.au__t {
+  margin: 0;
+  font-size: 32px; font-weight: 600; letter-spacing: -0.016em; color: var(--ink);
+}
+.au__t i { font-style: normal; color: var(--blue); }
+
+/* the three things an ad is judged on */
+.au__chip {
+  padding: 8px 15px; border-radius: 10px;
+  background: #E4EFFD; color: #1E4E8C;
+  font-size: 23px; font-weight: 600; white-space: nowrap;
+}
+
+/* the chevron between two steps */
+.au__link { height: 18px; display: flex; align-items: center; padding-left: 51px; }
+.au__link svg { display: block; width: 24px; height: 18px; }
+.au__link path { fill: none; stroke: #B6C2D0; stroke-width: 3.4;
+                 stroke-linecap: round; stroke-linejoin: round; }
+
+/* the definition the chain arrives at */
+.au__step--end { background: #E4EFFD; border-color: #BFD6F7; }
+.au__step--end .au__t { color: #11467F; }
+.au__step--end .au__t i { color: var(--blue); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <div class="au">
+
+    <div class="au__step">
+      <span class="au__n" style="background:#8FC0F5">1</span>
+      <p class="au__t">Person opens Instagram</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#7BB5F2">2</span>
+      <p class="au__t">There is an available ad impression</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#66A9F0">3</span>
+      <p class="au__t">Meta finds eligible ads for that person</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#529EED">4</span>
+      <p class="au__t">Those ads compete</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#3D93EB">5</span>
+      <p class="au__t">Each gets evaluated on:</p>
+      <span class="au__chip">Bid</span>
+      <span class="au__chip">Predicted likelihood of result</span>
+      <span class="au__chip">Ad quality</span>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#2988E8">6</span>
+      <p class="au__t">Winner gets impression</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step">
+      <span class="au__n" style="background:#147CE6">7</span>
+      <p class="au__t">You pay for the impressions you win</p>
+    </div>
+
+    <div class="au__link"><svg viewBox="0 0 24 18" aria-hidden="true">
+      <path d="M3 4 L12 14 L21 4"/></svg></div>
+
+    <div class="au__step au__step--end">
+      <span class="au__n" style="background:#0071E3">8</span>
+      <p class="au__t">Average cost of those impressions = <i>CPM</i></p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
