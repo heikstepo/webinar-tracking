@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CPM</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   A definition: the term, then what it stands for.
+
+   CPM takes the accent because it is the thing being defined, and the line in
+   brackets sits well down in size and in ink, since it is the aside that makes
+   the French word mean something rather than a second statement.
+
+   Class names are prefixed def; voice-quiet.css owns .say and .says, which is
+   why neither is reused here.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { width: 1920px; height: 1080px; padding: 90px 110px; background: var(--ground); }
+
+.def { width: 1700px; text-align: center; }
+.def p { margin: 0; }
+
+.def__a {
+  font-size: 124px; font-weight: 600; letter-spacing: -0.038em; line-height: 1.08;
+  color: var(--ink);
+}
+.def__a i { font-style: normal; color: var(--blue); }
+.def__b {
+  margin-top: 44px !important;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink-3);
+}
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide slide--center slide--mid">
+  <div class="def">
+    <p class="def__a"><i>CPM</i> = Cost per Mille</p>
+    <p class="def__b">(Cost per 1000 impressions)</p>
+  </div>
+</section>
+
+</body>
+</html>
