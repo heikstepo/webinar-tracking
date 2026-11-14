@@ -7,12 +7,12 @@
 <link rel="stylesheet" href="../../voice-quiet.css">
 <style>
 /* ============================================================================
-   Six levers, three across and two down. Each one is a card rather than a
-   bulleted line, which is what lets the lever be a heading and the reason be
-   body text: the dash between them is replaced by the break.
+   See build-decrease-cpm.py. Each lever is a card rather than a bulleted line,
+   which is what lets the lever be a heading and the reason be body text: the
+   break does the work a dash would have done.
 
-   The last card is the aside, so it loses the white ground and the accent and
-   sits in grey with the rest of the row.
+   The blurred variant keeps the numbers and the levers sharp and takes the
+   reasons out of focus, so the slide can be put up before any of it is said.
 
    Class names are prefixed cp; neither shared sheet uses them.
    ========================================================================= */
@@ -58,9 +58,20 @@
 
 /* the aside */
 .cp__card--off { background: #EDEFF2; border-color: #DEE2E8; box-shadow: none; }
-.cp__card--off .cp__n { background: #AEB8C6 !important; }
 .cp__card--off .cp__t { color: var(--ink-2); }
 .cp__card--off .cp__b { color: var(--ink-3); }
+
+/* out of focus, but still the right shape and length */
+.cp__b--blur { filter: blur(7px); }
+
+/* one lever on its own */
+.cp__one {
+  position: absolute; left: 310px; top: 322px; width: 1300px; height: 434px;
+  padding: 56px 64px;
+}
+.cp__one .cp__n { width: 68px; height: 68px; font-size: 32px; }
+.cp__one .cp__t { margin-top: 30px; font-size: 62px; letter-spacing: -0.026em; }
+.cp__one .cp__b { margin-top: 24px; font-size: 36px; line-height: 1.34; }
 </style>
 </head>
 <body>
@@ -71,48 +82,12 @@
   <h1 class="cp__h">How to decrease <i>CPMs</i></h1>
 
   <div class="cp__grid">
-
-    <div class="cp__card">
-      <span class="cp__n" style="background:#8FC0F5">1</span>
-      <p class="cp__t">Type of person / competition</p>
-      <p class="cp__b">More advertisers competing for the same people = more expensive
-        auctions = <i>higher CPM</i></p>
-    </div>
-
-    <div class="cp__card">
-      <span class="cp__n" style="background:#74B0F1">2</span>
-      <p class="cp__t">Format diversity / native formats</p>
-      <p class="cp__b">More feed-native creative can improve predicted response + ad
-        quality, helping you win impressions more efficiently</p>
-    </div>
-
-    <div class="cp__card">
-      <span class="cp__n" style="background:#58A0EE">3</span>
-      <p class="cp__t">More organic content</p>
-      <p class="cp__b">Creates more engaged/warm users Meta can still reach inside broad
-        targeting, which can improve delivery efficiency</p>
-    </div>
-
-    <div class="cp__card">
-      <span class="cp__n" style="background:#3D90EA">4</span>
-      <p class="cp__t">Keep audience broad</p>
-      <p class="cp__b">Gives Meta access to more auctions instead of forcing delivery
-        into a small, expensive pool</p>
-    </div>
-
-    <div class="cp__card">
-      <span class="cp__n" style="background:#0071E3">5</span>
-      <p class="cp__t">Better copy</p>
-      <p class="cp__b">Makes the right people more likely to react or convert, so Meta
-        can show the ad more efficiently.</p>
-    </div>
-
-    <div class="cp__card cp__card--off">
-      <span class="cp__n">6</span>
-      <p class="cp__t">Cost Caps</p>
-      <p class="cp__b">lowkey bro science lmao</p>
-    </div>
-
+    <div class="cp__card"><span class="cp__n" style="background:#8FC0F5">1</span><p class="cp__t">Type of person / competition</p><p class="cp__b">More advertisers competing for the same people = more expensive auctions = <i>higher CPM</i></p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#74B0F1">2</span><p class="cp__t">Format diversity / native formats</p><p class="cp__b">More feed-native creative can improve predicted response + ad quality, helping you win impressions more efficiently</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#58A0EE">3</span><p class="cp__t">More organic content</p><p class="cp__b">Creates more engaged/warm users Meta can still reach inside broad targeting, which can improve delivery efficiency</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#3D90EA">4</span><p class="cp__t">Keep audience broad</p><p class="cp__b">Gives Meta access to more auctions instead of forcing delivery into a small, expensive pool</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#0071E3">5</span><p class="cp__t">Better copy</p><p class="cp__b">Makes the right people more likely to react or convert, so Meta can show the ad more efficiently.</p></div>
+    <div class="cp__card cp__card--off"><span class="cp__n" style="background:#AEB8C6">6</span><p class="cp__t">Cost Caps</p><p class="cp__b">lowkey bro science lmao</p></div>
   </div>
 
 </section>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to decrease CPMs</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-decrease-cpm.py. Each lever is a card rather than a bulleted line,
+   which is what lets the lever be a heading and the reason be body text: the
+   break does the work a dash would have done.
+
+   The blurred variant keeps the numbers and the levers sharp and takes the
+   reasons out of focus, so the slide can be put up before any of it is said.
+
+   Class names are prefixed cp; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.cp__h {
+  position: absolute; left: 110px; top: 50px; margin: 0;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.024em; color: var(--ink);
+}
+.cp__h i { font-style: normal; color: var(--blue); }
+
+.cp__grid {
+  position: absolute; left: 110px; top: 206px; width: 1700px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+
+.cp__card {
+  box-sizing: border-box; height: 318px;
+  display: flex; flex-direction: column; justify-content: center;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 22px; padding: 28px 30px;
+  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.07);
+}
+.cp__n {
+  display: flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; flex: none; border-radius: 50%;
+  font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+.cp__t {
+  margin: 20px 0 0;
+  font-size: 33px; font-weight: 600; letter-spacing: -0.016em; line-height: 1.18;
+  color: var(--ink);
+}
+.cp__b {
+  margin: 15px 0 0;
+  font-size: 25px; font-weight: 600; letter-spacing: -0.006em; line-height: 1.38;
+  color: var(--ink-2);
+}
+.cp__b i { font-style: normal; color: var(--blue); }
+
+/* the aside */
+.cp__card--off { background: #EDEFF2; border-color: #DEE2E8; box-shadow: none; }
+.cp__card--off .cp__t { color: var(--ink-2); }
+.cp__card--off .cp__b { color: var(--ink-3); }
+
+/* out of focus, but still the right shape and length */
+.cp__b--blur { filter: blur(7px); }
+
+/* one lever on its own */
+.cp__one {
+  position: absolute; left: 310px; top: 322px; width: 1300px; height: 434px;
+  padding: 56px 64px;
+}
+.cp__one .cp__n { width: 68px; height: 68px; font-size: 32px; }
+.cp__one .cp__t { margin-top: 30px; font-size: 62px; letter-spacing: -0.026em; }
+.cp__one .cp__b { margin-top: 24px; font-size: 36px; line-height: 1.34; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <h1 class="cp__h">How to decrease <i>CPMs</i></h1>
+
+    <div class="cp__card cp__one"><span class="cp__n" style="background:#58A0EE">3</span><p class="cp__t">More organic content</p><p class="cp__b">Creates more engaged/warm users Meta can still reach inside broad targeting, which can improve delivery efficiency</p></div>
+
+</section>
+
+</body>
+</html>
