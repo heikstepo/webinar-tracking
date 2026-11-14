@@ -4,8 +4,8 @@
 Three shapes from one source, so the words only exist once:
 
     wide-decrease-cpm.html        all six, readable
-    wide-decrease-cpm-blur.html   the same six with the reasons blurred out,
-                                  so only the numbers and the levers read
+    wide-decrease-cpm-blur.html   the same six with everything but the numbers
+                                  blurred out, so only the headline reads
     wide-decrease-cpm-1..6.html   one lever per slide, at size
 
 The last lever is the aside, so it loses the white ground and the accent in
@@ -55,8 +55,9 @@ TPL = '''<!doctype html>
    which is what lets the lever be a heading and the reason be body text: the
    break does the work a dash would have done.
 
-   The blurred variant keeps the numbers and the levers sharp and takes the
-   reasons out of focus, so the slide can be put up before any of it is said.
+   The blurred variant keeps only the headline and the numbers sharp and takes
+   the levers and their reasons out of focus, so the slide can be put up before
+   any of it is said and the count still reads.
 
    Class names are prefixed cp; neither shared sheet uses them.
    ========================================================================= */
@@ -106,6 +107,7 @@ TPL = '''<!doctype html>
 .cp__card--off .cp__b { color: var(--ink-3); }
 
 /* out of focus, but still the right shape and length */
+.cp__t--blur { filter: blur(8px); }
 .cp__b--blur { filter: blur(7px); }
 
 /* one lever on its own */
@@ -151,10 +153,11 @@ def card(n, colour, lever, reason, blur=False, one=False):
     off = n == CARDS[-1][0]
     return ('    <div class="cp__card%s%s">'
             '<span class="cp__n" style="background:%s">%s</span>'
-            '<p class="cp__t">%s</p>'
+            '<p class="cp__t%s">%s</p>'
             '<p class="cp__b%s">%s</p></div>'
             % (' cp__card--off' if off else '', ' cp__one' if one else '',
-               colour, n, lever, ' cp__b--blur' if blur else '', reason))
+               colour, n, ' cp__t--blur' if blur else '', lever,
+               ' cp__b--blur' if blur else '', reason))
 
 
 def write(path, body):

@@ -11,8 +11,9 @@
    which is what lets the lever be a heading and the reason be body text: the
    break does the work a dash would have done.
 
-   The blurred variant keeps the numbers and the levers sharp and takes the
-   reasons out of focus, so the slide can be put up before any of it is said.
+   The blurred variant keeps only the headline and the numbers sharp and takes
+   the levers and their reasons out of focus, so the slide can be put up before
+   any of it is said and the count still reads.
 
    Class names are prefixed cp; neither shared sheet uses them.
    ========================================================================= */
@@ -62,6 +63,7 @@
 .cp__card--off .cp__b { color: var(--ink-3); }
 
 /* out of focus, but still the right shape and length */
+.cp__t--blur { filter: blur(8px); }
 .cp__b--blur { filter: blur(7px); }
 
 /* one lever on its own */
@@ -82,12 +84,12 @@
   <h1 class="cp__h">How to decrease <i>CPMs</i></h1>
 
   <div class="cp__grid">
-    <div class="cp__card"><span class="cp__n" style="background:#8FC0F5">1</span><p class="cp__t">Type of person / competition</p><p class="cp__b cp__b--blur">More advertisers competing for the same people = more expensive auctions = <i>higher CPM</i></p></div>
-    <div class="cp__card"><span class="cp__n" style="background:#74B0F1">2</span><p class="cp__t">Format diversity / native formats</p><p class="cp__b cp__b--blur">More feed-native creative can improve predicted response + ad quality, helping you win impressions more efficiently</p></div>
-    <div class="cp__card"><span class="cp__n" style="background:#58A0EE">3</span><p class="cp__t">More organic content</p><p class="cp__b cp__b--blur">Creates more engaged/warm users Meta can still reach inside broad targeting, which can improve delivery efficiency</p></div>
-    <div class="cp__card"><span class="cp__n" style="background:#3D90EA">4</span><p class="cp__t">Keep audience broad</p><p class="cp__b cp__b--blur">Gives Meta access to more auctions instead of forcing delivery into a small, expensive pool</p></div>
-    <div class="cp__card"><span class="cp__n" style="background:#0071E3">5</span><p class="cp__t">Better copy</p><p class="cp__b cp__b--blur">Makes the right people more likely to react or convert, so Meta can show the ad more efficiently.</p></div>
-    <div class="cp__card cp__card--off"><span class="cp__n" style="background:#AEB8C6">6</span><p class="cp__t">Cost Caps</p><p class="cp__b cp__b--blur">lowkey bro science lmao</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#8FC0F5">1</span><p class="cp__t cp__t--blur">Type of person / competition</p><p class="cp__b cp__b--blur">More advertisers competing for the same people = more expensive auctions = <i>higher CPM</i></p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#74B0F1">2</span><p class="cp__t cp__t--blur">Format diversity / native formats</p><p class="cp__b cp__b--blur">More feed-native creative can improve predicted response + ad quality, helping you win impressions more efficiently</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#58A0EE">3</span><p class="cp__t cp__t--blur">More organic content</p><p class="cp__b cp__b--blur">Creates more engaged/warm users Meta can still reach inside broad targeting, which can improve delivery efficiency</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#3D90EA">4</span><p class="cp__t cp__t--blur">Keep audience broad</p><p class="cp__b cp__b--blur">Gives Meta access to more auctions instead of forcing delivery into a small, expensive pool</p></div>
+    <div class="cp__card"><span class="cp__n" style="background:#0071E3">5</span><p class="cp__t cp__t--blur">Better copy</p><p class="cp__b cp__b--blur">Makes the right people more likely to react or convert, so Meta can show the ad more efficiently.</p></div>
+    <div class="cp__card cp__card--off"><span class="cp__n" style="background:#AEB8C6">6</span><p class="cp__t cp__t--blur">Cost Caps</p><p class="cp__b cp__b--blur">lowkey bro science lmao</p></div>
   </div>
 
 </section>

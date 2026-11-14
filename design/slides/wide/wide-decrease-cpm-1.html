@@ -11,8 +11,9 @@
    which is what lets the lever be a heading and the reason be body text: the
    break does the work a dash would have done.
 
-   The blurred variant keeps the numbers and the levers sharp and takes the
-   reasons out of focus, so the slide can be put up before any of it is said.
+   The blurred variant keeps only the headline and the numbers sharp and takes
+   the levers and their reasons out of focus, so the slide can be put up before
+   any of it is said and the count still reads.
 
    Class names are prefixed cp; neither shared sheet uses them.
    ========================================================================= */
@@ -62,6 +63,7 @@
 .cp__card--off .cp__b { color: var(--ink-3); }
 
 /* out of focus, but still the right shape and length */
+.cp__t--blur { filter: blur(8px); }
 .cp__b--blur { filter: blur(7px); }
 
 /* one lever on its own */
