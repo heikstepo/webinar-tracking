@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to decrease CPMs</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Six levers, three across and two down. Each one is a card rather than a
+   bulleted line, which is what lets the lever be a heading and the reason be
+   body text: the dash between them is replaced by the break.
+
+   The last card is the aside, so it loses the white ground and the accent and
+   sits in grey with the rest of the row.
+
+   Class names are prefixed cp; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.cp__h {
+  position: absolute; left: 110px; top: 50px; margin: 0;
+  font-size: 56px; font-weight: 600; letter-spacing: -0.024em; color: var(--ink);
+}
+.cp__h i { font-style: normal; color: var(--blue); }
+
+.cp__grid {
+  position: absolute; left: 110px; top: 206px; width: 1700px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+
+.cp__card {
+  box-sizing: border-box; height: 318px;
+  display: flex; flex-direction: column; justify-content: center;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 22px; padding: 28px 30px;
+  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.07);
+}
+.cp__n {
+  display: flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; flex: none; border-radius: 50%;
+  font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: #fff;
+}
+.cp__t {
+  margin: 20px 0 0;
+  font-size: 33px; font-weight: 600; letter-spacing: -0.016em; line-height: 1.18;
+  color: var(--ink);
+}
+.cp__b {
+  margin: 15px 0 0;
+  font-size: 25px; font-weight: 600; letter-spacing: -0.006em; line-height: 1.38;
+  color: var(--ink-2);
+}
+.cp__b i { font-style: normal; color: var(--blue); }
+
+/* the aside */
+.cp__card--off { background: #EDEFF2; border-color: #DEE2E8; box-shadow: none; }
+.cp__card--off .cp__n { background: #AEB8C6 !important; }
+.cp__card--off .cp__t { color: var(--ink-2); }
+.cp__card--off .cp__b { color: var(--ink-3); }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <h1 class="cp__h">How to decrease <i>CPMs</i></h1>
+
+  <div class="cp__grid">
+
+    <div class="cp__card">
+      <span class="cp__n" style="background:#8FC0F5">1</span>
+      <p class="cp__t">Type of person / competition</p>
+      <p class="cp__b">More advertisers competing for the same people = more expensive
+        auctions = <i>higher CPM</i></p>
+    </div>
+
+    <div class="cp__card">
+      <span class="cp__n" style="background:#74B0F1">2</span>
+      <p class="cp__t">Format diversity / native formats</p>
+      <p class="cp__b">More feed-native creative can improve predicted response + ad
+        quality, helping you win impressions more efficiently</p>
+    </div>
+
+    <div class="cp__card">
+      <span class="cp__n" style="background:#58A0EE">3</span>
+      <p class="cp__t">More organic content</p>
+      <p class="cp__b">Creates more engaged/warm users Meta can still reach inside broad
+        targeting, which can improve delivery efficiency</p>
+    </div>
+
+    <div class="cp__card">
+      <span class="cp__n" style="background:#3D90EA">4</span>
+      <p class="cp__t">Keep audience broad</p>
+      <p class="cp__b">Gives Meta access to more auctions instead of forcing delivery
+        into a small, expensive pool</p>
+    </div>
+
+    <div class="cp__card">
+      <span class="cp__n" style="background:#0071E3">5</span>
+      <p class="cp__t">Better copy</p>
+      <p class="cp__b">Makes the right people more likely to react or convert, so Meta
+        can show the ad more efficiently.</p>
+    </div>
+
+    <div class="cp__card cp__card--off">
+      <span class="cp__n">6</span>
+      <p class="cp__t">Cost Caps</p>
+      <p class="cp__b">lowkey bro science lmao</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
