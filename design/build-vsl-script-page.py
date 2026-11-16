@@ -146,7 +146,14 @@ body {
   font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding: 72px 28px 120px; }
+/* The page is recorded with a facecam in the bottom right, so the column sits
+   left of centre with the right third kept clear. Not flush left: the gutter
+   keeps it a page rather than a document dumped against the edge. */
+.wrap {
+  width: min(1060px, 94vw);
+  margin: 0 auto 0 clamp(24px, 7vw, 150px);
+  padding: 72px 0 160px;
+}
 
 /* ---- headline ------------------------------------------------------------ */
 .h1 {
@@ -271,7 +278,7 @@ body {
 
 /* ---- narrow --------------------------------------------------------------- */
 @media (max-width: 900px) {
-  .wrap { padding: 44px 20px 80px; }
+  .wrap { width: auto; margin: 0; padding: 44px 20px 80px; }
   .h1 { font-size: 40px; margin-bottom: 28px; }
   .panel { padding: 28px 24px 30px; border-radius: 20px; }
   .big { font-size: 88px; }
