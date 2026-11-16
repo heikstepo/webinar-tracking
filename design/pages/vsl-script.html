@@ -41,12 +41,12 @@ body {
 .wrap {
   width: min(1000px, 94vw);
   margin: 0 auto 0 clamp(24px, 15.5vw, 300px);
-  padding: 72px 0 160px;
+  padding: 124px 0 220px;
 }
 
 /* ---- headline ------------------------------------------------------------ */
 .h1 {
-  margin: 0 0 44px;
+  margin: 0 0 72px;
   font-size: 62px; font-weight: 600; letter-spacing: -0.028em; line-height: 1.06;
   color: var(--ink);
 }
@@ -55,7 +55,7 @@ body {
 /* ---- the numbers panel --------------------------------------------------- */
 .panel {
   background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 26px; padding: 44px 48px 40px;
+  border-radius: 26px; padding: 52px 52px 48px;
   box-shadow: 0 4px 24px rgba(20, 30, 50, 0.06);
 }
 
@@ -130,11 +130,11 @@ body {
 }
 
 /* ---- the structure ------------------------------------------------------- */
-.steps { margin: 64px 0 0; }
+.steps { margin: 100px 0 0; }
 
 .step {
   display: grid; grid-template-columns: 340px 1fr; gap: 44px;
-  padding: 36px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--hairline);
 }
 .step:last-child { border-bottom: 1px solid var(--hairline); }
@@ -157,7 +157,7 @@ body {
   position: relative; padding-left: 28px;
   font-size: 21px; font-weight: 500; line-height: 1.5; color: var(--ink-2);
 }
-.step__list li + li { margin-top: 15px; }
+.step__list li + li { margin-top: 17px; }
 .step__list li::before {
   content: ""; position: absolute; left: 0; top: 12px;
   width: 9px; height: 9px; border-radius: 50%; background: var(--blue);
@@ -167,7 +167,7 @@ body {
 
 /* ---- narrow --------------------------------------------------------------- */
 @media (max-width: 900px) {
-  .wrap { width: auto; margin: 0; padding: 44px 20px 80px; }
+  .wrap { width: auto; margin: 0; padding: 60px 20px 100px; }
   .h1 { font-size: 40px; margin-bottom: 28px; }
   .panel { padding: 28px 24px 30px; border-radius: 20px; }
   .big { font-size: 88px; }
