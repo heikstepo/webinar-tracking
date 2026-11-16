@@ -147,11 +147,11 @@ body {
 }
 
 /* The page is recorded with a facecam in the bottom right, so the column sits
-   left of centre with the right third kept clear. Not flush left: the gutter
-   keeps it a page rather than a document dumped against the edge. */
+   left of centre with the right third kept clear. It sits about halfway
+   between centred and flush left, so it still reads as a page. */
 .wrap {
-  width: min(1060px, 94vw);
-  margin: 0 auto 0 clamp(24px, 7vw, 150px);
+  width: min(1000px, 94vw);
+  margin: 0 auto 0 clamp(24px, 15.5vw, 300px);
   padding: 72px 0 160px;
 }
 
