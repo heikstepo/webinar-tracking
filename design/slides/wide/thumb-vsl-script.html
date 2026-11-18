@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VSL Scripts</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   See build-thumb-vsl-script.py. The eight beats down the left as one spine,
+   what the script produced down the right, on the same dotted paper as the
+   other panels.
+
+   Class names are prefixed vs; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1240px 1080px; margin: 0; }
+
+.slide {
+  position: relative;
+  width: 1240px; height: 1080px; padding: 0; background: var(--ground);
+  background-image: radial-gradient(#D7DBE2 1.7px, transparent 1.8px);
+  background-size: 30px 30px; background-position: 10px 10px;
+}
+
+.vs__h {
+  position: absolute; left: 40px; top: 40px; width: 1160px; margin: 0;
+  font-size: 112px; font-weight: 700; letter-spacing: -0.042em; line-height: 1;
+  color: var(--ink);
+}
+.vs__h i {
+  display: block; margin-top: 10px;
+  font-style: normal; font-size: 58px; letter-spacing: -0.028em; color: var(--blue);
+}
+
+/* ---- the board ----------------------------------------------------------- */
+.vs { position: absolute; left: 40px; top: 254px; width: 1160px; height: 790px; }
+
+.vs__card {
+  position: absolute; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 20px; padding: 18px 22px;
+  box-shadow: 0 2px 10px rgba(20, 30, 50, 0.07);
+}
+.vs__t {
+  margin: 0 0 16px;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.014em; color: var(--ink);
+}
+.vs__t i { font-style: normal; color: var(--blue); }
+
+/* the spine */
+.vs__step { display: flex; align-items: center; gap: 18px; }
+.vs__step + .vs__step { margin-top: 34px; }
+.vs__n {
+  flex: none; width: 54px; height: 54px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 700; color: #fff;
+}
+.vs__s {
+  margin: 0;
+  font-size: 33px; font-weight: 600; letter-spacing: -0.016em; color: var(--ink);
+}
+
+/* the rate */
+.vs__k { margin: 0; font-size: 20px; font-weight: 600; color: var(--ink-3); }
+.vs__big {
+  margin: 4px 0 0;
+  font-size: 96px; font-weight: 700; letter-spacing: -0.044em; line-height: 1;
+  color: var(--blue);
+}
+.vs__big span { font-size: 0.42em; }
+.vs__sub { margin: 12px 0 0; font-size: 21px; font-weight: 600; color: var(--ink-2); }
+.vs__sub b { color: var(--ink); }
+.vs__dots { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+.vs__dot { width: 11px; height: 11px; border-radius: 50%; background: #DCE0E6; }
+.vs__dot--on { background: var(--blue); }
+
+/* the two figures */
+.vs__pair { display: flex; gap: 20px; }
+.vs__fig { flex: 1; }
+.vs__fig p { margin: 0; }
+.vs__fig .k { font-size: 19px; font-weight: 600; color: var(--ink-3); }
+.vs__fig .v {
+  margin-top: 6px !important;
+  font-size: 40px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
+}
+
+/* the length */
+.vs__row { display: flex; align-items: center; gap: 16px; }
+.vs__g { display: block; fill: none; stroke: #7FA8DC; stroke-width: 3.6;
+         stroke-linecap: round; stroke-linejoin: round; }
+.vs__g .f { fill: var(--blue); stroke: none; }
+.vs__scrub { flex: 1; height: 10px; border-radius: 5px; background: #DDE3EA; }
+.vs__scrub span { display: block; width: 34%; height: 10px; border-radius: 5px;
+                  background: var(--blue); }
+
+.vs__ink { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.vs__ink svg { display: block; width: 100%; height: 100%; }
+.vs__ink .ring { fill: none; stroke: var(--red); stroke-width: 3.6; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+
+  <h1 class="vs__h">VSL Scripts<i>(high ticket offers)</i></h1>
+
+  <div class="vs">
+
+    <div class="vs__card" style="left:0px; top:0px; width:640px; height:790px; transform:rotate(-0.5deg)"><p class="vs__t">The <i>script</i>, in order</p><div class="vs__step"><span class="vs__n" style="background:#8FC0F5">1</span><p class="vs__s">Offer</p></div><div class="vs__step"><span class="vs__n" style="background:#7BB5F2">2</span><p class="vs__s">Proof</p></div><div class="vs__step"><span class="vs__n" style="background:#66A9F0">3</span><p class="vs__s">Soft CTA</p></div><div class="vs__step"><span class="vs__n" style="background:#529EED">4</span><p class="vs__s">Current State + Reframe</p></div><div class="vs__step"><span class="vs__n" style="background:#3D93EB">5</span><p class="vs__s">How It Works</p></div><div class="vs__step"><span class="vs__n" style="background:#2988E8">6</span><p class="vs__s">What It Costs</p></div><div class="vs__step"><span class="vs__n" style="background:#147CE6">7</span><p class="vs__s">Who It&rsquo;s For</p></div><div class="vs__step"><span class="vs__n" style="background:#0071E3">8</span><p class="vs__s">CTA</p></div></div>
+    <div class="vs__card" style="left:664px; top:8px; width:496px; height:300px; transform:rotate(0.8deg)"><p class="vs__k">VSL conversion rate</p><p class="vs__big">13.1<span>%</span></p><p class="vs__sub"><b>28</b> applications from <b>214</b> views</p><div class="vs__dots"><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot vs__dot--on"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span><span class="vs__dot"></span></div></div>
+    <div class="vs__card" style="left:664px; top:330px; width:496px; height:158px; transform:rotate(-0.9deg)"><div class="vs__pair"><div class="vs__fig"><p class="k">Cost per call</p><p class="v">$198.10</p></div><div class="vs__fig"><p class="k">Ticket price</p><p class="v">$15,000</p></div></div></div>
+    <div class="vs__card" style="left:664px; top:510px; width:496px; height:144px; transform:rotate(0.7deg)"><p class="vs__t">3&ndash;5 min <i>VSL</i></p><div class="vs__row"><svg class="vs__g" viewBox="0 0 124 124" style="width:52px;height:52px" aria-hidden="true"><rect x="8" y="26" width="108" height="72" rx="12"/><path class="f" d="M50 46 L 76 62 L 50 78 Z"/></svg><div class="vs__scrub"><span></span></div></div></div>
+    <div class="vs__card" style="left:664px; top:676px; width:496px; height:114px; transform:rotate(-0.6deg)"><div style="display:flex; align-items:center; height:100%"><p class="vs__t" style="margin:0">Open Loop &rarr; <i>Proof</i> &rarr; Soft CTA</p></div></div>
+
+    <div class="vs__ink">
+      <svg viewBox="0 0 1160 790" aria-hidden="true">
+        <ellipse class="ring" cx="790" cy="112" rx="104" ry="54"
+                 transform="rotate(-2 790 112)"/>
+      </svg>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
