@@ -9,9 +9,31 @@ page animate in real time and recording it: a screenshotter cannot keep real
 time, so a recorded CSS animation drops and doubles frames unpredictably.
 Driving t by hand makes every frame exact and the render reproducible.
 """
-import os, subprocess, sys, tempfile
+import glob, os, shutil, subprocess, sys, tempfile
 from playwright.sync_api import sync_playwright
-import imageio_ffmpeg
+
+
+def chrome():
+    """The Chromium the image already carries. Its build number moves, so it
+    is found rather than hard coded; a second copy must not be downloaded."""
+    for pat in ('/opt/pw-browsers/chromium-*/chrome-linux*/chrome',
+                '/opt/pw-browsers/chromium/chrome-linux*/chrome',
+                '/opt/pw-browsers/chromium*/**/chrome'):
+        hit = sorted(glob.glob(pat, recursive=True))
+        if hit:
+            return hit[-1]
+    raise SystemExit('no chromium under /opt/pw-browsers')
+
+
+def ffmpeg():
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:
+        exe = shutil.which('ffmpeg')
+        if exe:
+            return exe
+        raise SystemExit('no ffmpeg on PATH and imageio-ffmpeg is not installed')
 
 src   = os.path.abspath(sys.argv[1])
 out   = os.path.abspath(sys.argv[2])
@@ -21,10 +43,7 @@ frames = int(secs * fps)
 
 tmp = tempfile.mkdtemp(prefix='frames-')
 with sync_playwright() as pw:
-    # The pip playwright here wants a browser build the image doesn't carry,
-    # so point it at the Chromium that is already installed rather than
-    # downloading a second copy.
-    b = pw.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+    b = pw.chromium.launch(executable_path=chrome(),
                            args=['--force-color-profile=srgb',
                                  '--font-render-hinting=none'])
     # 1440x810 authored, 4/3 device scale => exactly 1920x1080 out, no resample.
@@ -47,7 +66,7 @@ with sync_playwright() as pw:
             print('  %d/%d' % (i, frames), flush=True)
     b.close()
 
-subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), '-y', '-loglevel', 'error',
+subprocess.run([ffmpeg(), '-y', '-loglevel', 'error',
                 '-framerate', str(fps), '-i', os.path.join(tmp, 'f%05d.png'),
                 '-c:v', 'libx264', '-preset', 'slow', '-crf', '18',
                 '-pix_fmt', 'yuv420p', '-movflags', '+faststart', out], check=True)
