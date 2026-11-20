@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Typeform routing</title>
+<link rel="stylesheet" href="../../4pi.css">
+<link rel="stylesheet" href="../../voice-quiet.css">
+<style>
+/* ============================================================================
+   Where the form sends people. The first three questions are drawn as empty
+   steps because nothing hangs on them: the routing is decided on the fourth.
+
+   The answer that disqualifies and its page are grey, the two that book and
+   their page take the accent, so the split reads before any of it does.
+
+   Class names are prefixed rt; neither shared sheet uses them.
+   ========================================================================= */
+@page { size: 1920px 1080px; margin: 0; }
+
+.slide { position: relative; width: 1920px; height: 1080px; padding: 0;
+         background: var(--ground); }
+
+.rt__h {
+  position: absolute; left: 110px; top: 50px; margin: 0;
+  font-size: 54px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+.rt__h i { font-style: normal; color: var(--blue); }
+
+/* the three that do not matter */
+.rt__q {
+  position: absolute; box-sizing: border-box; width: 132px; height: 96px;
+  border: 2px dashed #CBD2DA; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 600; color: var(--ink-3);
+}
+
+/* the one that does */
+.rt__card {
+  position: absolute; box-sizing: border-box; left: 606px; top: 318px;
+  width: 600px; height: 436px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 24px; padding: 30px 34px;
+  box-shadow: 0 4px 22px rgba(20, 30, 50, 0.08);
+}
+.rt__k {
+  margin: 0 0 10px;
+  font-size: 16px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.rt__t {
+  margin: 0 0 26px;
+  font-size: 42px; font-weight: 600; letter-spacing: -0.022em; color: var(--ink);
+}
+.rt__opt {
+  box-sizing: border-box; height: 74px; border-radius: 14px;
+  border: 1px solid var(--hairline); background: var(--ground);
+  display: flex; align-items: center; padding: 0 24px; gap: 18px;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+.rt__opt + .rt__opt { margin-top: 16px; }
+.rt__key {
+  flex: none; width: 36px; height: 36px; border-radius: 9px;
+  background: #E7EAEE; color: var(--ink-3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; font-weight: 700;
+}
+.rt__opt--a { background: #E4EFFD; border-color: #BFD6F7; color: #11467F; }
+.rt__opt--a .rt__key { background: var(--blue); color: #fff; }
+.rt__opt--b { background: #EDEFF2; border-color: #DDE1E6; color: var(--ink-2); }
+.rt__opt--b .rt__key { background: #AEB8C6; color: #fff; }
+
+/* where they land */
+.rt__page {
+  position: absolute; box-sizing: border-box; left: 1452px; width: 360px;
+  border-radius: 22px; padding: 26px 30px;
+  background: var(--surface); border: 2px solid var(--hairline);
+  box-shadow: 0 4px 20px rgba(20, 30, 50, 0.07);
+}
+.rt__page p { margin: 0; }
+.rt__page .n {
+  font-size: 38px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink);
+}
+.rt__page .d { margin-top: 10px !important; font-size: 22px; font-weight: 600;
+               color: var(--ink-3); }
+.rt__page--a { border-color: var(--blue); background: #F4F9FF; }
+.rt__page--a .n { color: #11467F; }
+.rt__page--a .d { color: #4A7FBE; }
+
+/* the wires */
+.rt__w { position: absolute; inset: 0; }
+.rt__w svg { display: block; width: 100%; height: 100%; }
+.rt__w .ln { fill: none; stroke: #B6C0CC; stroke-width: 3.4; stroke-linecap: round; }
+.rt__w .ln--a { stroke: var(--blue); }
+.rt__w .ln--b { stroke: #AEB8C6; stroke-dasharray: 10 10; }
+.rt__w .tip { fill: #B6C0CC; }
+.rt__w .tip--a { fill: var(--blue); }
+.rt__w .tip--b { fill: #AEB8C6; }
+</style>
+</head>
+<body>
+
+<!-- no-autofit: its own canvas, not a panel. -->
+<section class="slide">
+
+  <h1 class="rt__h">Typeform <i>routing</i></h1>
+
+  <div class="rt__w">
+    <svg viewBox="0 0 1920 1080" aria-hidden="true">
+      <!-- through the three that do not matter, into the fourth -->
+      <path class="ln" d="M242 536 H 262"/>
+      <g transform="translate(272 536)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+      <path class="ln" d="M404 536 H 424"/>
+      <g transform="translate(434 536)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+      <path class="ln" d="M566 536 H 586"/>
+      <g transform="translate(596 536)"><path class="tip" d="M0 0 L -16 -7 L -16 7 Z"/></g>
+
+      <!-- the answer that disqualifies goes down to page B -->
+      <path class="ln ln--b" d="M1214 492 C 1300 492, 1300 760, 1392 772"/>
+      <g transform="translate(1402 773) rotate(8)">
+        <path class="tip tip--b" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+
+      <!-- the two that qualify go up to page A -->
+      <path class="ln ln--a" d="M1214 582 C 1316 582, 1306 350, 1392 338"/>
+      <path class="ln ln--a" d="M1214 672 C 1336 672, 1316 352, 1392 342"/>
+      <g transform="translate(1402 338) rotate(-8)">
+        <path class="tip tip--a" d="M0 0 L -17 -7 L -17 7 Z"/></g>
+    </svg>
+  </div>
+
+  <div class="rt__q" style="left:110px; top:488px">Q1</div>
+  <div class="rt__q" style="left:272px; top:488px">Q2</div>
+  <div class="rt__q" style="left:434px; top:488px">Q3</div>
+
+  <div class="rt__card">
+    <p class="rt__k">Question 4</p>
+    <p class="rt__t">Finances</p>
+
+    <div class="rt__opt rt__opt--b"><span class="rt__key">A</span>Less Than X</div>
+    <div class="rt__opt rt__opt--a"><span class="rt__key">B</span>X&ndash;X</div>
+    <div class="rt__opt rt__opt--a"><span class="rt__key">C</span>X&ndash;X</div>
+  </div>
+
+  <div class="rt__page rt__page--a" style="top:272px">
+    <p class="n">TY Page A</p>
+    <p class="d">Books a call</p>
+  </div>
+
+  <div class="rt__page" style="top:708px">
+    <p class="n">TY Page B</p>
+    <p class="d">Downsell</p>
+  </div>
+
+</section>
+
+</body>
+</html>

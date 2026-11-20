@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VSL Landing Page</title>
+<style>
+/* ============================================================================
+   See build-vsl-landing.py. A VSL landing page in the deck's style: one
+   accent, one ground, one ink ramp, and the page's own tokens inlined so it
+   opens anywhere.
+
+   The page is centred rather than offset: it is the real layout, not a slide
+   with a cam beside it. Every string on it is a placeholder sitting in the
+   slot it belongs in.
+   ========================================================================= */
+:root {
+  --ground: #F5F6F7;
+  --surface: #FFFFFF;
+  --ink: #1B1D20;
+  --ink-2: #5A5E66;
+  --ink-3: #8A9099;
+  --hairline: #E3E5E8;
+  --blue: #1877F2;
+  --blue-tint: #E4EFFD;
+  --blue-deep: #1E4E8C;
+  --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+          'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 96px 28px 140px; }
+
+/* ---- hero ---------------------------------------------------------------- */
+.hero { text-align: center; }
+.eyebrow {
+  display: inline-block; padding: 9px 18px; border-radius: 10px;
+  background: var(--blue-tint); color: var(--blue-deep);
+  font-size: 15px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.h1 {
+  margin: 30px auto 0; max-width: 940px;
+  font-size: 64px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.08;
+  color: var(--ink);
+}
+.sub {
+  margin: 24px auto 0; max-width: 760px;
+  font-size: 27px; font-weight: 500; line-height: 1.4; color: var(--ink-2);
+}
+
+/* ---- the video ----------------------------------------------------------- */
+.video {
+  position: relative; margin: 56px 0 0; aspect-ratio: 16 / 9;
+  border-radius: 24px; background: #E7EBF1; border: 1px solid var(--hairline);
+  box-shadow: 0 10px 40px rgba(20, 30, 50, 0.10);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.video__play {
+  width: 108px; height: 108px; border-radius: 50%; background: var(--surface);
+  box-shadow: 0 6px 24px rgba(20, 30, 50, 0.16);
+  display: flex; align-items: center; justify-content: center;
+}
+.video__play::after {
+  content: ""; margin-left: 7px;
+  border-left: 32px solid var(--blue);
+  border-top: 20px solid transparent; border-bottom: 20px solid transparent;
+}
+.video__bar {
+  position: absolute; left: 26px; right: 26px; bottom: 24px;
+  height: 8px; border-radius: 5px; background: rgba(255, 255, 255, 0.72);
+}
+.video__bar span {
+  display: block; width: 28%; height: 8px; border-radius: 5px; background: var(--blue);
+}
+
+/* ---- the booking block --------------------------------------------------- */
+.book {
+  display: grid; grid-template-columns: 1fr 1px 1fr; gap: 44px;
+  margin: 40px 0 0; padding: 40px 44px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 24px; box-shadow: 0 4px 24px rgba(20, 30, 50, 0.06);
+}
+.book__rule { background: var(--hairline); }
+.book__k {
+  margin: 0 0 22px;
+  font-size: 15px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+
+.field + .field { margin-top: 18px; }
+.field__q { display: block; width: 74%; height: 10px; border-radius: 5px;
+            background: #DDE2E8; }
+.field__a {
+  display: block; margin-top: 10px; height: 46px; border-radius: 12px;
+  background: var(--ground); border: 1px solid var(--hairline);
+}
+.field__pick { display: flex; gap: 10px; margin-top: 10px; }
+.field__pick span {
+  flex: 1; height: 46px; border-radius: 12px;
+  background: var(--ground); border: 1px solid var(--hairline);
+}
+.field__pick .on { background: var(--blue-tint); border-color: #BFD6F7; }
+
+.btn {
+  margin-top: 26px; width: 100%; height: 60px; border: 0; border-radius: 14px;
+  background: var(--blue); color: #fff; cursor: pointer;
+  font-family: inherit; font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
+}
+
+.cal { border: 1px solid var(--hairline); border-radius: 16px; padding: 18px; }
+.cal__head { display: flex; align-items: center; justify-content: space-between; }
+.cal__m { width: 104px; height: 12px; border-radius: 6px; background: #DDE2E8; }
+.cal__nav { display: flex; gap: 8px; }
+.cal__nav span { width: 22px; height: 22px; border-radius: 7px; background: var(--ground);
+                 border: 1px solid var(--hairline); }
+.cal__grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 7px; margin-top: 16px;
+}
+.cal__grid i { display: block; height: 30px; border-radius: 8px; background: #EDF0F4; }
+.cal__grid i.off { background: #F4F6F8; }
+.cal__grid i.on { background: var(--blue); }
+.slots { display: flex; gap: 10px; margin-top: 18px; }
+.slots span {
+  flex: 1; height: 44px; border-radius: 12px;
+  background: var(--ground); border: 1px solid var(--hairline);
+}
+.slots .on { background: var(--blue-tint); border-color: #BFD6F7; }
+
+/* ---- the case studies ---------------------------------------------------- */
+.cases { margin: 110px 0 0; }
+.cases__h { text-align: center; }
+.cases__h h2 {
+  margin: 18px 0 0;
+  font-size: 46px; font-weight: 600; letter-spacing: -0.024em; color: var(--ink);
+}
+.cases__h p { margin: 14px 0 0; font-size: 22px; font-weight: 500; color: var(--ink-2); }
+
+.grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin: 48px 0 0;
+}
+.case {
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 20px; padding: 14px 14px 20px;
+  box-shadow: 0 3px 16px rgba(20, 30, 50, 0.06);
+}
+.case__th {
+  position: relative; aspect-ratio: 16 / 10; border-radius: 13px; background: #E7EBF1;
+  display: flex; align-items: center; justify-content: center;
+}
+.case__play {
+  width: 54px; height: 54px; border-radius: 50%; background: var(--surface);
+  box-shadow: 0 3px 12px rgba(20, 30, 50, 0.14);
+  display: flex; align-items: center; justify-content: center;
+}
+.case__play::after {
+  content: ""; margin-left: 4px;
+  border-left: 17px solid var(--blue);
+  border-top: 11px solid transparent; border-bottom: 11px solid transparent;
+}
+.case__len {
+  position: absolute; right: 10px; bottom: 10px;
+  padding: 5px 10px; border-radius: 8px; background: rgba(27, 29, 32, 0.74);
+  color: #fff; font-size: 14px; font-weight: 600;
+}
+.case__t {
+  margin: 16px 4px 0;
+  font-size: 23px; font-weight: 600; letter-spacing: -0.012em; color: var(--ink);
+}
+
+/* ---- narrow --------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .wrap { padding: 52px 20px 90px; }
+  .h1 { font-size: 38px; }
+  .sub { font-size: 20px; }
+  .book { grid-template-columns: 1fr; gap: 30px; padding: 26px 22px; }
+  .book__rule { height: 1px; }
+  .cases { margin-top: 70px; }
+  .cases__h h2 { font-size: 32px; }
+  .grid { grid-template-columns: 1fr; gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">ICP Callout</span>
+    <h1 class="h1">Headline: ICP Based Offer Statement</h1>
+    <p class="sub">Subheader</p>
+  </header>
+
+  <div class="video">
+    <span class="video__play"></span>
+    <div class="video__bar"><span></span></div>
+  </div>
+
+    <section class="book">
+
+      <div class="book__half">
+        <p class="book__k">Typeform</p>
+        <div class="field"><span class="field__q"></span><span class="field__a"></span></div>
+        <div class="field"><span class="field__q" style="width:58%"></span>
+          <span class="field__a"></span></div>
+        <div class="field"><span class="field__q" style="width:46%"></span>
+          <div class="field__pick"><span></span><span></span><span class="on"></span></div>
+        </div>
+        <button class="btn">Apply</button>
+      </div>
+
+      <div class="book__rule"></div>
+
+      <div class="book__half">
+        <p class="book__k">Calendly</p>
+        <div class="cal">
+          <div class="cal__head"><span class="cal__m"></span>
+            <div class="cal__nav"><span></span><span></span></div>
+          </div>
+          <div class="cal__grid"><i class="off"></i><i class="off"></i><i class="off"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
+        </div>
+        <div class="slots"><span></span><span class="on"></span><span></span></div>
+      </div>
+
+    </section>
+
+  <section class="cases">
+    <div class="cases__h">
+      <h2>Case Studies</h2>
+      <p>1&ndash;3 min each</p>
+    </div>
+
+    <div class="grid">
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 1</p>
+      </article>
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 2</p>
+      </article>
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 3</p>
+      </article>
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 4</p>
+      </article>
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 5</p>
+      </article>
+      <article class="case">
+        <div class="case__th">
+          <span class="case__play"></span>
+          <span class="case__len">1&ndash;3 min</span>
+        </div>
+        <p class="case__t">Case Study 6</p>
+      </article>
+    </div>
+  </section>
+
+    <section class="book">
+
+      <div class="book__half">
+        <p class="book__k">Typeform</p>
+        <div class="field"><span class="field__q"></span><span class="field__a"></span></div>
+        <div class="field"><span class="field__q" style="width:58%"></span>
+          <span class="field__a"></span></div>
+        <div class="field"><span class="field__q" style="width:46%"></span>
+          <div class="field__pick"><span></span><span></span><span class="on"></span></div>
+        </div>
+        <button class="btn">Apply</button>
+      </div>
+
+      <div class="book__rule"></div>
+
+      <div class="book__half">
+        <p class="book__k">Calendly</p>
+        <div class="cal">
+          <div class="cal__head"><span class="cal__m"></span>
+            <div class="cal__nav"><span></span><span></span></div>
+          </div>
+          <div class="cal__grid"><i class="off"></i><i class="off"></i><i class="off"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
+        </div>
+        <div class="slots"><span></span><span class="on"></span><span></span></div>
+      </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
