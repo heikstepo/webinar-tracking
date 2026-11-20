@@ -10,7 +10,10 @@ The webinar funnel keeps going after the thank you pages, so it does, in
 pills at about half the weight of the boxes before them. They are there to
 say the funnel continues, not to be read.
 
-    ./build-funnel-maps.py    writes the two 16:9 slides
+The VSL map comes in two cuts, with and without the opt-in page, because
+some funnels send the ad straight to the VSL.
+
+    ./build-funnel-maps.py    writes the three 16:9 slides
 """
 import os
 import re
@@ -232,6 +235,26 @@ wires = [
 ]
 parts.append('<p class="map__note" style="left:1140px; top:%dpx">Call</p>' % (AY + 6))
 write('vsl', 'VSL Funnel', wires, parts)
+
+# ================================================ the VSL map, no opt-in ==
+# The ad lands on the VSL itself. Everything from the split rightwards is
+# where it was in the other cut, so the two can be shown one after the other
+# and only the left half changes.
+mains = [(0, 380, 'Ads'), (560, 460, 'VSL Page')]
+parts = [box(x, MID - BH / 2, w, BH, t) for x, w, t in mains]
+parts += [
+    box(1400, AY - 100, 300, 200, 'TY Page A', 'Conversion Event',
+        'Schedule', 'map__won'),
+    box(1400, BY - 75, 300, 150, 'TY Page B'),
+    pixel(1430, 10, 240, 130),
+]
+wires = [
+    straight(380, 560, MID),
+    bend(1020, MID, 1400, AY), bend(1020, MID, 1400, BY),
+    up(1550, AY - 100, 140),
+]
+parts.append('<p class="map__note" style="left:1140px; top:%dpx">Call</p>' % (AY + 6))
+write('vsl-no-optin', 'VSL Funnel', wires, parts)
 
 # ======================================================== the webinar map ==
 mains = [(0, 210, 'Ads'), (268, 210, 'Opt-in Page'), (536, 210, 'VIP Upsell')]
