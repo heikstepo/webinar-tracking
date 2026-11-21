@@ -186,6 +186,7 @@ TPL = '''<!doctype html>
 </head>
 <body>
 
+<!-- no-autofit: its own canvas, not a 1920 slide. -->
 <section class="slide">
 
   <h1 class="cb__h">Campaign Structure</h1>

@@ -13,14 +13,26 @@ column, which keeps every line break, measure and fixed width component exactly
 as it was drawn, and that box is scaled about its centre.
 
     ./fit-wide.py            rewrites slides/wide/*.html in place
+    ./fit-wide.py a.html b.html   only those
 """
 import glob
 import os
 import re
+import sys
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-CHROME = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome'
+def _chrome():
+    """The Chromium the image carries. Its build number moves, so find it."""
+    for pat in ('/opt/pw-browsers/chromium-*/chrome-linux*/chrome',
+                '/opt/pw-browsers/chromium*/**/chrome'):
+        hit = sorted(glob.glob(pat, recursive=True))
+        if hit:
+            return hit[-1]
+    raise SystemExit('no chromium under /opt/pw-browsers')
+
+
+CHROME = _chrome()
 
 PANEL_W = 680          # 800px panel less its 60px side padding
 FRAME_W, FRAME_H = 1920, 1080
@@ -53,7 +65,7 @@ def set_scale(html, scale):
     return html.replace('</style>', FIT_CSS % round(scale, 4), 1)
 
 
-files = [p for p in sorted(glob.glob('slides/wide/*.html'))
+files = [p for p in (sys.argv[1:] or sorted(glob.glob('slides/wide/*.html')))
          # A slide drawn directly at 1920 can be wider than the panel text
          # column, and wrapping it into that box would reflow it.
          if 'no-autofit' not in open(p).read()]

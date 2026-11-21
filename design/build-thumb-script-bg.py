@@ -194,6 +194,7 @@ TPL = '''<!doctype html>
 </head>
 <body>
 
+<!-- no-autofit: its own canvas, not a 1920 slide. -->
 <section class="slide">
 
   <div class="sb__w">

@@ -161,6 +161,7 @@ TPL = '''<!doctype html>
 </head>
 <body>
 
+<!-- no-autofit: its own canvas, not a 1920 slide. -->
 <section class="slide">
 
   <h1 class="vb__h"><i>VSL</i> Funnel Tactics</h1>

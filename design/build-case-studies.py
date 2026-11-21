@@ -92,6 +92,18 @@ CASES = [
     },
     {
         'shape': 'solo',
+        'slug': 'adam',
+        # Shot wider than the rest, so the head needs more zoom to fill the
+        # disc; the frame sits a touch left of centre.
+        'crop': '176%; background-position: 46% 9%',
+        'name': 'Adam Willis',
+        'to':   '6 FIGURES+',
+        'unit': '',
+        'chip': '',
+        'note': '',
+    },
+    {
+        'shape': 'solo',
         'slug': 'mike',
         'name': 'Mike Meza',
         # Cropped in past the branded banner behind him: another company's

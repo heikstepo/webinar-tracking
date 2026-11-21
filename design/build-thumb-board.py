@@ -190,6 +190,7 @@ TPL = '''<!doctype html>
 </head>
 <body>
 
+<!-- no-autofit: its own canvas, not a 1920 slide. -->
 <section class="slide">
 
   <h1 class="bd__h">Scale Info Products to <span class="bd__sum">$100k/mo</span><br>

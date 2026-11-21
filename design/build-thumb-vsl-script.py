@@ -125,6 +125,7 @@ TPL = '''<!doctype html>
 </head>
 <body>
 
+<!-- no-autofit: its own canvas, not a 1920 slide. -->
 <section class="slide">
 
   <h1 class="vs__h">VSL Scripts<i>(high ticket offers)</i></h1>
