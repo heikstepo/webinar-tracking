@@ -97,8 +97,8 @@ CASES = [
         # it whole with no crop and no correction.
         'crop': 'cover; background-position: center 50%',
         'name': 'Adam Willis',
-        'to':   '$100K+',
-        'unit': '',
+        'to':   '$73,880/mo',
+        'unit': 'right now in November 2026',
         'chip': '',
         'note': '',
     },
