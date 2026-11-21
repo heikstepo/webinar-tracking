@@ -93,9 +93,11 @@ CASES = [
     {
         'shape': 'solo',
         'slug': 'adam',
-        # Shot wider than the rest, so the head needs more zoom to fill the
-        # disc; the frame sits a touch left of centre.
-        'crop': '176%; background-position: 46% 9%',
+        # Shot dark at a desk: the file in photos/ is relit and enlarged from
+        # a small source. Framed wide enough to keep the laptop in, which is
+        # the point of the shot.
+        'precrop': (0, 26, 840, 866),
+        'crop': 'cover; background-position: center 50%',
         'name': 'Adam Willis',
         'to':   '6 FIGURES+',
         'unit': '',
