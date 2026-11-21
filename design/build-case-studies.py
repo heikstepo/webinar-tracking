@@ -107,9 +107,9 @@ CASES = [
         'slug': 'heik',
         # Shot backlit against a window: the file in photos/ is already
         # relit, and the box cuts past the laptop and the screen behind him.
-        'precrop': (182, 4, 486, 308),
-        'crop': 'cover; background-position: 52% 40%',
-        'name': 'Heik',
+        'precrop': (118, 0, 578, 460),
+        'crop': 'cover; background-position: 52% 38%',
+        'name': 'Heik Stepanjan',
         'to':   'MULTIPLE<br>6-FIGURES',
         'size': '74px',
         'unit': 'from my own offer',
