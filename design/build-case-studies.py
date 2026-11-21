@@ -104,6 +104,20 @@ CASES = [
     },
     {
         'shape': 'solo',
+        'slug': 'heik',
+        # Shot backlit against a window: the file in photos/ is already
+        # relit, and the box cuts past the laptop and the screen behind him.
+        'precrop': (182, 4, 486, 308),
+        'crop': 'cover; background-position: 52% 40%',
+        'name': 'Heik',
+        'to':   'MULTIPLE<br>6-FIGURES',
+        'size': '74px',
+        'unit': 'from my own offer',
+        'chip': '',
+        'note': '',
+    },
+    {
+        'shape': 'solo',
         'slug': 'mike',
         'name': 'Mike Meza',
         # Cropped in past the branded banner behind him: another company's
